@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     min-height: 300px;
     color: #333;
     padding: 1px 0;
-    background: #FFFFFF url("../pictures/hall2.jpg") no-repeat 50% center scroll;
+    background: #FFFFFF url("../pictures/hall.jpg") no-repeat 50% center scroll;
     background-size: cover;
 }
 
