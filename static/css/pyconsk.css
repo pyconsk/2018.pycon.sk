@@ -64,4 +64,17 @@ footer .trademark {
     font-size: small;
 }
 
-
+@media (max-width: 900px) {
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        transition: height 999999s;
+        text-align: center;
+        min-height: 300px;
+        color: #333;
+        padding: 1px 0;
+        background: #FFFFFF url("../pictures/hall-small.jpg") no-repeat 50% center scroll;
+        background-size: cover;
+    }
+}
