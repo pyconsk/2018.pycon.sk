@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-01 19:44+0200\n"
+"POT-Creation-Date: 2017-08-01 20:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -41,46 +41,50 @@ msgid "menu"
 msgstr ""
 
 #: templates/body.html:43
-msgid "About Us"
+msgid "Venue"
 msgstr ""
 
 #: templates/body.html:44
-msgid "2016"
+msgid "About Us"
 msgstr ""
 
 #: templates/body.html:45
+msgid "2016"
+msgstr ""
+
+#: templates/body.html:46
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:64
+#: templates/body.html:65
 msgid "Facebook"
 msgstr ""
 
-#: templates/body.html:65
+#: templates/body.html:66
 msgid "Twitter"
 msgstr ""
 
-#: templates/body.html:66
+#: templates/body.html:67
 msgid "LinkedIn"
 msgstr ""
 
-#: templates/body.html:67
+#: templates/body.html:68
 msgid "Google+"
 msgstr ""
 
-#: templates/body.html:68
+#: templates/body.html:69
 msgid "GitHub"
 msgstr ""
 
-#: templates/body.html:71
+#: templates/body.html:72
 msgid "PyCon SK 2016"
 msgstr ""
 
-#: templates/body.html:72
+#: templates/body.html:73
 msgid "PyCon SK 2017"
 msgstr ""
 
-#: templates/body.html:76
+#: templates/body.html:77
 msgid ""
 "<a href=\"https://www.python.org/psf/trademarks/pycon/\" "
 "target=\"_blank\" class=\"external\">PyCon™</a> is a trademark for "
@@ -89,14 +93,14 @@ msgid ""
 "class=\"external\">Python Software foundation</a>."
 msgstr ""
 
-#: templates/body.html:77
+#: templates/body.html:78
 msgid ""
 "PyCon SK is organized by volunteers from <a "
 "href=\"https://spy.python.sk\" target=\"_blank\" class=\"external\">SPy "
 "o.z.</a>"
 msgstr ""
 
-#: templates/body.html:81
+#: templates/body.html:82
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our <a "
@@ -104,6 +108,7 @@ msgid ""
 msgstr ""
 
 #: templates/coc.html:5 templates/index.html:5 templates/sponsoring.html:5
+#: templates/venue.html:5
 msgid "PyCon SK 2018 logo"
 msgstr ""
 
@@ -299,5 +304,17 @@ msgstr ""
 msgid ""
 "Are you using Python in your company? Support for community events is "
 "excellent opportunity to contribute back."
+msgstr ""
+
+#: templates/venue.html:10
+msgid "How to get there"
+msgstr ""
+
+#: templates/venue.html:12
+msgid ""
+"We are looking for the best venue for Pycon at the moment. Suggestions "
+"are always welcomed at <a "
+"href=\"mailto:info@pycon.sk\">info@pycon.sk</a><br /><strong>Third "
+"year</strong> will happen in <strong>March, 2018 in Bratislava</strong>."
 msgstr ""
 
