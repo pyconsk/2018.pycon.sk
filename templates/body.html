@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{% if lang_code %}{{ lang_code }}{% else %}sk{% endif %}">
+    <head>
+        <title>{{ title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
+        <meta name="description" content="{{ _('PyCon SK 2018 website') }}">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://2016.pycon.sk/static/images/logo/pycon_sk_logo200_notext.png" />
+        <meta property="og:url" content="https://2018.pycon.sk/" />
+        <meta property="og:title" content="{{ _('PyCon SK 2018, Bratislava') }}" />
+        <meta property="og:site_name" content="2018.pycon.sk" />
+        <meta property="og:description" content="{{ _('PyCon SK is a community-organized conference for the Python programming language, which will be held in Bratislava on March, 2018.') }}" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@pyconsk" />
+        <meta name="twitter:title" content="{{ _('PyCon SK 2018, Bratislava') }}" />
+        <meta name="twitter:description" content="{{ _('PyCon SK is a community-organized conference for the Python programming language, which will be held in Bratislava on March, 2018.') }}" />
+        <meta name="twitter:url" content="https://2018.pycon.sk" />
+        <meta name="twitter:image" content="https://2016.pycon.sk/static/images/logo/pycon_sk_logo200_notext.png" />
+        <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/picnic.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pyconsk.min.css') }}?v=1">
+        <link rel="icon" href="{{ url_for('static', filename='logo/favicon.ico') }}" sizes="16x16">
+        {% block header %}{% endblock %}
+        {% if lang_code == 'sk' %}
+        <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/en', 1) }}" hreflang="en">
+        {% else %}
+        <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/sk', 1) }}" hreflang="sk">
+        {% endif %}
+        <link rel="canonical" href="https://2018.pycon.sk{{ request.path }}" />
+	<script src="{{ url_for('static', filename='static/js/analytics.min.js') }}"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="brand"><span>{{ _('PyCon SK 2018') }}</span></a>
+            <input id="bmenu" type="checkbox" class="show">
+            <label for="bmenu" class="burger toggle pseudo button">{{ _('menu') }}</label>
+            <div class="menu">
+                {% block navbar %}
+		        <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">{{ _('About Us') }}</a>
+                <a href="https://2016.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2016') }}</a>
+                <a href="https://2017.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2017') }}</a>
+		        {% endblock %}
+            </div>
+        </nav>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer class="hidden-print">
+            <div class="visual flex">
+                <div class="content">
+                    <hr />
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com/pyconsk" class="external">{{ _('Facebook') }}</a></li>
+                        <li><a href="https://twitter.com/pyconsk" class="external">{{ _('Twitter') }}</a></li>
+                        <li><a href="https://www.linkedin.com/company/spy-o--z-" class="external">{{ _('LinkedIn') }}</a></li>
+                        <li><a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts" class="external">{{ _('Google+') }}</a></li>
+                        <li><a href="https://github.com/pyconsk" class="external">{{ _('GitHub') }}</a></li>
+                        <li><a href="mailto:info%40pycon.sk" class="external"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@pycon.sk</a></li>
+                        <li class="pull-right">
+                            <a href="https://2016.pycon.sk/" class="external">{{ _('PyCon SK 2016') }}</a> -
+                            <a href="https://2017.pycon.sk/" class="external">{{ _('PyCon SK 2017') }}</a>
+                        </li>
+                    </ul>
+                    <span class="trademark">
+                        {{ _('<a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> is a trademark for worldwide conference activities claimed by the <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a>.') }}
+                        {{ _('PyCon SK is organized by volunteers from <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>') }}
+                    </span>
+                    {% block footer %}{% endblock %}
+                </div>
+            </div>
+        </footer>
+        {% if ld_json %}
+        <script type="application/ld+json">
+        {{ ld_json|tojson|safe }}
+        </script>
+        {% endif%}
+        {% block scripts %}{% endblock %}
+    </body>
+</html>

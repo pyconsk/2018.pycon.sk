@@ -1,0 +1,113 @@
+# English translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-08-01 14:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: templates/body.html:8
+msgid "PyCon SK 2018 website"
+msgstr ""
+
+#: templates/body.html:12 templates/body.html:17
+msgid "PyCon SK 2018, Bratislava"
+msgstr ""
+
+#: templates/body.html:14 templates/body.html:18
+msgid ""
+"PyCon SK is a community-organized conference for the Python programming "
+"language, which will be held in Bratislava on March, 2018."
+msgstr ""
+
+#: templates/body.html:36
+msgid "PyCon SK 2018"
+msgstr ""
+
+#: templates/body.html:38
+msgid "menu"
+msgstr ""
+
+#: templates/body.html:41
+msgid "About Us"
+msgstr ""
+
+#: templates/body.html:42
+msgid "2016"
+msgstr ""
+
+#: templates/body.html:43
+msgid "2017"
+msgstr ""
+
+#: templates/body.html:55
+msgid "Facebook"
+msgstr ""
+
+#: templates/body.html:56
+msgid "Twitter"
+msgstr ""
+
+#: templates/body.html:57
+msgid "LinkedIn"
+msgstr ""
+
+#: templates/body.html:58
+msgid "Google+"
+msgstr ""
+
+#: templates/body.html:59
+msgid "GitHub"
+msgstr ""
+
+#: templates/body.html:62
+msgid "PyCon SK 2016"
+msgstr ""
+
+#: templates/body.html:63
+msgid "PyCon SK 2017"
+msgstr ""
+
+#: templates/body.html:67
+msgid ""
+"<a href=\"https://www.python.org/psf/trademarks/pycon/\" "
+"target=\"_blank\" class=\"external\">PyCon™</a> is a trademark for "
+"worldwide conference activities claimed by the <a "
+"href=\"https://www.python.org/psf-landing/\" target=\"_blank\" "
+"class=\"external\">Python Software foundation</a>."
+msgstr ""
+
+#: templates/body.html:68
+msgid ""
+"PyCon SK is organized by volunteers from <a "
+"href=\"https://spy.python.sk\" target=\"_blank\" class=\"external\">SPy "
+"o.z.</a>"
+msgstr ""
+
+#: templates/index.html:5
+msgid "PyCon SK 2018 logo"
+msgstr ""
+
+#: templates/index.html:10
+msgid "PyCon at Slovakia again."
+msgstr ""
+
+#: templates/index.html:12
+msgid ""
+"PyCon SK is a community-organized conference for the Python programming "
+"language.<br /><strong>Third year</strong> will happen in <strong>March, "
+"2018 in Bratislava</strong>."
+msgstr ""
+
