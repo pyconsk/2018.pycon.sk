@@ -63,12 +63,18 @@ Frozen-Flask freezes a Flask application into a set of static files. The result 
 
 - generate static files, and you can find them in ``build`` directory::
 
-    python views.py
+    python freezer.py
 
-- verify the generated result in browser (http://127.0.0.1:8000)::
+- verify the generated result in browser (http://127.0.0.1:8000/en/index.html)::
 
     cd build
     python -m SimpleHTTPServer 8000
+
+
+Continuous Deployment
+---------------------
+
+Anything committed to live branch will be automatically deployed on live server. Live branch have to contain only generated static site from build directory.
 
 
 Links
