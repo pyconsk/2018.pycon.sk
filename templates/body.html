@@ -42,6 +42,13 @@
                 <a href="https://2016.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2016') }}</a>
                 <a href="https://2017.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2017') }}</a>
 		        {% endblock %}
+                {% if lang_code == 'sk' %}
+                <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" title="Switch to english language" hreflang="en"><img src="{{ url_for('static', filename='images/lang/uk.png') }}" alt="english language">EN</a>
+                {% else %}
+                <a href="{{ request.path|replace('/'+lang_code, '/sk', 1) }}" title="Prepnúť na slovenský jazyk" hreflang="sk"><img src="{{ url_for('static', filename='images/lang/sk.png') }}" alt="slovenský jazyk">SK</a>
+                {% endif %}
+        </ul>
+
             </div>
         </nav>
         <main>
