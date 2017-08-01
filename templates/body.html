@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/picnic.min.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/pyconsk.min.css') }}?v=1">
         <link rel="icon" href="{{ url_for('static', filename='logo/favicon.ico') }}" sizes="16x16">
+        <link rel="stylesheet" href="{{ url_for('static', filename='third-party/font-awesome-4.7.0/css/font-awesome.min.css') }}">
         {% block header %}{% endblock %}
         {% if lang_code == 'sk' %}
         <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/en', 1) }}" hreflang="en">
