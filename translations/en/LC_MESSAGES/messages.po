@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-01 18:59+0200\n"
+"POT-Creation-Date: 2017-08-01 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -94,6 +94,13 @@ msgid ""
 "PyCon SK is organized by volunteers from <a "
 "href=\"https://spy.python.sk\" target=\"_blank\" class=\"external\">SPy "
 "o.z.</a>"
+msgstr ""
+
+#: templates/body.html:80
+msgid ""
+"Found a bug? Missing some information? This is community managed website,"
+" contribute at our <a "
+"href=\"https://github.com/pyconsk/2018.pycon.sk\">GitHub</a>."
 msgstr ""
 
 #: templates/coc.html:5 templates/index.html:5
