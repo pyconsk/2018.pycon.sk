@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-01 19:14+0200\n"
+"POT-Creation-Date: 2017-08-01 19:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -41,47 +41,47 @@ msgstr ""
 msgid "menu"
 msgstr ""
 
-#: templates/body.html:42
+#: templates/body.html:43
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:43
+#: templates/body.html:44
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:44
+#: templates/body.html:45
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:63
+#: templates/body.html:64
 msgid "Facebook"
 msgstr ""
 
-#: templates/body.html:64
+#: templates/body.html:65
 msgid "Twitter"
 msgstr ""
 
-#: templates/body.html:65
+#: templates/body.html:66
 msgid "LinkedIn"
 msgstr ""
 
-#: templates/body.html:66
+#: templates/body.html:67
 msgid "Google+"
 msgstr ""
 
-#: templates/body.html:67
+#: templates/body.html:68
 msgid "GitHub"
 msgstr ""
 
-#: templates/body.html:70
+#: templates/body.html:71
 msgid "PyCon SK 2016"
 msgstr ""
 
-#: templates/body.html:71
+#: templates/body.html:72
 msgid "PyCon SK 2017"
 msgstr ""
 
-#: templates/body.html:75
+#: templates/body.html:76
 msgid ""
 "<a href=\"https://www.python.org/psf/trademarks/pycon/\" "
 "target=\"_blank\" class=\"external\">PyCon™</a> is a trademark for "
@@ -90,21 +90,21 @@ msgid ""
 "class=\"external\">Python Software foundation</a>."
 msgstr ""
 
-#: templates/body.html:76
+#: templates/body.html:77
 msgid ""
 "PyCon SK is organized by volunteers from <a "
 "href=\"https://spy.python.sk\" target=\"_blank\" class=\"external\">SPy "
 "o.z.</a>"
 msgstr ""
 
-#: templates/body.html:80
+#: templates/body.html:81
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our <a "
 "href=\"https://github.com/pyconsk/2018.pycon.sk\">GitHub</a>."
 msgstr ""
 
-#: templates/coc.html:5 templates/index.html:5
+#: templates/coc.html:5 templates/index.html:5 templates/sponsoring.html:5
 msgid "PyCon SK 2018 logo"
 msgstr ""
 
@@ -205,5 +205,100 @@ msgid ""
 "PyCon SK is a community-organized conference for the Python programming "
 "language.<br /><strong>Third year</strong> will happen in <strong>March, "
 "2018 in Bratislava</strong>."
+msgstr ""
+
+#: templates/sponsoring.html:10
+msgid "Why become a sponsor?"
+msgstr ""
+
+#: templates/sponsoring.html:12
+msgid "We need you — PyCon SK 2018 in Bratislava seeks for sponsors and partners!"
+msgstr ""
+
+#: templates/sponsoring.html:16
+msgid ""
+"<a href=\"https://creativecommons.org/licenses/by/3.0/\" "
+"target=\"_blank\">CC</a> by <a "
+"href=\"https://www.tendenci.com/photos/1616/in/58/\" target=\"_blank\">Ed"
+" Schipul</a>"
+msgstr ""
+
+#: templates/sponsoring.html:20
+msgid ""
+"PyCon is annual gathering for the community using and developing the "
+"open-source Python programming language. The conference is completely "
+"organized by volunteers."
+msgstr ""
+
+#: templates/sponsoring.html:24
+msgid ""
+"The members of the Python community organize a PyCon conference in their "
+"home countries regularly, but in Slovakia there was no official PyCon "
+"organized yet. So we have decided to change it."
+msgstr ""
+
+#: templates/sponsoring.html:28
+msgid ""
+"To ensure high-quality speakers and keep the tickets price available for "
+"everyone we need you, the sponsors, who allow the conference take place."
+msgstr ""
+
+#: templates/sponsoring.html:32
+msgid ""
+"Do not hesitate to contact us. We are flexible and willing to work with "
+"you to design a sponsorship package that is going to meet your business "
+"needs."
+msgstr ""
+
+#: templates/sponsoring.html:38
+msgid "Marketing"
+msgstr ""
+
+#: templates/sponsoring.html:40
+msgid ""
+"Looking for new users for your product? Such people can be found at PyCon"
+" - they also will look for new products and ideas."
+msgstr ""
+
+#: templates/sponsoring.html:46
+msgid "Recruitment"
+msgstr ""
+
+#: templates/sponsoring.html:48
+msgid ""
+"Are you looking for programmers? PyCon is the best place for meeting new "
+"talents. Many participants will be experienced developers looking for "
+"their next big career move."
+msgstr ""
+
+#: templates/sponsoring.html:54
+msgid "Audience"
+msgstr ""
+
+#: templates/sponsoring.html:56
+msgid ""
+"Want to get your message across to the people, so they talk about you? "
+"PyCon is a great opportunity. People in the Python community like to "
+"discover and share new things."
+msgstr ""
+
+#: templates/sponsoring.html:62
+msgid "Community"
+msgstr ""
+
+#: templates/sponsoring.html:64
+msgid ""
+"Looking for new contributors and partners for your open source project? "
+"PyCon is the place, where they also will look for you."
+msgstr ""
+
+#: templates/sponsoring.html:70
+msgid "Support"
+msgstr ""
+
+#: templates/sponsoring.html:72
+msgid ""
+"Are you using Python in your company? Support for community events is "
+"excellent opportunity to contribute back."
 msgstr ""
 

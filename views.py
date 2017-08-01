@@ -100,7 +100,6 @@ def index():
     return render_template('index.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_index='active'))
 
 
-
 @app.route('/<lang_code>/coc.html')
 def coc():
     lang =  get_locale()
@@ -123,6 +122,30 @@ def coc():
       }
     }
     return render_template('coc.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_index='active'))
+
+
+@app.route('/<lang_code>/sponsoring.html')
+def sponsoring():
+    lang =  get_locale()
+    LDJSON_EVENT = {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      "name": u"PyCon SK 2018",
+      "startDate": "2016-03-09T9:00:00+01:00",
+      "endDate": "2016-03-11T18:00:00+01:00",
+      "url": "https://2018.pycon.sk/" + lang + "/",
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "name": "PyCon SK 2018",
+        "creator": {
+          "@type": "Organization",
+          "name": "SPy o.z.",
+          "url": "https://spy.python.sk/",
+          "logo": "https://spy.python.sk/img/logo/spy-logo.png",
+        }
+      }
+    }
+    return render_template('sponsoring.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_index='active'))
 
 
 def get_lastmod(route, sitemap_entry):
