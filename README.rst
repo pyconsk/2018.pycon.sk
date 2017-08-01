@@ -31,7 +31,7 @@ Installation
 
     pyvenv envs3
     source envs3/bin/activate
-    pip install -r requirements.txt
+    pip install -r requirements.txt --no-use-wheel
 
 - start flask server, and you can view it in browser (http://127.0.0.1:5000)::
 
