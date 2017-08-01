@@ -29,19 +29,20 @@
         <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/sk', 1) }}" hreflang="sk">
         {% endif %}
         <link rel="canonical" href="https://2018.pycon.sk{{ request.path }}" />
-	<script src="{{ url_for('static', filename='js/analytics.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/analytics.min.js') }}"></script>
     </head>
     <body>
         <nav>
-            <a href="/" class="brand"><span>{{ _('PyCon SK 2018') }}</span></a>
+            <a href="{{ url_for('index', lang_code=lang_code) }}" class="brand"><span>{{ _('PyCon SK 2018') }}</span></a>
             <input id="bmenu" type="checkbox" class="show">
             <label for="bmenu" class="burger toggle pseudo button">{{ _('menu') }}</label>
             <div class="menu">
                 {% block navbar %}
-		        <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">{{ _('About Us') }}</a>
+                <a href="{{ url_for('coc', lang_code=lang_code) }}" class="pseudo button icon-help-circled external">Code of conduct</a>
+                <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">{{ _('About Us') }}</a>
                 <a href="https://2016.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2016') }}</a>
                 <a href="https://2017.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2017') }}</a>
-		        {% endblock %}
+                {% endblock %}
                 {% if lang_code == 'sk' %}
                 <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" title="Switch to english language" hreflang="en"><img src="{{ url_for('static', filename='images/lang/uk.png') }}" alt="english language">EN</a>
                 {% else %}
