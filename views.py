@@ -121,7 +121,7 @@ def coc():
         }
       }
     }
-    return render_template('coc.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_index='active'))
+    return render_template('coc.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_coc='active'))
 
 @app.route('/<lang_code>/venue.html')
 def venue():
@@ -144,7 +144,7 @@ def venue():
         }
       }
     }
-    return render_template('venue.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_index='active'))
+    return render_template('venue.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_venue='active'))
 
 
 @app.route('/<lang_code>/sponsoring.html')
@@ -168,7 +168,7 @@ def sponsoring():
         }
       }
     }
-    return render_template('sponsoring.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_index='active'))
+    return render_template('sponsoring.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_sponsoring='active'))
 
 
 def get_lastmod(route, sitemap_entry):
