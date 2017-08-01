@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-01 19:44+0200\n"
+"POT-Creation-Date: 2017-08-01 19:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -105,6 +105,7 @@ msgid ""
 msgstr ""
 
 #: templates/coc.html:5 templates/index.html:5 templates/sponsoring.html:5
+#: templates/venue.html:5
 msgid "PyCon SK 2018 logo"
 msgstr ""
 
@@ -300,5 +301,17 @@ msgstr ""
 msgid ""
 "Are you using Python in your company? Support for community events is "
 "excellent opportunity to contribute back."
+msgstr ""
+
+#: templates/venue.html:10
+msgid "How to get there"
+msgstr ""
+
+#: templates/venue.html:12
+msgid ""
+"We are looking for the best venue for Pycon at the moment. Suggestions "
+"are always welcomed at <a "
+"href=\"mailto:info@pycon.sk\">info@pycon.sk</a><br /><strong>Third "
+"year</strong> will happen in <strong>March, 2018 in Bratislava</strong>."
 msgstr ""
 
