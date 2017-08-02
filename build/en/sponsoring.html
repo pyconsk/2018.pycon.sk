@@ -7,7 +7,7 @@
         <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
         <meta name="description" content="PyCon SK 2018 website">
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://2016.pycon.sk/static/images/logo/pycon_sk_logo200_notext.png" />
+        <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png" />
         <meta property="og:url" content="https://2018.pycon.sk/" />
         <meta property="og:title" content="PyCon SK 2018, Bratislava" />
         <meta property="og:site_name" content="2018.pycon.sk" />
@@ -17,12 +17,12 @@
         <meta name="twitter:title" content="PyCon SK 2018, Bratislava" />
         <meta name="twitter:description" content="PyCon SK is a community-organized conference for the Python programming language, which will be held in Bratislava on March, 2018." />
         <meta name="twitter:url" content="https://2018.pycon.sk" />
-        <meta name="twitter:image" content="https://2016.pycon.sk/static/images/logo/pycon_sk_logo200_notext.png" />
+        <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png" />
         <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM" />
         <link rel="stylesheet" href="/static/css/picnic.min.css">
-        <link rel="stylesheet" href="/static/css/pyconsk.min.css?v=1">
-        <link rel="icon" href="/static/logo/favicon.ico" sizes="16x16">
+        <link rel="stylesheet" href="/static/css/pyconsk.css?v=2">
         <link rel="stylesheet" href="/static/third-party/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
         
         
         <link rel="alternate" href="https://2018.pycon.sk/sk/sponsoring.html" hreflang="sk">
@@ -31,47 +31,38 @@
     <script src="/static/js/analytics.min.js"></script>
     </head>
     <body>
-        <nav>
-            <a href="/en/index.html" class="brand"><span>PyCon SK 2018</span></a>
-            <input id="bmenu" type="checkbox" class="show">
-            <label for="bmenu" class="burger toggle pseudo button">menu</label>
-            <div class="menu">
-                
-                <a href="/en/sponsoring.html" 
-                    class="pseudo button icon-help-circled external active ">Sponsoring</a>
-                <a href="/en/coc.html" 
-                    class="pseudo button icon-help-circled external  ">Code of conduct</a>
-                <a href="/en/venue.html" 
-                    class="pseudo button icon-help-circled external ">Venue</a>
+        <nav class="transparent">
+          <svg width="36" height="36" class="logo">
+            <image xlink:href="/static/img/logo/spy-logo.svg" src="/static/img/logo/spy-logo.png" width="36" height="36" />
+          </svg>
+          <a href="/en/index.html" class="brand">PyCon SK 2018</a>
+          <!-- responsive-->
+          <input id="bmenub" type="checkbox" class="show">
+          <label for="bmenub" class="burger pseudo button" id="menu">menu</label>
 
-                <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">About Us</a>
-                <a href="https://2016.pycon.sk" class="pseudo button icon-help-circled external">2016</a>
-                <a href="https://2017.pycon.sk" class="pseudo button icon-help-circled external">2017</a>
-                
-                
-                <a href="/sk/sponsoring.html" title="Prepnúť na slovenský jazyk" hreflang="sk"><img src="/static/images/lang/sk.png" alt="slovenský jazyk">SK</a>
-                
-        </ul>
-
-            </div>
+          <div class="menu">
+            
+            <a href="/en/venue.html" class="pseudo button icon-help-circled ">Venue</a>
+            <a href="/en/sponsoring.html" class="pseudo button icon-help-circled active ">Sponsoring</a>
+            <a href="/en/coc.html" class="pseudo button icon-help-circled  ">Code of conduct</a>
+            <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">About Us</a>
+            <a href="https://2016.pycon.sk" class="pseudo button icon-help-circled external">2016</a>
+            <a href="https://2017.pycon.sk" class="pseudo button icon-help-circled external">2017</a>
+            
+            
+            <a href="/sk/sponsoring.html" title="Prepnúť na slovenský jazyk" hreflang="sk"><img src="/static/img/lang/sk.png" alt="slovenský jazyk">SK</a>
+            
+          </div>
         </nav>
         <main>
             
-<header class="hero">
+<div class="section" id="sponsoring">
     <div class="content">
-        <p class="logo"><img src="/static/logo/pycon_long_2018.svg" alt="PyCon SK 2018 logo'"></p>
-    </div>
-</header>
-<div id="content" class="visual flex">
-    <div class="content">
+        <div class="content-text">
+
         <h1>Why become a sponsor?</h1>
 
         <p class="lead">We need you — PyCon SK 2018 in Bratislava seeks for sponsors and partners!</p>
-
-        <div class="image text-center">
-            <img src="/static/pictures/pycon.jpg" alt="" class="img-responsive center-block">
-            <p class="image-caption"><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC</a> by <a href="https://www.tendenci.com/photos/1616/in/58/" target="_blank">Ed Schipul</a></p>
-        </div>
 
         <p class="text-justify">
         PyCon is annual gathering for the community using and developing the open-source Python programming language. The conference is completely organized by volunteers.
@@ -92,14 +83,14 @@
 
         <div>
             <span class="glyphicon glyphicon-send pull-left icon-large" aria-hidden="true"></span>
-            <h3>Marketing</h3>
+            <h3><i class="fa fa-line-chart" aria-hidden="true"></i> Marketing</h3>
             <p class="text-justify">
             Looking for new users for your product? Such people can be found at PyCon - they also will look for new products and ideas.
             </p>
         </div>
 
         <div>
-            <span class="glyphicon glyphicon-briefcase pull-left icon-large" aria-hidden="true"></span>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
             <h3>Recruitment</h3>
             <p class="text-justify">
             Are you looking for programmers? PyCon is the best place for meeting new talents. Many participants will be experienced developers looking for their next big career move.
@@ -108,7 +99,7 @@
 
         <div>
             <span class="glyphicon glyphicon-bullhorn pull-left icon-large" aria-hidden="true"></span>
-            <h3>Audience</h3>
+            <h3><i class="fa fa-bullhorn" aria-hidden="true"></i> Audience</h3>
             <p class="text-justify">
             Want to get your message across to the people, so they talk about you? PyCon is a great opportunity. People in the Python community like to discover and share new things.
             </p>
@@ -116,7 +107,7 @@
 
         <div>
             <span class="glyphicon glyphicon-grain pull-left icon-large" aria-hidden="true"></span>
-            <h3>Community</h3>
+            <h3><i class="fa fa-users" aria-hidden="true"></i> Community</h3>
             <p class="text-justify">
             Looking for new contributors and partners for your open source project? PyCon is the place, where they also will look for you.
             </p>
@@ -124,7 +115,7 @@
 
         <div>
             <span class="glyphicon glyphicon-heart-empty pull-left icon-large" aria-hidden="true"></span>
-            <h3>Support</h3>
+            <h3><i class="fa fa-heart-o" aria-hidden="true"></i> Support</h3>
             <p class="text-justify">
             Are you using Python in your company? Support for community events is excellent opportunity to contribute back.
             </p>
@@ -134,35 +125,39 @@
     </div>
 </div>
 
-        </main>
-        <footer class="hidden-print">
-            <div class="visual flex">
-                <div class="content">
-                    <hr />
-                    <ul class="list-unstyled">
-                        <li><a href="https://facebook.com/pyconsk" class="external">Facebook</a></li>
-                        <li><a href="https://twitter.com/pyconsk" class="external">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/company/spy-o--z-" class="external">LinkedIn</a></li>
-                        <li><a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts" class="external">Google+</a></li>
-                        <li><a href="https://github.com/pyconsk" class="external">GitHub</a></li>
-                        <li><a href="mailto:info%40pycon.sk" class="external"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@pycon.sk</a></li>
-                        <li class="pull-right">
-                            <a href="https://2016.pycon.sk/" class="external">PyCon SK 2016</a> -
-                            <a href="https://2017.pycon.sk/" class="external">PyCon SK 2017</a>
-                        </li>
-                    </ul>
-                    <span class="trademark">
-                        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> is a trademark for worldwide conference activities claimed by the <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a>.
-                        PyCon SK is organized by volunteers from <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>
-                    </span>
-
-                    <span class="trademark">
-                    Found a bug? Missing some information? This is community managed website, contribute at our <a href="https://github.com/pyconsk/2018.pycon.sk">GitHub</a>.
-                    <span/>
-                    
-                </div>
-            </div>
+        <footer>
+        <div class="footer">
+          <p class="socka">
+            &nbsp;<a href="https://facebook.com/pyconsk" class="external"><i class="fa fa-facebook" aria-hidden="true"></i>
+              <span class="hide-900">Facebook</span></a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="https://twitter.com/pyconsk" class="external"><i class="fa fa-twitter" aria-hidden="true"></i>
+              <span class="hide-900">Twitter</span></a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="https://www.linkedin.com/company/spy-o--z-" class="external"><i class="fa fa-linkedin" aria-hidden="true"></i>
+              <span class="hide-900">LinkedIn</span></a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts" class="external"><i class="fa fa-google-plus" aria-hidden="true"></i>
+              <span class="hide-900">Google+</span></a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="https://github.com/pyconsk" class="external"><i class="fa fa-github" aria-hidden="true"></i>
+              <span class="hide-900">GitHub</span></a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="mailto:info%40pycon.sk" class="external"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <span class="hide-900">info@pycon.sk</span></a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="https://riot.python.sk" class="external"><i class="fa fa-comments-o" aria-hidden="true"></i>
+              <span class="hide-900">riot.python.sk</span></a>
+          </p>
+          <p class="copyleft">
+            <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> is a trademark for worldwide conference activities claimed by the <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a>.
+            PyCon SK is organized by volunteers from <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>
+            <br />
+            Found a bug? Missing some information? This is community managed website, contribute at our <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>.
+            
+          </p>
         </footer>
+        </main>
         
         <script type="application/ld+json">
         {"@context": "http://schema.org", "@type": "Event", "endDate": "2016-03-11T18:00:00+01:00", "name": "PyCon SK 2018", "startDate": "2016-03-09T9:00:00+01:00", "url": "https://2018.pycon.sk/en/", "workPerformed": {"@type": "CreativeWork", "creator": {"@type": "Organization", "logo": "https://spy.python.sk/img/logo/spy-logo.png", "name": "SPy o.z.", "url": "https://spy.python.sk/"}, "name": "PyCon SK 2018"}}

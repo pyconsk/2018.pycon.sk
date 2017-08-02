@@ -1,16 +1,14 @@
 {% extends "body.html" %}
 {% block content %}
-<header class="hero">
+<div class="section" id="home">
     <div class="content">
-        <p class="logo"><img src="{{ url_for('static', filename='logo/pycon_long_2018.svg') }}" alt="{{ _('PyCon SK 2018 logo') }}'"></p>
-    </div>
-</header>
-<div id="content" class="visual flex">
-    <div class="content">
+        <div class="content-text">
+        <div class="hero"></div>
         <h1>{{ _('PyCon at Slovakia again.') }}</h1>
         <span>
             {{ _('PyCon SK is a community-organized conference for the Python programming language.<br /><strong>Third year</strong> will happen in <strong>March, 2018 in Bratislava</strong>.') }}
         </span>
+        </div>
     </div>
 </div>
 {% endblock %}

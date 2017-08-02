@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-02 10:03+0200\n"
+"POT-Creation-Date: 2017-08-02 18:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -32,67 +32,39 @@ msgid ""
 "language, which will be held in Bratislava on March, 2018."
 msgstr ""
 
-#: templates/body.html:37
+#: templates/body.html:40
 msgid "PyCon SK 2018"
 msgstr ""
 
-#: templates/body.html:39
-msgid "menu"
-msgstr ""
-
 #: templates/body.html:43
-msgid "Sponsoring"
-msgstr ""
-
-#: templates/body.html:45
-msgid "Code of conduct"
+msgid "menu"
 msgstr ""
 
 #: templates/body.html:47
 msgid "Venue"
 msgstr ""
 
+#: templates/body.html:48
+msgid "Sponsoring"
+msgstr ""
+
 #: templates/body.html:49
+msgid "Code of conduct"
+msgstr ""
+
+#: templates/body.html:50
 msgid "About Us"
 msgstr "O nás"
 
-#: templates/body.html:50
+#: templates/body.html:51
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:51
+#: templates/body.html:52
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:70
-msgid "Facebook"
-msgstr ""
-
-#: templates/body.html:71
-msgid "Twitter"
-msgstr ""
-
-#: templates/body.html:72
-msgid "LinkedIn"
-msgstr ""
-
-#: templates/body.html:73
-msgid "Google+"
-msgstr ""
-
-#: templates/body.html:74
-msgid "GitHub"
-msgstr ""
-
-#: templates/body.html:77
-msgid "PyCon SK 2016"
-msgstr ""
-
-#: templates/body.html:78
-msgid "PyCon SK 2017"
-msgstr ""
-
-#: templates/body.html:82
+#: templates/body.html:88
 msgid ""
 "<a href=\"https://www.python.org/psf/trademarks/pycon/\" "
 "target=\"_blank\" class=\"external\">PyCon™</a> is a trademark for "
@@ -101,30 +73,25 @@ msgid ""
 "class=\"external\">Python Software foundation</a>."
 msgstr ""
 
-#: templates/body.html:83
+#: templates/body.html:89
 msgid ""
 "PyCon SK is organized by volunteers from <a "
 "href=\"https://spy.python.sk\" target=\"_blank\" class=\"external\">SPy "
 "o.z.</a>"
 msgstr ""
 
-#: templates/body.html:87
+#: templates/body.html:91
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
-" contribute at our <a "
-"href=\"https://github.com/pyconsk/2018.pycon.sk\">GitHub</a>."
+" contribute at our <a href=\"https://github.com/pyconsk/2018.pycon.sk\" "
+"target=\"_blank\" class=\"external\">GitHub</a>."
 msgstr ""
 
-#: templates/coc.html:5 templates/index.html:5 templates/sponsoring.html:5
-#: templates/venue.html:5
-msgid "PyCon SK 2018 logo"
-msgstr ""
-
-#: templates/coc.html:10
+#: templates/coc.html:7
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/coc.html:11
+#: templates/coc.html:8
 msgid ""
 "The Python community is made up of members from around the globe with a "
 "diverse set of skills, personalities, and experiences. It is through "
@@ -141,15 +108,15 @@ msgstr ""
 "riadiť váš styk s ostatnými a snažiť sa udržať Python komunitu pozitívnu,"
 " úspešnú a rastúcu."
 
-#: templates/coc.html:13
+#: templates/coc.html:10
 msgid "A member of the Python community is:"
 msgstr "Člen Python komunity je:"
 
-#: templates/coc.html:15
+#: templates/coc.html:12
 msgid "Open"
 msgstr "Otvorený"
 
-#: templates/coc.html:16
+#: templates/coc.html:13
 msgid ""
 "Members of the community are open to collaboration, whether it's on PEPs,"
 " patches, problems, or otherwise. We're receptive to constructive "
@@ -167,11 +134,11 @@ msgstr ""
 "všetkých, ktorí sa chcú zúčastniť našich aktivít, podporujeme prostredie,"
 " kde sa môže ktokoľvek podieľať a každý ho môže zlepšiť."
 
-#: templates/coc.html:18
+#: templates/coc.html:15
 msgid "Considerate"
 msgstr "Ohľaduplný"
 
-#: templates/coc.html:19
+#: templates/coc.html:16
 msgid ""
 "Members of the community are considerate of their peers -- other Python "
 "users. We're thoughtful when addressing the efforts of others, keeping in"
@@ -185,11 +152,11 @@ msgstr ""
 "vyjadreniach, či už osobne alebo on-line, a sme taktní, keď príde na "
 "rozdielne názory."
 
-#: templates/coc.html:21
+#: templates/coc.html:18
 msgid "Respectful"
 msgstr "Úctivý"
 
-#: templates/coc.html:22
+#: templates/coc.html:19
 msgid ""
 "Members of the community are respectful. We're respectful of others, "
 "their positions, their skills, their commitments, and their efforts. "
@@ -204,7 +171,7 @@ msgstr ""
 " využívame ich pri práci. Keď nesúhlasíme, sme zdvorilí pri adresovaní "
 "našich problémov."
 
-#: templates/coc.html:24
+#: templates/coc.html:21
 msgid ""
 "Overall, we're good to each other. We contribute to this community not "
 "because we have to, but because we want to. If we remember that, these "
@@ -214,11 +181,11 @@ msgstr ""
 "preto, že musíme, ale preto, že chceme. Ak si to uvedomíme, tak nám tieto"
 " pokyny prídu prirodzené."
 
-#: templates/coc.html:26
+#: templates/coc.html:23
 msgid "Slovak Python Community"
 msgstr "Slovenská Python komunita"
 
-#: templates/coc.html:27
+#: templates/coc.html:24
 msgid ""
 "PyCon SK and Python Meetup fully identify with the Code of Conduct of the"
 " Python community. We create an environment, which is open to everyone, "
@@ -233,7 +200,7 @@ msgstr ""
 "komunikácia by mala byť úctivá a na profesionálnej úrovni. Buďme k sebe "
 "navzájom tolerantní."
 
-#: templates/coc.html:29
+#: templates/coc.html:26
 msgid ""
 "We do not offend, vilify other members. We behave professionally. "
 "Harassment, sexist, racist or otherwise demeaning jokes are improper at "
@@ -245,34 +212,26 @@ msgstr ""
 "nevhodné na našom stretnutí. Nebudeme tolerovať obťažovanie účastníkov "
 "stretnutia v akejkoľvek forme."
 
-#: templates/index.html:10
+#: templates/index.html:7
 msgid "PyCon at Slovakia again."
 msgstr "PyCon opäť na Slovensku."
 
-#: templates/index.html:12
+#: templates/index.html:9
 msgid ""
 "PyCon SK is a community-organized conference for the Python programming "
 "language.<br /><strong>Third year</strong> will happen in <strong>March, "
 "2018 in Bratislava</strong>."
 msgstr ""
 
-#: templates/sponsoring.html:10
+#: templates/sponsoring.html:7
 msgid "Why become a sponsor?"
 msgstr "Prečo sa stať sponzorom?"
 
-#: templates/sponsoring.html:12
+#: templates/sponsoring.html:9
 msgid "We need you — PyCon SK 2018 in Bratislava seeks for sponsors and partners!"
 msgstr "Potrebujeme vás — PyCon SK 2018 v Bratislave hľadá sponzorov a partnerov!"
 
-#: templates/sponsoring.html:16
-msgid ""
-"<a href=\"https://creativecommons.org/licenses/by/3.0/\" "
-"target=\"_blank\">CC</a> by <a "
-"href=\"https://www.tendenci.com/photos/1616/in/58/\" target=\"_blank\">Ed"
-" Schipul</a>"
-msgstr ""
-
-#: templates/sponsoring.html:20
+#: templates/sponsoring.html:12
 msgid ""
 "PyCon is annual gathering for the community using and developing the "
 "open-source Python programming language. The conference is completely "
@@ -282,15 +241,16 @@ msgstr ""
 "vyvíjajú open source programovací jazyk Python. Konferencia je kompletne "
 "organizovaná dobrovoľníkmi."
 
-#: templates/sponsoring.html:24
+#: templates/sponsoring.html:16
 msgid ""
 "The members of the Python community organize a PyCon conference in their "
 "home countries regularly, PyCon in Slovakia will be for the third time."
 msgstr ""
 "Členovia Python komunity organizujú PyCon konferencie vo svojich "
-"domovských krajinách pravidelne, PyCon bude na Slovensku už po tretí krát."
+"domovských krajinách pravidelne, PyCon bude na Slovensku už po tretí "
+"krát."
 
-#: templates/sponsoring.html:28
+#: templates/sponsoring.html:20
 msgid ""
 "To ensure high-quality speakers and keep the tickets price available for "
 "everyone we need you, the sponsors, who allow the conference take place."
@@ -299,7 +259,7 @@ msgstr ""
 "vstupeniek dostupnú pre každého, potrebujeme vás, sponzorov, ktorí "
 "umožnia túto konferenciu uskutočniť."
 
-#: templates/sponsoring.html:32
+#: templates/sponsoring.html:24
 msgid ""
 "Do not hesitate to contact us. We are flexible and willing to work with "
 "you to design a sponsorship package that is going to meet your business "
@@ -309,11 +269,11 @@ msgstr ""
 "spolupracovať a navrhnúť s vami balíček sponzorstva, ktorý splní vaše "
 "obchodné potreby."
 
-#: templates/sponsoring.html:38
+#: templates/sponsoring.html:30
 msgid "Marketing"
 msgstr "Marketing"
 
-#: templates/sponsoring.html:40
+#: templates/sponsoring.html:32
 msgid ""
 "Looking for new users for your product? Such people can be found at PyCon"
 " - they also will look for new products and ideas."
@@ -321,11 +281,11 @@ msgstr ""
 "Hľadáte nových používateľov pre váš produkt? Takých ľudí nájdete na "
 "PyCone - aj oni budú hľadať nové produkty a nápady."
 
-#: templates/sponsoring.html:46
+#: templates/sponsoring.html:38
 msgid "Recruitment"
 msgstr "Nábor"
 
-#: templates/sponsoring.html:48
+#: templates/sponsoring.html:40
 msgid ""
 "Are you looking for programmers? PyCon is the best place for meeting new "
 "talents. Many participants will be experienced developers looking for "
@@ -335,11 +295,11 @@ msgstr ""
 " talentov. Mnohí účastníci budú skúsení vývojári, ktorí hľadajú svoj "
 "ďalší veľký kariérny krok."
 
-#: templates/sponsoring.html:54
+#: templates/sponsoring.html:46
 msgid "Audience"
 msgstr "Publikum"
 
-#: templates/sponsoring.html:56
+#: templates/sponsoring.html:48
 msgid ""
 "Want to get your message across to the people, so they talk about you? "
 "PyCon is a great opportunity. People in the Python community like to "
@@ -349,11 +309,11 @@ msgstr ""
 " na to skvelá príležitosť. Ľudia v Python komunite radi objavujú a "
 "zdieľajú nové veci."
 
-#: templates/sponsoring.html:62
+#: templates/sponsoring.html:54
 msgid "Community"
 msgstr "Komunita"
 
-#: templates/sponsoring.html:64
+#: templates/sponsoring.html:56
 msgid ""
 "Looking for new contributors and partners for your open source project? "
 "PyCon is the place, where they also will look for you."
@@ -361,11 +321,11 @@ msgstr ""
 "Hľadáte nových prispievateľov a partnerov pre váš open source projekt? "
 "PyCon je miesto, kde aj oni budú hľadať vás."
 
-#: templates/sponsoring.html:70
+#: templates/sponsoring.html:62
 msgid "Support"
 msgstr "Podpora"
 
-#: templates/sponsoring.html:72
+#: templates/sponsoring.html:64
 msgid ""
 "Are you using Python in your company? Support for community events is "
 "excellent opportunity to contribute back."
@@ -373,24 +333,15 @@ msgstr ""
 "Používate vo vašej firme Python? Podpora komunitných udalostí je výborná "
 "príležitosť ako prispieť späť."
 
-#: templates/venue.html:10
+#: templates/venue.html:7
 msgid "How to get there"
 msgstr ""
 
-#: templates/venue.html:12
+#: templates/venue.html:9
 msgid ""
 "We are looking for the best venue for Pycon at the moment. Suggestions "
 "are always welcomed at <a "
 "href=\"mailto:info@pycon.sk\">info@pycon.sk</a><br /><strong>Third "
 "year</strong> will happen in <strong>March, 2018 in Bratislava</strong>."
 msgstr ""
-
-#~ msgid ""
-#~ "The members of the Python community "
-#~ "organize a PyCon conference in their "
-#~ "home countries regularly, but in "
-#~ "Slovakia there was no official PyCon "
-#~ "organized yet. So we have decided "
-#~ "to change it."
-#~ msgstr ""
 

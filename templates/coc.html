@@ -1,12 +1,9 @@
 {% extends "body.html" %}
 {% block content %}
-<header class="hero">
+<div class="section" id="coc">
     <div class="content">
-        <p class="logo"><img src="{{ url_for('static', filename='logo/pycon_long_2018.svg') }}" alt="{{ _('PyCon SK 2018 logo') }}'"></p>
-    </div>
-</header>
-<div id="content" class="visual flex">
-    <div class="content">
+        <div class="content-text">
+
         <h1>{{ _('Code of Conduct') }}</h1>
         <p>{{ _('The Python community is made up of members from around the globe with a diverse set of skills, personalities, and experiences. It is through these differences that our community experiences great successes and continued growth. When you\'re working with members of the community, we encourage you to follow these guidelines which help steer our interactions and strive to keep Python a positive, successful, and growing community.') }}</p>
 
@@ -28,6 +25,7 @@
 
         <p>{{ _('We do not offend, vilify other members. We behave professionally. Harassment, sexist, racist or otherwise demeaning jokes are improper at our meetings. We will not tolerate any harassment of participants of meetups in any form.') }}</p>
 
+        </div>
     </div>
 </div>
 {% endblock %}

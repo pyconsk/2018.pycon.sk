@@ -1,80 +1,184 @@
-html, body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    box-sizing: border-box;
-    height: 100%;
+html, body, main, .section {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: block;
+  background-color: white;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-    display: block;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    transition: height 999999s;
-    text-align: center;
-    min-height: 300px;
-    color: #333;
-    padding: 1px 0;
-    background: #FFFFFF url("../pictures/hall.jpg") no-repeat 50% center scroll;
-    background-size: cover;
+nav {
+  height: 2.5em;
+  box-shadow: 0px 0px 15px black;
 }
 
 .logo {
-    background: #FFFFFF;
-    position: absolute;
-    width: 45%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 1);
+  float: left;
+  margin-top: 1px;
 }
 
-.visual {
-    text-align: left;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 10px 0 0;
+.hero {
+  background: url("/static/img/logo/pycon_long_2018.png");
+  background: url("/static/img/logo/pycon_long_2018.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 22em;
 }
 
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
+.section {
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow:scroll;
 }
 
-.pull-right {
-    float: right;
+.section#home {
+  background-image: url('/static/img/backgrounds/people.jpg');
+  background-attachment: fixed;
 }
 
-footer hr {
-    color: #eee;
+.section#venue {
+  background-image: url('/static/img/backgrounds/fiit.jpg');
+  background-attachment: fixed;
 }
 
-footer li {
-    float: left;
-    margin-right: 1.5em;
-    font-size: medium;
+.section#sponsoring {
+  background-image: url('/static/img/backgrounds/bag.jpg');
+  background-attachment: fixed;
 }
 
-footer .trademark {
-    float: left;
-    font-size: small;
+.section#coc {
+  background-image: url('/static/img/backgrounds/snake.jpg');
+  background-attachment: fixed;
+}
+
+.content {
+  position: relative;
+}
+
+.content-text {
+  border: 1px solid #888;
+  text-align: justify;
+  width: 75%;
+  margin: 4em auto;
+  background-color: rgba(255,255,255,0.80);
+  color: #000;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+
+.avatar {
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid #888;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #888;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.90);
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.footer .copyleft {
+  font-size: small;
+}
+
+@media (max-width: 60em) {
+  .content-text {
+    width: 80%;
+  }
+  .content {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 30em), (max-height: 35em) {
+  footer {
+    position: static;
+  }
+  .content {
+    position: static;
+    min-height: 100vh;
+  }
+  .section {
+    height: auto;
+  }
 }
 
 @media (max-width: 900px) {
-    .hero {
-        position: relative;
-        width: 100%;
-        height: 70vh;
-        transition: height 999999s;
-        text-align: center;
-        min-height: 300px;
-        color: #333;
-        padding: 1px 0;
-        background: #FFFFFF url("../pictures/hall-small.jpg") no-repeat 50% center scroll;
-        background-size: cover;
-    }
+  .section#home {
+    background-image: url('/static/img/backgrounds/people_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#venue {
+    background-image: url('/static/img/backgrounds/fiit_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#sponsoring {
+    background-image: url('/static/img/backgrounds/bag_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#coc {
+    background-image: url('/static/img/backgrounds/snake_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .hide-900 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .section#home {
+    background-image: url('/static/img/backgrounds/people_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#venue {
+    background-image: url('/static/img/backgrounds/fiit_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#sponsoring {
+    background-image: url('/static/img/backgrounds/bag_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#coc {
+    background-image: url('/static/img/backgrounds/snake_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .hide-500 {
+    display: none;
+  }
 }
