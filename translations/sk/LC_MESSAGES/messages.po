@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-02 18:13+0200\n"
+"POT-Creation-Date: 2017-08-02 18:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:8
-msgid "PyCon SK 2018 website"
-msgstr ""
+msgid "Official PyCon SK 2018 website"
+msgstr "Oficialna stránka PyCon SK 2018"
 
 #: templates/body.html:12 templates/body.html:17
 msgid "PyCon SK 2018, Bratislava"
@@ -31,6 +31,8 @@ msgid ""
 "PyCon SK is a community-organized conference for the Python programming "
 "language, which will be held in Bratislava on March, 2018."
 msgstr ""
+"PyCon SK je komunitou organizovaná konferencia pre programovací jazyk "
+"Pythonktorá sa bude konať v Bratislave v marci 2018."
 
 #: templates/body.html:40
 msgid "PyCon SK 2018"
@@ -42,15 +44,15 @@ msgstr ""
 
 #: templates/body.html:47
 msgid "Venue"
-msgstr ""
+msgstr "Miesto konania"
 
 #: templates/body.html:48
 msgid "Sponsoring"
-msgstr ""
+msgstr "Sponzorovanie"
 
-#: templates/body.html:49
-msgid "Code of conduct"
-msgstr ""
+#: templates/body.html:49 templates/coc.html:7
+msgid "Code of Conduct"
+msgstr "Kódex správania"
 
 #: templates/body.html:50
 msgid "About Us"
@@ -86,10 +88,10 @@ msgid ""
 " contribute at our <a href=\"https://github.com/pyconsk/2018.pycon.sk\" "
 "target=\"_blank\" class=\"external\">GitHub</a>."
 msgstr ""
-
-#: templates/coc.html:7
-msgid "Code of Conduct"
-msgstr ""
+"Našli ste  chybu? Chýba Vám nejaká informácia? Toto je komunitou "
+"manažovaná webstránka, prispejte na našom <a "
+"href=\"https://github.com/pyconsk/2018.pycon.sk\" target=\"_blank\" "
+"class=\"external\">GitHube</a>."
 
 #: templates/coc.html:8
 msgid ""
@@ -335,7 +337,7 @@ msgstr ""
 
 #: templates/venue.html:7
 msgid "How to get there"
-msgstr ""
+msgstr "Ako sa tam dostať"
 
 #: templates/venue.html:9
 msgid ""
@@ -344,4 +346,3 @@ msgid ""
 "href=\"mailto:info@pycon.sk\">info@pycon.sk</a><br /><strong>Third "
 "year</strong> will happen in <strong>March, 2018 in Bratislava</strong>."
 msgstr ""
-

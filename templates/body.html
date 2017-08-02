@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
-        <meta name="description" content="{{ _('PyCon SK 2018 website') }}">
+        <meta name="description" content="{{ _('Official PyCon SK 2018 website') }}">
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png" />
         <meta property="og:url" content="https://2018.pycon.sk/" />
@@ -20,7 +20,7 @@
         <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png" />
         <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM" />
         <link rel="stylesheet" href="{{ url_for('static', filename='css/picnic.min.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/pyconsk.css') }}?v=2">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pyconsk.min.css') }}?v=3">
         <link rel="stylesheet" href="{{ url_for('static', filename='third-party/font-awesome-4.7.0/css/font-awesome.min.css') }}">
         <link rel="icon" href="{{ url_for('static', filename='img/logo/favicon.ico') }}" sizes="16x16">
         {% block header %}{% endblock %}
@@ -40,21 +40,19 @@
           <a href="{{ url_for('index', lang_code=lang_code) }}" class="brand">{{ _('PyCon SK 2018') }}</a>
           <!-- responsive-->
           <input id="bmenub" type="checkbox" class="show">
-          <label for="bmenub" class="burger pseudo button" id="menu">{{ _('menu') }}</label>
+          <label for="bmenub" class="burger pseudo button" id="menu">&#8801;</label>
 
           <div class="menu">
             {% block navbar %}
             <a href="{{ url_for('venue', lang_code=lang_code) }}" class="pseudo button icon-help-circled {{ li_venue }}">{{ _('Venue') }}</a>
             <a href="{{ url_for('sponsoring', lang_code=lang_code) }}" class="pseudo button icon-help-circled {{ li_sponsoring }} ">{{ _('Sponsoring') }}</a>
-            <a href="{{ url_for('coc', lang_code=lang_code) }}" class="pseudo button icon-help-circled {{ li_coc }} ">{{ _('Code of conduct') }}</a>
+            <a href="{{ url_for('coc', lang_code=lang_code) }}" class="pseudo button icon-help-circled {{ li_coc }} ">{{ _('Code of Conduct') }}</a>
             <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">{{ _('About Us') }}</a>
-            <a href="https://2016.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2016') }}</a>
-            <a href="https://2017.pycon.sk" class="pseudo button icon-help-circled external">{{ _('2017') }}</a>
             {% endblock %}
             {% if lang_code == 'sk' %}
-            <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" title="Switch to english language" hreflang="en"><img src="{{ url_for('static', filename='img/lang/uk.png') }}" alt="english language">EN</a>
+            <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" title="Switch to english language" hreflang="en"><img src="{{ url_for('static', filename='img/lang/uk.png') }}" alt="english language"></a>
             {% else %}
-            <a href="{{ request.path|replace('/'+lang_code, '/sk', 1) }}" title="Prepnúť na slovenský jazyk" hreflang="sk"><img src="{{ url_for('static', filename='img/lang/sk.png') }}" alt="slovenský jazyk">SK</a>
+            <a href="{{ request.path|replace('/'+lang_code, '/sk', 1) }}" title="Prepnúť na slovenský jazyk" hreflang="sk"><img src="{{ url_for('static', filename='img/lang/sk.png') }}" alt="slovenský jazyk"></a>
             {% endif %}
           </div>
         </nav>
@@ -82,7 +80,12 @@
               <span class="hide-900">info@pycon.sk</span></a>&nbsp;
             <span> | </span>
             &nbsp;<a href="https://riot.python.sk" class="external"><i class="fa fa-comments-o" aria-hidden="true"></i>
-              <span class="hide-900">riot.python.sk</span></a>
+              <span class="hide-900">riot.python.sk</span></a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="https://2016.pycon.sk" class="external">{{ _('2016') }}</a>&nbsp;
+            <span> | </span>
+            &nbsp;<a href="https://2017.pycon.sk" class="external">{{ _('2017') }}</a>
+
           </p>
           <p class="copyleft">
             {{ _('<a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> is a trademark for worldwide conference activities claimed by the <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a>.') }}

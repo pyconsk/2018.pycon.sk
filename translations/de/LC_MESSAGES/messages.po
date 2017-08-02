@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-02 18:13+0200\n"
+"POT-Creation-Date: 2017-08-02 18:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:8
-msgid "PyCon SK 2018 website"
+msgid "Official PyCon SK 2018 website"
 msgstr ""
 
 #: templates/body.html:12 templates/body.html:17
@@ -49,8 +49,8 @@ msgstr ""
 msgid "Sponsoring"
 msgstr ""
 
-#: templates/body.html:49
-msgid "Code of conduct"
+#: templates/body.html:49 templates/coc.html:7
+msgid "Code of Conduct"
 msgstr ""
 
 #: templates/body.html:50
@@ -86,10 +86,6 @@ msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our <a href=\"https://github.com/pyconsk/2018.pycon.sk\" "
 "target=\"_blank\" class=\"external\">GitHub</a>."
-msgstr ""
-
-#: templates/coc.html:7
-msgid "Code of Conduct"
 msgstr ""
 
 #: templates/coc.html:8
@@ -284,4 +280,3 @@ msgid ""
 "href=\"mailto:info@pycon.sk\">info@pycon.sk</a><br /><strong>Third "
 "year</strong> will happen in <strong>March, 2018 in Bratislava</strong>."
 msgstr ""
-

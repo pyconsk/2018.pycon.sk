@@ -28,6 +28,11 @@ nav {
   height: 22em;
 }
 
+.lead {
+  font-style: italic;
+  font-size: x-large;
+}
+
 .section {
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -50,7 +55,7 @@ nav {
 }
 
 .section#sponsoring {
-  background-image: url('/static/img/backgrounds/bag.jpg');
+  background-image: url('/static/img/backgrounds/stairway.jpg');
   background-attachment: fixed;
 }
 
@@ -67,13 +72,25 @@ nav {
   border: 1px solid #888;
   text-align: justify;
   width: 75%;
-  margin: 4em auto;
+  margin: 6em auto;
   background-color: rgba(255,255,255,0.80);
   color: #000;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.box {
+  padding: 0 10px;
 }
 
 .avatar {
@@ -143,7 +160,7 @@ footer {
   }
 
   .section#sponsoring {
-    background-image: url('/static/img/backgrounds/bag_medium.jpg');
+    background-image: url('/static/img/backgrounds/stairway_medium.jpg');
     background-attachment: fixed;
   }
 
@@ -169,7 +186,7 @@ footer {
   }
 
   .section#sponsoring {
-    background-image: url('/static/img/backgrounds/bag_small.jpg');
+    background-image: url('/static/img/backgrounds/stairway_small.jpg');
     background-attachment: fixed;
   }
 
