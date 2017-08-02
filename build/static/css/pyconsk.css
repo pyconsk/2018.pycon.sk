@@ -1,0 +1,80 @@
+html, body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    transition: height 999999s;
+    text-align: center;
+    min-height: 300px;
+    color: #333;
+    padding: 1px 0;
+    background: #FFFFFF url("../pictures/hall.jpg") no-repeat 50% center scroll;
+    background-size: cover;
+}
+
+.logo {
+    background: #FFFFFF;
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 1);
+}
+
+.visual {
+    text-align: left;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0 0;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.pull-right {
+    float: right;
+}
+
+footer hr {
+    color: #eee;
+}
+
+footer li {
+    float: left;
+    margin-right: 1.5em;
+    font-size: medium;
+}
+
+footer .trademark {
+    float: left;
+    font-size: small;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        transition: height 999999s;
+        text-align: center;
+        min-height: 300px;
+        color: #333;
+        padding: 1px 0;
+        background: #FFFFFF url("../pictures/hall-small.jpg") no-repeat 50% center scroll;
+        background-size: cover;
+    }
+}

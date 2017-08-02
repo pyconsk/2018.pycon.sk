@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-01 20:11+0200\n"
+"POT-Creation-Date: 2017-08-02 09:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -33,59 +33,67 @@ msgid ""
 "language, which will be held in Bratislava on March, 2018."
 msgstr ""
 
-#: templates/body.html:36
+#: templates/body.html:37
 msgid "PyCon SK 2018"
 msgstr ""
 
-#: templates/body.html:38
+#: templates/body.html:39
 msgid "menu"
 msgstr ""
 
 #: templates/body.html:43
-msgid "Venue"
-msgstr ""
-
-#: templates/body.html:44
-msgid "About Us"
+msgid "Sponsoring"
 msgstr ""
 
 #: templates/body.html:45
+msgid "Code of conduct"
+msgstr ""
+
+#: templates/body.html:47
+msgid "Venue"
+msgstr ""
+
+#: templates/body.html:49
+msgid "About Us"
+msgstr ""
+
+#: templates/body.html:50
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:46
+#: templates/body.html:51
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:65
+#: templates/body.html:70
 msgid "Facebook"
 msgstr ""
 
-#: templates/body.html:66
+#: templates/body.html:71
 msgid "Twitter"
 msgstr ""
 
-#: templates/body.html:67
+#: templates/body.html:72
 msgid "LinkedIn"
 msgstr ""
 
-#: templates/body.html:68
+#: templates/body.html:73
 msgid "Google+"
 msgstr ""
 
-#: templates/body.html:69
+#: templates/body.html:74
 msgid "GitHub"
 msgstr ""
 
-#: templates/body.html:72
+#: templates/body.html:77
 msgid "PyCon SK 2016"
 msgstr ""
 
-#: templates/body.html:73
+#: templates/body.html:78
 msgid "PyCon SK 2017"
 msgstr ""
 
-#: templates/body.html:77
+#: templates/body.html:82
 msgid ""
 "<a href=\"https://www.python.org/psf/trademarks/pycon/\" "
 "target=\"_blank\" class=\"external\">PyCon™</a> is a trademark for "
@@ -94,14 +102,14 @@ msgid ""
 "class=\"external\">Python Software foundation</a>."
 msgstr ""
 
-#: templates/body.html:78
+#: templates/body.html:83
 msgid ""
 "PyCon SK is organized by volunteers from <a "
 "href=\"https://spy.python.sk\" target=\"_blank\" class=\"external\">SPy "
 "o.z.</a>"
 msgstr ""
 
-#: templates/body.html:82
+#: templates/body.html:87
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our <a "

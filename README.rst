@@ -13,10 +13,9 @@ Contributions are welcome. If you found a bug please open an issue at our GitHub
 Project structure
 -----------------
 
-**2 branches**:
+**1 branch**:
 
 - ``master`` - the `Flask <http://flask.pocoo.org/>`_ app, templates, static files, translations (make your changes here)
-- ``live`` - static HTML, build generated from Flask app by `Frozen-Flask <https://pythonhosted.org/Frozen-Flask/>`_ into ``live`` branch (**do NOT edit anything in here** changes will be overwritten).
 
 
 Installation
@@ -33,7 +32,7 @@ Installation
     source envs3/bin/activate
     pip install -r requirements.txt --no-use-wheel
 
-- start flask server, and you can view it in browser (http://127.0.0.1:5000)::
+- start flask server, and you can view it in browser (http://127.0.0.1:5000/en/index.html)::
 
     python views.py
 
@@ -59,7 +58,7 @@ Translations are made with `Flask-Babel <https://pythonhosted.org/Flask-Babel/>`
 Generate static site
 --------------------
 
-Frozen-Flask freezes a Flask application into a set of static files. The result can be hosted without any server-side software other than a traditional web server.
+`Frozen-Flask <https://pythonhosted.org/Frozen-Flask/>`_ freezes a Flask application into a set of static files. The result can be hosted without any server-side software other than a traditional web server.
 
 - generate static files, and you can find them in ``build`` directory::
 
@@ -74,7 +73,7 @@ Frozen-Flask freezes a Flask application into a set of static files. The result 
 Continuous Deployment
 ---------------------
 
-Anything committed to live branch will be automatically deployed on live server. Live branch have to contain only generated static site from build directory.
+Anything committed to master branch will be automatically deployed on live server. Live site contain only generated static site in ``build`` directory.
 
 
 Links
