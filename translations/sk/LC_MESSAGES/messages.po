@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-03 16:00+0200\n"
+"POT-Creation-Date: 2017-08-03 16:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -77,21 +77,21 @@ msgstr "Python Software foundation"
 
 #: templates/body.html:106
 #, python-format
-msgid "PyCon SK is organized by volunteers from %(spy)s"
-msgstr "PyCon SK je organizovaný dobrovoľníkmi z %(spy)s"
+msgid "PyCon SK is organized by volunteers from %(spy)s."
+msgstr "PyCon SK je organizovaný dobrovoľníkmi z %(spy)s."
 
 #: templates/body.html:107
 msgid "SPy o.z."
 msgstr "SPy o.z."
 
-#: templates/body.html:109
+#: templates/body.html:109 templates/index.html:16
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
-" contribute at our %(github)s"
+" contribute at our %(github)s."
 msgstr ""
 "Našli ste  chybu? Chýba Vám nejaká informácia? Toto je komunitou "
-"manažovaná webstránka, prispejte na našom %(github)s"
+"manažovaná webstránka, prispejte na našom %(github)se."
 
 #: templates/coc.html:8
 msgid ""
@@ -218,21 +218,21 @@ msgstr ""
 msgid "PyCon will be back at Slovakia in 2018 again."
 msgstr "PyCon bude v roku 2018 opäť na Slovensku."
 
-#: templates/index.html:9
-msgid ""
-"PyCon SK is a community-organized conference for the Python programming "
-"language."
-msgstr ""
-"PyCon SK je komunitou organizovaná konferencia pre programovací jazyk "
-"Python."
-
-#: templates/index.html:10 templates/venue.html:13
+#: templates/index.html:8 templates/venue.html:15
 msgid ""
 "<strong>Third year</strong> will happen in <strong>March, 2018 in "
 "Bratislava</strong>."
 msgstr ""
 "<strong>Tretí</strong> ročník sa uskutoční v <strong>marci, 2018 v "
 "Bratislave</strong>."
+
+#: templates/index.html:11
+msgid ""
+"PyCon SK is a community-organized conference for the Python programming "
+"language."
+msgstr ""
+"PyCon SK je komunitou organizovaná konferencia pre programovací jazyk "
+"Python."
 
 #: templates/sponsoring.html:6
 msgid "Why become a sponsor?"
@@ -352,7 +352,7 @@ msgstr "Ako sa tam dostať"
 msgid "We are looking for the best venue for PyCon SK at the moment."
 msgstr "Práve hľadáme najlepší možný priestor pre PyCon SK."
 
-#: templates/venue.html:10
+#: templates/venue.html:11
 #, python-format
 msgid "Suggestions are always welcomed at %(email)s."
 msgstr "Vaše návrhy radi uvítame na %(email)s."

@@ -7,7 +7,9 @@
         <p class="lead">{{ _('We are looking for the best venue for PyCon SK at the moment.') }}</p>
 
         <p class="text-justify">
+          {% autoescape off %}
           {{ _('Suggestions are always welcomed at %(email)s.', email = '<a href="mailto:info@pycon.sk">info@pycon.sk</a>') }}
+          {% endautoescape %}
         </p>
         <p class="text-justify">
           {{ _('<strong>Third year</strong> will happen in <strong>March, 2018 in Bratislava</strong>.') }}

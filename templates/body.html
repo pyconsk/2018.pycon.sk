@@ -103,11 +103,11 @@
         {{ _('%(pycontm)s is a trademark for worldwide conference activities claimed by the %(psf)s.',
                   pycontm = '<a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a>',
                   psf = '<a href="https://www.python.org/psf-landing/" target="_blank" class="external">%s</a>' % _('Python Software foundation')) }}
-        {{ _('PyCon SK is organized by volunteers from %(spy)s',
+        {{ _('PyCon SK is organized by volunteers from %(spy)s.',
                   spy = '<a href="https://spy.python.sk" target="_blank" class="external">%s</a>' % _('SPy o.z.')) }}
         <br/>
-        {{ _('Found a bug? Missing some information? This is community managed website, contribute at our %(github)s',
-                  github = '<a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>.') }}
+        {{ _('Found a bug? Missing some information? This is community managed website, contribute at our %(github)s.',
+                  github = '<a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>') }}
         {% endautoescape %}
         {% block footer %}{% endblock %}
       </p>
