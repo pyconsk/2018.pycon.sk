@@ -83,8 +83,15 @@ def index():
       "@context": "http://schema.org",
       "@type": "Event",
       "name": u"PyCon SK 2018",
-      "startDate": "2016-03-09T9:00:00+01:00",
-      "endDate": "2016-03-11T18:00:00+01:00",
+      "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for "
+                     "the Python programming language.",
+      "startDate": "2018-03-09T9:00:00+01:00",
+      "endDate": "2018-03-11T18:00:00+01:00",
+      "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg",
+      "location": {
+        "@type": "Place",
+        "name": "Bratislava"
+      },
       "url": "https://2018.pycon.sk/" + lang + "/",
       "workPerformed": {
         "@type": "CreativeWork",
@@ -107,8 +114,15 @@ def coc():
       "@context": "http://schema.org",
       "@type": "Event",
       "name": u"PyCon SK 2018",
-      "startDate": "2016-03-09T9:00:00+01:00",
-      "endDate": "2016-03-11T18:00:00+01:00",
+      "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for "
+                     "the Python programming language.",
+      "startDate": "2018-03-09T9:00:00+01:00",
+      "endDate": "2018-03-11T18:00:00+01:00",
+      "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg",
+      "location": {
+        "@type": "Place",
+        "name": "Bratislava"
+      },
       "url": "https://2018.pycon.sk/" + lang + "/",
       "workPerformed": {
         "@type": "CreativeWork",
@@ -130,8 +144,15 @@ def venue():
       "@context": "http://schema.org",
       "@type": "Event",
       "name": u"PyCon SK 2018",
-      "startDate": "2016-03-09T9:00:00+01:00",
-      "endDate": "2016-03-11T18:00:00+01:00",
+      "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for "
+                     "the Python programming language.",
+      "startDate": "2018-03-09T9:00:00+01:00",
+      "endDate": "2018-03-11T18:00:00+01:00",
+      "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg",
+      "location": {
+        "@type": "Place",
+        "name": "Bratislava"
+      },
       "url": "https://2018.pycon.sk/" + lang + "/",
       "workPerformed": {
         "@type": "CreativeWork",
@@ -154,8 +175,15 @@ def sponsoring():
       "@context": "http://schema.org",
       "@type": "Event",
       "name": u"PyCon SK 2018",
-      "startDate": "2016-03-09T9:00:00+01:00",
-      "endDate": "2016-03-11T18:00:00+01:00",
+      "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for "
+                     "the Python programming language.",
+      "startDate": "2018-03-09T9:00:00+01:00",
+      "endDate": "2018-03-11T18:00:00+01:00",
+      "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg",
+      "location": {
+        "@type": "Place",
+        "name": "Bratislava"
+      },
       "url": "https://2018.pycon.sk/" + lang + "/",
       "workPerformed": {
         "@type": "CreativeWork",
