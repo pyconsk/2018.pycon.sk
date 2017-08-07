@@ -1,20 +1,80 @@
 {% extends "body.html" %}
 {% block content %}
-  <div class="section" id="venue">
-    <div class="content">
-      <div class="content-text">
-        <h1>{{ _('How to get there') }}</h1>
-        <p class="lead">{{ _('We are looking for the best venue for PyCon SK at the moment.') }}</p>
+<div class="section" id="venue">
+  <div class="content">
+    <div class="content-text">
+      <h1>{{ _('How to get there') }}</h1>
+      <p class="lead">{{ _('We are looking for the best venue for PyCon SK at the moment.') }} {{ _('This page explains possibilities how to get to Bratislava.') }}</p>
 
-        <p class="text-justify">
-          {% autoescape off %}
-          {{ _('Suggestions are always welcomed at %(email)s.', email = '<a href="mailto:info@pycon.sk">info@pycon.sk</a>') }}
-          {% endautoescape %}
-        </p>
-        <p class="text-justify">
-          {{ _('<strong>Third year</strong> will happen in <strong>March, 2018 in Bratislava</strong>.') }}
-        </p>
+      <p class="text-justify">
+        {{ _('<strong>Third year</strong> will happen in <strong>March, 2018 in Bratislava</strong>.') }}
+      </p>
+      <p class="text-justify">
+        {% autoescape off %}
+        {{ _('Suggestions are always welcomed at %(email)s.', email = '<a href="mailto:info@pycon.sk">info@pycon.sk</a>') }}
+        {% endautoescape %}
+      </p>
+
+      <h2>{{ _('Travelling to Bratislava') }}</h2>
+      <p class="text-justify">
+        {{ _('Bratislava is one of the youngest major cities in Europe. Nevertheless, it has a rich history of a free royal coronation town. At that time, it was still called the Pressburg (Prešpork). Today, Bratislava is a major transport hub in Central Europe, and there are plenty of possibilities of getting here.') }}
+      </p>
+
+      <div class="flex one two-900">
+        <div class="box">
+          <h3><i class="fa fa-plane fa-2x" aria-hidden="true"></i> {{ _('By air') }}</h3>
+          <p class="text-justify">
+            {{ _('If you are travelling to Bratislava, you can fly to the Bratislava airport (airport code: BTS) or the Vienna airport (airport code: VIE). The selection of flights to Vienna is better than to Bratislava.') }}
+          </p>
+          <p class="text-justify">
+            {{ _('There are shuttle buses running between Bratislava and Vienna airport every hour and they are relatively cheap (the bus ride costs about EUR 8 one way, if you book in advance it can got much cheaper). There are three bus companies operating airport shuttles between Vienna airport and Bratislava: SlovakLines (red buses), Blaguss (silver buses) and RegioJet (Yellow busses).') }}
+          </p>
+        </div>
+        <div class="box">
+          <h3><i class="fa fa-car fa-2x" aria-hidden="true"></i> {{ _('By car') }}</h3>
+          <p class="text-justify">
+          <ul>
+            <li>{{ _('From Vienna, take highway A4, heading to Schwechat airport, when possible take the exit that leads to highway A6, which heads towards Bratislava.') }}</li>
+            <li>{{ _('From Budapest, take highway M1 heading to Gyor, follow this route until you see signs for highway M15 headed to Slovakia and Bratislava.') }}</li>
+            <li>{{ _('From Prague, take highway D1 to Brno, once in Brno take highway D2 heading to Slovakia and Bratislava.') }}</li>
+            <li>{{ _('From Warsaw, take highway A1 heading to Katowice. From there follow the road for Čadca, Slovakia. Take this road all the way to Žilina, then switch to highway D1 to Bratislava.') }}</li>
+          </ul>
+          </p>
+        </div>
+        <div class="box">
+          <h3><i class="fa fa-bus fa-2x" aria-hidden="true"></i> {{ _('By bus') }}</h3>
+          <p class="text-justify">
+            {{ _('All neighbouring capital cities Vienna, Prague, Budapest, Warsaw and Kiev have direct bus connections.') }}
+          </p>
+          <p class="text-justify">
+            {{ _('Once you arrive at the Bratislava bus station (Mlynské Nivy), you\'ll need to walk through the terminal towards its main entrance. Take a left and walk about 70 meters towards a busy street. Do not cross the street. There will be public transportation bus stops immediately on your right hand side.') }}
+          </p>
+        </div>
+        <div class="box">
+          <h3><i class="fa fa-train fa-2x" aria-hidden="true"></i> {{ _('By train') }}</h3>
+          <p class="text-justify">
+            {{ _('All neighboring capital cities Vienna, Prague, Budapest, Warsaw and Kiev have direct train connections.') }}
+          </p>
+          <p class="text-justify">
+            {{ _('Once you arrive at the Bratislava train station (Bratislava hlavná stanica), you\'ll need to walk through the terminal towards its main entrance. Directly in front of the main entrance you\'ll find all your public transportation options on your right hand side.') }}
+          </p>
+        </div>
+
       </div>
+
+      <h2>{{ _('Accommodation') }}</h2>
+      <p class="text-justify">
+        {{ _('There are plenty of opportunities for accommodation in Bratislava. From coach surfing, Airbnb to hostels and five star hotels. Even though it is not the main tourist season, we advise you to book your accommodations in advance.') }}
+      </p>
+
+      <h2>{{ _('Guide') }}</h2>
+      <p class="text-justify">
+        {{ _('Bratislava offers much more than just PyCon. If you decide to stay in Bratislava a few days longer, have a look at <a href="http://mpba.sk/en" title="M_P_ BA: alternative Bratislava map" target="_blank" class="external">M_P_ BA</a> (alternative map of Bratislava) which lists popular attractions as well as unusual destinations within the city. Check out peoples\' comments to find out about each location or event.') }}
+      </p>
+      <p class="text-justify">
+        {{ _('Or you can review the <a href="http://www.visitbratislava.com/" title="city pages for visitors" target="_blank" class="external">official city guide for visitors</a>, where you can also find other events that are happening in Bratislava.') }}
+      </p>
     </div>
   </div>
+</div>
 {% endblock %}

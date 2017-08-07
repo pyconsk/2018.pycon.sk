@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-03 16:11+0200\n"
+"POT-Creation-Date: 2017-08-07 15:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -218,7 +218,7 @@ msgstr ""
 msgid "PyCon will be back at Slovakia in 2018 again."
 msgstr "PyCon bude v roku 2018 opäť na Slovensku."
 
-#: templates/index.html:8 templates/venue.html:15
+#: templates/index.html:8 templates/venue.html:10
 msgid ""
 "<strong>Third year</strong> will happen in <strong>March, 2018 in "
 "Bratislava</strong>."
@@ -352,7 +352,194 @@ msgstr "Ako sa tam dostať"
 msgid "We are looking for the best venue for PyCon SK at the moment."
 msgstr "Práve hľadáme najlepší možný priestor pre PyCon SK."
 
-#: templates/venue.html:11
+#: templates/venue.html:7
+msgid "This page explains possibilities how to get to Bratislava."
+msgstr "Na tejto stránke nájdete informácie o tom, ako sa dostať do Bratislavy."
+
+#: templates/venue.html:14
 #, python-format
 msgid "Suggestions are always welcomed at %(email)s."
 msgstr "Vaše návrhy radi uvítame na %(email)s."
+
+#: templates/venue.html:18
+msgid "Travelling to Bratislava"
+msgstr "Cestovanie do Bratislavy"
+
+#: templates/venue.html:20
+msgid ""
+"Bratislava is one of the youngest major cities in Europe. Nevertheless, "
+"it has a rich history of a free royal coronation town. At that time, it "
+"was still called the Pressburg (Prešpork). Today, Bratislava is a major "
+"transport hub in Central Europe, and there are plenty of possibilities of"
+" getting here."
+msgstr ""
+"Bratislava patrí medzi najmladšie hlavné mestá Európy. Napriek tomu má "
+"bohatú históriu slobodného kráľovského korunovačného mesta. Vtedy bola "
+"ešte Prešporkom nazývaná. Dnes je Bratislava významný dopravný uzol v "
+"strednej Európe a možností, ako sa sem dostať, je neúrekom."
+
+#: templates/venue.html:25
+msgid "By air"
+msgstr "Letecky"
+
+#: templates/venue.html:27
+msgid ""
+"If you are travelling to Bratislava, you can fly to the Bratislava "
+"airport (airport code: BTS) or the Vienna airport (airport code: VIE). "
+"The selection of flights to Vienna is better than to Bratislava."
+msgstr ""
+"Ak cestujete do Bratislavy, môžete letieť na bratislavské letisko (kód "
+"letiska: BTS) alebo na letisko Viedeň (kód letiska: VIE). Viedenské "
+"letisko má v porovnaní s bratislavským podstatne väčší výber letov."
+
+#: templates/venue.html:30
+msgid ""
+"There are shuttle buses running between Bratislava and Vienna airport "
+"every hour and they are relatively cheap (the bus ride costs about EUR 8 "
+"one way, if you book in advance it can got much cheaper). There are three"
+" bus companies operating airport shuttles between Vienna airport and "
+"Bratislava: SlovakLines (red buses), Blaguss (silver buses) and RegioJet "
+"(Yellow busses)."
+msgstr ""
+"Medzi viedenským letiskom a Bratislavou premáva priame a cenovo dostupné "
+"autobusové spojenie každú hodinu - jednosmerná jazda stojí okolo 8 EUR, "
+"ak si zakúpite lístok v predstihu môže byť výrazne lacnejší. Autobusovú "
+"prepravu prevádzkujú tri spoločnosti: SlovakLines (červené autobusy), "
+"Blaguss (strieborné autobusy), RegioJet (žlté autobusy)."
+
+#: templates/venue.html:34
+msgid "By car"
+msgstr "Autom"
+
+#: templates/venue.html:37
+msgid ""
+"From Vienna, take highway A4, heading to Schwechat airport, when possible"
+" take the exit that leads to highway A6, which heads towards Bratislava."
+msgstr ""
+"Z Viedne smerom na letisko Schwechat po diaľnici A4, odbočte na diaľnicu "
+"A6, ktorá vedie priamo do Bratislavy."
+
+#: templates/venue.html:38
+msgid ""
+"From Budapest, take highway M1 heading to Gyor, follow this route until "
+"you see signs for highway M15 headed to Slovakia and Bratislava."
+msgstr ""
+"Z Budapešti po diaľnici M1 smerom na Gyor, neskôr odbočte na cestu M15 "
+"smerom na Slovensko, do Bratislavy."
+
+#: templates/venue.html:39
+msgid ""
+"From Prague, take highway D1 to Brno, once in Brno take highway D2 "
+"heading to Slovakia and Bratislava."
+msgstr ""
+"Z Prahy po diaľnici D1 do Brna, tam odbočte na D2, ktorá vedie až na "
+"Slovensko a pokračujte smerom do Bratislavy."
+
+#: templates/venue.html:40
+msgid ""
+"From Warsaw, take highway A1 heading to Katowice. From there follow the "
+"road for Čadca, Slovakia. Take this road all the way to Žilina, then "
+"switch to highway D1 to Bratislava."
+msgstr ""
+"Z Varšavy po diaľnici A1 smerom na Katowice, odtiaľ na Slovensko do Čadce"
+" po ceste prvej triedy až do Žiliny. Potom po diaľnici D1 až do "
+"Bratislavy."
+
+#: templates/venue.html:45
+msgid "By bus"
+msgstr "Autobusom"
+
+#: templates/venue.html:47
+msgid ""
+"All neighbouring capital cities Vienna, Prague, Budapest, Warsaw and Kiev"
+" have direct bus connections."
+msgstr ""
+"Všetky okolité hlavné mestá - Viedeň, Praha, Budapešť, Varšava aj Kyjev -"
+" majú priame autobusové spojenie do Bratislavy."
+
+#: templates/venue.html:50
+msgid ""
+"Once you arrive at the Bratislava bus station (Mlynské Nivy), you'll need"
+" to walk through the terminal towards its main entrance. Take a left and "
+"walk about 70 meters towards a busy street. Do not cross the street. "
+"There will be public transportation bus stops immediately on your right "
+"hand side."
+msgstr ""
+"Keď vystúpite na autobusovej stanici v Bratislave (Mlynské Nivy), musíte "
+"prejsť cez staničnú halu k hlavnému vchodu. Zamierte doľava a po "
+"približne 70 metroch sa dostanete k zastávkam mestskej hromadnej dopravy."
+
+#: templates/venue.html:54
+msgid "By train"
+msgstr "Vlakom"
+
+#: templates/venue.html:56
+msgid ""
+"All neighboring capital cities Vienna, Prague, Budapest, Warsaw and Kiev "
+"have direct train connections."
+msgstr ""
+"Z hlavných miest všetkých susedných krajín, teda z Viedne, Prahy, "
+"Budapešti, Varšavy aj Kyjeva, sa priamo do Bratislavy možno dostať aj "
+"vlakom."
+
+#: templates/venue.html:59
+msgid ""
+"Once you arrive at the Bratislava train station (Bratislava hlavná "
+"stanica), you'll need to walk through the terminal towards its main "
+"entrance. Directly in front of the main entrance you'll find all your "
+"public transportation options on your right hand side."
+msgstr ""
+"Po príchode na hlavnú železničnú stanicu v Bratislave prejdite cez "
+"staničnú budovu k hlavnému vchodu. Po pravej ruke, približne o 100 metrov"
+" nižšie, sa nachádzajú zastávky mestskej hromadnej dopravy."
+
+#: templates/venue.html:65
+msgid "Accommodation"
+msgstr "Ubytovanie"
+
+#: templates/venue.html:67
+msgid ""
+"There are plenty of opportunities for accommodation in Bratislava. From "
+"coach surfing, Airbnb to hostels and five star hotels. Even though it is "
+"not the main tourist season, we advise you to book your accommodations in"
+" advance."
+msgstr ""
+"V Bratislave máte široké možnosti ubytovania: od coach surfingu cez "
+"Airbnb, hostely až po päťhviezdičkové hotely. Hoci sa konferencia koná "
+"mimo hlavnej turistickej sezóny, určite odporúčame zabezpečiť si "
+"ubytovanie v predstihu. "
+
+#: templates/venue.html:70
+msgid "Guide"
+msgstr "Sprievodca"
+
+#: templates/venue.html:72
+msgid ""
+"Bratislava offers much more than just PyCon. If you decide to stay in "
+"Bratislava a few days longer, have a look at <a "
+"href=\"http://mpba.sk/en\" title=\"M_P_ BA: alternative Bratislava map\" "
+"target=\"_blank\" class=\"external\">M_P_ BA</a> (alternative map of "
+"Bratislava) which lists popular attractions as well as unusual "
+"destinations within the city. Check out peoples' comments to find out "
+"about each location or event."
+msgstr ""
+"V Bratislave sa popri konferencii môžete aj zabaviť a získať jedinečné "
+"zážitky. Ak sa rozhodnete ostať v Bratislave o niekoľko dní dlhšie, "
+"určite si pozrite <a href=\"http://mpba.sk/sk\" title=\"M_P_ BA: "
+"alternatívna mapa Bratislavy\" target=\"_blank\" class=\"external\">M_P_ "
+"BA</a> (alternatívnu mapu Bratislavy), kde nájdete prehľad obľúbených "
+"miest obyvateľov Bratislavy s ich autentickými odporúčaniami a "
+"subjektívnymi názormi."
+
+#: templates/venue.html:75
+msgid ""
+"Or you can review the <a href=\"http://www.visitbratislava.com/\" "
+"title=\"city pages for visitors\" target=\"_blank\" "
+"class=\"external\">official city guide for visitors</a>, where you can "
+"also find other events that are happening in Bratislava."
+msgstr ""
+"Prípadne si môžete pozrieť <a href=\"http://www.visitbratislava.com/sk\" "
+"title=\"stránky mesta pre návštevníkov\" target=\"_blank\" "
+"class=\"external\">oficialne stránky mesta, určené pre návštevníkov</a>, "
+"kde nájdete aj iné udalosti, ktoré sa práve odohrávajú v Bratislave."
+

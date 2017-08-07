@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-03 16:11+0200\n"
+"POT-Creation-Date: 2017-08-07 15:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -175,7 +175,7 @@ msgstr ""
 msgid "PyCon will be back at Slovakia in 2018 again."
 msgstr ""
 
-#: templates/index.html:8 templates/venue.html:15
+#: templates/index.html:8 templates/venue.html:10
 msgid ""
 "<strong>Third year</strong> will happen in <strong>March, 2018 in "
 "Bratislava</strong>."
@@ -281,7 +281,147 @@ msgstr ""
 msgid "We are looking for the best venue for PyCon SK at the moment."
 msgstr ""
 
-#: templates/venue.html:11
+#: templates/venue.html:7
+msgid "This page explains possibilities how to get to Bratislava."
+msgstr ""
+
+#: templates/venue.html:14
 #, python-format
 msgid "Suggestions are always welcomed at %(email)s."
 msgstr ""
+
+#: templates/venue.html:18
+msgid "Travelling to Bratislava"
+msgstr ""
+
+#: templates/venue.html:20
+msgid ""
+"Bratislava is one of the youngest major cities in Europe. Nevertheless, "
+"it has a rich history of a free royal coronation town. At that time, it "
+"was still called the Pressburg (Prešpork). Today, Bratislava is a major "
+"transport hub in Central Europe, and there are plenty of possibilities of"
+" getting here."
+msgstr ""
+
+#: templates/venue.html:25
+msgid "By air"
+msgstr ""
+
+#: templates/venue.html:27
+msgid ""
+"If you are travelling to Bratislava, you can fly to the Bratislava "
+"airport (airport code: BTS) or the Vienna airport (airport code: VIE). "
+"The selection of flights to Vienna is better than to Bratislava."
+msgstr ""
+
+#: templates/venue.html:30
+msgid ""
+"There are shuttle buses running between Bratislava and Vienna airport "
+"every hour and they are relatively cheap (the bus ride costs about EUR 8 "
+"one way, if you book in advance it can got much cheaper). There are three"
+" bus companies operating airport shuttles between Vienna airport and "
+"Bratislava: SlovakLines (red buses), Blaguss (silver buses) and RegioJet "
+"(Yellow busses)."
+msgstr ""
+
+#: templates/venue.html:34
+msgid "By car"
+msgstr ""
+
+#: templates/venue.html:37
+msgid ""
+"From Vienna, take highway A4, heading to Schwechat airport, when possible"
+" take the exit that leads to highway A6, which heads towards Bratislava."
+msgstr ""
+
+#: templates/venue.html:38
+msgid ""
+"From Budapest, take highway M1 heading to Gyor, follow this route until "
+"you see signs for highway M15 headed to Slovakia and Bratislava."
+msgstr ""
+
+#: templates/venue.html:39
+msgid ""
+"From Prague, take highway D1 to Brno, once in Brno take highway D2 "
+"heading to Slovakia and Bratislava."
+msgstr ""
+
+#: templates/venue.html:40
+msgid ""
+"From Warsaw, take highway A1 heading to Katowice. From there follow the "
+"road for Čadca, Slovakia. Take this road all the way to Žilina, then "
+"switch to highway D1 to Bratislava."
+msgstr ""
+
+#: templates/venue.html:45
+msgid "By bus"
+msgstr ""
+
+#: templates/venue.html:47
+msgid ""
+"All neighbouring capital cities Vienna, Prague, Budapest, Warsaw and Kiev"
+" have direct bus connections."
+msgstr ""
+
+#: templates/venue.html:50
+msgid ""
+"Once you arrive at the Bratislava bus station (Mlynské Nivy), you'll need"
+" to walk through the terminal towards its main entrance. Take a left and "
+"walk about 70 meters towards a busy street. Do not cross the street. "
+"There will be public transportation bus stops immediately on your right "
+"hand side."
+msgstr ""
+
+#: templates/venue.html:54
+msgid "By train"
+msgstr ""
+
+#: templates/venue.html:56
+msgid ""
+"All neighboring capital cities Vienna, Prague, Budapest, Warsaw and Kiev "
+"have direct train connections."
+msgstr ""
+
+#: templates/venue.html:59
+msgid ""
+"Once you arrive at the Bratislava train station (Bratislava hlavná "
+"stanica), you'll need to walk through the terminal towards its main "
+"entrance. Directly in front of the main entrance you'll find all your "
+"public transportation options on your right hand side."
+msgstr ""
+
+#: templates/venue.html:65
+msgid "Accommodation"
+msgstr ""
+
+#: templates/venue.html:67
+msgid ""
+"There are plenty of opportunities for accommodation in Bratislava. From "
+"coach surfing, Airbnb to hostels and five star hotels. Even though it is "
+"not the main tourist season, we advise you to book your accommodations in"
+" advance."
+msgstr ""
+
+#: templates/venue.html:70
+msgid "Guide"
+msgstr ""
+
+#: templates/venue.html:72
+msgid ""
+"Bratislava offers much more than just PyCon. If you decide to stay in "
+"Bratislava a few days longer, have a look at <a "
+"href=\"http://mpba.sk/en\" title=\"M_P_ BA: alternative Bratislava map\" "
+"target=\"_blank\" class=\"external\">M_P_ BA</a> (alternative map of "
+"Bratislava) which lists popular attractions as well as unusual "
+"destinations within the city. Check out peoples' comments to find out "
+"about each location or event."
+msgstr ""
+
+#: templates/venue.html:75
+msgid ""
+"Or you can review the <a href=\"http://www.visitbratislava.com/\" "
+"title=\"city pages for visitors\" target=\"_blank\" "
+"class=\"external\">official city guide for visitors</a>, where you can "
+"also find other events that are happening in Bratislava."
+msgstr ""
+
