@@ -116,10 +116,7 @@
   <script src="{{ url_for('static', filename='js/analytics.min.js') }}" async></script>
 {% block scripts %}{% endblock %}
 {% if ld_json %}
-  <script type="application/ld+json">
-        {{ ld_json|tojson|safe }}
-
-  </script>
+  <script type="application/ld+json">{{ ld_json|tojson|safe }}</script>
 {% endif %}
 </body>
 </html>
