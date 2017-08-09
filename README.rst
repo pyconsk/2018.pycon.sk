@@ -76,18 +76,27 @@ Continuous Deployment
 Anything committed to master branch will be automatically deployed on live server. Live site contain only generated static site in ``build`` directory.
 
 
+Fonts
+-----
+
+Embedded pyconsk font generated with `Fontello <http://fontello.com>`_ and contain `Font Awesome <http://fontawesome.io/>`_ and `Entypo <http://www.entypo.com>`_ icons.
+
+
+Stylesheets
+-----------
+
+For grids and base layout we use `Picnic CSS <https://picnicss.com/>`_, our design is stored in pyconsk.css stylesheet. Both files are merged and minimized via `YUI Compressor <https://yui.github.io/yuicompressor/>`_::
+
+    cat picnic.css pyconsk.css > stylesheet.css
+    java yuicompressor.jar stylesheet.css -o stylesheet.min.css
+
+
 Links
 -----
 
 - web: https://2018.pycon.sk
 - facebook: https://facebook.com/pyconsk
 - twitter: https://twitter.com/pyconsk
-
-
-Fonts
------
-
-Embedded pyconsk font generated with `Fontello <http://fontello.com>`_ and contain `Font Awesome <http://fontawesome.io/>`_ and `Entypo <http://www.entypo.com>`_ icons.
 
 
 License
