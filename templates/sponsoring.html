@@ -1,4 +1,15 @@
 {% extends "body.html" %}
+
+{% block style %}
+.section#sponsoring {background-image:url('/static/img/backgrounds/stairway.jpg');background-attachment:fixed;}
+@media (max-width: 900px) {
+  .section#sponsoring {background-image:url('/static/img/backgrounds/stairway_medium.jpg');background-attachment:fixed;}
+}
+@media (max-width: 500px) {
+  .section#sponsoring {background-image:url('/static/img/backgrounds/stairway_small.jpg');background-attachment:fixed;}
+}
+{% endblock %}
+
 {% block content %}
   <div class="section" id="sponsoring">
     <div class="content">

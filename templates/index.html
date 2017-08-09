@@ -1,4 +1,15 @@
 {% extends "body.html" %}
+
+{% block style %}
+.section#home {background-image:url('/static/img/backgrounds/people.jpg');background-attachment:fixed;}
+@media (max-width: 900px) {
+  .section#home {background-image:url('/static/img/backgrounds/people_medium.jpg');background-attachment:fixed;}
+}
+@media (max-width: 500px) {
+  .section#home {background-image:url('/static/img/backgrounds/people_small.jpg');background-attachment:fixed;}
+}
+{% endblock %}
+
 {% block content %}
 <div class="section" id="home">
   <div class="content">

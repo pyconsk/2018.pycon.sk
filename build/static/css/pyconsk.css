@@ -1,7 +1,7 @@
 html, body, main, .section {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   display: block;
-  background-color: white;
+  background-color: #fff;
   color: #000;
   width: 100%;
   height: 100%;
@@ -73,12 +73,9 @@ nav {
   text-align: justify;
   width: 75%;
   margin: 6em auto;
-  background-color: rgba(255,255,255,0.80);
+  background-color: rgba(255, 255, 255, 0.80);
   color: #000;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 40px;
+  padding: 10px 10px 40px 10px;
 }
 
 .text-center {
