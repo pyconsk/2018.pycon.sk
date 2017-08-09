@@ -84,7 +84,17 @@ Links
 - twitter: https://twitter.com/pyconsk
 
 
+Fonts
+-----
+
+Embedded pyconsk font generated with `Fontello <http://fontello.com>`_ and contain `Font Awesome <http://fontawesome.io/>`_ and `Entypo <http://www.entypo.com>`_ icons.
+
+
 License
 -------
 
-MIT license for code (GitHub repo), CC-BY for content, except sponsors logo's (consult with particular company if you would like to use their logo). For more detail read the LICENSE file.
+* MIT license for code (code - GitHub repo)
+* CC-BY for content, except sponsors logo's (consult with particular company if you would like to use their logo)
+* SIL for embedded fonts
+
+For more details read the LICENSE file.
