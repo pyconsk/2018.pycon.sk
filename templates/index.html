@@ -4,17 +4,19 @@
   <div class="content">
     <div class="content-text">
       <div class="hero"></div>
-      <h1>{{ _('PyCon will be back at Slovakia in 2018 again.') }}</h1>
+      <h1>{{ _('PyCon will come to Slovakia in 2018 again.') }}</h1>
       <p class="lead">{{ _('<strong>Third year</strong> will happen in <strong>March, 2018 in Bratislava</strong>.') }}</p>
 
       <p class="text-justify">
-        {{ _('PyCon SK is a community-organized conference for the Python programming language.') }}
+        {{ _('PyCon SK is an international conference organized by the community of enthusiasts and supporters of the Python programming language.') }}
+        {{ _('It is designed for anyone who works professionally and also for anyone who is learning this programming language.') }}
       </p>
 
       <p class="text-justify">
         {% autoescape off %}
-        {{ _('Found a bug? Missing some information? This is community managed website, contribute at our %(github)s.',
-            github = '<a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>') }}
+        {{ _('Did you find a mistake on our site? Do you want to know more? Let us know.') }}
+        {{ _('Join our %(github)s and enrich the Python programming language community.',
+           github = '<a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>') }}
         {% endautoescape %}
       </p>
 

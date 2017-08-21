@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-07 15:41+0200\n"
+"POT-Creation-Date: 2017-08-21 22:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -32,55 +32,55 @@ msgid ""
 "language, which will be held in Bratislava on March, 2018."
 msgstr ""
 
-#: templates/body.html:44
+#: templates/body.html:40
 msgid "PyCon SK 2018"
 msgstr ""
 
-#: templates/body.html:52
+#: templates/body.html:48
 msgid "Venue"
 msgstr ""
 
-#: templates/body.html:54
+#: templates/body.html:50
 msgid "Sponsoring"
 msgstr ""
 
-#: templates/body.html:56 templates/coc.html:6
+#: templates/body.html:52 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/body.html:57
+#: templates/body.html:53
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:96
+#: templates/body.html:92
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:98
+#: templates/body.html:94
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:103
+#: templates/body.html:99
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
 " the %(psf)s."
 msgstr ""
 
-#: templates/body.html:105
+#: templates/body.html:101
 msgid "Python Software foundation"
 msgstr ""
 
-#: templates/body.html:106
+#: templates/body.html:102
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr ""
 
-#: templates/body.html:107
+#: templates/body.html:103
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:109 templates/index.html:16
+#: templates/body.html:105
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
@@ -172,10 +172,10 @@ msgid ""
 msgstr ""
 
 #: templates/index.html:7
-msgid "PyCon will be back at Slovakia in 2018 again."
+msgid "PyCon will come to Slovakia in 2018 again."
 msgstr ""
 
-#: templates/index.html:8 templates/venue.html:10
+#: templates/index.html:8
 msgid ""
 "<strong>Third year</strong> will happen in <strong>March, 2018 in "
 "Bratislava</strong>."
@@ -183,8 +183,23 @@ msgstr ""
 
 #: templates/index.html:11
 msgid ""
-"PyCon SK is a community-organized conference for the Python programming "
-"language."
+"PyCon SK is an international conference organized by the community of "
+"enthusiasts and supporters of the Python programming language."
+msgstr ""
+
+#: templates/index.html:12
+msgid ""
+"It is designed for anyone who works professionally and also for anyone "
+"who is learning this programming language."
+msgstr ""
+
+#: templates/index.html:17
+msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
+msgstr ""
+
+#: templates/index.html:18
+#, python-format
+msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
 
 #: templates/sponsoring.html:6
@@ -274,15 +289,19 @@ msgid ""
 msgstr ""
 
 #: templates/venue.html:6
-msgid "How to get there"
+msgid "How do you get to Slovak PyCon?"
 msgstr ""
 
-#: templates/venue.html:7
-msgid "We are looking for the best venue for PyCon SK at the moment."
+#: templates/venue.html:8
+msgid ""
+"The definitive venue PyCon SK 2018 is not yet definitively designed, we "
+"are still looking for the ideal space."
 msgstr ""
 
-#: templates/venue.html:7
-msgid "This page explains possibilities how to get to Bratislava."
+#: templates/venue.html:9
+msgid ""
+"Before we find him, we have prepared general information on how to get to"
+" Bratislava."
 msgstr ""
 
 #: templates/venue.html:14
@@ -424,4 +443,22 @@ msgid ""
 "class=\"external\">official city guide for visitors</a>, where you can "
 "also find other events that are happening in Bratislava."
 msgstr ""
+
+#~ msgid "PyCon will be back at Slovakia in 2018 again."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "PyCon SK is a community-organized "
+#~ "conference for the Python programming "
+#~ "language."
+#~ msgstr ""
+
+#~ msgid "How to get there"
+#~ msgstr ""
+
+#~ msgid "We are looking for the best venue for PyCon SK at the moment."
+#~ msgstr ""
+
+#~ msgid "This page explains possibilities how to get to Bratislava."
+#~ msgstr ""
 
