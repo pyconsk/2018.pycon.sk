@@ -1,0 +1,183 @@
+{% extends "body.html" %}
+
+{% block header %}
+  <script src="{{ url_for('static', filename='js/vue.2.4.4.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/axios.0.16.2.min.js') }}"></script>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/cfp.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+  <div class="modal" id="speakerModal">
+    <input id="modal_1" type="checkbox"/>
+    <label for="modal_1" class="overlay"></label>
+    <article>
+      <form method="post">
+        <header>
+          <h3>{{ _('Speaker Biography') }}</h3>
+          <label for="modal_1" class="close">&times;</label>
+        </header>
+        <section class="content">
+          <select v-model="title" v-bind:class="{ 'error': titleError }">
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="mr">{{ _('Mr.') }}</option>
+            <option value="ms">{{ _('Ms.') }}</option>
+            <option value="mx">{{ _('Mx.') }}</option>
+          </select>
+          <span class="error" v-if="titleError">{% raw %}{{ titleError }}{% endraw %}</span>
+
+          <input class="stack border_bottom" type="text" v-model.trim="firstName" v-bind:class="{ 'error': firstNameError }" placeholder="{{ _('First name') }}"/>
+          <span class="error" v-if="firstNameError">{% raw %}{{ firstNameError }}{% endraw %}</span>
+
+          <input class="stack" type="text" v-model.trim="lastName" v-bind:class="{ 'error': lastNameError }" placeholder="{{ _('Last name') }}"/>
+          <span class="error" v-if="lastNameError">{% raw %}{{ lastNameError }}{% endraw %}</span>
+
+          <input class="stack" type="tel" v-model.trim="phone" v-bind:class="{ 'error': phoneError }" placeholder="{{ _('Phone') }}"/>
+          <span class="error" v-if="phoneError">{% raw %}{{ phoneError }}{% endraw %}</span>
+
+          <input class="stack" type="email" v-model.trim="email" v-bind:class="{ 'error': emailError }" placeholder="{{ _('Email') }}"/>
+          <span class="error" v-if="emailError">{% raw %}{{ emailError }}{% endraw %}</span>
+
+          <textarea class="stack" v-model="bio" v-bind:class="{ 'error': bioError }" placeholder="{{ _('Biography') }}"></textarea>
+          <span class="error" v-if="bioError">{% raw %}{{ bioError }}{% endraw %}</span>
+
+          <input class="stack" type="url" v-model.trim="url" v-bind:class="{ 'error': urlError }" placeholder="{{ _('Url') }}"/>
+          <span class="error" v-if="urlError">{% raw %}{{ urlError }}{% endraw %}</span>
+
+          <input class="stack" type="url" v-model.trim="socialUrl" placeholder="{{ _('Social Url') }}"/>
+          <span class="error" v-if="socialUrlError">{% raw %}{{ socialUrlError }}{% endraw %}</span>
+
+          <select class="stack" v-model="country" v-bind:class="{ 'error': countryError }" >
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="SK">{{ _('SK') }}</option>
+          </select>
+          <span class="error" v-if="countryError">{% raw %}{{ countryError }}{% endraw %}</span>
+
+        </section>
+        <footer>
+          <label for="modal_2" class="button" v-on:click="validateForm">{{ _('Continue') }}</label>
+          <label for="modal_1" ref="modal_1" class="button dangerous">{{ _('Cancel') }}</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+  <div class="modal" id="talkModal">
+    <input id="modal_2" type="checkbox"/>
+    <label for="modal_2" class="overlay"></label>
+    <article>
+      <form method="post" v-on:submit="validateForm">
+        <header>
+          <h3>{{ _('Talk Abstract') }}</h3>
+          <label for="modal_2" class="close">&times;</label>
+        </header>
+        <section class="content">
+          <input class="stack" type="text" v-model.trim="talkTitle" v-bind:class="{ 'error': talkTitleError }" placeholder="{{ _('Talk title') }}"/>
+          <span class="error" v-if="talkTitleError">{% raw %}{{ talkTitleError }}{% endraw %}</span>
+
+          <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="{{ _('Abstract') }}"></textarea>
+          <span class="error" v-if="talkAbstractError">{% raw %}{{ talkAbstractError }}{% endraw %}</span>
+
+          <select v-model="language" v-bind:class="{ 'error': languageError }" >
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="SK">{{ _('Slovak') }}</option>
+            <option value="CZ">{{ _('Czech') }}</option>
+            <option value="EN">{{ _('English') }}</option>
+            <option value="DE">{{ _('German') }}</option>
+          </select>
+          <span class="error" v-if="languageError">{% raw %}{{ languageError }}{% endraw %}</span>
+
+          <select v-model="type" v-bind:class="{ 'error': typeError }" >
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="TALK">{{ _('Talk') }}</option>
+            <option value="WORKSHOP">{{ _('Workshop') }}</option>
+          </select>
+          <span class="error" v-if="typeError">{% raw %}{{ typeError }}{% endraw %}</span>
+
+          <select v-model="duration" v-bind:class="{ 'error': durationError }" >
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="30">30 {{ _('minutes') }}</option>
+            <option value="45">45 {{ _('minutes') }}</option>
+            <option value="60">60 {{ _('minutes') }}</option>
+            <option value="90">90 {{ _('minutes') }}</option>
+            <option value="120">120 {{ _('minutes') }}</option>
+          </select>
+          <span class="error" v-if="durationError">{% raw %}{{ durationError }}{% endraw %}</span>
+
+        </section>
+        <footer>
+          <button type="submit">{{ _('Submit') }}</button>
+          <label for="modal_2" ref="modal_2" class="button dangerous">{{ _('Cancel') }}</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+
+  <div class="section" id="cfp">
+    <div class="content">
+      <div class="content-text">
+        <h1>{{ _('Call for proposals') }}</h1>
+        <p class="lead">{{ _('The Call For Proposals is open!') }}</p>
+
+        <p class="text-justify">
+          {{ _('PyCon is organized by the Python community and for the Python community. You\'re coming to the event,
+        and that makes you part of the community. If you\'ve done something that you think other people
+        might be interested in, or that you think they should know about, please do consider telling us about it.
+        We don\'t just want to hear from the experts or famous names - other perspectives are just as valuable,
+        so don\'t let the idea that you\'re not expert or famous enough stop you. This is your invitation
+        to submit talk proposal if you haven\'t speak at the conference before. First-time speakers talk proposals are
+        preferred.') }}
+        </p>
+
+        <h2>{{ _('Where to submit your proposal') }}</h2>
+        <p class="text-justify">
+          {{ _('We are glad you are interested in giving a talk at PyCon SK 2018! Submit your talk proposal with short
+        abstract and your bio.') }}
+        </p>
+
+        <p class="text-center">
+          <label for="modal_1" class='button lead'>{{ _('Submit your talk / workshop') }}</label>
+        </p>
+
+        <p class="text-justify">
+          {{ _('Don\'t hesitate to submit more than one proposal. The deadline for submissions is the end of
+        21th January 2018. Due to the competitive selection process, we encourage prospective speakers to submit their
+        proposals as early as possible.') }}
+        </p>
+
+        <h2>{{ _('Guidelines for Proposal Submission') }}</h2>
+        <p class="text-justify">
+          {{ _('There is no official restriction on the topic that you propose for a talk session. Talks about Python or
+        the Python community are most likely to line up with the interests of PyCon\'s audience, and a key
+        consideration that the talk selection committee will be thinking about is your talk\'s ability to draw an
+        audience. You may propose more than one, but the committee will ask you to choose only one talk if more
+        than one of your proposals is accepted.') }}
+        </p>
+
+        <div class="flex one two-900 center">
+          <div class="box">
+            <h2><i class="icon-chart-line" aria-hidden="true"></i> {{ _('Talks') }}</h2>
+            <p class="text-justify">
+              {{ _('Most talks are 30 minutes long, but we do offer a limited number of 45-minute slots for important
+            topics that promise to benefit from a more extensive treatment.') }}
+            </p>
+          </div>
+
+          <div class="box">
+            <h2><i class="icon-handshake-o" aria-hidden="true"></i> {{ _('Workshops') }}</h2>
+            <p class="text-justify">
+              {{ _('As with the talks, we are looking for tutorials that can grow this community at any level!
+            We aim for tutorials that will advance Python, advance this community, and shape the future. As tutorials
+            are longer than talks and are in an interactive classroom-like setting, they require much more
+            preparation.') }}
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}
