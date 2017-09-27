@@ -10,14 +10,65 @@
 {% endblock %}
 
 {% block content %}
-  <div class="modal" id="speakerModal">
-    <input id="modal_1" type="checkbox"/>
-    <label for="modal_1" class="overlay"></label>
+  <div class="modal" id="talkModal">
+    <input id="modal_talk" type="checkbox" v-model="open"/>
+    <label for="modal_talk" class="overlay"></label>
     <article>
       <form method="post">
         <header>
+          <h3>{{ _('Talk Abstract') }}</h3>
+          <label for="modal_talk" class="close">&times;</label>
+        </header>
+        <section class="content">
+          <input class="stack" type="text" v-model.trim="talkTitle" v-bind:class="{ 'error': talkTitleError }" placeholder="{{ _('Talk title') }}"/>
+          <span class="error" v-if="talkTitleError">{% raw %}{{ talkTitleError }}{% endraw %}</span>
+
+          <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="{{ _('Abstract') }}"></textarea>
+          <span class="error" v-if="talkAbstractError">{% raw %}{{ talkAbstractError }}{% endraw %}</span>
+
+          <select v-model="language" v-bind:class="{ 'error': languageError }" >
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="SK">{{ _('Slovak') }}</option>
+            <option value="CZ">{{ _('Czech') }}</option>
+            <option value="EN">{{ _('English') }}</option>
+            <option value="DE">{{ _('German') }}</option>
+          </select>
+          <span class="error" v-if="languageError">{% raw %}{{ languageError }}{% endraw %}</span>
+
+          <select v-model="type" v-bind:class="{ 'error': typeError }" >
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="talk">{{ _('Talk') }}</option>
+            <option value="workshop">{{ _('Workshop') }}</option>
+          </select>
+          <span class="error" v-if="typeError">{% raw %}{{ typeError }}{% endraw %}</span>
+
+          <select v-model="duration" v-bind:class="{ 'error': durationError }" >
+            <option disabled value="">{{ _('Please select one') }}</option>
+            <option value="30">30 {{ _('minutes') }}</option>
+            <option value="45">45 {{ _('minutes') }}</option>
+            <option value="60">60 {{ _('minutes') }}</option>
+            <option value="90">90 {{ _('minutes') }}</option>
+            <option value="120">120 {{ _('minutes') }}</option>
+          </select>
+          <span class="error" v-if="durationError">{% raw %}{{ durationError }}{% endraw %}</span>
+
+        </section>
+        <footer>
+          <label for="modal_speaker" class="button" v-on:click="validateForm">{{ _('Continue') }}</label>
+          <label for="modal_talk" class="button dangerous">{{ _('Cancel') }}</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+  <div class="modal" id="speakerModal">
+    <input id="modal_speaker" type="checkbox" v-model="open"/>
+    <label for="modal_speaker" class="overlay"></label>
+    <article>
+      <form method="post" role="form" enctype="multipart/form-data" v-on:submit="validateForm">
+        <header>
           <h3>{{ _('Speaker Biography') }}</h3>
-          <label for="modal_1" class="close">&times;</label>
+          <label for="modal_speaker" class="close">&times;</label>
         </header>
         <section class="content">
           <select v-model="title" v-bind:class="{ 'error': titleError }">
@@ -55,66 +106,35 @@
           </select>
           <span class="error" v-if="countryError">{% raw %}{{ countryError }}{% endraw %}</span>
 
-        </section>
-        <footer>
-          <label for="modal_2" class="button" v-on:click="validateForm">{{ _('Continue') }}</label>
-          <label for="modal_1" ref="modal_1" class="button dangerous">{{ _('Cancel') }}</label>
-        </footer>
-      </form>
-    </article>
-  </div>
-
-  <div class="modal" id="talkModal">
-    <input id="modal_2" type="checkbox"/>
-    <label for="modal_2" class="overlay"></label>
-    <article>
-      <form method="post" v-on:submit="validateForm">
-        <header>
-          <h3>{{ _('Talk Abstract') }}</h3>
-          <label for="modal_2" class="close">&times;</label>
-        </header>
-        <section class="content">
-          <input class="stack" type="text" v-model.trim="talkTitle" v-bind:class="{ 'error': talkTitleError }" placeholder="{{ _('Talk title') }}"/>
-          <span class="error" v-if="talkTitleError">{% raw %}{{ talkTitleError }}{% endraw %}</span>
-
-          <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="{{ _('Abstract') }}"></textarea>
-          <span class="error" v-if="talkAbstractError">{% raw %}{{ talkAbstractError }}{% endraw %}</span>
-
-          <select v-model="language" v-bind:class="{ 'error': languageError }" >
-            <option disabled value="">{{ _('Please select one') }}</option>
-            <option value="SK">{{ _('Slovak') }}</option>
-            <option value="CZ">{{ _('Czech') }}</option>
-            <option value="EN">{{ _('English') }}</option>
-            <option value="DE">{{ _('German') }}</option>
-          </select>
-          <span class="error" v-if="languageError">{% raw %}{{ languageError }}{% endraw %}</span>
-
-          <select v-model="type" v-bind:class="{ 'error': typeError }" >
-            <option disabled value="">{{ _('Please select one') }}</option>
-            <option value="TALK">{{ _('Talk') }}</option>
-            <option value="WORKSHOP">{{ _('Workshop') }}</option>
-          </select>
-          <span class="error" v-if="typeError">{% raw %}{{ typeError }}{% endraw %}</span>
-
-          <select v-model="duration" v-bind:class="{ 'error': durationError }" >
-            <option disabled value="">{{ _('Please select one') }}</option>
-            <option value="30">30 {{ _('minutes') }}</option>
-            <option value="45">45 {{ _('minutes') }}</option>
-            <option value="60">60 {{ _('minutes') }}</option>
-            <option value="90">90 {{ _('minutes') }}</option>
-            <option value="120">120 {{ _('minutes') }}</option>
-          </select>
-          <span class="error" v-if="durationError">{% raw %}{{ durationError }}{% endraw %}</span>
-
+          <input class="stack" v-model="image" accept="image/*" type="file" v-bind:class="{ 'error': imageError }" id="avatar">
+          <span class="error" v-if="imageError">{% raw %}{{ imageError }}{% endraw %}</span>
         </section>
         <footer>
           <button type="submit">{{ _('Submit') }}</button>
-          <label for="modal_2" ref="modal_2" class="button dangerous">{{ _('Cancel') }}</label>
+          <label for="modal_speaker" ref="modal_speaker" class="button dangerous">{{ _('Cancel') }}</label>
         </footer>
       </form>
     </article>
   </div>
 
+  <div class="modal" id="popupModal">
+    <input id="modal_popup" type="checkbox" v-model="open"/>
+    <label for="modal_popup" class="overlay"></label>
+    <article>
+      <form method="post">
+        <header>
+          <h3>{% raw %}{{ header }}{% endraw %}</h3>
+          <label for="modal_popup" class="close">&times;</label>
+        </header>
+        <section class="content">
+          {% raw %}{{ message }}{% endraw %}
+        </section>
+        <footer>
+          <label for="modal_popup" class="button">{{ _('OK') }}</label>
+        </footer>
+      </form>
+    </article>
+  </div>
 
   <div class="section" id="cfp">
     <div class="content">
@@ -139,7 +159,7 @@
         </p>
 
         <p class="text-center">
-          <label for="modal_1" class='button lead'>{{ _('Submit your talk / workshop') }}</label>
+          <label for="modal_talk" class='button lead'>{{ _('Submit your talk / workshop') }}</label>
         </p>
 
         <p class="text-justify">

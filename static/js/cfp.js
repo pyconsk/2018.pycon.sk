@@ -1,3 +1,6 @@
+var AJAX_SERVER = 'http://127.0.0.1:8000/talks/';
+var EVENT_UUID = '6b7c6f64-e20c-43d2-978b-e0346ef4d272';
+
 var speakerModalData = {
   title: '',
   titleError: '',
@@ -17,8 +20,9 @@ var speakerModalData = {
   urlError: '',
   socialUrl: '',
   socialUrlError: '',
-  avatar: '',
-  avatarError: ''
+  image: '',
+  imageError: '',
+  open: false
 };
 
 var talkModalData = {
@@ -26,13 +30,30 @@ var talkModalData = {
   talkTitleError: '',
   talkAbstract: '',
   talkAbstractError: '',
-  type: 'TALK',
+  type: 'talk',
   typeError: '',
   language: 'EN',
   languageError: '',
   duration: 30,
-  durationError: ''
+  durationError: '',
+  open: false
 };
+
+var popupModal = new Vue({
+  el: '#popupModal',
+  data: {
+    header: '',
+    message: '',
+    open: false
+  },
+  methods: {
+    msg: function(message, header) {
+      this.header = header;
+      this.message = message;
+      this.open = true;
+    }
+  }
+});
 
 var speakerModal = new Vue({
   el: '#speakerModal',
@@ -84,6 +105,31 @@ var speakerModal = new Vue({
       }
 
       return this.bioError
+    },
+    collectFormData: function () {
+      var formData = new FormData();
+
+      formData.append("event_uuid", EVENT_UUID);
+      formData.append("title", talkModal.talkTitle);
+      formData.append("abstract", talkModal.talkAbstract);
+      formData.append("type", talkModal.type);
+      formData.append("language", talkModal.language);
+      formData.append("duration", talkModal.duration);
+
+      formData.append("primary_speaker.title", speakerModal.title);
+      formData.append("primary_speaker.first_name", speakerModal.firstName);
+      formData.append("primary_speaker.last_name", speakerModal.lastName);
+      formData.append("primary_speaker.phone", speakerModal.phone);
+      formData.append("primary_speaker.email", speakerModal.email);
+      formData.append("primary_speaker.bio", speakerModal.bio);
+      formData.append("primary_speaker.country", speakerModal.country);
+      formData.append("primary_speaker.url", speakerModal.url);
+      formData.append("primary_speaker.socialUrl", speakerModal.socialUrl);
+
+      var imagefile = document.querySelector('#avatar');
+      formData.append("primary_speaker.image", imagefile.files[0]);
+
+      return formData
     }
   },
   watch: {
@@ -102,19 +148,72 @@ var speakerModal = new Vue({
     bio: function (input) {
       this.validateBio;
     },
+    title: function (input) {
+      this.titleError = '';
+    },
+    country: function (input) {
+      this.countryError = '';
+    },
+    url: function (input) {
+      this.urlError = '';
+    },
+    socialUrl: function (input) {
+      this.socialUrlError = '';
+    },
+    image: function (input) {
+      this.imageError = '';
+    }
   },
   methods: {
     validateForm: function (event) {
+      event.preventDefault();
+
       this.validateFirstName;
       this.validateLastName;
       this.validatePhone;
       this.validateEmail;
       this.validateBio;
 
-      if (this.titleError || this.firstNameError || this.lastNameError || this.phoneError || this.emailError
-        || this.bioError || this.countryError || this.urlError || this.socialUrlError || this.avatarError) {
-        event.preventDefault();
+      if (!this.titleError && !this.firstNameError && !this.lastNameError && !this.phoneError && !this.emailError
+        && !this.bioError && !this.countryError && !this.urlError && !this.socialUrlError && !this.imageError) {
+        this.ajaxData();
       }
+    },
+    openPopUp: function (message, header) {
+        popupModal.msg(message, header);
+        speakerModal.open = false;
+        talkModal.open = false;
+    },
+    ajaxData: function () {
+      var formData = this.collectFormData;
+
+      axios.post(AJAX_SERVER, formData).then(function (response) {
+        speakerModal.openPopUp('Your proposal has been submitted.', response.status +': '+ response.statusText);
+
+      }).catch(function (error) {
+        // Something went wrong
+        console.log(error);
+
+        if (error.response.status === 400) {
+          var error_data = error.response.data;
+          // Error status indicate wrong input! Update form fields with messages returned from API.
+          for (var field in error_data) {
+
+            if (field === 'primary_speaker') {
+              for (var ps_field in error_data[field]) {
+                speakerModal[ps_field +'Error'] = error_data[field][ps_field][0];
+              }
+            } else {
+              speakerModal.open = false; // Close speakerModal so user see error in talkModal
+              talkModal[field +'Error'] = error_data[field][0];
+            }
+          }
+
+        } else {
+          // Different error status than wrong input!
+          speakerModal.openPopUp(error.message, error.response.status + ': ' + error.response.statusText);
+        }
+      });
     }
   }
 });
@@ -140,26 +239,6 @@ var talkModal = new Vue({
       }
 
       return this.talkAbstract
-    },
-    collectJSONData: function () {
-      var data = {
-        speaker_title: speakerModal.title,
-        first_name: speakerModal.firstName,
-        last_name: speakerModal.lastName,
-        phone: speakerModal.phone,
-        email: speakerModal.email,
-        bio: speakerModal.bio,
-        country: speakerModal.country,
-        url: speakerModal.url,
-        socialUrl: speakerModal.socialUrl,
-        image: speakerModal.avatar,
-        title: this.talkTitle,
-        'abstract': this.talkAbstract,
-        type: this.type,
-        language: this.language,
-        duration: this.duration
-      };
-      return JSON.stringify(data)
     }
   },
   watch: {
@@ -168,36 +247,24 @@ var talkModal = new Vue({
     },
     talkAbstract: function (input) {
       this.validateTalkAbstract;
+    },
+    type: function (input) {
+      this.typeError = '';
+    },
+    language: function (input) {
+      this.languageError = '';
+    },
+    duration: function (input) {
+      this.durationError = '';
     }
   },
   methods: {
-    ajaxData: function () {
-      // TODO: Finish once backend is up!
-      var payload = this.collectJSONData;
-      console.log(payload);
-
-      axios.post('/TODO', {data: payload})
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          // Something went wrong
-          console.log(error.message);
-
-          // TODO: Set error, messages from backend!
-
-          talkModal.titleError = 'This field is required!';
-          speakerModal.firstNameError = 'This field is required!';
-          talkModal.$refs.modal_2.click(); // hide talk modal if there is error in speaker modal
-        });
-    },
     validateForm: function (event) {
-      event.preventDefault();  // Do not submit, we want AJAX post on backend.
-
       this.validateTalkTitle
       this.validateTalkAbstract
-      if (!this.talkTitleError || !this.talkAbstractError || !this.typeError || !this.languageError || !this.durationError) {
-        this.ajaxData();
+
+      if (this.talkTitleError || this.talkAbstractError || this.typeError || this.languageError || this.durationError) {
+        event.preventDefault();
       }
     }
   }
