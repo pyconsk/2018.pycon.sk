@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-09-20 16:17+0200\n"
+"POT-Creation-Date: 2017-09-28 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: templates/body.html:8
 msgid "Official PyCon SK 2018 website"
@@ -223,10 +223,16 @@ msgid ""
 "<strong>Third year</strong> will happen <strong>9-11. March, 2018 in "
 "Bratislava</strong>."
 msgstr ""
-"Hostiteľom jej <strong>tretieho ročníka</strong> "
-"bude opäť <strong>Bratislava, 9-11. Marec 2018</strong>."
+"Hostiteľom jej <strong>tretieho ročníka</strong> bude opäť "
+"<strong>Bratislava, 9-11. Marec 2018</strong>."
 
-#: templates/index.html:11
+#: templates/index.html:10
+msgid "This is a test. Ignore it."
+msgstr ""
+"Toto je test. Nevsimajte si to."
+
+
+#: templates/index.html:12
 msgid ""
 "PyCon SK is an international conference organized by the community of "
 "enthusiasts and supporters of the Python programming language."
@@ -234,7 +240,7 @@ msgstr ""
 "PyCon SK je medzinárodná konferencia organizovaná komunitou nadšencov a "
 "priaznivcov programovacieho jazyka Python."
 
-#: templates/index.html:12
+#: templates/index.html:13
 msgid ""
 "It is designed for anyone who works professionally and also for anyone "
 "who is learning this programming language."
@@ -242,11 +248,11 @@ msgstr ""
 "Je určená každému, kto s týmto programovacím jazykom pracuje "
 "profesionálne alebo sa s ním ešte len zoznamuje."
 
-#: templates/index.html:17
+#: templates/index.html:18
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr "Našli ste na našich stránkach chybu? Chcete vedieť viac? Dajte nám vedieť."
 
-#: templates/index.html:18
+#: templates/index.html:19
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -609,4 +615,3 @@ msgstr ""
 
 #~ msgid "Suggestions are always welcomed at %(email)s."
 #~ msgstr "Vaše návrhy radi uvítame na %(email)s."
-
