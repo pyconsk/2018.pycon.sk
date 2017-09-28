@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-09-28 10:06+0200\n"
+"POT-Creation-Date: 2017-09-28 10:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -182,27 +182,23 @@ msgid ""
 "Bratislava</strong>."
 msgstr ""
 
-#: templates/index.html:10
-msgid "This is a test. Ignore it."
-msgstr ""
-
-#: templates/index.html:12
+#: templates/index.html:11
 msgid ""
 "PyCon SK is an international conference organized by the community of "
 "enthusiasts and supporters of the Python programming language."
 msgstr ""
 
-#: templates/index.html:13
+#: templates/index.html:12
 msgid ""
 "It is designed for anyone who works professionally and also for anyone "
 "who is learning this programming language."
 msgstr ""
 
-#: templates/index.html:18
+#: templates/index.html:17
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:19
+#: templates/index.html:18
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -481,5 +477,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Suggestions are always welcomed at %(email)s."
+#~ msgstr ""
+
+#~ msgid "This is a test. Ignore it."
 #~ msgstr ""
 
