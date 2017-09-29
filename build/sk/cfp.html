@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <title>PyCon SK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
+  <meta name="description" content="Oficialna stránka PyCon SK 2018">
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
+  <meta property="og:url" content="https://2018.pycon.sk/"/>
+  <meta property="og:title" content="PyCon SK 2018, Bratislava"/>
+  <meta property="og:site_name" content="2018.pycon.sk"/>
+  <meta property="og:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Pythonktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@pyconsk"/>
+  <meta name="twitter:title" content="PyCon SK 2018, Bratislava"/>
+  <meta name="twitter:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Pythonktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:url" content="https://2018.pycon.sk"/>
+  <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
+  <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20170809">
+  <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
+  
+  <script src="/static/js/vue.2.4.4.min.js"></script>
+  <script src="/static/js/axios.0.16.2.min.js"></script>
+
+  
+    <link rel="alternate" href="https://2018.pycon.sk/en/cfp.html" hreflang="en">
+  
+  <link rel="canonical" href="https://2018.pycon.sk/sk/cfp.html"/>
+</head>
+<body>
+<nav class="transparent">
+  <svg width="36" height="36" class="logo">
+    <image xlink:href="/static/img/logo/spy-logo.svg"
+           src="/static/img/logo/spy-logo.png" width="36" height="36"/>
+  </svg>
+  <a href="/sk/index.html" class="brand">PyCon SK 2018</a>
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button" id="menu">&#8801;</label>
+
+  <div class="menu">
+    
+      <a href="/sk/venue.html"
+         class="pseudo button icon-help-circled ">Miesto konania</a>
+      <!-- <a href="/sk/cfp.html"
+          class="pseudo button icon-help-circled active ">Call for Proposals</a> -->
+      <a href="/sk/sponsoring.html"
+         class="pseudo button icon-help-circled  ">Sponzorovanie</a>
+      <a href="/sk/coc.html"
+         class="pseudo button icon-help-circled  ">Kódex správania</a>
+      <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">O nás</a>
+    
+    
+      <a href="/en/cfp.html" title="Switch to english language"
+         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="english language"></a>
+    
+  </div>
+</nav>
+<main>
+  
+  <div class="modal" id="talkModal">
+    <input id="modal_talk" type="checkbox" v-model="open"/>
+    <label for="modal_talk" class="overlay"></label>
+    <article>
+      <form method="post">
+        <header>
+          <h3>Talk Abstract</h3>
+          <label for="modal_talk" class="close">&times;</label>
+        </header>
+        <section class="content">
+          <input class="stack" type="text" v-model.trim="talkTitle" v-bind:class="{ 'error': talkTitleError }" placeholder="Talk title"/>
+          <span class="error" v-if="talkTitleError">{{ talkTitleError }}</span>
+
+          <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="Abstract"></textarea>
+          <span class="error" v-if="talkAbstractError">{{ talkAbstractError }}</span>
+
+          <select v-model="language" v-bind:class="{ 'error': languageError }" >
+            <option disabled value="">Vyberte si</option>
+            <option value="SK">Slovensky</option>
+            <option value="CZ">Česky</option>
+            <option value="EN">Anglicky</option>
+            <option value="DE">Nemecky</option>
+          </select>
+          <span class="error" v-if="languageError">{{ languageError }}</span>
+
+          <select v-model="type" v-bind:class="{ 'error': typeError }" >
+            <option disabled value="">Vyberte si</option>
+            <option value="talk">Prednáška</option>
+            <option value="workshop">Workshop</option>
+          </select>
+          <span class="error" v-if="typeError">{{ typeError }}</span>
+
+          <select v-model="duration" v-bind:class="{ 'error': durationError }" >
+            <option disabled value="">Vyberte si</option>
+            <option value="30">30 minút</option>
+            <option value="45">45 minút</option>
+            <option value="60">60 minút</option>
+            <option value="90">90 minút</option>
+            <option value="120">120 minút</option>
+          </select>
+          <span class="error" v-if="durationError">{{ durationError }}</span>
+
+        </section>
+        <footer>
+          <label for="modal_speaker" class="button" v-on:click="validateForm">Pokračovať</label>
+          <label for="modal_talk" class="button dangerous">Zrušiť</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+  <div class="modal" id="speakerModal">
+    <input id="modal_speaker" type="checkbox" v-model="open"/>
+    <label for="modal_speaker" class="overlay"></label>
+    <article>
+      <form method="post" role="form" enctype="multipart/form-data" v-on:submit="validateForm">
+        <header>
+          <h3>Speaker Biography</h3>
+          <label for="modal_speaker" class="close">&times;</label>
+        </header>
+        <section class="content">
+          <select v-model="title" v-bind:class="{ 'error': titleError }">
+            <option disabled value="">Vyberte si</option>
+            <option value="mr">Pán</option>
+            <option value="ms">Pani</option>
+            <option value="mx">Neurčené</option>
+          </select>
+          <span class="error" v-if="titleError">{{ titleError }}</span>
+
+          <input class="stack border_bottom" type="text" v-model.trim="firstName" v-bind:class="{ 'error': firstNameError }" placeholder="Krstné meno"/>
+          <span class="error" v-if="firstNameError">{{ firstNameError }}</span>
+
+          <input class="stack" type="text" v-model.trim="lastName" v-bind:class="{ 'error': lastNameError }" placeholder="Priezvisko"/>
+          <span class="error" v-if="lastNameError">{{ lastNameError }}</span>
+
+          <input class="stack" type="tel" v-model.trim="phone" v-bind:class="{ 'error': phoneError }" placeholder="Telefón"/>
+          <span class="error" v-if="phoneError">{{ phoneError }}</span>
+
+          <input class="stack" type="email" v-model.trim="email" v-bind:class="{ 'error': emailError }" placeholder="Email"/>
+          <span class="error" v-if="emailError">{{ emailError }}</span>
+
+          <textarea class="stack" v-model="bio" v-bind:class="{ 'error': bioError }" placeholder="Životopis"></textarea>
+          <span class="error" v-if="bioError">{{ bioError }}</span>
+
+          <input class="stack" type="url" v-model.trim="url" v-bind:class="{ 'error': urlError }" placeholder="Url"/>
+          <span class="error" v-if="urlError">{{ urlError }}</span>
+
+          <input class="stack" type="url" v-model.trim="socialUrl" placeholder="Url na socialnu sieť"/>
+          <span class="error" v-if="socialUrlError">{{ socialUrlError }}</span>
+
+          <select class="stack" v-model="country" v-bind:class="{ 'error': countryError }" >
+            <option disabled value="">Vyberte si</option>
+            <option value="SK">SK</option>
+          </select>
+          <span class="error" v-if="countryError">{{ countryError }}</span>
+
+          <input class="stack" v-model="image" accept="image/*" type="file" v-bind:class="{ 'error': imageError }" id="avatar">
+          <span class="error" v-if="imageError">{{ imageError }}</span>
+        </section>
+        <footer>
+          <button type="submit">Odoslať</button>
+          <label for="modal_speaker" ref="modal_speaker" class="button dangerous">Zrušiť</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+  <div class="modal" id="popupModal">
+    <input id="modal_popup" type="checkbox" v-model="open"/>
+    <label for="modal_popup" class="overlay"></label>
+    <article>
+      <form method="post">
+        <header>
+          <h3>{{ header }}</h3>
+          <label for="modal_popup" class="close">&times;</label>
+        </header>
+        <section class="content">
+          {{ message }}
+        </section>
+        <footer>
+          <label for="modal_popup" class="button">OK</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+  <div class="section" id="cfp">
+    <div class="content">
+      <div class="content-text">
+        <h1>Návrhy na predkladanie prednášok</h1>
+        <p class="lead">Návrhy na predkladanie prednášok sú spostené!</p>
+
+        <p class="text-justify">
+          PyCon organizuje Python komunita pre komunitu. Ak idete na túto konferenciu, stávate sa súčasťou tejto komunity.Pokiaľ ste spravili niečo, čo by mohlo zaujímať aj iných, alebo si myslíte, že ostatní by o tom mali vedieť, príďte nám o tom spraviť prednášku. Nechceme počúvať iba expertov a známe osobnosti - aj noví perspektívni rečníci sú tiež zaujímaví, preto sa, prosím, nenechajte odradiť pocitom, že nie ste expert alebo známa osobnosť. Toto je naša pozvánka, aby ste poslali návrh na prednášku, aj ak ste ešte nikdy na konferencií neprednášali. Rečníci vystupujúci prvýkrát budú uprednostňovaní. 
+        </p>
+
+        <h2>Kam poslať Váš návrh na prednášku</h2>
+        <p class="text-justify">
+          Sme radi, že máte záujem prednášať na PyCon SK 2018! Pošlite nám Váš návrh aj so stručným obsahom a životopisom.
+        </p>
+
+        <p class="text-center">
+          <label for="modal_talk" class='button lead'>Pošlite Vašu prednásku / workshop</label>
+        </p>
+
+        <p class="text-justify">
+          Neváhajte poslať viac ako jeden návrh na prednášku. Termín odovzdania návrhov na prednášky je 21. január 2018. Vzhľadom na výberové konania odporúčame budúcim rečníkom, aby predložili svoje návrhy čo najskôr. 
+        </p>
+
+        <h2>Pokyny pre podávanie návrhov</h2>
+        <p class="text-justify">
+          Nie je žiadne oficiálne obmedzenie tém, ktoré môžete navrhnúť ako svoju prednášku. Prednášky o Pythone alebo komunite budú s vysokou pravdepodobnosťou zaujímavé pre publikum. Hlavný kritériom, ktoré bude komisia pri výbere prednášok zvažovať, je to, ako Vaša prednáška zaujme publikum. Je stanovený limit na jednu prednášku pre rečníka. Navrhnúť môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu prednášku (v prípade že bude akceptovaných viac návrhov).
+        </p>
+
+        <div class="flex one two-900 center">
+          <div class="box">
+            <h2><i class="icon-chart-line" aria-hidden="true"></i> Prednášky</h2>
+            <p class="text-justify">
+              Väčšina prednášok má dĺžku 30 minút, ale ponúkame aj 45 minútový vstup pre zaujímavé témy, ktoré budú vyžadovať dlhší vstup.
+            </p>
+          </div>
+
+          <div class="box">
+            <h2><i class="icon-handshake-o" aria-hidden="true"></i> Workshopy</h2>
+            <p class="text-justify">
+              Tak ako na prednášky, tešíme sa aj na tutoriály, ktoré budú vhodné pre komunitu na akejkoľvek úrovni! Prostredníctvom takýchto výukových programov sa snažíme zveľaďovať Python komunitu a formovať budúcnosť. Vzhľadom na to, že návody trvajú dlhšie a budú v menších miestnostiach, vyžadujú oveľa viac prípravy.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p class="socka">
+        &nbsp;<a href="https://facebook.com/pyconsk" class="external"><i class="icon-facebook-official" aria-hidden="true"></i>
+        <span class="hide-900">Facebook</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://twitter.com/pyconsk" class="external"><i class="icon-twitter" aria-hidden="true"></i>
+        <span class="hide-900">Twitter</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://www.linkedin.com/company/spy-o--z-" class="external"><i class="icon-linkedin"
+                                                                                       aria-hidden="true"></i>
+        <span class="hide-900">LinkedIn</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts"
+                 class="external"><i class="icon-gplus" aria-hidden="true"></i>
+        <span class="hide-900">Google+</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://github.com/pyconsk" class="external"><i class="icon-github" aria-hidden="true"></i>
+        <span class="hide-900">GitHub</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="mailto:info%40pycon.sk" class="external"><i class="icon-mail" aria-hidden="true"></i>
+        <span class="hide-900">info@pycon.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://riot.python.sk/#/directory" class="external"><i class="icon-chat" aria-hidden="true"></i>
+        <span class="hide-900">riot.python.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2016.pycon.sk" class="external">2016</a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2017.pycon.sk" class="external">2017</a>
+
+      </p>
+      <p class="copyleft">
+        
+        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> je ochranná známka <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a> pre celosvetové konferenčné aktivity.
+        PyCon SK je organizovaný dobrovoľníkmi z <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
+        <br/>
+        Našli ste  chybu? Chýba Vám nejaká informácia? Toto je komunitou manažovaná webstránka, prispejte na našom <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>e.
+        
+        
+      </p>
+    </div>
+  </footer>
+</main>
+  <script src="/static/js/analytics.min.js" async></script>
+
+  <script src="/static/js/cfp.js"></script>
+
+
+  <script type="application/ld+json">{"@context": "http://schema.org", "@type": "Event", "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for the Python programming language.", "endDate": "2018-03-11T18:00:00+01:00", "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg", "location": {"@type": "Place", "name": "Bratislava"}, "name": "PyCon SK 2018", "startDate": "2018-03-09T9:00:00+01:00", "url": "https://2018.pycon.sk/sk/", "workPerformed": {"@type": "CreativeWork", "creator": {"@type": "Organization", "logo": "https://spy.python.sk/img/logo/spy-logo.png", "name": "SPy o.z.", "url": "https://spy.python.sk/"}, "name": "PyCon SK 2018"}}</script>
+
+</body>
+</html>
