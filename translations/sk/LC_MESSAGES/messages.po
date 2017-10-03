@@ -44,7 +44,7 @@ msgstr "Miesto konania"
 
 #: templates/body.html:50
 msgid "Call for Proposals"
-msgstr ""
+msgstr "Výzva na prekladanie návrhov prednášok"
 
 #: templates/body.html:52
 msgid "Sponsoring"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: templates/cfp.html:19
 msgid "Speaker Biography"
-msgstr ""
+msgstr "Životopis prednášateľa"
 
 #: templates/cfp.html:24 templates/cfp.html:53 templates/cfp.html:84
 #: templates/cfp.html:93 templates/cfp.html:100
@@ -148,7 +148,7 @@ msgstr "Url na socialnu sieť"
 
 #: templates/cfp.html:54
 msgid "SK"
-msgstr ""
+msgstr "SK"
 
 #: templates/cfp.html:60
 msgid "Continue"
@@ -160,15 +160,15 @@ msgstr "Zrušiť"
 
 #: templates/cfp.html:73
 msgid "Talk Abstract"
-msgstr ""
+msgstr "Abstrakt prednášky"
 
 #: templates/cfp.html:77
 msgid "Talk title"
-msgstr ""
+msgstr "Názov prednášky"
 
 #: templates/cfp.html:80
 msgid "Abstract"
-msgstr ""
+msgstr "Abstrakt"
 
 #: templates/cfp.html:85
 msgid "Slovak"
@@ -209,7 +209,7 @@ msgstr "Návrhy na predkladanie prednášok"
 
 #: templates/cfp.html:123
 msgid "The Call For Proposals is open!"
-msgstr "Návrhy na predkladanie prednášok sú spostené!"
+msgstr "Návrhy na predkladanie prednášok sú spustené!"
 
 #: templates/cfp.html:126
 msgid ""
@@ -228,7 +228,7 @@ msgid ""
 "        preferred."
 msgstr ""
 "PyCon organizuje Python komunita pre komunitu. Ak idete na túto "
-"konferenciu, stávate sa súčasťou tejto komunity.Pokiaľ ste spravili "
+"konferenciu, stávate sa súčasťou tejto komunity. Pokiaľ ste spravili "
 "niečo, čo by mohlo zaujímať aj iných, alebo si myslíte, že ostatní by o "
 "tom mali vedieť, príďte nám o tom spraviť prednášku. Nechceme počúvať iba"
 " expertov a známe osobnosti - aj noví perspektívni rečníci sú tiež "
@@ -252,7 +252,7 @@ msgstr ""
 
 #: templates/cfp.html:142
 msgid "Submit your talk / workshop"
-msgstr "Pošlite Vašu prednásku / workshop"
+msgstr "Pošlite Vašu prednášku / workshop"
 
 #: templates/cfp.html:146
 msgid ""
@@ -284,7 +284,7 @@ msgid ""
 msgstr ""
 "Nie je žiadne oficiálne obmedzenie tém, ktoré môžete navrhnúť ako svoju "
 "prednášku. Prednášky o Pythone alebo komunite budú s vysokou "
-"pravdepodobnosťou zaujímavé pre publikum. Hlavný kritériom, ktoré bude "
+"pravdepodobnosťou zaujímavé pre publikum. Hlavným kritériom, ktoré bude "
 "komisia pri výbere prednášok zvažovať, je to, ako Vaša prednáška zaujme "
 "publikum. Je stanovený limit na jednu prednášku pre rečníka. Navrhnúť "
 "môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu "
@@ -382,7 +382,7 @@ msgstr ""
 "Členovia komunity sú ohľaduplní voči ostatným používateľom Pythonu. "
 "Rešpektujeme úsilie druhých, pričom máme na pamäti, že častokrát ich "
 "práca bola venovaná len pre dobro komunity. Sme všímaví v našich "
-"vyjadreniach, či už osobne alebo on-line, a sme taktní, keď príde na "
+"vyjadreniach, či už osobne alebo on-line a sme taktní, keď príde na "
 "rozdielne názory."
 
 #: templates/coc.html:22
@@ -455,7 +455,7 @@ msgid ""
 "Bratislava</strong>."
 msgstr ""
 "Hostiteľom jej <strong>tretieho ročníka</strong> bude opäť "
-"<strong>Bratislava, 9-11. Marec 2018</strong>."
+"<strong>Bratislava, 9.-11. Marec 2018</strong>."
 
 #: templates/index.html:11
 msgid ""
@@ -596,7 +596,7 @@ msgstr ""
 
 #: templates/venue.html:6
 msgid "How do you get to Slovak PyCon?"
-msgstr "Ako sa dostanete na Slovenský PyCon?"
+msgstr "Ako sa dostanete na slovenský PyCon?"
 
 #: templates/venue.html:9
 msgid "Venue Address"
@@ -624,7 +624,7 @@ msgid ""
 msgstr ""
 "Bratislava patrí medzi najmladšie hlavné mestá Európy. Napriek tomu má "
 "bohatú históriu slobodného kráľovského korunovačného mesta. Vtedy bola "
-"ešte Prešporkom nazývaná. Dnes je Bratislava významný dopravný uzol v "
+"ešte nazývaná Prešporkom. Dnes je Bratislava významný dopravný uzol v "
 "strednej Európe a možností, ako sa sem dostať, je neúrekom."
 
 #: templates/venue.html:24
@@ -756,7 +756,7 @@ msgstr ""
 "V Bratislave máte široké možnosti ubytovania: od coach surfingu cez "
 "Airbnb, hostely až po päťhviezdičkové hotely. Hoci sa konferencia koná "
 "mimo hlavnej turistickej sezóny, určite odporúčame zabezpečiť si "
-"ubytovanie v predstihu. "
+"ubytovanie v predstihu."
 
 #: templates/venue.html:69
 msgid "Guide"
@@ -789,5 +789,5 @@ msgid ""
 msgstr ""
 "Prípadne si môžete pozrieť <a href=\"http://www.visitbratislava.com/sk\" "
 "title=\"stránky mesta pre návštevníkov\" target=\"_blank\" "
-"class=\"external\">oficialne stránky mesta, určené pre návštevníkov</a>, "
+"class=\"external\">oficiálne stránky mesta, určené pre návštevníkov</a>, "
 "kde nájdete aj iné udalosti, ktoré sa práve odohrávajú v Bratislave."
