@@ -59,6 +59,11 @@ nav {
   background-attachment: fixed;
 }
 
+.section#cfp {
+  background-image: url('/static/img/backgrounds/bag.jpg');
+  background-attachment: fixed;
+}
+
 .section#coc {
   background-image: url('/static/img/backgrounds/snake.jpg');
   background-attachment: fixed;
@@ -124,12 +129,42 @@ footer {
   font-size: small;
 }
 
+article footer {
+  position: relative;
+  box-shadow: none;
+  border: none;
+}
+
+input:invalid, input.error, textarea.error, select.error {
+  box-shadow: 0 0 5px 1px red;
+}
+
+#speakerModal textarea {
+  width: 40em;
+  height: 8em;
+}
+
+#talkModal textarea {
+  width: 40em;
+  height: 18em;
+}
+
+.border_bottom {
+  border-bottom-width: 1px;
+}
+
 @media (max-width: 60em) {
   .content-text {
     width: 80%;
   }
   .content {
     min-height: 100vh;
+  }
+  article .content {
+    min-height: auto;
+  }
+  #speakerModal textarea , #talkModal textarea {
+    width: 100%;
   }
 }
 
@@ -162,6 +197,11 @@ footer {
     background-attachment: fixed;
   }
 
+  .section#cfp {
+    background-image: url('/static/img/backgrounds/bag_medium.jpg');
+    background-attachment: fixed;
+  }
+
   .section#coc {
     background-image: url('/static/img/backgrounds/snake_medium.jpg');
     background-attachment: fixed;
@@ -185,6 +225,11 @@ footer {
 
   .section#sponsoring {
     background-image: url('/static/img/backgrounds/stairway_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#cfp {
+    background-image: url('/static/img/backgrounds/bag_small.jpg');
     background-attachment: fixed;
   }
 

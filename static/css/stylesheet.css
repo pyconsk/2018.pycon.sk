@@ -3016,7 +3016,7 @@ select.stack {
 html, body, main, .section {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   display: block;
-  background-color: white;
+  background-color: #fff;
   color: #000;
   width: 100%;
   height: 100%;
@@ -3074,6 +3074,11 @@ nav {
   background-attachment: fixed;
 }
 
+.section#cfp {
+  background-image: url('/static/img/backgrounds/bag.jpg');
+  background-attachment: fixed;
+}
+
 .section#coc {
   background-image: url('/static/img/backgrounds/snake.jpg');
   background-attachment: fixed;
@@ -3088,12 +3093,9 @@ nav {
   text-align: justify;
   width: 75%;
   margin: 6em auto;
-  background-color: rgba(255,255,255,0.80);
+  background-color: rgba(255, 255, 255, 0.80);
   color: #000;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 40px;
+  padding: 10px 10px 40px 10px;
 }
 
 .text-center {
@@ -3142,12 +3144,42 @@ footer {
   font-size: small;
 }
 
+article footer {
+  position: relative;
+  box-shadow: none;
+  border: none;
+}
+
+input:invalid, input.error, textarea.error, select.error {
+  box-shadow: 0 0 5px 1px red;
+}
+
+#speakerModal textarea {
+  width: 40em;
+  height: 8em;
+}
+
+#talkModal textarea {
+  width: 40em;
+  height: 18em;
+}
+
+.border_bottom {
+  border-bottom-width: 1px;
+}
+
 @media (max-width: 60em) {
   .content-text {
     width: 80%;
   }
   .content {
     min-height: 100vh;
+  }
+  article .content {
+    min-height: auto;
+  }
+  #speakerModal textarea , #talkModal textarea {
+    width: 100%;
   }
 }
 
@@ -3180,6 +3212,11 @@ footer {
     background-attachment: fixed;
   }
 
+  .section#cfp {
+    background-image: url('/static/img/backgrounds/bag_medium.jpg');
+    background-attachment: fixed;
+  }
+
   .section#coc {
     background-image: url('/static/img/backgrounds/snake_medium.jpg');
     background-attachment: fixed;
@@ -3203,6 +3240,11 @@ footer {
 
   .section#sponsoring {
     background-image: url('/static/img/backgrounds/stairway_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#cfp {
+    background-image: url('/static/img/backgrounds/bag_small.jpg');
     background-attachment: fixed;
   }
 
