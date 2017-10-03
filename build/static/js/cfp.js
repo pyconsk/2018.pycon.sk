@@ -1,5 +1,5 @@
-var AJAX_SERVER = 'http://127.0.0.1:8000/talks/';
-var EVENT_UUID = '6b7c6f64-e20c-43d2-978b-e0346ef4d272';
+var AJAX_SERVER = '/talks/';
+var EVENT_UUID = '0b66b975-e018-478e-8253-524af072eaed';
 
 var speakerModalData = {
   title: '',
@@ -192,26 +192,35 @@ var speakerModal = new Vue({
 
       }).catch(function (error) {
         // Something went wrong
-        console.log(error);
+        if ('response' in error && typeof error.response !== 'undefined') {
 
-        if (error.response.status === 400) {
-          var error_data = error.response.data;
-          // Error status indicate wrong input! Update form fields with messages returned from API.
-          for (var field in error_data) {
+          if (error.response.status === 400) {
+            var error_data = error.response.data;
+            // Error status indicate wrong input! Update form fields with messages returned from API.
+            for (var field in error_data) {
 
-            if (field === 'primary_speaker') {
-              for (var ps_field in error_data[field]) {
-                speakerModal[ps_field +'Error'] = error_data[field][ps_field][0];
+              if (field === 'primary_speaker') {
+                for (var ps_field in error_data[field]) {
+                  speakerModal[ps_field + 'Error'] = error_data[field][ps_field][0];
+                }
+              } else {
+                speakerModal.open = false; // Close speakerModal so user see error in talkModal
+                talkModal[field + 'Error'] = error_data[field][0];
               }
+            }
+          } else if (error.response.status === 500)  {
+            speakerModal.openPopUp(error.response.statusText, error.response.status + ': ' + error.response.statusText);
+          } else {
+            // Different error status than wrong input!
+            console.log(error.response);
+            if ('detail' in error.response.data) {
+              speakerModal.openPopUp(error.response.data['detail'], error.response.status + ': ' + error.response.statusText);
             } else {
-              speakerModal.open = false; // Close speakerModal so user see error in talkModal
-              talkModal[field +'Error'] = error_data[field][0];
+              speakerModal.openPopUp(error.message, error.response.status + ': ' + error.response.statusText);
             }
           }
-
         } else {
-          // Different error status than wrong input!
-          speakerModal.openPopUp(error.message, error.response.status + ': ' + error.response.statusText);
+          speakerModal.openPopUp(error.message);
         }
       });
     }
