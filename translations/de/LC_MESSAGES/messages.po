@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-09-28 10:13+0200\n"
+"POT-Creation-Date: 2017-10-03 20:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.0\n"
 
 #: templates/body.html:8
 msgid "Official PyCon SK 2018 website"
@@ -93,120 +93,124 @@ msgid ""
 msgstr ""
 
 #: templates/cfp.html:19
-msgid "Speaker Biography"
-msgstr ""
-
-#: templates/cfp.html:24 templates/cfp.html:53 templates/cfp.html:84
-#: templates/cfp.html:93 templates/cfp.html:100
-msgid "Please select one"
-msgstr ""
-
-#: templates/cfp.html:25
-msgid "Mr."
-msgstr ""
-
-#: templates/cfp.html:26
-msgid "Ms."
-msgstr ""
-
-#: templates/cfp.html:27
-msgid "Mx."
-msgstr ""
-
-#: templates/cfp.html:31
-msgid "First name"
-msgstr ""
-
-#: templates/cfp.html:34
-msgid "Last name"
-msgstr ""
-
-#: templates/cfp.html:37
-msgid "Phone"
-msgstr ""
-
-#: templates/cfp.html:40
-msgid "Email"
-msgstr ""
-
-#: templates/cfp.html:43
-msgid "Biography"
-msgstr ""
-
-#: templates/cfp.html:46
-msgid "Url"
-msgstr ""
-
-#: templates/cfp.html:49
-msgid "Social Url"
-msgstr ""
-
-#: templates/cfp.html:54
-msgid "SK"
-msgstr ""
-
-#: templates/cfp.html:60
-msgid "Continue"
-msgstr ""
-
-#: templates/cfp.html:61 templates/cfp.html:112
-msgid "Cancel"
-msgstr ""
-
-#: templates/cfp.html:73
 msgid "Talk Abstract"
 msgstr ""
 
-#: templates/cfp.html:77
+#: templates/cfp.html:23
 msgid "Talk title"
 msgstr ""
 
-#: templates/cfp.html:80
+#: templates/cfp.html:26
 msgid "Abstract"
 msgstr ""
 
-#: templates/cfp.html:85
+#: templates/cfp.html:30 templates/cfp.html:39 templates/cfp.html:46
+#: templates/cfp.html:75 templates/cfp.html:104
+msgid "Please select one"
+msgstr ""
+
+#: templates/cfp.html:31
 msgid "Slovak"
 msgstr ""
 
-#: templates/cfp.html:86
+#: templates/cfp.html:32
 msgid "Czech"
 msgstr ""
 
-#: templates/cfp.html:87
+#: templates/cfp.html:33
 msgid "English"
 msgstr ""
 
-#: templates/cfp.html:88
+#: templates/cfp.html:34
 msgid "German"
 msgstr ""
 
-#: templates/cfp.html:94
+#: templates/cfp.html:40
 msgid "Talk"
 msgstr ""
 
-#: templates/cfp.html:95
+#: templates/cfp.html:41
 msgid "Workshop"
 msgstr ""
 
-#: templates/cfp.html:101 templates/cfp.html:102 templates/cfp.html:103
-#: templates/cfp.html:104 templates/cfp.html:105
+#: templates/cfp.html:47 templates/cfp.html:48 templates/cfp.html:49
+#: templates/cfp.html:50 templates/cfp.html:51
 msgid "minutes"
 msgstr ""
 
-#: templates/cfp.html:111
+#: templates/cfp.html:57
+msgid "Continue"
+msgstr ""
+
+#: templates/cfp.html:58 templates/cfp.html:114
+msgid "Cancel"
+msgstr ""
+
+#: templates/cfp.html:70
+msgid "Speaker Biography"
+msgstr ""
+
+#: templates/cfp.html:76
+msgid "Mr."
+msgstr ""
+
+#: templates/cfp.html:77
+msgid "Ms."
+msgstr ""
+
+#: templates/cfp.html:78
+msgid "Mx."
+msgstr ""
+
+#: templates/cfp.html:82
+msgid "First name"
+msgstr ""
+
+#: templates/cfp.html:85
+msgid "Last name"
+msgstr ""
+
+#: templates/cfp.html:88
+msgid "Phone"
+msgstr ""
+
+#: templates/cfp.html:91
+msgid "Email"
+msgstr ""
+
+#: templates/cfp.html:94
+msgid "Biography"
+msgstr ""
+
+#: templates/cfp.html:97
+msgid "Url"
+msgstr ""
+
+#: templates/cfp.html:100
+msgid "Social Url"
+msgstr ""
+
+#: templates/cfp.html:105
+msgid "SK"
+msgstr ""
+
+#: templates/cfp.html:113
 msgid "Submit"
 msgstr ""
 
-#: templates/cfp.html:122
+#: templates/cfp.html:133
+msgid "OK"
+msgstr ""
+
+#: templates/cfp.html:142
 msgid "Call for proposals"
 msgstr ""
 
-#: templates/cfp.html:123
+#: templates/cfp.html:143
 msgid "The Call For Proposals is open!"
 msgstr ""
 
-#: templates/cfp.html:126
+#: templates/cfp.html:146
 msgid ""
 "PyCon is organized by the Python community and for the Python community. "
 "You're coming to the event,\n"
@@ -223,22 +227,22 @@ msgid ""
 "        preferred."
 msgstr ""
 
-#: templates/cfp.html:135
+#: templates/cfp.html:155
 msgid "Where to submit your proposal"
 msgstr ""
 
-#: templates/cfp.html:137
+#: templates/cfp.html:157
 msgid ""
 "We are glad you are interested in giving a talk at PyCon SK 2018! Submit "
 "your talk proposal with short\n"
 "        abstract and your bio."
 msgstr ""
 
-#: templates/cfp.html:142
+#: templates/cfp.html:162
 msgid "Submit your talk / workshop"
 msgstr ""
 
-#: templates/cfp.html:146
+#: templates/cfp.html:166
 msgid ""
 "Don't hesitate to submit more than one proposal. The deadline for "
 "submissions is the end of\n"
@@ -247,11 +251,11 @@ msgid ""
 "        proposals as early as possible."
 msgstr ""
 
-#: templates/cfp.html:151
+#: templates/cfp.html:171
 msgid "Guidelines for Proposal Submission"
 msgstr ""
 
-#: templates/cfp.html:153
+#: templates/cfp.html:173
 msgid ""
 "There is no official restriction on the topic that you propose for a talk"
 " session. Talks about Python or\n"
@@ -264,11 +268,11 @@ msgid ""
 "        than one of your proposals is accepted."
 msgstr ""
 
-#: templates/cfp.html:162
+#: templates/cfp.html:182
 msgid "Talks"
 msgstr ""
 
-#: templates/cfp.html:164
+#: templates/cfp.html:184
 msgid ""
 "Most talks are 30 minutes long, but we do offer a limited number of "
 "45-minute slots for important\n"
@@ -276,11 +280,11 @@ msgid ""
 "treatment."
 msgstr ""
 
-#: templates/cfp.html:170
+#: templates/cfp.html:190
 msgid "Workshops"
 msgstr ""
 
-#: templates/cfp.html:172
+#: templates/cfp.html:192
 msgid ""
 "As with the talks, we are looking for tutorials that can grow this "
 "community at any level!\n"
@@ -642,3 +646,4 @@ msgid ""
 "class=\"external\">official city guide for visitors</a>, where you can "
 "also find other events that are happening in Bratislava."
 msgstr ""
+

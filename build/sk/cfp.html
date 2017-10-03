@@ -48,7 +48,7 @@
       <a href="/sk/venue.html"
          class="pseudo button icon-help-circled ">Miesto konania</a>
       <!-- <a href="/sk/cfp.html"
-          class="pseudo button icon-help-circled active ">Call for Proposals</a> -->
+          class="pseudo button icon-help-circled active ">Výzva na prekladanie návrhov prednášok</a> -->
       <a href="/sk/sponsoring.html"
          class="pseudo button icon-help-circled  ">Sponzorovanie</a>
       <a href="/sk/coc.html"
@@ -69,14 +69,14 @@
     <article>
       <form method="post">
         <header>
-          <h3>Talk Abstract</h3>
+          <h3>Abstrakt prednášky</h3>
           <label for="modal_talk" class="close">&times;</label>
         </header>
         <section class="content">
-          <input class="stack" type="text" v-model.trim="talkTitle" v-bind:class="{ 'error': talkTitleError }" placeholder="Talk title"/>
+          <input class="stack" type="text" v-model.trim="talkTitle" v-bind:class="{ 'error': talkTitleError }" placeholder="Názov prednášky"/>
           <span class="error" v-if="talkTitleError">{{ talkTitleError }}</span>
 
-          <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="Abstract"></textarea>
+          <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="Abstrakt"></textarea>
           <span class="error" v-if="talkAbstractError">{{ talkAbstractError }}</span>
 
           <select v-model="language" v-bind:class="{ 'error': languageError }" >
@@ -120,7 +120,7 @@
     <article>
       <form method="post" role="form" enctype="multipart/form-data" v-on:submit="validateForm">
         <header>
-          <h3>Speaker Biography</h3>
+          <h3>Životopis prednášateľa</h3>
           <label for="modal_speaker" class="close">&times;</label>
         </header>
         <section class="content">
@@ -193,10 +193,10 @@
     <div class="content">
       <div class="content-text">
         <h1>Návrhy na predkladanie prednášok</h1>
-        <p class="lead">Návrhy na predkladanie prednášok sú spostené!</p>
+        <p class="lead">Návrhy na predkladanie prednášok sú spustené!</p>
 
         <p class="text-justify">
-          PyCon organizuje Python komunita pre komunitu. Ak idete na túto konferenciu, stávate sa súčasťou tejto komunity.Pokiaľ ste spravili niečo, čo by mohlo zaujímať aj iných, alebo si myslíte, že ostatní by o tom mali vedieť, príďte nám o tom spraviť prednášku. Nechceme počúvať iba expertov a známe osobnosti - aj noví perspektívni rečníci sú tiež zaujímaví, preto sa, prosím, nenechajte odradiť pocitom, že nie ste expert alebo známa osobnosť. Toto je naša pozvánka, aby ste poslali návrh na prednášku, aj ak ste ešte nikdy na konferencií neprednášali. Rečníci vystupujúci prvýkrát budú uprednostňovaní. 
+          PyCon organizuje Python komunita pre komunitu. Ak idete na túto konferenciu, stávate sa súčasťou tejto komunity. Pokiaľ ste spravili niečo, čo by mohlo zaujímať aj iných, alebo si myslíte, že ostatní by o tom mali vedieť, príďte nám o tom spraviť prednášku. Nechceme počúvať iba expertov a známe osobnosti - aj noví perspektívni rečníci sú tiež zaujímaví, preto sa, prosím, nenechajte odradiť pocitom, že nie ste expert alebo známa osobnosť. Toto je naša pozvánka, aby ste poslali návrh na prednášku, aj ak ste ešte nikdy na konferencií neprednášali. Rečníci vystupujúci prvýkrát budú uprednostňovaní. 
         </p>
 
         <h2>Kam poslať Váš návrh na prednášku</h2>
@@ -205,7 +205,7 @@
         </p>
 
         <p class="text-center">
-          <label for="modal_talk" class='button lead'>Pošlite Vašu prednásku / workshop</label>
+          <label for="modal_talk" class='button lead'>Pošlite Vašu prednášku / workshop</label>
         </p>
 
         <p class="text-justify">
@@ -214,7 +214,7 @@
 
         <h2>Pokyny pre podávanie návrhov</h2>
         <p class="text-justify">
-          Nie je žiadne oficiálne obmedzenie tém, ktoré môžete navrhnúť ako svoju prednášku. Prednášky o Pythone alebo komunite budú s vysokou pravdepodobnosťou zaujímavé pre publikum. Hlavný kritériom, ktoré bude komisia pri výbere prednášok zvažovať, je to, ako Vaša prednáška zaujme publikum. Je stanovený limit na jednu prednášku pre rečníka. Navrhnúť môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu prednášku (v prípade že bude akceptovaných viac návrhov).
+          Nie je žiadne oficiálne obmedzenie tém, ktoré môžete navrhnúť ako svoju prednášku. Prednášky o Pythone alebo komunite budú s vysokou pravdepodobnosťou zaujímavé pre publikum. Hlavným kritériom, ktoré bude komisia pri výbere prednášok zvažovať, je to, ako Vaša prednáška zaujme publikum. Je stanovený limit na jednu prednášku pre rečníka. Navrhnúť môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu prednášku (v prípade že bude akceptovaných viac návrhov).
         </p>
 
         <div class="flex one two-900 center">
