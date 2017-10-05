@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-03 20:35+0200\n"
+"POT-Creation-Date: 2017-10-05 09:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.0\n"
+"Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:8
 msgid "Official PyCon SK 2018 website"
@@ -90,6 +90,26 @@ msgstr ""
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
+msgstr ""
+
+#: templates/body.html:115
+msgid "You are supporting us by minig Monero while browsing this site."
+msgstr ""
+
+#: templates/body.html:116
+msgid "Start mining!"
+msgstr ""
+
+#: templates/body.html:117
+msgid "Stop mining!"
+msgstr ""
+
+#: templates/body.html:118
+msgid "Hashes/s"
+msgstr ""
+
+#: templates/body.html:118
+msgid "Total"
 msgstr ""
 
 #: templates/cfp.html:19

