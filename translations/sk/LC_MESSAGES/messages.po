@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-05 09:30+0200\n"
+"POT-Creation-Date: 2017-10-05 11:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -98,22 +98,28 @@ msgstr ""
 "manažovaná webstránka, prispejte na našom %(github)se."
 
 #: templates/body.html:115
+msgid ""
+"Please disable ad blocker and refresh. You will support us by temporarily"
+" minig Monero."
+msgstr "Prosím vypnite si blokovač reklamy. Podporíte nás dočasnou ťažbou Monera."
+
+#: templates/body.html:116
 msgid "You are supporting us by minig Monero while browsing this site."
 msgstr "Podporujete nás ťažbou Monera počas prehliadania tejto stránky."
 
-#: templates/body.html:116
+#: templates/body.html:117
 msgid "Start mining!"
 msgstr "Zapni ťaženie!"
 
-#: templates/body.html:117
+#: templates/body.html:118
 msgid "Stop mining!"
 msgstr "Zastav ťaženie!"
 
-#: templates/body.html:118
-msgid "Hash/s"
+#: templates/body.html:119
+msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:119
 msgid "Total"
 msgstr "Celkovo"
 
@@ -815,4 +821,7 @@ msgstr ""
 "title=\"stránky mesta pre návštevníkov\" target=\"_blank\" "
 "class=\"external\">oficiálne stránky mesta, určené pre návštevníkov</a>, "
 "kde nájdete aj iné udalosti, ktoré sa práve odohrávajú v Bratislave."
+
+#~ msgid "Hash/s"
+#~ msgstr ""
 

