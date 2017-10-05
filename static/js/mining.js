@@ -61,4 +61,5 @@ function minerStart() {
 startLink.addEventListener('click', minerStart);
 stopLink.addEventListener('click', minerStop);
 
-minerStart();
+// Disable auto start!
+// minerStart();

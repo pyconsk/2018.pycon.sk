@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-05 11:15+0200\n"
+"POT-Creation-Date: 2017-10-05 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -94,12 +94,12 @@ msgstr ""
 
 #: templates/body.html:115
 msgid ""
-"Please disable ad blocker and refresh. You will support us by temporarily"
-" minig Monero."
+"Please disable ad blocker and refresh. You can support us by temporarily "
+"minig Monero."
 msgstr ""
 
 #: templates/body.html:116
-msgid "You are supporting us by minig Monero while browsing this site."
+msgid "You can supporting us by minig Monero while browsing this site."
 msgstr ""
 
 #: templates/body.html:117
@@ -672,4 +672,13 @@ msgid ""
 "class=\"external\">official city guide for visitors</a>, where you can "
 "also find other events that are happening in Bratislava."
 msgstr ""
+
+#~ msgid ""
+#~ "Please disable ad blocker and refresh."
+#~ " You will support us by temporarily"
+#~ " minig Monero."
+#~ msgstr ""
+
+#~ msgid "You are supporting us by minig Monero while browsing this site."
+#~ msgstr ""
 

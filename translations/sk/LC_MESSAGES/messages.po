@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-05 11:15+0200\n"
+"POT-Creation-Date: 2017-10-05 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -99,13 +99,15 @@ msgstr ""
 
 #: templates/body.html:115
 msgid ""
-"Please disable ad blocker and refresh. You will support us by temporarily"
-" minig Monero."
-msgstr "Prosím vypnite si blokovač reklamy. Podporíte nás dočasnou ťažbou Monera."
+"Please disable ad blocker and refresh. You can support us by temporarily "
+"minig Monero."
+msgstr ""
+"Prosím vypnite si blokovač reklamy. Môžete nás podporíť dočasnou ťažbou "
+"Monera."
 
 #: templates/body.html:116
-msgid "You are supporting us by minig Monero while browsing this site."
-msgstr "Podporujete nás ťažbou Monera počas prehliadania tejto stránky."
+msgid "You can supporting us by minig Monero while browsing this site."
+msgstr "Môžete nás podporíť ťažbou Monera počas prehliadania tejto stránky."
 
 #: templates/body.html:117
 msgid "Start mining!"
@@ -824,4 +826,15 @@ msgstr ""
 
 #~ msgid "Hash/s"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "Please disable ad blocker and refresh."
+#~ " You will support us by temporarily"
+#~ " minig Monero."
+#~ msgstr ""
+#~ "Prosím vypnite si blokovač reklamy. "
+#~ "Podporíte nás dočasnou ťažbou Monera."
+
+#~ msgid "You are supporting us by minig Monero while browsing this site."
+#~ msgstr "Podporujete nás ťažbou Monera počas prehliadania tejto stránky."
 
