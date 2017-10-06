@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-05 12:32+0200\n"
+"POT-Creation-Date: 2017-10-06 22:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -91,29 +91,29 @@ msgid ""
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:115
+#: templates/body.html:113
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "minig Monero."
 msgstr ""
 
-#: templates/body.html:116
+#: templates/body.html:114
 msgid "You can supporting us by minig Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:117
+#: templates/body.html:115
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:116
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:117
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:117
 msgid "Total"
 msgstr ""
 
@@ -276,11 +276,17 @@ msgid ""
 "        proposals as early as possible."
 msgstr ""
 
-#: templates/cfp.html:171
+#: templates/cfp.html:168
+msgid ""
+"In case you are not able to submit the form, please contact us via\n"
+"        email: info@pycon.sk"
+msgstr ""
+
+#: templates/cfp.html:172
 msgid "Guidelines for Proposal Submission"
 msgstr ""
 
-#: templates/cfp.html:173
+#: templates/cfp.html:174
 msgid ""
 "There is no official restriction on the topic that you propose for a talk"
 " session. Talks about Python or\n"
@@ -293,11 +299,11 @@ msgid ""
 "        than one of your proposals is accepted."
 msgstr ""
 
-#: templates/cfp.html:182
+#: templates/cfp.html:183
 msgid "Talks"
 msgstr ""
 
-#: templates/cfp.html:184
+#: templates/cfp.html:185
 msgid ""
 "Most talks are 30 minutes long, but we do offer a limited number of "
 "45-minute slots for important\n"
@@ -305,11 +311,11 @@ msgid ""
 "treatment."
 msgstr ""
 
-#: templates/cfp.html:190
+#: templates/cfp.html:191
 msgid "Workshops"
 msgstr ""
 
-#: templates/cfp.html:192
+#: templates/cfp.html:193
 msgid ""
 "As with the talks, we are looking for tutorials that can grow this "
 "community at any level!\n"

@@ -1,5 +1,5 @@
 var AJAX_SERVER = '/talks/';
-var EVENT_UUID = '0b66b975-e018-478e-8253-524af072eaed';
+var EVENT_UUID = '21e4a4f5-caf5-4086-b7bc-c5b6a0abd68a';
 
 var speakerModalData = {
   title: '',
