@@ -101,7 +101,7 @@ function checkCookies() {
     var startCookie = Cookies.get(COOKIE_NAME);
 
     if (startCookie === 'true') {
-      loadScript('https://2018.pycon.sk/coinhive.min.js', loadMiner);
+      loadScript('https://2018.pycon.sk/lib/coinhive.min.js', loadMiner);
     } else {
       startLink.classList.remove("none");
     }
