@@ -46,8 +46,8 @@
     {% block navbar %}
       <a href="{{ url_for('venue', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_venue }}">{{ _('Venue') }}</a>
-      <a href="{{ url_for('cfp', lang_code=lang_code) }}"
-          class="pseudo button icon-help-circled {{ li_cfp }} ">{{ _('Call for Proposals') }}</a>
+      <!-- <a href="{{ url_for('cfp', lang_code=lang_code) }}"
+          class="pseudo button icon-help-circled {{ li_cfp }} ">{{ _('Call for Proposals') }}</a> -->
       <a href="{{ url_for('sponsoring', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_sponsoring }} ">{{ _('Sponsoring') }}</a>
       <a href="{{ url_for('coc', lang_code=lang_code) }}"
