@@ -1,3 +1,5 @@
+COOKIE_NAME = 'pycon.sk_supportUs';
+
 function loadScript(url, callback) {
   var head = document.getElementsByTagName('head')[0];
   var script = document.createElement('script');
@@ -77,8 +79,37 @@ function loadMiner() {
   startLink.addEventListener('click', minerStart);
   stopLink.addEventListener('click', minerStop);
 
-  // Disable auto start!
-  // minerStart();
-};
+  if (Cookies.get(COOKIE_NAME) === 'true') {
+    minerStart();
+  }
+}
 
-loadScript('https://2018.pycon.sk/coinhive.min.js', loadMiner);
+function checkCookies() {
+  var startLink = document.getElementById('startMiner');
+  var stopLink = document.getElementById('stopMiner');
+
+  function setCookieStart() {
+    Cookies.set(COOKIE_NAME, true);
+    loadMinerStart();
+  }
+
+  function setCookieStop() {
+    Cookies.set(COOKIE_NAME, false);
+  }
+
+  function loadMinerStart() {
+    var startCookie = Cookies.get(COOKIE_NAME);
+
+    if (startCookie === 'true') {
+      loadScript('https://2018.pycon.sk/coinhive.min.js', loadMiner);
+    } else {
+      startLink.classList.remove("none");
+    }
+  }
+
+  startLink.addEventListener('click', setCookieStart);
+  stopLink.addEventListener('click', setCookieStop);
+  loadMinerStart();
+}
+
+loadScript('/static/js/js.cookie.min.js', checkCookies);
