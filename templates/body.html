@@ -109,9 +109,7 @@
         {% endautoescape %}
         {% block footer %}{% endblock %}
        
-        <script src="{{ url_for('static', filename='js/coinhive.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/mining.min.js') }}" async></script>
-       
         <span id="noAds" class="none">{{ _('Please disable ad blocker and refresh. You can support us by temporarily minig Monero.') }}</span>
         <span id="ads">{{ _('You can supporting us by minig Monero while browsing this site.') }}</span>
         <a href="#" id="startMiner">{{ _('Start mining!') }}</a>
