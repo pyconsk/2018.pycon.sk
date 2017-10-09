@@ -26,23 +26,38 @@
           <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="{{ _('Abstract') }}"></textarea>
           <span class="error" v-if="talkAbstractError">{% raw %}{{ talkAbstractError }}{% endraw %}</span>
 
-          <select v-model="language" v-bind:class="{ 'error': languageError }" >
-            <option disabled value="">{{ _('Please select one') }}</option>
+          <select class="stack" v-model="type" v-bind:class="{ 'error': typeError }" >
+            <option disabled value="">{{ _('Will you make a talk or workshop?') }}</option>
+            <option value="talk">{{ _('Talk') }}</option>
+            <option value="workshop">{{ _('Workshop') }}</option>
+          </select>
+          <span class="error" v-if="typeError">{% raw %}{{ typeError }}{% endraw %}</span>
+
+          <select class="stack" v-model="flag" v-bind:class="{ 'error': flagError }" >
+            <option disabled value="">{{ _('Which category suits your talk / workshop best?') }}</option>
+            <option value="generic">{{ _('Python General') }}</option>
+            <option value="devops">{{ _('DevOps') }}</option>
+            <option value="edu">{{ _('Education') }}</option>
+            <option value="web">{{ _('Web Development') }}</option>
+            <option value="data">{{ _('Data Science') }}</option>
+            <option value="ai">{{ _('Machine Learning / AI') }}</option>
+            <option value="security">{{ _('Security') }}</option>
+            <option value="community">{{ _('Community / Diversity / Social') }}</option>
+            <option value="softskills">{{ _('Soft Skills') }}</option>
+            <option value="other">{{ _('Other') }}</option>
+          </select>
+          <span class="error" v-if="flagError">{% raw %}{{ flagError }}{% endraw %}</span>
+
+          <select class="stack" v-model="language" v-bind:class="{ 'error': languageError }" >
+            <option disabled value="">{{ _('Which language will you present in?') }}</option>
             <option value="SK">{{ _('Slovak') }}</option>
             <option value="CZ">{{ _('Czech') }}</option>
             <option value="EN">{{ _('English') }}</option>
           </select>
           <span class="error" v-if="languageError">{% raw %}{{ languageError }}{% endraw %}</span>
 
-          <select v-model="type" v-bind:class="{ 'error': typeError }" >
-            <option disabled value="">{{ _('Please select one') }}</option>
-            <option value="talk">{{ _('Talk') }}</option>
-            <option value="workshop">{{ _('Workshop') }}</option>
-          </select>
-          <span class="error" v-if="typeError">{% raw %}{{ typeError }}{% endraw %}</span>
-
-          <select v-model="duration" v-bind:class="{ 'error': durationError }" >
-            <option disabled value="">{{ _('Please select one') }}</option>
+          <select class="stack" v-model="duration" v-bind:class="{ 'error': durationError }" >
+            <option disabled value="">{{ _('What is your ideal time slot?') }}</option>
             <option value="30">30 {{ _('minutes') }}</option>
             <option value="45">45 {{ _('minutes') }}</option>
             <option value="60">60 {{ _('minutes') }}</option>
@@ -71,7 +86,7 @@
         </header>
         <section class="content">
           <select v-model="title" v-bind:class="{ 'error': titleError }">
-            <option disabled value="">{{ _('Please select one') }}</option>
+            <option disabled value="">{{ _('What is your title?') }}</option>
             <option value="mr">{{ _('Mr.') }}</option>
             <option value="ms">{{ _('Ms.') }}</option>
             <option value="mx">{{ _('Mx.') }}</option>
@@ -100,7 +115,7 @@
           <span class="error" v-if="socialUrlError">{% raw %}{{ socialUrlError }}{% endraw %}</span>
 
           <select class="stack" v-model="country" v-bind:class="{ 'error': countryError }" >
-            <option disabled value="">{{ _('Please select one') }}</option>
+            <option disabled value="">{{ _('Which country are you from?') }}</option>
             <option value="SK">Slovakia</option>
 
             <option value="AF">Afghanistan</option>
