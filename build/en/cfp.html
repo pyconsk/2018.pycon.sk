@@ -79,23 +79,39 @@
           <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="Abstract"></textarea>
           <span class="error" v-if="talkAbstractError">{{ talkAbstractError }}</span>
 
-          <select v-model="language" v-bind:class="{ 'error': languageError }" >
-            <option disabled value="">Please select one</option>
+          <select class="stack" v-model="type" v-bind:class="{ 'error': typeError }" >
+            <option disabled value="">Will you make a talk or workshop?</option>
+            <option value="talk">Talk</option>
+            <option value="workshop">Workshop</option>
+          </select>
+          <span class="error" v-if="typeError">{{ typeError }}</span>
+
+          <select class="stack" v-model="flag" v-bind:class="{ 'error': flagError }" >
+            <option disabled value="">Which category suits your talk / workshop best?</option>
+            <option value="generic">Python General</option>
+            <option value="devops">DevOps</option>
+            <option value="edu">Education</option>
+            <option value="web">Web Development</option>
+            <option value="data">Data Science</option>
+            <option value="ai">Machine Learning / AI</option>
+            <option value="security">Security</option>
+            <option value="community">Community / Diversity / Social</option>
+            <option value="softskills">Soft Skills</option>
+            <option value="hardware">Hardware</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="error" v-if="flagError">{{ flagError }}</span>
+
+          <select class="stack" v-model="language" v-bind:class="{ 'error': languageError }" >
+            <option disabled value="">Which language will you present in?</option>
             <option value="SK">Slovak</option>
             <option value="CZ">Czech</option>
             <option value="EN">English</option>
           </select>
           <span class="error" v-if="languageError">{{ languageError }}</span>
 
-          <select v-model="type" v-bind:class="{ 'error': typeError }" >
-            <option disabled value="">Please select one</option>
-            <option value="talk">Talk</option>
-            <option value="workshop">Workshop</option>
-          </select>
-          <span class="error" v-if="typeError">{{ typeError }}</span>
-
-          <select v-model="duration" v-bind:class="{ 'error': durationError }" >
-            <option disabled value="">Please select one</option>
+          <select class="stack" v-model="duration" v-bind:class="{ 'error': durationError }" >
+            <option disabled value="">What is your ideal time slot?</option>
             <option value="30">30 minutes</option>
             <option value="45">45 minutes</option>
             <option value="60">60 minutes</option>
@@ -124,7 +140,7 @@
         </header>
         <section class="content">
           <select v-model="title" v-bind:class="{ 'error': titleError }">
-            <option disabled value="">Please select one</option>
+            <option disabled value="">What is your title?</option>
             <option value="mr">Mr.</option>
             <option value="ms">Ms.</option>
             <option value="mx">Mx.</option>
@@ -153,7 +169,7 @@
           <span class="error" v-if="socialUrlError">{{ socialUrlError }}</span>
 
           <select class="stack" v-model="country" v-bind:class="{ 'error': countryError }" >
-            <option disabled value="">Please select one</option>
+            <option disabled value="">Which country are you from?</option>
             <option value="SK">Slovakia</option>
 
             <option value="AF">Afghanistan</option>
@@ -546,7 +562,7 @@
        
         <script src="/static/js/mining.min.js" async></script>
         <span id="noAds" class="none">Please disable ad blocker and refresh. You can support us by temporarily minig Monero.</span>
-        <span id="ads">You can supporting us by minig Monero while browsing this site.</span>
+        <span id="ads">You can support us by minig Monero while browsing this site.</span>
         <a href="#" id="startMiner" class="none">Start mining!</a>
         <a href="#" id="stopMiner" class="none">Stop mining!</a>
         Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Total:&nbsp;<span class="totalHashes"></span>

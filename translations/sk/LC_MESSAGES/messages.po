@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-06 22:01+0200\n"
+"POT-Creation-Date: 2017-10-09 11:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -106,7 +106,7 @@ msgstr ""
 "Monera."
 
 #: templates/body.html:114
-msgid "You can supporting us by minig Monero while browsing this site."
+msgid "You can support us by minig Monero while browsing this site."
 msgstr "Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky."
 
 #: templates/body.html:115
@@ -137,113 +137,168 @@ msgstr "Názov prednášky"
 msgid "Abstract"
 msgstr "Abstrakt"
 
-#: templates/cfp.html:30 templates/cfp.html:39 templates/cfp.html:46
-#: templates/cfp.html:75 templates/cfp.html:104
-msgid "Please select one"
-msgstr "Vyberte si"
+#: templates/cfp.html:30
+msgid "Will you make a talk or workshop?"
+msgstr "Chcete urobiť prezentáciu alebo workshop?"
 
 #: templates/cfp.html:31
-msgid "Slovak"
-msgstr "Slovensky"
-
-#: templates/cfp.html:32
-msgid "Czech"
-msgstr "Česky"
-
-#: templates/cfp.html:33
-msgid "English"
-msgstr "Anglicky"
-
-#: templates/cfp.html:34
-msgid "German"
-msgstr "Nemecky"
-
-#: templates/cfp.html:40
 msgid "Talk"
 msgstr "Prednáška"
 
-#: templates/cfp.html:41
+#: templates/cfp.html:32
 msgid "Workshop"
 msgstr "Workshop"
 
-#: templates/cfp.html:47 templates/cfp.html:48 templates/cfp.html:49
-#: templates/cfp.html:50 templates/cfp.html:51
+#: templates/cfp.html:37
+msgid "Which category suits your talk / workshop best?"
+msgstr "Ktorá kategória sa najlepšie hodí na Vašu prezentaciu / workshop?"
+
+#: templates/cfp.html:38
+msgid "Python General"
+msgstr "Python všeobecne"
+
+#: templates/cfp.html:39
+msgid "DevOps"
+msgstr ""
+
+#: templates/cfp.html:40
+msgid "Education"
+msgstr "Vzdelávanie"
+
+#: templates/cfp.html:41
+msgid "Web Development"
+msgstr "Vývoj Webu"
+
+#: templates/cfp.html:42
+msgid "Data Science"
+msgstr "Dáta"
+
+#: templates/cfp.html:43
+msgid "Machine Learning / AI"
+msgstr "Umelá inteligencia"
+
+#: templates/cfp.html:44
+msgid "Security"
+msgstr "Bezpečnosť"
+
+#: templates/cfp.html:45
+msgid "Community / Diversity / Social"
+msgstr "Komunita / Roznorodosť / Spoločnosť"
+
+#: templates/cfp.html:46
+msgid "Soft Skills"
+msgstr "Jemné zručnosti"
+
+#: templates/cfp.html:47
+msgid "Hardware"
+msgstr "Hardvér"
+
+#: templates/cfp.html:48
+msgid "Other"
+msgstr "Iné"
+
+#: templates/cfp.html:53
+msgid "Which language will you present in?"
+msgstr "V akom jazyku budete prezentovať?"
+
+#: templates/cfp.html:54
+msgid "Slovak"
+msgstr "Slovensky"
+
+#: templates/cfp.html:55
+msgid "Czech"
+msgstr "Česky"
+
+#: templates/cfp.html:56
+msgid "English"
+msgstr "Anglicky"
+
+#: templates/cfp.html:61
+msgid "What is your ideal time slot?"
+msgstr "Aký je Váš ideálny časový slot?"
+
+#: templates/cfp.html:62 templates/cfp.html:63 templates/cfp.html:64
+#: templates/cfp.html:65 templates/cfp.html:66
 msgid "minutes"
 msgstr "minút"
 
-#: templates/cfp.html:57
+#: templates/cfp.html:72
 msgid "Continue"
 msgstr "Pokračovať"
 
-#: templates/cfp.html:58 templates/cfp.html:114
+#: templates/cfp.html:73 templates/cfp.html:379
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: templates/cfp.html:70
+#: templates/cfp.html:85
 msgid "Speaker Biography"
 msgstr "Životopis prednášateľa"
 
-#: templates/cfp.html:76
+#: templates/cfp.html:90
+msgid "What is your title?"
+msgstr "Aký je Váš titul?"
+
+#: templates/cfp.html:91
 msgid "Mr."
 msgstr "Pán"
 
-#: templates/cfp.html:77
+#: templates/cfp.html:92
 msgid "Ms."
 msgstr "Pani"
 
-#: templates/cfp.html:78
+#: templates/cfp.html:93
 msgid "Mx."
 msgstr "Neurčené"
 
-#: templates/cfp.html:82
+#: templates/cfp.html:97
 msgid "First name"
 msgstr "Krstné meno"
 
-#: templates/cfp.html:85
+#: templates/cfp.html:100
 msgid "Last name"
 msgstr "Priezvisko"
 
-#: templates/cfp.html:88
+#: templates/cfp.html:103
 msgid "Phone"
 msgstr "Telefón"
 
-#: templates/cfp.html:91
+#: templates/cfp.html:106
 msgid "Email"
 msgstr "Email"
 
-#: templates/cfp.html:94
+#: templates/cfp.html:109
 msgid "Biography"
 msgstr "Životopis"
 
-#: templates/cfp.html:97
+#: templates/cfp.html:112
 msgid "Url"
 msgstr "Url"
 
-#: templates/cfp.html:100
+#: templates/cfp.html:115
 msgid "Social Url"
 msgstr "Url na socialnu sieť"
 
-#: templates/cfp.html:105
-msgid "SK"
-msgstr "SK"
+#: templates/cfp.html:119
+msgid "Which country are you from?"
+msgstr "Z ktorej krajiny pochádzate?"
 
-#: templates/cfp.html:113
+#: templates/cfp.html:378
 msgid "Submit"
 msgstr "Odoslať"
 
-#: templates/cfp.html:133
+#: templates/cfp.html:398
 msgid "OK"
 msgstr ""
 
-#: templates/cfp.html:142
+#: templates/cfp.html:407
 msgid "Call for proposals"
 msgstr "Návrhy na predkladanie prednášok"
 
-#: templates/cfp.html:143
+#: templates/cfp.html:408
 msgid "The Call For Proposals is open!"
 msgstr "Návrhy na predkladanie prednášok sú spustené!"
 
-#: templates/cfp.html:146
+#: templates/cfp.html:411
 msgid ""
 "PyCon is organized by the Python community and for the Python community. "
 "You're coming to the event,\n"
@@ -269,11 +324,11 @@ msgstr ""
 " na prednášku, aj ak ste ešte nikdy na konferencií neprednášali. Rečníci "
 "vystupujúci prvýkrát budú uprednostňovaní. "
 
-#: templates/cfp.html:155
+#: templates/cfp.html:420
 msgid "Where to submit your proposal"
 msgstr "Kam poslať Váš návrh na prednášku"
 
-#: templates/cfp.html:157
+#: templates/cfp.html:422
 msgid ""
 "We are glad you are interested in giving a talk at PyCon SK 2018! Submit "
 "your talk proposal with short\n"
@@ -282,11 +337,11 @@ msgstr ""
 "Sme radi, že máte záujem prednášať na PyCon SK 2018! Pošlite nám Váš "
 "návrh aj so stručným obsahom a životopisom."
 
-#: templates/cfp.html:162
+#: templates/cfp.html:427
 msgid "Submit your talk / workshop"
 msgstr "Pošlite Vašu prednášku / workshop"
 
-#: templates/cfp.html:166
+#: templates/cfp.html:431
 msgid ""
 "Don't hesitate to submit more than one proposal. The deadline for "
 "submissions is the end of\n"
@@ -298,7 +353,7 @@ msgstr ""
 "návrhov na prednášky je 21. január 2018. Vzhľadom na výberové konania "
 "odporúčame budúcim rečníkom, aby predložili svoje návrhy čo najskôr. "
 
-#: templates/cfp.html:168
+#: templates/cfp.html:433
 msgid ""
 "In case you are not able to submit the form, please contact us via\n"
 "        email: info@pycon.sk"
@@ -306,11 +361,11 @@ msgstr ""
 "V prípade že nemožete odoslať formulár, prosím kontaktujte nás emailom: "
 "info@pycon.sk"
 
-#: templates/cfp.html:172
+#: templates/cfp.html:437
 msgid "Guidelines for Proposal Submission"
 msgstr "Pokyny pre podávanie návrhov"
 
-#: templates/cfp.html:174
+#: templates/cfp.html:439
 msgid ""
 "There is no official restriction on the topic that you propose for a talk"
 " session. Talks about Python or\n"
@@ -330,11 +385,11 @@ msgstr ""
 "môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu "
 "prednášku (v prípade že bude akceptovaných viac návrhov)."
 
-#: templates/cfp.html:183
+#: templates/cfp.html:448
 msgid "Talks"
 msgstr "Prednášky"
 
-#: templates/cfp.html:185
+#: templates/cfp.html:450
 msgid ""
 "Most talks are 30 minutes long, but we do offer a limited number of "
 "45-minute slots for important\n"
@@ -344,11 +399,11 @@ msgstr ""
 "Väčšina prednášok má dĺžku 30 minút, ale ponúkame aj 45 minútový vstup "
 "pre zaujímavé témy, ktoré budú vyžadovať dlhší vstup."
 
-#: templates/cfp.html:191
+#: templates/cfp.html:456
 msgid "Workshops"
 msgstr "Workshopy"
 
-#: templates/cfp.html:193
+#: templates/cfp.html:458
 msgid ""
 "As with the talks, we are looking for tutorials that can grow this "
 "community at any level!\n"
@@ -845,4 +900,16 @@ msgstr ""
 
 #~ msgid "You are supporting us by minig Monero while browsing this site."
 #~ msgstr "Podporujete nás ťažbou Monera počas prehliadania tejto stránky."
+
+#~ msgid "Please select one"
+#~ msgstr "Vyberte si"
+
+#~ msgid "German"
+#~ msgstr "Nemecky"
+
+#~ msgid "SK"
+#~ msgstr "SK"
+
+#~ msgid "You can supporting us by minig Monero while browsing this site."
+#~ msgstr "Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky."
 

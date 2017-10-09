@@ -79,23 +79,39 @@
           <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="Abstrakt"></textarea>
           <span class="error" v-if="talkAbstractError">{{ talkAbstractError }}</span>
 
-          <select v-model="language" v-bind:class="{ 'error': languageError }" >
-            <option disabled value="">Vyberte si</option>
+          <select class="stack" v-model="type" v-bind:class="{ 'error': typeError }" >
+            <option disabled value="">Chcete urobiť prezentáciu alebo workshop?</option>
+            <option value="talk">Prednáška</option>
+            <option value="workshop">Workshop</option>
+          </select>
+          <span class="error" v-if="typeError">{{ typeError }}</span>
+
+          <select class="stack" v-model="flag" v-bind:class="{ 'error': flagError }" >
+            <option disabled value="">Ktorá kategória sa najlepšie hodí na Vašu prezentaciu / workshop?</option>
+            <option value="generic">Python všeobecne</option>
+            <option value="devops">DevOps</option>
+            <option value="edu">Vzdelávanie</option>
+            <option value="web">Vývoj Webu</option>
+            <option value="data">Dáta</option>
+            <option value="ai">Umelá inteligencia</option>
+            <option value="security">Bezpečnosť</option>
+            <option value="community">Komunita / Roznorodosť / Spoločnosť</option>
+            <option value="softskills">Jemné zručnosti</option>
+            <option value="hardware">Hardvér</option>
+            <option value="other">Iné</option>
+          </select>
+          <span class="error" v-if="flagError">{{ flagError }}</span>
+
+          <select class="stack" v-model="language" v-bind:class="{ 'error': languageError }" >
+            <option disabled value="">V akom jazyku budete prezentovať?</option>
             <option value="SK">Slovensky</option>
             <option value="CZ">Česky</option>
             <option value="EN">Anglicky</option>
           </select>
           <span class="error" v-if="languageError">{{ languageError }}</span>
 
-          <select v-model="type" v-bind:class="{ 'error': typeError }" >
-            <option disabled value="">Vyberte si</option>
-            <option value="talk">Prednáška</option>
-            <option value="workshop">Workshop</option>
-          </select>
-          <span class="error" v-if="typeError">{{ typeError }}</span>
-
-          <select v-model="duration" v-bind:class="{ 'error': durationError }" >
-            <option disabled value="">Vyberte si</option>
+          <select class="stack" v-model="duration" v-bind:class="{ 'error': durationError }" >
+            <option disabled value="">Aký je Váš ideálny časový slot?</option>
             <option value="30">30 minút</option>
             <option value="45">45 minút</option>
             <option value="60">60 minút</option>
@@ -124,7 +140,7 @@
         </header>
         <section class="content">
           <select v-model="title" v-bind:class="{ 'error': titleError }">
-            <option disabled value="">Vyberte si</option>
+            <option disabled value="">Aký je Váš titul?</option>
             <option value="mr">Pán</option>
             <option value="ms">Pani</option>
             <option value="mx">Neurčené</option>
@@ -153,7 +169,7 @@
           <span class="error" v-if="socialUrlError">{{ socialUrlError }}</span>
 
           <select class="stack" v-model="country" v-bind:class="{ 'error': countryError }" >
-            <option disabled value="">Vyberte si</option>
+            <option disabled value="">Z ktorej krajiny pochádzate?</option>
             <option value="SK">Slovakia</option>
 
             <option value="AF">Afghanistan</option>

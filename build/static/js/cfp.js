@@ -30,11 +30,13 @@ var talkModalData = {
   talkTitleError: '',
   talkAbstract: '',
   talkAbstractError: '',
-  type: 'talk',
+  flag: '',
+  flagError: '',
+  type: '',
   typeError: '',
-  language: 'EN',
+  language: '',
   languageError: '',
-  duration: 30,
+  duration: '',
   durationError: '',
   open: false
 };
@@ -112,6 +114,7 @@ var speakerModal = new Vue({
       formData.append("event_uuid", EVENT_UUID);
       formData.append("title", talkModal.talkTitle);
       formData.append("abstract", talkModal.talkAbstract);
+      formData.append("flag", talkModal.flag);
       formData.append("type", talkModal.type);
       formData.append("language", talkModal.language);
       formData.append("duration", talkModal.duration);
@@ -248,6 +251,42 @@ var talkModal = new Vue({
       }
 
       return this.talkAbstract
+    },
+    validateFlag: function () {
+      if (this.flag === '') {
+        this.flagError = 'This field is required!';
+      } else {
+        this.flagError = '';
+      }
+
+      return this.flag
+    },
+    validateType: function () {
+      if (this.type === '') {
+        this.typeError = 'This field is required!';
+      } else {
+        this.typeError = '';
+      }
+
+      return this.type
+    },
+    validateLanguage: function () {
+      if (this.language === '') {
+        this.languageError = 'This field is required!';
+      } else {
+        this.languageError = '';
+      }
+
+      return this.language
+    },
+    validateDuration: function () {
+      if (this.duration === '') {
+        this.durationError = 'This field is required!';
+      } else {
+        this.durationError = '';
+      }
+
+      return this.duration
     }
   },
   watch: {
@@ -257,22 +296,29 @@ var talkModal = new Vue({
     talkAbstract: function (input) {
       this.validateTalkAbstract;
     },
+    flag: function (input) {
+      this.validateFlag;
+    },
     type: function (input) {
-      this.typeError = '';
+      this.validateType;
     },
     language: function (input) {
-      this.languageError = '';
+      this.validateLanguage;
     },
     duration: function (input) {
-      this.durationError = '';
+      this.validateDuration;
     }
   },
   methods: {
     validateForm: function (event) {
       this.validateTalkTitle
       this.validateTalkAbstract
+      this.validateFlag
+      this.validateType
+      this.validateLanguage
+      this.validateDuration
 
-      if (this.talkTitleError || this.talkAbstractError || this.typeError || this.languageError || this.durationError) {
+      if (this.talkTitleError || this.talkAbstractError || this.flagError || this.typeError || this.languageError || this.durationError) {
         event.preventDefault();
       }
     }
