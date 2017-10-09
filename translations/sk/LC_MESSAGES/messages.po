@@ -167,7 +167,7 @@ msgstr "Vzdelávanie"
 
 #: templates/cfp.html:41
 msgid "Web Development"
-msgstr "Vývoj Webu"
+msgstr "Vývoj webu"
 
 #: templates/cfp.html:42
 msgid "Data Science"
@@ -183,11 +183,11 @@ msgstr "Bezpečnosť"
 
 #: templates/cfp.html:45
 msgid "Community / Diversity / Social"
-msgstr "Komunita / Roznorodosť / Spoločnosť"
+msgstr "Komunita / Rôznorodosť / Spoločnosť"
 
 #: templates/cfp.html:46
 msgid "Soft Skills"
-msgstr "Jemné zručnosti"
+msgstr "Mäkké zručnosti"
 
 #: templates/cfp.html:47
 msgid "Hardware"
