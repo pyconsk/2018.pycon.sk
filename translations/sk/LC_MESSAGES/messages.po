@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-16 14:30+0200\n"
+"POT-Creation-Date: 2017-10-16 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -42,7 +42,7 @@ msgstr "PyCon SK 2018"
 msgid "Venue"
 msgstr "Miesto konania"
 
-#: templates/body.html:50 templates/tickets.html:11
+#: templates/body.html:50 templates/tickets.html:12
 msgid "Tickets"
 msgstr "Vstupenky"
 
@@ -693,11 +693,11 @@ msgstr ""
 "Používate vo vašej firme Python? Podpora komunitných udalostí je výborná "
 "príležitosť ako prispieť späť."
 
-#: templates/tickets.html:12
+#: templates/tickets.html:13
 msgid "Tickets are for sale now!"
 msgstr "Vstupenky sú už v predaji!"
 
-#: templates/tickets.html:18
+#: templates/tickets.html:20
 #, python-format
 msgid ""
 "You can also buy tickets directly on the %(url)s website in case the tito"
@@ -706,7 +706,7 @@ msgstr ""
 "Vstupenky si taktiež môžete kúpiť priamo na internetovej stránke %(url)s "
 "v prípade, že sa Vám Tito widget nezobrazuje správne. "
 
-#: templates/tickets.html:21
+#: templates/tickets.html:24
 #, python-format
 msgid ""
 "By purchasing a ticket you agree to abide by the <a href=\"%(url)s\">Code"
@@ -715,27 +715,27 @@ msgstr ""
 "Kúpou lístka vyjadrujete súhlas s dodržiavaním <a href=\"%(url)s\">kódexu"
 " správania</a>."
 
-#: templates/tickets.html:26
+#: templates/tickets.html:29
 msgid "Where will the conference happen?"
 msgstr "Kde sa uskutoční konferencia?"
 
-#: templates/tickets.html:28 templates/venue.html:11
+#: templates/tickets.html:31 templates/venue.html:11
 msgid "Slovak University of Technology in Bratislava"
 msgstr "Slovenská technická univerzita v Bratislave"
 
-#: templates/tickets.html:29 templates/venue.html:12
+#: templates/tickets.html:32 templates/venue.html:12
 msgid "Faculty of Informatics and Information Technologies"
 msgstr "Fakulta informatiky a informačných technológií"
 
-#: templates/tickets.html:32 templates/venue.html:6
+#: templates/tickets.html:35 templates/venue.html:6
 msgid "How do you get to Slovak PyCon?"
 msgstr "Ako sa dostanete na slovenský PyCon?"
 
-#: templates/tickets.html:36
+#: templates/tickets.html:39
 msgid "I don't use PayPal, is there any other way to buy a ticket?"
 msgstr "Nemám PayPal, je možné kúpiť vstupenku inak ako cez Tito?"
 
-#: templates/tickets.html:38
+#: templates/tickets.html:41
 msgid ""
 "We also accept wire transfer, or Bitcoin, Litecoin and other crypto "
 "currencies. Please send us a list of tickets you are interested in, we "
@@ -747,15 +747,15 @@ msgstr ""
 "symbol a po pripísaní sumy na náš účet Vám vystavíme a pošleme emailom "
 "vstupenku."
 
-#: templates/tickets.html:45
+#: templates/tickets.html:48
 msgid "Which ticket should I buy?"
 msgstr "Aký lístok si mám kúpiť?"
 
-#: templates/tickets.html:47
+#: templates/tickets.html:50
 msgid "Real Deal"
 msgstr ""
 
-#: templates/tickets.html:47
+#: templates/tickets.html:50
 msgid ""
 "This is the real price for tickets if it wouldn't be donated by SPy o.z. "
 "with sponsors money. Please buy it if you can afford it, your name "
@@ -765,19 +765,19 @@ msgstr ""
 "donáciami. Prosím kúpte si tento lístok, ak si ho môžete dovoliť, Vaše "
 "meno zobrazíme na stránke."
 
-#: templates/tickets.html:50
+#: templates/tickets.html:53
 msgid "Standard"
 msgstr ""
 
-#: templates/tickets.html:50
+#: templates/tickets.html:53
 msgid "This ticket is designed for all conference participants."
 msgstr "Lístok je určený pre všetkých účastníkov konferencie."
 
-#: templates/tickets.html:53
+#: templates/tickets.html:56
 msgid "Teacher"
 msgstr ""
 
-#: templates/tickets.html:53
+#: templates/tickets.html:56
 msgid ""
 "This ticket is designed for teachers. Don't forget to bring your valid "
 "teachers ID (ITIC) to the registration."
@@ -785,11 +785,11 @@ msgstr ""
 "Lístok je určený pre učiteľov. Nezabudnite si so sebou na registráciu "
 "priniesť platný učiteľský preukaz (ITIC)."
 
-#: templates/tickets.html:56
+#: templates/tickets.html:59
 msgid "Student"
 msgstr ""
 
-#: templates/tickets.html:56
+#: templates/tickets.html:59
 msgid ""
 "This ticket is designed for students. Don't forget to bring your valid "
 "student ID (ISIC) to the registration."
@@ -797,11 +797,11 @@ msgstr ""
 "Lístok je určený pre študentov. Nezabudnite si so sebou na registráciu "
 "priniesť platný študentský preukaz (ISIC)."
 
-#: templates/tickets.html:60
+#: templates/tickets.html:63
 msgid "Where does the money from tickets go?"
 msgstr "Kam idú všetky peniaze za lístky?"
 
-#: templates/tickets.html:62
+#: templates/tickets.html:65
 msgid ""
 "PyCon is completely organized by volunteers. We do believe that such "
 "conferences should be organized to promote programming and Open Source. "
@@ -813,7 +813,7 @@ msgstr ""
 "Source. Všetky peniaze vyzbierané z predaja lístkov pôjdu na náklady "
 "spojené s organizáciou PyConu."
 
-#: templates/tickets.html:65
+#: templates/tickets.html:68
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">The SPy civic association</a>, as the organizer, "
@@ -827,11 +827,45 @@ msgstr ""
 " ňou spojené. SPy vzniklo na podporu Pythonu a programovania všeobecne, "
 "prečítajte si viac o našich cieľoch."
 
-#: templates/tickets.html:72
+#: templates/tickets.html:75
+msgid "Will there be early bird tickets?"
+msgstr "Bude predpredaj lístkov?"
+
+#: templates/tickets.html:77
+msgid "Yes, first 120 tickets will be sold for early bird discount, so hurry up!"
+msgstr ""
+"Áno, prvých 120 lístkov bude predaných v predpredaji za so zľavou, tak sa"
+" ponáhľajte!"
+
+#: templates/tickets.html:81
+msgid "Do you offer group discounts?"
+msgstr "Ponúkate množstevné zľavy?"
+
+#: templates/tickets.html:83
+msgid ""
+"If you would like to buy more than 15 tickets please contact us by email "
+"at info@pycon.sk."
+msgstr ""
+"Ak máte záujem kúpiť viac ako 15 lístkov kontaktujete nás emailom na "
+"info@pycon.sk."
+
+#: templates/tickets.html:90
+msgid "Will there be last moment tickets?"
+msgstr "Budete predávať aj lístky na poslednú chvíľu?"
+
+#: templates/tickets.html:92
+msgid ""
+"Yes, last 50 tickets will be more expensive, so don't leave your ticket "
+"purchase to last moment!"
+msgstr ""
+"Áno, posledných 50 lístkov bude drahších, tak si nenechávajte kúpu na "
+"poslednú chvíľu."
+
+#: templates/tickets.html:96
 msgid "Is there any another possibility to get to PyCon?"
 msgstr "Je aj iná možnosť ako sa dostať na PyCon?"
 
-#: templates/tickets.html:74
+#: templates/tickets.html:98
 #, python-format
 msgid ""
 "Yes <a href=\"%(url)s\">submit a talk</a>, and if your talk is selected "
@@ -840,7 +874,7 @@ msgstr ""
 "Áno, <a href=\"%(url)s\">navrhnite prednášku</a> a v prípade že Vás "
 "vyberieme obdržíte rečnícky lístok zadarmo."
 
-#: templates/tickets.html:77
+#: templates/tickets.html:101
 msgid ""
 "We'll have a financial aid program allowing some visitors to come to "
 "PyCon for free. Mere details to will be published soon."
@@ -848,7 +882,7 @@ msgstr ""
 "Spustíme štipendijný program, ktorý umožní niektorým návštevníkom prísť "
 "na PyCon zadarmo. Viac podrobností čoskoro."
 
-#: templates/tickets.html:80
+#: templates/tickets.html:104
 msgid ""
 "If you are less than 18 years old and come accompanied by a parent, you "
 "can just purchase one ticket only for the parent, but you have to inform "
@@ -857,18 +891,6 @@ msgstr ""
 "Ak máte menej ako 18 rokov a prídete v sprievode rodiča, stačí ak si "
 "lístok zakúpi iba rodič, no musíte sa nám ozvať aby sme vystavili "
 "vstupenku aj pre dieťa."
-
-#: templates/tickets.html:84
-msgid "Do you offer group discounts?"
-msgstr "Ponúkate množstevné zľavy?"
-
-#: templates/tickets.html:86
-msgid ""
-"If you would like to buy more than 15 tickets please contact us by email "
-"at info@pycon.sk."
-msgstr ""
-"Ak máte záujem kúpiť viac ako 15 lístkov kontaktujete nás emailom na "
-"info@pycon.sk."
 
 #: templates/venue.html:9
 msgid "Venue Address"
@@ -1107,5 +1129,11 @@ msgstr ""
 #~ "created to support Python and "
 #~ "programming in general, you can read "
 #~ "more about our vision and objectives."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Yes, first 120 tickets will be "
+#~ "sold for early bird discount (50%), "
+#~ "so hurry up!"
 #~ msgstr ""
 
