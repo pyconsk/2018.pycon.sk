@@ -78,7 +78,7 @@ def _get_template_variables(**kwargs):
 
 @app.route('/<lang_code>/index.html')
 def index():
-    lang =  get_locale()
+    lang = get_locale()
     LDJSON_EVENT = {
       "@context": "http://schema.org",
       "@type": "Event",
@@ -109,7 +109,7 @@ def index():
 
 @app.route('/<lang_code>/tickets.html')
 def tickets():
-    lang =  get_locale()
+    lang = get_locale()
     LDJSON_EVENT = {
       "@context": "http://schema.org",
       "@type": "Event",
@@ -135,12 +135,12 @@ def tickets():
         }
       }
     }
-    return render_template('tickets.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_index='active'))
+    return render_template('tickets.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_tickets='active'))
 
 
 @app.route('/<lang_code>/cfp.html')
 def cfp():
-    lang =  get_locale()
+    lang = get_locale()
     LDJSON_EVENT = {
       "@context": "http://schema.org",
       "@type": "Event",
@@ -171,7 +171,7 @@ def cfp():
 
 @app.route('/<lang_code>/coc.html')
 def coc():
-    lang =  get_locale()
+    lang = get_locale()
     LDJSON_EVENT = {
       "@context": "http://schema.org",
       "@type": "Event",
@@ -201,7 +201,7 @@ def coc():
 
 @app.route('/<lang_code>/venue.html')
 def venue():
-    lang =  get_locale()
+    lang = get_locale()
     LDJSON_EVENT = {
       "@context": "http://schema.org",
       "@type": "Event",
@@ -232,7 +232,7 @@ def venue():
 
 @app.route('/<lang_code>/sponsoring.html')
 def sponsoring():
-    lang =  get_locale()
+    lang = get_locale()
     LDJSON_EVENT = {
       "@context": "http://schema.org",
       "@type": "Event",
