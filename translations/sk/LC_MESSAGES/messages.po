@@ -48,7 +48,7 @@ msgstr "Vstupenky"
 
 #: templates/body.html:52
 msgid "Call for Proposals"
-msgstr "Výzva na prekladanie návrhov prednášok"
+msgstr "Prihlásenie prednášok"
 
 #: templates/body.html:54
 msgid "Sponsoring"
