@@ -153,6 +153,10 @@ input:invalid, input.error, textarea.error, select.error {
   border-bottom-width: 1px;
 }
 
+.tito-wrapper {
+  background-color: #ffffff;
+}
+
 @media (max-width: 60em) {
   .content-text {
     width: 80%;
