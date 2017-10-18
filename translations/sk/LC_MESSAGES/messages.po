@@ -756,8 +756,8 @@ msgid ""
 "will issue and send the requested tickets to you by email."
 msgstr ""
 "Akceptujeme aj bankový prevod, avšak to si vyžaduje manuálne spracovanie,"
-" preto účtujeme 1 Euro poplatok za spracovanie.Napíšte nám, o aké lístky "
-"máte záujem, zašleme Vám variabilný symbol a po pripísaní sumy na náš "
+" preto účtujeme 1 Euro poplatok za spracovanie. Napíšte nám, o aké lístky"
+" máte záujem, zašleme Vám variabilný symbol a po pripísaní sumy na náš "
 "účet Vám vystavíme a pošleme emailom vstupenku."
 
 #: templates/tickets.html:47
@@ -769,8 +769,8 @@ msgid ""
 msgstr ""
 "Akceptujeme aj Bitcoin, Litecoin prípadne iné krypto meny. Napíšte nám, o"
 " aké lístky máte záujem a menu ktorou chcete platiť. Zašleme Vám adresu "
-"penaženky a po pripísaní sumy na náš účet Vám vystavíme a pošleme emailom"
-" vstupenku."
+"penaženky a po potvrdení sumy v nášej peňaženke Vám vystavíme a pošleme "
+"emailom vstupenku."
 
 #: templates/tickets.html:54
 msgid "Which ticket should I buy?"
