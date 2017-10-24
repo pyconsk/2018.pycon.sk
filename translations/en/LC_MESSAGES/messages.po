@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-24 16:13+0200\n"
+"POT-Creation-Date: 2017-10-24 20:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -494,11 +494,29 @@ msgid ""
 "who is learning this programming language."
 msgstr ""
 
-#: templates/index.html:17
+#: templates/index.html:16
+msgid ""
+"Previous years got media coverage, if you would like to know how was the "
+"conference check out our references:"
+msgstr ""
+
+#: templates/index.html:53
+msgid ""
+"Here are links to articles that were written by attendees about last two "
+"PyCon SK's:"
+msgstr ""
+
+#: templates/index.html:81
+msgid ""
+"If you did wrote and article, or blog post do not hesitate to let us "
+"know: info@pycon.sk or create pull request."
+msgstr ""
+
+#: templates/index.html:86
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:18
+#: templates/index.html:87
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -974,5 +992,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "minutes"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here are links to articles that "
+#~ "were written by atendees about last "
+#~ "two PyCon SK's:"
 #~ msgstr ""
 
