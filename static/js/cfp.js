@@ -38,6 +38,20 @@ var talkModalData = {
   languageError: '',
   duration: '',
   durationError: '',
+  optionsData: {
+    talk_duration: [
+      {text: '30 minutes', value: '30'},
+      {text: '45 minutes', value: '45'},
+    ],
+    workshop_duration: [
+      {text: '60 minutes', value: '60'},
+      {text: '90 minutes', value: '90'},
+      {text: '120 minutes', value: '120'},
+      {text: '180 minutes', value: '180'},
+      {text: '240 minutes', value: '240'},
+    ]
+  },
+  timeOptions: [],
   open: false
 };
 
@@ -49,7 +63,7 @@ var popupModal = new Vue({
     open: false
   },
   methods: {
-    msg: function(message, header) {
+    msg: function (message, header) {
       this.header = header;
       this.message = message;
       this.open = true;
@@ -183,15 +197,15 @@ var speakerModal = new Vue({
       }
     },
     openPopUp: function (message, header) {
-        popupModal.msg(message, header);
-        speakerModal.open = false;
-        talkModal.open = false;
+      popupModal.msg(message, header);
+      speakerModal.open = false;
+      talkModal.open = false;
     },
     ajaxData: function () {
       var formData = this.collectFormData;
 
       axios.post(AJAX_SERVER, formData).then(function (response) {
-        speakerModal.openPopUp('Your proposal has been submitted.', response.status +': '+ response.statusText);
+        speakerModal.openPopUp('Your proposal has been submitted.', response.status + ': ' + response.statusText);
 
       }).catch(function (error) {
         // Something went wrong
@@ -211,7 +225,7 @@ var speakerModal = new Vue({
                 talkModal[field + 'Error'] = error_data[field][0];
               }
             }
-          } else if (error.response.status === 500)  {
+          } else if (error.response.status === 500) {
             speakerModal.openPopUp(error.response.statusText, error.response.status + ': ' + error.response.statusText);
           } else {
             // Different error status than wrong input!
@@ -287,6 +301,24 @@ var talkModal = new Vue({
       }
 
       return this.duration
+    },
+    changeDuration: function () {
+
+      switch (this.type) {
+
+        case 'talk':
+          timeOptions = this.optionsData.talk_duration;
+          break;
+
+        case 'workshop':
+          timeOptions = this.optionsData.workshop_duration;
+          break;
+
+        default:
+          timeOptions = this.optionsData.talk_duration;
+      }
+
+      return timeOptions
     }
   },
   watch: {
@@ -301,6 +333,7 @@ var talkModal = new Vue({
     },
     type: function (input) {
       this.validateType;
+      this.timeOptions = this.changeDuration
     },
     language: function (input) {
       this.validateLanguage;
