@@ -114,13 +114,7 @@
 
           <select class="stack" v-model="duration" v-bind:class="{ 'error': durationError }" >
             <option disabled value="">What is your ideal time slot?</option>
-            <option value="30">30 minutes</option>
-            <option value="45">45 minutes</option>
-            <option value="60">60 minutes</option>
-            <option value="90">90 minutes</option>
-            <option value="120">120 minutes</option>
-            <option value="180">180 minutes</option>
-            <option value="240">240 minutes</option>
+            <option  v-for="option in timeOptions" v-bind:value="option.value">{{ option.text }}</option>
           </select>
           <span class="error" v-if="durationError">{{ durationError }}</span>
 

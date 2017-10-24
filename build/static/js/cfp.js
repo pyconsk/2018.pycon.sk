@@ -38,6 +38,20 @@ var talkModalData = {
   languageError: '',
   duration: '',
   durationError: '',
+  optionsData: {
+    talk_duration: [
+      {text: '30 minutes', value: '30'},
+      {text: '45 minutes', value: '45'},
+    ],
+    workshop_duration: [
+      {text: '60 minutes', value: '60'},
+      {text: '90 minutes', value: '90'},
+      {text: '120 minutes', value: '120'},
+      {text: '180 minutes', value: '180'},
+      {text: '240 minutes', value: '240'},
+    ]
+  },
+  timeOptions: [],
   open: false
 };
 
@@ -49,7 +63,7 @@ var popupModal = new Vue({
     open: false
   },
   methods: {
-    msg: function(message, header) {
+    msg: function (message, header) {
       this.header = header;
       this.message = message;
       this.open = true;
@@ -130,7 +144,10 @@ var speakerModal = new Vue({
       formData.append("primary_speaker.socialUrl", speakerModal.socialUrl);
 
       var imagefile = document.querySelector('#avatar');
-      formData.append("primary_speaker.image", imagefile.files[0]);
+
+      if (typeof imagefile.files[0] !== 'undefined') {
+        formData.append("primary_speaker.image", imagefile.files[0]);
+      }
 
       return formData
     }
@@ -183,15 +200,16 @@ var speakerModal = new Vue({
       }
     },
     openPopUp: function (message, header) {
-        popupModal.msg(message, header);
-        speakerModal.open = false;
-        talkModal.open = false;
+      popupModal.msg(message, header);
+      speakerModal.open = false;
+      talkModal.open = false;
     },
     ajaxData: function () {
+      const config = {headers: {'Content-Type': 'multipart/form-data'}};
       var formData = this.collectFormData;
 
-      axios.post(AJAX_SERVER, formData).then(function (response) {
-        speakerModal.openPopUp('Your proposal has been submitted.', response.status +': '+ response.statusText);
+      axios.post(AJAX_SERVER, formData, config).then(function (response) {
+        speakerModal.openPopUp('Your proposal has been submitted.', response.status + ': ' + response.statusText);
 
       }).catch(function (error) {
         // Something went wrong
@@ -210,8 +228,14 @@ var speakerModal = new Vue({
                 speakerModal.open = false; // Close speakerModal so user see error in talkModal
                 talkModal[field + 'Error'] = error_data[field][0];
               }
+
+              if (field === 'event_uuid') {
+                speakerModal.openPopUp(error_data[field][0], '404: Event NOT FOUND');
+              }
             }
-          } else if (error.response.status === 500)  {
+          } else if (error.response.status === 404) {
+            speakerModal.openPopUp('Server page was not found!', error.response.status + ': ' + error.response.statusText);
+          } else if (error.response.status === 500) {
             speakerModal.openPopUp(error.response.statusText, error.response.status + ': ' + error.response.statusText);
           } else {
             // Different error status than wrong input!
@@ -287,6 +311,24 @@ var talkModal = new Vue({
       }
 
       return this.duration
+    },
+    changeDuration: function () {
+
+      switch (this.type) {
+
+        case 'talk':
+          timeOptions = this.optionsData.talk_duration;
+          break;
+
+        case 'workshop':
+          timeOptions = this.optionsData.workshop_duration;
+          break;
+
+        default:
+          timeOptions = this.optionsData.talk_duration;
+      }
+
+      return timeOptions
     }
   },
   watch: {
@@ -301,6 +343,7 @@ var talkModal = new Vue({
     },
     type: function (input) {
       this.validateType;
+      this.timeOptions = this.changeDuration
     },
     language: function (input) {
       this.validateLanguage;

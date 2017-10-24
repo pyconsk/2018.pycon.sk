@@ -144,7 +144,10 @@ var speakerModal = new Vue({
       formData.append("primary_speaker.socialUrl", speakerModal.socialUrl);
 
       var imagefile = document.querySelector('#avatar');
-      formData.append("primary_speaker.image", imagefile.files[0]);
+
+      if (typeof imagefile.files[0] !== 'undefined') {
+        formData.append("primary_speaker.image", imagefile.files[0]);
+      }
 
       return formData
     }
@@ -202,9 +205,10 @@ var speakerModal = new Vue({
       talkModal.open = false;
     },
     ajaxData: function () {
+      const config = {headers: {'Content-Type': 'multipart/form-data'}};
       var formData = this.collectFormData;
 
-      axios.post(AJAX_SERVER, formData).then(function (response) {
+      axios.post(AJAX_SERVER, formData, config).then(function (response) {
         speakerModal.openPopUp('Your proposal has been submitted.', response.status + ': ' + response.statusText);
 
       }).catch(function (error) {
@@ -224,7 +228,13 @@ var speakerModal = new Vue({
                 speakerModal.open = false; // Close speakerModal so user see error in talkModal
                 talkModal[field + 'Error'] = error_data[field][0];
               }
+
+              if (field === 'event_uuid') {
+                speakerModal.openPopUp(error_data[field][0], '404: Event NOT FOUND');
+              }
             }
+          } else if (error.response.status === 404) {
+            speakerModal.openPopUp('Server page was not found!', error.response.status + ': ' + error.response.statusText);
           } else if (error.response.status === 500) {
             speakerModal.openPopUp(error.response.statusText, error.response.status + ': ' + error.response.statusText);
           } else {
