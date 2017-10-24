@@ -195,7 +195,7 @@ var speakerModal = new Vue({
       this.validateBio;
 
       if (!this.titleError && !this.firstNameError && !this.lastNameError && !this.phoneError && !this.emailError
-        && !this.bioError && !this.countryError && !this.urlError && !this.socialUrlError && !this.imageError) {
+        && !this.bioError && !this.countryError && !this.urlError && !this.socialUrlError) {
         this.ajaxData();
       }
     },
