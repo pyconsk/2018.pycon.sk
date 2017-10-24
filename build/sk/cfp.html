@@ -421,7 +421,7 @@
 	<option value="ZW">Zimbabwe</option>
           </select>
           <span class="error" v-if="countryError">{{ countryError }}</span>
-
+          Ikona:
           <input class="stack" v-model="image" accept="image/*" type="file" v-bind:class="{ 'error': imageError }" id="avatar">
           <span class="error" v-if="imageError">{{ imageError }}</span>
         </section>

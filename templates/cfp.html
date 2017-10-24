@@ -366,7 +366,7 @@
 	<option value="ZW">Zimbabwe</option>
           </select>
           <span class="error" v-if="countryError">{% raw %}{{ countryError }}{% endraw %}</span>
-
+          {{  _('Avatar') }}:
           <input class="stack" v-model="image" accept="image/*" type="file" v-bind:class="{ 'error': imageError }" id="avatar">
           <span class="error" v-if="imageError">{% raw %}{{ imageError }}{% endraw %}</span>
         </section>
