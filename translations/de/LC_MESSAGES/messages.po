@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-24 20:24+0200\n"
+"POT-Creation-Date: 2017-10-28 10:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -89,36 +89,36 @@ msgstr ""
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:109
+#: templates/body.html:110
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:115
+#: templates/body.html:117
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "minig Monero."
 msgstr ""
 
-#: templates/body.html:116
+#: templates/body.html:118
 msgid "You can support us by minig Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:117
+#: templates/body.html:119
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:120
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:121
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:121
 msgid "Total"
 msgstr ""
 
@@ -495,29 +495,75 @@ msgid ""
 "who is learning this programming language."
 msgstr ""
 
-#: templates/index.html:16
+#: templates/index.html:21
+msgid "News"
+msgstr ""
+
+#: templates/index.html:23
+msgid ""
+"We are preparing a section for Informatics Teachers to be held during the"
+" PyCon SK Conference."
+msgstr ""
+
+#: templates/index.html:26
+#, python-format
+msgid ""
+"The aim of this section is to teach teachers the benefits and "
+"possibilities of using Python in teaching. We invite teachers who are "
+"teaching Python to share their experiences with conference attendees and "
+"<a href=\"%(url)s\">submit a talk proposal</a>."
+msgstr ""
+
+#: templates/index.html:29
+msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
+msgstr ""
+
+#: templates/index.html:32
+msgid ""
+"DevOps (a portmanteau of \"development\" and \"operations\") is a "
+"software engineering practice that aims to unify software development "
+"(Dev) and software operation (Ops). The main emphasis of the DevOps "
+"movement is to strongly advocate for automation and monitoring at all "
+"steps of software production, from integration, testing, releasing to "
+"deployment and infrastructure management."
+msgstr ""
+
+#: templates/index.html:33
+#, python-format
+msgid ""
+"If you think you have something to say on this topic, you are most "
+"welcome to <a href=\"%(url)s\">submit your CfP</a>. We hope to get the "
+"error budget right and to see developers and admins working towards the "
+"same goals."
+msgstr ""
+
+#: templates/index.html:42
+msgid "References"
+msgstr ""
+
+#: templates/index.html:44
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our references:"
 msgstr ""
 
-#: templates/index.html:53
+#: templates/index.html:81
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:81
+#: templates/index.html:119
 msgid ""
 "If you did wrote and article, or blog post do not hesitate to let us "
 "know: info@pycon.sk or create pull request."
 msgstr ""
 
-#: templates/index.html:86
+#: templates/index.html:124
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:87
+#: templates/index.html:125
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -999,5 +1045,14 @@ msgstr ""
 #~ "Here are links to articles that "
 #~ "were written by atendees about last "
 #~ "two PyCon SK's:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you think you have something to"
+#~ " say on this topic, you are "
+#~ "most welcome to submit your CfP. "
+#~ "We hope to get the error budget"
+#~ " right and to see developers and "
+#~ "admins working towards the same goals."
 #~ msgstr ""
 
