@@ -3079,12 +3079,32 @@ nav {
 }
 
 .section#cfp {
-  background-image: url('/static/img/backgrounds/bag.jpg');
+  background-image: url('/static/img/backgrounds/speaker.jpg');
   background-attachment: fixed;
 }
 
 .section#coc {
   background-image: url('/static/img/backgrounds/snake.jpg');
+  background-attachment: fixed;
+}
+
+.section#news {
+  background-image: url('/static/img/backgrounds/hall.jpg');
+  background-attachment: fixed;
+}
+
+.section#tickets {
+  background-image: url('/static/img/backgrounds/lecture_hall.jpg');
+  background-attachment: fixed;
+}
+
+.section#hall-of-fame {
+  background-image: url('/static/img/backgrounds/food.jpg');
+  background-attachment: fixed;
+}
+
+.section#references {
+  background-image: url('/static/img/backgrounds/bag.jpg');
   background-attachment: fixed;
 }
 
@@ -3221,12 +3241,32 @@ input:invalid, input.error, textarea.error, select.error {
   }
 
   .section#cfp {
-    background-image: url('/static/img/backgrounds/bag_medium.jpg');
+    background-image: url('/static/img/backgrounds/speaker_medium.jpg');
     background-attachment: fixed;
   }
 
   .section#coc {
     background-image: url('/static/img/backgrounds/snake_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#news {
+    background-image: url('/static/img/backgrounds/hall_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#tickets {
+    background-image: url('/static/img/backgrounds/lecture_hall_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#hall-of-fame {
+    background-image: url('/static/img/backgrounds/food_medium.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#references {
+    background-image: url('/static/img/backgrounds/bag_medium.jpg');
     background-attachment: fixed;
   }
 
@@ -3252,12 +3292,32 @@ input:invalid, input.error, textarea.error, select.error {
   }
 
   .section#cfp {
-    background-image: url('/static/img/backgrounds/bag_small.jpg');
+    background-image: url('/static/img/backgrounds/speaker_small.jpg');
     background-attachment: fixed;
   }
 
   .section#coc {
     background-image: url('/static/img/backgrounds/snake_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#news {
+    background-image: url('/static/img/backgrounds/hall_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#tickets {
+    background-image: url('/static/img/backgrounds/lecture_hall_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#hall-of-fame {
+    background-image: url('/static/img/backgrounds/food_small.jpg');
+    background-attachment: fixed;
+  }
+
+  .section#references {
+    background-image: url('/static/img/backgrounds/bag_small.jpg');
     background-attachment: fixed;
   }
 
