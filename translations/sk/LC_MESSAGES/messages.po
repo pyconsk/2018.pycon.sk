@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-28 10:39+0200\n"
+"POT-Creation-Date: 2017-10-29 11:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -616,7 +616,7 @@ msgstr ""
 "DevOps (spojenie anglických slov \"vývoj\" a \"operácie\") je softvérová "
 "inžinierska prax, ktorá sa zameriava na zjednotenie vývoja softvéru (Dev)"
 " a správu operačného systému (Ops). Hlavnou charakteristikou hnutia "
-"DevOps je dôrazn na automatizáciu a monitorovanie na všetkých stupňoch "
+"DevOps je dôraz na automatizáciu a monitorovanie na všetkých stupňoch "
 "tvorby softvéru od integrácie, testovania, uvoľňovania až po nasadenie a "
 "správu infraštruktúry."
 
@@ -634,10 +634,22 @@ msgstr ""
 "spolupracovať na rovnakých cieľoch"
 
 #: templates/index.html:42
+msgid "Hall of Fame"
+msgstr "Sieň Slávy"
+
+#: templates/index.html:44
+msgid "People that participate volunteering at PyCon SK 2018."
+msgstr "Ľudia, ktorí pomáhajú ako dobrovoľníci na PyCon SK 2018."
+
+#: templates/index.html:50
+msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
+msgstr "Ľudia, ktorí si zakúpili podporovateľský lístok na PyCon SK 2018."
+
+#: templates/index.html:62
 msgid "References"
 msgstr "Referencie"
 
-#: templates/index.html:44
+#: templates/index.html:64
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our references:"
@@ -645,7 +657,7 @@ msgstr ""
 "O predchádzajúcich ročníkoch vyšlo niekoľko článokv aj v médiach. Ak "
 "chcete vedieť ako bolo, pozrite si naše referencie."
 
-#: templates/index.html:81
+#: templates/index.html:101
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
@@ -653,7 +665,7 @@ msgstr ""
 "Tu sú linky na články napísané našimi návštevníkmi z posledných dvoch "
 "ročníkov PyCon SK:"
 
-#: templates/index.html:119
+#: templates/index.html:139
 msgid ""
 "If you did wrote and article, or blog post do not hesitate to let us "
 "know: info@pycon.sk or create pull request."
@@ -661,11 +673,11 @@ msgstr ""
 "Ak viete o článku, alebo blogu neváhajte nám napísať na: info@pycon.sk "
 "alebo sprevte pull request."
 
-#: templates/index.html:124
+#: templates/index.html:144
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr "Našli ste na našich stránkach chybu? Chcete vedieť viac? Dajte nám vedieť."
 
-#: templates/index.html:125
+#: templates/index.html:145
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
