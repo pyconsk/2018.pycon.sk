@@ -1,11 +1,91 @@
 {% extends "body.html" %}
 
 {% block header %}
+  <script src="{{ url_for('static', filename='js/vue.2.4.4.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/axios.0.16.2.min.js') }}"></script>
   <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1'/>
   <script src='https://js.tito.io/v1' async></script>
 {% endblock %}
 
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/aid.js') }}"></script>
+{% endblock %}
+
 {% block content %}
+  <div class="modal" id="aidModal">
+    <input id="modal_aid" type="checkbox" v-model="open"/>
+    <label for="modal_aid" class="overlay"></label>
+    <article>
+      <form method="post" role="form" v-on:submit="validateForm">
+        <header>
+          <h3>{{ _('Financial Aid') }}</h3>
+          <label for="modal_aid" class="close">&times;</label>
+        </header>
+        <section class="content">
+
+          <label for="title">
+            <select v-model="title" id="title" name="title">
+            <option disabled value="">{{ _('What is your title?') }}</option>
+            <option value="mr">{{ _('Mr.') }}</option>
+            <option value="ms">{{ _('Ms.') }}</option>
+            <option value="mx">{{ _('Mx.') }}</option>
+          </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="first_name">
+            <input type="text" v-model="firstName" id="first_name" name="first_name" name="first_name" v-model.trim="firstName" placeholder="{{ _('First name') }}" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="last_name">
+            <input type="text" v-model="lastName" id="last_name" name="last_name" placeholder="{{ _('Last name') }}" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="email">
+            <input type="email" v-model="email" id="email" name="email" placeholder="{{ _('Email') }}" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="phone">
+            <input type="phone" v-model="phone" id="phone" name="phone" placeholder="{{ _('Phone') }}"/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="description">
+            <textarea id="description" v-model="description" name="description" placeholder="{{ _('Explain why you need financial aid? Be as descriptive as possible...') }}" required></textarea>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+        </section>
+        <footer>
+          <button type="submit">{{ _('Submit') }}</button>
+          <label for="modal_aid" class="button dangerous">{{ _('Cancel') }}</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+  <div class="modal" id="popupModal">
+    <input id="modal_popup" type="checkbox" v-model="open"/>
+    <label for="modal_popup" class="overlay"></label>
+    <article>
+      <form method="post">
+        <header>
+          <h3>{% raw %}{{ header }}{% endraw %}</h3>
+          <label for="modal_popup" class="close">&times;</label>
+        </header>
+        <section class="content">
+          {% raw %}{{ message }}{% endraw %}
+        </section>
+        <footer>
+          <label for="modal_popup" class="button">{{ _('OK') }}</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
 <div class="section" id="tickets">
   <div class="content">
     <div class="content-text">
@@ -31,7 +111,9 @@
             {{ _('Slovak University of Technology in Bratislava') }}<br/>
             {{ _('Faculty of Informatics and Information Technologies') }}<br/>
             Ilkovičova 2<br/>
-            842 16 Bratislava 4<br/>
+            842 16 Bratislava 4
+          </p>
+          <p class="text-justify">
             <a href="{{ url_for('venue', lang_code=lang_code) }}">{{ _('How do you get to Slovak PyCon?') }}</a>
           </p>
         </div>
@@ -78,9 +160,9 @@
 
       <div class="flex one two-900">
         <div class="box">
-          <h3>{{ _('Will there be early bird tickets?') }}</h3>
+          <h3>{{ _('What do you mean with Real Deal ticket?') }}</h3>
           <p class="text-justify">
-            {{ _('Yes, first 120 tickets will be sold for early bird discount, so hurry up!') }}
+            {{ _('In order to keep conference accessible for everyone we donate all tickets, so most of the people can afford to buy one.') }}
           </p>
         </div>
         <div class="box">
@@ -93,21 +175,36 @@
 
       <div class="flex one two-900">
         <div class="box">
-          <h3>{{ _('Will there be last moment tickets?') }}</h3>
+          <h3>{{ _('Will there be early bird tickets?') }}</h3>
           <p class="text-justify">
-            {{ _('Yes, last 50 tickets will be more expensive, so don\'t leave your ticket purchase to last moment!') }}
+            {{ _('First 120 tickets will be sold for early bird discount, so hurry up!') }}
           </p>
         </div>
+        <div class="box">
+          <h3>{{ _('Will there be last moment tickets?') }}</h3>
+          <p class="text-justify">
+            {{ _('Last 50 tickets will be more expensive, so don\'t leave your ticket purchase to last moment!') }}
+          </p>
+        </div>
+      </div>
+
+      <div class="flex one two-900">
         <div class="box">
           <h3>{{ _('Is there any another possibility to get to PyCon?') }}</h3>
           <p class="text-justify">
             {{ _('Yes <a href="%(url)s">submit a talk</a>, and if your talk is selected you will receive a speakers ticket for free.', url=url_for('cfp', lang_code=lang_code)) }}
           </p>
           <p class="text-justify">
-            {{ _('We\'ll have a financial aid program allowing some visitors to come to PyCon for free. Mere details to will be published soon.') }}
-          </p>
-          <p class="text-justify">
             {{ _('If you are less than 18 years old and come accompanied by a parent, you can just purchase one ticket only for the parent, but you have to inform us in advance to issue an another ticket for the child.') }}
+          </p>
+        </div>
+        <div class="box">
+          <h3>{{ _('Do you have Financial Aid program?') }}</h3>
+          <p class="text-justify">
+            {{ _('Yes! We have limited amount of tickets for people in need, who would like to join us. If you can\'t not afford to buy a conference ticket, apply for financial aid and get complimentary conference ticket.') }}
+          </p>
+          <p class="text-center">
+            <label for="modal_aid" class='button'>{{ _('Apply for financial aid.') }}</label>
           </p>
         </div>
       </div>
