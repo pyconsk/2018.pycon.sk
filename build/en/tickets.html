@@ -22,6 +22,8 @@
   <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
   
+  <script src="/static/js/vue.2.4.4.min.js"></script>
+  <script src="/static/js/axios.0.16.2.min.js"></script>
   <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1'/>
   <script src='https://js.tito.io/v1' async></script>
 
@@ -65,6 +67,80 @@
 </nav>
 <main>
   
+  <div class="modal" id="aidModal">
+    <input id="modal_aid" type="checkbox" v-model="open"/>
+    <label for="modal_aid" class="overlay"></label>
+    <article>
+      <form method="post" role="form" v-on:submit="validateForm">
+        <header>
+          <h3>Financial Aid</h3>
+          <label for="modal_aid" class="close">&times;</label>
+        </header>
+        <section class="content">
+
+          <label for="title">
+            <select v-model="title" id="title" name="title">
+            <option disabled value="">What is your title?</option>
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+            <option value="mx">Mx.</option>
+          </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="first_name">
+            <input type="text" v-model="firstName" id="first_name" name="first_name" name="first_name" v-model.trim="firstName" placeholder="First name" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="last_name">
+            <input type="text" v-model="lastName" id="last_name" name="last_name" placeholder="Last name" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="email">
+            <input type="email" v-model="email" id="email" name="email" placeholder="Email" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="phone">
+            <input type="phone" v-model="phone" id="phone" name="phone" placeholder="Phone"/>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="description">
+            <textarea id="description" v-model="description" name="description" placeholder="Explain why you need financial aid? Be as descriptive as possible..." required></textarea>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+        </section>
+        <footer>
+          <button type="submit">Submit</button>
+          <label for="modal_aid" class="button dangerous">Cancel</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
+  <div class="modal" id="popupModal">
+    <input id="modal_popup" type="checkbox" v-model="open"/>
+    <label for="modal_popup" class="overlay"></label>
+    <article>
+      <form method="post">
+        <header>
+          <h3>{{ header }}</h3>
+          <label for="modal_popup" class="close">&times;</label>
+        </header>
+        <section class="content">
+          {{ message }}
+        </section>
+        <footer>
+          <label for="modal_popup" class="button">OK</label>
+        </footer>
+      </form>
+    </article>
+  </div>
+
 <div class="section" id="tickets">
   <div class="content">
     <div class="content-text">
@@ -90,7 +166,9 @@
             Slovak University of Technology in Bratislava<br/>
             Faculty of Informatics and Information Technologies<br/>
             Ilkovičova 2<br/>
-            842 16 Bratislava 4<br/>
+            842 16 Bratislava 4
+          </p>
+          <p class="text-justify">
             <a href="/en/venue.html">How do you get to Slovak PyCon?</a>
           </p>
         </div>
@@ -137,9 +215,9 @@
 
       <div class="flex one two-900">
         <div class="box">
-          <h3>Will there be early bird tickets?</h3>
+          <h3>What do you mean with Real Deal ticket?</h3>
           <p class="text-justify">
-            Yes, first 120 tickets will be sold for early bird discount, so hurry up!
+            In order to keep conference accessible for everyone we donate all tickets, so most of the people can afford to buy one.
           </p>
         </div>
         <div class="box">
@@ -152,21 +230,36 @@
 
       <div class="flex one two-900">
         <div class="box">
-          <h3>Will there be last moment tickets?</h3>
+          <h3>Will there be early bird tickets?</h3>
           <p class="text-justify">
-            Yes, last 50 tickets will be more expensive, so don't leave your ticket purchase to last moment!
+            First 120 tickets will be sold for early bird discount, so hurry up!
           </p>
         </div>
+        <div class="box">
+          <h3>Will there be last moment tickets?</h3>
+          <p class="text-justify">
+            Last 50 tickets will be more expensive, so don't leave your ticket purchase to last moment!
+          </p>
+        </div>
+      </div>
+
+      <div class="flex one two-900">
         <div class="box">
           <h3>Is there any another possibility to get to PyCon?</h3>
           <p class="text-justify">
             Yes <a href="/en/cfp.html">submit a talk</a>, and if your talk is selected you will receive a speakers ticket for free.
           </p>
           <p class="text-justify">
-            We'll have a financial aid program allowing some visitors to come to PyCon for free. Mere details to will be published soon.
-          </p>
-          <p class="text-justify">
             If you are less than 18 years old and come accompanied by a parent, you can just purchase one ticket only for the parent, but you have to inform us in advance to issue an another ticket for the child.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Do you have Financial Aid program?</h3>
+          <p class="text-justify">
+            Yes! We have limited amount of tickets for people in need, who would like to join us. If you can't not afford to buy a conference ticket, apply for financial aid and get complimentary conference ticket.
+          </p>
+          <p class="text-center">
+            <label for="modal_aid" class='button'>Apply for financial aid.</label>
           </p>
         </div>
       </div>
@@ -229,6 +322,8 @@
   </footer>
 </main>
   <script src="/static/js/analytics.min.js" async></script>
+
+  <script src="/static/js/aid.js"></script>
 
 
   <script type="application/ld+json">{"@context": "http://schema.org", "@type": "Event", "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for the Python programming language.", "endDate": "2018-03-11T18:00:00+01:00", "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg", "location": {"@type": "Place", "name": "Bratislava"}, "name": "PyCon SK 2018", "startDate": "2018-03-09T9:00:00+01:00", "url": "https://2018.pycon.sk/en/", "workPerformed": {"@type": "CreativeWork", "creator": {"@type": "Organization", "logo": "https://spy.python.sk/img/logo/spy-logo.png", "name": "SPy o.z.", "url": "https://spy.python.sk/"}, "name": "PyCon SK 2018"}}</script>
