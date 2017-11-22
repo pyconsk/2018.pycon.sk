@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-29 11:36+0100\n"
+"POT-Creation-Date: 2017-11-22 20:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -41,7 +41,7 @@ msgstr ""
 msgid "Venue"
 msgstr ""
 
-#: templates/body.html:50 templates/tickets.html:12
+#: templates/body.html:50 templates/tickets.html:92
 msgid "Tickets"
 msgstr ""
 
@@ -218,7 +218,7 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: templates/cfp.html:69 templates/cfp.html:375
+#: templates/cfp.html:69 templates/cfp.html:375 templates/tickets.html:64
 msgid "Cancel"
 msgstr ""
 
@@ -226,35 +226,35 @@ msgstr ""
 msgid "Speaker Biography"
 msgstr ""
 
-#: templates/cfp.html:86
+#: templates/cfp.html:86 templates/tickets.html:28
 msgid "What is your title?"
 msgstr ""
 
-#: templates/cfp.html:87
+#: templates/cfp.html:87 templates/tickets.html:29
 msgid "Mr."
 msgstr ""
 
-#: templates/cfp.html:88
+#: templates/cfp.html:88 templates/tickets.html:30
 msgid "Ms."
 msgstr ""
 
-#: templates/cfp.html:89
+#: templates/cfp.html:89 templates/tickets.html:31
 msgid "Mx."
 msgstr ""
 
-#: templates/cfp.html:93
+#: templates/cfp.html:93 templates/tickets.html:37
 msgid "First name"
 msgstr ""
 
-#: templates/cfp.html:96
+#: templates/cfp.html:96 templates/tickets.html:42
 msgid "Last name"
 msgstr ""
 
-#: templates/cfp.html:99
+#: templates/cfp.html:99 templates/tickets.html:52
 msgid "Phone"
 msgstr ""
 
-#: templates/cfp.html:102
+#: templates/cfp.html:102 templates/tickets.html:47
 msgid "Email"
 msgstr ""
 
@@ -278,11 +278,11 @@ msgstr ""
 msgid "Avatar"
 msgstr ""
 
-#: templates/cfp.html:374
+#: templates/cfp.html:374 templates/tickets.html:63
 msgid "Submit"
 msgstr ""
 
-#: templates/cfp.html:394
+#: templates/cfp.html:394 templates/tickets.html:83
 msgid "OK"
 msgstr ""
 
@@ -666,51 +666,59 @@ msgid ""
 "excellent opportunity to contribute back."
 msgstr ""
 
-#: templates/tickets.html:13
+#: templates/tickets.html:21
+msgid "Financial Aid"
+msgstr ""
+
+#: templates/tickets.html:57
+msgid "Explain why you need financial aid? Be as descriptive as possible..."
+msgstr ""
+
+#: templates/tickets.html:93
 msgid "Tickets are for sale now!"
 msgstr ""
 
-#: templates/tickets.html:20
+#: templates/tickets.html:100
 #, python-format
 msgid ""
 "You can also buy tickets directly on the %(url)s website in case the tito"
 " widget is not displayed correctly."
 msgstr ""
 
-#: templates/tickets.html:24
+#: templates/tickets.html:104
 #, python-format
 msgid ""
 "By purchasing a ticket you agree to abide by the <a href=\"%(url)s\">Code"
 " of Conduct</a>."
 msgstr ""
 
-#: templates/tickets.html:29
+#: templates/tickets.html:109
 msgid "Where will the conference happen?"
 msgstr ""
 
-#: templates/tickets.html:31 templates/venue.html:11
+#: templates/tickets.html:111 templates/venue.html:11
 msgid "Slovak University of Technology in Bratislava"
 msgstr ""
 
-#: templates/tickets.html:32 templates/venue.html:12
+#: templates/tickets.html:112 templates/venue.html:12
 msgid "Faculty of Informatics and Information Technologies"
 msgstr ""
 
-#: templates/tickets.html:35 templates/venue.html:6
+#: templates/tickets.html:117 templates/venue.html:6
 msgid "How do you get to Slovak PyCon?"
 msgstr ""
 
-#: templates/tickets.html:39
+#: templates/tickets.html:121
 msgid "I don't have PayPal account, is there any other way to buy a ticket?"
 msgstr ""
 
-#: templates/tickets.html:41
+#: templates/tickets.html:123
 msgid ""
 "If you go to PayPal page there is possibility to pay with credit card "
 "(also with debit card) directly, without creating an account."
 msgstr ""
 
-#: templates/tickets.html:44
+#: templates/tickets.html:126
 msgid ""
 "We accept wire transfer, since that needs manual work additional 1 Euro "
 "fee is applied. Please send us a list of tickets you are interested in, "
@@ -718,7 +726,7 @@ msgid ""
 "will issue and send the requested tickets to you by email."
 msgstr ""
 
-#: templates/tickets.html:47
+#: templates/tickets.html:129
 msgid ""
 "We also accept Bitcoin, Litecoin and (possibly) other crypto currencies. "
 "Please send us a list of tickets you are interested in, and currency you "
@@ -726,54 +734,54 @@ msgid ""
 "confirmed, we will issue and send the requested tickets to you by email."
 msgstr ""
 
-#: templates/tickets.html:54
+#: templates/tickets.html:136
 msgid "Which ticket should I buy?"
 msgstr ""
 
-#: templates/tickets.html:56
+#: templates/tickets.html:138
 msgid "Real Deal"
 msgstr ""
 
-#: templates/tickets.html:56
+#: templates/tickets.html:138
 msgid ""
 "This is the real price for tickets if it wouldn't be donated by SPy o.z. "
 "with sponsors money. Please buy it if you can afford it, your name "
 "(company) will be shown on our website."
 msgstr ""
 
-#: templates/tickets.html:59
+#: templates/tickets.html:141
 msgid "Standard"
 msgstr ""
 
-#: templates/tickets.html:59
+#: templates/tickets.html:141
 msgid "This ticket is designed for all conference participants."
 msgstr ""
 
-#: templates/tickets.html:62
+#: templates/tickets.html:144
 msgid "Teacher"
 msgstr ""
 
-#: templates/tickets.html:62
+#: templates/tickets.html:144
 msgid ""
 "This ticket is designed for teachers. Don't forget to bring your valid "
 "teachers ID (ITIC) to the registration."
 msgstr ""
 
-#: templates/tickets.html:65
+#: templates/tickets.html:147
 msgid "Student"
 msgstr ""
 
-#: templates/tickets.html:65
+#: templates/tickets.html:147
 msgid ""
 "This ticket is designed for students. Don't forget to bring your valid "
 "student ID (ISIC) to the registration."
 msgstr ""
 
-#: templates/tickets.html:69
+#: templates/tickets.html:151
 msgid "Where does the money from tickets go?"
 msgstr ""
 
-#: templates/tickets.html:71
+#: templates/tickets.html:153
 msgid ""
 "PyCon is completely organized by volunteers. We do believe that such "
 "conferences should be organized to promote programming and Open Source. "
@@ -781,7 +789,7 @@ msgid ""
 "expenses related to organizing the conference."
 msgstr ""
 
-#: templates/tickets.html:74
+#: templates/tickets.html:156
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">The SPy civic association</a>, as the organizer, "
@@ -791,56 +799,75 @@ msgid ""
 "about our vision and objectives."
 msgstr ""
 
-#: templates/tickets.html:81
-msgid "Will there be early bird tickets?"
+#: templates/tickets.html:163
+msgid "What do you mean with Real Deal ticket?"
 msgstr ""
 
-#: templates/tickets.html:83
-msgid "Yes, first 120 tickets will be sold for early bird discount, so hurry up!"
+#: templates/tickets.html:165
+msgid ""
+"In order to keep conference accessible for everyone we donate all "
+"tickets, so most of the people can afford to buy one."
 msgstr ""
 
-#: templates/tickets.html:87
+#: templates/tickets.html:169
 msgid "Do you offer group discounts?"
 msgstr ""
 
-#: templates/tickets.html:89
+#: templates/tickets.html:171
 msgid ""
 "If you would like to buy more than 15 tickets please contact us by email "
 "at info@pycon.sk."
 msgstr ""
 
-#: templates/tickets.html:96
+#: templates/tickets.html:178
+msgid "Will there be early bird tickets?"
+msgstr ""
+
+#: templates/tickets.html:180
+msgid "First 120 tickets will be sold for early bird discount, so hurry up!"
+msgstr ""
+
+#: templates/tickets.html:184
 msgid "Will there be last moment tickets?"
 msgstr ""
 
-#: templates/tickets.html:98
+#: templates/tickets.html:186
 msgid ""
-"Yes, last 50 tickets will be more expensive, so don't leave your ticket "
+"Last 50 tickets will be more expensive, so don't leave your ticket "
 "purchase to last moment!"
 msgstr ""
 
-#: templates/tickets.html:102
+#: templates/tickets.html:193
 msgid "Is there any another possibility to get to PyCon?"
 msgstr ""
 
-#: templates/tickets.html:104
+#: templates/tickets.html:195
 #, python-format
 msgid ""
 "Yes <a href=\"%(url)s\">submit a talk</a>, and if your talk is selected "
 "you will receive a speakers ticket for free."
 msgstr ""
 
-#: templates/tickets.html:107
-msgid ""
-"We'll have a financial aid program allowing some visitors to come to "
-"PyCon for free. Mere details to will be published soon."
-msgstr ""
-
-#: templates/tickets.html:110
+#: templates/tickets.html:198
 msgid ""
 "If you are less than 18 years old and come accompanied by a parent, you "
 "can just purchase one ticket only for the parent, but you have to inform "
 "us in advance to issue an another ticket for the child."
+msgstr ""
+
+#: templates/tickets.html:202
+msgid "Do you have Financial Aid program?"
+msgstr ""
+
+#: templates/tickets.html:204
+msgid ""
+"Yes! We have limited amount of tickets for people in need, who would like"
+" to join us. If you can't not afford to buy a conference ticket, apply "
+"for financial aid and get complimentary conference ticket."
+msgstr ""
+
+#: templates/tickets.html:207
+msgid "Apply for financial aid."
 msgstr ""
 
 #: templates/venue.html:9
@@ -1066,5 +1093,24 @@ msgstr ""
 #~ "We hope to get the error budget"
 #~ " right and to see developers and "
 #~ "admins working towards the same goals."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Yes, first 120 tickets will be "
+#~ "sold for early bird discount, so "
+#~ "hurry up!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Yes, last 50 tickets will be more"
+#~ " expensive, so don't leave your "
+#~ "ticket purchase to last moment!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We'll have a financial aid program "
+#~ "allowing some visitors to come to "
+#~ "PyCon for free. Mere details to "
+#~ "will be published soon."
 #~ msgstr ""
 
