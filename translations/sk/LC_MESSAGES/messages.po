@@ -801,7 +801,7 @@ msgstr "Finančná Pomoc"
 #: templates/tickets.html:57
 msgid "Explain why you need financial aid? Be as descriptive as possible..."
 msgstr ""
-"Vysvetlite, prečo potrebujete finančnú pomoc? Opíšte Vašu sytuáciu čo "
+"Vysvetlite, prečo potrebujete finančnú pomoc? Opíšte Vašu situáciu čo "
 "možno najviac..."
 
 #: templates/tickets.html:93
