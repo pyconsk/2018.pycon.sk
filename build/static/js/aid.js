@@ -5,7 +5,7 @@ function get_event_uuid(slug) {
   axios.get(AJAX_SERVER + '/events/' + slug).then(function (response) {
     return response.data.uuid;
   }).catch(function (error) {
-    aidModal.openPopUp('Could not connect to server: ' + error);
+    aidModal.openPopUp(error, 'Could not connect to server!');
     console.log(error);
   });
 }
@@ -77,6 +77,20 @@ var aidModal = new Vue({
         console.log('Error');
         console.log(error);
       });
+    },
+    addListeners: function() {
+      const inputs = document.querySelectorAll("input, select, textarea");
+
+      inputs.forEach(input => {
+        input.addEventListener("invalid", event => {
+          input.classList.add("error");
+          },
+          false
+        );
+      });
     }
+  },
+  created: function() {
+    this.addListeners();
   }
 });

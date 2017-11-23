@@ -3174,7 +3174,7 @@ article footer {
   border: none;
 }
 
-input:invalid, input.error, textarea.error, select.error {
+input.error, textarea.error, select.error {
   box-shadow: 0 0 5px 1px red;
 }
 

@@ -25,7 +25,7 @@
   <script src="/static/js/vue.2.4.4.min.js"></script>
   <script src="/static/js/axios.0.16.2.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20171029">
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20171123">
   <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
   
     <link rel="alternate" href="https://2018.pycon.sk/en/cfp.html" hreflang="en">
@@ -69,58 +69,71 @@
     <input id="modal_talk" type="checkbox" v-model="open"/>
     <label for="modal_talk" class="overlay"></label>
     <article>
-      <form method="post">
+      <form method="post" role="form" v-on:submit="validateForm">
         <header>
           <h3>Abstrakt prednášky</h3>
           <label for="modal_talk" class="close">&times;</label>
         </header>
         <section class="content">
-          <input class="stack" type="text" v-model.trim="talkTitle" v-bind:class="{ 'error': talkTitleError }" placeholder="Názov prednášky"/>
-          <span class="error" v-if="talkTitleError">{{ talkTitleError }}</span>
 
-          <textarea class="stack" v-model="talkAbstract" v-bind:class="{ 'error': talkAbstractError }" placeholder="Abstrakt"></textarea>
-          <span class="error" v-if="talkAbstractError">{{ talkAbstractError }}</span>
+          <label for="talk_title">
+            <input type="text" v-model="talkTitle" id="talk_title" name="talk_title" placeholder="Názov prednášky" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <select class="stack" v-model="type" v-bind:class="{ 'error': typeError }" >
-            <option disabled value="">Chcete urobiť prezentáciu alebo workshop?</option>
-            <option value="talk">Prednáška</option>
-            <option value="workshop">Workshop</option>
-          </select>
-          <span class="error" v-if="typeError">{{ typeError }}</span>
+          <label for="abstract">
+            <textarea id="abstract" v-model="talkAbstract" name="abstract" placeholder="Abstrakt" required></textarea>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <select class="stack" v-model="flag" v-bind:class="{ 'error': flagError }" >
-            <option disabled value="">Ktorá kategória sa najlepšie hodí na Vašu prezentaciu / workshop?</option>
-            <option value="generic">Python všeobecne</option>
-            <option value="devops">DevOps</option>
-            <option value="edu">Vzdelávanie</option>
-            <option value="web">Vývoj webu</option>
-            <option value="data">Dáta</option>
-            <option value="ai">Umelá inteligencia</option>
-            <option value="security">Bezpečnosť</option>
-            <option value="community">Komunita / Rôznorodosť / Spoločnosť</option>
-            <option value="softskills">Mäkké zručnosti</option>
-            <option value="hardware">Hardvér</option>
-            <option value="other">Iné</option>
-          </select>
-          <span class="error" v-if="flagError">{{ flagError }}</span>
+          <label for="type">
+             <select v-model="type" id="type" name="type" required>
+              <option disabled value="">Chcete urobiť prezentáciu alebo workshop?</option>
+              <option value="talk">Prednáška</option>
+              <option value="workshop">Workshop</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <select class="stack" v-model="language" v-bind:class="{ 'error': languageError }" >
-            <option disabled value="">V akom jazyku budete prezentovať?</option>
-            <option value="SK">Slovensky</option>
-            <option value="CZ">Česky</option>
-            <option value="EN">Anglicky</option>
-          </select>
-          <span class="error" v-if="languageError">{{ languageError }}</span>
+          <label for="flag">
+            <select v-model="flag" id="flag" name="flag" required>
+              <option disabled value="">Ktorá kategória sa najlepšie hodí na Vašu prezentaciu / workshop?</option>
+              <option value="generic">Python všeobecne</option>
+              <option value="devops">DevOps</option>
+              <option value="edu">Vzdelávanie</option>
+              <option value="web">Vývoj webu</option>
+              <option value="data">Dáta</option>
+              <option value="ai">Umelá inteligencia</option>
+              <option value="security">Bezpečnosť</option>
+              <option value="community">Komunita / Rôznorodosť / Spoločnosť</option>
+              <option value="softskills">Mäkké zručnosti</option>
+              <option value="hardware">Hardvér</option>
+              <option value="other">Iné</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <select class="stack" v-model="duration" v-bind:class="{ 'error': durationError }" >
-            <option disabled value="">Aký je Váš ideálny časový slot?</option>
-            <option  v-for="option in timeOptions" v-bind:value="option.value">{{ option.text }}</option>
-          </select>
-          <span class="error" v-if="durationError">{{ durationError }}</span>
+          <label for="language">
+            <select v-model="language" id="language" name="language" required>
+              <option disabled value="">V akom jazyku budete prezentovať?</option>
+              <option value="SK">Slovensky</option>
+              <option value="CZ">Česky</option>
+              <option value="EN">Anglicky</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="duration">
+            <select v-model="duration" id="duration" name="duration" required>
+              <option disabled value="">Aký je Váš ideálny časový slot?</option>
+              <option  v-for="option in timeOptions" v-bind:value="option.value">{{ option.text }}</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
         </section>
         <footer>
-          <label for="modal_speaker" class="button" v-on:click="validateForm">Pokračovať</label>
+          <button type="submit">Pokračovať</button>
           <label for="modal_talk" class="button dangerous">Zrušiť</label>
         </footer>
       </form>
@@ -137,293 +150,316 @@
           <label for="modal_speaker" class="close">&times;</label>
         </header>
         <section class="content">
-          <select v-model="title" v-bind:class="{ 'error': titleError }">
-            <option disabled value="">Aký je Váš titul?</option>
-            <option value="mr">Pán</option>
-            <option value="ms">Pani</option>
-            <option value="mx">Neurčené</option>
-          </select>
-          <span class="error" v-if="titleError">{{ titleError }}</span>
 
-          <input class="stack border_bottom" type="text" v-model.trim="firstName" v-bind:class="{ 'error': firstNameError }" placeholder="Krstné meno"/>
-          <span class="error" v-if="firstNameError">{{ firstNameError }}</span>
+          <label for="title">
+            <select v-model="title" id="title" name="title">
+              <option disabled value="">Aký je Váš titul?</option>
+              <option value="mr">Pán</option>
+              <option value="ms">Pani</option>
+              <option value="mx">Neurčené</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <input class="stack" type="text" v-model.trim="lastName" v-bind:class="{ 'error': lastNameError }" placeholder="Priezvisko"/>
-          <span class="error" v-if="lastNameError">{{ lastNameError }}</span>
+          <label for="first_name">
+            <input type="text" v-model="firstName" id="first_name" name="first_name" placeholder="Krstné meno" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <input class="stack" type="tel" v-model.trim="phone" v-bind:class="{ 'error': phoneError }" placeholder="Telefón"/>
-          <span class="error" v-if="phoneError">{{ phoneError }}</span>
+          <label for="last_name">
+            <input type="text" v-model="lastName" id="last_name" name="last_name" placeholder="Priezvisko" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <input class="stack" type="email" v-model.trim="email" v-bind:class="{ 'error': emailError }" placeholder="Email"/>
-          <span class="error" v-if="emailError">{{ emailError }}</span>
+          <label for="email">
+            <input type="email" v-model="email" id="email" name="email" placeholder="Email" required/>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <textarea class="stack" v-model="bio" v-bind:class="{ 'error': bioError }" placeholder="Životopis"></textarea>
-          <span class="error" v-if="bioError">{{ bioError }}</span>
+          <label for="phone">
+            <input type="tel" v-model="phone" id="phone" name="phone" placeholder="Telefón"/>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <input class="stack" type="url" v-model.trim="url" v-bind:class="{ 'error': urlError }" placeholder="Url"/>
-          <span class="error" v-if="urlError">{{ urlError }}</span>
+          <label for="bio">
+            <textarea id="bio" v-model="bio" name="bio" placeholder="Tell us about your self? This will be your public biography..." required></textarea>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <input class="stack" type="url" v-model.trim="socialUrl" placeholder="Url na socialnu sieť"/>
-          <span class="error" v-if="socialUrlError">{{ socialUrlError }}</span>
+          <label for="url">
+            <input type="url" v-model="url" id="url" name="url" placeholder="Url"/>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-          <select class="stack" v-model="country" v-bind:class="{ 'error': countryError }" >
-            <option disabled value="">Z ktorej krajiny pochádzate?</option>
-            <option value="SK">Slovakia</option>
+          <label for="social_url">
+            <input type="url" v-model="socialUrl" id="social_url" name="social_url" placeholder="Url na socialnu sieť"/>
+            <span class="error" aria-live="polite"></span>
+          </label>
 
-            <option value="AF">Afghanistan</option>
-	<option value="AX">Åland Islands</option>
-	<option value="AL">Albania</option>
-	<option value="DZ">Algeria</option>
-	<option value="AS">American Samoa</option>
-	<option value="AD">Andorra</option>
-	<option value="AO">Angola</option>
-	<option value="AI">Anguilla</option>
-	<option value="AQ">Antarctica</option>
-	<option value="AG">Antigua and Barbuda</option>
-	<option value="AR">Argentina</option>
-	<option value="AM">Armenia</option>
-	<option value="AW">Aruba</option>
-	<option value="AU">Australia</option>
-	<option value="AT">Austria</option>
-	<option value="AZ">Azerbaijan</option>
-	<option value="BS">Bahamas</option>
-	<option value="BH">Bahrain</option>
-	<option value="BD">Bangladesh</option>
-	<option value="BB">Barbados</option>
-	<option value="BY">Belarus</option>
-	<option value="BE">Belgium</option>
-	<option value="BZ">Belize</option>
-	<option value="BJ">Benin</option>
-	<option value="BM">Bermuda</option>
-	<option value="BT">Bhutan</option>
-	<option value="BO">Bolivia, Plurinational State of</option>
-	<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-	<option value="BA">Bosnia and Herzegovina</option>
-	<option value="BW">Botswana</option>
-	<option value="BV">Bouvet Island</option>
-	<option value="BR">Brazil</option>
-	<option value="IO">British Indian Ocean Territory</option>
-	<option value="BN">Brunei Darussalam</option>
-	<option value="BG">Bulgaria</option>
-	<option value="BF">Burkina Faso</option>
-	<option value="BI">Burundi</option>
-	<option value="KH">Cambodia</option>
-	<option value="CM">Cameroon</option>
-	<option value="CA">Canada</option>
-	<option value="CV">Cape Verde</option>
-	<option value="KY">Cayman Islands</option>
-	<option value="CF">Central African Republic</option>
-	<option value="TD">Chad</option>
-	<option value="CL">Chile</option>
-	<option value="CN">China</option>
-	<option value="CX">Christmas Island</option>
-	<option value="CC">Cocos (Keeling) Islands</option>
-	<option value="CO">Colombia</option>
-	<option value="KM">Comoros</option>
-	<option value="CG">Congo</option>
-	<option value="CD">Congo, the Democratic Republic of the</option>
-	<option value="CK">Cook Islands</option>
-	<option value="CR">Costa Rica</option>
-	<option value="CI">Côte d'Ivoire</option>
-	<option value="HR">Croatia</option>
-	<option value="CU">Cuba</option>
-	<option value="CW">Curaçao</option>
-	<option value="CY">Cyprus</option>
-	<option value="CZ">Czech Republic</option>
-	<option value="DK">Denmark</option>
-	<option value="DJ">Djibouti</option>
-	<option value="DM">Dominica</option>
-	<option value="DO">Dominican Republic</option>
-	<option value="EC">Ecuador</option>
-	<option value="EG">Egypt</option>
-	<option value="SV">El Salvador</option>
-	<option value="GQ">Equatorial Guinea</option>
-	<option value="ER">Eritrea</option>
-	<option value="EE">Estonia</option>
-	<option value="ET">Ethiopia</option>
-	<option value="FK">Falkland Islands (Malvinas)</option>
-	<option value="FO">Faroe Islands</option>
-	<option value="FJ">Fiji</option>
-	<option value="FI">Finland</option>
-	<option value="FR">France</option>
-	<option value="GF">French Guiana</option>
-	<option value="PF">French Polynesia</option>
-	<option value="TF">French Southern Territories</option>
-	<option value="GA">Gabon</option>
-	<option value="GM">Gambia</option>
-	<option value="GE">Georgia</option>
-	<option value="DE">Germany</option>
-	<option value="GH">Ghana</option>
-	<option value="GI">Gibraltar</option>
-	<option value="GR">Greece</option>
-	<option value="GL">Greenland</option>
-	<option value="GD">Grenada</option>
-	<option value="GP">Guadeloupe</option>
-	<option value="GU">Guam</option>
-	<option value="GT">Guatemala</option>
-	<option value="GG">Guernsey</option>
-	<option value="GN">Guinea</option>
-	<option value="GW">Guinea-Bissau</option>
-	<option value="GY">Guyana</option>
-	<option value="HT">Haiti</option>
-	<option value="HM">Heard Island and McDonald Islands</option>
-	<option value="VA">Holy See (Vatican City State)</option>
-	<option value="HN">Honduras</option>
-	<option value="HK">Hong Kong</option>
-	<option value="HU">Hungary</option>
-	<option value="IS">Iceland</option>
-	<option value="IN">India</option>
-	<option value="ID">Indonesia</option>
-	<option value="IR">Iran, Islamic Republic of</option>
-	<option value="IQ">Iraq</option>
-	<option value="IE">Ireland</option>
-	<option value="IM">Isle of Man</option>
-	<option value="IL">Israel</option>
-	<option value="IT">Italy</option>
-	<option value="JM">Jamaica</option>
-	<option value="JP">Japan</option>
-	<option value="JE">Jersey</option>
-	<option value="JO">Jordan</option>
-	<option value="KZ">Kazakhstan</option>
-	<option value="KE">Kenya</option>
-	<option value="KI">Kiribati</option>
-	<option value="KP">Korea, Democratic People's Republic of</option>
-	<option value="KR">Korea, Republic of</option>
-	<option value="KW">Kuwait</option>
-	<option value="KG">Kyrgyzstan</option>
-	<option value="LA">Lao People's Democratic Republic</option>
-	<option value="LV">Latvia</option>
-	<option value="LB">Lebanon</option>
-	<option value="LS">Lesotho</option>
-	<option value="LR">Liberia</option>
-	<option value="LY">Libya</option>
-	<option value="LI">Liechtenstein</option>
-	<option value="LT">Lithuania</option>
-	<option value="LU">Luxembourg</option>
-	<option value="MO">Macao</option>
-	<option value="MK">Macedonia, the former Yugoslav Republic of</option>
-	<option value="MG">Madagascar</option>
-	<option value="MW">Malawi</option>
-	<option value="MY">Malaysia</option>
-	<option value="MV">Maldives</option>
-	<option value="ML">Mali</option>
-	<option value="MT">Malta</option>
-	<option value="MH">Marshall Islands</option>
-	<option value="MQ">Martinique</option>
-	<option value="MR">Mauritania</option>
-	<option value="MU">Mauritius</option>
-	<option value="YT">Mayotte</option>
-	<option value="MX">Mexico</option>
-	<option value="FM">Micronesia, Federated States of</option>
-	<option value="MD">Moldova, Republic of</option>
-	<option value="MC">Monaco</option>
-	<option value="MN">Mongolia</option>
-	<option value="ME">Montenegro</option>
-	<option value="MS">Montserrat</option>
-	<option value="MA">Morocco</option>
-	<option value="MZ">Mozambique</option>
-	<option value="MM">Myanmar</option>
-	<option value="NA">Namibia</option>
-	<option value="NR">Nauru</option>
-	<option value="NP">Nepal</option>
-	<option value="NL">Netherlands</option>
-	<option value="NC">New Caledonia</option>
-	<option value="NZ">New Zealand</option>
-	<option value="NI">Nicaragua</option>
-	<option value="NE">Niger</option>
-	<option value="NG">Nigeria</option>
-	<option value="NU">Niue</option>
-	<option value="NF">Norfolk Island</option>
-	<option value="MP">Northern Mariana Islands</option>
-	<option value="NO">Norway</option>
-	<option value="OM">Oman</option>
-	<option value="PK">Pakistan</option>
-	<option value="PW">Palau</option>
-	<option value="PS">Palestinian Territory, Occupied</option>
-	<option value="PA">Panama</option>
-	<option value="PG">Papua New Guinea</option>
-	<option value="PY">Paraguay</option>
-	<option value="PE">Peru</option>
-	<option value="PH">Philippines</option>
-	<option value="PN">Pitcairn</option>
-	<option value="PL">Poland</option>
-	<option value="PT">Portugal</option>
-	<option value="PR">Puerto Rico</option>
-	<option value="QA">Qatar</option>
-	<option value="RE">Réunion</option>
-	<option value="RO">Romania</option>
-	<option value="RU">Russian Federation</option>
-	<option value="RW">Rwanda</option>
-	<option value="BL">Saint Barthélemy</option>
-	<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
-	<option value="KN">Saint Kitts and Nevis</option>
-	<option value="LC">Saint Lucia</option>
-	<option value="MF">Saint Martin (French part)</option>
-	<option value="PM">Saint Pierre and Miquelon</option>
-	<option value="VC">Saint Vincent and the Grenadines</option>
-	<option value="WS">Samoa</option>
-	<option value="SM">San Marino</option>
-	<option value="ST">Sao Tome and Principe</option>
-	<option value="SA">Saudi Arabia</option>
-	<option value="SN">Senegal</option>
-	<option value="RS">Serbia</option>
-	<option value="SC">Seychelles</option>
-	<option value="SL">Sierra Leone</option>
-	<option value="SG">Singapore</option>
-	<option value="SX">Sint Maarten (Dutch part)</option>
-	<option value="SK">Slovakia</option>
-	<option value="SI">Slovenia</option>
-	<option value="SB">Solomon Islands</option>
-	<option value="SO">Somalia</option>
-	<option value="ZA">South Africa</option>
-	<option value="GS">South Georgia and the South Sandwich Islands</option>
-	<option value="SS">South Sudan</option>
-	<option value="ES">Spain</option>
-	<option value="LK">Sri Lanka</option>
-	<option value="SD">Sudan</option>
-	<option value="SR">Suriname</option>
-	<option value="SJ">Svalbard and Jan Mayen</option>
-	<option value="SZ">Swaziland</option>
-	<option value="SE">Sweden</option>
-	<option value="CH">Switzerland</option>
-	<option value="SY">Syrian Arab Republic</option>
-	<option value="TW">Taiwan, Province of China</option>
-	<option value="TJ">Tajikistan</option>
-	<option value="TZ">Tanzania, United Republic of</option>
-	<option value="TH">Thailand</option>
-	<option value="TL">Timor-Leste</option>
-	<option value="TG">Togo</option>
-	<option value="TK">Tokelau</option>
-	<option value="TO">Tonga</option>
-	<option value="TT">Trinidad and Tobago</option>
-	<option value="TN">Tunisia</option>
-	<option value="TR">Turkey</option>
-	<option value="TM">Turkmenistan</option>
-	<option value="TC">Turks and Caicos Islands</option>
-	<option value="TV">Tuvalu</option>
-	<option value="UG">Uganda</option>
-	<option value="UA">Ukraine</option>
-	<option value="AE">United Arab Emirates</option>
-	<option value="GB">United Kingdom</option>
-	<option value="US">United States</option>
-	<option value="UM">United States Minor Outlying Islands</option>
-	<option value="UY">Uruguay</option>
-	<option value="UZ">Uzbekistan</option>
-	<option value="VU">Vanuatu</option>
-	<option value="VE">Venezuela, Bolivarian Republic of</option>
-	<option value="VN">Viet Nam</option>
-	<option value="VG">Virgin Islands, British</option>
-	<option value="VI">Virgin Islands, U.S.</option>
-	<option value="WF">Wallis and Futuna</option>
-	<option value="EH">Western Sahara</option>
-	<option value="YE">Yemen</option>
-	<option value="ZM">Zambia</option>
-	<option value="ZW">Zimbabwe</option>
-          </select>
-          <span class="error" v-if="countryError">{{ countryError }}</span>
-          Ikona:
-          <input class="stack" v-model="image" accept="image/*" type="file" v-bind:class="{ 'error': imageError }" id="avatar">
-          <span class="error" v-if="imageError">{{ imageError }}</span>
+          <label for="country">
+            <select v-model="country" id="country" name="country">
+              <option disabled value="">Z ktorej krajiny pochádzate?</option>
+              <option value="SK">Slovakia</option>
+
+              <option value="AF">Afghanistan</option>
+              <option value="AX">Åland Islands</option>
+              <option value="AL">Albania</option>
+              <option value="DZ">Algeria</option>
+              <option value="AS">American Samoa</option>
+              <option value="AD">Andorra</option>
+              <option value="AO">Angola</option>
+              <option value="AI">Anguilla</option>
+              <option value="AQ">Antarctica</option>
+              <option value="AG">Antigua and Barbuda</option>
+              <option value="AR">Argentina</option>
+              <option value="AM">Armenia</option>
+              <option value="AW">Aruba</option>
+              <option value="AU">Australia</option>
+              <option value="AT">Austria</option>
+              <option value="AZ">Azerbaijan</option>
+              <option value="BS">Bahamas</option>
+              <option value="BH">Bahrain</option>
+              <option value="BD">Bangladesh</option>
+              <option value="BB">Barbados</option>
+              <option value="BY">Belarus</option>
+              <option value="BE">Belgium</option>
+              <option value="BZ">Belize</option>
+              <option value="BJ">Benin</option>
+              <option value="BM">Bermuda</option>
+              <option value="BT">Bhutan</option>
+              <option value="BO">Bolivia, Plurinational State of</option>
+              <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+              <option value="BA">Bosnia and Herzegovina</option>
+              <option value="BW">Botswana</option>
+              <option value="BV">Bouvet Island</option>
+              <option value="BR">Brazil</option>
+              <option value="IO">British Indian Ocean Territory</option>
+              <option value="BN">Brunei Darussalam</option>
+              <option value="BG">Bulgaria</option>
+              <option value="BF">Burkina Faso</option>
+              <option value="BI">Burundi</option>
+              <option value="KH">Cambodia</option>
+              <option value="CM">Cameroon</option>
+              <option value="CA">Canada</option>
+              <option value="CV">Cape Verde</option>
+              <option value="KY">Cayman Islands</option>
+              <option value="CF">Central African Republic</option>
+              <option value="TD">Chad</option>
+              <option value="CL">Chile</option>
+              <option value="CN">China</option>
+              <option value="CX">Christmas Island</option>
+              <option value="CC">Cocos (Keeling) Islands</option>
+              <option value="CO">Colombia</option>
+              <option value="KM">Comoros</option>
+              <option value="CG">Congo</option>
+              <option value="CD">Congo, the Democratic Republic of the</option>
+              <option value="CK">Cook Islands</option>
+              <option value="CR">Costa Rica</option>
+              <option value="CI">Côte d'Ivoire</option>
+              <option value="HR">Croatia</option>
+              <option value="CU">Cuba</option>
+              <option value="CW">Curaçao</option>
+              <option value="CY">Cyprus</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DK">Denmark</option>
+              <option value="DJ">Djibouti</option>
+              <option value="DM">Dominica</option>
+              <option value="DO">Dominican Republic</option>
+              <option value="EC">Ecuador</option>
+              <option value="EG">Egypt</option>
+              <option value="SV">El Salvador</option>
+              <option value="GQ">Equatorial Guinea</option>
+              <option value="ER">Eritrea</option>
+              <option value="EE">Estonia</option>
+              <option value="ET">Ethiopia</option>
+              <option value="FK">Falkland Islands (Malvinas)</option>
+              <option value="FO">Faroe Islands</option>
+              <option value="FJ">Fiji</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option>
+              <option value="GF">French Guiana</option>
+              <option value="PF">French Polynesia</option>
+              <option value="TF">French Southern Territories</option>
+              <option value="GA">Gabon</option>
+              <option value="GM">Gambia</option>
+              <option value="GE">Georgia</option>
+              <option value="DE">Germany</option>
+              <option value="GH">Ghana</option>
+              <option value="GI">Gibraltar</option>
+              <option value="GR">Greece</option>
+              <option value="GL">Greenland</option>
+              <option value="GD">Grenada</option>
+              <option value="GP">Guadeloupe</option>
+              <option value="GU">Guam</option>
+              <option value="GT">Guatemala</option>
+              <option value="GG">Guernsey</option>
+              <option value="GN">Guinea</option>
+              <option value="GW">Guinea-Bissau</option>
+              <option value="GY">Guyana</option>
+              <option value="HT">Haiti</option>
+              <option value="HM">Heard Island and McDonald Islands</option>
+              <option value="VA">Holy See (Vatican City State)</option>
+              <option value="HN">Honduras</option>
+              <option value="HK">Hong Kong</option>
+              <option value="HU">Hungary</option>
+              <option value="IS">Iceland</option>
+              <option value="IN">India</option>
+              <option value="ID">Indonesia</option>
+              <option value="IR">Iran, Islamic Republic of</option>
+              <option value="IQ">Iraq</option>
+              <option value="IE">Ireland</option>
+              <option value="IM">Isle of Man</option>
+              <option value="IL">Israel</option>
+              <option value="IT">Italy</option>
+              <option value="JM">Jamaica</option>
+              <option value="JP">Japan</option>
+              <option value="JE">Jersey</option>
+              <option value="JO">Jordan</option>
+              <option value="KZ">Kazakhstan</option>
+              <option value="KE">Kenya</option>
+              <option value="KI">Kiribati</option>
+              <option value="KP">Korea, Democratic People's Republic of</option>
+              <option value="KR">Korea, Republic of</option>
+              <option value="KW">Kuwait</option>
+              <option value="KG">Kyrgyzstan</option>
+              <option value="LA">Lao People's Democratic Republic</option>
+              <option value="LV">Latvia</option>
+              <option value="LB">Lebanon</option>
+              <option value="LS">Lesotho</option>
+              <option value="LR">Liberia</option>
+              <option value="LY">Libya</option>
+              <option value="LI">Liechtenstein</option>
+              <option value="LT">Lithuania</option>
+              <option value="LU">Luxembourg</option>
+              <option value="MO">Macao</option>
+              <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+              <option value="MG">Madagascar</option>
+              <option value="MW">Malawi</option>
+              <option value="MY">Malaysia</option>
+              <option value="MV">Maldives</option>
+              <option value="ML">Mali</option>
+              <option value="MT">Malta</option>
+              <option value="MH">Marshall Islands</option>
+              <option value="MQ">Martinique</option>
+              <option value="MR">Mauritania</option>
+              <option value="MU">Mauritius</option>
+              <option value="YT">Mayotte</option>
+              <option value="MX">Mexico</option>
+              <option value="FM">Micronesia, Federated States of</option>
+              <option value="MD">Moldova, Republic of</option>
+              <option value="MC">Monaco</option>
+              <option value="MN">Mongolia</option>
+              <option value="ME">Montenegro</option>
+              <option value="MS">Montserrat</option>
+              <option value="MA">Morocco</option>
+              <option value="MZ">Mozambique</option>
+              <option value="MM">Myanmar</option>
+              <option value="NA">Namibia</option>
+              <option value="NR">Nauru</option>
+              <option value="NP">Nepal</option>
+              <option value="NL">Netherlands</option>
+              <option value="NC">New Caledonia</option>
+              <option value="NZ">New Zealand</option>
+              <option value="NI">Nicaragua</option>
+              <option value="NE">Niger</option>
+              <option value="NG">Nigeria</option>
+              <option value="NU">Niue</option>
+              <option value="NF">Norfolk Island</option>
+              <option value="MP">Northern Mariana Islands</option>
+              <option value="NO">Norway</option>
+              <option value="OM">Oman</option>
+              <option value="PK">Pakistan</option>
+              <option value="PW">Palau</option>
+              <option value="PS">Palestinian Territory, Occupied</option>
+              <option value="PA">Panama</option>
+              <option value="PG">Papua New Guinea</option>
+              <option value="PY">Paraguay</option>
+              <option value="PE">Peru</option>
+              <option value="PH">Philippines</option>
+              <option value="PN">Pitcairn</option>
+              <option value="PL">Poland</option>
+              <option value="PT">Portugal</option>
+              <option value="PR">Puerto Rico</option>
+              <option value="QA">Qatar</option>
+              <option value="RE">Réunion</option>
+              <option value="RO">Romania</option>
+              <option value="RU">Russian Federation</option>
+              <option value="RW">Rwanda</option>
+              <option value="BL">Saint Barthélemy</option>
+              <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+              <option value="KN">Saint Kitts and Nevis</option>
+              <option value="LC">Saint Lucia</option>
+              <option value="MF">Saint Martin (French part)</option>
+              <option value="PM">Saint Pierre and Miquelon</option>
+              <option value="VC">Saint Vincent and the Grenadines</option>
+              <option value="WS">Samoa</option>
+              <option value="SM">San Marino</option>
+              <option value="ST">Sao Tome and Principe</option>
+              <option value="SA">Saudi Arabia</option>
+              <option value="SN">Senegal</option>
+              <option value="RS">Serbia</option>
+              <option value="SC">Seychelles</option>
+              <option value="SL">Sierra Leone</option>
+              <option value="SG">Singapore</option>
+              <option value="SX">Sint Maarten (Dutch part)</option>
+              <option value="SK">Slovakia</option>
+              <option value="SI">Slovenia</option>
+              <option value="SB">Solomon Islands</option>
+              <option value="SO">Somalia</option>
+              <option value="ZA">South Africa</option>
+              <option value="GS">South Georgia and the South Sandwich Islands</option>
+              <option value="SS">South Sudan</option>
+              <option value="ES">Spain</option>
+              <option value="LK">Sri Lanka</option>
+              <option value="SD">Sudan</option>
+              <option value="SR">Suriname</option>
+              <option value="SJ">Svalbard and Jan Mayen</option>
+              <option value="SZ">Swaziland</option>
+              <option value="SE">Sweden</option>
+              <option value="CH">Switzerland</option>
+              <option value="SY">Syrian Arab Republic</option>
+              <option value="TW">Taiwan, Province of China</option>
+              <option value="TJ">Tajikistan</option>
+              <option value="TZ">Tanzania, United Republic of</option>
+              <option value="TH">Thailand</option>
+              <option value="TL">Timor-Leste</option>
+              <option value="TG">Togo</option>
+              <option value="TK">Tokelau</option>
+              <option value="TO">Tonga</option>
+              <option value="TT">Trinidad and Tobago</option>
+              <option value="TN">Tunisia</option>
+              <option value="TR">Turkey</option>
+              <option value="TM">Turkmenistan</option>
+              <option value="TC">Turks and Caicos Islands</option>
+              <option value="TV">Tuvalu</option>
+              <option value="UG">Uganda</option>
+              <option value="UA">Ukraine</option>
+              <option value="AE">United Arab Emirates</option>
+              <option value="GB">United Kingdom</option>
+              <option value="US">United States</option>
+              <option value="UM">United States Minor Outlying Islands</option>
+              <option value="UY">Uruguay</option>
+              <option value="UZ">Uzbekistan</option>
+              <option value="VU">Vanuatu</option>
+              <option value="VE">Venezuela, Bolivarian Republic of</option>
+              <option value="VN">Viet Nam</option>
+              <option value="VG">Virgin Islands, British</option>
+              <option value="VI">Virgin Islands, U.S.</option>
+              <option value="WF">Wallis and Futuna</option>
+              <option value="EH">Western Sahara</option>
+              <option value="YE">Yemen</option>
+              <option value="ZM">Zambia</option>
+              <option value="ZW">Zimbabwe</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </label>
+
+          <label for="avatar">
+            Ikona:
+            <input type="file" v-model="image" accept="image/*" id="avatar" name="avatar">
+            <span class="error" aria-live="polite"></span>
+          </label>
+
         </section>
         <footer>
           <button type="submit">Odoslať</button>
