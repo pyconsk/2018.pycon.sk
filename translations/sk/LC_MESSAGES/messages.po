@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-04 22:41+0100\n"
+"POT-Creation-Date: 2017-12-04 23:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -42,7 +42,7 @@ msgstr "PyCon SK 2018"
 msgid "Venue"
 msgstr "Miesto konania"
 
-#: templates/body.html:50 templates/hall-of-fame.html:76
+#: templates/body.html:50
 msgid "Hall of Fame"
 msgstr "Sieň Slávy"
 
@@ -619,11 +619,11 @@ msgstr ""
 "vytvárame meracie systémy, ktoré zachraňujú životy. Kistler pomáha "
 "vytvárať lepšiu budúcnosť."
 
-#: templates/hall-of-fame.html:78
+#: templates/hall-of-fame.html:77
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr "Ľudia, ktorí pomáhajú ako dobrovoľníci na PyCon SK 2018."
 
-#: templates/hall-of-fame.html:85
+#: templates/hall-of-fame.html:145
 msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
 msgstr "Ľudia, ktorí si zakúpili podporovateľský lístok na PyCon SK 2018."
 
