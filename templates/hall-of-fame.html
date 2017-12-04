@@ -1,0 +1,93 @@
+{% extends "body.html" %}
+{% block content %}
+<div class="section" id="sponsors">
+  <div class="content">
+    <div class="content-text">
+      <h2>{{ _('Sponsors') }}</h2>
+      <p class="text-justify">
+        {{ _('We thank all the sponsors, without whom it would not be possible to organize this amazing conference.') }}
+        <a href="">{{ _('Why become a sponsor?') }}</a>
+      </p>
+
+      <p class="text-center">
+      <h3>{{ _('Platinum') }}</h3>
+
+      <div class="flex one three-800 demo">
+        <div>&nbsp;</div>
+        <div>
+          <a href="https://www.python.org/psf" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-python-software-foundation');trackOutboundLink('https://www.python.org/psf');">
+            <img src="{{ url_for('static', filename='img/partners/psf.svg') }}" alt="Python Software Foundation"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>Python Software Foundation</h3>
+                <p class="text-justify">{{ _('The Python Software Foundation is a 501(c)(3) nonprofit dedicated to
+                  advancing
+                  and promoting Python. The PSF supports and encourages Python events world-wide to advance its mission
+                  of growing the international community of Python programmers, and hosts the North American PyCon
+                  conference as its flagship annual event.') }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>&nbsp;</div>
+      </div>
+      </p>
+
+      <p class="text-justify">
+      <h3>{{ _('Gold') }}</h3>
+
+      <div class="flex one three-800 demo">
+        <div>&nbsp;</div>
+        <div>
+          <a href="https://www.kistler.com/" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-kistler');trackOutboundLink('https://www.kistler.com/');">
+            <img src="{{ url_for('static', filename='img/partners/kistler.svg') }}" alt="Kistler"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>Kistler</h3>
+                <p class="text-justify">{{ _('The Kistler Group is a Swiss high-tech company and the global market
+                  leader in dynamic measurement technology. We develop and supply sensors, electronics and software
+                  backed up by a full range of services. In Bratislava we develop software for the next generation of
+                  IoT devices. With our software we help customer to manufacture higher quality products, to develop
+                  cleaner cars and to reduce congestions on the highways. Behind our success stand our passion for
+                  technology, our focus on innovation and a work environment that promotes teamwork. We develop vehicles
+                  that people can trust; we create measurement systems that save lives. Kistler helps to shape a better
+                  future.') }}
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>&nbsp;</div>
+      </div>
+
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="section" id="hall-of-fame">
+  <div class="content">
+    <div class="content-text">
+      <h2>{{ _('Hall of Fame') }}</h2>
+      <p class="lead">
+        {{ _('People that participate volunteering at PyCon SK 2018.') }}
+      </p>
+      <p class="text-justify">
+        Richard Kellner, Daniel Kontšek, Marek Mansell, Tomáš Pytel, Michal Nalevanko, Ján Gondoľ, Miroslav Bagljaš, Eva
+        Klimeková, Juraj Bezručka, Adam Števko
+      </p>
+      <p class="lead">
+        {{ _('People that supported PyCon SK 2018 by purchasing supported ticket.') }}
+      </p>
+      <p class="text-justify">
+        ...
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

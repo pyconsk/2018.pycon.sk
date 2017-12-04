@@ -3019,7 +3019,7 @@ html, body, main, .section {
   background-color: #fff;
   color: #000;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -3056,11 +3056,6 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: scroll;
-}
-
-.fixed {
-  overflow: hidden;
 }
 
 .section#home {
@@ -3073,7 +3068,7 @@ nav {
   background-attachment: fixed;
 }
 
-.section#sponsoring {
+.section#sponsoring, .section#sponsors {
   background-image: url('/static/img/backgrounds/stairway.jpg');
   background-attachment: fixed;
 }
@@ -3110,13 +3105,12 @@ nav {
 
 .content {
   position: relative;
+  padding: 6em 6em;
 }
 
 .content-text {
   border: 1px solid #888;
   text-align: justify;
-  width: 75%;
-  margin: 6em auto;
   background-color: rgba(255, 255, 255, 0.80);
   color: #000;
   padding: 10px 10px 40px 10px;
@@ -3140,10 +3134,84 @@ nav {
   border: 1px solid #888;
 }
 
+.img-responsive {
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+
+.sbox, .sline {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border 0.2s ease-in-out 0s;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.sline {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.sbox {
+  height: 320px;
+}
+
+.sbox-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #999;
+  border-radius: 4px;
+  z-index: 1;
+  display: none;
+}
+
+a.sbox:hover > .sbox-inner {
+  display: block;
+}
+
+.sdesc {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: #fff;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 6px;
+}
+
+.sdesc .text-justify {
+  font-size: 12px;
+}
+
+.slogo {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  max-width: 75%;
+  max-height: 40%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 footer {
   display: block;
   width: 100%;
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0;
   padding: 0;
   margin: 0;

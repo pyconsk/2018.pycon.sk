@@ -199,6 +199,39 @@ def coc():
     }
     return render_template('coc.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_coc='active'))
 
+
+@app.route('/<lang_code>/hall-of-fame.html')
+def hall_of_fame():
+    lang = get_locale()
+    LDJSON_EVENT = {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      "name": u"PyCon SK 2018",
+      "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for "
+                     "the Python programming language.",
+      "startDate": "2018-03-09T9:00:00+01:00",
+      "endDate": "2018-03-11T18:00:00+01:00",
+      "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg",
+      "location": {
+        "@type": "Place",
+        "name": "Bratislava",
+      },
+      "url": "https://2018.pycon.sk/" + lang + "/",
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "name": "PyCon SK 2018",
+        "creator": {
+          "@type": "Organization",
+          "name": "SPy o.z.",
+          "url": "https://spy.python.sk/",
+          "logo": "https://spy.python.sk/img/logo/spy-logo.png",
+        }
+      }
+    }
+    return render_template('hall-of-fame.html', **_get_template_variables(ld_json=LDJSON_EVENT,
+                                                                          li_hall_of_fame='active'))
+
+
 @app.route('/<lang_code>/venue.html')
 def venue():
     lang = get_locale()
@@ -324,4 +357,5 @@ def sitemap():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host=os.environ.get('FLASK_HOST', '127.0.0.1'), port=int(os.environ.get('FLASK_PORT', 5000)))
+    app.run(debug=True, host=os.environ.get('FLASK_HOST', '127.0.0.1'), port=int(os.environ.get('FLASK_PORT', 5000)),
+            use_reloader=True)
