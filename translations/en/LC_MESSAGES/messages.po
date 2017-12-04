@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-22 20:38+0100\n"
+"POT-Creation-Date: 2017-12-04 23:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -40,84 +40,88 @@ msgstr ""
 msgid "Venue"
 msgstr ""
 
-#: templates/body.html:50 templates/tickets.html:92
+#: templates/body.html:50
+msgid "Hall of Fame"
+msgstr ""
+
+#: templates/body.html:52 templates/tickets.html:92
 msgid "Tickets"
 msgstr ""
 
-#: templates/body.html:52
+#: templates/body.html:54
 msgid "Call for Proposals"
 msgstr ""
 
-#: templates/body.html:54
+#: templates/body.html:56
 msgid "Sponsoring"
 msgstr ""
 
-#: templates/body.html:56 templates/coc.html:6
+#: templates/body.html:58 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/body.html:57
+#: templates/body.html:59
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:96
+#: templates/body.html:98
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:98
+#: templates/body.html:100
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:103
+#: templates/body.html:105
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
 " the %(psf)s."
 msgstr ""
 
-#: templates/body.html:105
+#: templates/body.html:107
 msgid "Python Software foundation"
 msgstr ""
 
-#: templates/body.html:106
+#: templates/body.html:108
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr ""
 
-#: templates/body.html:107
+#: templates/body.html:109
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:110
+#: templates/body.html:112
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:117
+#: templates/body.html:119
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "minig Monero."
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:120
 msgid "You can support us by minig Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:121
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:120
+#: templates/body.html:122
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:121
+#: templates/body.html:123
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:121
+#: templates/body.html:123
 msgid "Total"
 msgstr ""
 
@@ -125,175 +129,175 @@ msgstr ""
 msgid "Talk Abstract"
 msgstr ""
 
-#: templates/cfp.html:23
+#: templates/cfp.html:25
 msgid "Talk title"
 msgstr ""
 
-#: templates/cfp.html:26
+#: templates/cfp.html:30
 msgid "Abstract"
 msgstr ""
 
-#: templates/cfp.html:30
+#: templates/cfp.html:36
 msgid "Will you make a talk or workshop?"
 msgstr ""
 
-#: templates/cfp.html:31
+#: templates/cfp.html:37
 msgid "Talk"
 msgstr ""
 
-#: templates/cfp.html:32
+#: templates/cfp.html:38
 msgid "Workshop"
 msgstr ""
 
-#: templates/cfp.html:37
+#: templates/cfp.html:45
 msgid "Which category suits your talk / workshop best?"
 msgstr ""
 
-#: templates/cfp.html:38
+#: templates/cfp.html:46
 msgid "Python General"
 msgstr ""
 
-#: templates/cfp.html:39
+#: templates/cfp.html:47
 msgid "DevOps"
 msgstr ""
 
-#: templates/cfp.html:40
+#: templates/cfp.html:48
 msgid "Education"
 msgstr ""
 
-#: templates/cfp.html:41
+#: templates/cfp.html:49
 msgid "Web Development"
 msgstr ""
 
-#: templates/cfp.html:42
+#: templates/cfp.html:50
 msgid "Data Science"
 msgstr ""
 
-#: templates/cfp.html:43
+#: templates/cfp.html:51
 msgid "Machine Learning / AI"
 msgstr ""
 
-#: templates/cfp.html:44
+#: templates/cfp.html:52
 msgid "Security"
 msgstr ""
 
-#: templates/cfp.html:45
+#: templates/cfp.html:53
 msgid "Community / Diversity / Social"
 msgstr ""
 
-#: templates/cfp.html:46
+#: templates/cfp.html:54
 msgid "Soft Skills"
 msgstr ""
 
-#: templates/cfp.html:47
+#: templates/cfp.html:55
 msgid "Hardware"
 msgstr ""
 
-#: templates/cfp.html:48
+#: templates/cfp.html:56
 msgid "Other"
 msgstr ""
 
-#: templates/cfp.html:53
+#: templates/cfp.html:63
 msgid "Which language will you present in?"
 msgstr ""
 
-#: templates/cfp.html:54
+#: templates/cfp.html:64
 msgid "Slovak"
 msgstr ""
 
-#: templates/cfp.html:55
+#: templates/cfp.html:65
 msgid "Czech"
 msgstr ""
 
-#: templates/cfp.html:56
+#: templates/cfp.html:66
 msgid "English"
 msgstr ""
 
-#: templates/cfp.html:61
+#: templates/cfp.html:73
 msgid "What is your ideal time slot?"
 msgstr ""
 
-#: templates/cfp.html:68
+#: templates/cfp.html:81
 msgid "Continue"
 msgstr ""
 
-#: templates/cfp.html:69 templates/cfp.html:375 templates/tickets.html:64
+#: templates/cfp.html:82 templates/cfp.html:411 templates/tickets.html:64
 msgid "Cancel"
 msgstr ""
 
-#: templates/cfp.html:81
+#: templates/cfp.html:94
 msgid "Speaker Biography"
 msgstr ""
 
-#: templates/cfp.html:86 templates/tickets.html:28
+#: templates/cfp.html:101 templates/tickets.html:28
 msgid "What is your title?"
 msgstr ""
 
-#: templates/cfp.html:87 templates/tickets.html:29
+#: templates/cfp.html:102 templates/tickets.html:29
 msgid "Mr."
 msgstr ""
 
-#: templates/cfp.html:88 templates/tickets.html:30
+#: templates/cfp.html:103 templates/tickets.html:30
 msgid "Ms."
 msgstr ""
 
-#: templates/cfp.html:89 templates/tickets.html:31
+#: templates/cfp.html:104 templates/tickets.html:31
 msgid "Mx."
 msgstr ""
 
-#: templates/cfp.html:93 templates/tickets.html:37
+#: templates/cfp.html:110 templates/tickets.html:37
 msgid "First name"
 msgstr ""
 
-#: templates/cfp.html:96 templates/tickets.html:42
+#: templates/cfp.html:115 templates/tickets.html:42
 msgid "Last name"
 msgstr ""
 
-#: templates/cfp.html:99 templates/tickets.html:52
-msgid "Phone"
-msgstr ""
-
-#: templates/cfp.html:102 templates/tickets.html:47
+#: templates/cfp.html:120 templates/tickets.html:47
 msgid "Email"
 msgstr ""
 
-#: templates/cfp.html:105
-msgid "Biography"
+#: templates/cfp.html:125 templates/tickets.html:52
+msgid "Phone"
 msgstr ""
 
-#: templates/cfp.html:108
+#: templates/cfp.html:130
+msgid "Tell us about your self? This will be your public biography..."
+msgstr ""
+
+#: templates/cfp.html:135
 msgid "Url"
 msgstr ""
 
-#: templates/cfp.html:111
+#: templates/cfp.html:140
 msgid "Social Url"
 msgstr ""
 
-#: templates/cfp.html:115
+#: templates/cfp.html:146
 msgid "Which country are you from?"
 msgstr ""
 
-#: templates/cfp.html:369
+#: templates/cfp.html:403
 msgid "Avatar"
 msgstr ""
 
-#: templates/cfp.html:374 templates/tickets.html:63
+#: templates/cfp.html:410 templates/tickets.html:63
 msgid "Submit"
 msgstr ""
 
-#: templates/cfp.html:394 templates/tickets.html:83
+#: templates/cfp.html:430 templates/tickets.html:83
 msgid "OK"
 msgstr ""
 
-#: templates/cfp.html:403
+#: templates/cfp.html:439
 msgid "Call for proposals"
 msgstr ""
 
-#: templates/cfp.html:404
+#: templates/cfp.html:440
 msgid "The Call For Proposals is open!"
 msgstr ""
 
-#: templates/cfp.html:407
+#: templates/cfp.html:443
 msgid ""
 "PyCon is organized by the Python community and for the Python community. "
 "You're coming to the event,\n"
@@ -310,26 +314,26 @@ msgid ""
 "        preferred."
 msgstr ""
 
-#: templates/cfp.html:416
+#: templates/cfp.html:452
 msgid "Where to submit your proposal"
 msgstr ""
 
-#: templates/cfp.html:418
+#: templates/cfp.html:454
 msgid ""
 "We are glad you are interested in giving a talk at PyCon SK 2018! Submit "
 "your talk proposal with short\n"
 "        abstract and your bio."
 msgstr ""
 
-#: templates/cfp.html:419
+#: templates/cfp.html:455
 msgid "All selected speakers get complimentary ticket to the conference."
 msgstr ""
 
-#: templates/cfp.html:423
+#: templates/cfp.html:459
 msgid "Submit your talk / workshop"
 msgstr ""
 
-#: templates/cfp.html:427
+#: templates/cfp.html:463
 msgid ""
 "Don't hesitate to submit more than one proposal. The deadline for "
 "submissions is the end of\n"
@@ -338,17 +342,17 @@ msgid ""
 "        proposals as early as possible."
 msgstr ""
 
-#: templates/cfp.html:429
+#: templates/cfp.html:465
 msgid ""
 "In case you are not able to submit the form, please contact us via\n"
 "        email: info@pycon.sk"
 msgstr ""
 
-#: templates/cfp.html:433
+#: templates/cfp.html:469
 msgid "Guidelines for Proposal Submission"
 msgstr ""
 
-#: templates/cfp.html:435
+#: templates/cfp.html:471
 msgid ""
 "There is no official restriction on the topic that you propose for a talk"
 " session. Talks about Python or\n"
@@ -361,11 +365,11 @@ msgid ""
 "        than one of your proposals is accepted."
 msgstr ""
 
-#: templates/cfp.html:444
+#: templates/cfp.html:480
 msgid "Talks"
 msgstr ""
 
-#: templates/cfp.html:446
+#: templates/cfp.html:482
 msgid ""
 "Most talks are 30 minutes long, but we do offer a limited number of "
 "45-minute slots for important\n"
@@ -373,11 +377,11 @@ msgid ""
 "treatment."
 msgstr ""
 
-#: templates/cfp.html:452
+#: templates/cfp.html:488
 msgid "Workshops"
 msgstr ""
 
-#: templates/cfp.html:454
+#: templates/cfp.html:490
 msgid ""
 "As with the talks, we are looking for tutorials that can grow this "
 "community at any level!\n"
@@ -472,6 +476,65 @@ msgid ""
 "meetups in any form."
 msgstr ""
 
+#: templates/hall-of-fame.html:6
+msgid "Sponsors"
+msgstr ""
+
+#: templates/hall-of-fame.html:8
+msgid ""
+"We thank all the sponsors, without whom it would not be possible to "
+"organize this amazing conference."
+msgstr ""
+
+#: templates/hall-of-fame.html:9 templates/sponsoring.html:6
+msgid "Why become a sponsor?"
+msgstr ""
+
+#: templates/hall-of-fame.html:13
+msgid "Platinum"
+msgstr ""
+
+#: templates/hall-of-fame.html:25
+msgid ""
+"The Python Software Foundation is a 501(c)(3) nonprofit dedicated to\n"
+"                  advancing\n"
+"                  and promoting Python. The PSF supports and encourages "
+"Python events world-wide to advance its mission\n"
+"                  of growing the international community of Python "
+"programmers, and hosts the North American PyCon\n"
+"                  conference as its flagship annual event."
+msgstr ""
+
+#: templates/hall-of-fame.html:39
+msgid "Gold"
+msgstr ""
+
+#: templates/hall-of-fame.html:51
+msgid ""
+"The Kistler Group is a Swiss high-tech company and the global market\n"
+"                  leader in dynamic measurement technology. We develop "
+"and supply sensors, electronics and software\n"
+"                  backed up by a full range of services. In Bratislava we"
+" develop software for the next generation of\n"
+"                  IoT devices. With our software we help customer to "
+"manufacture higher quality products, to develop\n"
+"                  cleaner cars and to reduce congestions on the highways."
+" Behind our success stand our passion for\n"
+"                  technology, our focus on innovation and a work "
+"environment that promotes teamwork. We develop vehicles\n"
+"                  that people can trust; we create measurement systems "
+"that save lives. Kistler helps to shape a better\n"
+"                  future."
+msgstr ""
+
+#: templates/hall-of-fame.html:77
+msgid "People that participate volunteering at PyCon SK 2018."
+msgstr ""
+
+#: templates/hall-of-fame.html:145
+msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
+msgstr ""
+
 #: templates/index.html:7
 msgid "PyCon will come to Slovakia in 2018 again."
 msgstr ""
@@ -537,50 +600,34 @@ msgid ""
 msgstr ""
 
 #: templates/index.html:42
-msgid "Hall of Fame"
-msgstr ""
-
-#: templates/index.html:44
-msgid "People that participate volunteering at PyCon SK 2018."
-msgstr ""
-
-#: templates/index.html:50
-msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
-msgstr ""
-
-#: templates/index.html:62
 msgid "References"
 msgstr ""
 
-#: templates/index.html:64
+#: templates/index.html:44
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our references:"
 msgstr ""
 
-#: templates/index.html:101
+#: templates/index.html:81
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:139
+#: templates/index.html:119
 msgid ""
 "If you did wrote and article, or blog post do not hesitate to let us "
 "know: info@pycon.sk or create pull request."
 msgstr ""
 
-#: templates/index.html:144
+#: templates/index.html:124
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:145
+#: templates/index.html:125
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
-msgstr ""
-
-#: templates/sponsoring.html:6
-msgid "Why become a sponsor?"
 msgstr ""
 
 #: templates/sponsoring.html:7
@@ -1008,108 +1055,12 @@ msgid ""
 "also find other events that are happening in Bratislava."
 msgstr ""
 
-#~ msgid ""
-#~ "Please disable ad blocker and refresh."
-#~ " You will support us by temporarily"
-#~ " minig Monero."
-#~ msgstr ""
-
-#~ msgid "You are supporting us by minig Monero while browsing this site."
-#~ msgstr ""
-
-#~ msgid "Please select one"
-#~ msgstr ""
-
-#~ msgid "German"
-#~ msgstr ""
-
-#~ msgid "SK"
-#~ msgstr ""
-
-#~ msgid "You can supporting us by minig Monero while browsing this site."
+#~ msgid "Biography"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "You can also buy tickets directly "
-#~ "on the https://ti.to/pyconsk/2018 website in"
-#~ " case the tito widget is not "
-#~ "displayed correctly."
-#~ msgstr ""
-
-#~ msgid "By purchasing a ticket you agree to abide by the Code of Conduct."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Yes submit a talk, and if your "
-#~ "talk is selected you will receive "
-#~ "a speakers ticket for free."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The SPy civic association, as the "
-#~ "organizer, commits to transparently disclose"
-#~ " all the costs associated with "
-#~ "organizing PyCon at the end of the"
-#~ " conference. The civic association was "
-#~ "created to support Python and "
-#~ "programming in general, you can read "
-#~ "more about our vision and objectives."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Yes, first 120 tickets will be "
-#~ "sold for early bird discount (50%), "
-#~ "so hurry up!"
-#~ msgstr ""
-
-#~ msgid "I don't use PayPal, is there any other way to buy a ticket?"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We also accept wire transfer, or "
-#~ "Bitcoin, Litecoin and other crypto "
-#~ "currencies. Please send us a list "
-#~ "of tickets you are interested in, "
-#~ "we will send you variable symbol "
-#~ "and after we receive the payment, "
-#~ "we will issue and send the "
-#~ "requested tickets to you by email."
-#~ msgstr ""
-
-#~ msgid "minutes"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Here are links to articles that "
-#~ "were written by atendees about last "
-#~ "two PyCon SK's:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you think you have something to"
-#~ " say on this topic, you are "
-#~ "most welcome to submit your CfP. "
-#~ "We hope to get the error budget"
-#~ " right and to see developers and "
-#~ "admins working towards the same goals."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Yes, first 120 tickets will be "
-#~ "sold for early bird discount, so "
-#~ "hurry up!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Yes, last 50 tickets will be more"
-#~ " expensive, so don't leave your "
-#~ "ticket purchase to last moment!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We'll have a financial aid program "
-#~ "allowing some visitors to come to "
-#~ "PyCon for free. Mere details to "
-#~ "will be published soon."
+#~ "Without generosity of our sponsors, "
+#~ "PyCon SK wouldn't be possible, if "
+#~ "you have a chance says thanks..."
 #~ msgstr ""
 

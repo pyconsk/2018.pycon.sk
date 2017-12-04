@@ -46,6 +46,8 @@
     {% block navbar %}
       <a href="{{ url_for('venue', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_venue }}">{{ _('Venue') }}</a>
+      <a href="{{ url_for('hall_of_fame', lang_code=lang_code) }}"
+         class="pseudo button icon-help-circled {{ li_hall_of_fame }}">{{ _('Hall of Fame') }}</a>
       <a href="{{ url_for('tickets', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_tickets }}">{{ _('Tickets') }}</a>
       <a href="{{ url_for('cfp', lang_code=lang_code) }}"
