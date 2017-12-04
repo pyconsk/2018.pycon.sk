@@ -3019,7 +3019,6 @@ html, body, main, .section {
   background-color: #fff;
   color: #000;
   width: 100%;
-  /*height: 100%;*/
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -3211,7 +3210,6 @@ a.sbox:hover > .sbox-inner {
 footer {
   display: block;
   width: 100%;
-  /*position: fixed;*/
   bottom: 0;
   padding: 0;
   margin: 0;
@@ -3265,11 +3263,9 @@ input.error, textarea.error, select.error {
 }
 
 @media (max-width: 60em) {
-  .content-text {
-    width: 80%;
-  }
   .content {
     min-height: 100vh;
+    padding: 1em;
   }
   article .content {
     min-height: auto;
