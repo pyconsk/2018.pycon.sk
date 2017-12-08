@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-04 23:23+0100\n"
+"POT-Creation-Date: 2017-12-08 14:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -563,12 +563,17 @@ msgid "News"
 msgstr ""
 
 #: templates/index.html:23
+#, python-format
+msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press releasel</a>."
+msgstr ""
+
+#: templates/index.html:26
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
 msgstr ""
 
-#: templates/index.html:26
+#: templates/index.html:29
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -577,11 +582,11 @@ msgid ""
 "<a href=\"%(url)s\">submit a talk proposal</a>."
 msgstr ""
 
-#: templates/index.html:29
+#: templates/index.html:32
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr ""
 
-#: templates/index.html:32
+#: templates/index.html:35
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to unify software development "
@@ -591,7 +596,7 @@ msgid ""
 "deployment and infrastructure management."
 msgstr ""
 
-#: templates/index.html:33
+#: templates/index.html:36
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -600,33 +605,33 @@ msgid ""
 "same goals."
 msgstr ""
 
-#: templates/index.html:42
+#: templates/index.html:45
 msgid "References"
 msgstr ""
 
-#: templates/index.html:44
+#: templates/index.html:47
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our references:"
 msgstr ""
 
-#: templates/index.html:81
+#: templates/index.html:84
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:119
+#: templates/index.html:122
 msgid ""
 "If you did wrote and article, or blog post do not hesitate to let us "
 "know: info@pycon.sk or create pull request."
 msgstr ""
 
-#: templates/index.html:124
+#: templates/index.html:127
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:125
+#: templates/index.html:128
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
