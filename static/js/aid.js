@@ -1,4 +1,4 @@
-var AJAX_SERVER = 'https://2018.pycon.sk';
+var AJAX_SERVER = 'https://api.pycon.sk';
 var AJAX_URL = AJAX_SERVER + '/tickets/aid/';
 
 function get_event_uuid(slug) {
