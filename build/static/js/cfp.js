@@ -1,5 +1,16 @@
-var AJAX_SERVER = '/talks/';
-var EVENT_UUID = '21e4a4f5-caf5-4086-b7bc-c5b6a0abd68a';
+var AJAX_SERVER = 'https://api.pycon.sk';
+var AJAX_URL = AJAX_SERVER + '/talks/';
+
+function get_event_uuid(slug) {
+  axios.get(AJAX_SERVER + '/events/' + slug).then(function (response) {
+    return response.data.uuid;
+  }).catch(function (error) {
+    speakerModal.openPopUp(error, 'Could not connect to server!');
+    console.log(error);
+  });
+}
+
+var EVENT_UUID = get_event_uuid('2018');
 
 var speakerModalData = {
   title: '',
@@ -103,7 +114,7 @@ var speakerModal = new Vue({
       const config = {headers: {'Content-Type': 'multipart/form-data'}};
       var formData = this.collectFormData;
 
-      axios.post(AJAX_SERVER, formData, config).then(function (response) {
+      axios.post(AJAX_URL, formData, config).then(function (response) {
         speakerModal.openPopUp('Your proposal has been submitted.', response.status + ': ' + response.statusText);
 
       }).catch(function (error) {
