@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-08 14:19+0100\n"
+"POT-Creation-Date: 2017-12-24 11:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -528,11 +528,30 @@ msgid ""
 "                  future."
 msgstr ""
 
-#: templates/hall-of-fame.html:77
+#: templates/hall-of-fame.html:70
+msgid "Partners"
+msgstr ""
+
+#: templates/hall-of-fame.html:82
+msgid ""
+"JetBrains delivers intelligent software solutions that make developers\n"
+"                  more productive by simplifying their challenging tasks,"
+" automating the routine, and helping them adopt\n"
+"                  the best development practices. PyCharm is the Python "
+"IDE for Professional Developers by JetBrains\n"
+"                  providing a complete set of tools for productive "
+"Python, Web and Scientific development, available in\n"
+"                  two editions. The free and open-source PyCharm "
+"Community Edition is perfect for pure Python coding.\n"
+"                  PyCharm Professional Edition is designed for "
+"professional Python, Web, and Data analysis developers."
+msgstr ""
+
+#: templates/hall-of-fame.html:107
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:145
+#: templates/hall-of-fame.html:185
 msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
 msgstr ""
 
