@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-24 11:48+0100\n"
+"POT-Creation-Date: 2017-12-24 14:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: templates/body.html:8
 msgid "Official PyCon SK 2018 website"
@@ -102,11 +102,11 @@ msgstr ""
 #: templates/body.html:119
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
-"minig Monero."
+"mining Monero."
 msgstr ""
 
 #: templates/body.html:120
-msgid "You can support us by minig Monero while browsing this site."
+msgid "You can support us by mining Monero while browsing this site."
 msgstr ""
 
 #: templates/body.html:121
@@ -641,8 +641,8 @@ msgstr ""
 
 #: templates/index.html:122
 msgid ""
-"If you did wrote and article, or blog post do not hesitate to let us "
-"know: info@pycon.sk or create pull request."
+"If you wrote an article or a blog post, do not hesitate to let us know at"
+" info@pycon.sk or create a pull request."
 msgstr ""
 
 #: templates/index.html:127
@@ -668,7 +668,8 @@ msgstr ""
 #: templates/sponsoring.html:13
 msgid ""
 "The members of the Python community organize a PyCon conference in their "
-"home countries regularly, PyCon in Slovakia will be for the third time."
+"home countries regularly, PyCon in Slovakia will happen for the third "
+"time."
 msgstr ""
 
 #: templates/sponsoring.html:16
@@ -1078,13 +1079,4 @@ msgid ""
 "class=\"external\">official city guide for visitors</a>, where you can "
 "also find other events that are happening in Bratislava."
 msgstr ""
-
-#~ msgid "Biography"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Without generosity of our sponsors, "
-#~ "PyCon SK wouldn't be possible, if "
-#~ "you have a chance says thanks..."
-#~ msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-24 11:48+0100\n"
+"POT-Creation-Date: 2017-12-24 14:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -16,11 +16,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: templates/body.html:8
 msgid "Official PyCon SK 2018 website"
-msgstr "Oficialna stránka PyCon SK 2018"
+msgstr "Oficiálna stránka PyCon SK 2018"
 
 #: templates/body.html:12 templates/body.html:18
 msgid "PyCon SK 2018, Bratislava"
@@ -32,7 +32,7 @@ msgid ""
 "language, which will be held in Bratislava on March, 2018."
 msgstr ""
 "PyCon SK je komunitou organizovaná konferencia pre programovací jazyk "
-"Pythonktorá sa bude konať v Bratislave v marci 2018."
+"Python, ktorá sa bude konať v Bratislave v marci 2018."
 
 #: templates/body.html:40
 msgid "PyCon SK 2018"
@@ -102,19 +102,19 @@ msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
-"Našli ste  chybu? Chýba Vám nejaká informácia? Toto je komunitou "
+"Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou "
 "manažovaná webstránka, prispejte na našom %(github)se."
 
 #: templates/body.html:119
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
-"minig Monero."
+"mining Monero."
 msgstr ""
 "Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou "
 "Monera."
 
 #: templates/body.html:120
-msgid "You can support us by minig Monero while browsing this site."
+msgid "You can support us by mining Monero while browsing this site."
 msgstr "Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky."
 
 #: templates/body.html:121
@@ -299,11 +299,11 @@ msgstr ""
 
 #: templates/cfp.html:439
 msgid "Call for proposals"
-msgstr "Návrhy na predkladanie prednášok"
+msgstr "Výzva na predloženie návrhov na prednášky"
 
 #: templates/cfp.html:440
 msgid "The Call For Proposals is open!"
-msgstr "Návrhy na predkladanie prednášok sú spustené!"
+msgstr "Prijímame vaše návrhy na prednášky!"
 
 #: templates/cfp.html:443
 msgid ""
@@ -369,7 +369,7 @@ msgid ""
 "In case you are not able to submit the form, please contact us via\n"
 "        email: info@pycon.sk"
 msgstr ""
-"V prípade že nemožete odoslať formulár, prosím kontaktujte nás emailom: "
+"V prípade, že nemožete odoslať formulár, prosím kontaktujte nás emailom: "
 "info@pycon.sk"
 
 #: templates/cfp.html:469
@@ -394,7 +394,7 @@ msgstr ""
 "komisia pri výbere prednášok zvažovať, je to, ako Vaša prednáška zaujme "
 "publikum. Je stanovený limit na jednu prednášku pre rečníka. Navrhnúť "
 "môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu "
-"prednášku (v prípade že bude akceptovaných viac návrhov)."
+"prednášku (v prípade, že bude akceptovaných viac návrhov)."
 
 #: templates/cfp.html:480
 msgid "Talks"
@@ -637,6 +637,15 @@ msgid ""
 "                  PyCharm Professional Edition is designed for "
 "professional Python, Web, and Data analysis developers."
 msgstr ""
+"Softvérové riešenia, ktoré prináša JetBrains, robia vývojárov viac "
+"produktívnymi tým, že im zjednodušujú zložité úlohy, automatizujú tie "
+"bežné a pomáhajú im osvojiť si osvedčené postupy pri vývoji. PyCharm je "
+"integrované vývojové prostredie pre profesionálnych vývojárov od "
+"JetBrains, poskytujúce sadu nástrojov pre produktívny vývoj. PyCharm je "
+"poskytovaný v dvoch verziách. Open-source PyCharm Community Edition je "
+"zdarma a vhodný na programovanie čisto v Pythone, zatiaľ čo PyCharm "
+"Professional Edition je vytvorený pre profesionálov v oblasti vývoja Web "
+"aplikácií, dátových analytikov a Python developerov."
 
 #: templates/hall-of-fame.html:107
 msgid "People that participate volunteering at PyCon SK 2018."
@@ -672,7 +681,7 @@ msgid ""
 "who is learning this programming language."
 msgstr ""
 "Je určená každému, kto s týmto programovacím jazykom pracuje "
-"profesionálne alebo sa s ním ešte len zoznamuje."
+"profesionálne, alebo sa s ním ešte len zoznamuje."
 
 #: templates/index.html:21
 msgid "News"
@@ -708,7 +717,7 @@ msgstr ""
 
 #: templates/index.html:32
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
-msgstr "S potešením oznamujeme, že súčasť PyCon SK 2018 bude aj DevOps track."
+msgstr "S potešením oznamujeme, že súčasťou PyCon SK 2018 bude aj DevOps track."
 
 #: templates/index.html:35
 msgid ""
@@ -734,10 +743,10 @@ msgid ""
 "error budget right and to see developers and admins working towards the "
 "same goals."
 msgstr ""
-"Ak si myslíte, že máte v tejto téme niečo povedať, budeme veľmi radi, ak "
+"Ak si myslíte, že máte k tejto téme čo povedať, budeme veľmi radi, ak "
 "pošlete svoj <a href=\"%(url)s\">návrh na prednášku</a>. Dúfame, že sa "
-"\"error budget\" nastaví správne a vývojári a administrátori budú "
-"spolupracovať na rovnakých cieľoch"
+"\"error budget\" nastaví správne a budeme vidieť vývojárov a "
+"administrátorov spolupracovať na dosiahnutí spoločných cieľov."
 
 #: templates/index.html:45
 msgid "References"
@@ -748,7 +757,7 @@ msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our references:"
 msgstr ""
-"O predchádzajúcich ročníkoch vyšlo niekoľko článokv aj v médiach. Ak "
+"O predchádzajúcich ročníkoch vyšlo niekoľko článkov aj v médiach. Ak "
 "chcete vedieť ako bolo, pozrite si naše referencie."
 
 #: templates/index.html:84
@@ -761,11 +770,11 @@ msgstr ""
 
 #: templates/index.html:122
 msgid ""
-"If you did wrote and article, or blog post do not hesitate to let us "
-"know: info@pycon.sk or create pull request."
+"If you wrote an article or a blog post, do not hesitate to let us know at"
+" info@pycon.sk or create a pull request."
 msgstr ""
-"Ak viete o článku, alebo blogu neváhajte nám napísať na: info@pycon.sk "
-"alebo sprevte pull request."
+"Ak ste napísali, alebo viete o článku, alebo blogu o nás, neváhajte nám "
+"napísať na info@pycon.sk alebo urobte pull request."
 
 #: templates/index.html:127
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
@@ -795,11 +804,11 @@ msgstr ""
 #: templates/sponsoring.html:13
 msgid ""
 "The members of the Python community organize a PyCon conference in their "
-"home countries regularly, PyCon in Slovakia will be for the third time."
+"home countries regularly, PyCon in Slovakia will happen for the third "
+"time."
 msgstr ""
 "Členovia Python komunity organizujú PyCon konferencie vo svojich "
-"domovských krajinách pravidelne, PyCon bude na Slovensku už po tretí "
-"krát."
+"domovských krajinách pravidelne. PyCon bude na Slovensku už po tretí raz."
 
 #: templates/sponsoring.html:16
 msgid ""
@@ -1100,7 +1109,7 @@ msgid ""
 "Yes <a href=\"%(url)s\">submit a talk</a>, and if your talk is selected "
 "you will receive a speakers ticket for free."
 msgstr ""
-"Áno, <a href=\"%(url)s\">navrhnite prednášku</a> a v prípade že Vás "
+"Áno, <a href=\"%(url)s\">navrhnite prednášku</a> a v prípade, že Vás "
 "vyberieme obdržíte rečnícky lístok zadarmo."
 
 #: templates/tickets.html:198
@@ -1316,13 +1325,4 @@ msgstr ""
 "title=\"stránky mesta pre návštevníkov\" target=\"_blank\" "
 "class=\"external\">oficiálne stránky mesta, určené pre návštevníkov</a>, "
 "kde nájdete aj iné udalosti, ktoré sa práve odohrávajú v Bratislave."
-
-#~ msgid "Biography"
-#~ msgstr "Životopis"
-
-#~ msgid ""
-#~ "Without generosity of our sponsors, "
-#~ "PyCon SK wouldn't be possible, if "
-#~ "you have a chance says thanks..."
-#~ msgstr ""
 
