@@ -138,6 +138,37 @@ def tickets():
     return render_template('tickets.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_tickets='active'))
 
 
+@app.route('/<lang_code>/speakers.html')
+def speakers():
+    lang = get_locale()
+    LDJSON_EVENT = {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      "name": u"PyCon SK 2018",
+      "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for "
+                     "the Python programming language.",
+      "startDate": "2018-03-09T9:00:00+01:00",
+      "endDate": "2018-03-11T18:00:00+01:00",
+      "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg",
+      "location": {
+        "@type": "Place",
+        "name": "Bratislava"
+      },
+      "url": "https://2018.pycon.sk/" + lang + "/",
+      "workPerformed": {
+        "@type": "CreativeWork",
+        "name": "PyCon SK 2018",
+        "creator": {
+          "@type": "Organization",
+          "name": "SPy o.z.",
+          "url": "https://spy.python.sk/",
+          "logo": "https://spy.python.sk/img/logo/spy-logo.png",
+        }
+      }
+    }
+    return render_template('speakers.html', **_get_template_variables(ld_json=LDJSON_EVENT, li_speakers='active'))
+
+
 @app.route('/<lang_code>/cfp.html')
 def cfp():
     lang = get_locale()
