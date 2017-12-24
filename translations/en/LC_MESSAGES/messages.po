@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-24 14:53+0100\n"
+"POT-Creation-Date: 2017-12-24 20:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -668,7 +668,7 @@ msgstr ""
 #: templates/sponsoring.html:13
 msgid ""
 "The members of the Python community organize a PyCon conference in their "
-"home countries regularly, PyCon in Slovakia will happen for the third "
+"home countries regularly, PyCon will happen in Slovakia for the third "
 "time."
 msgstr ""
 
@@ -876,8 +876,8 @@ msgstr ""
 
 #: templates/tickets.html:165
 msgid ""
-"In order to keep conference accessible for everyone we donate all "
-"tickets, so most of the people can afford to buy one."
+"In order to keep conference accessible for everyone we subsidy all "
+"tickets so that most of the people can afford to buy one."
 msgstr ""
 
 #: templates/tickets.html:169
@@ -1079,4 +1079,19 @@ msgid ""
 "class=\"external\">official city guide for visitors</a>, where you can "
 "also find other events that are happening in Bratislava."
 msgstr ""
+
+#~ msgid ""
+#~ "The members of the Python community "
+#~ "organize a PyCon conference in their "
+#~ "home countries regularly, PyCon in "
+#~ "Slovakia will happen for the third "
+#~ "time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In order to keep conference accessible"
+#~ " for everyone we donate all tickets,"
+#~ " so most of the people can "
+#~ "afford to buy one."
+#~ msgstr ""
 
