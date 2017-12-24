@@ -10,7 +10,7 @@ function get_event_uuid(slug) {
   });
 }
 
-var EVENT_UUID = get_event_uuid('2018');
+var EVENT_UUID = '21e4a4f5-caf5-4086-b7bc-c5b6a0abd68a';
 
 var speakerModalData = {
   title: '',
