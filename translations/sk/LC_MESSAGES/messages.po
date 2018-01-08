@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2017-12-24 20:37+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-01-08 22:40+0000\n"
+"Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak <http://preklady.python.sk/projects/pycon-"
+"sk-2018-website/github/sk/>\n"
 "Language: sk\n"
-"Language-Team: sk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.19-dev\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: templates/body.html:8
@@ -985,7 +987,7 @@ msgstr "Aký lístok si mám kúpiť?"
 
 #: templates/tickets.html:138
 msgid "Real Deal"
-msgstr ""
+msgstr "Reálna cena"
 
 #: templates/tickets.html:138
 msgid ""
@@ -999,7 +1001,7 @@ msgstr ""
 
 #: templates/tickets.html:141
 msgid "Standard"
-msgstr ""
+msgstr "Štandard"
 
 #: templates/tickets.html:141
 msgid "This ticket is designed for all conference participants."
@@ -1007,7 +1009,7 @@ msgstr "Lístok je určený pre všetkých účastníkov konferencie."
 
 #: templates/tickets.html:144
 msgid "Teacher"
-msgstr ""
+msgstr "Učiteľ"
 
 #: templates/tickets.html:144
 msgid ""
@@ -1019,7 +1021,7 @@ msgstr ""
 
 #: templates/tickets.html:147
 msgid "Student"
-msgstr ""
+msgstr "Študent"
 
 #: templates/tickets.html:147
 msgid ""
