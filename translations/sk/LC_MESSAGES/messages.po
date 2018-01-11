@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-24 20:37+0100\n"
+"POT-Creation-Date: 2018-01-11 11:20+0100\n"
 "PO-Revision-Date: 2018-01-08 22:40+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
+"Language: sk\n"
 "Language-Team: Slovak <http://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.19-dev\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:8
 msgid "Official PyCon SK 2018 website"
@@ -570,10 +569,24 @@ msgid "Why become a sponsor?"
 msgstr "Prečo sa stať sponzorom?"
 
 #: templates/hall-of-fame.html:13
+msgid "Diamond"
+msgstr ""
+
+#: templates/hall-of-fame.html:25
+msgid ""
+"Kiwi.com is an online travel agency with groundbreaking Virtual\n"
+"                  Interlining technology and a focus on exceptional "
+"customer service. Our unique combination algorithm\n"
+"                  allows our customers to combine flights from non-"
+"cooperating airlines onto a single itinerary, often\n"
+"                  resulting in significant savings."
+msgstr ""
+
+#: templates/hall-of-fame.html:38
 msgid "Platinum"
 msgstr "Platinoví"
 
-#: templates/hall-of-fame.html:25
+#: templates/hall-of-fame.html:50
 msgid ""
 "The Python Software Foundation is a 501(c)(3) nonprofit dedicated to\n"
 "                  advancing\n"
@@ -589,11 +602,11 @@ msgstr ""
 "rozširovania medzinárodného spoločenstva programátorov jazyka Python. PSF"
 " zároveň každoročne usporiadáva severoamerickú konferenciu PyCon."
 
-#: templates/hall-of-fame.html:39
+#: templates/hall-of-fame.html:64
 msgid "Gold"
 msgstr "Zlatí"
 
-#: templates/hall-of-fame.html:51
+#: templates/hall-of-fame.html:76
 msgid ""
 "The Kistler Group is a Swiss high-tech company and the global market\n"
 "                  leader in dynamic measurement technology. We develop "
@@ -621,11 +634,11 @@ msgstr ""
 "vytvárame meracie systémy, ktoré zachraňujú životy. Kistler pomáha "
 "vytvárať lepšiu budúcnosť."
 
-#: templates/hall-of-fame.html:70
+#: templates/hall-of-fame.html:95
 msgid "Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:82
+#: templates/hall-of-fame.html:107
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -649,11 +662,11 @@ msgstr ""
 "Professional Edition je vytvorený pre profesionálov v oblasti vývoja Web "
 "aplikácií, dátových analytikov a Python developerov."
 
-#: templates/hall-of-fame.html:107
+#: templates/hall-of-fame.html:132
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr "Ľudia, ktorí pomáhajú ako dobrovoľníci na PyCon SK 2018."
 
-#: templates/hall-of-fame.html:185
+#: templates/hall-of-fame.html:210
 msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
 msgstr "Ľudia, ktorí si zakúpili podporovateľský lístok na PyCon SK 2018."
 
@@ -789,6 +802,49 @@ msgstr ""
 "Ak máte chuť, prispejte na našom %(github)se a pridajte sa tak ku "
 "komunite priaznivcov jazyka Python."
 
+#: templates/speakers.html:8
+msgid "Want to be listed on this page?"
+msgstr ""
+
+#: templates/speakers.html:9
+msgid "Submit a talk"
+msgstr ""
+
+#: templates/speakers.html:22
+msgid ""
+"You might know her as That Docs Lady, and you won't be wrong! Mikey spent"
+" the better part of the last 10 years documenting super-geeky enterprise "
+"software, most recently for OpenStack Platform at Red Hat. She is also a "
+"community lead for Write the Docs, Django Girls alumni, and documentation"
+" coach for open-source projects.<br />\n"
+"      Since crash-landing on open-source planet in 2013, Mikey presented "
+"talks and wrote articles about docs, DevOps, and community. She also runs"
+" documentation workshops, hackfests, and sprints at developer events, "
+"primarily for the Python and Django communities but also Fedora, Plone, "
+"KDE, and NixOS."
+msgstr ""
+
+#: templates/speakers.html:36
+msgid ""
+"Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
+" data consulting company called Kjamistan in Berlin, Germany and loves to"
+" rant about data analysis, natural language processing, ethical machine "
+"learning and automation workflows. When she's not ranting, she's likely "
+"cooking or maybe taking photos, or quite possibly reading and retweeting "
+"other rants on Twitter."
+msgstr ""
+
+#: templates/speakers.html:52
+msgid ""
+"Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
+" host and founder of the two most popular Python podcasts: Talk Python To"
+" Me and Python Bytes. He teaches online courses for developers through "
+"his business Talk Python Training. Michael loves to help fellow "
+"podcasters and developers make their way in the world. Connect with him "
+"on Twitter via @mkennedy and check out his podcasts as "
+"https://talkpython.fm and https://pythonbytes.fm."
+msgstr ""
+
 #: templates/sponsoring.html:7
 msgid "We need you — PyCon SK 2018 in Bratislava seeks for sponsors and partners!"
 msgstr "Potrebujeme vás — PyCon SK 2018 v Bratislave hľadá sponzorov a partnerov!"
@@ -809,10 +865,8 @@ msgid ""
 "home countries regularly, PyCon will happen in Slovakia for the third "
 "time."
 msgstr ""
-"Členovia Python komunity organizujú PyCon "
-"konferencie vo svojich domovských krajinách"
-" pravidelne. PyCon bude na Slovensku "
-"už po tretí raz."
+"Členovia Python komunity organizujú PyCon konferencie vo svojich "
+"domovských krajinách pravidelne. PyCon bude na Slovensku už po tretí raz."
 
 #: templates/sponsoring.html:16
 msgid ""
@@ -1070,8 +1124,8 @@ msgid ""
 "In order to keep conference accessible for everyone we subsidy all "
 "tickets so that most of the people can afford to buy one."
 msgstr ""
-"Aby sme udržovali konferenciu dostupnú pre všetkých, "
-"dotujeme cenu lístkov natoľko, aby si ich mohla väčšina ľudí dovoliť."
+"Aby sme udržovali konferenciu dostupnú pre všetkých, dotujeme cenu "
+"lístkov natoľko, aby si ich mohla väčšina ľudí dovoliť."
 
 #: templates/tickets.html:169
 msgid "Do you offer group discounts?"
@@ -1331,3 +1385,4 @@ msgstr ""
 "title=\"stránky mesta pre návštevníkov\" target=\"_blank\" "
 "class=\"external\">oficiálne stránky mesta, určené pre návštevníkov</a>, "
 "kde nájdete aj iné udalosti, ktoré sa práve odohrávajú v Bratislave."
+
