@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-01-11 11:20+0100\n"
-"PO-Revision-Date: 2018-01-08 22:40+0000\n"
+"PO-Revision-Date: 2018-01-11 10:33+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
-"Language: sk\n"
 "Language-Team: Slovak <http://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.19-dev\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:8
@@ -128,7 +129,7 @@ msgstr "Zastav ťaženie!"
 
 #: templates/body.html:123
 msgid "Hashes/s"
-msgstr ""
+msgstr "Hashes/s"
 
 #: templates/body.html:123
 msgid "Total"
@@ -168,7 +169,7 @@ msgstr "Python všeobecne"
 
 #: templates/cfp.html:47
 msgid "DevOps"
-msgstr ""
+msgstr "DevOps"
 
 #: templates/cfp.html:48
 msgid "Education"
@@ -272,7 +273,7 @@ msgstr "Telefón"
 
 #: templates/cfp.html:130
 msgid "Tell us about your self? This will be your public biography..."
-msgstr ""
+msgstr "Povedzte nám niečo o sebe? Toto bude Váš verejny profil..."
 
 #: templates/cfp.html:135
 msgid "Url"
@@ -296,7 +297,7 @@ msgstr "Odoslať"
 
 #: templates/cfp.html:430 templates/tickets.html:83
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: templates/cfp.html:439
 msgid "Call for proposals"
@@ -570,7 +571,7 @@ msgstr "Prečo sa stať sponzorom?"
 
 #: templates/hall-of-fame.html:13
 msgid "Diamond"
-msgstr ""
+msgstr "Diamantoví"
 
 #: templates/hall-of-fame.html:25
 msgid ""
@@ -636,7 +637,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:95
 msgid "Partners"
-msgstr ""
+msgstr "Partneri"
 
 #: templates/hall-of-fame.html:107
 msgid ""
@@ -1385,4 +1386,3 @@ msgstr ""
 "title=\"stránky mesta pre návštevníkov\" target=\"_blank\" "
 "class=\"external\">oficiálne stránky mesta, určené pre návštevníkov</a>, "
 "kde nájdete aj iné udalosti, ktoré sa práve odohrávajú v Bratislave."
-
