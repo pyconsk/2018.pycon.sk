@@ -6,7 +6,7 @@
       <h2>{{ _('Sponsors') }}</h2>
       <p class="text-justify">
         {{ _('We thank all the sponsors, without whom it would not be possible to organize this amazing conference.') }}
-        <a href="">{{ _('Why become a sponsor?') }}</a>
+        <a href="{{ url_for('sponsoring', lang_code=lang_code) }}">{{ _('Why become a sponsor?') }}</a>
       </p>
 
       <p class="text-center">
@@ -100,7 +100,7 @@
   </div>
 </div>
 
-<div class="section" id="hall-of-fame">
+<div class="section" id="volunteers">
   <div class="content">
     <div class="content-text">
       <p class="lead">
