@@ -596,7 +596,7 @@ msgstr ""
 
 #: templates/index.html:23
 #, python-format
-msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press releasel</a>."
+msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 
 #: templates/index.html:26
