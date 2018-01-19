@@ -46,14 +46,24 @@
     {% block navbar %}
       <a href="{{ url_for('venue', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_venue }}">{{ _('Venue') }}</a>
+      <span class="dropdown">
       <a href="{{ url_for('hall_of_fame', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_hall_of_fame }}">{{ _('Hall of Fame') }}</a>
+        <span class="dropdown-content">
+          <a href="{{ url_for('sponsoring', lang_code=lang_code) }}"
+             class="pseudo button icon-help-circled {{ li_sponsoring }} ">{{ _('Sponsoring') }}</a>
+        </span>
+      </span>
       <a href="{{ url_for('tickets', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_tickets }}">{{ _('Tickets') }}</a>
-      <a href="{{ url_for('cfp', lang_code=lang_code) }}"
-          class="pseudo button icon-help-circled {{ li_cfp }} ">{{ _('Call for Proposals') }}</a>
-      <a href="{{ url_for('sponsoring', lang_code=lang_code) }}"
-         class="pseudo button icon-help-circled {{ li_sponsoring }} ">{{ _('Sponsoring') }}</a>
+      <span class="dropdown">
+        <a href="{{ url_for('speakers', lang_code=lang_code) }}"
+           class="pseudo button icon-help-circled {{ li_speakers }} ">{{ _('Speakers') }}</a>
+        <span class="dropdown-content">
+          <a href="{{ url_for('cfp', lang_code=lang_code) }}"
+             class="pseudo button icon-help-circled {{ li_cfp }} ">{{ _('Call for Proposals') }}</a>
+        </span>
+      </span>
       <a href="{{ url_for('coc', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_coc }} ">{{ _('Code of Conduct') }}</a>
       <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">{{ _('About Us') }}</a>

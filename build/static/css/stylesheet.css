@@ -3014,11 +3014,12 @@ select.stack {
   right: 100%;
   top: 7px; }
 html, body, main, .section {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   background-color: #fff;
   color: #000;
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -3027,6 +3028,25 @@ html, body, main, .section {
 nav {
   height: 2.5em;
   box-shadow: 0px 0px 15px black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .logo {
@@ -3047,69 +3067,62 @@ nav {
   font-size: x-large;
 }
 
-.section {
+.section, .section#home, .section#venue, .section#sponsoring, .section#sponsors, .section#cfp, .section#coc,
+.section#news, .section#tickets, .section#volunteers, .section#references, .section#speakers {
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: auto;
+  min-height: 100%;
 }
 
 .section#home {
   background-image: url('/static/img/backgrounds/people.jpg');
-  background-attachment: fixed;
 }
 
 .section#venue {
   background-image: url('/static/img/backgrounds/fiit.jpg');
-  background-attachment: fixed;
 }
 
 .section#sponsoring, .section#sponsors {
   background-image: url('/static/img/backgrounds/stairway.jpg');
-  background-attachment: fixed;
 }
 
 .section#cfp {
   background-image: url('/static/img/backgrounds/speaker.jpg');
-  background-attachment: fixed;
 }
 
 .section#coc {
   background-image: url('/static/img/backgrounds/snake.jpg');
-  background-attachment: fixed;
 }
 
 .section#news {
   background-image: url('/static/img/backgrounds/hall.jpg');
-  background-attachment: fixed;
 }
 
 .section#tickets {
   background-image: url('/static/img/backgrounds/lecture_hall.jpg');
-  background-attachment: fixed;
 }
 
 .section#volunteers {
   background-image: url('/static/img/backgrounds/food.jpg');
-  background-attachment: fixed;
 }
 
 .section#references {
   background-image: url('/static/img/backgrounds/bag.jpg');
-  background-attachment: fixed;
 }
 
 .section#speakers {
   background-image: url('/static/img/backgrounds/speaker2.jpg');
-  background-attachment: fixed;
 }
 
 .content {
   position: relative;
-  padding: 6em 6em;
+  padding: 6em;
 }
 
 .content-text {
@@ -3139,9 +3152,9 @@ nav {
 }
 
 .img-responsive {
-  display:block;
-  max-width:100%;
-  height:auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .sbox, .sline, .sbox-transparent {
@@ -3222,6 +3235,7 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
 
 footer {
   display: block;
+  /*position: fixed;*/
   width: 100%;
   bottom: 0;
   padding: 0;
@@ -3278,13 +3292,22 @@ input.error, textarea.error, select.error {
 @media (max-width: 60em) {
   .content {
     min-height: 100vh;
-    padding: 1em;
+    padding: 4em 3em;
   }
+
   article .content {
     min-height: auto;
   }
-  #speakerModal textarea , #talkModal textarea {
+
+  #speakerModal textarea, #talkModal textarea {
     width: 100%;
+  }
+}
+
+@media (max-width: 30em) {
+  .content {
+    min-height: 100vh;
+    padding: 3em 1em;
   }
 }
 
@@ -3292,10 +3315,12 @@ input.error, textarea.error, select.error {
   footer {
     position: static;
   }
+
   .content {
     position: static;
     min-height: 100vh;
   }
+
   .section {
     height: auto;
   }
@@ -3304,52 +3329,42 @@ input.error, textarea.error, select.error {
 @media (max-width: 900px) {
   .section#home {
     background-image: url('/static/img/backgrounds/people_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#venue {
     background-image: url('/static/img/backgrounds/fiit_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#sponsoring {
     background-image: url('/static/img/backgrounds/stairway_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#cfp {
     background-image: url('/static/img/backgrounds/speaker_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#coc {
     background-image: url('/static/img/backgrounds/snake_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#news {
     background-image: url('/static/img/backgrounds/hall_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#tickets {
     background-image: url('/static/img/backgrounds/lecture_hall_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#volunteers {
     background-image: url('/static/img/backgrounds/food_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#references {
     background-image: url('/static/img/backgrounds/bag_medium.jpg');
-    background-attachment: fixed;
   }
 
   .section#speakers {
     background-image: url('/static/img/backgrounds/speaker2_medium.jpg');
-    background-attachment: fixed;
   }
 
   .hide-900 {
@@ -3360,52 +3375,42 @@ input.error, textarea.error, select.error {
 @media (max-width: 500px) {
   .section#home {
     background-image: url('/static/img/backgrounds/people_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#venue {
     background-image: url('/static/img/backgrounds/fiit_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#sponsoring {
     background-image: url('/static/img/backgrounds/stairway_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#cfp {
     background-image: url('/static/img/backgrounds/speaker_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#coc {
     background-image: url('/static/img/backgrounds/snake_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#news {
     background-image: url('/static/img/backgrounds/hall_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#tickets {
     background-image: url('/static/img/backgrounds/lecture_hall_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#volunteers {
     background-image: url('/static/img/backgrounds/food_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#references {
     background-image: url('/static/img/backgrounds/bag_small.jpg');
-    background-attachment: fixed;
   }
 
   .section#speakers {
     background-image: url('/static/img/backgrounds/speaker2_small.jpg');
-    background-attachment: fixed;
   }
 
   .hide-500 {
@@ -3419,10 +3424,10 @@ input.error, textarea.error, select.error {
   font-family: 'pyconsk';
   src: url('/static/font/pyconsk.eot?26309337');
   src: url('/static/font/pyconsk.eot?26309337#iefix') format('embedded-opentype'),
-       url('/static/font/pyconsk.woff2?26309337') format('woff2'),
-       url('/static/font/pyconsk.woff?26309337') format('woff'),
-       url('/static/font/pyconsk.ttf?26309337') format('truetype'),
-       url('/static/font/pyconsk.svg?26309337#pyconsk') format('svg');
+  url('/static/font/pyconsk.woff2?26309337') format('woff2'),
+  url('/static/font/pyconsk.woff?26309337') format('woff'),
+  url('/static/font/pyconsk.ttf?26309337') format('truetype'),
+  url('/static/font/pyconsk.svg?26309337#pyconsk') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -3456,21 +3461,74 @@ input.error, textarea.error, select.error {
   text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
 }
 
-.icon-flight:before { content: '\e800'; } /* '' */
-.icon-megaphone:before { content: '\e801'; } /* '' */
-.icon-users:before { content: '\e802'; } /* '' */
-.icon-heart:before { content: '\e803'; } /* '' */
-.icon-cc:before { content: '\e804'; } /* '' */
-.icon-cc-by:before { content: '\e805'; } /* '' */
-.icon-mail:before { content: '\e806'; } /* '' */
-.icon-chat:before { content: '\e807'; } /* '' */
-.icon-twitter:before { content: '\f099'; } /* '' */
-.icon-gplus:before { content: '\f0d5'; } /* '' */
-.icon-linkedin:before { content: '\f0e1'; } /* '' */
-.icon-github:before { content: '\f113'; } /* '' */
-.icon-cab:before { content: '\f1b9'; } /* '' */
-.icon-chart-line:before { content: '\f201'; } /* '' */
-.icon-bus:before { content: '\f207'; } /* '' */
-.icon-facebook-official:before { content: '\f230'; } /* '' */
-.icon-train:before { content: '\f238'; } /* '' */
-.icon-handshake-o:before { content: '\f2b5'; } /* '' */
+.icon-flight:before {
+  content: '\e800';
+}
+
+.icon-megaphone:before {
+  content: '\e801';
+}
+
+.icon-users:before {
+  content: '\e802';
+}
+
+.icon-heart:before {
+  content: '\e803';
+}
+
+.icon-cc:before {
+  content: '\e804';
+}
+
+.icon-cc-by:before {
+  content: '\e805';
+}
+
+.icon-mail:before {
+  content: '\e806';
+}
+
+.icon-chat:before {
+  content: '\e807';
+}
+
+.icon-twitter:before {
+  content: '\f099';
+}
+
+.icon-gplus:before {
+  content: '\f0d5';
+}
+
+.icon-linkedin:before {
+  content: '\f0e1';
+}
+
+.icon-github:before {
+  content: '\f113';
+}
+
+.icon-cab:before {
+  content: '\f1b9';
+}
+
+.icon-chart-line:before {
+  content: '\f201';
+}
+
+.icon-bus:before {
+  content: '\f207';
+}
+
+.icon-facebook-official:before {
+  content: '\f230';
+}
+
+.icon-train:before {
+  content: '\f238';
+}
+
+.icon-handshake-o:before {
+  content: '\f2b5';
+}
