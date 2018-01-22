@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-19 22:39+0100\n"
+"POT-Creation-Date: 2018-01-22 22:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -137,171 +137,171 @@ msgstr ""
 msgid "Talk title"
 msgstr ""
 
-#: templates/cfp.html:30
+#: templates/cfp.html:31
 msgid "Abstract"
 msgstr ""
 
-#: templates/cfp.html:36
+#: templates/cfp.html:38
 msgid "Will you make a talk or workshop?"
 msgstr ""
 
-#: templates/cfp.html:37
+#: templates/cfp.html:39
 msgid "Talk"
 msgstr ""
 
-#: templates/cfp.html:38
+#: templates/cfp.html:40
 msgid "Workshop"
 msgstr ""
 
-#: templates/cfp.html:45
+#: templates/cfp.html:47
 msgid "Which category suits your talk / workshop best?"
 msgstr ""
 
-#: templates/cfp.html:46
+#: templates/cfp.html:48
 msgid "Python General"
 msgstr ""
 
-#: templates/cfp.html:47
+#: templates/cfp.html:49
 msgid "DevOps"
 msgstr ""
 
-#: templates/cfp.html:48
+#: templates/cfp.html:50
 msgid "Education"
 msgstr ""
 
-#: templates/cfp.html:49
+#: templates/cfp.html:51
 msgid "Web Development"
 msgstr ""
 
-#: templates/cfp.html:50
+#: templates/cfp.html:52
 msgid "Data Science"
 msgstr ""
 
-#: templates/cfp.html:51
+#: templates/cfp.html:53
 msgid "Machine Learning / AI"
 msgstr ""
 
-#: templates/cfp.html:52
+#: templates/cfp.html:54
 msgid "Security"
 msgstr ""
 
-#: templates/cfp.html:53
+#: templates/cfp.html:55
 msgid "Community / Diversity / Social"
 msgstr ""
 
-#: templates/cfp.html:54
+#: templates/cfp.html:56
 msgid "Soft Skills"
 msgstr ""
 
-#: templates/cfp.html:55
+#: templates/cfp.html:57
 msgid "Hardware"
 msgstr ""
 
-#: templates/cfp.html:56
+#: templates/cfp.html:58
 msgid "Other"
 msgstr ""
 
-#: templates/cfp.html:63
+#: templates/cfp.html:65
 msgid "Which language will you present in?"
 msgstr ""
 
-#: templates/cfp.html:64
+#: templates/cfp.html:66
 msgid "Slovak"
 msgstr ""
 
-#: templates/cfp.html:65
+#: templates/cfp.html:67
 msgid "Czech"
 msgstr ""
 
-#: templates/cfp.html:66
+#: templates/cfp.html:68
 msgid "English"
 msgstr ""
 
-#: templates/cfp.html:73
+#: templates/cfp.html:75
 msgid "What is your ideal time slot?"
 msgstr ""
 
-#: templates/cfp.html:81
+#: templates/cfp.html:84
 msgid "Continue"
 msgstr ""
 
-#: templates/cfp.html:82 templates/cfp.html:411 templates/tickets.html:64
+#: templates/cfp.html:85 templates/cfp.html:418 templates/tickets.html:64
 msgid "Cancel"
 msgstr ""
 
-#: templates/cfp.html:94
+#: templates/cfp.html:97
 msgid "Speaker Biography"
 msgstr ""
 
-#: templates/cfp.html:101 templates/tickets.html:28
+#: templates/cfp.html:104 templates/tickets.html:28
 msgid "What is your title?"
 msgstr ""
 
-#: templates/cfp.html:102 templates/tickets.html:29
+#: templates/cfp.html:105 templates/tickets.html:29
 msgid "Mr."
 msgstr ""
 
-#: templates/cfp.html:103 templates/tickets.html:30
+#: templates/cfp.html:106 templates/tickets.html:30
 msgid "Ms."
 msgstr ""
 
-#: templates/cfp.html:104 templates/tickets.html:31
+#: templates/cfp.html:107 templates/tickets.html:31
 msgid "Mx."
 msgstr ""
 
-#: templates/cfp.html:110 templates/tickets.html:37
+#: templates/cfp.html:113 templates/tickets.html:37
 msgid "First name"
 msgstr ""
 
-#: templates/cfp.html:115 templates/tickets.html:42
+#: templates/cfp.html:119 templates/tickets.html:42
 msgid "Last name"
 msgstr ""
 
-#: templates/cfp.html:120 templates/tickets.html:47
+#: templates/cfp.html:125 templates/tickets.html:47
 msgid "Email"
 msgstr ""
 
-#: templates/cfp.html:125 templates/tickets.html:52
+#: templates/cfp.html:130 templates/tickets.html:52
 msgid "Phone"
 msgstr ""
 
-#: templates/cfp.html:130
+#: templates/cfp.html:136
 msgid "Tell us about your self? This will be your public biography..."
 msgstr ""
 
-#: templates/cfp.html:135
+#: templates/cfp.html:142
 msgid "Url"
 msgstr ""
 
-#: templates/cfp.html:140
+#: templates/cfp.html:147
 msgid "Social Url"
 msgstr ""
 
-#: templates/cfp.html:146
+#: templates/cfp.html:153
 msgid "Which country are you from?"
 msgstr ""
 
-#: templates/cfp.html:403
+#: templates/cfp.html:410
 msgid "Avatar"
 msgstr ""
 
-#: templates/cfp.html:410 templates/tickets.html:63
+#: templates/cfp.html:417 templates/tickets.html:63
 msgid "Submit"
 msgstr ""
 
-#: templates/cfp.html:430 templates/tickets.html:83
+#: templates/cfp.html:437 templates/tickets.html:83
 msgid "OK"
 msgstr ""
 
-#: templates/cfp.html:439
+#: templates/cfp.html:446
 msgid "Call for proposals"
 msgstr ""
 
-#: templates/cfp.html:440
-msgid "The Call For Proposals is open!"
+#: templates/cfp.html:447
+msgid "The Call For Proposals is closed!"
 msgstr ""
 
-#: templates/cfp.html:443
+#: templates/cfp.html:450
 msgid ""
 "PyCon is organized by the Python community and for the Python community. "
 "You're coming to the event,\n"
@@ -318,45 +318,37 @@ msgid ""
 "        preferred."
 msgstr ""
 
-#: templates/cfp.html:452
+#: templates/cfp.html:459
 msgid "Where to submit your proposal"
 msgstr ""
 
-#: templates/cfp.html:454
+#: templates/cfp.html:461
 msgid ""
 "We are glad you are interested in giving a talk at PyCon SK 2018! Submit "
 "your talk proposal with short\n"
 "        abstract and your bio."
 msgstr ""
 
-#: templates/cfp.html:455
+#: templates/cfp.html:462
 msgid "All selected speakers get complimentary ticket to the conference."
 msgstr ""
 
-#: templates/cfp.html:459
-msgid "Submit your talk / workshop"
+#: templates/cfp.html:477
+msgid "Talk proposals has ended!"
 msgstr ""
 
-#: templates/cfp.html:463
+#: templates/cfp.html:481
 msgid ""
-"Don't hesitate to submit more than one proposal. The deadline for "
-"submissions is the end of\n"
-"        21th January 2018. Due to the competitive selection process, we "
-"encourage prospective speakers to submit their\n"
-"        proposals as early as possible."
+"The deadline for submissions was the end of 21th January 2018. However,\n"
+"        if you believe you have something interesting to say, please "
+"contact us via email: info@pycon.sk"
 msgstr ""
 
-#: templates/cfp.html:465
-msgid ""
-"In case you are not able to submit the form, please contact us via\n"
-"        email: info@pycon.sk"
-msgstr ""
-
-#: templates/cfp.html:469
+#: templates/cfp.html:485
 msgid "Guidelines for Proposal Submission"
 msgstr ""
 
-#: templates/cfp.html:471
+#: templates/cfp.html:487
 msgid ""
 "There is no official restriction on the topic that you propose for a talk"
 " session. Talks about Python or\n"
@@ -369,11 +361,11 @@ msgid ""
 "        than one of your proposals is accepted."
 msgstr ""
 
-#: templates/cfp.html:480
+#: templates/cfp.html:496
 msgid "Talks"
 msgstr ""
 
-#: templates/cfp.html:482
+#: templates/cfp.html:498
 msgid ""
 "Most talks are 30 minutes long, but we do offer a limited number of "
 "45-minute slots for important\n"
@@ -381,11 +373,11 @@ msgid ""
 "treatment."
 msgstr ""
 
-#: templates/cfp.html:488
+#: templates/cfp.html:504
 msgid "Workshops"
 msgstr ""
 
-#: templates/cfp.html:490
+#: templates/cfp.html:506
 msgid ""
 "As with the talks, we are looking for tutorials that can grow this "
 "community at any level!\n"
@@ -584,11 +576,11 @@ msgstr ""
 msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
 msgstr ""
 
-#: templates/index.html:7
+#: templates/index.html:6
 msgid "PyCon will come to Slovakia in 2018 again."
 msgstr ""
 
-#: templates/index.html:8 templates/venue.html:7
+#: templates/index.html:7 templates/venue.html:7
 msgid ""
 "<strong>Third year</strong> will happen <strong>9-11. March, 2018 in "
 "Bratislava</strong>."
@@ -597,89 +589,124 @@ msgstr ""
 #: templates/index.html:11
 msgid ""
 "PyCon SK is an international conference organized by the community of "
-"enthusiasts and supporters of the Python programming language."
+"enthusiasts and supporters of the\n"
+"        Python programming language."
 msgstr ""
 
-#: templates/index.html:12
+#: templates/index.html:13
 msgid ""
 "It is designed for anyone who works professionally and also for anyone "
-"who is learning this programming language."
+"who is learning this programming\n"
+"        language."
 msgstr ""
 
-#: templates/index.html:21
+#: templates/index.html:19
 msgid "News"
 msgstr ""
 
-#: templates/index.html:23
+#: templates/index.html:22
+msgid "Call for proposals has ended."
+msgstr ""
+
+#: templates/index.html:25
+#, python-format
+msgid ""
+"We have received almost 100 hight quality talk and workshop proposals! It"
+" will take some time to go\n"
+"        through all of them so please be patient. We have started to "
+"publishing some of the <a\n"
+"          href=\"%(url)s\">speakers</a> on our website."
+msgstr ""
+
+#: templates/index.html:32
+msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
+msgstr ""
+
+#: templates/index.html:35
+msgid ""
+"We are excited that for the third time in the row, PyConSK will be held "
+"under the auspices of the\n"
+"        president of the Slovak Republic. We are committed to bring you "
+"another conference of excellent quality which\n"
+"        will represent the Slovak Republic in dignity before audiences "
+"from all over Europe and the rest of the world."
+msgstr ""
+
+#: templates/index.html:43
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 
-#: templates/index.html:26
+#: templates/index.html:48
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
 msgstr ""
 
-#: templates/index.html:29
+#: templates/index.html:51
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
-"possibilities of using Python in teaching. We invite teachers who are "
-"teaching Python to share their experiences with conference attendees and "
-"<a href=\"%(url)s\">submit a talk proposal</a>."
+"possibilities of using Python in teaching.\n"
+"        We invite teachers who are teaching Python to share their "
+"experiences with conference attendees and <a\n"
+"          href=\"%(url)s\">submit a talk proposal</a>."
 msgstr ""
 
-#: templates/index.html:32
+#: templates/index.html:57
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr ""
 
-#: templates/index.html:35
+#: templates/index.html:60
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
-"software engineering practice that aims to unify software development "
-"(Dev) and software operation (Ops). The main emphasis of the DevOps "
-"movement is to strongly advocate for automation and monitoring at all "
-"steps of software production, from integration, testing, releasing to "
-"deployment and infrastructure management."
+"software engineering practice that aims to\n"
+"        unify software development (Dev) and software operation (Ops). "
+"The main emphasis of the DevOps movement is to\n"
+"        strongly advocate for automation and monitoring at all steps of "
+"software production, from integration, testing,\n"
+"        releasing to deployment and infrastructure management."
 msgstr ""
 
-#: templates/index.html:36
+#: templates/index.html:64
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
-"welcome to <a href=\"%(url)s\">submit your CfP</a>. We hope to get the "
-"error budget right and to see developers and admins working towards the "
-"same goals."
+"welcome to <a href=\"%(url)s\">submit\n"
+"        your CfP</a>. We hope to get the error budget right and to see "
+"developers and admins working towards the same\n"
+"        goals."
 msgstr ""
 
-#: templates/index.html:45
+#: templates/index.html:75
 msgid "References"
 msgstr ""
 
-#: templates/index.html:47
+#: templates/index.html:77
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
-"conference check out our references:"
+"conference check out our\n"
+"        references:"
 msgstr ""
 
-#: templates/index.html:84
+#: templates/index.html:115
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:122
+#: templates/index.html:153
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
-" info@pycon.sk or create a pull request."
+" info@pycon.sk or create a pull\n"
+"        request."
 msgstr ""
 
-#: templates/index.html:127
+#: templates/index.html:159
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:128
+#: templates/index.html:160
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -1166,5 +1193,90 @@ msgstr ""
 #~ " for everyone we donate all tickets,"
 #~ " so most of the people can "
 #~ "afford to buy one."
+#~ msgstr ""
+
+#~ msgid "The Call For Proposals is open!"
+#~ msgstr ""
+
+#~ msgid "Submit your talk / workshop"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Don't hesitate to submit more than "
+#~ "one proposal. The deadline for "
+#~ "submissions is the end of\n"
+#~ "        21th January 2018. Due to "
+#~ "the competitive selection process, we "
+#~ "encourage prospective speakers to submit "
+#~ "their\n"
+#~ "        proposals as early as possible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case you are not able to submit the form, please contact us via\n"
+#~ "        email: info@pycon.sk"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "PyCon SK is an international conference"
+#~ " organized by the community of "
+#~ "enthusiasts and supporters of the Python"
+#~ " programming language."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It is designed for anyone who "
+#~ "works professionally and also for anyone"
+#~ " who is learning this programming "
+#~ "language."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The aim of this section is to "
+#~ "teach teachers the benefits and "
+#~ "possibilities of using Python in "
+#~ "teaching. We invite teachers who are "
+#~ "teaching Python to share their "
+#~ "experiences with conference attendees and "
+#~ "<a href=\"%(url)s\">submit a talk "
+#~ "proposal</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "DevOps (a portmanteau of \"development\" "
+#~ "and \"operations\") is a software "
+#~ "engineering practice that aims to unify"
+#~ " software development (Dev) and software"
+#~ " operation (Ops). The main emphasis "
+#~ "of the DevOps movement is to "
+#~ "strongly advocate for automation and "
+#~ "monitoring at all steps of software "
+#~ "production, from integration, testing, "
+#~ "releasing to deployment and infrastructure "
+#~ "management."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you think you have something to"
+#~ " say on this topic, you are "
+#~ "most welcome to <a href=\"%(url)s\">submit "
+#~ "your CfP</a>. We hope to get the"
+#~ " error budget right and to see "
+#~ "developers and admins working towards "
+#~ "the same goals."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Previous years got media coverage, if"
+#~ " you would like to know how was"
+#~ " the conference check out our "
+#~ "references:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you wrote an article or a "
+#~ "blog post, do not hesitate to let"
+#~ " us know at info@pycon.sk or create"
+#~ " a pull request."
 #~ msgstr ""
 

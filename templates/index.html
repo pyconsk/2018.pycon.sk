@@ -3,37 +3,67 @@
 <div class="section fixed" id="home">
   <div class="content">
     <div class="content-text">
-      <div class="hero"></div>
       <h1>{{ _('PyCon will come to Slovakia in 2018 again.') }}</h1>
-      <p class="lead">{{ _('<strong>Third year</strong> will happen <strong>9-11. March, 2018 in Bratislava</strong>.') }}</p>
+      <p class="lead">{{ _('<strong>Third year</strong> will happen <strong>9-11. March, 2018 in Bratislava</strong>.')
+        }}</p>
 
       <p class="text-justify">
-        {{ _('PyCon SK is an international conference organized by the community of enthusiasts and supporters of the Python programming language.') }}
-        {{ _('It is designed for anyone who works professionally and also for anyone who is learning this programming language.') }}
+        {{ _('PyCon SK is an international conference organized by the community of enthusiasts and supporters of the
+        Python programming language.') }}
+        {{ _('It is designed for anyone who works professionally and also for anyone who is learning this programming
+        language.') }}
       </p>
-    </div>
-  </div>
-</div>
 
-<div class="section fixed" id="news">
-  <div class="content">
-    <div class="content-text">
+      <div class="hero"></div>
+
       <h2>{{ _('News') }}</h2>
-        <p class="lead">
-            {{ _('Download PyCon SK 2018 Conference <a href="%(url)s">press release</a>.', url=url_for('static', filename='download/PyConSK2018_Tlacova_sprava.pdf')) }}
-        </p>
       <p class="lead">
+        <small>22.1.2018:</small>
+        {{ _('Call for proposals has ended.') }}
+      </p>
+      <p class="text-justify">
+        {{ _('We have received almost 100 hight quality talk and workshop proposals! It will take some time to go
+        through all of them so please be patient. We have started to publishing some of the <a
+          href="%(url)s">speakers</a> on our website.', url=url_for('speakers', lang_code=lang_code)) }}
+      </p>
+
+      <p class="lead">
+        <small>17.1.2018:</small>
+        {{ _('PyCon SK 2018 under the patronage of the president of the Slovak Republic.') }}
+      </p>
+      <p class="text-justify">
+        {{ _('We are excited that for the third time in the row, PyConSK will be held under the auspices of the
+        president of the Slovak Republic. We are committed to bring you another conference of excellent quality which
+        will represent the Slovak Republic in dignity before audiences from all over Europe and the rest of the world.')
+        }}
+      </p>
+
+      <p class="lead">
+        <small>07.12.2017:</small>
+        {{ _('Download PyCon SK 2018 Conference <a href="%(url)s">press release</a>.', url=url_for('static',
+        filename='download/PyConSK2018_Tlacova_sprava.pdf')) }}
+      </p>
+      <p class="lead">
+        <small>01.09.2017:</small>
         {{ _('We are preparing a section for Informatics Teachers to be held during the PyCon SK Conference.') }}
       </p>
       <p class="text-justify">
-        {{ _('The aim of this section is to teach teachers the benefits and possibilities of using Python in teaching. We invite teachers who are teaching Python to share their experiences with conference attendees and <a href="%(url)s">submit a talk proposal</a>.', url=url_for('cfp', lang_code=lang_code)) }}
+        {{ _('The aim of this section is to teach teachers the benefits and possibilities of using Python in teaching.
+        We invite teachers who are teaching Python to share their experiences with conference attendees and <a
+          href="%(url)s">submit a talk proposal</a>.', url=url_for('cfp', lang_code=lang_code)) }}
       </p>
       <p class="lead">
+        <small>01.09.2017:</small>
         {{ _('We are pleased to announce a DevOps track at PyCon SK 2018.') }}
       </p>
       <p class="text-justify">
-        {{ _('DevOps (a portmanteau of "development" and "operations") is a software engineering practice that aims to unify software development (Dev) and software operation (Ops). The main emphasis of the DevOps movement is to strongly advocate for automation and monitoring at all steps of software production, from integration, testing, releasing to deployment and infrastructure management.') }}<br/>
-        {{ _('If you think you have something to say on this topic, you are most welcome to <a href="%(url)s">submit your CfP</a>. We hope to get the error budget right and to see developers and admins working towards the same goals.', url=url_for('cfp', lang_code=lang_code)) }}
+        {{ _('DevOps (a portmanteau of "development" and "operations") is a software engineering practice that aims to
+        unify software development (Dev) and software operation (Ops). The main emphasis of the DevOps movement is to
+        strongly advocate for automation and monitoring at all steps of software production, from integration, testing,
+        releasing to deployment and infrastructure management.') }}<br/>
+        {{ _('If you think you have something to say on this topic, you are most welcome to <a href="%(url)s">submit
+        your CfP</a>. We hope to get the error budget right and to see developers and admins working towards the same
+        goals.', url=url_for('cfp', lang_code=lang_code)) }}
       </p>
     </div>
   </div>
@@ -44,7 +74,8 @@
     <div class="content-text">
       <h2>{{ _('References') }}</h2>
       <p class="text-justify">
-        {{ _('Previous years got media coverage, if you would like to know how was the conference check out our references:') }}
+        {{ _('Previous years got media coverage, if you would like to know how was the conference check out our
+        references:') }}
       <ul>
         <li>
           <a href="https://tlacovespravy.sme.sk/ts/20597203/ako-fiitka-nakopla-django-girls.html" target="_blank">sme.sk
@@ -119,14 +150,15 @@
         <a href="https://zblesk.net/blog/pycon-sk-2016/" target="_blank">zblesk</a>
         <small>(EN)</small>
         <br/><br/>
-        {{ _('If you wrote an article or a blog post, do not hesitate to let us know at info@pycon.sk or create a pull request.') }}
+        {{ _('If you wrote an article or a blog post, do not hesitate to let us know at info@pycon.sk or create a pull
+        request.') }}
       </p>
 
       <p class="text-justify hide-500">
         {% autoescape off %}
         {{ _('Did you find a mistake on our site? Do you want to know more? Let us know.') }}
         {{ _('Join our %(github)s and enrich the Python programming language community.',
-           github = '<a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>') }}
+        github = '<a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>') }}
         {% endautoescape %}
       </p>
 
