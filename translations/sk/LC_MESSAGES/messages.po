@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-01-11 11:20+0100\n"
-"PO-Revision-Date: 2018-01-11 10:33+0000\n"
+"PO-Revision-Date: 2018-01-23 20:45+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
-"Language-Team: Slovak <http://preklady.python.sk/projects/pycon-"
+"Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -805,11 +805,11 @@ msgstr ""
 
 #: templates/speakers.html:8
 msgid "Want to be listed on this page?"
-msgstr ""
+msgstr "Chcete byť zobrazený na tejto stránke?"
 
 #: templates/speakers.html:9
 msgid "Submit a talk"
-msgstr ""
+msgstr "Pošlite nám návrh na prednášku"
 
 #: templates/speakers.html:22
 msgid ""
