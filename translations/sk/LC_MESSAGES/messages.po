@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-22 22:13+0100\n"
+"POT-Creation-Date: 2018-01-24 23:32+0100\n"
 "PO-Revision-Date: 2018-01-11 10:33+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -308,7 +308,7 @@ msgstr "Výzva na predloženie návrhov na prednášky"
 
 #: templates/cfp.html:447
 msgid "The Call For Proposals is closed!"
-msgstr ""
+msgstr "Podávanie návrhov na prednášky je uzavreté!"
 
 #: templates/cfp.html:450
 msgid ""
@@ -355,7 +355,7 @@ msgstr "Všetci rečníci majú vstup na konferenciu zadarmo."
 
 #: templates/cfp.html:477
 msgid "Talk proposals has ended!"
-msgstr ""
+msgstr "Termín podávania návrhov na prednášky vypršal!"
 
 #: templates/cfp.html:481
 msgid ""
@@ -655,7 +655,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:125
 msgid "Medial Partners"
-msgstr ""
+msgstr "Medialny Partneri"
 
 #: templates/hall-of-fame.html:137
 msgid ""
@@ -705,7 +705,7 @@ msgstr "Novinky"
 
 #: templates/index.html:22
 msgid "Call for proposals has ended."
-msgstr ""
+msgstr "Podávanie návrhov na prednášky je uzavreté."
 
 #: templates/index.html:25
 #, python-format
@@ -719,7 +719,7 @@ msgstr ""
 
 #: templates/index.html:32
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
-msgstr ""
+msgstr "PyCon SK 2018 pod záštitou prezidenta Slovenskej republiky."
 
 #: templates/index.html:35
 msgid ""
@@ -730,6 +730,10 @@ msgid ""
 "        will represent the Slovak Republic in dignity before audiences "
 "from all over Europe and the rest of the world."
 msgstr ""
+"Tešíme sa, že už po tretíkrát sa bude PyCon SK konať pod záštitou "
+"prezidenta SR. Predstavuje to pre nás záväzok priniesť vám opäť "
+"konferenciu špičkovej úrovne, ktorá bude dôstojne reprezentovať SR pred "
+"publikom z celej Európy a aj zvyšku sveta."
 
 #: templates/index.html:43
 #, python-format
@@ -818,15 +822,7 @@ msgstr ""
 "Ak máte chuť, prispejte na našom %(github)se a pridajte sa tak ku "
 "komunite priaznivcov jazyka Python."
 
-#: templates/speakers.html:8
-msgid "Want to be listed on this page?"
-msgstr ""
-
-#: templates/speakers.html:9
-msgid "Submit a talk"
-msgstr ""
-
-#: templates/speakers.html:22
+#: templates/speakers.html:19
 msgid ""
 "You might know her as That Docs Lady, and you won't be wrong! Mikey spent"
 " the better part of the last 10 years documenting super-geeky enterprise "
@@ -840,7 +836,22 @@ msgid ""
 "KDE, and NixOS."
 msgstr ""
 
-#: templates/speakers.html:36
+#: templates/speakers.html:33
+msgid ""
+"Gareth has been working with DevOps organisations and DevOps tools like "
+"monitoring systems for over 13 years. Gareth would like to share his "
+"experience of running containers in production from the early days to "
+"scaling and operating in cloud environments. The pains and strains of "
+"previous decisions and our successes with The Autopilot Pattern and "
+"ultimately developing the Concierge Paradigm to drastically simplify "
+"containers at scale."
+msgstr ""
+
+#: templates/speakers.html:45
+msgid "I was paid to kill people. I quit the job."
+msgstr ""
+
+#: templates/speakers.html:58
 msgid ""
 "Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
 " data consulting company called Kjamistan in Berlin, Germany and loves to"
@@ -850,7 +861,7 @@ msgid ""
 "other rants on Twitter."
 msgstr ""
 
-#: templates/speakers.html:52
+#: templates/speakers.html:75
 msgid ""
 "Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
 " host and founder of the two most popular Python podcasts: Talk Python To"
@@ -859,6 +870,16 @@ msgid ""
 "podcasters and developers make their way in the world. Connect with him "
 "on Twitter via @mkennedy and check out his podcasts as "
 "https://talkpython.fm and https://pythonbytes.fm."
+msgstr ""
+
+#: templates/speakers.html:87
+msgid ""
+"Maciej is a passionate developer with over 10 years of experience in many"
+" languages. Currently, he is hacking on bugs.python.org and CPython's "
+"IMAP library by night. Whereas in the light of day, he's working on "
+"OpenShift and Kubernetes for Red Hat. In his spare time he organizes "
+"PyCon PL, helps reviewing talks for PyCon, talks at various events and "
+"meet ups around Europe."
 msgstr ""
 
 #: templates/sponsoring.html:7
@@ -1543,5 +1564,11 @@ msgstr ""
 #~ "please be patient. We have started "
 #~ "to publishing some of the <a\n"
 #~ "          href=\"%(url)s\">speakers</a> on our website."
+#~ msgstr ""
+
+#~ msgid "Want to be listed on this page?"
+#~ msgstr ""
+
+#~ msgid "Submit a talk"
 #~ msgstr ""
 
