@@ -145,6 +145,23 @@ DATA = (
         'abstract': gettext('TBD'),
     },
     {
+        'name': 'Rae Knowler',
+        'bio': gettext('Rae Knowler is a web developer in Zürich, where they develop product data APIs and work on '
+                       'Open Data projects. They are interested in the fascinating, comical and sometimes tragic '
+                       'results of attempting to cram the complexity of life and society into computer systems. In '
+                       'their spare time they read a lot of science fiction and hug cats.'),
+        'country': 'CH',
+        'url': 'http://raeknowler.com',
+        'avatar': 'img/speakers/rae_knowler.jpg',
+        'talk': 'Unsafe at Any Speed',
+        'tag': 'generic',
+        'abstract': gettext('<p>The default settings of some libraries and tools are so useless, or even dangerous, '
+                            'that they should never be used. While they give the impression of being easy to use or '
+                            'performant, they actually represent traps for the unwary user. I will show the concrete '
+                            'problems caused by such defaults, and explore how to create tools with '
+                            'good_defaults.</p>'),
+    },
+    {
         'name': 'Ryan Kirkbride',
         'bio': gettext('Ryan is currently in the middle of his practice-led PhD researching communication and '
                        'collaboration in live coding ensembles through software development, composition, and '
@@ -172,6 +189,25 @@ DATA = (
                             'be concluded with a short demonstration that will be part explanation and part '
                             'performance.'),
 
+    },
+    {
+        'name': 'Patricia Regina',
+        'bio': gettext('Patricia is a Python developer working at Olist, a brazilian marketplace services platform. '
+                       'She started developing web applications in 2010 and currently is interested in technologies '
+                       'like Big Data and Search Engines. Being an enthusiast for women in tech, Patricia is involved '
+                       'with women empowerment initiatives like Pyladies Brazil, Django Girls Curitiba and TechLadies '
+                       'Brazil.'),
+        'country': 'BR',
+        'url': 'https://github.com/pattyvader',
+        'avatar': 'img/speakers/patricia_regina.jpg',
+        'talk': 'Search Engines with Python and Elasticsearch',
+        'tag': 'web',
+        'abstract': gettext('<p>A search engine is a software responsible for search into large amounts of data. Often,'
+                            ' involved algorithms are complex and their architecture are not trivial. In this scenario,'
+                            ' Elasticsearch appears as a great solution to solve the indexing and searching tasks. In '
+                            'this talk I will show how Elasticsearch and Python can make the development of search '
+                            'engines more easier. Also, I will show how Python can be used to build Web Crawlers and '
+                            'Scrapers and how to send gathered data from the web to be indexed in Elasticsearch."</p>'),
     },
     {
         'name': 'Maciej Szulik',
