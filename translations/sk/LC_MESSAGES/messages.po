@@ -830,7 +830,15 @@ msgstr ""
 msgid "List of talks at PyCon SK 2018"
 msgstr ""
 
-#: templates/schedule.html:9
+#: templates/speakers.html:8
+msgid "Want to be listed on this page?"
+msgstr "Chcete byť zobrazený na tejto stránke?"
+
+#: templates/speakers.html:9
+msgid "Submit a talk"
+msgstr "Pošlite nám návrh na prednášku"
+
+#: templates/speakers.html:22
 msgid ""
 "All proposed talks are under review. Once we have complete list we'll "
 "publish conference schedule on this page."
