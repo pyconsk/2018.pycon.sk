@@ -1,0 +1,25 @@
+{% extends "body.html" %}
+{% block content %}
+<div class="section" id="schedule">
+  <div class="content">
+    <div class="content-text">
+
+      <h1>{{ _('List of talks at PyCon SK 2018') }}</h1>
+      <p class="lead">
+        {{ _('All proposed talks are under review. Once we have complete list we\'ll publish conference schedule on this page.') }}
+        {{ _('In the mean time you can find here the list of accepted talks and workshops.') }}
+      </p>
+
+      <div class="flex one demo">
+        {% for entry in data %}{% if entry['talk'] %}
+          <div>
+            <h3>{{ entry['talk'] }}<span class="label {{ entry['tag']|lower }}">{{ entry['tag'] }}</span><br /><small>{{ entry['name'] }} ({{ entry['country']}})</small></h3>
+            {% autoescape false %}{{ entry['abstract'] }}{% endautoescape %}
+          </div>
+        {% endif %}{% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

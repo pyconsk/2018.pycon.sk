@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-24 23:32+0100\n"
+"POT-Creation-Date: 2018-01-27 13:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -54,79 +54,83 @@ msgid "Tickets"
 msgstr ""
 
 #: templates/body.html:61
-msgid "Speakers"
+msgid "Schedule"
 msgstr ""
 
 #: templates/body.html:64
+msgid "Speaker's list"
+msgstr ""
+
+#: templates/body.html:66
 msgid "Call for Proposals"
 msgstr ""
 
-#: templates/body.html:68 templates/coc.html:6
+#: templates/body.html:70 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/body.html:69
+#: templates/body.html:71
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:108
+#: templates/body.html:110
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:110
+#: templates/body.html:112
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:115
+#: templates/body.html:117
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
 " the %(psf)s."
 msgstr ""
 
-#: templates/body.html:117
+#: templates/body.html:119
 msgid "Python Software foundation"
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:120
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:121
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:122
+#: templates/body.html:124
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:129
+#: templates/body.html:131
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "mining Monero."
 msgstr ""
 
-#: templates/body.html:130
+#: templates/body.html:132
 msgid "You can support us by mining Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:131
+#: templates/body.html:133
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:132
+#: templates/body.html:134
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:133
+#: templates/body.html:135
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:133
+#: templates/body.html:135
 msgid "Total"
 msgstr ""
 
@@ -712,64 +716,20 @@ msgstr ""
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
 
-#: templates/speakers.html:19
-msgid ""
-"You might know her as That Docs Lady, and you won't be wrong! Mikey spent"
-" the better part of the last 10 years documenting super-geeky enterprise "
-"software, most recently for OpenStack Platform at Red Hat. She is also a "
-"community lead for Write the Docs, Django Girls alumni, and documentation"
-" coach for open-source projects.<br />\n"
-"      Since crash-landing on open-source planet in 2013, Mikey presented "
-"talks and wrote articles about docs, DevOps, and community. She also runs"
-" documentation workshops, hackfests, and sprints at developer events, "
-"primarily for the Python and Django communities but also Fedora, Plone, "
-"KDE, and NixOS."
+#: templates/schedule.html:7
+msgid "List of talks at PyCon SK 2018"
 msgstr ""
 
-#: templates/speakers.html:33
+#: templates/schedule.html:9
 msgid ""
-"Gareth has been working with DevOps organisations and DevOps tools like "
-"monitoring systems for over 13 years. Gareth would like to share his "
-"experience of running containers in production from the early days to "
-"scaling and operating in cloud environments. The pains and strains of "
-"previous decisions and our successes with The Autopilot Pattern and "
-"ultimately developing the Concierge Paradigm to drastically simplify "
-"containers at scale."
+"All proposed talks are under review. Once we have complete list we'll "
+"publish conference schedule on this page."
 msgstr ""
 
-#: templates/speakers.html:45
-msgid "I was paid to kill people. I quit the job."
-msgstr ""
-
-#: templates/speakers.html:58
+#: templates/schedule.html:10
 msgid ""
-"Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
-" data consulting company called Kjamistan in Berlin, Germany and loves to"
-" rant about data analysis, natural language processing, ethical machine "
-"learning and automation workflows. When she's not ranting, she's likely "
-"cooking or maybe taking photos, or quite possibly reading and retweeting "
-"other rants on Twitter."
-msgstr ""
-
-#: templates/speakers.html:75
-msgid ""
-"Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
-" host and founder of the two most popular Python podcasts: Talk Python To"
-" Me and Python Bytes. He teaches online courses for developers through "
-"his business Talk Python Training. Michael loves to help fellow "
-"podcasters and developers make their way in the world. Connect with him "
-"on Twitter via @mkennedy and check out his podcasts as "
-"https://talkpython.fm and https://pythonbytes.fm."
-msgstr ""
-
-#: templates/speakers.html:87
-msgid ""
-"Maciej is a passionate developer with over 10 years of experience in many"
-" languages. Currently, he is hacking on bugs.python.org and CPython's "
-"IMAP library by night. Whereas in the light of day, he's working on "
-"OpenShift and Kubernetes for Red Hat. In his spare time he organizes "
-"PyCon PL, helps reviewing talks for PyCon, talks at various events and "
-"meet ups around Europe."
+"In the mean time you can find here the list of accepted talks and "
+"workshops."
 msgstr ""
 
 #: templates/sponsoring.html:7
@@ -1312,5 +1272,93 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Submit a talk"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You might know her as That Docs"
+#~ " Lady, and you won't be wrong! "
+#~ "Mikey spent the better part of the"
+#~ " last 10 years documenting super-"
+#~ "geeky enterprise software, most recently "
+#~ "for OpenStack Platform at Red Hat. "
+#~ "She is also a community lead for"
+#~ " Write the Docs, Django Girls alumni,"
+#~ " and documentation coach for open-"
+#~ "source projects.<br />\n"
+#~ "      Since crash-landing on open-"
+#~ "source planet in 2013, Mikey presented"
+#~ " talks and wrote articles about docs,"
+#~ " DevOps, and community. She also runs"
+#~ " documentation workshops, hackfests, and "
+#~ "sprints at developer events, primarily "
+#~ "for the Python and Django communities"
+#~ " but also Fedora, Plone, KDE, and "
+#~ "NixOS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Gareth has been working with DevOps "
+#~ "organisations and DevOps tools like "
+#~ "monitoring systems for over 13 years."
+#~ " Gareth would like to share his "
+#~ "experience of running containers in "
+#~ "production from the early days to "
+#~ "scaling and operating in cloud "
+#~ "environments. The pains and strains of"
+#~ " previous decisions and our successes "
+#~ "with The Autopilot Pattern and "
+#~ "ultimately developing the Concierge Paradigm"
+#~ " to drastically simplify containers at "
+#~ "scale."
+#~ msgstr ""
+
+#~ msgid "I was paid to kill people. I quit the job."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Katharine Jarmul is a pythonista and "
+#~ "lover of all things Unix. She runs"
+#~ " a data consulting company called "
+#~ "Kjamistan in Berlin, Germany and loves"
+#~ " to rant about data analysis, natural"
+#~ " language processing, ethical machine "
+#~ "learning and automation workflows. When "
+#~ "she's not ranting, she's likely cooking"
+#~ " or maybe taking photos, or quite "
+#~ "possibly reading and retweeting other "
+#~ "rants on Twitter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Michael Kennedy is a technologist, "
+#~ "podcaster, and entrepreneur. He is the"
+#~ " host and founder of the two "
+#~ "most popular Python podcasts: Talk "
+#~ "Python To Me and Python Bytes. He"
+#~ " teaches online courses for developers "
+#~ "through his business Talk Python "
+#~ "Training. Michael loves to help fellow"
+#~ " podcasters and developers make their "
+#~ "way in the world. Connect with him"
+#~ " on Twitter via @mkennedy and check"
+#~ " out his podcasts as https://talkpython.fm"
+#~ " and https://pythonbytes.fm."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Maciej is a passionate developer with"
+#~ " over 10 years of experience in "
+#~ "many languages. Currently, he is hacking"
+#~ " on bugs.python.org and CPython's IMAP "
+#~ "library by night. Whereas in the "
+#~ "light of day, he's working on "
+#~ "OpenShift and Kubernetes for Red Hat."
+#~ " In his spare time he organizes "
+#~ "PyCon PL, helps reviewing talks for "
+#~ "PyCon, talks at various events and "
+#~ "meet ups around Europe."
+#~ msgstr ""
+
+#~ msgid "Speakers"
 #~ msgstr ""
 
