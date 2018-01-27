@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-01-27 20:03+0100\n"
-"PO-Revision-Date: 2018-01-11 10:33+0000\n"
+"PO-Revision-Date: 2018-01-27 20:23+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
-"Language: sk\n"
-"Language-Team: Slovak <http://preklady.python.sk/projects/pycon-"
+"Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:8
@@ -57,11 +58,11 @@ msgstr "Vstupenky"
 
 #: templates/body.html:61
 msgid "Schedule"
-msgstr ""
+msgstr "Program"
 
 #: templates/body.html:64
 msgid "Speaker's list"
-msgstr ""
+msgstr "Rečníci"
 
 #: templates/body.html:66
 msgid "Call for Proposals"
@@ -367,6 +368,8 @@ msgid ""
 "        if you believe you have something interesting to say, please "
 "contact us via email: info@pycon.sk"
 msgstr ""
+"21. januára sme ukončili možnosť prihlásiť si prednášku. Ak si myslíte, že "
+"máte čo povedať, kontaktujte nás emailom: info@pycon.sk"
 
 #: templates/cfp.html:485
 msgid "Guidelines for Proposal Submission"
@@ -695,6 +698,8 @@ msgid ""
 "enthusiasts and supporters of the\n"
 "        Python programming language."
 msgstr ""
+"PyCon SK je medzinárodná konferencia organizovaná komunitov nadšencov a "
+"podporovateľov programovacieho jazyka Python."
 
 #: templates/index.html:13
 msgid ""
@@ -828,7 +833,7 @@ msgstr ""
 
 #: templates/schedule.html:7
 msgid "List of talks at PyCon SK 2018"
-msgstr ""
+msgstr "Zoznam prednášok na PyCon SK 2018"
 
 #: templates/speakers.html:8
 msgid "Want to be listed on this page?"
@@ -843,12 +848,14 @@ msgid ""
 "All proposed talks are under review. Once we have complete list we'll "
 "publish conference schedule on this page."
 msgstr ""
+"Všetky navrhnuté prednášky práve revidujeme. Keď budeme mať hotový program "
+"konferencie zverejníme ho na tejto stránke."
 
 #: templates/schedule.html:10
 msgid ""
 "In the mean time you can find here the list of accepted talks and "
 "workshops."
-msgstr ""
+msgstr "Medzičasom tu nájdete zoznam prijatých prednášok a workshopov."
 
 #: templates/sponsoring.html:7
 msgid "We need you — PyCon SK 2018 in Bratislava seeks for sponsors and partners!"
@@ -1627,4 +1634,3 @@ msgstr ""
 
 #~ msgid "Speakers"
 #~ msgstr ""
-
