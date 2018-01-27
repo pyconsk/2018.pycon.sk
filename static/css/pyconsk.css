@@ -222,12 +222,20 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
   background-color: red;
 }
 
+.generic {
+  background-color: green;
+}
+
 .devops {
   background-color: blue;
 }
 
 .security {
   background-color: black;
+}
+
+.web {
+  background-color: yellow;
 }
 
 .other {

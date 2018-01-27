@@ -3068,7 +3068,7 @@ nav {
 }
 
 .section, .section#home, .section#venue, .section#sponsoring, .section#sponsors, .section#cfp, .section#coc,
-.section#news, .section#tickets, .section#volunteers, .section#references, .section#speakers {
+.section#schedule, .section#tickets, .section#volunteers, .section#references, .section#speakers {
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -3100,7 +3100,7 @@ nav {
   background-image: url('/static/img/backgrounds/snake.jpg');
 }
 
-.section#news {
+.section#schedule {
   background-image: url('/static/img/backgrounds/hall.jpg');
 }
 
@@ -3211,7 +3211,7 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
   padding: 6px;
 }
 
-.sdesc .text-justify {
+.sdesc .text-justify, .sdesc p {
   font-size: 12px;
 }
 
@@ -3232,6 +3232,31 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
   max-width: 100%;
   max-height: 100%;
 }
+
+.ai {
+  background-color: red;
+}
+
+.generic {
+  background-color: green;
+}
+
+.devops {
+  background-color: blue;
+}
+
+.security {
+  background-color: black;
+}
+
+.web {
+  background-color: yellow;
+}
+
+.other {
+  background-color: orange;
+}
+
 
 footer {
   display: block;
@@ -3347,7 +3372,7 @@ input.error, textarea.error, select.error {
     background-image: url('/static/img/backgrounds/snake_medium.jpg');
   }
 
-  .section#news {
+  .section#schedule {
     background-image: url('/static/img/backgrounds/hall_medium.jpg');
   }
 
@@ -3393,7 +3418,7 @@ input.error, textarea.error, select.error {
     background-image: url('/static/img/backgrounds/snake_small.jpg');
   }
 
-  .section#news {
+  .section#schedule {
     background-image: url('/static/img/backgrounds/hall_small.jpg');
   }
 
