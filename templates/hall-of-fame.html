@@ -37,8 +37,25 @@
       <p class="text-center">
       <h3>{{ _('Platinum') }}</h3>
 
-      <div class="flex one three-800 demo">
-        <div>&nbsp;</div>
+      <div class="flex one three-800 center demo">
+        <div>
+          <a href="https://exponea.com/careers/" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-exponea');trackOutboundLink('https://exponea.com/careers/');">
+            <img src="{{ url_for('static', filename='img/partners/exponea.svg') }}" alt="Exponea"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>Exponea</h3>
+                <p class="text-justify">{{ _('The Exponea platform together with knowledge, empower e-sellers to be more
+                  relevant to their customers, giving them a more efficient experience. With a team of 140+
+                  professionals operating worldwide, we work with Python, C++ and Go, Apache Kafka, MongoDB, Redis,
+                  ElasticSearch, Flask, RabbitMQ, Celery and other technologies like Docker, Kubernetes, gRPC, Sentry,
+                  Hadoop, and Apache Spark. We help clients on 5 continents get maximum value from collecting,
+                  analyzing, and acting upon customer interactions. And yes, we\'re hiring.') }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
         <div>
           <a href="https://www.python.org/psf" target="_blank" class="sbox"
              onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-python-software-foundation');trackOutboundLink('https://www.python.org/psf');">
@@ -48,15 +65,13 @@
               <div class="sdesc">
                 <h3>Python Software Foundation</h3>
                 <p class="text-justify">{{ _('The Python Software Foundation is a 501(c)(3) nonprofit dedicated to
-                  advancing
-                  and promoting Python. The PSF supports and encourages Python events world-wide to advance its mission
-                  of growing the international community of Python programmers, and hosts the North American PyCon
-                  conference as its flagship annual event.') }}</p>
+                  advancing and promoting Python. The PSF supports and encourages Python events world-wide to advance
+                  its mission of growing the international community of Python programmers, and hosts the North American
+                  PyCon conference as its flagship annual event.') }}</p>
               </div>
             </div>
           </a>
         </div>
-        <div>&nbsp;</div>
       </div>
       </p>
 
@@ -134,7 +149,9 @@
             <div class="sbox-inner">
               <div class="sdesc">
                 <h3>Startitup</h3>
-                <p class="text-justify">{{ _('Startitup is one of the most popular and progressive growing tech/startup websites in Slovakia and Czech republic, which informs, inspires and entertains the digital generation. Startitup is well known as one of the most credible, independent media in Slovakia.') }}
+                <p class="text-justify">{{ _('Startitup is one of the most popular and progressive growing tech/startup
+                  websites in Slovakia and Czech republic, which informs, inspires and entertains the digital
+                  generation. Startitup is well known as one of the most credible, independent media in Slovakia.') }}
                 </p>
               </div>
             </div>
@@ -237,7 +254,7 @@
         Christoph Schindler<br/>
         Stefan Zimmermann - zimmermann::code<br/>
         Lubos Medovarsky - Accelera Networks s.r.o.<br/>
-        Ivan Rychagov<br />
+        Ivan Rychagov<br/>
         Michal Krondiak - Rhodium Investments Ltd
       </p>
     </div>
