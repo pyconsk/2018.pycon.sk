@@ -102,6 +102,29 @@ DATA = (
 
     },
     {
+        'name': 'Alex Ellis',
+        'bio': gettext('Alex Ellis is a Docker Captain, the lead and author of the award-winning open-source serverless project OpenFaaS. Alex has 12 years of experience writing enterprise software and scaling distributed systems for over 500k clients. He is well known in the cloud and container community where he mentors and writes on all things tech from Docker to Raspberry Pi.'),
+        'country': 'UK',
+        'url': 'https://www.openfaas.com/',
+        'avatar': 'img/speakers/alex_ellis.jpg',
+        'talk': 'FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere',
+        'tag': 'devops',
+        'abstract': gettext('<p>OpenFaaS (Functions as a Service) makes building serverless functions simple by using '
+                            'containers to avoid vendor-lock-in. That means you can run your functions on your own '
+                            'terms - anywhere.</p>'
+                            '<p>This talk introduces the OpenFaaS project, how to build functions and then explores '
+                            'real-world examples of how and why people are leveraging an event-driven architecture for '
+                            'data science, cancer research and automation on-premise.</p>'
+                            '<p>You can deploy OpenFaaS in 60 seconds on Kubernetes and other orchestrators through '
+                            'the extensible architecture. Functions can then be built using code templates for your '
+                            'favourite programming language or deployed directly from the community Function Store. '
+                            'The project focuses on ease of use through its UI and CLI which can be used to test and '
+                            'monitor functions. Observability and auto-scaling for demand are provided through '
+                            'integrations with Prometheus and AlertManager.</p>'
+                            '<p>OpenFaaS won Best Cloud Computing Software 2017 from InfoWorld and has a thriving '
+                            'community with 70 contributors, 1500 commits and over 9k stars.</p>'),
+    },
+    {
         'name': 'Peter Garaj',
         'bio': gettext('I was paid to kill people. I quit the job.'),
         'country': 'SK',
@@ -208,6 +231,20 @@ DATA = (
                             'this talk I will show how Elasticsearch and Python can make the development of search '
                             'engines more easier. Also, I will show how Python can be used to build Web Crawlers and '
                             'Scrapers and how to send gathered data from the web to be indexed in Elasticsearch."</p>'),
+    },
+    {
+        'name': 'Alejandro Saucedo',
+        'bio': gettext('Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen Technologies, a Machine Learning LegalTech company, leading 10+ ML and DevOps engineers in London and New York. Alejandro is also the Founder and CTO at Exponential Technologies, a ML consultancy that tackles challenges in industrial sectors. In his previous lives he co-founded HackTrain, a technology consultancy that operated in the railway sector, worked as a Full-stack software developer at Bloomberg LP, and started HackaGlobal which is a global NGO that created multiple hackathon communities around the world that are still active to date.'),
+        'country': 'UK',
+        'url': 'http://e-x.io/',
+        'avatar': 'img/speakers/alejandro_saucedo.jpg',
+        'talk': 'Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python',
+        'tag': 'ai',
+        'abstract': gettext('<p>This talk would provide useful and practical understanding on how to build '
+                            'industry-ready machine learning models in python through distributed, '
+                            'horizontally-scalable architectures. I will include why and when these architectures are '
+                            'required, best practices, caveats, technologies to use them, and a practical '
+                            'implementation using celery + rabbitmq.</p>'),
     },
     {
         'name': 'Maciej Szulik',

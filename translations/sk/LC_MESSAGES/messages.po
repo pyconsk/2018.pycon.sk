@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-27 22:20+0100\n"
+"POT-Creation-Date: 2018-01-28 20:58+0100\n"
 "PO-Revision-Date: 2018-01-27 21:14+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -90,10 +90,39 @@ msgid ""
 msgstr ""
 
 #: views.py:106
-msgid "I was paid to kill people. I quit the job."
+msgid ""
+"Alex Ellis is a Docker Captain, the lead and author of the award-winning "
+"open-source serverless project OpenFaaS. Alex has 12 years of experience "
+"writing enterprise software and scaling distributed systems for over 500k"
+" clients. He is well known in the cloud and container community where he "
+"mentors and writes on all things tech from Docker to Raspberry Pi."
 msgstr ""
 
 #: views.py:112
+msgid ""
+"<p>OpenFaaS (Functions as a Service) makes building serverless functions "
+"simple by using containers to avoid vendor-lock-in. That means you can "
+"run your functions on your own terms - anywhere.</p><p>This talk "
+"introduces the OpenFaaS project, how to build functions and then explores"
+" real-world examples of how and why people are leveraging an event-driven"
+" architecture for data science, cancer research and automation on-"
+"premise.</p><p>You can deploy OpenFaaS in 60 seconds on Kubernetes and "
+"other orchestrators through the extensible architecture. Functions can "
+"then be built using code templates for your favourite programming "
+"language or deployed directly from the community Function Store. The "
+"project focuses on ease of use through its UI and CLI which can be used "
+"to test and monitor functions. Observability and auto-scaling for demand "
+"are provided through integrations with Prometheus and "
+"AlertManager.</p><p>OpenFaaS won Best Cloud Computing Software 2017 from "
+"InfoWorld and has a thriving community with 70 contributors, 1500 commits"
+" and over 9k stars.</p>"
+msgstr ""
+
+#: views.py:129
+msgid "I was paid to kill people. I quit the job."
+msgstr ""
+
+#: views.py:135
 msgid ""
 "<p>Cvičenie LOCKED SHIELDS je organizované Centrom výnimočnosti pre "
 "oblasť kybernetickej obrany (CCD CoE). Jedným s jeho počinov je cvičenie "
@@ -104,7 +133,7 @@ msgid ""
 "kybernetická elita cvičí na zásah proti kybernarušiteľom.</p>"
 msgstr ""
 
-#: views.py:121
+#: views.py:144
 msgid ""
 "Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
 " data consulting company called Kjamistan in Berlin, Germany and loves to"
@@ -114,7 +143,7 @@ msgid ""
 "other rants on Twitter."
 msgstr ""
 
-#: views.py:127
+#: views.py:150
 msgid ""
 "<p>In this half-day workshop, we'll take a walk through a Kaggle "
 "competition on house prices to explore our dataset. Then, we'll build a "
@@ -127,7 +156,7 @@ msgid ""
 "work.</p><p>GitHub Repo: https://github.com/kjam/intro-to-ml</p>"
 msgstr ""
 
-#: views.py:139
+#: views.py:162
 msgid ""
 "Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
 " host and founder of the two most popular Python podcasts: Talk Python To"
@@ -138,11 +167,11 @@ msgid ""
 "https://talkpython.fm and https://pythonbytes.fm."
 msgstr ""
 
-#: views.py:145
+#: views.py:168
 msgid "TBD"
 msgstr ""
 
-#: views.py:149
+#: views.py:172
 msgid ""
 "Rae Knowler is a web developer in Zürich, where they develop product data"
 " APIs and work on Open Data projects. They are interested in the "
@@ -151,7 +180,7 @@ msgid ""
 "time they read a lot of science fiction and hug cats."
 msgstr ""
 
-#: views.py:158
+#: views.py:181
 msgid ""
 "<p>The default settings of some libraries and tools are so useless, or "
 "even dangerous, that they should never be used. While they give the "
@@ -160,7 +189,7 @@ msgid ""
 "such defaults, and explore how to create tools with good_defaults.</p>"
 msgstr ""
 
-#: views.py:166
+#: views.py:189
 msgid ""
 "Ryan is currently in the middle of his practice-led PhD researching "
 "communication and collaboration in live coding ensembles through software"
@@ -174,11 +203,11 @@ msgid ""
 "generally making a lot of noise."
 msgstr ""
 
-#: views.py:177
+#: views.py:200
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:179
+#: views.py:202
 msgid ""
 "<p>In this talk I will introduce the topic of live coding; the "
 "interactive programming experience for generating audio and visuals but "
@@ -196,7 +225,7 @@ msgid ""
 "part performance."
 msgstr ""
 
-#: views.py:195
+#: views.py:218
 msgid ""
 "Patricia is a Python developer working at Olist, a brazilian marketplace "
 "services platform. She started developing web applications in 2010 and "
@@ -206,7 +235,7 @@ msgid ""
 "TechLadies Brazil."
 msgstr ""
 
-#: views.py:205
+#: views.py:228
 msgid ""
 "<p>A search engine is a software responsible for search into large "
 "amounts of data. Often, involved algorithms are complex and their "
@@ -218,7 +247,30 @@ msgid ""
 "web to be indexed in Elasticsearch.\"</p>"
 msgstr ""
 
-#: views.py:214
+#: views.py:237
+msgid ""
+"Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen "
+"Technologies, a Machine Learning LegalTech company, leading 10+ ML and "
+"DevOps engineers in London and New York. Alejandro is also the Founder "
+"and CTO at Exponential Technologies, a ML consultancy that tackles "
+"challenges in industrial sectors. In his previous lives he co-founded "
+"HackTrain, a technology consultancy that operated in the railway sector, "
+"worked as a Full-stack software developer at Bloomberg LP, and started "
+"HackaGlobal which is a global NGO that created multiple hackathon "
+"communities around the world that are still active to date."
+msgstr ""
+
+#: views.py:243
+msgid ""
+"<p>This talk would provide useful and practical understanding on how to "
+"build industry-ready machine learning models in python through "
+"distributed, horizontally-scalable architectures. I will include why and "
+"when these architectures are required, best practices, caveats, "
+"technologies to use them, and a practical implementation using celery + "
+"rabbitmq.</p>"
+msgstr ""
+
+#: views.py:251
 msgid ""
 "Maciej is a passionate developer with over 10 years of experience in many"
 " languages. Currently, he is hacking on bugs.python.org and CPython's "
@@ -228,7 +280,7 @@ msgid ""
 "meet ups around Europe."
 msgstr ""
 
-#: views.py:220
+#: views.py:257
 msgid ""
 "<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others "
 "are investinga lot of time and effort into improving Kubernetes.  I bet, "
@@ -255,7 +307,7 @@ msgid ""
 "from scratch.</p>"
 msgstr ""
 
-#: views.py:268
+#: views.py:305
 msgid "PyCon SK"
 msgstr ""
 
