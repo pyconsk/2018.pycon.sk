@@ -10,17 +10,25 @@
 
         {% for entry in data %}
           <div>
-            <a href="{{ entry['url'] }}" target="_blank" class="sbox-transparent" {% if entry['url'] != '#' %}
-               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['url'] }}');"{% endif %}>
-              <img src="{{ url_for('static', filename=entry['avatar']) }}" alt=""
-                   class="sspeaker img-responsive center-block"/>
-              <div class="sbox-inner">
-                <div class="sdesc">
-                  <h3>{{ entry['name'] }} <small>({{ entry['country']}})</small></h3>
-                  <p class="text-justify">{% autoescape false %}{{ entry['bio'] }}{% endautoescape %}</p>
-                </div>
-              </div>
-            </a>
+            <article class="card">
+              {% if entry['url'] != '#' %}
+              <a href="{{ entry['url'] }}" target="_blank"
+               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['url'] }}');">
+              {% endif %}
+                <img src="{{ url_for('static', filename=entry['avatar']) }}" class="img-responsive center-block">
+              {% if entry['url'] != '#' %}</a>{% endif %}
+              <footer>
+                <h3>
+                  {% if entry['url'] != '#' %}
+              <a href="{{ entry['url'] }}" target="_blank"
+               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['url'] }}');">
+              {% endif %}
+                  {{ entry['name'] }}
+              {% if entry['url'] != '#' %}</a>{% endif %}
+                  <small>({{ entry['country']}})</small></h3>
+                <p class="text-justify">{% autoescape false %}{{ entry['bio'] }}{% endautoescape %}</p>
+              </footer>
+            </article>
           </div>
         {% endfor %}
 
