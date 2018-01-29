@@ -42,6 +42,15 @@ LDJSON = {
     ]
 }
 
+TAGS = {
+    'ai': 'AI',
+    'devops': 'DevOps',
+    'generic': 'Generic',
+    'security': 'Security',
+    'other': 'Other',
+    'web': 'Web',
+}
+
 DATA = (
     {
         'name': 'Mikey Ariel',
@@ -57,7 +66,7 @@ DATA = (
         'url': 'http://docsideofthemoon.com/',
         'avatar': 'img/speakers/mikey_ariel.jpg',
         'talk': gettext('Docs or it didn\'t happen'),
-        'tag': 'other',
+        'tag': TAGS['other'],
         'abstract': gettext('<p>If you ever skimmed through a README, tried to follow a quickstart tutorial, '
                             'attempted to decipher an error message, or typed \'--help\' in your terminal, '
                             'congratulations -- you have encountered documentation!</p>'
@@ -87,7 +96,7 @@ DATA = (
         'url': 'http://www.mesoform.com',
         'avatar': 'img/speakers/no_avatar.svg',
         'talk': gettext('The Concierge Paradigm'),
-        'tag': 'devops',
+        'tag': TAGS['devops'],
         'abstract': gettext('<p>The Concierge Paradigm idea was born over time but initially came from challenges '
                             'we had by working out how to operate scalable and enterprise-grade application '
                             'containers. This meant monitoring, logging, deploying, scaling, load-balancing and '
@@ -108,7 +117,7 @@ DATA = (
     #     'url': 'https://www.openfaas.com/',
     #     'avatar': 'img/speakers/alex_ellis.jpg',
     #     'talk': 'FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere',
-    #     'tag': 'devops',
+    #     'tag': TAGS['devops'],
     #     'abstract': gettext('<p>OpenFaaS (Functions as a Service) makes building serverless functions simple by using '
     #                         'containers to avoid vendor-lock-in. That means you can run your functions on your own '
     #                         'terms - anywhere.</p>'
@@ -131,7 +140,7 @@ DATA = (
         'url': '#',
         'avatar': 'img/speakers/no_avatar.svg',
         'talk': 'LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie',
-        'tag': 'security',
+        'tag': TAGS['security'],
         'abstract': gettext('<p>Cvičenie LOCKED SHIELDS je organizované Centrom výnimočnosti pre oblasť kybernetickej '
                             'obrany (CCD CoE). Jedným s jeho počinov je cvičenie LOCKED SHIELDS, ktoré je svojou '
                             'veľkosťou, rozsiahlosťou a zameraním jedným s najunikátnejších kybercvičení na svete.</p>'
@@ -146,7 +155,7 @@ DATA = (
         'url': 'http://kjamistan.com/',
         'avatar': 'img/speakers/katharine_jarmul.jpeg',
         'talk': 'Introduction to Machine Learning with Python',
-        'tag': 'ai',
+        'tag': TAGS['ai'],
         'abstract': gettext('<p>In this half-day workshop, we\'ll take a walk through a Kaggle competition on house '
                             'prices to explore our dataset. Then, we\'ll build a model to submit our predictions to '
                             'Kaggle. Finally, we\'ll introspect what our model has learned. By the end of the course, '
@@ -177,7 +186,7 @@ DATA = (
         'url': 'http://raeknowler.com',
         'avatar': 'img/speakers/rae_knowler.jpg',
         'talk': 'Unsafe at Any Speed',
-        'tag': 'generic',
+        'tag': TAGS['generic'],
         'abstract': gettext('<p>The default settings of some libraries and tools are so useless, or even dangerous, '
                             'that they should never be used. While they give the impression of being easy to use or '
                             'performant, they actually represent traps for the unwary user. I will show the concrete '
@@ -198,7 +207,7 @@ DATA = (
         'url': '#',
         'avatar': 'img/speakers/no_avatar.svg',
         'talk': gettext('Programming Python as performance: live coding with FoxDot'),
-        'tag': 'other',
+        'tag': TAGS['other'],
         'abstract': gettext('<p>In this talk I will introduce the topic of live coding; the interactive programming'
                             ' experience for generating audio and visuals but this talk will mainly focus on audio.'
                             ' Live coders use programming languages to describe rules for generating music but then'
@@ -224,7 +233,7 @@ DATA = (
         'url': 'https://github.com/pattyvader',
         'avatar': 'img/speakers/patricia_regina.jpg',
         'talk': 'Search Engines with Python and Elasticsearch',
-        'tag': 'web',
+        'tag': TAGS['web'],
         'abstract': gettext('<p>A search engine is a software responsible for search into large amounts of data. Often,'
                             ' involved algorithms are complex and their architecture are not trivial. In this scenario,'
                             ' Elasticsearch appears as a great solution to solve the indexing and searching tasks. In '
@@ -239,7 +248,7 @@ DATA = (
         'url': 'http://e-x.io/',
         'avatar': 'img/speakers/alejandro_saucedo.jpg',
         'talk': 'Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python',
-        'tag': 'ai',
+        'tag': TAGS['ai'],
         'abstract': gettext('<p>This talk would provide useful and practical understanding on how to build '
                             'industry-ready machine learning models in python through distributed, '
                             'horizontally-scalable architectures. I will include why and when these architectures are '
@@ -253,7 +262,7 @@ DATA = (
         'url': '',
         'avatar': 'img/speakers/maciej_szulik.png',
         'talk': 'Effectively running python applications in Kubernetes/OpenShift',
-        'tag': 'devops',
+        'tag': TAGS['devops'],
         'abstract': gettext('<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others are investing'
                             'a lot of time and effort into improving Kubernetes.  I bet, you have encountered'
                             'that name at least once in the past twelve months, either on Hacker News, Reddit,'
