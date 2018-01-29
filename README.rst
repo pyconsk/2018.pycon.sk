@@ -88,7 +88,7 @@ Stylesheets
 For grids and base layout we use `Picnic CSS <https://picnicss.com/>`_, our design is stored in pyconsk.css stylesheet. Both files are merged and minimized via `YUI Compressor <https://yui.github.io/yuicompressor/>`_::
 
     cat picnic.css pyconsk.css > stylesheet.css
-    java yuicompressor.jar stylesheet.css -o stylesheet.min.css
+    java -jar yuicompressor.jar stylesheet.css -o stylesheet.min.css
 
 
 Links
