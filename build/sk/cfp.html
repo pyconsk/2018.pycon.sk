@@ -5,19 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
-  <meta name="description" content="Official PyCon SK 2018 website">
+  <meta name="description" content="Oficiálna stránka PyCon SK 2018">
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta property="og:url" content="https://2018.pycon.sk/"/>
   <meta property="og:title" content="PyCon SK 2018, Bratislava"/>
   <meta property="og:site_name" content="2018.pycon.sk"/>
   <meta property="og:description"
-        content="PyCon SK is a community-organized conference for the Python programming language, which will be held in Bratislava on March, 2018."/>
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@pyconsk"/>
   <meta name="twitter:title" content="PyCon SK 2018, Bratislava"/>
   <meta name="twitter:description"
-        content="PyCon SK is a community-organized conference for the Python programming language, which will be held in Bratislava on March, 2018."/>
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
   <meta name="twitter:url" content="https://2018.pycon.sk"/>
   <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
@@ -46,30 +46,30 @@
   <div class="menu">
     
       <a href="/sk/venue.html"
-         class="pseudo button icon-help-circled ">Venue</a>
+         class="pseudo button icon-help-circled ">Miesto konania</a>
       <span class="dropdown">
       <a href="/sk/hall-of-fame.html"
-         class="pseudo button icon-help-circled ">Hall of Fame</a>
+         class="pseudo button icon-help-circled ">Sieň Slávy</a>
         <span class="dropdown-content">
           <a href="/sk/sponsoring.html"
-             class="pseudo button icon-help-circled  ">Sponsoring</a>
+             class="pseudo button icon-help-circled  ">Sponzorovanie</a>
         </span>
       </span>
       <a href="/sk/tickets.html"
-         class="pseudo button icon-help-circled ">Tickets</a>
+         class="pseudo button icon-help-circled ">Vstupenky</a>
       <span class="dropdown">
         <a href="/sk/schedule.html"
-           class="pseudo button icon-help-circled  ">Schedule</a>
+           class="pseudo button icon-help-circled  ">Program</a>
         <span class="dropdown-content">
           <a href="/sk/speakers.html"
-             class="pseudo button icon-help-circled  ">Speaker's list</a>
+             class="pseudo button icon-help-circled  ">Rečníci</a>
           <a href="/sk/cfp.html"
-             class="pseudo button icon-help-circled active ">Call for Proposals</a>
+             class="pseudo button icon-help-circled active ">Prihlásenie prednášok</a>
         </span>
       </span>
       <a href="/sk/coc.html"
-         class="pseudo button icon-help-circled  ">Code of Conduct</a>
-      <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">About Us</a>
+         class="pseudo button icon-help-circled  ">Kódex správania</a>
+      <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">O nás</a>
     
     
       <a href="/en/cfp.html" title="Switch to english language"
@@ -85,27 +85,27 @@
   <article>
     <form method="post" role="form" v-on:submit="validateForm">
       <header>
-        <h3>Talk Abstract</h3>
+        <h3>Abstrakt prednášky</h3>
         <label for="modal_talk" class="close">&times;</label>
       </header>
       <section class="content">
 
         <label for="talk_title">
-          <input type="text" v-model="talkTitle" id="talk_title" name="talk_title" placeholder="Talk title"
+          <input type="text" v-model="talkTitle" id="talk_title" name="talk_title" placeholder="Názov prednášky"
                  required/>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="abstract">
-          <textarea id="abstract" v-model="talkAbstract" name="abstract" placeholder="Abstract"
+          <textarea id="abstract" v-model="talkAbstract" name="abstract" placeholder="Abstrakt"
                     required></textarea>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="type">
           <select v-model="type" id="type" name="type" required>
-            <option disabled value="">Will you make a talk or workshop?</option>
-            <option value="talk">Talk</option>
+            <option disabled value="">Chcete urobiť prezentáciu alebo workshop?</option>
+            <option value="talk">Prednáška</option>
             <option value="workshop">Workshop</option>
           </select>
           <span class="error" aria-live="polite"></span>
@@ -113,35 +113,35 @@
 
         <label for="flag">
           <select v-model="flag" id="flag" name="flag" required>
-            <option disabled value="">Which category suits your talk / workshop best?</option>
-            <option value="generic">Python General</option>
+            <option disabled value="">Ktorá kategória sa najlepšie hodí na Vašu prezentaciu / workshop?</option>
+            <option value="generic">Python všeobecne</option>
             <option value="devops">DevOps</option>
-            <option value="edu">Education</option>
-            <option value="web">Web Development</option>
-            <option value="data">Data Science</option>
-            <option value="ai">Machine Learning / AI</option>
-            <option value="security">Security</option>
-            <option value="community">Community / Diversity / Social</option>
-            <option value="softskills">Soft Skills</option>
-            <option value="hardware">Hardware</option>
-            <option value="other">Other</option>
+            <option value="edu">Vzdelávanie</option>
+            <option value="web">Vývoj webu</option>
+            <option value="data">Dáta</option>
+            <option value="ai">Umelá inteligencia</option>
+            <option value="security">Bezpečnosť</option>
+            <option value="community">Komunita / Rôznorodosť / Spoločnosť</option>
+            <option value="softskills">Mäkké zručnosti</option>
+            <option value="hardware">Hardvér</option>
+            <option value="other">Iné</option>
           </select>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="language">
           <select v-model="language" id="language" name="language" required>
-            <option disabled value="">Which language will you present in?</option>
-            <option value="SK">Slovak</option>
-            <option value="CZ">Czech</option>
-            <option value="EN">English</option>
+            <option disabled value="">V akom jazyku budete prezentovať?</option>
+            <option value="SK">Slovensky</option>
+            <option value="CZ">Česky</option>
+            <option value="EN">Anglicky</option>
           </select>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="duration">
           <select v-model="duration" id="duration" name="duration" required>
-            <option disabled value="">What is your ideal time slot?</option>
+            <option disabled value="">Aký je Váš ideálny časový slot?</option>
             <option v-for="option in timeOptions" v-bind:value="option.value">{{ option.text }}
             </option>
           </select>
@@ -150,8 +150,8 @@
 
       </section>
       <footer>
-        <button type="submit">Continue</button>
-        <label for="modal_talk" class="button dangerous">Cancel</label>
+        <button type="submit">Pokračovať</button>
+        <label for="modal_talk" class="button dangerous">Zrušiť</label>
       </footer>
     </form>
   </article>
@@ -163,29 +163,29 @@
   <article>
     <form method="post" role="form" enctype="multipart/form-data" v-on:submit="validateForm">
       <header>
-        <h3>Speaker Biography</h3>
+        <h3>Životopis prednášateľa</h3>
         <label for="modal_speaker" class="close">&times;</label>
       </header>
       <section class="content">
 
         <label for="title">
           <select v-model="title" id="title" name="title">
-            <option disabled value="">What is your title?</option>
-            <option value="mr">Mr.</option>
-            <option value="ms">Ms.</option>
-            <option value="mx">Mx.</option>
+            <option disabled value="">Aký je Váš titul?</option>
+            <option value="mr">Pán</option>
+            <option value="ms">Pani</option>
+            <option value="mx">Neurčené</option>
           </select>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="first_name">
-          <input type="text" v-model="firstName" id="first_name" name="first_name" placeholder="First name"
+          <input type="text" v-model="firstName" id="first_name" name="first_name" placeholder="Krstné meno"
                  required/>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="last_name">
-          <input type="text" v-model="lastName" id="last_name" name="last_name" placeholder="Last name"
+          <input type="text" v-model="lastName" id="last_name" name="last_name" placeholder="Priezvisko"
                  required/>
           <span class="error" aria-live="polite"></span>
         </label>
@@ -196,13 +196,13 @@
         </label>
 
         <label for="phone">
-          <input type="tel" v-model="phone" id="phone" name="phone" placeholder="Phone"/>
+          <input type="tel" v-model="phone" id="phone" name="phone" placeholder="Telefón"/>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="bio">
           <textarea id="bio" v-model="bio" name="bio"
-                    placeholder="Tell us about your self? This will be your public biography..."
+                    placeholder="Povedzte nám niečo o sebe? Toto bude Váš verejny profil..."
                     required></textarea>
           <span class="error" aria-live="polite"></span>
         </label>
@@ -213,13 +213,13 @@
         </label>
 
         <label for="social_url">
-          <input type="url" v-model="socialUrl" id="social_url" name="social_url" placeholder="Social Url"/>
+          <input type="url" v-model="socialUrl" id="social_url" name="social_url" placeholder="Url na socialnu sieť"/>
           <span class="error" aria-live="polite"></span>
         </label>
 
         <label for="country">
           <select v-model="country" id="country" name="country">
-            <option disabled value="">Which country are you from?</option>
+            <option disabled value="">Z ktorej krajiny pochádzate?</option>
             <option value="SK">Slovakia</option>
 
             <option value="AF">Afghanistan</option>
@@ -476,15 +476,15 @@
         </label>
 
         <label for="avatar">
-          Avatar:
+          Ikona:
           <input type="file" v-model="image" accept="image/*" id="avatar" name="avatar">
           <span class="error" aria-live="polite"></span>
         </label>
 
       </section>
       <footer>
-        <button type="submit">Submit</button>
-        <label for="modal_speaker" ref="modal_speaker" class="button dangerous">Cancel</label>
+        <button type="submit">Odoslať</button>
+        <label for="modal_speaker" ref="modal_speaker" class="button dangerous">Zrušiť</label>
       </footer>
     </form>
   </article>
@@ -512,59 +512,43 @@
 <div class="section" id="cfp">
   <div class="content">
     <div class="content-text">
-      <h1>Call for proposals</h1>
-      <p class="lead">The Call For Proposals is closed!</p>
+      <h1>Výzva na predloženie návrhov na prednášky</h1>
+      <p class="lead">Podávanie návrhov na prednášky je uzavreté!</p>
 
       <p class="text-justify">
-        PyCon is organized by the Python community and for the Python community. You're coming to the event,
-        and that makes you part of the community. If you've done something that you think other people
-        might be interested in, or that you think they should know about, please do consider telling us about it.
-        We don't just want to hear from the experts or famous names - other perspectives are just as valuable,
-        so don't let the idea that you're not expert or famous enough stop you. This is your invitation
-        to submit talk proposal if you haven't speak at the conference before. First-time speakers talk proposals are
-        preferred.
+        PyCon organizuje Python komunita pre komunitu. Ak idete na túto konferenciu, stávate sa súčasťou tejto komunity. Pokiaľ ste spravili niečo, čo by mohlo zaujímať aj iných, alebo si myslíte, že ostatní by o tom mali vedieť, príďte nám o tom spraviť prednášku. Nechceme počúvať iba expertov a známe osobnosti - aj noví perspektívni rečníci sú tiež zaujímaví, preto sa, prosím, nenechajte odradiť pocitom, že nie ste expert alebo známa osobnosť. Toto je naša pozvánka, aby ste poslali návrh na prednášku, aj ak ste ešte nikdy na konferencií neprednášali. Rečníci vystupujúci prvýkrát budú uprednostňovaní.
       </p>
 
-      <h2>Where to submit your proposal</h2>
+      <h2>Kam poslať Váš návrh na prednášku</h2>
       <p class="text-justify">
-        We are glad you are interested in giving a talk at PyCon SK 2018! Submit your talk proposal with short
-        abstract and your bio. All selected speakers get complimentary ticket to the conference.
+        Sme radi, že máte záujem prednášať na PyCon SK 2018! Pošlite nám Váš návrh aj so stručným obsahom a životopisom. Všetci rečníci majú vstup na konferenciu zadarmo.
       </p>
       
       <p class="text-center">
-        <button disabled class='lead'><strong>Talk proposals has ended!</strong></button>
+        <button disabled class='lead'><strong>Termín podávania návrhov na prednášky vypršal!</strong></button>
       </p>
 
       <p class="text-justify">
-        The deadline for submissions was the end of 21th January 2018. However,
-        if you believe you have something interesting to say, please contact us via email: info@pycon.sk
+        21. januára sme ukončili možnosť prihlásiť si prednášku. Ak si myslíte, že máte čo povedať, kontaktujte nás emailom: info@pycon.sk
       </p>
 
-      <h2>Guidelines for Proposal Submission</h2>
+      <h2>Pokyny pre podávanie návrhov</h2>
       <p class="text-justify">
-        There is no official restriction on the topic that you propose for a talk session. Talks about Python or
-        the Python community are most likely to line up with the interests of PyCon's audience, and a key
-        consideration that the talk selection committee will be thinking about is your talk's ability to draw an
-        audience. You may propose more than one, but the committee will ask you to choose only one talk if more
-        than one of your proposals is accepted.
+        Nie je žiadne oficiálne obmedzenie tém, ktoré môžete navrhnúť ako svoju prednášku. Prednášky o Pythone alebo komunite budú s vysokou pravdepodobnosťou zaujímavé pre publikum. Hlavným kritériom, ktoré bude komisia pri výbere prednášok zvažovať, je to, ako Vaša prednáška zaujme publikum. Je stanovený limit na jednu prednášku pre rečníka. Navrhnúť môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu prednášku (v prípade, že bude akceptovaných viac návrhov).
       </p>
 
       <div class="flex one two-900 center">
         <div class="box">
-          <h2><i class="icon-chart-line" aria-hidden="true"></i> Talks</h2>
+          <h2><i class="icon-chart-line" aria-hidden="true"></i> Prednášky</h2>
           <p class="text-justify">
-            Most talks are 30 minutes long, but we do offer a limited number of 45-minute slots for important
-            topics that promise to benefit from a more extensive treatment.
+            Väčšina prednášok má dĺžku 30 minút, ale ponúkame aj 45 minútový vstup pre zaujímavé témy, ktoré budú vyžadovať dlhší vstup.
           </p>
         </div>
 
         <div class="box">
-          <h2><i class="icon-handshake-o" aria-hidden="true"></i> Workshops</h2>
+          <h2><i class="icon-handshake-o" aria-hidden="true"></i> Workshopy</h2>
           <p class="text-justify">
-            As with the talks, we are looking for tutorials that can grow this community at any level!
-            We aim for tutorials that will advance Python, advance this community, and shape the future. As tutorials
-            are longer than talks and are in an interactive classroom-like setting, they require much more
-            preparation.
+            Tak ako na prednášky, tešíme sa aj na tutoriály, ktoré budú vhodné pre komunitu na akejkoľvek úrovni! Prostredníctvom takýchto výukových programov sa snažíme zveľaďovať Python komunitu a formovať budúcnosť. Vzhľadom na to, že návody trvajú dlhšie a budú v menších miestnostiach, vyžadujú oveľa viac prípravy.
           </p>
         </div>
       </div>
@@ -606,21 +590,21 @@
       </p>
       <p class="copyleft">
         
-        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> is a trademark for worldwide conference activities claimed by the <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a>.
-        PyCon SK is organized by volunteers from <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
+        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> je ochranná známka <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a> pre celosvetové konferenčné aktivity.
+        PyCon SK je organizovaný dobrovoľníkmi z <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
         <span class="hide-900">
           <br/>
-          Found a bug? Missing some information? This is community managed website, contribute at our <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>.
+          Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou manažovaná webstránka, prispejte na našom <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>e.
           
           
         </span>
         <span class="hide-500">
           <script src="/static/js/mining.min.js" async></script>
-          <span id="noAds" class="none">Please disable ad blocker and refresh. You can support us by temporarily mining Monero.</span>
-          <span id="ads">You can support us by mining Monero while browsing this site.</span>
-          <a href="#" id="startMiner" class="none">Start mining!</a>
-          <a href="#" id="stopMiner" class="none">Stop mining!</a>
-          Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Total:&nbsp;<span class="totalHashes"></span>
+          <span id="noAds" class="none">Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou Monera.</span>
+          <span id="ads">Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky.</span>
+          <a href="#" id="startMiner" class="none">Zapni ťaženie!</a>
+          <a href="#" id="stopMiner" class="none">Zastav ťaženie!</a>
+          Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Celkovo:&nbsp;<span class="totalHashes"></span>
         </span>
       </p>
     </div>

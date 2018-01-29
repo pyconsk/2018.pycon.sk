@@ -5,19 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
-  <meta name="description" content="Official PyCon SK 2018 website">
+  <meta name="description" content="Oficiálna stránka PyCon SK 2018">
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta property="og:url" content="https://2018.pycon.sk/"/>
   <meta property="og:title" content="PyCon SK 2018, Bratislava"/>
   <meta property="og:site_name" content="2018.pycon.sk"/>
   <meta property="og:description"
-        content="PyCon SK is a community-organized conference for the Python programming language, which will be held in Bratislava on March, 2018."/>
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@pyconsk"/>
   <meta name="twitter:title" content="PyCon SK 2018, Bratislava"/>
   <meta name="twitter:description"
-        content="PyCon SK is a community-organized conference for the Python programming language, which will be held in Bratislava on March, 2018."/>
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
   <meta name="twitter:url" content="https://2018.pycon.sk"/>
   <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
@@ -48,30 +48,30 @@
   <div class="menu">
     
       <a href="/sk/venue.html"
-         class="pseudo button icon-help-circled ">Venue</a>
+         class="pseudo button icon-help-circled ">Miesto konania</a>
       <span class="dropdown">
       <a href="/sk/hall-of-fame.html"
-         class="pseudo button icon-help-circled ">Hall of Fame</a>
+         class="pseudo button icon-help-circled ">Sieň Slávy</a>
         <span class="dropdown-content">
           <a href="/sk/sponsoring.html"
-             class="pseudo button icon-help-circled  ">Sponsoring</a>
+             class="pseudo button icon-help-circled  ">Sponzorovanie</a>
         </span>
       </span>
       <a href="/sk/tickets.html"
-         class="pseudo button icon-help-circled active">Tickets</a>
+         class="pseudo button icon-help-circled active">Vstupenky</a>
       <span class="dropdown">
         <a href="/sk/schedule.html"
-           class="pseudo button icon-help-circled  ">Schedule</a>
+           class="pseudo button icon-help-circled  ">Program</a>
         <span class="dropdown-content">
           <a href="/sk/speakers.html"
-             class="pseudo button icon-help-circled  ">Speaker's list</a>
+             class="pseudo button icon-help-circled  ">Rečníci</a>
           <a href="/sk/cfp.html"
-             class="pseudo button icon-help-circled  ">Call for Proposals</a>
+             class="pseudo button icon-help-circled  ">Prihlásenie prednášok</a>
         </span>
       </span>
       <a href="/sk/coc.html"
-         class="pseudo button icon-help-circled  ">Code of Conduct</a>
-      <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">About Us</a>
+         class="pseudo button icon-help-circled  ">Kódex správania</a>
+      <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">O nás</a>
     
     
       <a href="/en/tickets.html" title="Switch to english language"
@@ -87,28 +87,28 @@
     <article>
       <form method="post" role="form" v-on:submit="validateForm">
         <header>
-          <h3>Financial Aid</h3>
+          <h3>Finančná Pomoc</h3>
           <label for="modal_aid" class="close">&times;</label>
         </header>
         <section class="content">
 
           <label for="title">
             <select v-model="title" id="title" name="title">
-            <option disabled value="">What is your title?</option>
-            <option value="mr">Mr.</option>
-            <option value="ms">Ms.</option>
-            <option value="mx">Mx.</option>
+            <option disabled value="">Aký je Váš titul?</option>
+            <option value="mr">Pán</option>
+            <option value="ms">Pani</option>
+            <option value="mx">Neurčené</option>
           </select>
             <span class="error" aria-live="polite"></span>
           </label>
 
           <label for="first_name">
-            <input type="text" v-model="firstName" id="first_name" name="first_name" name="first_name" v-model.trim="firstName" placeholder="First name" required/>
+            <input type="text" v-model="firstName" id="first_name" name="first_name" name="first_name" v-model.trim="firstName" placeholder="Krstné meno" required/>
             <span class="error" aria-live="polite"></span>
           </label>
 
           <label for="last_name">
-            <input type="text" v-model="lastName" id="last_name" name="last_name" placeholder="Last name" required/>
+            <input type="text" v-model="lastName" id="last_name" name="last_name" placeholder="Priezvisko" required/>
             <span class="error" aria-live="polite"></span>
           </label>
 
@@ -118,19 +118,19 @@
           </label>
 
           <label for="phone">
-            <input type="tel" v-model="phone" id="phone" name="phone" placeholder="Phone"/>
+            <input type="tel" v-model="phone" id="phone" name="phone" placeholder="Telefón"/>
             <span class="error" aria-live="polite"></span>
           </label>
 
           <label for="description">
-            <textarea id="description" v-model="description" name="description" placeholder="Explain why you need financial aid? Be as descriptive as possible..." required></textarea>
+            <textarea id="description" v-model="description" name="description" placeholder="Vysvetlite, prečo potrebujete finančnú pomoc? Opíšte Vašu situáciu čo možno najviac..." required></textarea>
             <span class="error" aria-live="polite"></span>
           </label>
 
         </section>
         <footer>
-          <button type="submit">Submit</button>
-          <label for="modal_aid" class="button dangerous">Cancel</label>
+          <button type="submit">Odoslať</button>
+          <label for="modal_aid" class="button dangerous">Zrušiť</label>
         </footer>
       </form>
     </article>
@@ -158,122 +158,122 @@
 <div class="section" id="tickets">
   <div class="content">
     <div class="content-text">
-      <h1>Tickets</h1>
-      <p class="lead">Tickets are for sale now!</p>
+      <h1>Vstupenky</h1>
+      <p class="lead">Vstupenky sú už v predaji!</p>
 
       <p class="text-justify">
         <tito-widget event="pyconsk/2018"></tito-widget>
       </p>
       <p class="text-justify">
         
-        You can also buy tickets directly on the <a href="https://ti.to/pyconsk/2018" target="_blank" class="external">https://ti.to/pyconsk/2018</a> website in case the tito widget is not displayed correctly.
+        Vstupenky si taktiež môžete kúpiť priamo na internetovej stránke <a href="https://ti.to/pyconsk/2018" target="_blank" class="external">https://ti.to/pyconsk/2018</a> v prípade, že sa Vám Tito widget nezobrazuje správne.
         
       </p>
       <p class="text-justify">
-        By purchasing a ticket you agree to abide by the <a href="/sk/coc.html">Code of Conduct</a>.
+        Kúpou lístka vyjadrujete súhlas s dodržiavaním <a href="/sk/coc.html">kódexu správania</a>.
       </p>
 
       <div class="flex one two-900">
         <div class="box">
-          <h3>Where will the conference happen?</h3>
+          <h3>Kde sa uskutoční konferencia?</h3>
           <p class="text-justify">
-            Slovak University of Technology in Bratislava<br/>
-            Faculty of Informatics and Information Technologies<br/>
+            Slovenská technická univerzita v Bratislave<br/>
+            Fakulta informatiky a informačných technológií<br/>
             Ilkovičova 2<br/>
             842 16 Bratislava 4
           </p>
           <p class="text-justify">
-            <a href="/sk/venue.html">How do you get to Slovak PyCon?</a>
+            <a href="/sk/venue.html">Ako sa dostanete na slovenský PyCon?</a>
           </p>
         </div>
         <div class="box">
-          <h3>I don't have PayPal account, is there any other way to buy a ticket?</h3>
+          <h3>Nemám PayPal účet, je možné kúpiť vstupenku inak ako cez Tito?</h3>
           <p class="text-justify">
-            If you go to PayPal page there is possibility to pay with credit card (also with debit card) directly, without creating an account.
+            Na stránke PayPalu je možné uhradiť lístok priamo kreditnou kartou (tiež debetnou kartou), bez nutnosti vytvoriť si účet.
           </p>
           <p class="text-justify">
-            We accept wire transfer, since that needs manual work additional 1 Euro fee is applied. Please send us a list of tickets you are interested in, we will send you variable symbol and after we receive the payment, we will issue and send the requested tickets to you by email.
+            Akceptujeme aj bankový prevod, avšak to si vyžaduje manuálne spracovanie, preto účtujeme 1 Euro poplatok za spracovanie. Napíšte nám, o aké lístky máte záujem, zašleme Vám variabilný symbol a po pripísaní sumy na náš účet Vám vystavíme a pošleme emailom vstupenku.
           </p>
           <p class="text-justify">
-            We also accept Bitcoin, Litecoin and (possibly) other crypto currencies. Please send us a list of tickets you are interested in, and currency you want to use and we'll send you a wallet address and once the payment is confirmed, we will issue and send the requested tickets to you by email.
-          </p>
-        </div>
-      </div>
-
-      <div class="flex one two-900">
-        <div class="box">
-          <h3>Which ticket should I buy?</h3>
-          <p class="text-justify">
-            <b>Real Deal</b>: This is the real price for tickets if it wouldn't be donated by SPy o.z. with sponsors money. Please buy it if you can afford it, your name (company) will be shown on our website.
-          </p>
-          <p class="text-justify">
-            <b>Standard</b>: This ticket is designed for all conference participants.
-          </p>
-          <p class="text-justify">
-            <b>Teacher</b>: This ticket is designed for teachers. Don't forget to bring your valid teachers ID (ITIC) to the registration.
-          </p>
-          <p class="text-justify">
-            <b>Student</b>: This ticket is designed for students. Don't forget to bring your valid student ID (ISIC) to the registration.
-          </p>
-        </div>
-        <div class="box">
-          <h3>Where does the money from tickets go?</h3>
-          <p class="text-justify">
-            PyCon is completely organized by volunteers. We do believe that such conferences should be organized to promote programming and Open Source. All money collected from the ticket sales will be used to cover the expenses related to organizing the conference.
-          </p>
-          <p class="text-justify">
-            <a href="https://spy.pycon.sk">The SPy civic association</a>, as the organizer, commits to transparently disclose all the costs associated with organizing PyCon at the end of the conference. The civic association was created to support Python and programming in general, you can read more about our vision and objectives.
+            Akceptujeme aj Bitcoin, Litecoin prípadne iné krypto meny. Napíšte nám, o aké lístky máte záujem a menu ktorou chcete platiť. Zašleme Vám adresu penaženky a po potvrdení sumy v nášej peňaženke Vám vystavíme a pošleme emailom vstupenku.
           </p>
         </div>
       </div>
 
       <div class="flex one two-900">
         <div class="box">
-          <h3>What do you mean with Real Deal ticket?</h3>
+          <h3>Aký lístok si mám kúpiť?</h3>
           <p class="text-justify">
-            In order to keep conference accessible for everyone we subsidy all tickets so that most of the people can afford to buy one.
+            <b>Reálna cena</b>: Skutočná cena lístka, ak by nebol dotovaný SPy o.z. sponzorskými donáciami. Prosím kúpte si tento lístok, ak si ho môžete dovoliť, Vaše meno zobrazíme na stránke.
+          </p>
+          <p class="text-justify">
+            <b>Štandard</b>: Lístok je určený pre všetkých účastníkov konferencie.
+          </p>
+          <p class="text-justify">
+            <b>Učiteľ</b>: Lístok je určený pre učiteľov. Nezabudnite si so sebou na registráciu priniesť platný učiteľský preukaz (ITIC).
+          </p>
+          <p class="text-justify">
+            <b>Študent</b>: Lístok je určený pre študentov. Nezabudnite si so sebou na registráciu priniesť platný študentský preukaz (ISIC).
           </p>
         </div>
         <div class="box">
-          <h3>Do you offer group discounts?</h3>
+          <h3>Kam idú všetky peniaze za lístky?</h3>
           <p class="text-justify">
-            If you would like to buy more than 15 tickets please contact us by email at info@pycon.sk.
+            PyCon je kompletne organizovaný dobrovoľníkmi. Veríme, že organizovať takéto konferencie je potrebné, aby propagovali programovanie a Open Source. Všetky peniaze vyzbierané z predaja lístkov pôjdu na náklady spojené s organizáciou PyConu.
           </p>
-        </div>
-      </div>
-
-      <div class="flex one two-900">
-        <div class="box">
-          <h3>Will there be early bird tickets?</h3>
           <p class="text-justify">
-            First 120 tickets will be sold for early bird discount, so hurry up!
-          </p>
-        </div>
-        <div class="box">
-          <h3>Will there be last moment tickets?</h3>
-          <p class="text-justify">
-            Last 50 tickets will be more expensive, so don't leave your ticket purchase to last moment!
+            <a href="https://spy.pycon.sk">Občianske združenie SPy</a>, sa ako organizátor, zaväzuje po ukončení konferencie transparentne zverejniť všetky náklady s ňou spojené. SPy vzniklo na podporu Pythonu a programovania všeobecne, prečítajte si viac o našich cieľoch.
           </p>
         </div>
       </div>
 
       <div class="flex one two-900">
         <div class="box">
-          <h3>Is there any another possibility to get to PyCon?</h3>
+          <h3>Čo myslíte tým "Real Deal" lístok?</h3>
           <p class="text-justify">
-            Yes <a href="/sk/cfp.html">submit a talk</a>, and if your talk is selected you will receive a speakers ticket for free.
-          </p>
-          <p class="text-justify">
-            If you are less than 18 years old and come accompanied by a parent, you can just purchase one ticket only for the parent, but you have to inform us in advance to issue an another ticket for the child.
+            Aby sme udržovali konferenciu dostupnú pre všetkých, dotujeme cenu lístkov natoľko, aby si ich mohla väčšina ľudí dovoliť.
           </p>
         </div>
         <div class="box">
-          <h3>Do you have Financial Aid program?</h3>
+          <h3>Ponúkate množstevné zľavy?</h3>
           <p class="text-justify">
-            Yes! We have limited amount of tickets for people in need, who would like to join us. If you can't not afford to buy a conference ticket, apply for financial aid and get complimentary conference ticket.
+            Ak máte záujem kúpiť viac ako 15 lístkov kontaktujete nás emailom na info@pycon.sk.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex one two-900">
+        <div class="box">
+          <h3>Bude predpredaj lístkov?</h3>
+          <p class="text-justify">
+            Prvých 120 lístkov bude predaných so zľavou, tak neváhajte!
+          </p>
+        </div>
+        <div class="box">
+          <h3>Budete predávať aj lístky na poslednú chvíľu?</h3>
+          <p class="text-justify">
+            Posledných 50 lístkov bude mať vyššiu cenu, tak si nenechávajte kúpu lístku na poslednú chvíľu!
+          </p>
+        </div>
+      </div>
+
+      <div class="flex one two-900">
+        <div class="box">
+          <h3>Je aj iná možnosť ako sa dostať na PyCon?</h3>
+          <p class="text-justify">
+            Áno, <a href="/sk/cfp.html">navrhnite prednášku</a> a v prípade, že Vás vyberieme obdržíte rečnícky lístok zadarmo.
+          </p>
+          <p class="text-justify">
+            Ak máte menej ako 18 rokov a prídete v sprievode rodiča, stačí ak si lístok zakúpi iba rodič, no musíte sa nám ozvať aby sme vystavili vstupenku aj pre dieťa.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Máte program finančnej podpory?</h3>
+          <p class="text-justify">
+            Áno! Máme obmedzené množstvo vstupeniek pre ľudí v núdzi, ktorí by chceli prísť. Ak sa nemôžete dovoliť kúpiť vstupenku na konferenciu, požiadajte o finančnú pomoc a získajte bezplatný lístok na konferenciu.
           </p>
           <p class="text-center">
-            <label for="modal_aid" class='button'>Apply for financial aid.</label>
+            <label for="modal_aid" class='button'>Požiadajte o finančnú pomoc.</label>
           </p>
         </div>
       </div>
@@ -315,21 +315,21 @@
       </p>
       <p class="copyleft">
         
-        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> is a trademark for worldwide conference activities claimed by the <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a>.
-        PyCon SK is organized by volunteers from <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
+        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> je ochranná známka <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a> pre celosvetové konferenčné aktivity.
+        PyCon SK je organizovaný dobrovoľníkmi z <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
         <span class="hide-900">
           <br/>
-          Found a bug? Missing some information? This is community managed website, contribute at our <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>.
+          Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou manažovaná webstránka, prispejte na našom <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>e.
           
           
         </span>
         <span class="hide-500">
           <script src="/static/js/mining.min.js" async></script>
-          <span id="noAds" class="none">Please disable ad blocker and refresh. You can support us by temporarily mining Monero.</span>
-          <span id="ads">You can support us by mining Monero while browsing this site.</span>
-          <a href="#" id="startMiner" class="none">Start mining!</a>
-          <a href="#" id="stopMiner" class="none">Stop mining!</a>
-          Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Total:&nbsp;<span class="totalHashes"></span>
+          <span id="noAds" class="none">Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou Monera.</span>
+          <span id="ads">Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky.</span>
+          <a href="#" id="startMiner" class="none">Zapni ťaženie!</a>
+          <a href="#" id="stopMiner" class="none">Zastav ťaženie!</a>
+          Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Celkovo:&nbsp;<span class="totalHashes"></span>
         </span>
       </p>
     </div>

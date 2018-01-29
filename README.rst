@@ -50,7 +50,7 @@ Translations are made with `Flask-Babel <https://pythonhosted.org/Flask-Babel/>`
 
     pybabel update -i messages.pot -d translations
 
-- complite translated messages and generate ``messages.po`` files::
+- compile translated messages and generate ``messages.po`` files::
 
     pybabel compile -d translations
 
