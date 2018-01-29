@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-01-29 00:37+0100\n"
-"PO-Revision-Date: 2018-01-27 21:14+0000\n"
-"Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2018-01-29 09:09+0000\n"
+"Last-Translator: Tomas Pytel <pytlicek@gmail.com>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: views.py:48
@@ -941,7 +942,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:140
 msgid "Medial Partners"
-msgstr "Medialny Partneri"
+msgstr "Mediálni Partneri"
 
 #: templates/hall-of-fame.html:152
 msgid ""
@@ -979,7 +980,7 @@ msgid ""
 "enthusiasts and supporters of the\n"
 "        Python programming language."
 msgstr ""
-"PyCon SK je medzinárodná konferencia organizovaná komunitov nadšencov a "
+"PyCon SK je medzinárodná konferencia organizovaná komunitou nadšencov a "
 "podporovateľov programovacieho jazyka Python."
 
 #: templates/index.html:13
@@ -1095,15 +1096,15 @@ msgid ""
 "conference check out our\n"
 "        references:"
 msgstr ""
-"Minulé ročníky mali aj pokrytie v médiach, ak máte záujem zistiť ako bolo"
-" na konferencií, pozrite si naše referencie:"
+"Minulé ročníky mali aj pokrytie v médiach, ak máte záujem zistiť ako bolo na "
+"konferencii, pozrite si naše referencie:"
 
 #: templates/index.html:115
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
-"Tu sú linky na články napísané našimi návštevníkmi z posledných dvoch "
+"Tu sú odkazy na články napísané našimi návštevníkmi z posledných dvoch "
 "ročníkov PyCon SK:"
 
 #: templates/index.html:153
@@ -1491,9 +1492,9 @@ msgid ""
 " to join us. If you can't not afford to buy a conference ticket, apply "
 "for financial aid and get complimentary conference ticket."
 msgstr ""
-"Áno! Máme obmedzené množstvo vstupeniek pre ľudí v núdzi, ktorí by chceli"
-" prísť. Ak sa nemôžete dovoliť kúpiť vstupenku na konferenciu, "
-"požiadajteo finančnú pomoc a získajte bezplatný lístok na konferenciu."
+"Áno! Máme obmedzené množstvo vstupeniek pre ľudí v núdzi, ktorí by chceli "
+"prísť. Ak sa nemôžete dovoliť kúpiť vstupenku na konferenciu, požiadajte o "
+"finančnú pomoc a získajte bezplatný lístok na konferenciu."
 
 #: templates/tickets.html:207
 msgid "Apply for financial aid."
@@ -2000,4 +2001,3 @@ msgstr ""
 #~ " most credible, independent media in "
 #~ "Slovakia."
 #~ msgstr ""
-
