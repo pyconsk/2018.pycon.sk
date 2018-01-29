@@ -10,12 +10,20 @@
         {{ _('In the mean time you can find here the list of accepted talks and workshops.') }}
       </p>
 
-      <div class="flex one demo">
+      <div class="flex one two-900 three-1200 center demo">
         {% for entry in data %}{% if entry['talk'] %}
-          <div>
-            <h3>{{ entry['talk'] }}<span class="label {{ entry['tag']|lower }}">{{ entry['tag'] }}</span><br /><small>{{ entry['name'] }} ({{ entry['country']}})</small></h3>
-            {% autoescape false %}{{ entry['abstract'] }}{% endautoescape %}
-          </div>
+        <div>
+          <article class="card">
+            <header>
+              <h3>{{ entry['talk'] }}<span class="label {{ entry['tag']|lower }}">{{ entry['tag'] }}</span></h3>
+            </header>
+            <footer>
+              <h4>{{ entry['name'] }} ({{ entry['country']}})</h4>
+              <img src="{{ url_for('static', filename=entry['avatar']) }}" class="img-responsive sspeaker">
+              {% autoescape false %}{{ entry['abstract'] }}{% endautoescape %}
+            </footer>
+          </article>
+        </div>
         {% endif %}{% endfor %}
       </div>
 
