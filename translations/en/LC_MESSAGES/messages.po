@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-30 11:45+0100\n"
+"POT-Creation-Date: 2018-01-30 22:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -799,7 +799,7 @@ msgstr ""
 msgid "Gold"
 msgstr ""
 
-#: templates/hall-of-fame.html:90
+#: templates/hall-of-fame.html:89
 msgid ""
 "The Kistler Group is a Swiss high-tech company and the global market\n"
 "                  leader in dynamic measurement technology. We develop "
@@ -817,11 +817,22 @@ msgid ""
 "                  future."
 msgstr ""
 
-#: templates/hall-of-fame.html:109
+#: templates/hall-of-fame.html:110
+msgid ""
+"Red Hat is the world's leading provider of open source enterprise\n"
+"                  technology, including cloud, virtualization, storage, "
+"Linux, and middleware. In addition to enterprise\n"
+"                  software, we offer award-winning support, training, and"
+" consulting services. We're a rapidly growing\n"
+"                  company supporting more than &amp; of Fortune 500 "
+"companies."
+msgstr ""
+
+#: templates/hall-of-fame.html:123
 msgid "Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:120
+#: templates/hall-of-fame.html:134
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -836,11 +847,18 @@ msgid ""
 "professional Python, Web, and Data analysis developers."
 msgstr ""
 
-#: templates/hall-of-fame.html:150
+#: templates/hall-of-fame.html:167
+msgid ""
+"Learn2Code teaches people how to design and code modern websites and\n"
+"                  application. Learn2Code is the largest online learning "
+"marketplace in Slovakia."
+msgstr ""
+
+#: templates/hall-of-fame.html:179
 msgid "Medial Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:162
+#: templates/hall-of-fame.html:191
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -850,11 +868,11 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:183
+#: templates/hall-of-fame.html:212
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:261
+#: templates/hall-of-fame.html:290
 msgid "People that supported PyCon SK 2018 by purchasing a supported ticket."
 msgstr ""
 

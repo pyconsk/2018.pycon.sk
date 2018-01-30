@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-30 11:45+0100\n"
+"POT-Creation-Date: 2018-01-30 22:04+0100\n"
 "PO-Revision-Date: 2018-01-29 22:21+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -912,7 +912,7 @@ msgstr ""
 msgid "Gold"
 msgstr "Zlatí"
 
-#: templates/hall-of-fame.html:90
+#: templates/hall-of-fame.html:89
 msgid ""
 "The Kistler Group is a Swiss high-tech company and the global market\n"
 "                  leader in dynamic measurement technology. We develop "
@@ -940,11 +940,28 @@ msgstr ""
 "vytvárame meracie systémy, ktoré zachraňujú životy. Kistler pomáha "
 "vytvárať lepšiu budúcnosť."
 
-#: templates/hall-of-fame.html:109
+#: templates/hall-of-fame.html:110
+msgid ""
+"Red Hat is the world's leading provider of open source enterprise\n"
+"                  technology, including cloud, virtualization, storage, "
+"Linux, and middleware. In addition to enterprise\n"
+"                  software, we offer award-winning support, training, and"
+" consulting services. We're a rapidly growing\n"
+"                  company supporting more than &amp; of Fortune 500 "
+"companies."
+msgstr ""
+"Red Hat je celosvetový líder v poskytovaní open source technológií, "
+"vrátane cloudu, virtualizácie, úschovy dát, Linuxu a middleware. Okrem "
+"enterprise softvérových produktov, taktiež ponúkame prvotriednu podporu "
+"našich riešení, školenia a konzultačné služby. Sme rýchlo rastúca "
+"spoločnosť, ktorá spolupracuje s viac ako &amp; firiem z rebríčka Fortune"
+" 500."
+
+#: templates/hall-of-fame.html:123
 msgid "Partners"
 msgstr "Partneri"
 
-#: templates/hall-of-fame.html:120
+#: templates/hall-of-fame.html:134
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -968,11 +985,21 @@ msgstr ""
 "Professional Edition je vytvorený pre profesionálov v oblasti vývoja Web "
 "aplikácií, dátových analytikov a Python developerov."
 
-#: templates/hall-of-fame.html:150
+#: templates/hall-of-fame.html:167
+msgid ""
+"Learn2Code teaches people how to design and code modern websites and\n"
+"                  application. Learn2Code is the largest online learning "
+"marketplace in Slovakia."
+msgstr ""
+"V Learn2Code učíme ľudí designovať a programovať moderné webstrány a "
+"aplikácie. Nájdeš u nás najväčšiu ponuku online kurzov na rôzne témy na "
+"Slovensku."
+
+#: templates/hall-of-fame.html:179
 msgid "Medial Partners"
 msgstr "Mediálni Partneri"
 
-#: templates/hall-of-fame.html:162
+#: templates/hall-of-fame.html:191
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -982,11 +1009,11 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:183
+#: templates/hall-of-fame.html:212
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr "Ľudia, ktorí pomáhajú ako dobrovoľníci na PyCon SK 2018."
 
-#: templates/hall-of-fame.html:251
+#: templates/hall-of-fame.html:290
 msgid "People that supported PyCon SK 2018 by purchasing a supported ticket."
 msgstr "Ľudia, ktorí si zakúpili podporovateľský lístok na PyCon SK 2018."
 
@@ -1752,5 +1779,4 @@ msgstr ""
 #~ "V prípade, že nemožete odoslať formulár,"
 #~ " prosím kontaktujte nás emailom: "
 #~ "info@pycon.sk"
-
 
