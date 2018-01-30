@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-29 00:37+0100\n"
+"POT-Creation-Date: 2018-01-30 11:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: views.py:48
+#: views.py:57
 msgid ""
 "You might know her as That Docs Lady, and you won't be wrong! Mikey spent"
 " the better part of the last 10 years documenting super-geeky enterprise "
@@ -31,11 +31,11 @@ msgid ""
 "communities but also Fedora, Plone, KDE, and NixOS."
 msgstr ""
 
-#: views.py:59
+#: views.py:68
 msgid "Docs or it didn't happen"
 msgstr ""
 
-#: views.py:61
+#: views.py:70
 msgid ""
 "<p>If you ever skimmed through a README, tried to follow a quickstart "
 "tutorial, attempted to decipher an error message, or typed '--help' in "
@@ -56,7 +56,7 @@ msgid ""
 "are welcome!</p>"
 msgstr ""
 
-#: views.py:81
+#: views.py:90
 msgid ""
 "Gareth has been working with DevOps organisations and DevOps tools like "
 "monitoring systems for over 13 years. Gareth would like to share his "
@@ -67,11 +67,11 @@ msgid ""
 "containers at scale."
 msgstr ""
 
-#: views.py:89
+#: views.py:98
 msgid "The Concierge Paradigm"
 msgstr ""
 
-#: views.py:91
+#: views.py:100
 msgid ""
 "<p>The Concierge Paradigm idea was born over time but initially came from"
 " challenges we had by working out how to operate scalable and enterprise-"
@@ -88,11 +88,11 @@ msgid ""
 "scheduler.</p>"
 msgstr ""
 
-#: views.py:129
+#: views.py:138
 msgid "I was paid to kill people. I quit the job."
 msgstr ""
 
-#: views.py:135
+#: views.py:144
 msgid ""
 "<p>Cvičenie LOCKED SHIELDS je organizované Centrom výnimočnosti pre "
 "oblasť kybernetickej obrany (CCD CoE). Jedným s jeho počinov je cvičenie "
@@ -103,7 +103,7 @@ msgid ""
 "kybernetická elita cvičí na zásah proti kybernarušiteľom.</p>"
 msgstr ""
 
-#: views.py:144
+#: views.py:153
 msgid ""
 "Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
 " data consulting company called Kjamistan in Berlin, Germany and loves to"
@@ -113,7 +113,7 @@ msgid ""
 "other rants on Twitter."
 msgstr ""
 
-#: views.py:150
+#: views.py:159
 msgid ""
 "<p>In this half-day workshop, we'll take a walk through a Kaggle "
 "competition on house prices to explore our dataset. Then, we'll build a "
@@ -126,7 +126,7 @@ msgid ""
 "work.</p><p>GitHub Repo: https://github.com/kjam/intro-to-ml</p>"
 msgstr ""
 
-#: views.py:162
+#: views.py:171
 msgid ""
 "Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
 " host and founder of the two most popular Python podcasts: Talk Python To"
@@ -137,11 +137,11 @@ msgid ""
 "https://talkpython.fm and https://pythonbytes.fm."
 msgstr ""
 
-#: views.py:168
+#: views.py:177
 msgid "TBD"
 msgstr ""
 
-#: views.py:172
+#: views.py:181
 msgid ""
 "Rae Knowler is a web developer in Zürich, where they develop product data"
 " APIs and work on Open Data projects. They are interested in the "
@@ -150,7 +150,7 @@ msgid ""
 "time they read a lot of science fiction and hug cats."
 msgstr ""
 
-#: views.py:181
+#: views.py:190
 msgid ""
 "<p>The default settings of some libraries and tools are so useless, or "
 "even dangerous, that they should never be used. While they give the "
@@ -159,7 +159,7 @@ msgid ""
 "such defaults, and explore how to create tools with good_defaults.</p>"
 msgstr ""
 
-#: views.py:189
+#: views.py:198
 msgid ""
 "Ryan is currently in the middle of his practice-led PhD researching "
 "communication and collaboration in live coding ensembles through software"
@@ -173,11 +173,11 @@ msgid ""
 "generally making a lot of noise."
 msgstr ""
 
-#: views.py:200
+#: views.py:209
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:202
+#: views.py:211
 msgid ""
 "<p>In this talk I will introduce the topic of live coding; the "
 "interactive programming experience for generating audio and visuals but "
@@ -195,7 +195,7 @@ msgid ""
 "part performance."
 msgstr ""
 
-#: views.py:218
+#: views.py:227
 msgid ""
 "Patricia is a Python developer working at Olist, a brazilian marketplace "
 "services platform. She started developing web applications in 2010 and "
@@ -205,7 +205,7 @@ msgid ""
 "TechLadies Brazil."
 msgstr ""
 
-#: views.py:228
+#: views.py:237
 msgid ""
 "<p>A search engine is a software responsible for search into large "
 "amounts of data. Often, involved algorithms are complex and their "
@@ -217,7 +217,7 @@ msgid ""
 "web to be indexed in Elasticsearch.\"</p>"
 msgstr ""
 
-#: views.py:237
+#: views.py:246
 msgid ""
 "Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen "
 "Technologies, a Machine Learning LegalTech company, leading 10+ ML and "
@@ -230,7 +230,7 @@ msgid ""
 "communities around the world that are still active to date."
 msgstr ""
 
-#: views.py:243
+#: views.py:252
 msgid ""
 "<p>This talk would provide useful and practical understanding on how to "
 "build industry-ready machine learning models in python through "
@@ -240,7 +240,7 @@ msgid ""
 "rabbitmq.</p>"
 msgstr ""
 
-#: views.py:251
+#: views.py:260
 msgid ""
 "Maciej is a passionate developer with over 10 years of experience in many"
 " languages. Currently, he is hacking on bugs.python.org and CPython's "
@@ -250,7 +250,7 @@ msgid ""
 "meet ups around Europe."
 msgstr ""
 
-#: views.py:257
+#: views.py:266
 msgid ""
 "<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others "
 "are investinga lot of time and effort into improving Kubernetes.  I bet, "
@@ -277,7 +277,7 @@ msgid ""
 "from scratch.</p>"
 msgstr ""
 
-#: views.py:305
+#: views.py:314
 msgid "PyCon SK"
 msgstr ""
 
@@ -773,21 +773,19 @@ msgstr ""
 
 #: templates/hall-of-fame.html:49
 msgid ""
-"The Exponea platform together with knowledge, empower e-sellers to be "
-"more\n"
-"                  relevant to their customers, giving them a more "
-"efficient experience. With a team of 140+\n"
-"                  professionals operating worldwide, we work with Python,"
-" C++ and Go, Apache Kafka, MongoDB, Redis,\n"
-"                  ElasticSearch, Flask, RabbitMQ, Celery and other "
-"technologies like Docker, Kubernetes, gRPC, Sentry,\n"
-"                  Hadoop, and Apache Spark. We help clients on 5 "
-"continents get maximum value from collecting,\n"
-"                  analyzing, and acting upon customer interactions. And "
-"yes, we're hiring."
+"The Exponea platform empowers e-sellers on 5 continents to be relevant to"
+"\n"
+"                  their customers. Our international team of 140+ "
+"professionals relies on a strong back-end team armed\n"
+"                  with Python, C++ and Go, Apache Kafka, MongoDB, Redis, "
+"ElasticSearch, Flask, RabbitMQ, Celery and\n"
+"                  other technologies like Docker, Kubernetes, gRPC, "
+"Sentry, Hadoop, and Apache Spark to help our clients\n"
+"                  collect, analyze, and act upon customer interactions. "
+"And yes, we're hiring."
 msgstr ""
 
-#: templates/hall-of-fame.html:67
+#: templates/hall-of-fame.html:66
 msgid ""
 "The Python Software Foundation is a 501(c)(3) nonprofit dedicated to\n"
 "                  advancing and promoting Python. The PSF supports and "
@@ -797,11 +795,11 @@ msgid ""
 "                  PyCon conference as its flagship annual event."
 msgstr ""
 
-#: templates/hall-of-fame.html:79
+#: templates/hall-of-fame.html:78
 msgid "Gold"
 msgstr ""
 
-#: templates/hall-of-fame.html:91
+#: templates/hall-of-fame.html:90
 msgid ""
 "The Kistler Group is a Swiss high-tech company and the global market\n"
 "                  leader in dynamic measurement technology. We develop "
@@ -819,11 +817,11 @@ msgid ""
 "                  future."
 msgstr ""
 
-#: templates/hall-of-fame.html:110
+#: templates/hall-of-fame.html:109
 msgid "Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:122
+#: templates/hall-of-fame.html:120
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -838,11 +836,11 @@ msgid ""
 "professional Python, Web, and Data analysis developers."
 msgstr ""
 
-#: templates/hall-of-fame.html:140
+#: templates/hall-of-fame.html:150
 msgid "Medial Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:152
+#: templates/hall-of-fame.html:162
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -852,12 +850,12 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:173
+#: templates/hall-of-fame.html:183
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:251
-msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
+#: templates/hall-of-fame.html:261
+msgid "People that supported PyCon SK 2018 by purchasing a supported ticket."
 msgstr ""
 
 #: templates/index.html:6
@@ -1709,5 +1707,146 @@ msgstr ""
 #~ " is well known as one of the"
 #~ " most credible, independent media in "
 #~ "Slovakia."
+#~ msgstr ""
+
+#~ msgid "Sponsors"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We thank all the sponsors, without "
+#~ "whom it would not be possible to"
+#~ " organize this amazing conference."
+#~ msgstr ""
+
+#~ msgid "Diamond"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Kiwi.com is an online travel agency with groundbreaking Virtual\n"
+#~ "                  Interlining technology and a"
+#~ " focus on exceptional customer service. "
+#~ "Our unique combination algorithm\n"
+#~ "                  allows our customers to "
+#~ "combine flights from non-cooperating "
+#~ "airlines onto a single itinerary, often"
+#~ "\n"
+#~ "                  resulting in significant savings."
+#~ msgstr ""
+
+#~ msgid "Platinum"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Exponea platform together with "
+#~ "knowledge, empower e-sellers to be more"
+#~ "\n"
+#~ "                  relevant to their customers,"
+#~ " giving them a more efficient "
+#~ "experience. With a team of 140+\n"
+#~ "                  professionals operating worldwide,"
+#~ " we work with Python, C++ and "
+#~ "Go, Apache Kafka, MongoDB, Redis,\n"
+#~ "                  ElasticSearch, Flask, RabbitMQ,"
+#~ " Celery and other technologies like "
+#~ "Docker, Kubernetes, gRPC, Sentry,\n"
+#~ "                  Hadoop, and Apache Spark."
+#~ " We help clients on 5 continents "
+#~ "get maximum value from collecting,\n"
+#~ "                  analyzing, and acting upon"
+#~ " customer interactions. And yes, we're "
+#~ "hiring."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Python Software Foundation is a 501(c)(3) nonprofit dedicated to\n"
+#~ "                  advancing and promoting "
+#~ "Python. The PSF supports and encourages"
+#~ " Python events world-wide to advance"
+#~ "\n"
+#~ "                  its mission of growing "
+#~ "the international community of Python "
+#~ "programmers, and hosts the North "
+#~ "American\n"
+#~ "                  PyCon conference as its flagship annual event."
+#~ msgstr ""
+
+#~ msgid "Gold"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Kistler Group is a Swiss high-tech company and the global market\n"
+#~ "                  leader in dynamic "
+#~ "measurement technology. We develop and "
+#~ "supply sensors, electronics and software\n"
+#~ ""
+#~ "                  backed up by a full"
+#~ " range of services. In Bratislava we"
+#~ " develop software for the next "
+#~ "generation of\n"
+#~ "                  IoT devices. With our "
+#~ "software we help customer to manufacture"
+#~ " higher quality products, to develop\n"
+#~ ""
+#~ "                  cleaner cars and to "
+#~ "reduce congestions on the highways. "
+#~ "Behind our success stand our passion "
+#~ "for\n"
+#~ "                  technology, our focus on "
+#~ "innovation and a work environment that"
+#~ " promotes teamwork. We develop vehicles"
+#~ "\n"
+#~ "                  that people can trust; "
+#~ "we create measurement systems that save"
+#~ " lives. Kistler helps to shape a "
+#~ "better\n"
+#~ "                  future."
+#~ msgstr ""
+
+#~ msgid "Partners"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "JetBrains delivers intelligent software "
+#~ "solutions that make developers\n"
+#~ "                  more productive by "
+#~ "simplifying their challenging tasks, "
+#~ "automating the routine, and helping them"
+#~ " adopt\n"
+#~ "                  the best development "
+#~ "practices. PyCharm is the Python IDE "
+#~ "for Professional Developers by JetBrains\n"
+#~ ""
+#~ "                  providing a complete set "
+#~ "of tools for productive Python, Web "
+#~ "and Scientific development, available in\n"
+#~ ""
+#~ "                  two editions. The free "
+#~ "and open-source PyCharm Community "
+#~ "Edition is perfect for pure Python "
+#~ "coding.\n"
+#~ "                  PyCharm Professional Edition "
+#~ "is designed for professional Python, "
+#~ "Web, and Data analysis developers."
+#~ msgstr ""
+
+#~ msgid "Medial Partners"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Startitup is one of the most "
+#~ "popular and progressive growing tech/startup"
+#~ "\n"
+#~ "                  websites in Slovakia and "
+#~ "Czech republic, which informs, inspires "
+#~ "and entertains the digital\n"
+#~ "                  generation. Startitup is "
+#~ "well known as one of the most "
+#~ "credible, independent media in Slovakia."
+#~ msgstr ""
+
+#~ msgid "People that participate volunteering at PyCon SK 2018."
+#~ msgstr ""
+
+#~ msgid "People that supported PyCon SK 2018 by purchasing supported ticket."
 #~ msgstr ""
 
