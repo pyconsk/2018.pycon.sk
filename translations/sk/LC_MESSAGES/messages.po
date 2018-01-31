@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-30 22:04+0100\n"
+"POT-Creation-Date: 2018-01-31 11:23+0100\n"
 "PO-Revision-Date: 2018-01-29 22:21+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -68,6 +68,23 @@ msgstr ""
 
 #: views.py:90
 msgid ""
+"Working at Exponea as DevOps Engineer for about a year after finishing "
+"studies of Telecommunications at FEI STU in Bratislava. Virtualization "
+"and container platforms were always his passion."
+msgstr ""
+
+#: views.py:98
+msgid ""
+"<p>We invite You on the journey of making Exponea and it's multi-terabyte"
+" in-memory databases possible in the containerized environment of the "
+"Google Cloud.</p><p>Join us as we grasp the wheel of our multi-server "
+"hardware-based spaceship, navigate through the dangerous oceans of no-"
+"downtime live migrations to safely dock in the calm waters of Google bay "
+"or did we?</p>"
+msgstr ""
+
+#: views.py:106
+msgid ""
 "Gareth has been working with DevOps organisations and DevOps tools like "
 "monitoring systems for over 13 years. Gareth would like to share his "
 "experience of running containers in production from the early days to "
@@ -77,11 +94,11 @@ msgid ""
 "containers at scale."
 msgstr ""
 
-#: views.py:98
+#: views.py:114
 msgid "The Concierge Paradigm"
 msgstr ""
 
-#: views.py:100
+#: views.py:116
 msgid ""
 "<p>The Concierge Paradigm idea was born over time but initially came from"
 " challenges we had by working out how to operate scalable and enterprise-"
@@ -98,11 +115,32 @@ msgid ""
 "scheduler.</p>"
 msgstr ""
 
+#: views.py:131
+msgid ""
+"Full-stack developer who loves Python but got stuck in Javascript world "
+"for a long time and now is drifting somewhere in between. Passionate "
+"triathlete and wannabe entrepreneur."
+msgstr ""
+
 #: views.py:138
+msgid ""
+"<p>GraphQL is a query language for web APIs, an alternative to REST. It "
+"allows clients to define the structure of the required data. It’s "
+"strongly typed and allows introspection, which make clients more "
+"flexible.</p><p>The talk will demonstrate usage of GraphQL on examples "
+"with Graphene (http://graphene-python.org/), a GraphQL framework for "
+"Python. Most developers are familiar with REST APIs, so the talk will "
+"compare GraphQL with REST, how they differ and what problems GraphQL is "
+"trying to solve.</p><p>The outline is following:<ul><li>Comparison of "
+"GraphQL with REST API.</li><li>Queries, data types and "
+"introspection</li><li>Mutations</li></ul></p>"
+msgstr ""
+
+#: views.py:175
 msgid "I was paid to kill people. I quit the job."
 msgstr ""
 
-#: views.py:144
+#: views.py:181
 msgid ""
 "<p>Cvičenie LOCKED SHIELDS je organizované Centrom výnimočnosti pre "
 "oblasť kybernetickej obrany (CCD CoE). Jedným s jeho počinov je cvičenie "
@@ -113,7 +151,7 @@ msgid ""
 "kybernetická elita cvičí na zásah proti kybernarušiteľom.</p>"
 msgstr ""
 
-#: views.py:153
+#: views.py:190
 msgid ""
 "Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
 " data consulting company called Kjamistan in Berlin, Germany and loves to"
@@ -123,7 +161,7 @@ msgid ""
 "other rants on Twitter."
 msgstr ""
 
-#: views.py:159
+#: views.py:196
 msgid ""
 "<p>In this half-day workshop, we'll take a walk through a Kaggle "
 "competition on house prices to explore our dataset. Then, we'll build a "
@@ -136,7 +174,7 @@ msgid ""
 "work.</p><p>GitHub Repo: https://github.com/kjam/intro-to-ml</p>"
 msgstr ""
 
-#: views.py:171
+#: views.py:208
 msgid ""
 "Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
 " host and founder of the two most popular Python podcasts: Talk Python To"
@@ -147,11 +185,11 @@ msgid ""
 "https://talkpython.fm and https://pythonbytes.fm."
 msgstr ""
 
-#: views.py:177
+#: views.py:214
 msgid "TBD"
 msgstr ""
 
-#: views.py:181
+#: views.py:218
 msgid ""
 "Rae Knowler is a web developer in Zürich, where they develop product data"
 " APIs and work on Open Data projects. They are interested in the "
@@ -160,7 +198,7 @@ msgid ""
 "time they read a lot of science fiction and hug cats."
 msgstr ""
 
-#: views.py:190
+#: views.py:227
 msgid ""
 "<p>The default settings of some libraries and tools are so useless, or "
 "even dangerous, that they should never be used. While they give the "
@@ -169,7 +207,7 @@ msgid ""
 "such defaults, and explore how to create tools with good_defaults.</p>"
 msgstr ""
 
-#: views.py:198
+#: views.py:235
 msgid ""
 "Ryan is currently in the middle of his practice-led PhD researching "
 "communication and collaboration in live coding ensembles through software"
@@ -183,11 +221,11 @@ msgid ""
 "generally making a lot of noise."
 msgstr ""
 
-#: views.py:209
+#: views.py:246
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:211
+#: views.py:248
 msgid ""
 "<p>In this talk I will introduce the topic of live coding; the "
 "interactive programming experience for generating audio and visuals but "
@@ -205,7 +243,7 @@ msgid ""
 "part performance."
 msgstr ""
 
-#: views.py:227
+#: views.py:264
 msgid ""
 "Patricia is a Python developer working at Olist, a brazilian marketplace "
 "services platform. She started developing web applications in 2010 and "
@@ -215,7 +253,7 @@ msgid ""
 "TechLadies Brazil."
 msgstr ""
 
-#: views.py:237
+#: views.py:274
 msgid ""
 "<p>A search engine is a software responsible for search into large "
 "amounts of data. Often, involved algorithms are complex and their "
@@ -227,7 +265,7 @@ msgid ""
 "web to be indexed in Elasticsearch.\"</p>"
 msgstr ""
 
-#: views.py:246
+#: views.py:283
 msgid ""
 "Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen "
 "Technologies, a Machine Learning LegalTech company, leading 10+ ML and "
@@ -240,7 +278,7 @@ msgid ""
 "communities around the world that are still active to date."
 msgstr ""
 
-#: views.py:252
+#: views.py:289
 msgid ""
 "<p>This talk would provide useful and practical understanding on how to "
 "build industry-ready machine learning models in python through "
@@ -250,7 +288,7 @@ msgid ""
 "rabbitmq.</p>"
 msgstr ""
 
-#: views.py:260
+#: views.py:297
 msgid ""
 "Maciej is a passionate developer with over 10 years of experience in many"
 " languages. Currently, he is hacking on bugs.python.org and CPython's "
@@ -260,7 +298,7 @@ msgid ""
 "meet ups around Europe."
 msgstr ""
 
-#: views.py:266
+#: views.py:303
 msgid ""
 "<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others "
 "are investinga lot of time and effort into improving Kubernetes.  I bet, "
@@ -308,7 +346,40 @@ msgstr ""
 " ktorý obsahuje detailné inštrukcie ako si všetko spustiť sám úplne od "
 "začiatku.</p>"
 
-#: views.py:314
+#: views.py:331
+msgid ""
+"Matej Vetrak is a senior DevOps engineer that has been puzzled for the "
+"longest time as how to build a proper high-available infrastructure "
+"composed of many small collaborative services for systems at huge scale, "
+"until he got a change to build one. His favourite programming language is"
+" Python and he is interested in a Docker, Kubernetes and open-source "
+"community in general. He is currently employed by Exponea."
+msgstr ""
+
+#: views.py:341
+msgid ""
+"<p>In this workshop we'll look at common problems that all developers are"
+" facing in the latest trends of the ever changing scalable app world. "
+"We'll learn how to deploy, scale, and manage high-available microservices"
+" using Docker, Kubernetes and other open-source tools.</p><p>We will also"
+" address some of these problems: building and deploying applications, "
+"pipelines, rolling updates, load balancing, scaling, replication, "
+"configuration, health checking and self healing, monitoring, alerting, "
+"log aggregation, resource constraints, capacity planning, data stores, "
+"security, key management, debugging and best practices.</p><p>Who should "
+"attend?</p><p>People who are interested in containerized applications, "
+"are in the process of moving to microservice architecture or are managing"
+" high-available production environments.</p><p>Why you should "
+"attend?</p><p>You want to start using Kubernetes in development and "
+"production.</p><p>You are already using Kubernetes, but you are not ready"
+" for production.</p><p>You would like to better understand new trend of "
+"high-available microservices.</p><p>How to prepare for the "
+"workshop?</p><p>Bring laptop with installed minikube: "
+"https://kubernetes.io/docs/tasks/tools/install-minikube/ and docker: "
+"https://docs.docker.com/engine/installation/</p>"
+msgstr ""
+
+#: views.py:383
 msgid "PyCon SK"
 msgstr "PyCon SK"
 

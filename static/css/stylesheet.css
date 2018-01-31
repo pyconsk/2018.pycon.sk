@@ -3141,6 +3141,11 @@ nav {
   padding: 10px 10px 40px 10px;
 }
 
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text-center {
   text-align: center;
 }

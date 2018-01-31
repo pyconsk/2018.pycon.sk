@@ -86,6 +86,22 @@ DATA = (
 
     },
     {
+        'name': 'František Benko',
+        'bio': gettext('Working at Exponea as DevOps Engineer for about a year after finishing studies of '
+                       'Telecommunications at FEI STU in Bratislava. Virtualization and container platforms were '
+                       'always his passion.'),
+        'country': 'SK',
+        'url': '#',
+        'avatar': 'img/speakers/frantisek_benko.jpg',
+        'talk': 'To the Google in 80 Days',
+        'tag': TAGS['devops'],
+        'abstract': gettext('<p>We invite You on the journey of making Exponea and it\'s multi-terabyte in-memory '
+                            'databases possible in the containerized environment of the Google Cloud.</p>'
+                            '<p>Join us as we grasp the wheel of our multi-server hardware-based spaceship, navigate '
+                            'through the dangerous oceans of no-downtime live migrations to safely dock in the calm '
+                            'waters of Google bay or did we?</p>'),
+    },
+    {
         'name': 'Gareth Brown',
         'bio': gettext('Gareth has been working with DevOps organisations and DevOps tools like monitoring systems for '
                        'over 13 years. Gareth would like to share his experience of running containers in production '
@@ -109,6 +125,27 @@ DATA = (
                             'more efficient and accurate; how we radically simplified the infrastructure needed for'
                             ' running containers and how we utilised Zabbix as an container scheduler.</p>'),
 
+    },
+    {
+        'name': 'Tomáš Ehrlich',
+        'bio': gettext('Full-stack developer who loves Python but got stuck in Javascript world for a long time and '
+                       'now is drifting somewhere in between. Passionate triathlete and wannabe entrepreneur.'),
+        'country': 'CZ',
+        'url': '#',
+        'avatar': 'img/speakers/tomas_ehrlich.jpg',
+        'talk': 'GraphQL is the new black',
+        'tag': TAGS['web'],
+        'abstract': gettext('<p>GraphQL is a query language for web APIs, an alternative to REST. It allows clients to '
+                            'define the structure of the required data. It’s strongly typed and allows introspection, '
+                            'which make clients more flexible.</p>'
+                            '<p>The talk will demonstrate usage of GraphQL on examples with Graphene '
+                            '(http://graphene-python.org/), a GraphQL framework for Python. Most developers are '
+                            'familiar with REST APIs, so the talk will compare GraphQL with REST, how they differ '
+                            'and what problems GraphQL is trying to solve.</p>'
+                            '<p>The outline is following:<ul>'
+                            '<li>Comparison of GraphQL with REST API.</li>'
+                            '<li>Queries, data types and introspection</li>'
+                            '<li>Mutations</li></ul></p>'),
     },
     # {
     #     'name': 'Alex Ellis',
@@ -153,7 +190,7 @@ DATA = (
         'bio': gettext('Katharine Jarmul is a pythonista and lover of all things Unix. She runs a data consulting company called Kjamistan in Berlin, Germany and loves to rant about data analysis, natural language processing, ethical machine learning and automation workflows. When she\'s not ranting, she\'s likely cooking or maybe taking photos, or quite possibly reading and retweeting other rants on Twitter.'),
         'country': 'DE',
         'url': 'http://kjamistan.com/',
-        'avatar': 'img/speakers/katharine_jarmul.jpeg',
+        'avatar': 'img/speakers/katharine_jarmul.jpg',
         'talk': 'Introduction to Machine Learning with Python',
         'tag': TAGS['ai'],
         'abstract': gettext('<p>In this half-day workshop, we\'ll take a walk through a Kaggle competition on house '
@@ -260,7 +297,7 @@ DATA = (
         'bio': gettext('Maciej is a passionate developer with over 10 years of experience in many languages. Currently, he is hacking on bugs.python.org and CPython\'s IMAP library by night. Whereas in the light of day, he\'s working on OpenShift and Kubernetes for Red Hat. In his spare time he organizes PyCon PL, helps reviewing talks for PyCon, talks at various events and meet ups around Europe.'),
         'country': 'PL',
         'url': '',
-        'avatar': 'img/speakers/maciej_szulik.png',
+        'avatar': 'img/speakers/maciej_szulik.jpg',
         'talk': 'Effectively running python applications in Kubernetes/OpenShift',
         'tag': TAGS['devops'],
         'abstract': gettext('<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others are investing'
@@ -288,7 +325,39 @@ DATA = (
                             '<p>After the session, every person will be able to play around with the accompanying'
                             'code repository that was used in the tutorial, which includes detailed instructions'
                             'how to run it on your own from scratch.</p>'),
-    }
+    },
+    {
+        'name': 'Matej Vetrák',
+        'bio': gettext('Matej Vetrak is a senior DevOps engineer that has been puzzled for the longest time as how to '
+                       'build a proper high-available infrastructure composed of many small collaborative services for '
+                       'systems at huge scale, until he got a change to build one. His favourite programming language '
+                       'is Python and he is interested in a Docker, Kubernetes and open-source community in general. '
+                       'He is currently employed by Exponea.'),
+        'country': 'SK',
+        'url': '#',
+        'avatar': 'img/speakers/matej_vetrak.jpg',
+        'talk': 'Managing high-available applications in production',
+        'tag': TAGS['devops'],
+        'abstract': gettext('<p>In this workshop we\'ll look at common problems that all developers are facing in the '
+                            'latest trends of the ever changing scalable app world. We\'ll learn how to deploy, scale, '
+                            'and manage high-available microservices using Docker, Kubernetes and other open-source '
+                            'tools.</p>'
+                            '<p>We will also address some of these problems: building and deploying applications, '
+                            'pipelines, rolling updates, load balancing, scaling, replication, configuration, health '
+                            'checking and self healing, monitoring, alerting, log aggregation, resource constraints, '
+                            'capacity planning, data stores, security, key management, debugging and best '
+                            'practices.</p>'
+                            '<p>Who should attend?</p>'
+                            '<p>People who are interested in containerized applications, are in the process of moving '
+                            'to microservice architecture or are managing high-available production environments.</p>'
+                            '<p>Why you should attend?</p>'
+                            '<p>You want to start using Kubernetes in development and production.</p>'
+                            '<p>You are already using Kubernetes, but you are not ready for production.</p>'
+                            '<p>You would like to better understand new trend of high-available microservices.</p>'
+                            '<p>How to prepare for the workshop?</p>'
+                            '<p>Bring laptop with installed minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/ and docker: https://docs.docker.com/engine/installation/</p>'),
+    },
+
 )
 
 
