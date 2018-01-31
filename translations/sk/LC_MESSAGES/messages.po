@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-31 13:12+0100\n"
+"POT-Creation-Date: 2018-02-01 00:21+0100\n"
 "PO-Revision-Date: 2018-01-29 22:21+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -372,6 +372,42 @@ msgstr ""
 
 #: views.py:354
 msgid ""
+"My name is Natalie; I have a Networking and Security background, but "
+"recently decided to challenge myself in different space. That's why "
+"currently I work at Vevo as Software Engineer in coolest DevOps team in "
+"San Francisco, CA, USA. Where part of my job includes building and "
+"automating various tools that help our development team be more "
+"productive and happy.I have an MS in Computer Since degree. For my first "
+"job, I had to do a lot of scripting for configuring and managing "
+"thousands of switches, routers and other networking devices in our "
+"company testing lab. After using sed, awk, Tcl I discovered and learned "
+"Python. It was straightforward to pick up and worked well since then "
+"Python became my language of preference. I also like Python for its big "
+"community.In my spare time, I like to spend time with my pup Chai, bake "
+"and blog about baking.Thank you, organizers, for giving me and people the"
+" opportunity to speak and this conference and share our knowledge with "
+"the community."
+msgstr ""
+
+#: views.py:371
+msgid ""
+"<p>Guide for Python developers who are shifting to the new microservices-"
+"based development.</p><p>In the agile methodology the speed at which "
+"software gets shipped these days in DevOps there is no time to do "
+"traditional Secure SDLC like process where every stage of the software "
+"development cycle has a security checklist. The only way is to automate "
+"as much as possible and remove check gate style security "
+"practice.</p><p>Continuous Delivery is a software development discipline "
+"where you build software in such a way that the software can be released "
+"to production at any time. It relies on the complete automation of the "
+"deployment process.</p><p>Creating secure and reliable microservices "
+"before they land in production should be important for every software "
+"developer. The software developer doesn’t have to be a security expert in"
+" everything to work within a microservices architecture.</p>"
+msgstr ""
+
+#: views.py:386
+msgid ""
 "Maciej is a passionate developer with over 10 years of experience in many"
 " languages. Currently, he is hacking on bugs.python.org and CPython's "
 "IMAP library by night. Whereas in the light of day, he's working on "
@@ -380,7 +416,7 @@ msgid ""
 "meet ups around Europe."
 msgstr ""
 
-#: views.py:361
+#: views.py:393
 msgid ""
 "<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others "
 "are investinga lot of time and effort into improving Kubernetes.  I bet, "
@@ -428,7 +464,7 @@ msgstr ""
 " ktorý obsahuje detailné inštrukcie ako si všetko spustiť sám úplne od "
 "začiatku.</p>"
 
-#: views.py:389
+#: views.py:421
 msgid ""
 "Jazykozpytec, škarohlíd, mrzout... Již mnohaletý (asi senior prej) PHP "
 "vývojář z povolání. Zatím koníčkový, již brzy i profesionální (no, ehm… "
@@ -437,7 +473,7 @@ msgid ""
 "novoroční předsevzetí dal častější hraní počítačových her."
 msgstr ""
 
-#: views.py:396
+#: views.py:428
 msgid ""
 "<p>Lidé mluví různými jazyky. Ba co hůř, oni jimi i píší a to i na "
 "počítači. Tyto jazyky se nepíší vždy latinkou. A i když ano, není ani ta "
@@ -453,7 +489,7 @@ msgid ""
 "říše...</p>"
 msgstr ""
 
-#: views.py:409
+#: views.py:441
 msgid ""
 "Matej Vetrak is a senior DevOps engineer that has been puzzled for the "
 "longest time as how to build a proper high-available infrastructure "
@@ -463,7 +499,7 @@ msgid ""
 "community in general. He is currently employed by Exponea."
 msgstr ""
 
-#: views.py:419
+#: views.py:451
 msgid ""
 "<p>In this workshop we'll look at common problems that all developers are"
 " facing in the latest trends of the ever changing scalable app world. "
@@ -486,7 +522,7 @@ msgid ""
 "https://docs.docker.com/engine/installation/</p>"
 msgstr ""
 
-#: views.py:461
+#: views.py:493
 msgid "PyCon SK"
 msgstr "PyCon SK"
 

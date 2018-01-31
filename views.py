@@ -350,6 +350,38 @@ DATA = (
                             '<li>serializace a deserializace objektu do XML</li></ul></p>'),
     },
     {
+        'name': 'Natalie Serebryakova',
+        'bio': gettext('My name is Natalie; I have a Networking and Security background, but recently decided to '
+                       'challenge myself in different space. That\'s why currently I work at Vevo as Software Engineer '
+                       'in coolest DevOps team in San Francisco, CA, USA. Where part of my job includes building and '
+                       'automating various tools that help our development team be more productive and happy.'
+                       'I have an MS in Computer Since degree. For my first job, I had to do a lot of scripting for '
+                       'configuring and managing thousands of switches, routers and other networking devices in our '
+                       'company testing lab. After using sed, awk, Tcl I discovered and learned Python. It was '
+                       'straightforward to pick up and worked well since then Python became my language of preference. '
+                       'I also like Python for its big community.'
+                       'In my spare time, I like to spend time with my pup Chai, bake and blog about baking.'
+                       'Thank you, organizers, for giving me and people the opportunity to speak and this conference '
+                       'and share our knowledge with the community.'),
+        'country': 'USA',
+        'url': 'http://01101110.com/',
+        'avatar': 'img/speakers/no_avatar.svg',
+        'talk': 'Maintaining reliable and secure continuous delivery for python microservices',
+        'tag': 'devops',
+        'abstract': gettext('<p>Guide for Python developers who are shifting to the new microservices-based '
+                            'development.</p>'
+                            '<p>In the agile methodology the speed at which software gets shipped these days in DevOps '
+                            'there is no time to do traditional Secure SDLC like process where every stage of the '
+                            'software development cycle has a security checklist. The only way is to automate as much '
+                            'as possible and remove check gate style security practice.</p>'
+                            '<p>Continuous Delivery is a software development discipline where you build software in '
+                            'such a way that the software can be released to production at any time. It relies on the '
+                            'complete automation of the deployment process.</p>'
+                            '<p>Creating secure and reliable microservices before they land in production should be '
+                            'important for every software developer. The software developer doesn’t have to be a '
+                            'security expert in everything to work within a microservices architecture.</p>'),
+    },
+    {
         'name': 'Maciej Szulik',
         'bio': gettext(
             'Maciej is a passionate developer with over 10 years of experience in many languages. Currently, he is hacking on bugs.python.org and CPython\'s IMAP library by night. Whereas in the light of day, he\'s working on OpenShift and Kubernetes for Red Hat. In his spare time he organizes PyCon PL, helps reviewing talks for PyCon, talks at various events and meet ups around Europe.'),
