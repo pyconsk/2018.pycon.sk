@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-31 11:23+0100\n"
+"POT-Creation-Date: 2018-01-31 13:12+0100\n"
 "PO-Revision-Date: 2018-01-29 22:21+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -19,7 +19,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: views.py:57
+#: templates/cfp.html:53 views.py:46
+msgid "Machine Learning / AI"
+msgstr "Umelá inteligencia"
+
+#: templates/cfp.html:55 views.py:47
+msgid "Community / Diversity / Social"
+msgstr "Komunita / Rôznorodosť / Spoločnosť"
+
+#: templates/cfp.html:52 views.py:48
+msgid "Data Science"
+msgstr "Dáta"
+
+#: templates/cfp.html:50 views.py:50
+msgid "Education"
+msgstr "Vzdelávanie"
+
+#: templates/cfp.html:48 views.py:51
+msgid "Python General"
+msgstr "Python všeobecne"
+
+#: templates/cfp.html:54 views.py:52
+msgid "Security"
+msgstr "Bezpečnosť"
+
+#: templates/cfp.html:56 views.py:53
+msgid "Soft Skills"
+msgstr "Mäkké zručnosti"
+
+#: templates/cfp.html:57 views.py:54
+msgid "Hardware"
+msgstr "Hardvér"
+
+#: templates/cfp.html:51 views.py:55
+msgid "Web Development"
+msgstr "Vývoj webu"
+
+#: templates/cfp.html:58 views.py:56
+msgid "Other"
+msgstr "Iné"
+
+#: views.py:72
 msgid ""
 "You might know her as That Docs Lady, and you won't be wrong! Mikey spent"
 " the better part of the last 10 years documenting super-geeky enterprise "
@@ -41,11 +81,11 @@ msgstr ""
 "hackfesty a šprinty na developerských eventoch, najmä pre komunity "
 "Pythonu a Djanga, ale aj pre Fedoru, Plone, DE a NixOS."
 
-#: views.py:68
+#: views.py:83
 msgid "Docs or it didn't happen"
 msgstr "Dokumentácia, alebo sa to nestalo"
 
-#: views.py:70
+#: views.py:85
 msgid ""
 "<p>If you ever skimmed through a README, tried to follow a quickstart "
 "tutorial, attempted to decipher an error message, or typed '--help' in "
@@ -66,14 +106,14 @@ msgid ""
 "are welcome!</p>"
 msgstr ""
 
-#: views.py:90
+#: views.py:105
 msgid ""
 "Working at Exponea as DevOps Engineer for about a year after finishing "
 "studies of Telecommunications at FEI STU in Bratislava. Virtualization "
 "and container platforms were always his passion."
 msgstr ""
 
-#: views.py:98
+#: views.py:113
 msgid ""
 "<p>We invite You on the journey of making Exponea and it's multi-terabyte"
 " in-memory databases possible in the containerized environment of the "
@@ -83,7 +123,35 @@ msgid ""
 "or did we?</p>"
 msgstr ""
 
-#: views.py:106
+#: views.py:121
+msgid ""
+"Aaron is a senior software engineer turned developer advocate at Nexmo. A"
+" life-long tinkerer, Aaron has been creating things with code and "
+"electronics for as long as he can remember. He spends his time building "
+"cool stuff and helping other people build unbelievably cool stuff 🔥🔥🎉"
+msgstr ""
+
+#: views.py:128
+#, python-format
+msgid ""
+"<p>My brain is different. The regions involved in concentration, impulse "
+"control, and inhibition are smaller than usual; Like somewhere between 5%"
+" and 12% of adults I have ADHD. Even if you do not have the disorder "
+"yourself you probably work, live or know someone who does. But the world "
+"is not designed for people with ADHD, so to be successful I’ve had to "
+"develop techniques to keep my concentration and procrastination in "
+"check.</p><p>In this talk, we’ll briefly look at what ADHD is and how it "
+"impairs not only concentration but also executive function. Then we’ll "
+"explore how changes in the workplace can benefit not just those with "
+"ADHD, but anyone whose work requires creativity or extended periods of "
+"focus. Next, we’ll look at some persistent myths about productivity, and "
+"what you can do personally to increase your concentration and output "
+"without burning out. Then I’ll present some techniques you can rollout "
+"within your team to remove distractions while improving the quality of "
+"communication.</p>"
+msgstr ""
+
+#: views.py:143
 msgid ""
 "Gareth has been working with DevOps organisations and DevOps tools like "
 "monitoring systems for over 13 years. Gareth would like to share his "
@@ -94,11 +162,11 @@ msgid ""
 "containers at scale."
 msgstr ""
 
-#: views.py:114
+#: views.py:151
 msgid "The Concierge Paradigm"
 msgstr ""
 
-#: views.py:116
+#: views.py:153
 msgid ""
 "<p>The Concierge Paradigm idea was born over time but initially came from"
 " challenges we had by working out how to operate scalable and enterprise-"
@@ -115,14 +183,14 @@ msgid ""
 "scheduler.</p>"
 msgstr ""
 
-#: views.py:131
+#: views.py:168
 msgid ""
 "Full-stack developer who loves Python but got stuck in Javascript world "
 "for a long time and now is drifting somewhere in between. Passionate "
 "triathlete and wannabe entrepreneur."
 msgstr ""
 
-#: views.py:138
+#: views.py:175
 msgid ""
 "<p>GraphQL is a query language for web APIs, an alternative to REST. It "
 "allows clients to define the structure of the required data. It’s "
@@ -136,11 +204,11 @@ msgid ""
 "introspection</li><li>Mutations</li></ul></p>"
 msgstr ""
 
-#: views.py:175
+#: views.py:212
 msgid "I was paid to kill people. I quit the job."
 msgstr ""
 
-#: views.py:181
+#: views.py:218
 msgid ""
 "<p>Cvičenie LOCKED SHIELDS je organizované Centrom výnimočnosti pre "
 "oblasť kybernetickej obrany (CCD CoE). Jedným s jeho počinov je cvičenie "
@@ -151,7 +219,7 @@ msgid ""
 "kybernetická elita cvičí na zásah proti kybernarušiteľom.</p>"
 msgstr ""
 
-#: views.py:190
+#: views.py:227
 msgid ""
 "Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
 " data consulting company called Kjamistan in Berlin, Germany and loves to"
@@ -161,7 +229,7 @@ msgid ""
 "other rants on Twitter."
 msgstr ""
 
-#: views.py:196
+#: views.py:234
 msgid ""
 "<p>In this half-day workshop, we'll take a walk through a Kaggle "
 "competition on house prices to explore our dataset. Then, we'll build a "
@@ -174,7 +242,7 @@ msgid ""
 "work.</p><p>GitHub Repo: https://github.com/kjam/intro-to-ml</p>"
 msgstr ""
 
-#: views.py:208
+#: views.py:246
 msgid ""
 "Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
 " host and founder of the two most popular Python podcasts: Talk Python To"
@@ -185,11 +253,11 @@ msgid ""
 "https://talkpython.fm and https://pythonbytes.fm."
 msgstr ""
 
-#: views.py:214
+#: views.py:253
 msgid "TBD"
 msgstr ""
 
-#: views.py:218
+#: views.py:257
 msgid ""
 "Rae Knowler is a web developer in Zürich, where they develop product data"
 " APIs and work on Open Data projects. They are interested in the "
@@ -198,7 +266,7 @@ msgid ""
 "time they read a lot of science fiction and hug cats."
 msgstr ""
 
-#: views.py:227
+#: views.py:266
 msgid ""
 "<p>The default settings of some libraries and tools are so useless, or "
 "even dangerous, that they should never be used. While they give the "
@@ -207,7 +275,7 @@ msgid ""
 "such defaults, and explore how to create tools with good_defaults.</p>"
 msgstr ""
 
-#: views.py:235
+#: views.py:274
 msgid ""
 "Ryan is currently in the middle of his practice-led PhD researching "
 "communication and collaboration in live coding ensembles through software"
@@ -221,11 +289,11 @@ msgid ""
 "generally making a lot of noise."
 msgstr ""
 
-#: views.py:246
+#: views.py:285
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:248
+#: views.py:287
 msgid ""
 "<p>In this talk I will introduce the topic of live coding; the "
 "interactive programming experience for generating audio and visuals but "
@@ -243,7 +311,7 @@ msgid ""
 "part performance."
 msgstr ""
 
-#: views.py:264
+#: views.py:303
 msgid ""
 "Patricia is a Python developer working at Olist, a brazilian marketplace "
 "services platform. She started developing web applications in 2010 and "
@@ -253,7 +321,7 @@ msgid ""
 "TechLadies Brazil."
 msgstr ""
 
-#: views.py:274
+#: views.py:313
 msgid ""
 "<p>A search engine is a software responsible for search into large "
 "amounts of data. Often, involved algorithms are complex and their "
@@ -265,7 +333,7 @@ msgid ""
 "web to be indexed in Elasticsearch.\"</p>"
 msgstr ""
 
-#: views.py:283
+#: views.py:322
 msgid ""
 "Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen "
 "Technologies, a Machine Learning LegalTech company, leading 10+ ML and "
@@ -278,7 +346,7 @@ msgid ""
 "communities around the world that are still active to date."
 msgstr ""
 
-#: views.py:289
+#: views.py:329
 msgid ""
 "<p>This talk would provide useful and practical understanding on how to "
 "build industry-ready machine learning models in python through "
@@ -288,7 +356,21 @@ msgid ""
 "rabbitmq.</p>"
 msgstr ""
 
-#: views.py:297
+#: views.py:337
+msgid ""
+"Studoval jsem na FIT VUT v Brně, nyní pracuji v Kiwi.com a zajímam se o "
+"Python a komunitu kolem."
+msgstr ""
+
+#: views.py:344
+msgid ""
+"<p>Workshop pro začátečníky</p><p>Obsah:<ul><li>Stručný úvod do "
+"XML</li><li>Instalace parseru</li><li>Nahrání, úprava, uložení "
+"XML</li><li>práce s daty v XML formátu</li><li>serializace a "
+"deserializace objektu do XML</li></ul></p>"
+msgstr ""
+
+#: views.py:354
 msgid ""
 "Maciej is a passionate developer with over 10 years of experience in many"
 " languages. Currently, he is hacking on bugs.python.org and CPython's "
@@ -298,7 +380,7 @@ msgid ""
 "meet ups around Europe."
 msgstr ""
 
-#: views.py:303
+#: views.py:361
 msgid ""
 "<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others "
 "are investinga lot of time and effort into improving Kubernetes.  I bet, "
@@ -346,7 +428,32 @@ msgstr ""
 " ktorý obsahuje detailné inštrukcie ako si všetko spustiť sám úplne od "
 "začiatku.</p>"
 
-#: views.py:331
+#: views.py:389
+msgid ""
+"Jazykozpytec, škarohlíd, mrzout... Již mnohaletý (asi senior prej) PHP "
+"vývojář z povolání. Zatím koníčkový, již brzy i profesionální (no, ehm… "
+"junior, batole) Ruby vývojář. Několikaletý pomocný kouč na ostravských "
+"PyLadies. Hrdá slezská náplava. Jediný člověk na světě, který si jako "
+"novoroční předsevzetí dal častější hraní počítačových her."
+msgstr ""
+
+#: views.py:396
+msgid ""
+"<p>Lidé mluví různými jazyky. Ba co hůř, oni jimi i píší a to i na "
+"počítači. Tyto jazyky se nepíší vždy latinkou. A i když ano, není ani ta "
+"vždy stejná. Tito lidé mají navíc v těchto jazycích a znakových sadách "
+"dokonce i jména, poštovní adresy atd. a vyplňují je třeba do webových "
+"formulářů. A to vše je jen začátek boje s řetězci...</p><p>To, že v "
+"řetězcích se většinou ukrývá text v nějakém lidském jazyce, asi všichni "
+"tušíme. Snad jsme se každý i pokusili někdy nějaký takový zpracovat, "
+"porovnávat, řadit, ti odvážnější třeba i skloňovat. Odhrňme závěs a "
+"posviťme si na některé z těch unicodových nestvůr. Nakonec budeme rádi, "
+"že se nám takový text aspoň zobrazí na obrazovce; a někdy dokonce i "
+"správně. Alespoň dokud se nám na webu nezaregistruje někdo z Klingonské "
+"říše...</p>"
+msgstr ""
+
+#: views.py:409
 msgid ""
 "Matej Vetrak is a senior DevOps engineer that has been puzzled for the "
 "longest time as how to build a proper high-available infrastructure "
@@ -356,7 +463,7 @@ msgid ""
 "community in general. He is currently employed by Exponea."
 msgstr ""
 
-#: views.py:341
+#: views.py:419
 msgid ""
 "<p>In this workshop we'll look at common problems that all developers are"
 " facing in the latest trends of the ever changing scalable app world. "
@@ -379,7 +486,7 @@ msgid ""
 "https://docs.docker.com/engine/installation/</p>"
 msgstr ""
 
-#: views.py:383
+#: views.py:461
 msgid "PyCon SK"
 msgstr "PyCon SK"
 
@@ -534,49 +641,9 @@ msgstr "Workshop"
 msgid "Which category suits your talk / workshop best?"
 msgstr "Ktorá kategória sa najlepšie hodí na Vašu prezentaciu / workshop?"
 
-#: templates/cfp.html:48
-msgid "Python General"
-msgstr "Python všeobecne"
-
 #: templates/cfp.html:49
 msgid "DevOps"
 msgstr "DevOps"
-
-#: templates/cfp.html:50
-msgid "Education"
-msgstr "Vzdelávanie"
-
-#: templates/cfp.html:51
-msgid "Web Development"
-msgstr "Vývoj webu"
-
-#: templates/cfp.html:52
-msgid "Data Science"
-msgstr "Dáta"
-
-#: templates/cfp.html:53
-msgid "Machine Learning / AI"
-msgstr "Umelá inteligencia"
-
-#: templates/cfp.html:54
-msgid "Security"
-msgstr "Bezpečnosť"
-
-#: templates/cfp.html:55
-msgid "Community / Diversity / Social"
-msgstr "Komunita / Rôznorodosť / Spoločnosť"
-
-#: templates/cfp.html:56
-msgid "Soft Skills"
-msgstr "Mäkké zručnosti"
-
-#: templates/cfp.html:57
-msgid "Hardware"
-msgstr "Hardvér"
-
-#: templates/cfp.html:58
-msgid "Other"
-msgstr "Iné"
 
 #: templates/cfp.html:65
 msgid "Which language will you present in?"

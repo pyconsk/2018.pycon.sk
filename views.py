@@ -43,15 +43,30 @@ LDJSON = {
 }
 
 TAGS = {
-    'ai': 'AI',
+    'ai': gettext('Machine Learning / AI'),
+    'community': gettext('Community / Diversity / Social'),
+    'data': gettext('Data Science'),
     'devops': 'DevOps',
-    'generic': 'Generic',
-    'security': 'Security',
-    'other': 'Other',
-    'web': 'Web',
+    'edu': gettext('Education'),
+    'generic': gettext('Python General'),
+    'security': gettext('Security'),
+    'softskills': gettext('Soft Skills'),
+    'hardware': gettext('Hardware'),
+    'web': gettext('Web Development'),
+    'other': gettext('Other'),
 }
 
 DATA = (
+    # {
+    #     'name': '',
+    #     'bio': gettext(''),
+    #     'country': '',
+    #     'url': '',
+    #     'avatar': 'img/speakers/.jpg',
+    #     'talk': '',
+    #     'tag': TAGS[''],
+    #     'abstract': gettext(''),
+    # },
     {
         'name': 'Mikey Ariel',
         'bio': gettext('You might know her as That Docs Lady, and you won\'t be wrong! Mikey spent the better part of '
@@ -66,7 +81,7 @@ DATA = (
         'url': 'http://docsideofthemoon.com/',
         'avatar': 'img/speakers/mikey_ariel.jpg',
         'talk': gettext('Docs or it didn\'t happen'),
-        'tag': TAGS['other'],
+        'tag': 'other',
         'abstract': gettext('<p>If you ever skimmed through a README, tried to follow a quickstart tutorial, '
                             'attempted to decipher an error message, or typed \'--help\' in your terminal, '
                             'congratulations -- you have encountered documentation!</p>'
@@ -94,12 +109,34 @@ DATA = (
         'url': '#',
         'avatar': 'img/speakers/frantisek_benko.jpg',
         'talk': 'To the Google in 80 Days',
-        'tag': TAGS['devops'],
+        'tag': 'devops',
         'abstract': gettext('<p>We invite You on the journey of making Exponea and it\'s multi-terabyte in-memory '
                             'databases possible in the containerized environment of the Google Cloud.</p>'
                             '<p>Join us as we grasp the wheel of our multi-server hardware-based spaceship, navigate '
                             'through the dangerous oceans of no-downtime live migrations to safely dock in the calm '
                             'waters of Google bay or did we?</p>'),
+    },
+    {
+        'name': 'Aaron Bassett',
+        'bio': gettext(
+            'Aaron is a senior software engineer turned developer advocate at Nexmo. A life-long tinkerer, Aaron has been creating things with code and electronics for as long as he can remember. He spends his time building cool stuff and helping other people build unbelievably cool stuff 🔥🔥🎉'),
+        'country': 'UK',
+        'url': 'https://nexmo.com',
+        'avatar': 'img/speakers/aaron_bassett.jpg',
+        'talk': 'When your wetware has too many threads - Tips from an ADHDer on how to improve your focus',
+        'tag': 'softskills',
+        'abstract': gettext(
+            '<p>My brain is different. The regions involved in concentration, impulse control, and inhibition are '
+            'smaller than usual; Like somewhere between 5% and 12% of adults I have ADHD. Even if you do not have the '
+            'disorder yourself you probably work, live or know someone who does. But the world is not designed for '
+            'people with ADHD, so to be successful I’ve had to develop techniques to keep my concentration and '
+            'procrastination in check.</p>'
+            '<p>In this talk, we’ll briefly look at what ADHD is and how it impairs not only concentration but also '
+            'executive function. Then we’ll explore how changes in the workplace can benefit not just those with ADHD, '
+            'but anyone whose work requires creativity or extended periods of focus. Next, we’ll look at some '
+            'persistent myths about productivity, and what you can do personally to increase your concentration and '
+            'output without burning out. Then I’ll present some techniques you can rollout within your team to remove '
+            'distractions while improving the quality of communication.</p>'),
     },
     {
         'name': 'Gareth Brown',
@@ -112,7 +149,7 @@ DATA = (
         'url': 'http://www.mesoform.com',
         'avatar': 'img/speakers/no_avatar.svg',
         'talk': gettext('The Concierge Paradigm'),
-        'tag': TAGS['devops'],
+        'tag': 'devops',
         'abstract': gettext('<p>The Concierge Paradigm idea was born over time but initially came from challenges '
                             'we had by working out how to operate scalable and enterprise-grade application '
                             'containers. This meant monitoring, logging, deploying, scaling, load-balancing and '
@@ -134,7 +171,7 @@ DATA = (
         'url': '#',
         'avatar': 'img/speakers/tomas_ehrlich.jpg',
         'talk': 'GraphQL is the new black',
-        'tag': TAGS['web'],
+        'tag': 'web',
         'abstract': gettext('<p>GraphQL is a query language for web APIs, an alternative to REST. It allows clients to '
                             'define the structure of the required data. It’s strongly typed and allows introspection, '
                             'which make clients more flexible.</p>'
@@ -154,7 +191,7 @@ DATA = (
     #     'url': 'https://www.openfaas.com/',
     #     'avatar': 'img/speakers/alex_ellis.jpg',
     #     'talk': 'FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere',
-    #     'tag': TAGS['devops'],
+    #     'tag': 'devops',
     #     'abstract': gettext('<p>OpenFaaS (Functions as a Service) makes building serverless functions simple by using '
     #                         'containers to avoid vendor-lock-in. That means you can run your functions on your own '
     #                         'terms - anywhere.</p>'
@@ -177,7 +214,7 @@ DATA = (
         'url': '#',
         'avatar': 'img/speakers/no_avatar.svg',
         'talk': 'LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie',
-        'tag': TAGS['security'],
+        'tag': 'security',
         'abstract': gettext('<p>Cvičenie LOCKED SHIELDS je organizované Centrom výnimočnosti pre oblasť kybernetickej '
                             'obrany (CCD CoE). Jedným s jeho počinov je cvičenie LOCKED SHIELDS, ktoré je svojou '
                             'veľkosťou, rozsiahlosťou a zameraním jedným s najunikátnejších kybercvičení na svete.</p>'
@@ -187,12 +224,13 @@ DATA = (
     },
     {
         'name': 'Katharine Jarmul',
-        'bio': gettext('Katharine Jarmul is a pythonista and lover of all things Unix. She runs a data consulting company called Kjamistan in Berlin, Germany and loves to rant about data analysis, natural language processing, ethical machine learning and automation workflows. When she\'s not ranting, she\'s likely cooking or maybe taking photos, or quite possibly reading and retweeting other rants on Twitter.'),
+        'bio': gettext(
+            'Katharine Jarmul is a pythonista and lover of all things Unix. She runs a data consulting company called Kjamistan in Berlin, Germany and loves to rant about data analysis, natural language processing, ethical machine learning and automation workflows. When she\'s not ranting, she\'s likely cooking or maybe taking photos, or quite possibly reading and retweeting other rants on Twitter.'),
         'country': 'DE',
         'url': 'http://kjamistan.com/',
         'avatar': 'img/speakers/katharine_jarmul.jpg',
         'talk': 'Introduction to Machine Learning with Python',
-        'tag': TAGS['ai'],
+        'tag': 'ai',
         'abstract': gettext('<p>In this half-day workshop, we\'ll take a walk through a Kaggle competition on house '
                             'prices to explore our dataset. Then, we\'ll build a model to submit our predictions to '
                             'Kaggle. Finally, we\'ll introspect what our model has learned. By the end of the course, '
@@ -205,7 +243,8 @@ DATA = (
     },
     {
         'name': 'Michael Kennedy',
-        'bio': gettext('Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the host and founder of the two most popular Python podcasts: Talk Python To Me and Python Bytes. He teaches online courses for developers through his business Talk Python Training. Michael loves to help fellow podcasters and developers make their way in the world. Connect with him on Twitter via @mkennedy and check out his podcasts as https://talkpython.fm and https://pythonbytes.fm.'),
+        'bio': gettext(
+            'Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the host and founder of the two most popular Python podcasts: Talk Python To Me and Python Bytes. He teaches online courses for developers through his business Talk Python Training. Michael loves to help fellow podcasters and developers make their way in the world. Connect with him on Twitter via @mkennedy and check out his podcasts as https://talkpython.fm and https://pythonbytes.fm.'),
         'country': 'USA',
         'url': 'https://talkpython.fm/',
         'avatar': 'img/speakers/michael_kennedy.jpg',
@@ -223,7 +262,7 @@ DATA = (
         'url': 'http://raeknowler.com',
         'avatar': 'img/speakers/rae_knowler.jpg',
         'talk': 'Unsafe at Any Speed',
-        'tag': TAGS['generic'],
+        'tag': 'generic',
         'abstract': gettext('<p>The default settings of some libraries and tools are so useless, or even dangerous, '
                             'that they should never be used. While they give the impression of being easy to use or '
                             'performant, they actually represent traps for the unwary user. I will show the concrete '
@@ -244,7 +283,7 @@ DATA = (
         'url': '#',
         'avatar': 'img/speakers/no_avatar.svg',
         'talk': gettext('Programming Python as performance: live coding with FoxDot'),
-        'tag': TAGS['other'],
+        'tag': 'other',
         'abstract': gettext('<p>In this talk I will introduce the topic of live coding; the interactive programming'
                             ' experience for generating audio and visuals but this talk will mainly focus on audio.'
                             ' Live coders use programming languages to describe rules for generating music but then'
@@ -270,7 +309,7 @@ DATA = (
         'url': 'https://github.com/pattyvader',
         'avatar': 'img/speakers/patricia_regina.jpg',
         'talk': 'Search Engines with Python and Elasticsearch',
-        'tag': TAGS['web'],
+        'tag': 'web',
         'abstract': gettext('<p>A search engine is a software responsible for search into large amounts of data. Often,'
                             ' involved algorithms are complex and their architecture are not trivial. In this scenario,'
                             ' Elasticsearch appears as a great solution to solve the indexing and searching tasks. In '
@@ -280,12 +319,13 @@ DATA = (
     },
     {
         'name': 'Alejandro Saucedo',
-        'bio': gettext('Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen Technologies, a Machine Learning LegalTech company, leading 10+ ML and DevOps engineers in London and New York. Alejandro is also the Founder and CTO at Exponential Technologies, a ML consultancy that tackles challenges in industrial sectors. In his previous lives he co-founded HackTrain, a technology consultancy that operated in the railway sector, worked as a Full-stack software developer at Bloomberg LP, and started HackaGlobal which is a global NGO that created multiple hackathon communities around the world that are still active to date.'),
+        'bio': gettext(
+            'Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen Technologies, a Machine Learning LegalTech company, leading 10+ ML and DevOps engineers in London and New York. Alejandro is also the Founder and CTO at Exponential Technologies, a ML consultancy that tackles challenges in industrial sectors. In his previous lives he co-founded HackTrain, a technology consultancy that operated in the railway sector, worked as a Full-stack software developer at Bloomberg LP, and started HackaGlobal which is a global NGO that created multiple hackathon communities around the world that are still active to date.'),
         'country': 'UK',
         'url': 'http://e-x.io/',
         'avatar': 'img/speakers/alejandro_saucedo.jpg',
         'talk': 'Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python',
-        'tag': TAGS['ai'],
+        'tag': 'ai',
         'abstract': gettext('<p>This talk would provide useful and practical understanding on how to build '
                             'industry-ready machine learning models in python through distributed, '
                             'horizontally-scalable architectures. I will include why and when these architectures are '
@@ -293,13 +333,31 @@ DATA = (
                             'implementation using celery + rabbitmq.</p>'),
     },
     {
+        'name': 'Václav Sauer',
+        'bio': gettext(
+            'Studoval jsem na FIT VUT v Brně, nyní pracuji v Kiwi.com a zajímam se o Python a komunitu kolem.'),
+        'country': 'CZ',
+        'url': '#',
+        'avatar': 'img/speakers/no_avatar.svg',
+        'talk': 'Práce s XML',
+        'tag': 'generic',
+        'abstract': gettext('<p>Workshop pro začátečníky</p>'
+                            '<p>Obsah:<ul>'
+                            '<li>Stručný úvod do XML</li>'
+                            '<li>Instalace parseru</li>'
+                            '<li>Nahrání, úprava, uložení XML</li>'
+                            '<li>práce s daty v XML formátu</li>'
+                            '<li>serializace a deserializace objektu do XML</li></ul></p>'),
+    },
+    {
         'name': 'Maciej Szulik',
-        'bio': gettext('Maciej is a passionate developer with over 10 years of experience in many languages. Currently, he is hacking on bugs.python.org and CPython\'s IMAP library by night. Whereas in the light of day, he\'s working on OpenShift and Kubernetes for Red Hat. In his spare time he organizes PyCon PL, helps reviewing talks for PyCon, talks at various events and meet ups around Europe.'),
+        'bio': gettext(
+            'Maciej is a passionate developer with over 10 years of experience in many languages. Currently, he is hacking on bugs.python.org and CPython\'s IMAP library by night. Whereas in the light of day, he\'s working on OpenShift and Kubernetes for Red Hat. In his spare time he organizes PyCon PL, helps reviewing talks for PyCon, talks at various events and meet ups around Europe.'),
         'country': 'PL',
         'url': '',
         'avatar': 'img/speakers/maciej_szulik.jpg',
         'talk': 'Effectively running python applications in Kubernetes/OpenShift',
-        'tag': TAGS['devops'],
+        'tag': 'devops',
         'abstract': gettext('<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others are investing'
                             'a lot of time and effort into improving Kubernetes.  I bet, you have encountered'
                             'that name at least once in the past twelve months, either on Hacker News, Reddit,'
@@ -327,6 +385,26 @@ DATA = (
                             'how to run it on your own from scratch.</p>'),
     },
     {
+        'name': 'Štěpán Tomsa',
+        'bio': gettext(
+            'Jazykozpytec, škarohlíd, mrzout... Již mnohaletý (asi senior prej) PHP vývojář z povolání. Zatím koníčkový, již brzy i profesionální (no, ehm… junior, batole) Ruby vývojář. Několikaletý pomocný kouč na ostravských PyLadies. Hrdá slezská náplava. Jediný člověk na světě, který si jako novoroční předsevzetí dal častější hraní počítačových her.'),
+        'country': 'CZ',
+        'url': 'https://github.com/glutexo',
+        'avatar': 'img/speakers/stepan_tomsa.jpg',
+        'talk': 'Cesta kolem světa za 30 minut',
+        'tag': 'data',
+        'abstract': gettext(
+            '<p>Lidé mluví různými jazyky. Ba co hůř, oni jimi i píší a to i na počítači. Tyto jazyky se nepíší vždy '
+            'latinkou. A i když ano, není ani ta vždy stejná. Tito lidé mají navíc v těchto jazycích a znakových '
+            'sadách dokonce i jména, poštovní adresy atd. a vyplňují je třeba do webových formulářů. A to vše je jen '
+            'začátek boje s řetězci...</p>'
+            '<p>To, že v řetězcích se většinou ukrývá text v nějakém lidském jazyce, asi všichni tušíme. Snad jsme se '
+            'každý i pokusili někdy nějaký takový zpracovat, porovnávat, řadit, ti odvážnější třeba i skloňovat. '
+            'Odhrňme závěs a posviťme si na některé z těch unicodových nestvůr. Nakonec budeme rádi, že se nám takový '
+            'text aspoň zobrazí na obrazovce; a někdy dokonce i správně. Alespoň dokud se nám na webu nezaregistruje '
+            'někdo z Klingonské říše...</p>'),
+    },
+    {
         'name': 'Matej Vetrák',
         'bio': gettext('Matej Vetrak is a senior DevOps engineer that has been puzzled for the longest time as how to '
                        'build a proper high-available infrastructure composed of many small collaborative services for '
@@ -337,7 +415,7 @@ DATA = (
         'url': '#',
         'avatar': 'img/speakers/matej_vetrak.jpg',
         'talk': 'Managing high-available applications in production',
-        'tag': TAGS['devops'],
+        'tag': 'devops',
         'abstract': gettext('<p>In this workshop we\'ll look at common problems that all developers are facing in the '
                             'latest trends of the ever changing scalable app world. We\'ll learn how to deploy, scale, '
                             'and manage high-available microservices using Docker, Kubernetes and other open-source '
@@ -486,6 +564,7 @@ def schedule():
     }
     variables = _get_template_variables(ld_json=LDJSON_EVENT, li_schedule='active')
     variables['data'] = DATA
+    variables['tags'] = TAGS
 
     return render_template('schedule.html', **variables)
 
@@ -520,6 +599,7 @@ def speakers():
     }
     variables = _get_template_variables(ld_json=LDJSON_EVENT, li_speakers='active')
     variables['data'] = DATA
+    variables['tags'] = TAGS
 
     return render_template('speakers.html', **variables)
 

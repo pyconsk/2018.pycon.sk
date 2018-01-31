@@ -246,19 +246,39 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
 }
 
 .ai {
-  background-color: red;
-}
-
-.generic {
   background-color: green;
 }
 
-.devops {
+.community {
+  background-color: hotpink;
+}
+
+.data {
+  background-color: darkolivegreen;
+}
+
+.edu {
+  background-color: cornflowerblue;
+}
+
+.generic {
   background-color: blue;
+}
+
+.devops {
+  background-color: orangered;
 }
 
 .security {
   background-color: black;
+}
+
+.hardware {
+  background-color: darkgray;
+}
+
+.softskills {
+  background-color: violet;
 }
 
 .web {

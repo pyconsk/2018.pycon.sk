@@ -15,7 +15,7 @@
         <div>
           <article class="card">
             <header>
-              <h3>{{ entry['talk'] }}<span class="label {{ entry['tag']|lower }}">{{ entry['tag'] }}</span></h3>
+              <h3>{{ entry['talk'] }}<span class="label {{ entry['tag']|lower }}">{{ tags[entry['tag']] }}</span></h3>
             </header>
             <footer>
               <h4>{{ entry['name'] }} ({{ entry['country']}})</h4>
