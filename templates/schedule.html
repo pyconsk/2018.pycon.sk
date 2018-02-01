@@ -6,25 +6,37 @@
 
       <h1>{{ _('List of talks at PyCon SK 2018') }}</h1>
       <p class="lead">
-        {{ _('All proposed talks are under review. Once we have complete list we\'ll publish conference schedule on this page.') }}
+        {{ _('All proposed talks are under review. Once we have complete list we\'ll publish conference schedule on this
+page.') }}
         {{ _('In the mean time you can find here the list of accepted talks and workshops.') }}
       </p>
 
       <div class="flex one two-900 three-1200 center demo">
-        {% for entry in data %}{% if entry['talk'] %}
+        {% for entry in data %}
         <div>
           <article class="card">
             <header>
-              <h3>{{ entry['talk'] }}<span class="label {{ entry['tag']|lower }}">{{ tags[entry['tag']] }}</span></h3>
+              <h3>
+                {{ entry['title'] }}<br />
+                <span class="label {{ entry['type'] }}">{{ tags[entry['type']] }}</span>
+                <span class="label {{ entry['flag'] }}">{{ tags[entry['flag']] }}</span>
+              </h3>
             </header>
             <footer>
-              <h4>{{ entry['name'] }} ({{ entry['country']}})</h4>
-              <img src="{{ url_for('static', filename=entry['avatar']) }}" class="img-responsive sspeaker">
-              {% autoescape false %}{{ entry['abstract'] }}{% endautoescape %}
+              <h4>
+                {{ entry['primary_speaker']['first_name'] }} {{ entry['primary_speaker']['last_name'] }}
+                ({{ entry['primary_speaker']['country']}})
+              </h4>
+              {% if entry['primary_speaker']['image'] %}
+              <img src="{{ url_for('static', filename='img/speakers/'+ entry['primary_speaker']['first_name']|strip_accents|lower +'_'+ entry['primary_speaker']['last_name']|strip_accents|lower +'.jpg') }}" class="img-responsive sspeaker">
+              {% else %}
+              <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive sspeaker">
+              {% endif %}
+              {{ entry['abstract']|linebreaks }}
             </footer>
           </article>
         </div>
-        {% endif %}{% endfor %}
+        {% endfor %}
       </div>
 
     </div>

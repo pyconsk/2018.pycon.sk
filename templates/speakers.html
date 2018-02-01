@@ -11,22 +11,26 @@
         {% for entry in data %}
           <div>
             <article class="card">
-              {% if entry['url'] != '#' %}
-              <a href="{{ entry['url'] }}" target="_blank"
-               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['url'] }}');">
+              {% if entry['primary_speaker']['url'] %}
+              <a href="{{ entry['primary_speaker']['url'] }}" target="_blank"
+               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['primary_speaker']['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['primary_speaker']['url'] }}');">
               {% endif %}
-                <img src="{{ url_for('static', filename=entry['avatar']) }}" class="img-responsive center-block">
-              {% if entry['url'] != '#' %}</a>{% endif %}
+              {% if entry['primary_speaker']['image'] %}
+              <img src="{{ url_for('static', filename='img/speakers/'+ entry['primary_speaker']['first_name']|strip_accents|lower +'_'+ entry['primary_speaker']['last_name']|strip_accents|lower +'.jpg') }}" class="img-responsive center-block">
+              {% else %}
+              <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive center-block">
+              {% endif %}
+              {% if entry['primary_speaker']['url'] %}</a>{% endif %}
               <footer>
                 <h3>
-                  {% if entry['url'] != '#' %}
-              <a href="{{ entry['url'] }}" target="_blank"
-               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['url'] }}');">
+                  {% if entry['primary_speaker']['url'] %}
+              <a href="{{ entry['primary_speaker']['url'] }}" target="_blank"
+               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['primary_speaker']['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['primary_speaker']['url'] }}');">
               {% endif %}
-                  {{ entry['name'] }}
-              {% if entry['url'] != '#' %}</a>{% endif %}
-                  <small>({{ entry['country']}})</small></h3>
-                <p class="text-justify">{% autoescape false %}{{ entry['bio'] }}{% endautoescape %}</p>
+                  {{ entry['primary_speaker']['first_name'] }} {{ entry['primary_speaker']['last_name'] }}
+              {% if entry['primary_speaker']['url'] != '#' %}</a>{% endif %}
+                  <small>({{ entry['primary_speaker']['country']}})</small></h3>
+                <p class="text-justify">{{ entry['primary_speaker']['bio']|linebreaks }}</p>
               </footer>
             </article>
           </div>

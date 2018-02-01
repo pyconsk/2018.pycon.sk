@@ -245,6 +245,18 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
   font-size: 0.85em;
 }
 
+.label {
+  margin-left: 0;
+}
+
+.talk {
+  background-color: saddlebrown;
+}
+
+.workshop {
+  background-color: orange;
+}
+
 .ai {
   background-color: green;
 }
@@ -286,7 +298,7 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
 }
 
 .other {
-  background-color: orange;
+  background-color: lightsalmon;
 }
 
 
