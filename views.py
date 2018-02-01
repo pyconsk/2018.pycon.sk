@@ -223,6 +223,48 @@ DATA = (
                             'elita cvičí na zásah proti kybernarušiteľom.</p>'),
     },
     {
+        'name': 'Miro Hrončok',
+        'bio': gettext(
+            'Miro Hrončok is a free software engineer at Red Hat and also a teacher at FIT ČVUT (Faculty of Information Technology in Prague), where he teaches (among other things) about some advanced concepts and libraries in Python.'
+            'Miro loves writing stuff in Python and Cython. He hates to write in C, but he\'d rather write in C than in Java :)'
+            'Miro is part of the large group of people who help to create the Fedora Linux distribution. His current mission is to make Fedora the best OS for Python developers.'),
+        'country': 'CZ',
+        'url': 'https://hroncok.cz/',
+        'avatar': 'img/speakers/miro_hroncok.jpg',
+        'talk': 'Cython: Speed up your code without going insane',
+        'tag': 'general',
+        'abstract': gettext('<p>Let\'s learn how to write Cython. Cython let\'s you write Python extension modules as '
+                            'if they were written in C or C++, but using a superset of Python. It\'s easy, it\'s fun, '
+                            'the result is fast and you are not furious.</p>'
+                            '<p>Preliminary agenda:<ul>'
+                            '<li>Python C API - what, why, how, why not</li>'
+                            '<li>Building extension modules with setuptools</li>'
+                            '<li>Python C API internals - PyObject, Reference counting, GIL</li>'
+                            '<li>Cython - what it does, why it\'s better, basics</li>'
+                            '<li>Compiling Python code with Cython</li>'
+                            '<li>Annotating with Cython, basic profiling, where\'s my code slow?</li>'
+                            '<li>Let\'s add types. Wrrrrm, speed ups!</li>'
+                            '<li>Writing Cython functions</li>'
+                            '<li>Creating "classes" (extension types)</li>'
+                            '<li>Using Cython with NumPy</li>'
+                            '<li>Cython directives</li>'
+                            '<li>C structs, pointers, malloc etc.</li>'
+                            '<li>Using C libraries from Cython</li>'
+                            '<li>(optional - if there\'s time left) pyximport and %%cython IPython magic</li>'
+                            '<li>(optional - if there\'s time left) Using Cython with C++</li>'
+                            '<li>(optional - if there\'s time left) Building wheels (in the cloud)</li>i</ul></p>'),
+    },
+    # {
+    #     'name': '',
+    #     'bio': gettext(''),
+    #     'country': '',
+    #     'url': '',
+    #     'avatar': 'img/speakers/.jpg',
+    #     'talk': '',
+    #     'tag': TAGS[''],
+    #     'abstract': gettext(''),
+    # },
+    {
         'name': 'Katharine Jarmul',
         'bio': gettext(
             'Katharine Jarmul is a pythonista and lover of all things Unix. She runs a data consulting company called Kjamistan in Berlin, Germany and loves to rant about data analysis, natural language processing, ethical machine learning and automation workflows. When she\'s not ranting, she\'s likely cooking or maybe taking photos, or quite possibly reading and retweeting other rants on Twitter.'),

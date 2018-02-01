@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-01 00:21+0100\n"
+"POT-Creation-Date: 2018-02-01 10:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -211,6 +211,38 @@ msgstr ""
 
 #: views.py:227
 msgid ""
+"Miro Hrončok is a free software engineer at Red Hat and also a teacher at"
+" FIT ČVUT (Faculty of Information Technology in Prague), where he teaches"
+" (among other things) about some advanced concepts and libraries in "
+"Python.Miro loves writing stuff in Python and Cython. He hates to write "
+"in C, but he'd rather write in C than in Java :)Miro is part of the large"
+" group of people who help to create the Fedora Linux distribution. His "
+"current mission is to make Fedora the best OS for Python developers."
+msgstr ""
+
+#: views.py:236
+#, python-format
+msgid ""
+"<p>Let's learn how to write Cython. Cython let's you write Python "
+"extension modules as if they were written in C or C++, but using a "
+"superset of Python. It's easy, it's fun, the result is fast and you are "
+"not furious.</p><p>Preliminary agenda:<ul><li>Python C API - what, why, "
+"how, why not</li><li>Building extension modules with "
+"setuptools</li><li>Python C API internals - PyObject, Reference counting,"
+" GIL</li><li>Cython - what it does, why it's better, "
+"basics</li><li>Compiling Python code with Cython</li><li>Annotating with "
+"Cython, basic profiling, where's my code slow?</li><li>Let's add types. "
+"Wrrrrm, speed ups!</li><li>Writing Cython functions</li><li>Creating "
+"\"classes\" (extension types)</li><li>Using Cython with "
+"NumPy</li><li>Cython directives</li><li>C structs, pointers, malloc "
+"etc.</li><li>Using C libraries from Cython</li><li>(optional - if there's"
+" time left) pyximport and %%cython IPython magic</li><li>(optional - if "
+"there's time left) Using Cython with C++</li><li>(optional - if there's "
+"time left) Building wheels (in the cloud)</li>i</ul></p>"
+msgstr ""
+
+#: views.py:269
+msgid ""
 "Katharine Jarmul is a pythonista and lover of all things Unix. She runs a"
 " data consulting company called Kjamistan in Berlin, Germany and loves to"
 " rant about data analysis, natural language processing, ethical machine "
@@ -219,7 +251,7 @@ msgid ""
 "other rants on Twitter."
 msgstr ""
 
-#: views.py:234
+#: views.py:276
 msgid ""
 "<p>In this half-day workshop, we'll take a walk through a Kaggle "
 "competition on house prices to explore our dataset. Then, we'll build a "
@@ -232,7 +264,7 @@ msgid ""
 "work.</p><p>GitHub Repo: https://github.com/kjam/intro-to-ml</p>"
 msgstr ""
 
-#: views.py:246
+#: views.py:288
 msgid ""
 "Michael Kennedy is a technologist, podcaster, and entrepreneur. He is the"
 " host and founder of the two most popular Python podcasts: Talk Python To"
@@ -243,11 +275,11 @@ msgid ""
 "https://talkpython.fm and https://pythonbytes.fm."
 msgstr ""
 
-#: views.py:253
+#: views.py:295
 msgid "TBD"
 msgstr ""
 
-#: views.py:257
+#: views.py:299
 msgid ""
 "Rae Knowler is a web developer in Zürich, where they develop product data"
 " APIs and work on Open Data projects. They are interested in the "
@@ -256,7 +288,7 @@ msgid ""
 "time they read a lot of science fiction and hug cats."
 msgstr ""
 
-#: views.py:266
+#: views.py:308
 msgid ""
 "<p>The default settings of some libraries and tools are so useless, or "
 "even dangerous, that they should never be used. While they give the "
@@ -265,7 +297,7 @@ msgid ""
 "such defaults, and explore how to create tools with good_defaults.</p>"
 msgstr ""
 
-#: views.py:274
+#: views.py:316
 msgid ""
 "Ryan is currently in the middle of his practice-led PhD researching "
 "communication and collaboration in live coding ensembles through software"
@@ -279,11 +311,11 @@ msgid ""
 "generally making a lot of noise."
 msgstr ""
 
-#: views.py:285
+#: views.py:327
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:287
+#: views.py:329
 msgid ""
 "<p>In this talk I will introduce the topic of live coding; the "
 "interactive programming experience for generating audio and visuals but "
@@ -301,7 +333,7 @@ msgid ""
 "part performance."
 msgstr ""
 
-#: views.py:303
+#: views.py:345
 msgid ""
 "Patricia is a Python developer working at Olist, a brazilian marketplace "
 "services platform. She started developing web applications in 2010 and "
@@ -311,7 +343,7 @@ msgid ""
 "TechLadies Brazil."
 msgstr ""
 
-#: views.py:313
+#: views.py:355
 msgid ""
 "<p>A search engine is a software responsible for search into large "
 "amounts of data. Often, involved algorithms are complex and their "
@@ -323,7 +355,7 @@ msgid ""
 "web to be indexed in Elasticsearch.\"</p>"
 msgstr ""
 
-#: views.py:322
+#: views.py:364
 msgid ""
 "Alejandro Saucedo is the Head of Deployed (ML) Engineering at Eigen "
 "Technologies, a Machine Learning LegalTech company, leading 10+ ML and "
@@ -336,7 +368,7 @@ msgid ""
 "communities around the world that are still active to date."
 msgstr ""
 
-#: views.py:329
+#: views.py:371
 msgid ""
 "<p>This talk would provide useful and practical understanding on how to "
 "build industry-ready machine learning models in python through "
@@ -346,13 +378,13 @@ msgid ""
 "rabbitmq.</p>"
 msgstr ""
 
-#: views.py:337
+#: views.py:379
 msgid ""
 "Studoval jsem na FIT VUT v Brně, nyní pracuji v Kiwi.com a zajímam se o "
 "Python a komunitu kolem."
 msgstr ""
 
-#: views.py:344
+#: views.py:386
 msgid ""
 "<p>Workshop pro začátečníky</p><p>Obsah:<ul><li>Stručný úvod do "
 "XML</li><li>Instalace parseru</li><li>Nahrání, úprava, uložení "
@@ -360,7 +392,7 @@ msgid ""
 "deserializace objektu do XML</li></ul></p>"
 msgstr ""
 
-#: views.py:354
+#: views.py:396
 msgid ""
 "My name is Natalie; I have a Networking and Security background, but "
 "recently decided to challenge myself in different space. That's why "
@@ -379,7 +411,7 @@ msgid ""
 "the community."
 msgstr ""
 
-#: views.py:371
+#: views.py:413
 msgid ""
 "<p>Guide for Python developers who are shifting to the new microservices-"
 "based development.</p><p>In the agile methodology the speed at which "
@@ -396,7 +428,7 @@ msgid ""
 " everything to work within a microservices architecture.</p>"
 msgstr ""
 
-#: views.py:386
+#: views.py:428
 msgid ""
 "Maciej is a passionate developer with over 10 years of experience in many"
 " languages. Currently, he is hacking on bugs.python.org and CPython's "
@@ -406,7 +438,7 @@ msgid ""
 "meet ups around Europe."
 msgstr ""
 
-#: views.py:393
+#: views.py:435
 msgid ""
 "<p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others "
 "are investinga lot of time and effort into improving Kubernetes.  I bet, "
@@ -433,7 +465,7 @@ msgid ""
 "from scratch.</p>"
 msgstr ""
 
-#: views.py:421
+#: views.py:463
 msgid ""
 "Jazykozpytec, škarohlíd, mrzout... Již mnohaletý (asi senior prej) PHP "
 "vývojář z povolání. Zatím koníčkový, již brzy i profesionální (no, ehm… "
@@ -442,7 +474,7 @@ msgid ""
 "novoroční předsevzetí dal častější hraní počítačových her."
 msgstr ""
 
-#: views.py:428
+#: views.py:470
 msgid ""
 "<p>Lidé mluví různými jazyky. Ba co hůř, oni jimi i píší a to i na "
 "počítači. Tyto jazyky se nepíší vždy latinkou. A i když ano, není ani ta "
@@ -458,7 +490,7 @@ msgid ""
 "říše...</p>"
 msgstr ""
 
-#: views.py:441
+#: views.py:483
 msgid ""
 "Matej Vetrak is a senior DevOps engineer that has been puzzled for the "
 "longest time as how to build a proper high-available infrastructure "
@@ -468,7 +500,7 @@ msgid ""
 "community in general. He is currently employed by Exponea."
 msgstr ""
 
-#: views.py:451
+#: views.py:493
 msgid ""
 "<p>In this workshop we'll look at common problems that all developers are"
 " facing in the latest trends of the ever changing scalable app world. "
@@ -491,7 +523,7 @@ msgid ""
 "https://docs.docker.com/engine/installation/</p>"
 msgstr ""
 
-#: views.py:493
+#: views.py:535
 msgid "PyCon SK"
 msgstr ""
 
@@ -1046,7 +1078,7 @@ msgstr ""
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:290
+#: templates/hall-of-fame.html:293
 msgid "People that supported PyCon SK 2018 by purchasing a supported ticket."
 msgstr ""
 
