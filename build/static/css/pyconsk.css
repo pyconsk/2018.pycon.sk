@@ -245,6 +245,10 @@ a.sbox:hover > .sbox-inner, a.sbox-transparent:hover > .sbox-inner {
   font-size: 0.85em;
 }
 
+.card p {
+  text-align: justify;
+}
+
 .label {
   margin-left: 0;
 }
