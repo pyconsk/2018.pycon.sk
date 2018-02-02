@@ -12,7 +12,7 @@ page.') }}
       </p>
 
       <div class="flex one two-900 three-1200 center demo">
-        {% for entry in data %}
+        {% for entry in data %}{% if entry['title'] != 'TBD' %}
         <div>
           <article class="card">
             <header>
@@ -36,7 +36,7 @@ page.') }}
             </footer>
           </article>
         </div>
-        {% endfor %}
+        {% endif %}{% endfor %}
       </div>
 
     </div>
