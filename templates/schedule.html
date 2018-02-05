@@ -25,6 +25,7 @@ page.') }}
             <footer>
               <h4>
                 {{ entry['primary_speaker']['first_name'] }} {{ entry['primary_speaker']['last_name'] }}
+                {% if entry['secondary_speaker'] %} &amp; {{ entry['secondary_speaker']['first_name'] }} {{ entry['secondary_speaker']['last_name'] }}{% endif %}
                 ({{ entry['primary_speaker']['country']}})
               </h4>
               {% if entry['primary_speaker']['image'] %}
@@ -32,6 +33,11 @@ page.') }}
               {% else %}
               <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive sspeaker">
               {% endif %}
+              {% if entry['secondary_speaker'] %}{% if entry['secondary_speaker']['image'] %}
+              <img src="{{ url_for('static', filename='img/speakers/'+ entry['secondary_speaker']['first_name']|strip_accents|lower +'_'+ entry['secondary_speaker']['last_name']|strip_accents|lower +'.jpg') }}" class="img-responsive sspeaker">
+              {% else %}
+              <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive sspeaker">
+              {% endif %}{% endif %}
               {{ entry['abstract']|linebreaks }}
             </footer>
           </article>

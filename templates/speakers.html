@@ -34,6 +34,33 @@
               </footer>
             </article>
           </div>
+          {% if entry['secondary_speaker'] %}
+          <div>
+            <article class="card">
+              {% if entry['secondary_speaker']['url'] %}
+              <a href="{{ entry['secondary_speaker']['url'] }}" target="_blank"
+               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['secondary_speaker']['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['secondary_speaker']['url'] }}');">
+              {% endif %}
+              {% if entry['secondary_speaker']['image'] %}
+              <img src="{{ url_for('static', filename='img/speakers/'+ entry['secondary_speaker']['first_name']|strip_accents|lower +'_'+ entry['secondary_speaker']['last_name']|strip_accents|lower +'.jpg') }}" class="img-responsive center-block">
+              {% else %}
+              <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive center-block">
+              {% endif %}
+              {% if entry['secondary_speaker']['url'] %}</a>{% endif %}
+              <footer>
+                <h3>
+                  {% if entry['secondary_speaker']['url'] %}
+              <a href="{{ entry['secondary_speaker']['url'] }}" target="_blank"
+               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ entry['secondary_speaker']['name']| replace(" ","-") }}');trackOutboundLink('{{ entry['secondary_speaker']['url'] }}');">
+              {% endif %}
+                  {{ entry['secondary_speaker']['first_name'] }} {{ entry['secondary_speaker']['last_name'] }}
+              {% if entry['secondary_speaker']['url'] != '#' %}</a>{% endif %}
+                  <small>({{ entry['secondary_speaker']['country']}})</small></h3>
+                <p class="text-justify">{{ entry['secondary_speaker']['bio']|linebreaks }}</p>
+              </footer>
+            </article>
+          </div>
+          {% endif %}
         {% endfor %}
 
         </div>
