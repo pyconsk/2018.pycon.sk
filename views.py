@@ -219,6 +219,11 @@ SITEMAP_DEFAULT = {'prio': '0.1', 'freq': 'weekly'}
 SITEMAP = {
     'sitemap.xml': {'prio': '0.9', 'freq': 'daily', 'lastmod': get_mtime(__file__)},
     'index.html': {'prio': '1', 'freq': 'daily'},
+    'schedule.html': {'prio': '0.9', 'freq': 'daily'},
+    'speakers.html': {'prio': '0.9', 'freq': 'daily'},
+    'hall_of_fame.html': {'prio': '0.5', 'freq': 'weekly'},
+    'tickets.html': {'prio': '0.5', 'freq': 'weekly'},
+
 }
 
 
