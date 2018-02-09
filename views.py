@@ -131,10 +131,15 @@ def strip_accents(eval_ctx, value):
     return unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode("utf-8")
 
 
-def get_conference_data():
+def get_conference_data(url='', filters=''):
     """Connect to API and get public talks and speakers data."""
-    r = requests.get(API_DOMAIN + '/event/2018/talks')
-    return sorted(r.json(), key=itemgetter('title'))
+    url = API_DOMAIN + url
+
+    if filters:
+        url = url + '&' + filters
+
+    r = requests.get(url)
+    return r.json()
 
 
 def _get_template_variables(**kwargs):
@@ -169,7 +174,7 @@ def tickets():
 @app.route('/<lang_code>/schedule.html')
 def schedule():
     variables = _get_template_variables(li_schedule='active')
-    variables['data'] = get_conference_data()
+    variables['data'] = get_conference_data(url='/event/2018/talks/')
     variables['tags'] = TAGS
 
     return render_template('schedule.html', **variables)
@@ -178,7 +183,7 @@ def schedule():
 @app.route('/<lang_code>/speakers.html')
 def speakers():
     variables = _get_template_variables(li_speakers='active')
-    variables['data'] = get_conference_data()
+    variables['data'] = get_conference_data(url='/event/2018/speakers/')
     variables['tags'] = TAGS
 
     return render_template('speakers.html', **variables)
