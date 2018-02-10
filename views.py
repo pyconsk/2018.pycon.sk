@@ -67,10 +67,12 @@ LDJSON_PYCON = {
     }
 }
 
-
-TAGS = {
+TYPE = {
     'talk': gettext('Talk'),
     'workshop': gettext('Workshop'),
+}
+
+TAGS = {
     'ai': gettext('Machine Learning / AI'),
     'community': gettext('Community / Diversity / Social'),
     'data': gettext('Data Science'),
@@ -171,11 +173,23 @@ def tickets():
     return render_template('tickets.html', **_get_template_variables(li_tickets='active'))
 
 
+@app.route('/<lang_code>/<flag>/schedule.html')
+def schedule_filter(flag):
+    variables = _get_template_variables(li_schedule='active')
+    variables['data'] = get_conference_data(url='/event/2018/talks/?flag='+ flag)
+    variables['flag'] = flag
+    variables['tags'] = TAGS
+    variables['all'] = {**TYPE, **TAGS}
+
+    return render_template('schedule.html', **variables)
+
+
 @app.route('/<lang_code>/schedule.html')
 def schedule():
     variables = _get_template_variables(li_schedule='active')
     variables['data'] = get_conference_data(url='/event/2018/talks/')
     variables['tags'] = TAGS
+    variables['all'] = {**TYPE, **TAGS}
 
     return render_template('schedule.html', **variables)
 
@@ -185,6 +199,7 @@ def speakers():
     variables = _get_template_variables(li_speakers='active')
     variables['data'] = get_conference_data(url='/event/2018/speakers/')
     variables['tags'] = TAGS
+    variables['all'] = {**TYPE, **TAGS}
 
     return render_template('speakers.html', **variables)
 

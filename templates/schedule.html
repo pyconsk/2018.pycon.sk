@@ -11,6 +11,15 @@ page.') }}
         {{ _('In the mean time you can find here the list of accepted talks and workshops.') }}
       </p>
 
+        <a href="{{ url_for('schedule', lang_code=lang_code) }}">
+          <span class="label all">{{ _('All') }}</span>
+        </a>
+        {% for tag in tags %}{% if tag not in ('talk', 'workshop') %}
+        <a href="{{ url_for('schedule_filter', lang_code=lang_code, flag=tag) }}">
+          <span class="label {{ tag }}">{{ tags[tag] }}</span>
+        </a>
+        {% endif %}{% endfor %}
+
       <div class="flex one two-900 three-1200 center demo">
         {% for entry in data %}{% if entry['title'] != 'TBD' %}
         <div>
@@ -23,7 +32,7 @@ page.') }}
                 {% else %}
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="{{ _('Slovak language') }}">
                 {% endif %}
-                <span class="label {{ entry['type'] }}">{{ tags[entry['type']] }}</span>
+                <span class="label {{ entry['type'] }}">{{ all[entry['type']] }}</span>
                 <span class="label {{ entry['flag'] }}">{{ tags[entry['flag']] }}</span>
               </h3>
             </header>

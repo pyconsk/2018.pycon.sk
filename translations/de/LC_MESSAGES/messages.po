@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-01 14:42+0100\n"
+"POT-Creation-Date: 2018-02-10 01:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,56 +19,66 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: templates/cfp.html:39 views.py:51
+#: templates/body.html:40 views.py:18
+msgid "PyCon SK 2018"
+msgstr ""
+
+#: views.py:46
+msgid ""
+"PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-"
+"organized conference for the Python programming language."
+msgstr ""
+
+#: views.py:59
+msgid "Slovak Republic"
+msgstr ""
+
+#: templates/cfp.html:39 views.py:72
 msgid "Talk"
 msgstr ""
 
-#: templates/cfp.html:40 views.py:52
+#: templates/cfp.html:40 views.py:73
 msgid "Workshop"
 msgstr ""
 
-#: templates/cfp.html:53 views.py:53
+#: templates/cfp.html:53 views.py:74
 msgid "Machine Learning / AI"
 msgstr ""
 
-#: templates/cfp.html:55 views.py:54
+#: templates/cfp.html:55 views.py:75
 msgid "Community / Diversity / Social"
 msgstr ""
 
-#: templates/cfp.html:52 views.py:55
+#: templates/cfp.html:52 views.py:76
 msgid "Data Science"
 msgstr ""
 
-#: templates/cfp.html:50 views.py:57
+#: templates/cfp.html:50 views.py:78
 msgid "Education"
 msgstr ""
 
-#: templates/cfp.html:48 views.py:58
+#: templates/cfp.html:48 views.py:79
 msgid "Python General"
 msgstr ""
 
-#: templates/cfp.html:54 views.py:59
+#: templates/cfp.html:54 views.py:80
 msgid "Security"
 msgstr ""
 
-#: templates/cfp.html:56 views.py:60
+#: templates/cfp.html:56 views.py:81
 msgid "Soft Skills"
 msgstr ""
 
-#: templates/cfp.html:57 views.py:61
+#: templates/cfp.html:57 views.py:82
 msgid "Hardware"
 msgstr ""
 
-#: templates/cfp.html:51 views.py:62
+#: templates/cfp.html:51 views.py:83
 msgid "Web Development"
 msgstr ""
 
-#: templates/cfp.html:58 views.py:63
+#: templates/cfp.html:58 views.py:84
 msgid "Other"
-msgstr ""
-
-#: views.py:119
-msgid "PyCon SK"
 msgstr ""
 
 #: templates/body.html:8
@@ -85,10 +95,6 @@ msgid ""
 "language, which will be held in Bratislava on March, 2018."
 msgstr ""
 
-#: templates/body.html:40
-msgid "PyCon SK 2018"
-msgstr ""
-
 #: templates/body.html:48
 msgid "Venue"
 msgstr ""
@@ -101,7 +107,7 @@ msgstr ""
 msgid "Sponsoring"
 msgstr ""
 
-#: templates/body.html:58 templates/tickets.html:92
+#: templates/body.html:58 templates/schedule.html:19 templates/tickets.html:92
 msgid "Tickets"
 msgstr ""
 
@@ -613,7 +619,7 @@ msgstr ""
 msgid "Medial Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:208
+#: templates/hall-of-fame.html:222
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -623,11 +629,11 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:228
+#: templates/hall-of-fame.html:242
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:321
+#: templates/hall-of-fame.html:335
 msgid "People that supported PyCon SK 2018 by purchasing a supported ticket."
 msgstr ""
 
@@ -655,15 +661,24 @@ msgid ""
 "        language."
 msgstr ""
 
-#: templates/index.html:19
-msgid "News"
+#: templates/index.html:15
+msgid ""
+"Conference is held in English and (Czech) Slovak language. If you don't "
+"know any Slovak or Czech,\n"
+"        don't worry, there will be stuff for you to do. Currently we are "
+"working on the schedule and the final list\n"
+"        of the speakers and talks will be published by February 9th."
 msgstr ""
 
 #: templates/index.html:22
-msgid "Call for proposals has ended."
+msgid "News"
 msgstr ""
 
 #: templates/index.html:25
+msgid "Call for proposals has ended."
+msgstr ""
+
+#: templates/index.html:28
 #, python-format
 msgid ""
 "We have received almost 100 high quality talks and workshops proposals! "
@@ -673,11 +688,11 @@ msgid ""
 "          href=\"%(url)s\">speakers</a> on our website."
 msgstr ""
 
-#: templates/index.html:32
+#: templates/index.html:35
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
 msgstr ""
 
-#: templates/index.html:35
+#: templates/index.html:38
 msgid ""
 "We are excited that for the third time in the row, PyConSK will be held "
 "under the auspices of the\n"
@@ -687,18 +702,18 @@ msgid ""
 "from all over Europe and the rest of the world."
 msgstr ""
 
-#: templates/index.html:43
+#: templates/index.html:46
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 
-#: templates/index.html:48
+#: templates/index.html:51
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
 msgstr ""
 
-#: templates/index.html:51
+#: templates/index.html:54
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -708,11 +723,11 @@ msgid ""
 "          href=\"%(url)s\">submit a talk proposal</a>."
 msgstr ""
 
-#: templates/index.html:57
+#: templates/index.html:60
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr ""
 
-#: templates/index.html:60
+#: templates/index.html:63
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to\n"
@@ -723,7 +738,7 @@ msgid ""
 "        releasing to deployment and infrastructure management."
 msgstr ""
 
-#: templates/index.html:64
+#: templates/index.html:67
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -733,35 +748,35 @@ msgid ""
 "        goals."
 msgstr ""
 
-#: templates/index.html:75
+#: templates/index.html:78
 msgid "References"
 msgstr ""
 
-#: templates/index.html:77
+#: templates/index.html:80
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our\n"
 "        references:"
 msgstr ""
 
-#: templates/index.html:115
+#: templates/index.html:118
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:153
+#: templates/index.html:156
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
 " info@pycon.sk or create a pull\n"
 "        request."
 msgstr ""
 
-#: templates/index.html:159
+#: templates/index.html:162
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:160
+#: templates/index.html:163
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -781,6 +796,14 @@ msgstr ""
 msgid ""
 "In the mean time you can find here the list of accepted talks and "
 "workshops."
+msgstr ""
+
+#: templates/schedule.html:34
+msgid "English language"
+msgstr ""
+
+#: templates/schedule.html:36
+msgid "Slovak language"
 msgstr ""
 
 #: templates/sponsoring.html:7
@@ -2302,5 +2325,8 @@ msgstr ""
 #~ "Once we have complete list we'll "
 #~ "publish conference schedule on this "
 #~ "page."
+#~ msgstr ""
+
+#~ msgid "PyCon SK"
 #~ msgstr ""
 
