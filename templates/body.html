@@ -68,7 +68,7 @@
       </span>
       <a href="{{ url_for('coc', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_coc }} ">{{ _('Code of Conduct') }}</a>
-      <a href="https://spy.python.sk" class="pseudo button icon-help-circled external">{{ _('About Us') }}</a>
+      <a href="https://spy.python.sk/{{ lang_code }}/" class="pseudo button icon-help-circled external">{{ _('About Us') }}</a>
     {% endblock %}
     {% if lang_code == 'sk' %}
       <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" title="Switch to english language"

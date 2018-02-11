@@ -12,8 +12,7 @@
       <p class="text-center">
       <h3>{{ _('Diamond') }}</h3>
 
-      <div class="flex one three-800 demo">
-        <div>&nbsp;</div>
+      <div class="flex one three-800 center demo">
         <div>
           <a href="https://www.kiwi.com/{% if lang_code %}{{ lang_code }}/{% endif %}" target="_blank" class="sbox"
              onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-kiwi');trackOutboundLink('https://www.kiwi.com/');">
@@ -32,7 +31,6 @@
             </div>
           </a>
         </div>
-        <div>&nbsp;</div>
       </div>
       </p>
 
@@ -107,7 +105,7 @@
           </a>
         </div>
         <div>
-          <a href="https://www.redhat.com/" target="_blank" class="sbox"
+          <a href="https://www.redhat.com/{{ lang_code }}" target="_blank" class="sbox"
              onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-redhat');trackOutboundLink('https://www.redhat.com/');">
             <img src="{{ url_for('static', filename='img/partners/redhat.svg') }}" alt="Red Hat"
                  class="slogo img-responsive center-block"/>
@@ -125,8 +123,49 @@
             </div>
           </a>
         </div>
+        <div>
+          <a href="https://www.eset.com/{% if lang_code == 'en' %}us/{% else %}{{ lang_code }}/{% endif %}" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-eset');trackOutboundLink('https://www.eset.com/');">
+            <img src="{{ url_for('static', filename='img/partners/eset.svg') }}" alt="Eset"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>Eset</h3>
+                <p class="text-justify">
+                  {{ _('Since 1987, ESET has been developing award-winning security software that now helps over 100
+                  million users to Enjoy Safer Technology. Its broad security product portfolio covers all popular
+                  platforms and provides businesses and consumers around the world with the perfect balance of
+                  performance and proactive protection. The company has a global sales network covering 180 countries,
+                  and regional offices in Bratislava, San Diego, Singapore and Buenos Aires.') }}
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
 
+      </p>
+
+      <p class="text-justify">
+      <h3>{{ _('Django Girls Workshop') }}</h3>
+
+      <div class="flex one three-800 center demo">
+
+        <div>
+          <a href="https://kjamistan.com/" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-kjamistan');trackOutboundLink('https://kjamistan.com/');">
+            <img src="{{ url_for('static', filename='img/partners/kjamistan.jpg') }}" alt="Kjamistan"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>Kjamistan</h3>
+                <p class="text-justify"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
       </p>
 
       <p class="text-justify">
@@ -183,6 +222,19 @@
                   {{ _('Learn2Code teaches people how to design and code modern websites and
                   application. Learn2Code is the largest online learning marketplace in Slovakia.') }}
                 </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.mozilla.{% if lang_code == 'sk' %}{{ lang_code }}/{% else %}org/{% endif %}" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-mozilla');trackOutboundLink('https://www.mozilla.sk/');">
+            <img src="{{ url_for('static', filename='img/partners/mozilla.svg') }}" alt="Mozilla"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>Mozilla</h3>
+                <p class="text-justify"></p>
               </div>
             </div>
           </a>
