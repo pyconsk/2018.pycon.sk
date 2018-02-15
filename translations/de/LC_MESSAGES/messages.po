@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-15 16:31+0100\n"
+"POT-Creation-Date: 2018-02-15 18:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -81,35 +81,35 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-#: views.py:200
+#: views.py:201
 msgid "Kiwi.com Hall"
 msgstr ""
 
-#: views.py:204
+#: views.py:205
 msgid "Python Software Foundation Hall"
 msgstr ""
 
-#: views.py:209
+#: views.py:210
 msgid "Babbage Hall 1/2"
 msgstr ""
 
-#: views.py:214
+#: views.py:215
 msgid "Babbage Hall 2/2"
 msgstr ""
 
-#: views.py:219
+#: views.py:220
 msgid "Jobs Auditorium"
 msgstr ""
 
-#: views.py:324
+#: views.py:325
 msgid "Break"
 msgstr ""
 
-#: views.py:327
+#: views.py:328
 msgid "Lunch 🍱"
 msgstr ""
 
-#: views.py:330
+#: views.py:331
 msgid "Coffee Break ☕"
 msgstr ""
 
@@ -143,88 +143,88 @@ msgstr ""
 msgid "Tickets"
 msgstr ""
 
-#: templates/body.html:61
+#: templates/body.html:61 templates/body.html:64
 msgid "Schedule"
 msgstr ""
 
-#: templates/body.html:64
-msgid "Talk's list"
-msgstr ""
-
-#: templates/body.html:66
-msgid "Speaker's list"
+#: templates/body.html:66 templates/cfp.html:496
+msgid "Talks"
 msgstr ""
 
 #: templates/body.html:68
+msgid "Speakers"
+msgstr ""
+
+#: templates/body.html:70
 msgid "Call for Proposals"
 msgstr ""
 
-#: templates/body.html:72 templates/coc.html:6
+#: templates/body.html:74 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/body.html:73
+#: templates/body.html:75
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:112
+#: templates/body.html:114
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:114
+#: templates/body.html:116
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:121
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
 " the %(psf)s."
 msgstr ""
 
-#: templates/body.html:121
+#: templates/body.html:123
 msgid "Python Software foundation"
 msgstr ""
 
-#: templates/body.html:122
+#: templates/body.html:124
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr ""
 
-#: templates/body.html:123
+#: templates/body.html:125
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:126
+#: templates/body.html:128
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:133
+#: templates/body.html:135
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "mining Monero."
 msgstr ""
 
-#: templates/body.html:134
+#: templates/body.html:136
 msgid "You can support us by mining Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:135
+#: templates/body.html:137
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:136
+#: templates/body.html:138
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:137
+#: templates/body.html:139
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:137
+#: templates/body.html:139
 msgid "Total"
 msgstr ""
 
@@ -410,10 +410,6 @@ msgid ""
 "        audience. You may propose more than one, but the committee will "
 "ask you to choose only one talk if more\n"
 "        than one of your proposals is accepted."
-msgstr ""
-
-#: templates/cfp.html:496
-msgid "Talks"
 msgstr ""
 
 #: templates/cfp.html:498
@@ -727,21 +723,25 @@ msgid "News"
 msgstr ""
 
 #: templates/index.html:24
+msgid "Conference schedule has been published."
+msgstr ""
+
+#: templates/index.html:28
 msgid "Speakers and talks list has been published."
 msgstr ""
 
-#: templates/index.html:27
+#: templates/index.html:31
 msgid ""
 "Talks and speakers list has been published on our website. Soon we'll "
 "publish also the time\n"
 "        schedule."
 msgstr ""
 
-#: templates/index.html:33
+#: templates/index.html:37
 msgid "Call for proposals has ended."
 msgstr ""
 
-#: templates/index.html:36
+#: templates/index.html:40
 #, python-format
 msgid ""
 "We have received almost 100 high quality talks and workshops proposals! "
@@ -751,11 +751,11 @@ msgid ""
 "          href=\"%(url)s\">speakers</a> on our website."
 msgstr ""
 
-#: templates/index.html:43
+#: templates/index.html:47
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
 msgstr ""
 
-#: templates/index.html:46
+#: templates/index.html:50
 msgid ""
 "We are excited that for the third time in the row, PyConSK will be held "
 "under the auspices of the\n"
@@ -765,18 +765,18 @@ msgid ""
 "from all over Europe and the rest of the world."
 msgstr ""
 
-#: templates/index.html:54
+#: templates/index.html:58
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 
-#: templates/index.html:59
+#: templates/index.html:63
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
 msgstr ""
 
-#: templates/index.html:62
+#: templates/index.html:66
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -786,11 +786,11 @@ msgid ""
 "          href=\"%(url)s\">submit a talk proposal</a>."
 msgstr ""
 
-#: templates/index.html:68
+#: templates/index.html:72
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr ""
 
-#: templates/index.html:71
+#: templates/index.html:75
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to\n"
@@ -801,7 +801,7 @@ msgid ""
 "        releasing to deployment and infrastructure management."
 msgstr ""
 
-#: templates/index.html:75
+#: templates/index.html:79
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -811,35 +811,35 @@ msgid ""
 "        goals."
 msgstr ""
 
-#: templates/index.html:86
+#: templates/index.html:90
 msgid "References"
 msgstr ""
 
-#: templates/index.html:88
+#: templates/index.html:92
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our\n"
 "        references:"
 msgstr ""
 
-#: templates/index.html:126
+#: templates/index.html:130
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:164
+#: templates/index.html:168
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
 " info@pycon.sk or create a pull\n"
 "        request."
 msgstr ""
 
-#: templates/index.html:170
+#: templates/index.html:174
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:171
+#: templates/index.html:175
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -2438,5 +2438,11 @@ msgstr ""
 #~ "In the mean time you can find "
 #~ "here the list of accepted talks "
 #~ "and workshops."
+#~ msgstr ""
+
+#~ msgid "Talk's list"
+#~ msgstr ""
+
+#~ msgid "Speaker's list"
 #~ msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-15 16:31+0100\n"
+"POT-Creation-Date: 2018-02-15 18:34+0100\n"
 "PO-Revision-Date: 2018-01-29 22:21+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -81,35 +81,35 @@ msgstr "Vývoj webu"
 msgid "Other"
 msgstr "Iné"
 
-#: views.py:200
+#: views.py:201
 msgid "Kiwi.com Hall"
 msgstr ""
 
-#: views.py:204
+#: views.py:205
 msgid "Python Software Foundation Hall"
 msgstr ""
 
-#: views.py:209
+#: views.py:210
 msgid "Babbage Hall 1/2"
 msgstr ""
 
-#: views.py:214
+#: views.py:215
 msgid "Babbage Hall 2/2"
 msgstr ""
 
-#: views.py:219
+#: views.py:220
 msgid "Jobs Auditorium"
 msgstr ""
 
-#: views.py:324
+#: views.py:325
 msgid "Break"
 msgstr ""
 
-#: views.py:327
+#: views.py:328
 msgid "Lunch 🍱"
 msgstr ""
 
-#: views.py:330
+#: views.py:331
 msgid "Coffee Break ☕"
 msgstr ""
 
@@ -145,39 +145,39 @@ msgstr "Sponzorovanie"
 msgid "Tickets"
 msgstr "Vstupenky"
 
-#: templates/body.html:61
+#: templates/body.html:61 templates/body.html:64
 msgid "Schedule"
 msgstr "Program"
 
-#: templates/body.html:64
-msgid "Talk's list"
-msgstr ""
-
-#: templates/body.html:66
-msgid "Speaker's list"
-msgstr "Rečníci"
+#: templates/body.html:66 templates/cfp.html:496
+msgid "Talks"
+msgstr "Prednášky"
 
 #: templates/body.html:68
+msgid "Speakers"
+msgstr "Rečníci"
+
+#: templates/body.html:70
 msgid "Call for Proposals"
 msgstr "Prihlásenie prednášok"
 
-#: templates/body.html:72 templates/coc.html:6
+#: templates/body.html:74 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr "Kódex správania"
 
-#: templates/body.html:73
+#: templates/body.html:75
 msgid "About Us"
 msgstr "O nás"
 
-#: templates/body.html:112
+#: templates/body.html:114
 msgid "2016"
 msgstr "2016"
 
-#: templates/body.html:114
+#: templates/body.html:116
 msgid "2017"
 msgstr "2017"
 
-#: templates/body.html:119
+#: templates/body.html:121
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
@@ -186,20 +186,20 @@ msgstr ""
 "%(pycontm)s je ochranná známka %(psf)s pre celosvetové konferenčné "
 "aktivity."
 
-#: templates/body.html:121
+#: templates/body.html:123
 msgid "Python Software foundation"
 msgstr "Python Software foundation"
 
-#: templates/body.html:122
+#: templates/body.html:124
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr "PyCon SK je organizovaný dobrovoľníkmi z %(spy)s."
 
-#: templates/body.html:123
+#: templates/body.html:125
 msgid "SPy o.z."
 msgstr "SPy o.z."
 
-#: templates/body.html:126
+#: templates/body.html:128
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
@@ -208,7 +208,7 @@ msgstr ""
 "Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou "
 "manažovaná webstránka, prispejte na našom %(github)se."
 
-#: templates/body.html:133
+#: templates/body.html:135
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "mining Monero."
@@ -216,23 +216,23 @@ msgstr ""
 "Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou "
 "Monera."
 
-#: templates/body.html:134
+#: templates/body.html:136
 msgid "You can support us by mining Monero while browsing this site."
 msgstr "Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky."
 
-#: templates/body.html:135
+#: templates/body.html:137
 msgid "Start mining!"
 msgstr "Zapni ťaženie!"
 
-#: templates/body.html:136
+#: templates/body.html:138
 msgid "Stop mining!"
 msgstr "Zastav ťaženie!"
 
-#: templates/body.html:137
+#: templates/body.html:139
 msgid "Hashes/s"
 msgstr "Hashes/s"
 
-#: templates/body.html:137
+#: templates/body.html:139
 msgid "Total"
 msgstr "Celkovo"
 
@@ -439,10 +439,6 @@ msgstr ""
 "publikum. Je stanovený limit na jednu prednášku pre rečníka. Navrhnúť "
 "môžete viac ako jednu, komisia Vás však vyzve, aby ste vybrali iba jednu "
 "prednášku (v prípade, že bude akceptovaných viac návrhov)."
-
-#: templates/cfp.html:496
-msgid "Talks"
-msgstr "Prednášky"
 
 #: templates/cfp.html:498
 msgid ""
@@ -805,21 +801,25 @@ msgid "News"
 msgstr "Novinky"
 
 #: templates/index.html:24
-msgid "Speakers and talks list has been published."
-msgstr ""
+msgid "Conference schedule has been published."
+msgstr "Zverejnili sme program konferencie."
 
-#: templates/index.html:27
+#: templates/index.html:28
+msgid "Speakers and talks list has been published."
+msgstr "Rečníci a prednáčky boli zverejnené."
+
+#: templates/index.html:31
 msgid ""
 "Talks and speakers list has been published on our website. Soon we'll "
 "publish also the time\n"
 "        schedule."
 msgstr ""
 
-#: templates/index.html:33
+#: templates/index.html:37
 msgid "Call for proposals has ended."
 msgstr "Podávanie návrhov na prednášky je uzavreté."
 
-#: templates/index.html:36
+#: templates/index.html:40
 #, python-format
 msgid ""
 "We have received almost 100 high quality talks and workshops proposals! "
@@ -832,11 +832,11 @@ msgstr ""
 "chvíľu, kým ich prejdeme všetky, tak Vás prosíme o trpezlivosť. Začali "
 "sme publikovať niektorých <a href=\"%(url)s\">rečníkov</a> na našom webe."
 
-#: templates/index.html:43
+#: templates/index.html:47
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
 msgstr "PyCon SK 2018 pod záštitou prezidenta Slovenskej republiky."
 
-#: templates/index.html:46
+#: templates/index.html:50
 msgid ""
 "We are excited that for the third time in the row, PyConSK will be held "
 "under the auspices of the\n"
@@ -850,14 +850,14 @@ msgstr ""
 "konferenciu špičkovej úrovne, ktorá bude dôstojne reprezentovať SR pred "
 "publikom z celej Európy a aj zvyšku sveta."
 
-#: templates/index.html:54
+#: templates/index.html:58
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 "Uložte si <a href=\"%(url)s\">tlačovú správu</a> konferencie PyCon SK "
 "2018."
 
-#: templates/index.html:59
+#: templates/index.html:63
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
@@ -865,7 +865,7 @@ msgstr ""
 "Pripravujeme sekciu pre učiteľov informatiky, ktorá sa uskutoční počas "
 "konferencie PyCon SK."
 
-#: templates/index.html:62
+#: templates/index.html:66
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -879,11 +879,11 @@ msgstr ""
 "skúsenosti s účastníkmi konferencie a <a href=\"%(url)s\">prihlásili si "
 "prednášku</a>."
 
-#: templates/index.html:68
+#: templates/index.html:72
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr "S potešením oznamujeme, že súčasťou PyCon SK 2018 bude aj DevOps track."
 
-#: templates/index.html:71
+#: templates/index.html:75
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to\n"
@@ -900,7 +900,7 @@ msgstr ""
 "tvorby softvéru od integrácie, testovania, uvoľňovania až po nasadenie a "
 "správu infraštruktúry."
 
-#: templates/index.html:75
+#: templates/index.html:79
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -913,11 +913,11 @@ msgstr ""
 " návrh na prednášku</a>. Dúfame, že nastavíme \"error budget\" správne a "
 "uvidíme vývojárov a administrátorov spolupracovať na spoločných cieľoch."
 
-#: templates/index.html:86
+#: templates/index.html:90
 msgid "References"
 msgstr "Referencie"
 
-#: templates/index.html:88
+#: templates/index.html:92
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our\n"
@@ -926,7 +926,7 @@ msgstr ""
 "Minulé ročníky mali aj pokrytie v médiach, ak máte záujem zistiť ako bolo"
 " na konferencii, pozrite si naše referencie:"
 
-#: templates/index.html:126
+#: templates/index.html:130
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
@@ -934,7 +934,7 @@ msgstr ""
 "Tu sú odkazy na články napísané našimi návštevníkmi z posledných dvoch "
 "ročníkov PyCon SK:"
 
-#: templates/index.html:164
+#: templates/index.html:168
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
 " info@pycon.sk or create a pull\n"
@@ -943,11 +943,11 @@ msgstr ""
 "Ak ste napísali článok, alebo blog, neváhajte nám napísať na "
 "info@pycon.sk alebo vytvorte \"pull request\"."
 
-#: templates/index.html:170
+#: templates/index.html:174
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr "Našli ste na našich stránkach chybu? Chcete vedieť viac? Dajte nám vedieť."
 
-#: templates/index.html:171
+#: templates/index.html:175
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
@@ -956,39 +956,39 @@ msgstr ""
 
 #: templates/schedule.html:7
 msgid "PyCon SK 2018 Schedule"
-msgstr ""
+msgstr "Program PyCon SK 2018"
 
 #: templates/schedule.html:9
 msgid "Conference schedule might change."
-msgstr ""
+msgstr "Program konferencie sa môže zmeniť."
 
 #: templates/schedule.html:13 templates/talks.html:10
 msgid "All"
-msgstr ""
+msgstr "Všetko"
 
 #: templates/schedule.html:37
 msgid "English flag"
-msgstr ""
+msgstr "Anglická zástava"
 
 #: templates/schedule.html:37
 msgid "Presentation will be in English language."
-msgstr ""
+msgstr "Prezentácia bude v anglickom jazyku."
 
 #: templates/schedule.html:40
 msgid "Slovak flag"
-msgstr ""
+msgstr "Slovenská zástava"
 
 #: templates/schedule.html:40
 msgid "Presentation will be in Slovak language"
-msgstr ""
+msgstr "Prezentácia bude v slovenskom jazyku."
 
 #: templates/schedule.html:43
 msgid "Czech flag"
-msgstr ""
+msgstr "Česká zástava"
 
 #: templates/schedule.html:43
 msgid "Presentation will be in Czech language"
-msgstr ""
+msgstr "Prezentácia bude v Českom jazyku."
 
 #: templates/sponsoring.html:7
 msgid "We need you — PyCon SK 2018 in Bratislava seeks for sponsors and partners!"
@@ -2583,4 +2583,10 @@ msgstr ""
 #~ "here the list of accepted talks "
 #~ "and workshops."
 #~ msgstr "Medzičasom tu nájdete zoznam prijatých prednášok a workshopov."
+
+#~ msgid "Talk's list"
+#~ msgstr ""
+
+#~ msgid "Speaker's list"
+#~ msgstr "Rečníci"
 

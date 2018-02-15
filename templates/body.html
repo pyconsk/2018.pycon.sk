@@ -60,10 +60,12 @@
         <a href="{{ url_for('schedule', lang_code=lang_code) }}"
            class="pseudo button icon-help-circled {{ li_schedule }} ">{{ _('Schedule') }}</a>
         <span class="dropdown-content">
+          <a href="{{ url_for('schedule', lang_code=lang_code) }}"
+            class="pseudo button icon-help-circled {{ li_schedule }} ">{{ _('Schedule') }}</a>
           <a href="{{ url_for('talks', lang_code=lang_code) }}"
-             class="pseudo button icon-help-circled {{ li_talks }} ">{{ _('Talk\'s list') }}</a>
+             class="pseudo button icon-help-circled {{ li_talks }} ">{{ _('Talks') }}</a>
           <a href="{{ url_for('speakers', lang_code=lang_code) }}"
-             class="pseudo button icon-help-circled {{ li_speakers }} ">{{ _('Speaker\'s list') }}</a>
+             class="pseudo button icon-help-circled {{ li_speakers }} ">{{ _('Speakers') }}</a>
           <a href="{{ url_for('cfp', lang_code=lang_code) }}"
              class="pseudo button icon-help-circled {{ li_cfp }} ">{{ _('Call for Proposals') }}</a>
         </span>
