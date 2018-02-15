@@ -114,8 +114,8 @@ FRIDAY_TRACK2 = (
     {"pause": 5, 'title': "Komunitní kurzy"},
     {"pause": 15, 'title': "Ako sa pasujeme s Pythonom v Martine?"},
     {"pause": 5, 'title': "Prečo hardvér priťahuje k informatike žiakov i dospelých"},
-    {"pause": 15, 'title': "EDU TALKS", 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
-    {"pause": 15, 'title': "Panel Discussion", 'duration': 65, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
+    {"pause": 15, 'title': "EDU Talks", 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
+    {"pause": 15, 'title': "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?", 'duration': 65, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
 )
 
 FRIDAY_WORKSHOPS1 = (
@@ -141,6 +141,7 @@ SATURDAY_TRACK1 = (
     {"pause": 15, 'title': "Designing fast and scalable Python MicroServices with django"},
     {"pause": 5, 'title': "FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere"},
     {"pause": 5, 'title': "Programming Python as performance: live coding with FoxDot"},
+    {"pause": 5, 'title': "The GAME!", 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
     {"pause": 5, 'title': "Lightning Talks", 'duration': 30, 'flag': 'other', 'type': 'talk'},
 )
 
