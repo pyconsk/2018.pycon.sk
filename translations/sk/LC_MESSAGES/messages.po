@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-02-15 20:54+0100\n"
-"PO-Revision-Date: 2018-01-29 22:21+0000\n"
+"PO-Revision-Date: 2018-02-15 20:07+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
-"Language: sk\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:40 views.py:18
@@ -83,7 +84,7 @@ msgstr "Iné"
 
 #: views.py:94 views.py:133
 msgid "Conference Opening"
-msgstr ""
+msgstr "Otvorenie Konferencie"
 
 #: views.py:95
 msgid ""
@@ -2869,4 +2870,3 @@ msgstr ""
 
 #~ msgid "Speaker's list"
 #~ msgstr "Rečníci"
-
