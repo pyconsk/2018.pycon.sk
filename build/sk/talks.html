@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <title>PyCon SK 2018</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
+  <meta name="description" content="Oficiálna stránka PyCon SK 2018">
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
+  <meta property="og:url" content="https://2018.pycon.sk/"/>
+  <meta property="og:title" content="PyCon SK 2018, Bratislava"/>
+  <meta property="og:site_name" content="2018.pycon.sk"/>
+  <meta property="og:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@pyconsk"/>
+  <meta name="twitter:title" content="PyCon SK 2018, Bratislava"/>
+  <meta name="twitter:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:url" content="https://2018.pycon.sk"/>
+  <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
+  <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
+  
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20180215">
+  <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
+  
+    <link rel="alternate" href="https://2018.pycon.sk/en/talks.html" hreflang="en">
+  
+  <link rel="canonical" href="https://2018.pycon.sk/sk/talks.html"/>
+</head>
+<body>
+<nav class="transparent">
+  <svg width="36" height="36" class="logo">
+    <image xlink:href="/static/img/logo/spy-logo.svg"
+           src="/static/img/logo/spy-logo.png" width="36" height="36"/>
+  </svg>
+  <a href="/sk/index.html" class="brand">PyCon SK 2018</a>
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button" id="menu">&#8801;</label>
+
+  <div class="menu">
+    
+      <a href="/sk/venue.html"
+         class="pseudo button icon-help-circled ">Miesto konania</a>
+      <span class="dropdown">
+      <a href="/sk/hall-of-fame.html"
+         class="pseudo button icon-help-circled ">Sieň Slávy</a>
+        <span class="dropdown-content">
+          <a href="/sk/sponsoring.html"
+             class="pseudo button icon-help-circled  ">Sponzorovanie</a>
+        </span>
+      </span>
+      <a href="/sk/tickets.html"
+         class="pseudo button icon-help-circled ">Vstupenky</a>
+      <span class="dropdown">
+        <a href="/sk/schedule.html"
+           class="pseudo button icon-help-circled active ">Program</a>
+        <span class="dropdown-content">
+          <a href="/sk/talks.html"
+             class="pseudo button icon-help-circled active ">Talk's list</a>
+          <a href="/sk/speakers.html"
+             class="pseudo button icon-help-circled  ">Rečníci</a>
+          <a href="/sk/cfp.html"
+             class="pseudo button icon-help-circled  ">Prihlásenie prednášok</a>
+        </span>
+      </span>
+      <a href="/sk/coc.html"
+         class="pseudo button icon-help-circled  ">Kódex správania</a>
+      <a href="https://spy.python.sk/sk/" class="pseudo button icon-help-circled external">O nás</a>
+    
+    
+      <a href="/en/talks.html" title="Switch to english language"
+         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="english language"></a>
+    
+  </div>
+</nav>
+<main>
+  
+<div class="section" id="schedule">
+  <div class="content">
+    <div class="content-text">
+
+      <h1>Zoznam prednášok na PyCon SK 2018</h1>
+
+      <a href="/sk/talks.html">
+        <span class="label all">All</span>
+      </a>
+      
+      <a href="/sk/ai/talks.html">
+        <span class="label ai">Machine Learning / AI</span>
+      </a>
+      
+      <a href="/sk/community/talks.html">
+        <span class="label community">Community / Diversity / Social</span>
+      </a>
+      
+      <a href="/sk/data/talks.html">
+        <span class="label data">Data Science</span>
+      </a>
+      
+      <a href="/sk/devops/talks.html">
+        <span class="label devops">DevOps</span>
+      </a>
+      
+      <a href="/sk/edu/talks.html">
+        <span class="label edu">Education</span>
+      </a>
+      
+      <a href="/sk/generic/talks.html">
+        <span class="label generic">Python General</span>
+      </a>
+      
+      <a href="/sk/security/talks.html">
+        <span class="label security">Security</span>
+      </a>
+      
+      <a href="/sk/softskills/talks.html">
+        <span class="label softskills">Soft Skills</span>
+      </a>
+      
+      <a href="/sk/hardware/talks.html">
+        <span class="label hardware">Hardware</span>
+      </a>
+      
+      <a href="/sk/web/talks.html">
+        <span class="label web">Web Development</span>
+      </a>
+      
+      <a href="/sk/other/talks.html">
+        <span class="label other">Other</span>
+      </a>
+      
+
+      <div class="flex one two-900 three-1200 center demo">
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                &#34;Utajené&#34; informácie o kóde ktorý píšeš<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Tibor Arpáš
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/no_avatar.svg" class="img-responsive sspeaker">
+              
+              
+              <p>Podľa môjho názoru vývojové prostredia (IDE) zanedbávaju runtime aspekt programov, ktoré v nich píšeme. Historicky sa tieto prostredia asi vyvinuli z textových editorov a postupne dostávaju viac a viac funkcií a umožňujú viacero pohľadov na zdrojový kód a jeho všakovaké aspekty. Vývojové prostredia dokážu zázraky so zdrojovými súbormi, ktoré nám ležia na disku. </p>
+
+<p>Avšak zdrojáky nepíšeme aby ležali na disku ale kvôli tomu aby nám bežali ako programy. Pri behu môže vznikať kopec zaujímavých informácií spätne využiteľných pri programovaní. Dôraz vývojových prostredí na statické zdrojové kódy škodí najmä dynamickým programovacím jazykom ako je Python. Chcel by som odprezentovať a získať spätnú väzbu na 3-5 nápadov ktoré majú za cieľ práve preniesť rôzne informácie z behu Python programu naspäť do prostredia v ktorom sa píše zdrojový kód. V ideálnom prípade presne na riadok alebo dokonca na výraz, ktorý programátor práve píše alebo sa s ním dokonca trápi. </p>
+
+<p>Poznámka pre organizátora - rád by som vybral a odprezentoval len nápady, ktoré pri rozpracovaní budú dávať najväčší zmysel. Upresnenie témy prednášky by som dodal neskôr. Neúplný zoznam nápadov:<br />- prezentácia stack trace informácie v IDE, na konkrétnych riadkoch kde tento stack trace vznikol, intuitívna navigácia po framoch stacktrace, hint na hodnoty lokálnych premenných jednotlivých framov<br />- prenos a výpis log hlášok v IDE na konkrétmych riadkoch, ktoré tento výpis vygenerovali <br />- coverage informácia na riadku, ale vrátane informácie Who Tests What (ktorý, test vykonal tento riadok, pozri napr. https://bitbucket.org/ned/coveragepy/issues/170/show-who-tests-what )<br />- použiteľnejšia reprezentácia spustených/úspešných/zlyhaných testov ako momentálne používaný rozbaľovací strom. Doklikať sa ku konkrétnemu výsledku testu v Pycharm test runneri často trvá minútu a po každom spustení testov sa táto manuálna práca zahodí a treba začať klikať odznova. Navrhnem intuitívnejší spôsob prezentácie.<br />- meta nápad: implementovať prezentované nápady bude stáť nezanedbateľné úsilie. Kedže vývojových prostredí je veľké množstvo, a každé ma rozdielne API ideálne je navrhnúť všeobecný protokol, ktorý by oddeľoval IDE a zdroje runtime informácií podobne ako to robí Language Server Protocol (https://microsoft.github.io/language-server-protocol/)</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                7 Steps to a Clean Issue Tracker<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label softskills">Soft Skills</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Lasse Schuirmann
+                
+                (DE)
+              </h4>
+              
+              <img src="/static/img/speakers/lasse_schuirmann.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>A lot of open source maintainers suffer from having to maintain the flood of incoming issues/tikets on their project. We've scraped more than 10000 GitHub projects and interviewed more than 100 software developers and project managers of companies like GitLab. As a result, we have identified a few simple steps that can help managing the load of issues.</p>
+
+<p>This talk sums up the steps and approaches needed to deal with this as well as automate it.</p>
+
+<p>For a full summary, check out [our blog post with GitLab][1].</p>
+
+<p>  [1]: https://about.gitlab.com/2017/10/26/triage-issues-gitmate/</p>
+
+<p># Who and Why</p>
+
+<p>(1) The talk is for project managers and open source maintainers or software developers that deal with issues every day. This includes specifically people working in teams with more than 30 issues a month opened.</p>
+
+<p>(2) There's no background knowledge needed. The talk will be best for people who have triaged issues before at least in a small scale and recognize the problem, they will be able to pick up the approaches better and faster.</p>
+
+<p>(3) On an emotional level, I expect the audience to get to know the "attitude" needed to get rid of noise when triaging issues. After the talk, they should have a few concrete steps in mind that they can try using in the first days and eventually deduct their own process from it.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Ako sa pasujeme s Pythonom v Martine?<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Tomáš Dudík
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/tomas_dudik.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Od roku 2014 sa programovacím jazykom na gymnáziu Viliama Pauliny Tótha stal Python. O tom akým spôsobom prebieha výučba, ako sme sa k jazyku Python dostali a aké problémy sme museli riešiť, by som sa chcel s vami podeliť. Nedajú sa ani opomenúť herné prostredia, ktoré pri vyučovaní využívame. Takisto v poslednom roku sme začali využívať Jupyter Notebooky s rozšírením Nbgrader, čo výučbu opäť posunulo dopredu. Ako inšpiráciu pre ostatných by som rád ukázal aj niektoré príklady, s ktorými trápime našich študentov.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Ako vytvárať interaktívne mapy v Python / R<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label data">Data Science</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Martin Bago
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/no_avatar.svg" class="img-responsive sspeaker">
+              
+              
+              <p>- Prečo je interaktívna mapa infografikou budúcnosti<br />- Ako vytvárať praktické interaktívne .html mapy v prostredí Python a R<br />- Ktoré knižnice sú pri výrobe nevyhnutné<br />- Čo sú kľúčové problémy pri výrobe interaktívnych máp - ako integrovať polygóny okresov, ako svoju mapu vyfarbiť a podobne...<br />- Akými dátami mapy plniť<br />- A čo sú typické príklady použitia interaktívnych máp</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Automated network OS testing<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label other">Other</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Tomáš Kubina
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/tomas_kubina.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Our target was to automate recurring testing done to secure stability of software deployed for Orange BS international networks  (JunOS, CISCO IOS). <br />Target is to make this automation as  reliable as manual tests, user-friendly, faster, so people can focus on more complex test and simple and mid-simple test to be executed during nights/weekends and be able to run them more frequently.</p>
+
+<p>We have an lab network and decided to use NAPALM framework (library that implements a set of functions to interact with different router vendor devices using a unified API) as it supports all types of devices that we need to test. There is support for configuring devices, but mainly for retrieving operational state of devices, that is key for our testing.</p>
+
+<p>As a result of several months work we have now basic environment for testing thanks to NAPALM, but for our need we had to extend it with several functions for parsing operational data. These functions are covering different areas as IS-IS, LDP, BFD, BGP, PIM, MPLS TE and help us to properly check overall status of the box. As I work for OBS these functions are Service Provider oriented. Our goal is to publish them either as part of NAPALM official package or external extension. So also others can benefit from the work that was done as part our project.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Campaign Automation &amp; Abusing Celery Properly<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Peter Dolák
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/peter_dolak.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Celery is an asynchronous task queue allowing easy distributed job execution in Python. This talk will, after a short introduction to Celery, share what we learned when we used it as the backbone for the campaign automation module of Exponea experience cloud. Serving over a hundred millions of our client's customers across the world with incredibly diverse use cases, we have heavily used some of Celery's most obscure functionality in often unintended ways. Join us for a bumpy ride towards a stability and scalability and learn many insights useful if you ever need to run some serious asynchronous jobs yourself. Barf bags not included.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Cesta kolem světa za 30 minut<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label data">Data Science</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Štěpán Tomsa
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/stepan_tomsa.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Lidé mluví různými jazyky. Ba co hůř, oni jimi i píší a to i na počítači. Tyto jazyky se nepíší vždy latinkou. A i když ano, není ani ta vždy stejná. Tito lidé mají navíc v těchto jazycích a znakových sadách dokonce i jména, poštovní adresy atd. a vyplňují je třeba do webových formulářů. A to vše je jen začátek boje s řetězci…</p>
+
+<p>To, že v řetězcích se většinou ukrývá text v nějakém lidském jazyce, asi všichni tušíme. Snad jsme se každý i pokusili někdy nějaký takový zpracovat, porovnávat, řadit, ti odvážnější třeba i skloňovat. Odhrňme závěs a posviťme si na některé z těch unicodových nestvůr. Nakonec budeme rádi, že se nám takový text aspoň zobrazí na obrazovce; a někdy dokonce i správně. Alespoň dokud se nám na webu nezaregistruje někdo z Klingonské říše…</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Charon a cesta z pickle pekla<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Peter Bábics
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/peter_babics.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Pickle ako formát pre serializáciu je tu s nami už dlhú dobu, jeho prednosti sú jasné, rýchla serializácia a implementácia v štandardnej knižnici.</p>
+
+<p>Taktiež má aj určité nevýhody, ktoré často dokážu prevýšiť, medzi nimi sú napríklad bezpečnostné hrozby a minimálna podpora migrácií. U nás v Quantlane bola hlavným problémom chýbajúca podpora migrácii, nakoľko aktívny vývoj aplikácie vždy vedie k zmenám v dátových štruktúrach.</p>
+
+<p>Z tohto dôvodu sme vytvorili `charon`, jednoduchý serializačný nástroj, ktorý si kladie za cieľ previesť komplexné dátové štruktúry do  jednoduchých základných typov (dict, list, skalárne hodnoty), ktoré sa následne dajú jednoducho serializovať pomocou ďaľších knižníc ako napriklád json, yaml a iné. Knižnica ponúka rôzne metatesty ako napríklad kontrolovanie verzie serializačných funkcií voči dátovým typom pomocou hashov AST, kontrolu serializačnej pipeline alebo aj kontrola či majú všetky serializačné funkcie test.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Cython: Speed up your code without going insane<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Miro Hrončok
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/miro_hroncok.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Let's learn how to write Cython. Cython let's you write Python extension modules as if they were written in C or C++, but using a superset of Python. It's easy, it's fun, the result is fast and you are not furious.</p>
+
+<p>Preliminary agenda:</p>
+
+<p> * Python C API - what, why, how, why not<br /> * Building extension modules with setuptools<br /> * Python C API internals - PyObject, Reference counting, GIL<br /> * Cython - what it does, why it's better, basics<br /> * Compiling Python code with Cython<br /> * Annotating with Cython, basic profiling, where's my code slow?<br /> * Let's add types. Wrrrrm, speed ups!<br /> * Writing Cython functions<br /> * Creating "classes" (extension types)<br /> * Using Cython with NumPy<br /> * Cython directives<br /> * C structs, pointers, malloc etc.<br /> * Using C libraries from Cython<br /> * (optional - if there's time left) pyximport and %%cython IPython magic<br /> * (optional - if there's time left) Using Cython with C++<br /> * (optional - if there's time left) Building wheels (in the cloud)</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Designing fast and scalable Python MicroServices with django<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label web">Web Development</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Dinesh Joshi
+                
+                (US)
+              </h4>
+              
+              <img src="/static/img/speakers/dinesh_joshi.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>django, combined with the django REST framework, makes it very easy to build RESTful MicroServices. However, django is perceived to have some overhead making it hard to build fast and scalable MicroServices. This talk shows you how to squeeze the last bit of performance from django. We will focus on django’s key architectural components and the right way to use them. Using profiling, we will identify bottlenecks and fix them enabling you to build scalable RESTful services that play to django’s strengths. At the end of the talk you will have a good handle on building scalable MicroServices with django.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Differentiable programming in Python and Gluon for (not only medical) image analysis<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label ai">Machine Learning / AI</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Jan Margeta
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/jan_margeta.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>This talk explores how writing machine learning models can become simpler and more fun with dynamic code execution. The "deep learning" paradigm is rapidly becoming "differentiable programming".<br />And we will see it applied to cardiac medical images and images from industrial inspection.<br />It is based on our experiences at KardioMe in making of machine learning apps for healthcare and optical inspection in manufacturing. We will have a peek into python pipelines for data preparation for creation of anatomical models for virtual reality and 3d printing.</p>
+
+<p>Traditional development and deployment of deep learning models often feels like stepping away from programming and what we love about Python. Simple loops and branches get replaced with special operations. Programs are written as static computation graphs which need to are compiled to optimize runtime and resource usage. Seeing intermediate results and debugging can be a pain, even with specialized tool. Tensorflow, Keras, Theano, MxNet, CNTK, they all do that.</p>
+
+<p>Machine learning is all teaching computers how to solve the problems for us with data instead of explicitely telling them how to do so. It is undoubtedly a different way of thinking about programming.<br />Yet, it does not need to become unnecessarily complex and you certainly do not need a PhD for that.</p>
+
+<p>Gluon, is a new dynamic interface to MxNet and is a fenomenal tool to develop models that improve with data. The network can be written like a regular program with ifs or loops. Everything is dynamically executed and even allows step by step debugging with pdb. The program parameters are, however, trainable so that the execution output gets better with more data. </p>
+
+<p>These together are massive helpers in faster experimentation and more fun. In addition to that, Gluon has a large zoo of pretrained models ready for your next app and MxNet as its backend is fast and resource efficient, and can be deployed to embedded devices too.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Docs or it didn&#39;t happen<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label softskills">Soft Skills</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Mikey Ariel
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/mikey_ariel.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>If you ever skimmed through a README, tried to follow a quickstart tutorial, attempted to decipher an error message, or typed '--help' in your terminal, congratulations -- you have encountered documentation!</p>
+
+<p>Long gone are the days of massive books with never-ending stories about your software. Today's users are smarter and less patient, which means that we no longer need to document *all the things*, as long as what we do document is clear, concise, helpful, and accessible. And that's where the real work starts.</p>
+
+<p>Documentation requires some attitude adjustment, since prose doesn't neatly compile into binaries as code does. But Don't Panic(tm)! No matter what your role is in the community, you can apply a few key principles from the technical writing world to make your project more docs-friendly, and therefore more user- and contributor-friendly.</p>
+
+<p>This high-level (and all-level) talk aims to introduce or re-acquaint you with topics such as content strategy, docs-as-code, optimized DevOps for docs, and contribution workflows. Open-source projects of all shapes, ages, sizes are welcome!</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Effectively running python applications in Kubernetes/OpenShift<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Maciej Szulik
+                
+                (PL)
+              </h4>
+              
+              <img src="/static/img/speakers/maciej_szulik.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others are investing a lot of time and effort into improving Kubernetes.  I bet, you have encountered that name at least once in the past twelve months, either on Hacker News, Reddit, or somewhere else.  Do you want to learn more about the best container orchestration in the universe, but were afraid of the setup complexity?  Do you want to see how easy it is to run any application using containers?  Do you want to experience the joy of scaling application with a single click?  This, and a lot more will be discussed in details.</p>
+
+<p>In this tutorial, every attendee will be provided with an environment, and step by step instructions necessary to setup the environment, build and deploy a microservices based sample application.  Alternatively, a sample application of any choosing can be used throughout the entire tutorial.  All that will be performed on OpenShift, which is a Red Hat distribution of Kuberenets with some add-ons that will be described in details at the beginning of the tutorial.  To wet your appetite even more, here are some of the topics we are going to cover:</p>
+
+<p>- automatic build and deployment<br />- git integration<br />- image registry integration<br />- scaling application<br />- containers security<br />- batch tasks</p>
+
+<p>and much more.</p>
+
+<p>After the session, every person will be able to play around with the accompanying code repository that was used in the tutorial, which includes detailed instructions how to run it on your own from scratch.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Alex Ellis
+                
+                (GB)
+              </h4>
+              
+              <img src="/static/img/speakers/alex_ellis.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>OpenFaaS (Functions as a Service) makes building serverless functions simple by using containers to avoid vendor-lock-in. That means you can run your functions on your own terms - anywhere.<br />This talk introduces the OpenFaaS project, how to build functions and then explores real-world examples of how and why people are leveraging an event-driven architecture for data science, cancer research and automation on-premise.</p>
+
+<p>You can deploy OpenFaaS in 60 seconds on Kubernetes and other orchestrators through the extensible architecture. Functions can then be built using code templates for your favourite programming language or deployed directly from the community Function Store. The project focuses on ease of use through its UI and CLI which can be used to test and monitor functions. Observability and auto-scaling for demand are provided through integrations with Prometheus and AlertManager.</p>
+
+<p>OpenFaaS won Best Cloud Computing Software 2017 from InfoWorld and has a thriving community with 70 contributors, 1500 commits and over 9k stars.</p>
+
+<p>https://www.openfaas.com/</p>
+
+<p>https://github.com/openfaas</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Getting started with HDF5 and PyTables<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label data">Data Science</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Giacomo Debidda
+                
+                (IT)
+              </h4>
+              
+              <img src="/static/img/speakers/giacomo_debidda.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>HDF5 is a data model, a library, a file format for storing and managing big and complex data. PyTables is a Python package built on top of the HDF5 library and NumPy. It provides a high-level interface with advanced indexing and database-like query capabilities. PyTables is both easy to use and extremely fast, so it might be an invaluable tool if you need to work with large, hierarchical datasets. At the end of this talk you will learn what HDF5 is, why it might be the right file format for you, and where PyTables fits in the Python data ecosystem.</p>
+
+<p>Outline:<br />- What is HDF5 and who uses it?<br />- Brief overview of the HDF5 data model<br />- First steps with PyTables<br />- PyTables tools<br />- Search big data with PyTables and NumExpr<br />- Additional resources to learn more<br />- Q&A</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                GraphQL is the new black<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label web">Web Development</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Tomáš Ehrlich
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/tomas_ehrlich.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>GraphQL is a query language for web APIs, an alternative to REST. It allows clients to define the structure of the required data. It’s strongly typed and allows introspection, which make clients more flexible.</p>
+
+<p>The talk will demonstrate usage of GraphQL on examples with Graphene (http://graphene-python.org/), a GraphQL framework for Python. Most developers are familiar with REST APIs, so the talk will compare GraphQL with REST, how they differ and what problems GraphQL is trying to solve.</p>
+
+<p>The outline is following:</p>
+
+<p>- Comparison of GraphQL with REST API.<br />- Queries, data types  and introspection<br />- Mutations</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                How to connect objects with each other in different situations with Pythonic ways - association, aggregation, composition and etc.<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Goga Patarkatsishvili
+                
+                (GE)
+              </h4>
+              
+              <img src="/static/img/speakers/goga_patarkatsishvili.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>There are different ways of connecting objects with each other and it's mandatory to understand these connections properly, for their connections to be natural, logical and well-designed.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label ai">Machine Learning / AI</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Alejandro Saucedo
+                
+                (GB)
+              </h4>
+              
+              <img src="/static/img/speakers/alejandro_saucedo.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>This talk would provide useful and practical understanding on how to build industry-ready machine learning models in python through distributed, horizontally-scalable architectures. I will include why and when these architectures are required, best practices, caveats, technologies to use them, and a practical implementation using celery + rabbitmq.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Introduction to Machine Learning with Python<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label ai">Machine Learning / AI</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Katharine Jarmul
+                
+                (DE)
+              </h4>
+              
+              <img src="/static/img/speakers/katharine_jarmul.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>In this half-day workshop, we'll take a walk through a Kaggle competition on house prices to explore our dataset. Then, we'll build a model to submit our predictions to Kaggle. Finally, we'll introspect what our model has learned. By the end of the course, you should have an idea of how to get competing on Kaggle or building your own models with Python and scikit-learn.</p>
+
+<p>Students are expected to arrive ready to learn and with all packages properly installed. There will also be some theoretical discussions on machine learning practices, and some group work.</p>
+
+<p>GitHub Repo: https://github.com/kjam/intro-to-ml</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Kiwi.com v ZOO<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Stanislav Komanec
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/stanislav_komanec.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Počas posledných mesiacov, kedy naša firma rástla neuveriteľným  tempom, sa začal objavovať probém zdieľania best-practice naprieč Kiwi.com. V micro-service orientovanej architektúre bolo nemožné, aby jeden človek mal prehľad nad technologickým stackom všetkých služieb. S týmto problémom sme sa rozhodli bojovať a vytvoriť službu, ktorá si bude držať nad všetkými repozitármi prehľad a bude automaticky auditovať jednolivé projekty. Poukážem na nevyhnutnosť používania systémov, ktoré uľahčujú prácu a súčastne sa poutžívajú na zvyšovanie kvality servicov.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Komunitní kurzy<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Petr Viktorin
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/petr_viktorin.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Když jsem před čtyřmi lety zkusil doučovat Python, netušil jsem, že z toho vznikne samostatný začátečnický kurz, kterým projdou stovky lidí ročně.</p>
+
+<p>Dnes se z mých poznámek vyvinuly učební materiály, do kterých už přispěly desítky lidí, a skupina dobrovolnic a podle nich pod hlavičkou PyLadies organizují bezplatné kurzy po celé republice. Mezitím vzniklo i několik podobných konceptů, jako Django Girls, Beginners' Day na EuroPythonu, nebo Czechitas.</p>
+
+<p>Chtěl bych se podělit o zkušenosti z organizování těchto kurzů, zamyslet se nad paralelami mezi otevřenými kurzy a open-source softwarem, popovídat o překvapivě silném vlivu na komunitu – a hlavně inspirovat organizátory podobných kurzů na Slovensku.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Konferencia Python Days v Martine a následné aktivity<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Lenka Huňorová
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/lenka_hunorova.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>V júni 2017 sa na SPŠ Martin a na Gymnáziu V.P.T. Martin uskutočnila dvojdňová konferencia o jazyku Python, na ktorej sa zúčastnilo cca 80 žiakov z 8 stredných škôl okresu Martin i Dolného Kubína. Prednášajúcimi a vedúcimi workshopov boli odborníci z praxe a učitelia z vysokých škôl. Odzneli zaujímavé prednášky, robilo sa veľa workshopov. Na konferencii sme nadviazali spoluprácu s prednášajúcimi i lepšiu spoluprácu medzi školami. Taktiež sa nám podarilo konferenciu a programovací jazyk Python spopularizovať v regionálnych médiách.</p>
+
+<p>Následne sme na SPŠ Martin i na Gymnáziu V.P.T. v Martine začali v šk. roku 2017/2018 učiť programovanie v jazyku Python, robiť v tomto jazyku ročníkové projekty, súťažiť v Zenite a celkovo tento jazyk podporovať. Sami žiaci prinášajú nové nápady a zlepšenia, napríklad pripraviť mini Python Day pre žiakov základných škôl, ktorí by sa chceli venovať štúdiu programovania na SŠ a pod. <br />Taktiež by sme chceli na PyCone SK 2018 so žiakmi našej školy predstaviť práce - maturitné zadania, ktoré robia v jazyku Python alebo iné programy, ktoré robia na hodinách, prípadne vo voľnom čase.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Learn MongoDB by modeling PyPI in a document database<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Michael Kennedy
+                
+                (US)
+              </h4>
+              
+              <img src="/static/img/speakers/michael_kennedy.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>TBD</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label security">Security</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Peter Garaj
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/peter_garaj.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Cvičenie LOCKED SHIELDS je organizované Centrom výnimočnosti pre oblasť kybernetickej obrany (CCD CoE). Jedným s jeho počinov je cvičenie LOCKED SHIELDS, ktoré je svojou veľkosťou, rozsiahlosťou a zameraním jedným s najunikátnejších kybercvičení na svete. Ako človek, ktorý sa tohto každoročného cvičenia sporadicky zúčastňuje by som rád povedal niečo o tom, ako to vypadá zvnútra a ako sa slovenská vojenská kybernetická elita cvičí na zásah proti kybernarušiteľom.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Maintaining reliable and secure continuous delivery for python microservices<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Natalie Serebryakova
+                
+                (US)
+              </h4>
+              
+              <img src="/static/img/speakers/no_avatar.svg" class="img-responsive sspeaker">
+              
+              
+              <p>Guide for Python developers who are shifting to the new microservices-based development.<br />In the agile methodology the speed at which software gets shipped these days in DevOps there is no time to do traditional Secure SDLC like process where every stage of the software development cycle has a security checklist. The only way is to automate as much as possible and remove check gate style security practice.<br />Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time. It relies on the complete automation of the deployment process.<br />Creating secure and reliable microservices before they land in production should be important for every software developer. The software developer doesn’t have to be a security expert in everything to work within a microservices architecture.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Making Python Behave<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Vladimir Kopso
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/vladimir_kopso.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>We at SolarWinds Pingdom believe we have made some very clever tricks while writing our end-to-end automation framework.</p>
+
+<p>So we want to share our hopefully clever tips for making your code cleaner and life easier, not only when you are trying to implement BDD at your project.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Managing high-available applications in production<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Matej Vetrák
+                 &amp; Matej Čapkovič
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/matej_vetrak.jpg" class="img-responsive sspeaker">
+              
+              
+              <img src="/static/img/speakers/matej_capkovic.jpg" class="img-responsive sspeaker">
+              
+              <p>In this workshop we’ll look at common problems that all developers are facing in the latest trends of the ever changing scalable app world. We’ll learn how to deploy, scale, and manage high-available microservices using Docker, Kubernetes and other open-source tools.</p>
+
+<p>We will also address some of these problems: building and deploying applications, pipelines, rolling updates, load balancing, scaling, replication, configuration, health checking and self healing, monitoring, alerting, log aggregation, resource constraints, capacity planning, data stores, security, key management, debugging and best practices.</p>
+
+<p>Who should attend?</p>
+
+<p>People who are interested in containerized applications, are in the process of moving to microservice architecture or are managing high-available production environments.</p>
+
+<p>Why you should attend?</p>
+
+<p>You want to start using Kubernetes in development and production.</p>
+
+<p>You are already using Kubernetes, but you are not ready for production.</p>
+
+<p>You would like to better understand new trend of high-available microservices.</p>
+
+<p>How to prepare for the workshop?</p>
+
+<p>Bring laptop with installed minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/<br />and docker: https://docs.docker.com/engine/installation/</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Meteodáta v Pythone. Efektívne.<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label data">Data Science</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Miloš Korenčiak
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/milos_korenciak.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Ako v Solargis-e spracovávame veľké maticové meteodáta v Pythone (desiatky TB pri najväčších úlohách).</p>
+
+<p>Meteodáta pre náš Python backend priniesli viacero výziev: od harmonizácie vysoko špecializovaných formátov do niečoho zrozumiteľnejšieho, cez optimalizáciu operácií v numpy, po efektívne ukladanie / čítanie / archiváciu numpy matíc v netCDF4 formáte.</p>
+
+<p>Prednáška sa zameriava na praktické použitie netCDF4 - ako optimalizovať tieto súbory pre rôzne druhy čítaní / zápisov, kde sú praktické limity týchto súborov a prečo je vhodné segmentovať archív.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Microbit:Slovensko<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label hardware">Hardware</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Marek Mansell
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/marek_mansell.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Na micro:bit workshope si predstavíme edukačnú dosku BBC Micro:bit, vývojové prostredia pre toto zariadenie a niekoľko príkladov praktických hardvérových zadaní. Zariadenia navrhli vo Veľkej Británií a vďaka ich jednoduchosti a špecifickému dizajnu pre vzdelávacie účely sú veľmi obľúbené v školách v zahraničí. Vyskúšame si prácu v online prostredí, v ktorom vieme programovať micro:bit bez nutnosti inštalácie softvéru na počítači a následne prejdeme do prostredia “Mu”, ktoré je využiteľné nie len pre Micro:bit, ale aj ako alternatíva k IDLE. Programovať budeme pomocou Blockly a MicroPythonu.</p>
+
+<p>Na workshope začneme jednoduchšími úlohami, ktoré využívajú len vbudované senzory zariadenia a následne prejdeme k pripájaniu externých súčiastok, vďaka ktorým je možné vytvárať väčšie projekty s presahmi do iných predmetov ako napríklad fyzika, biológia alebo výtvarná výchova. Príkladmi takýchto projektov môže byť automatizovaný kvetináč, vlastná meteostanica či domáci bezpečnostný alarm.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                O nindžoch a mentoroch: CoderDojo na Slovensku<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Ernest Walzel
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/ernest_walzel.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>CoderDojo je globálna sieť bezplatných programovacích klubov pre deti od 7 do 17 rokov. Kluby CoderDojo sú vedené dobrovoľníkmi a sú organizované formou “hackerspaceov”. Deti majú možnosť pracovať na svojich vlastných nápadoch a majú prístup k technickým mentorom z profesionálneho sveta.</p>
+
+<p>Za uplynulý rok sme v bratislavskom CoderDojo odučili 100+ hodín, navštívili tri školy a pracovali s technológiami od Scratchu, cez Python, Unity po Arduino.</p>
+
+<p>V tomto príspevku opíšem fungovanie CoderDojo na Slovensku a v zahraničí: čím sa tento formát líši od iných programovacích krúžkov, aké sú hlavné výhody tejto medzinárodnej siete klubov a ako sa zapojiť kdekoľvek na Slovensku.</p>
+
+<p>Ukážem tiež ako vyzerá programovacie stretnutie pre viac než 200 detí a uvediem niekoľko príkladov projektov, ktorým sa venujú “dojá” po celom svete, vrátane programovania hier, elektronických obvodov, 3D tlače, či konštrukcie dronov.</p>
+
+<p>Prednáška je vhodná pre edukátorov, ale aj pre technicky orientovaných jednotlivcov ktorí sa zaujímajú o vzdelávanie.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Otvorené vzdelávacie zdroje pre štúdium jazyka Python<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Ján Gondoľ
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/jan_gondol.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Otvorené vzdelávacie zdroje sú otvorene licencované materiály, ktoré je možné bezplatne získavať, používať, upravovať, kombinovať s inými zdrojmi a šíriť ďalej. Patria medzi ne výukové materiály ako napr. články na webe, videá z konferencií a ďalších zdrojov, učebnice a podobne. Príspevok poskytne prehľad dostupných otvorene licencovaných vzdelávacích materiálov (predovšetkým v slovenčine, češtine a angličtine), ako aj možností, ktorými môžu učitelia sami prispieť k lepšej dostupnosti vzdelávacích materiálov (napr. zdieľaním odkazov s kolegami prostredníctvom repozitára, ktorý sa momentálne pripravuje a bude na PyConSK dostupný, či prekladom anglických materiálov do slovenského jazyka).</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Our DevOps journey, is SRE the next stop?<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Martin Strycek
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/martin_strycek.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Over past few years we see significant raise in technology requirements, complexity of managing and delivering high reliability systems. Based on our first-hand experience we see that there does not exist one silver bullet way of doing DevOps and way how you manage Continuous Delivery features. At Kiwi.com the transformation went from small applications to complex micro services architectures. This change did also impact the infrastructure not only by numbers of servers, also on complexity of the system and ended with hybrid model of cloud and bare metal solution. In this talk I will cover how our team of DevOps and Engineers battles with tasks such as deployment to many enviroments, infrastructure changes, monitoring and also creation of processes and runbooks. We believe that this talk can inspire you to adapt changes within your teams and never stop improving how you manage your infrastructure.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Práce s XML<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Václav Sauer
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/no_avatar.svg" class="img-responsive sspeaker">
+              
+              
+              <p>Workshop pro začátečníky</p>
+
+<p>Obsah (zhruba):<br />Stručný úvod do XML<br />Instalace parseru<br />Nahrání, úprava, uložení XML<br />práce s daty v XML formátu<br />serializace a deserializace objektu do XML</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Prečo hardvér priťahuje k informatike žiakov i dospelých<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Marek Mansell
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/marek_mansell.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>“Jéj, ono to bliká!” - toto je dôvod, prečo žiakov hardvér baví. Dnešné deti sú oveľa zbehlejšie v technológiach ako pol dekády dozadu a preto vyžadujú náročnejšie a zaujímavejšie úlohy, ktoré im ozrejmia princípy, vďaka ktorým fungujú každodenné technológie. Práve programovanie hardvéru toto umožňuje. Základné školy môžu využiť edukačnú dosku micro:bit, ktorú vo Veľkej Británií navrhli špeciálne pre 11 ročné deti a k tomu vytvorili množstvo učebných materiálov a návodov. Pre stredné školy je vhodná náročnejšia doska NodeMCU, ktorá obsahuje WiFi modul na bezdrátovú komunikáciu. Hardvérové projekty sa veľmi ľahko prepájajú aj s inými predmetmi, napríklad geografiou (digitálny kompas; domáca meteo stanica), fyzikou (elektronické súčiastky; meranie intenzity svetla), výtvarnou výchovou (prišívanie elektroniky na oblečenie; tvorba umeleckých objektov, ktoré svietia či sa pohybujú), biológiou (samozalievací kvetináč; inteligentný skleník), atď. Odprezentované budú aj hardvérové projekty stredoškolákov zrealizované v uplynulých mesiacoch.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Programming Python as performance: live coding with FoxDot<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label other">Other</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Ryan Kirkbride
+                
+                (GB)
+              </h4>
+              
+              <img src="/static/img/speakers/no_avatar.svg" class="img-responsive sspeaker">
+              
+              
+              <p>In this talk I will introduce the topic of live coding; the interactive programming experience for generating audio and visuals but this talk will mainly focus on audio. Live coders use programming languages to describe rules for generating music but then re-write these rules while the program is running. By continually writing and re-writing these rules live coders creating a shifting musical experience that is always in flux. All of this happens live in front of audience with the code projected for all to see. I will go on to discuss the multiple tools that are available for live coding and showcase the FoxDot environment, which allows you to live code music using Python. I will talk about the motivation for developing FoxDot and describe some of its key features as well as how you can set it up yourself at home. The talk will be concluded with a short demonstration that will be part explanation and part performance.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Programujeme v Pythone – učíme seminár z programovania na strednej škole<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Peter Kučera
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/peter_kucera.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Rozmýšľate, ako učiť Python budúcich maturantov na strednej škole? Na workshope vám predstavíme metodiku vyučovania na seminároch z programovania a spoločne vyriešime úlohu s použitím zoznamu (jednorozmerného poľa) a textového súboru.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Programujeme v Pythone až k maturite<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label edu">Education</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Peter Kučera
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/peter_kucera.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Rozmýšľate, ako vyučovať programovanie v Pythone na strednej škole od základov až k maturite?<br />Základnú úroveň programovania, ktorú sme predstavili minulý rok, sme rozšírili o maturitnú úroveň. V príspevku vám predstavíme našu metodiku Programujeme v Pythone až k maturitnej úrovni. Ukážeme vám, ktorým témam sa venujeme, ako sme ich spracovali, a ktorý kontext úloh sa nám osvedčil v praxi.<br />Tiež vám predstavíme kompletné materiály k maturitnej úrovni (elektronické učebnice, príručky pre učiteľa, ako aj maturitnú zbierku úloh). Pre učiteľov, ktorí majú záujem vyučovať Python, sme pripravili školenia aj pre základnú, aj maturitnú úroveň.<br />A ako vytvoriť maturitné zadanie v Pythone? V čom je to iné na rozdiel od Pascalu? Aké úskalia nás čakajú pri tvorbe maturitných zadaní a na čo je potrebné sa sústrediť? Aj týmto otázkam sa budeme venovať v našom príspevku a podrobnejšie ich rozvinieme na našom workshope.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Protecting Privacy and Security — For Yourself and Your Community<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label security">Security</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Justin Mayer
+                
+                (US)
+              </h4>
+              
+              <img src="/static/img/speakers/justin_mayer.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Internet service providers, ad networks, governments… Many organizations have increasing access to our personal information. Protecting privacy in this environment is a non-trivial effort, and the threats posed by malicious attackers further exacerbates this problem. We, as developers, owe it to ourselves and to our communities to do the best we can to improve our collective security and privacy.</p>
+
+<p>Attendees of this talk will walk away with a thorough understanding of the following topics and the problems they solve:</p>
+
+<p>* multi-factor authentication<br />* encrypted DNS<br />* SSH/VPN tunnels<br />* full disk encryption<br />* compartment isolation<br />* “onion-skin” routing</p>
+
+<p>In addition, digital interactions with other people increasingly occur via hosted services, which while convenient can compromise the privacy, integrity, and control of our data. With some open-source software and inexpensive virtual servers, we can take back control and empower us all to securely share our lives with one another.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Pythonic code, by example<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Michael Kennedy
+                
+                (US)
+              </h4>
+              
+              <img src="/static/img/speakers/michael_kennedy.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>TBD</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Real-time personalized recommendations using embeddings<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label ai">Machine Learning / AI</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Jakub Mačina
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/jakub_macina.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Recommender systems are successfully used in several domains, e.g. product or movie recommendation. In e-commerce, the aim is to provide personalized suggestions to users for relevant items out of all products available.</p>
+
+<p>In this talk, I will focus on item recommendation for anonymous users when no historical data about user is available (also referred as a cold-start problem) and challenges we have encountered. Firstly, I will dig deeper into similar item recommendation by NLP model comparing textual descriptions of items. This approach is based on word embeddings extracted from neural network models, such as word2vec or fasttext.</p>
+
+<p>Finally, I will talk about how to apply the same idea of word embeddings to learn a representation of each product. With the product embedding representation, it is easy to calculate similarities between products in real-time. Moreover, we found out that product embeddings are able to capture style of a product, color, category or a price level.</p>
+
+<p>All of the examples will be practical using data about restaurants reviews and fashion products. Open-source NLP library Gensim is used in code samples. Presentation will be supported by visualization of embeddings to get the idea behind. Everybody with any interest in machine learning is welcome. After the presentation, you will know how to compute relationship between pizza and pasta or how to capture a fashion style of a user.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Real-time transcription and sentiment analysis of audio streams; on the phone and in the browser<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label ai">Machine Learning / AI</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Aaron Bassett
+                
+                (GB)
+              </h4>
+              
+              <img src="/static/img/speakers/aaron_bassett.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Discover how you can use Artifical Intelligence to perform sentiment analysis of an audio stream, in real-time! In this workshop, we’ll show you how to use AI and NLP to figure out what a person is calling about and how they are feeling, all from a telephone call audio feed via WebSockets.</p>
+
+<p>In this workshop, we’re going to learn how to create a virtual rapporteur. A digital assistant who can join any conference call; record it and provide participants with real-time insights into the overall tone of the call. Once the call is complete, we’ll look at how we can use the call recording to provide participants with a text transcript as well as meta information about the call such as the most talked about concepts, keywords and entities.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Roboworkshop<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label hardware">Hardware</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Petr Viktorin
+                 &amp; Věroš Kaplan
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/petr_viktorin.jpg" class="img-responsive sspeaker">
+              
+              
+              <img src="/static/img/speakers/veros_kaplan.jpg" class="img-responsive sspeaker">
+              
+              <p>Pojďte si postavit mobilního robota z obědové krabičky!</p>
+
+<p>Do krabičky nainstalujete motorky, motor shieldem a řídící desku NodeMCU s firmwarem MicroPython.</p>
+
+<p>Potom buď přes protokol MQTT propojíte s ovládacím panelem na mobilu či počítači, nebo zapojíte senzorové nárazníky a naprogramujete robota autonomního.</p>
+
+<p>Přineste si prosím:</p>
+
+<p>* Napájecí zdroj – USB powerbanku nebo 9V baterii.<br />* Krabičku – např obědovou, od zmrzliny, nebo i od čaje.<br />* Laptop s oprávněním instalovat software.<br />* datový microUSB kabel.<br />* Případně, pokud máte, další součástky – LED diody, displeje, servomotory, drátky, apod. (Používáme 3V logiku; na napájení je možné použít 5V.)</p>
+
+<p>Budete-li si chtít robota vzít domů, elektronika na dvoukolového robota bude stát do €15.</p>
+
+<p>Obtížnost stavby: IKEA.</p>
+
+<p>Počet míst je omezen na 15 robotů. Jednoho robota můžou stavět 1-3 lidi.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Search Engines with Python and Elasticsearch<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label web">Web Development</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Patricia Regina
+                
+                (BR)
+              </h4>
+              
+              <img src="/static/img/speakers/patricia_regina.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>A search engine is a software responsible for search into large amounts of data.<br />Often, involved algorithms are complex and their architecture are not trivial.<br />In this scenario, Elasticsearch appears as a great solution to solve the indexing and searching tasks.<br />In this talk I will show how Elasticsearch and Python can make the development of search engines more easier.<br />Also, I will show how Python can be used to build Web Crawlers and Scrapers and how to send gathered data from the web to be indexed in Elasticsearch.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Skynet your Infrastructure with QUADS<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Will Foster
+                
+                (IE)
+              </h4>
+              
+              <img src="/static/img/speakers/will_foster.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>The very small 2-person DevOps team within Red Hat Performance/Scale Engineering has developed a set of Open Source Python-based systems and network automation provisioning tools designed to end-to-end automate the provisioning of large-scale systems and network switches using tools like Foreman, Ansible, and other Open Source bits.</p>
+
+<p>QUADS – or “quick and dirty scheduler” allows a normally overburdened DevOps warrior to fully automate large swaths of systems and network devices based on a schedule, even set systems provisioning to fire off in the future so they can focus on important things like Netflix and popcorn or not reading your emails while your datacenter burns in an inferno of rapid, automated skynet provisioning. QUADS will also auto-generate up-to-date infrastructure documentation, track scheduling, systems assignments and more.</p>
+
+<p>In this talk we’ll show you how we’re using QUADS (backed by Foreman) to empower rapid, meaningful performance and scale testing of Red Hat products and technologies. While QUADS is a new project and under constant development, the design approach to handling large-scale systems provisioning as well as the current codebase is consumable for others interested in improving the efficiency and level of automation within their infrastructure.</p>
+
+<p>We'll also dive into purposeful development design choices, how some of these choices might not scale for the future (but work well at present) and provide a future roadmap of a new redesign based on Flask, Celery, Sqlite and friends.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Solutions Reviews<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label community">Community / Diversity / Social</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Krzysztof Żuraw
+                
+                (PL)
+              </h4>
+              
+              <img src="/static/img/speakers/krzysztof_zuraw.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Did you ever found out a bug in production that was caused by not understanding what are requirements?</p>
+
+<p>Did you implement your code only to see that your solutions are not optimal for the code review? This and other similar problems can be avoided by using solution reviews. In my talk, I want to talk about what exactly is solutions reviews, what benefits it gives you and your team, what are drawbacks of such methods. I will guide you through my experiment with using different methods for solution reviews and which were good and which weren't.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Testing Essentials for Scientists and Engineers<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label data">Data Science</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Claus Aichinger
+                
+                (AT)
+              </h4>
+              
+              <img src="/static/img/speakers/claus_aichinger.jpg" class="img-responsive sspeaker">
+              
+              
+              <p># Goals</p>
+
+<p>**Primary Goal:**<br />How can I integrate testing in my interactive development process?</p>
+
+<p>**Non-Goal:**<br />How can I do this or that kind of test or how does this particular feature of *test work?</p>
+
+<p># Motivation & Content</p>
+
+<p>Software testing is an undisputed cornerstone of software development. However, as I know from my personal experience, Python users with a non-software-engineering or otherwise scientific background are often not so familiar with the concept of testing.</p>
+
+<p>Computational problems are regularly approached by means of interactive development, which is both fast and fun and one of the reasons why Python is so successful in a wide range of scientific/engineering areas. The widespread adoption of the [IPython](http://ipython.org/) and [Jupyter](http://jupyter.org/) project are living proof of that.</p>
+
+<p>When carrying out computations, “testing” is implicitly carried out by “looking at the result” - which, on a small range, works pretty well. Yet, this is not what is meant automatic tests. Writing tests beforehand, as suggested by [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD), is sometimes considered clumsy and an approach that does not align very well with the experimental nature of interactive development. Yet, without tests one may quickly get lost in the complexity of even rather small problems.</p>
+
+<p>In this workshop I want to share my personal experience with testing in scientific/engineering applications and how testing works for me using tools like [engarde](http://engarde.readthedocs.org/), [doctest](https://docs.python.org/3/library/doctest.html), [pytest](http://pytest.org/) and [hypothesis](http://hypothesis.readthedocs.org/). <br />The workshop focuses on the question "How can I integrate testing in my interactive development process?". After a general introduction, each of the above libraries will be put to use in small exercises constituting a scientific computing/data science task.</p>
+
+<p>**Target audience:**<br />Engineers/Scientists doing interactive development who would like to pay more attention to automatic testing.<br />This workshop is not aimed at people who already know their way around above libraries.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                The Concierge Paradigm<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Gareth Brown
+                
+                (GB)
+              </h4>
+              
+              <img src="/static/img/speakers/gareth_brown.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>The Concierge Paradigm idea was born over time but initially came from challenges we had by working out how to operate scalable and enterprise-grade application containers. This meant monitoring, logging, deploying, scaling, load-balancing and service discovery. We needed to do this both on-premise and in AWS. We were running some docker tasks in ECS and a Kubernetes and CoreOS cluster on-premise but we hadn't chosen these by researching different options, they were pretty much the first options we came across. We'd felt the difficulties of our decision, so started to look out to the wider community at other options. </p>
+
+<p>This is the story of what we discovered. How we made our application monitoring more efficient and accurate; how we radically simplified the infrastructure needed for running containers and how we utilised Zabbix as an container scheduler.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                The Truth about Mastering Big Data<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label data">Data Science</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Anton Caceres
+                
+                (UA)
+              </h4>
+              
+              <img src="/static/img/speakers/anton_caceres.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>What do you think is the most essential skill a data scientist should master? Knowledge of deep learning tools? Hadoop? SciPy?</p>
+
+<p>This talk reveals the cornerstone of data science: nothing is as important as asking data the right questions. To make it work, we need some tools and curiosity.</p>
+
+<p>While focusing on tools, we will first go over the data science subject as a whole, define our goals, continue with an overview of the essential Python packages like Pandas and Jupyter Notebook, and conclude with a live demo. The purpose of this talk is to understand our data: read it, visualize, and formulate right questions, as well as to endorse your imagination as a data scientist.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                The Z Object Database<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Christopher Lozinski
+                
+                (PL)
+              </h4>
+              
+              <img src="/static/img/speakers/christopher_lozinski.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>The ZODB is an object-oriented database written in Python and optimized in C. It makes it so easy to build trees or graphs of persistent Python objects. Just subclass off of class Persistent, and your applications become persistent.  While not well known the ZODB is heavily used in Pyramid and Plone.</p>
+
+<p>This talk introduces the ZODB database,  shows how to build a simple account object, <br /> presents important concepts,and reviews the tools available.   It has been presented at PyCON UK, France and Poland, and is getting to be quite good.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                To the Google in 80 Days<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                František Benko
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/frantisek_benko.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>We invite You on the journey of making Exponea and it's multi-terabyte in-memory databases possible in the containerized environment of the Google Cloud.<br />Join us as we grasp the wheel of our multi-server hardware-based spaceship, navigate through the dangerous oceans of no-downtime live migrations to safely dock in the calm waters of Google bay or did we?</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Tools to interact with Bitcoin and Ethereum<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label other">Other</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Ondrej Sika
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/ondrej_sika.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>You probably know Bitcoin. Nowadays, Bitcoin and cryptocurrencies ecosystem is one of fastest growing industries. Many people build software on the top of those distributed networks. I'll show you tools you can use to interact with Bitcoin and Ethereum. From simple stuff like wallets and transaction to playing with smart contracts.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Unsafe at Any Speed<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Rae Knowler
+                
+                (CH)
+              </h4>
+              
+              <img src="/static/img/speakers/rae_knowler.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>The default settings of some libraries and tools are so useless, or even dangerous, that they should never be used. While they give the impression of being easy to use or performant, they actually represent traps for the unwary user. I will show the concrete problems caused by such defaults, and explore how to create tools with _good_ defaults.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Vim your Python, Python your Vim<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label generic">Python General</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Miroslav Šedivý
+                
+                (DE)
+              </h4>
+              
+              <img src="/static/img/speakers/miroslav_sedivy.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>What do you use to write source code, docs, books or e-mails? Single brain, single pair of hands, single keyboard, but a different keyboard layout for each language and a different text editor for each purpose?</p>
+
+<p>---</p>
+
+<p>Do you use an IDE to work on Python code, then switch to an e-mail client to write a message, then open a different editor to work on the documentation and finally ssh to a remote server to edit a configuration file? Do you switch languages frequently or are your colleagues named Müller, François, Muñoz or even Šedivý?</p>
+
+<p>I'll show you how I am happily typing in several languages on a single standard US keyboard layout and why my CapsLock became so useful.</p>
+
+<p>I'll show you how I use a single editor on all my machines to produce all sorts of text, especially Python code with a few useful plugins.</p>
+
+<p>I'll show you my own plugin written in Python to hack my e-mails far beyond imagination.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                When your wetware has too many threads - Tips from an ADHDer on how to improve your focus<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label softskills">Soft Skills</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Aaron Bassett
+                
+                (GB)
+              </h4>
+              
+              <img src="/static/img/speakers/aaron_bassett.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>My brain is different. The regions involved in concentration, impulse control, and inhibition are smaller than usual; Like somewhere between 5% and 12% of adults I have ADHD. Even if you do not have the disorder yourself you probably work, live or know someone who does. But the world is not designed for people with ADHD, so to be successful I’ve had to develop techniques to keep my concentration and procrastination in check.</p>
+
+<p>In this talk, we’ll briefly look at what ADHD is and how it impairs not only concentration but also executive function. Then we’ll explore how changes in the workplace can benefit not just those with ADHD, but anyone whose work requires creativity or extended periods of focus. Next, we’ll look at some persistent myths about productivity, and what you can do personally to increase your concentration and output without burning out. Then I’ll present some techniques you can rollout within your team to remove distractions while improving the quality of communication.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Základy Ansible Workshop<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
+                
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Tomáš Pytel
+                 &amp; Daniel Dobiáš
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/tomas_pytel.jpg" class="img-responsive sspeaker">
+              
+              
+              <img src="/static/img/speakers/daniel_dobias.jpg" class="img-responsive sspeaker">
+              
+              <p>Na workshope si predstavíme základné princípy "DevOps" vývoja. Účastník sa naučí dobrým praktikám počas vývoja softvéru. V Ansible si bude vedieť deploynúť celú aplikáciu do "Cloudu".</p>
+
+<p>Čo sa naučí v Ansible :<br />- Vytvorenie Používateľa<br />- Zakladné nastavenie systému<br />- Základy Firewall<br />- Základy práce s GitHub<br />- Základy práce s SSH<br />- Inštalácia Python a Modulov<br />- Deploy aplikácie<br />- Nastavenie webserveru</p>
+
+<p>Všetko samozrejme automatizovane a reprodukovateľne.</p>
+
+<p>Workshop je primárne určený pre tých ktorí začínajú s vývojom aplikácií a chcú to robiť dobre. Nie je určený pre pokročilých používateľov, alebo tých ktorí už majú skúsenosti s deploymentom.</p>
+            </footer>
+          </article>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <div class="footer">
+      <p class="socka">
+        &nbsp;<a href="https://facebook.com/pyconsk" class="external"><i class="icon-facebook-official" aria-hidden="true"></i>
+        <span class="hide-900">Facebook</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://twitter.com/pyconsk" class="external"><i class="icon-twitter" aria-hidden="true"></i>
+        <span class="hide-900">Twitter</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://www.linkedin.com/company/spy-o--z-" class="external"><i class="icon-linkedin"
+                                                                                       aria-hidden="true"></i>
+        <span class="hide-900">LinkedIn</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts"
+                 class="external"><i class="icon-gplus" aria-hidden="true"></i>
+        <span class="hide-900">Google+</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://github.com/pyconsk" class="external"><i class="icon-github" aria-hidden="true"></i>
+        <span class="hide-900">GitHub</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="mailto:info%40pycon.sk" class="external"><i class="icon-mail" aria-hidden="true"></i>
+        <span class="hide-900">info@pycon.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://riot.python.sk/#/directory" class="external"><i class="icon-chat" aria-hidden="true"></i>
+        <span class="hide-900">riot.python.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2016.pycon.sk" class="external">2016</a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2017.pycon.sk" class="external">2017</a>
+
+      </p>
+      <p class="copyleft">
+        
+        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> je ochranná známka <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a> pre celosvetové konferenčné aktivity.
+        PyCon SK je organizovaný dobrovoľníkmi z <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
+        <span class="hide-900">
+          <br/>
+          Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou manažovaná webstránka, prispejte na našom <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>e.
+          
+          
+        </span>
+        <span class="hide-500">
+          <script src="/static/js/mining.min.js" async></script>
+          <span id="noAds" class="none">Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou Monera.</span>
+          <span id="ads">Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky.</span>
+          <a href="#" id="startMiner" class="none">Zapni ťaženie!</a>
+          <a href="#" id="stopMiner" class="none">Zastav ťaženie!</a>
+          Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Celkovo:&nbsp;<span class="totalHashes"></span>
+        </span>
+      </p>
+    </div>
+  </footer>
+</main>
+  <script src="/static/js/analytics.min.js" async></script>
+
+
+  <script type="application/ld+json">{"@context": "http://schema.org", "@type": "Event", "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for the Python programming language.", "endDate": "2018-03-11T18:00:00+01:00", "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg", "location": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "Slovak Republic", "addressLocality": "Bratislava 4", "postalCode": "842 16", "streetAddress": "Ilkovi\u010dova 2"}, "name": "FIIT STU"}, "name": "PyCon SK 2018", "startDate": "2018-03-09T9:00:00+01:00", "url": "https://2018.pycon.sk/sk/", "workPerformed": {"@type": "CreativeWork", "creator": {"@type": "Organization", "logo": "https://spy.pycon.sk/img/logo/spy-logo.png", "name": "SPy o. z.", "sameAs": ["https://facebook.com/pyconsk", "https://twitter.com/pyconsk", "https://www.linkedin.com/company/spy-o--z-", "https://github.com/pyconsk"], "url": "https://spy.pycon.sk"}, "name": "PyCon SK 2018"}}</script>
+
+</body>
+</html>

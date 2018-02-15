@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
   
-  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20180202">
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20180215">
   <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
   
     <link rel="alternate" href="https://2018.pycon.sk/en/devops/schedule.html" hreflang="en">
@@ -58,6 +58,8 @@
         <a href="/sk/schedule.html"
            class="pseudo button icon-help-circled active ">Program</a>
         <span class="dropdown-content">
+          <a href="/sk/talks.html"
+             class="pseudo button icon-help-circled  ">Talk's list</a>
           <a href="/sk/speakers.html"
              class="pseudo button icon-help-circled  ">Rečníci</a>
           <a href="/sk/cfp.html"
@@ -70,7 +72,7 @@
     
     
       <a href="/en/devops/schedule.html" title="Switch to english language"
-         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="english language"></a>
+         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="english language"></a>
     
   </div>
 </nav>
@@ -80,347 +82,157 @@
   <div class="content">
     <div class="content-text">
 
-      <h1>Zoznam prednášok na PyCon SK 2018</h1>
+      <h1>PyCon SK 2018 Schedule</h1>
       <p class="lead">
-        All proposed talks are under review. Once we have complete list we'll publish conference schedule on this
-page.
-        Medzičasom tu nájdete zoznam prijatých prednášok a workshopov.
+        Conference schedule might change.
       </p>
 
-        <a href="/sk/schedule.html">
-          <span class="label all">All</span>
-        </a>
-        
-        <a href="/sk/ai/schedule.html">
-          <span class="label ai">Machine Learning / AI</span>
-        </a>
-        
-        <a href="/sk/community/schedule.html">
-          <span class="label community">Community / Diversity / Social</span>
-        </a>
-        
-        <a href="/sk/data/schedule.html">
-          <span class="label data">Data Science</span>
-        </a>
-        
-        <a href="/sk/devops/schedule.html">
-          <span class="label devops">DevOps</span>
-        </a>
-        
-        <a href="/sk/edu/schedule.html">
-          <span class="label edu">Education</span>
-        </a>
-        
-        <a href="/sk/generic/schedule.html">
-          <span class="label generic">Python General</span>
-        </a>
-        
-        <a href="/sk/security/schedule.html">
-          <span class="label security">Security</span>
-        </a>
-        
-        <a href="/sk/softskills/schedule.html">
-          <span class="label softskills">Soft Skills</span>
-        </a>
-        
-        <a href="/sk/hardware/schedule.html">
-          <span class="label hardware">Hardware</span>
-        </a>
-        
-        <a href="/sk/web/schedule.html">
-          <span class="label web">Web Development</span>
-        </a>
-        
-        <a href="/sk/other/schedule.html">
-          <span class="label other">Other</span>
-        </a>
-        
+      <a href="/sk/schedule.html">
+        <span class="label all">All</span>
+      </a>
+      
+      <a href="/sk/ai/schedule.html">
+        <span class="label ai">Machine Learning / AI</span>
+      </a>
+      
+      <a href="/sk/community/schedule.html">
+        <span class="label community">Community / Diversity / Social</span>
+      </a>
+      
+      <a href="/sk/data/schedule.html">
+        <span class="label data">Data Science</span>
+      </a>
+      
+      <a href="/sk/devops/schedule.html">
+        <span class="label devops">DevOps</span>
+      </a>
+      
+      <a href="/sk/edu/schedule.html">
+        <span class="label edu">Education</span>
+      </a>
+      
+      <a href="/sk/generic/schedule.html">
+        <span class="label generic">Python General</span>
+      </a>
+      
+      <a href="/sk/security/schedule.html">
+        <span class="label security">Security</span>
+      </a>
+      
+      <a href="/sk/softskills/schedule.html">
+        <span class="label softskills">Soft Skills</span>
+      </a>
+      
+      <a href="/sk/hardware/schedule.html">
+        <span class="label hardware">Hardware</span>
+      </a>
+      
+      <a href="/sk/web/schedule.html">
+        <span class="label web">Web Development</span>
+      </a>
+      
+      <a href="/sk/other/schedule.html">
+        <span class="label other">Other</span>
+      </a>
+      
 
-      <div class="flex one two-900 three-1200 center demo">
+
+      <div class="flex one two-900 center demo">
         
         <div>
           <article class="card">
             <header>
-              <h3>
-                Effectively running python applications in Kubernetes/OpenShift<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label workshop">Workshop</span>
-                <span class="label devops">DevOps</span>
-              </h3>
+              <h2>Friday: Kiwi.com Hall <small>(-1.61)</small></h2><br />
+              09. March
             </header>
             <footer>
-              <h4>
-                Maciej Szulik
-                
-                (PL)
-              </h4>
+              <table>
+          
+          <tr>
+            <td class="date">
+              11:40
               
-              <img src="/static/img/speakers/maciej_szulik.jpg" class="img-responsive sspeaker">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
               
               
-              <p>Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others are investing a lot of time and effort into improving Kubernetes.  I bet, you have encountered that name at least once in the past twelve months, either on Hacker News, Reddit, or somewhere else.  Do you want to learn more about the best container orchestration in the universe, but were afraid of the setup complexity?  Do you want to see how easy it is to run any application using containers?  Do you want to experience the joy of scaling application with a single click?  This, and a lot more will be discussed in details.</p>
-
-<p>In this tutorial, every attendee will be provided with an environment, and step by step instructions necessary to setup the environment, build and deploy a microservices based sample application.  Alternatively, a sample application of any choosing can be used throughout the entire tutorial.  All that will be performed on OpenShift, which is a Red Hat distribution of Kuberenets with some add-ons that will be described in details at the beginning of the tutorial.  To wet your appetite even more, here are some of the topics we are going to cover:</p>
-
-<p>- automatic build and deployment<br />- git integration<br />- image registry integration<br />- scaling application<br />- containers security<br />- batch tasks</p>
-
-<p>and much more.</p>
-
-<p>After the session, every person will be able to play around with the accompanying code repository that was used in the tutorial, which includes detailed instructions how to run it on your own from scratch.</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere<br />
+              
+            </td>
+            <td class="title">
+              
+                To the Google in 80 Days
                 
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
+                <br />
                 <span class="label talk">Talk</span>
                 <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Alex Ellis
                 
-                (GB)
-              </h4>
-              
-              <img src="/static/img/speakers/alex_ellis.jpg" class="img-responsive sspeaker">
-              
-              
-              <p>OpenFaaS (Functions as a Service) makes building serverless functions simple by using containers to avoid vendor-lock-in. That means you can run your functions on your own terms - anywhere.<br />This talk introduces the OpenFaaS project, how to build functions and then explores real-world examples of how and why people are leveraging an event-driven architecture for data science, cancer research and automation on-premise.</p>
 
-<p>You can deploy OpenFaaS in 60 seconds on Kubernetes and other orchestrators through the extensible architecture. Functions can then be built using code templates for your favourite programming language or deployed directly from the community Function Store. The project focuses on ease of use through its UI and CLI which can be used to test and monitor functions. Observability and auto-scaling for demand are provided through integrations with Prometheus and AlertManager.</p>
-
-<p>OpenFaaS won Best Cloud Computing Software 2017 from InfoWorld and has a thriving community with 70 contributors, 1500 commits and over 9k stars.</p>
-
-<p>https://www.openfaas.com/</p>
-
-<p>https://github.com/openfaas</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                Kiwi.com v ZOO<br />
                 
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Stanislav Komanec
-                
-                (SK)
-              </h4>
-              
-              <img src="/static/img/speakers/stanislav_komanec.jpg" class="img-responsive sspeaker">
-              
-              
-              <p>Počas posledných mesiacov, kedy naša firma rástla neuveriteľným  tempom, sa začal objavovať probém zdieľania best-practice naprieč Kiwi.com. V micro-service orientovanej architektúre bolo nemožné, aby jeden človek mal prehľad nad technologickým stackom všetkých služieb. S týmto problémom sme sa rozhodli bojovať a vytvoriť službu, ktorá si bude držať nad všetkými repozitármi prehľad a bude automaticky auditovať jednolivé projekty. Poukážem na nevyhnutnosť používania systémov, ktoré uľahčujú prácu a súčastne sa poutžívajú na zvyšovanie kvality servicov.</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                Maintaining reliable and secure continuous delivery for python microservices<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Natalie Serebryakova
-                
-                (US)
-              </h4>
-              
-              <img src="/static/img/speakers/no_avatar.svg" class="img-responsive sspeaker">
-              
-              
-              <p>Guide for Python developers who are shifting to the new microservices-based development.<br />In the agile methodology the speed at which software gets shipped these days in DevOps there is no time to do traditional Secure SDLC like process where every stage of the software development cycle has a security checklist. The only way is to automate as much as possible and remove check gate style security practice.<br />Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time. It relies on the complete automation of the deployment process.<br />Creating secure and reliable microservices before they land in production should be important for every software developer. The software developer doesn’t have to be a security expert in everything to work within a microservices architecture.</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                Managing high-available applications in production<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label workshop">Workshop</span>
-                <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Matej Vetrák
-                 &amp; Matej Čapkovič
-                (SK)
-              </h4>
-              
-              <img src="/static/img/speakers/matej_vetrak.jpg" class="img-responsive sspeaker">
-              
-              
-              <img src="/static/img/speakers/matej_capkovic.jpg" class="img-responsive sspeaker">
-              
-              <p>In this workshop we’ll look at common problems that all developers are facing in the latest trends of the ever changing scalable app world. We’ll learn how to deploy, scale, and manage high-available microservices using Docker, Kubernetes and other open-source tools.</p>
-
-<p>We will also address some of these problems: building and deploying applications, pipelines, rolling updates, load balancing, scaling, replication, configuration, health checking and self healing, monitoring, alerting, log aggregation, resource constraints, capacity planning, data stores, security, key management, debugging and best practices.</p>
-
-<p>Who should attend?</p>
-
-<p>People who are interested in containerized applications, are in the process of moving to microservice architecture or are managing high-available production environments.</p>
-
-<p>Why you should attend?</p>
-
-<p>You want to start using Kubernetes in development and production.</p>
-
-<p>You are already using Kubernetes, but you are not ready for production.</p>
-
-<p>You would like to better understand new trend of high-available microservices.</p>
-
-<p>How to prepare for the workshop?</p>
-
-<p>Bring laptop with installed minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/<br />and docker: https://docs.docker.com/engine/installation/</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                Our DevOps journey, is SRE the next stop?<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Martin Strycek
-                
-                (SK)
-              </h4>
-              
-              <img src="/static/img/speakers/martin_strycek.jpg" class="img-responsive sspeaker">
-              
-              
-              <p>Over past few years we see significant raise in technology requirements, complexity of managing and delivering high reliability systems. Based on our first-hand experience we see that there does not exist one silver bullet way of doing DevOps and way how you manage Continuous Delivery features. At Kiwi.com the transformation went from small applications to complex micro services architectures. This change did also impact the infrastructure not only by numbers of servers, also on complexity of the system and ended with hybrid model of cloud and bare metal solution. In this talk I will cover how our team of DevOps and Engineers battles with tasks such as deployment to many enviroments, infrastructure changes, monitoring and also creation of processes and runbooks. We believe that this talk can inspire you to adapt changes within your teams and never stop improving how you manage your infrastructure.</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                Skynet your Infrastructure with QUADS<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Will Foster
-                
-                (IE)
-              </h4>
-              
-              <img src="/static/img/speakers/will_foster.jpg" class="img-responsive sspeaker">
-              
-              
-              <p>The very small 2-person DevOps team within Red Hat Performance/Scale Engineering has developed a set of Open Source Python-based systems and network automation provisioning tools designed to end-to-end automate the provisioning of large-scale systems and network switches using tools like Foreman, Ansible, and other Open Source bits.</p>
-
-<p>QUADS – or “quick and dirty scheduler” allows a normally overburdened DevOps warrior to fully automate large swaths of systems and network devices based on a schedule, even set systems provisioning to fire off in the future so they can focus on important things like Netflix and popcorn or not reading your emails while your datacenter burns in an inferno of rapid, automated skynet provisioning. QUADS will also auto-generate up-to-date infrastructure documentation, track scheduling, systems assignments and more.</p>
-
-<p>In this talk we’ll show you how we’re using QUADS (backed by Foreman) to empower rapid, meaningful performance and scale testing of Red Hat products and technologies. While QUADS is a new project and under constant development, the design approach to handling large-scale systems provisioning as well as the current codebase is consumable for others interested in improving the efficiency and level of automation within their infrastructure.</p>
-
-<p>We'll also dive into purposeful development design choices, how some of these choices might not scale for the future (but work well at present) and provide a future roadmap of a new redesign based on Flask, Celery, Sqlite and friends.</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                The Concierge Paradigm<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Gareth Brown
-                
-                (GB)
-              </h4>
-              
-              <img src="/static/img/speakers/gareth_brown.jpg" class="img-responsive sspeaker">
-              
-              
-              <p>The Concierge Paradigm idea was born over time but initially came from challenges we had by working out how to operate scalable and enterprise-grade application containers. This meant monitoring, logging, deploying, scaling, load-balancing and service discovery. We needed to do this both on-premise and in AWS. We were running some docker tasks in ECS and a Kubernetes and CoreOS cluster on-premise but we hadn't chosen these by researching different options, they were pretty much the first options we came across. We'd felt the difficulties of our decision, so started to look out to the wider community at other options. </p>
-
-<p>This is the story of what we discovered. How we made our application monitoring more efficient and accurate; how we radically simplified the infrastructure needed for running containers and how we utilised Zabbix as an container scheduler.</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                To the Google in 80 Days<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label devops">DevOps</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
+                <strong>
                 František Benko
+                  
+                </strong>
                 
-                (SK)
-              </h4>
               
-              <img src="/static/img/speakers/frantisek_benko.jpg" class="img-responsive sspeaker">
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              13:10
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
               
               
-              <p>We invite You on the journey of making Exponea and it's multi-terabyte in-memory databases possible in the containerized environment of the Google Cloud.<br />Join us as we grasp the wheel of our multi-server hardware-based spaceship, navigate through the dangerous oceans of no-downtime live migrations to safely dock in the calm waters of Google bay or did we?</p>
+              
+            </td>
+            <td class="title">
+              
+                The Concierge Paradigm
+                
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                Gareth Brown
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              14:00
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Skynet your Infrastructure with QUADS
+                
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                Will Foster
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+              </table>
             </footer>
           </article>
         </div>
@@ -428,34 +240,304 @@ page.
         <div>
           <article class="card">
             <header>
-              <h3>
-                Základy Ansible Workshop<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC" alt="Slovak language">
-                
-                <span class="label workshop">Workshop</span>
-                <span class="label devops">DevOps</span>
-              </h3>
+              <h2>Friday: Babbage Hall 1/2 <small>(-1.57)</small></h2><br />
+              09. March
             </header>
             <footer>
-              <h4>
+              <table>
+          
+          <tr>
+            <td class="date">
+              13:10
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Managing high-available applications in production
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                Matej Vetrák
+                  
+                    &amp; Matej Čapkovič
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Friday: Babbage Hall 2/2 <small>(-1.57)</small></h2><br />
+              09. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              09:30
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovak flag" title="Presentation will be in Slovak language">
+              
+              
+            </td>
+            <td class="title">
+              
+                Základy Ansible Workshop
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
                 Tomáš Pytel
-                 &amp; Daniel Dobiáš
-                (SK)
-              </h4>
+                  
+                    &amp; Daniel Dobiáš
+                  
+                </strong>
+                
               
-              <img src="/static/img/speakers/tomas_pytel.jpg" class="img-responsive sspeaker">
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Saturday: Kiwi.com Hall <small>(-1.61)</small></h2><br />
+              10. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              13:30
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
               
               
-              <img src="/static/img/speakers/daniel_dobias.jpg" class="img-responsive sspeaker">
               
-              <p>Na workshope si predstavíme základné princípy "DevOps" vývoja. Účastník sa naučí dobrým praktikám počas vývoja softvéru. V Ansible si bude vedieť deploynúť celú aplikáciu do "Cloudu".</p>
+            </td>
+            <td class="title">
+              
+                Our DevOps journey, is SRE the next stop?
+                
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+                
 
-<p>Čo sa naučí v Ansible :<br />- Vytvorenie Používateľa<br />- Zakladné nastavenie systému<br />- Základy Firewall<br />- Základy práce s GitHub<br />- Základy práce s SSH<br />- Inštalácia Python a Modulov<br />- Deploy aplikácie<br />- Nastavenie webserveru</p>
+                
+                <strong>
+                Martin Strycek
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              14:15
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Maintaining reliable and secure continuous delivery for python microservices
+                
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+                
 
-<p>Všetko samozrejme automatizovane a reprodukovateľne.</p>
+                
+                <strong>
+                Natalie Serebryakova
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              15:35
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere
+                
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+                
 
-<p>Workshop je primárne určený pre tých ktorí začínajú s vývojom aplikácií a chcú to robiť dobre. Nie je určený pre pokročilých používateľov, alebo tých ktorí už majú skúsenosti s deploymentom.</p>
+                
+                <strong>
+                Alex Ellis
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Saturday: Python Software Foundation Hall <small>(-1.60)</small></h2><br />
+              10. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              11:25
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovak flag" title="Presentation will be in Slovak language">
+              
+              
+            </td>
+            <td class="title">
+              
+                Kiwi.com v ZOO
+                
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                Stanislav Komanec
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Saturday: Babbage Hall 1/2 <small>(-1.57)</small></h2><br />
+              10. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              09:30
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Effectively running python applications in Kubernetes/OpenShift
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                Maciej Szulik
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Sunday: Babbage Hall 2/2 <small>(-1.57)</small></h2><br />
+              11. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              10:15
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                TBD
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+              
+            </td>
+          </tr>
+          
+              </table>
             </footer>
           </article>
         </div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-10 01:00+0100\n"
+"POT-Creation-Date: 2018-02-15 16:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -33,52 +33,84 @@ msgstr ""
 msgid "Slovak Republic"
 msgstr ""
 
-#: templates/cfp.html:39 views.py:72
+#: templates/cfp.html:39 views.py:71
 msgid "Talk"
 msgstr ""
 
-#: templates/cfp.html:40 views.py:73
+#: templates/cfp.html:40 views.py:72
 msgid "Workshop"
 msgstr ""
 
-#: templates/cfp.html:53 views.py:74
+#: templates/cfp.html:53 views.py:76
 msgid "Machine Learning / AI"
 msgstr ""
 
-#: templates/cfp.html:55 views.py:75
+#: templates/cfp.html:55 views.py:77
 msgid "Community / Diversity / Social"
 msgstr ""
 
-#: templates/cfp.html:52 views.py:76
+#: templates/cfp.html:52 views.py:78
 msgid "Data Science"
 msgstr ""
 
-#: templates/cfp.html:50 views.py:78
+#: templates/cfp.html:50 views.py:80
 msgid "Education"
 msgstr ""
 
-#: templates/cfp.html:48 views.py:79
+#: templates/cfp.html:48 views.py:81
 msgid "Python General"
 msgstr ""
 
-#: templates/cfp.html:54 views.py:80
+#: templates/cfp.html:54 views.py:82
 msgid "Security"
 msgstr ""
 
-#: templates/cfp.html:56 views.py:81
+#: templates/cfp.html:56 views.py:83
 msgid "Soft Skills"
 msgstr ""
 
-#: templates/cfp.html:57 views.py:82
+#: templates/cfp.html:57 views.py:84
 msgid "Hardware"
 msgstr ""
 
-#: templates/cfp.html:51 views.py:83
+#: templates/cfp.html:51 views.py:85
 msgid "Web Development"
 msgstr ""
 
-#: templates/cfp.html:58 views.py:84
+#: templates/cfp.html:58 views.py:86
 msgid "Other"
+msgstr ""
+
+#: views.py:200
+msgid "Kiwi.com Hall"
+msgstr ""
+
+#: views.py:204
+msgid "Python Software Foundation Hall"
+msgstr ""
+
+#: views.py:209
+msgid "Babbage Hall 1/2"
+msgstr ""
+
+#: views.py:214
+msgid "Babbage Hall 2/2"
+msgstr ""
+
+#: views.py:219
+msgid "Jobs Auditorium"
+msgstr ""
+
+#: views.py:324
+msgid "Break"
+msgstr ""
+
+#: views.py:327
+msgid "Lunch 🍱"
+msgstr ""
+
+#: views.py:330
+msgid "Coffee Break ☕"
 msgstr ""
 
 #: templates/body.html:8
@@ -107,7 +139,7 @@ msgstr ""
 msgid "Sponsoring"
 msgstr ""
 
-#: templates/body.html:58 templates/schedule.html:19 templates/tickets.html:92
+#: templates/body.html:58 templates/tickets.html:92
 msgid "Tickets"
 msgstr ""
 
@@ -116,79 +148,83 @@ msgid "Schedule"
 msgstr ""
 
 #: templates/body.html:64
-msgid "Speaker's list"
+msgid "Talk's list"
 msgstr ""
 
 #: templates/body.html:66
+msgid "Speaker's list"
+msgstr ""
+
+#: templates/body.html:68
 msgid "Call for Proposals"
 msgstr ""
 
-#: templates/body.html:70 templates/coc.html:6
+#: templates/body.html:72 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/body.html:71
+#: templates/body.html:73
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:110
+#: templates/body.html:112
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:112
+#: templates/body.html:114
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:117
+#: templates/body.html:119
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
 " the %(psf)s."
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:121
 msgid "Python Software foundation"
 msgstr ""
 
-#: templates/body.html:120
+#: templates/body.html:122
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr ""
 
-#: templates/body.html:121
+#: templates/body.html:123
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:124
+#: templates/body.html:126
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:131
+#: templates/body.html:133
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "mining Monero."
 msgstr ""
 
-#: templates/body.html:132
+#: templates/body.html:134
 msgid "You can support us by mining Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:133
+#: templates/body.html:135
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:134
+#: templates/body.html:136
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:135
+#: templates/body.html:137
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:135
+#: templates/body.html:137
 msgid "Total"
 msgstr ""
 
@@ -505,7 +541,7 @@ msgstr ""
 msgid "Diamond"
 msgstr ""
 
-#: templates/hall-of-fame.html:26
+#: templates/hall-of-fame.html:25
 msgid ""
 "Kiwi.com is an online travel agency with groundbreaking Virtual\n"
 "                  Interlining technology and a focus on exceptional "
@@ -515,11 +551,11 @@ msgid ""
 "                  resulting in significant savings."
 msgstr ""
 
-#: templates/hall-of-fame.html:40
+#: templates/hall-of-fame.html:38
 msgid "Platinum"
 msgstr ""
 
-#: templates/hall-of-fame.html:52
+#: templates/hall-of-fame.html:50
 msgid ""
 "The Exponea platform empowers e-sellers on 5 continents to be relevant to"
 "\n"
@@ -533,7 +569,7 @@ msgid ""
 "And yes, we're hiring."
 msgstr ""
 
-#: templates/hall-of-fame.html:71
+#: templates/hall-of-fame.html:69
 msgid ""
 "The Python Software Foundation is a 501(c)(3) nonprofit dedicated to\n"
 "                  advancing and promoting Python. The PSF supports and "
@@ -543,11 +579,11 @@ msgid ""
 "                  PyCon conference as its flagship annual event."
 msgstr ""
 
-#: templates/hall-of-fame.html:84
+#: templates/hall-of-fame.html:82
 msgid "Gold"
 msgstr ""
 
-#: templates/hall-of-fame.html:96
+#: templates/hall-of-fame.html:94
 msgid ""
 "The Kistler Group is a Swiss high-tech company and the global market\n"
 "                  leader in dynamic measurement technology. We develop "
@@ -565,7 +601,7 @@ msgid ""
 "                  future."
 msgstr ""
 
-#: templates/hall-of-fame.html:118
+#: templates/hall-of-fame.html:116
 msgid ""
 "Red Hat is the world's leading provider of open source software "
 "solutions, using a\n"
@@ -578,11 +614,29 @@ msgid ""
 "                  growth and prepare customers for the future of IT."
 msgstr ""
 
-#: templates/hall-of-fame.html:133
+#: templates/hall-of-fame.html:135
+msgid ""
+"Since 1987, ESET has been developing award-winning security software that"
+" now helps over 100\n"
+"                  million users to Enjoy Safer Technology. Its broad "
+"security product portfolio covers all popular\n"
+"                  platforms and provides businesses and consumers around "
+"the world with the perfect balance of\n"
+"                  performance and proactive protection. The company has a"
+" global sales network covering 180 countries,\n"
+"                  and regional offices in Bratislava, San Diego, "
+"Singapore and Buenos Aires."
+msgstr ""
+
+#: templates/hall-of-fame.html:150
+msgid "Django Girls Workshop"
+msgstr ""
+
+#: templates/hall-of-fame.html:172
 msgid "Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:144
+#: templates/hall-of-fame.html:183
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -597,7 +651,7 @@ msgid ""
 "professional Python, Web, and Data analysis developers."
 msgstr ""
 
-#: templates/hall-of-fame.html:165
+#: templates/hall-of-fame.html:204
 msgid ""
 "Slido is a technology company that enhances communication and increases\n"
 "                  interaction at events and meetings. Having worked on "
@@ -608,18 +662,18 @@ msgid ""
 "Spotify, Lufthansa, BBC and Oracle."
 msgstr ""
 
-#: templates/hall-of-fame.html:183
+#: templates/hall-of-fame.html:222
 msgid ""
 "Learn2Code teaches people how to design and code modern websites and\n"
 "                  application. Learn2Code is the largest online learning "
 "marketplace in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:196
+#: templates/hall-of-fame.html:248
 msgid "Medial Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:222
+#: templates/hall-of-fame.html:274
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -629,11 +683,11 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:242
+#: templates/hall-of-fame.html:294
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:335
+#: templates/hall-of-fame.html:387
 msgid "People that supported PyCon SK 2018 by purchasing a supported ticket."
 msgstr ""
 
@@ -665,20 +719,29 @@ msgstr ""
 msgid ""
 "Conference is held in English and (Czech) Slovak language. If you don't "
 "know any Slovak or Czech,\n"
-"        don't worry, there will be stuff for you to do. Currently we are "
-"working on the schedule and the final list\n"
-"        of the speakers and talks will be published by February 9th."
+"        don't worry, there will be stuff for you to do."
 msgstr ""
 
-#: templates/index.html:22
+#: templates/index.html:21
 msgid "News"
 msgstr ""
 
-#: templates/index.html:25
+#: templates/index.html:24
+msgid "Speakers and talks list has been published."
+msgstr ""
+
+#: templates/index.html:27
+msgid ""
+"Talks and speakers list has been published on our website. Soon we'll "
+"publish also the time\n"
+"        schedule."
+msgstr ""
+
+#: templates/index.html:33
 msgid "Call for proposals has ended."
 msgstr ""
 
-#: templates/index.html:28
+#: templates/index.html:36
 #, python-format
 msgid ""
 "We have received almost 100 high quality talks and workshops proposals! "
@@ -688,11 +751,11 @@ msgid ""
 "          href=\"%(url)s\">speakers</a> on our website."
 msgstr ""
 
-#: templates/index.html:35
+#: templates/index.html:43
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
 msgstr ""
 
-#: templates/index.html:38
+#: templates/index.html:46
 msgid ""
 "We are excited that for the third time in the row, PyConSK will be held "
 "under the auspices of the\n"
@@ -702,18 +765,18 @@ msgid ""
 "from all over Europe and the rest of the world."
 msgstr ""
 
-#: templates/index.html:46
+#: templates/index.html:54
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 
-#: templates/index.html:51
+#: templates/index.html:59
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
 msgstr ""
 
-#: templates/index.html:54
+#: templates/index.html:62
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -723,11 +786,11 @@ msgid ""
 "          href=\"%(url)s\">submit a talk proposal</a>."
 msgstr ""
 
-#: templates/index.html:60
+#: templates/index.html:68
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr ""
 
-#: templates/index.html:63
+#: templates/index.html:71
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to\n"
@@ -738,7 +801,7 @@ msgid ""
 "        releasing to deployment and infrastructure management."
 msgstr ""
 
-#: templates/index.html:67
+#: templates/index.html:75
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -748,62 +811,73 @@ msgid ""
 "        goals."
 msgstr ""
 
-#: templates/index.html:78
+#: templates/index.html:86
 msgid "References"
 msgstr ""
 
-#: templates/index.html:80
+#: templates/index.html:88
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our\n"
 "        references:"
 msgstr ""
 
-#: templates/index.html:118
+#: templates/index.html:126
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:156
+#: templates/index.html:164
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
 " info@pycon.sk or create a pull\n"
 "        request."
 msgstr ""
 
-#: templates/index.html:162
+#: templates/index.html:170
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:163
+#: templates/index.html:171
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
 
 #: templates/schedule.html:7
-msgid "List of talks at PyCon SK 2018"
+msgid "PyCon SK 2018 Schedule"
 msgstr ""
 
 #: templates/schedule.html:9
-msgid ""
-"All proposed talks are under review. Once we have complete list we'll "
-"publish conference schedule on this\n"
-"page."
+msgid "Conference schedule might change."
 msgstr ""
 
-#: templates/schedule.html:11
-msgid ""
-"In the mean time you can find here the list of accepted talks and "
-"workshops."
+#: templates/schedule.html:13 templates/talks.html:10
+msgid "All"
 msgstr ""
 
-#: templates/schedule.html:34
-msgid "English language"
+#: templates/schedule.html:37
+msgid "English flag"
 msgstr ""
 
-#: templates/schedule.html:36
-msgid "Slovak language"
+#: templates/schedule.html:37
+msgid "Presentation will be in English language."
+msgstr ""
+
+#: templates/schedule.html:40
+msgid "Slovak flag"
+msgstr ""
+
+#: templates/schedule.html:40
+msgid "Presentation will be in Slovak language"
+msgstr ""
+
+#: templates/schedule.html:43
+msgid "Czech flag"
+msgstr ""
+
+#: templates/schedule.html:43
+msgid "Presentation will be in Czech language"
 msgstr ""
 
 #: templates/sponsoring.html:7
@@ -887,6 +961,18 @@ msgstr ""
 msgid ""
 "Are you using Python in your company? Support for community events is "
 "excellent opportunity to contribute back."
+msgstr ""
+
+#: templates/talks.html:7
+msgid "List of talks at PyCon SK 2018"
+msgstr ""
+
+#: templates/talks.html:26
+msgid "English language"
+msgstr ""
+
+#: templates/talks.html:28
+msgid "Slovak language"
 msgstr ""
 
 #: templates/tickets.html:21
@@ -2328,5 +2414,29 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "PyCon SK"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Conference is held in English and "
+#~ "(Czech) Slovak language. If you don't"
+#~ " know any Slovak or Czech,\n"
+#~ "        don't worry, there will be "
+#~ "stuff for you to do. Currently we"
+#~ " are working on the schedule and "
+#~ "the final list\n"
+#~ "        of the speakers and talks will be published by February 9th."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All proposed talks are under review. "
+#~ "Once we have complete list we'll "
+#~ "publish conference schedule on this\n"
+#~ "page."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the mean time you can find "
+#~ "here the list of accepted talks "
+#~ "and workshops."
 #~ msgstr ""
 

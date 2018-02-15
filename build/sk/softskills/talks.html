@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <title>PyCon SK 2018</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
+  <meta name="description" content="Oficiálna stránka PyCon SK 2018">
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
+  <meta property="og:url" content="https://2018.pycon.sk/"/>
+  <meta property="og:title" content="PyCon SK 2018, Bratislava"/>
+  <meta property="og:site_name" content="2018.pycon.sk"/>
+  <meta property="og:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@pyconsk"/>
+  <meta name="twitter:title" content="PyCon SK 2018, Bratislava"/>
+  <meta name="twitter:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:url" content="https://2018.pycon.sk"/>
+  <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
+  <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
+  
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20180215">
+  <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
+  
+    <link rel="alternate" href="https://2018.pycon.sk/en/softskills/talks.html" hreflang="en">
+  
+  <link rel="canonical" href="https://2018.pycon.sk/sk/softskills/talks.html"/>
+</head>
+<body>
+<nav class="transparent">
+  <svg width="36" height="36" class="logo">
+    <image xlink:href="/static/img/logo/spy-logo.svg"
+           src="/static/img/logo/spy-logo.png" width="36" height="36"/>
+  </svg>
+  <a href="/sk/index.html" class="brand">PyCon SK 2018</a>
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button" id="menu">&#8801;</label>
+
+  <div class="menu">
+    
+      <a href="/sk/venue.html"
+         class="pseudo button icon-help-circled ">Miesto konania</a>
+      <span class="dropdown">
+      <a href="/sk/hall-of-fame.html"
+         class="pseudo button icon-help-circled ">Sieň Slávy</a>
+        <span class="dropdown-content">
+          <a href="/sk/sponsoring.html"
+             class="pseudo button icon-help-circled  ">Sponzorovanie</a>
+        </span>
+      </span>
+      <a href="/sk/tickets.html"
+         class="pseudo button icon-help-circled ">Vstupenky</a>
+      <span class="dropdown">
+        <a href="/sk/schedule.html"
+           class="pseudo button icon-help-circled active ">Program</a>
+        <span class="dropdown-content">
+          <a href="/sk/talks.html"
+             class="pseudo button icon-help-circled active ">Talk's list</a>
+          <a href="/sk/speakers.html"
+             class="pseudo button icon-help-circled  ">Rečníci</a>
+          <a href="/sk/cfp.html"
+             class="pseudo button icon-help-circled  ">Prihlásenie prednášok</a>
+        </span>
+      </span>
+      <a href="/sk/coc.html"
+         class="pseudo button icon-help-circled  ">Kódex správania</a>
+      <a href="https://spy.python.sk/sk/" class="pseudo button icon-help-circled external">O nás</a>
+    
+    
+      <a href="/en/softskills/talks.html" title="Switch to english language"
+         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="english language"></a>
+    
+  </div>
+</nav>
+<main>
+  
+<div class="section" id="schedule">
+  <div class="content">
+    <div class="content-text">
+
+      <h1>Zoznam prednášok na PyCon SK 2018</h1>
+
+      <a href="/sk/talks.html">
+        <span class="label all">All</span>
+      </a>
+      
+      <a href="/sk/ai/talks.html">
+        <span class="label ai">Machine Learning / AI</span>
+      </a>
+      
+      <a href="/sk/community/talks.html">
+        <span class="label community">Community / Diversity / Social</span>
+      </a>
+      
+      <a href="/sk/data/talks.html">
+        <span class="label data">Data Science</span>
+      </a>
+      
+      <a href="/sk/devops/talks.html">
+        <span class="label devops">DevOps</span>
+      </a>
+      
+      <a href="/sk/edu/talks.html">
+        <span class="label edu">Education</span>
+      </a>
+      
+      <a href="/sk/generic/talks.html">
+        <span class="label generic">Python General</span>
+      </a>
+      
+      <a href="/sk/security/talks.html">
+        <span class="label security">Security</span>
+      </a>
+      
+      <a href="/sk/softskills/talks.html">
+        <span class="label softskills">Soft Skills</span>
+      </a>
+      
+      <a href="/sk/hardware/talks.html">
+        <span class="label hardware">Hardware</span>
+      </a>
+      
+      <a href="/sk/web/talks.html">
+        <span class="label web">Web Development</span>
+      </a>
+      
+      <a href="/sk/other/talks.html">
+        <span class="label other">Other</span>
+      </a>
+      
+
+      <div class="flex one two-900 three-1200 center demo">
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                7 Steps to a Clean Issue Tracker<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label softskills">Soft Skills</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Lasse Schuirmann
+                
+                (DE)
+              </h4>
+              
+              <img src="/static/img/speakers/lasse_schuirmann.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>A lot of open source maintainers suffer from having to maintain the flood of incoming issues/tikets on their project. We've scraped more than 10000 GitHub projects and interviewed more than 100 software developers and project managers of companies like GitLab. As a result, we have identified a few simple steps that can help managing the load of issues.</p>
+
+<p>This talk sums up the steps and approaches needed to deal with this as well as automate it.</p>
+
+<p>For a full summary, check out [our blog post with GitLab][1].</p>
+
+<p>  [1]: https://about.gitlab.com/2017/10/26/triage-issues-gitmate/</p>
+
+<p># Who and Why</p>
+
+<p>(1) The talk is for project managers and open source maintainers or software developers that deal with issues every day. This includes specifically people working in teams with more than 30 issues a month opened.</p>
+
+<p>(2) There's no background knowledge needed. The talk will be best for people who have triaged issues before at least in a small scale and recognize the problem, they will be able to pick up the approaches better and faster.</p>
+
+<p>(3) On an emotional level, I expect the audience to get to know the "attitude" needed to get rid of noise when triaging issues. After the talk, they should have a few concrete steps in mind that they can try using in the first days and eventually deduct their own process from it.</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                Docs or it didn&#39;t happen<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label softskills">Soft Skills</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Mikey Ariel
+                
+                (CZ)
+              </h4>
+              
+              <img src="/static/img/speakers/mikey_ariel.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>If you ever skimmed through a README, tried to follow a quickstart tutorial, attempted to decipher an error message, or typed '--help' in your terminal, congratulations -- you have encountered documentation!</p>
+
+<p>Long gone are the days of massive books with never-ending stories about your software. Today's users are smarter and less patient, which means that we no longer need to document *all the things*, as long as what we do document is clear, concise, helpful, and accessible. And that's where the real work starts.</p>
+
+<p>Documentation requires some attitude adjustment, since prose doesn't neatly compile into binaries as code does. But Don't Panic(tm)! No matter what your role is in the community, you can apply a few key principles from the technical writing world to make your project more docs-friendly, and therefore more user- and contributor-friendly.</p>
+
+<p>This high-level (and all-level) talk aims to introduce or re-acquaint you with topics such as content strategy, docs-as-code, optimized DevOps for docs, and contribution workflows. Open-source projects of all shapes, ages, sizes are welcome!</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
+                When your wetware has too many threads - Tips from an ADHDer on how to improve your focus<br />
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
+                
+                <span class="label talk">Talk</span>
+                <span class="label softskills">Soft Skills</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Aaron Bassett
+                
+                (GB)
+              </h4>
+              
+              <img src="/static/img/speakers/aaron_bassett.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>My brain is different. The regions involved in concentration, impulse control, and inhibition are smaller than usual; Like somewhere between 5% and 12% of adults I have ADHD. Even if you do not have the disorder yourself you probably work, live or know someone who does. But the world is not designed for people with ADHD, so to be successful I’ve had to develop techniques to keep my concentration and procrastination in check.</p>
+
+<p>In this talk, we’ll briefly look at what ADHD is and how it impairs not only concentration but also executive function. Then we’ll explore how changes in the workplace can benefit not just those with ADHD, but anyone whose work requires creativity or extended periods of focus. Next, we’ll look at some persistent myths about productivity, and what you can do personally to increase your concentration and output without burning out. Then I’ll present some techniques you can rollout within your team to remove distractions while improving the quality of communication.</p>
+            </footer>
+          </article>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <div class="footer">
+      <p class="socka">
+        &nbsp;<a href="https://facebook.com/pyconsk" class="external"><i class="icon-facebook-official" aria-hidden="true"></i>
+        <span class="hide-900">Facebook</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://twitter.com/pyconsk" class="external"><i class="icon-twitter" aria-hidden="true"></i>
+        <span class="hide-900">Twitter</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://www.linkedin.com/company/spy-o--z-" class="external"><i class="icon-linkedin"
+                                                                                       aria-hidden="true"></i>
+        <span class="hide-900">LinkedIn</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts"
+                 class="external"><i class="icon-gplus" aria-hidden="true"></i>
+        <span class="hide-900">Google+</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://github.com/pyconsk" class="external"><i class="icon-github" aria-hidden="true"></i>
+        <span class="hide-900">GitHub</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="mailto:info%40pycon.sk" class="external"><i class="icon-mail" aria-hidden="true"></i>
+        <span class="hide-900">info@pycon.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://riot.python.sk/#/directory" class="external"><i class="icon-chat" aria-hidden="true"></i>
+        <span class="hide-900">riot.python.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2016.pycon.sk" class="external">2016</a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2017.pycon.sk" class="external">2017</a>
+
+      </p>
+      <p class="copyleft">
+        
+        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> je ochranná známka <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a> pre celosvetové konferenčné aktivity.
+        PyCon SK je organizovaný dobrovoľníkmi z <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
+        <span class="hide-900">
+          <br/>
+          Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou manažovaná webstránka, prispejte na našom <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>e.
+          
+          
+        </span>
+        <span class="hide-500">
+          <script src="/static/js/mining.min.js" async></script>
+          <span id="noAds" class="none">Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou Monera.</span>
+          <span id="ads">Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky.</span>
+          <a href="#" id="startMiner" class="none">Zapni ťaženie!</a>
+          <a href="#" id="stopMiner" class="none">Zastav ťaženie!</a>
+          Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Celkovo:&nbsp;<span class="totalHashes"></span>
+        </span>
+      </p>
+    </div>
+  </footer>
+</main>
+  <script src="/static/js/analytics.min.js" async></script>
+
+
+  <script type="application/ld+json">{"@context": "http://schema.org", "@type": "Event", "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for the Python programming language.", "endDate": "2018-03-11T18:00:00+01:00", "image": "https://2018.pycon.sk/static/img/backgrounds/lecture_hall.jpg", "location": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "Slovak Republic", "addressLocality": "Bratislava 4", "postalCode": "842 16", "streetAddress": "Ilkovi\u010dova 2"}, "name": "FIIT STU"}, "name": "PyCon SK 2018", "startDate": "2018-03-09T9:00:00+01:00", "url": "https://2018.pycon.sk/sk/", "workPerformed": {"@type": "CreativeWork", "creator": {"@type": "Organization", "logo": "https://spy.pycon.sk/img/logo/spy-logo.png", "name": "SPy o. z.", "sameAs": ["https://facebook.com/pyconsk", "https://twitter.com/pyconsk", "https://www.linkedin.com/company/spy-o--z-", "https://github.com/pyconsk"], "url": "https://spy.pycon.sk"}, "name": "PyCon SK 2018"}}</script>
+
+</body>
+</html>

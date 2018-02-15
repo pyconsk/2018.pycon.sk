@@ -9,7 +9,7 @@
 		
 		<loc>https://2018.pycon.sk/sitemap.xml</loc>
 		
-		<lastmod>2018-02-14T11:09:01+00:00</lastmod>
+		<lastmod>2018-02-15T16:24:10+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
     </url>
@@ -21,7 +21,7 @@
                  hreflang="sk"
                  href="https://2018.pycon.sk/sk/&lt;flag&gt;/schedule.html"
                  />
-		<lastmod>2018-02-10T01:20:54+00:00</lastmod>
+		<lastmod>2018-02-15T16:16:25+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.1</priority>
     </url>
@@ -33,7 +33,31 @@
                  hreflang="en"
                  href="https://2018.pycon.sk/en/&lt;flag&gt;/schedule.html"
                  />
-		<lastmod>2018-02-10T01:20:54+00:00</lastmod>
+		<lastmod>2018-02-15T16:16:25+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.1</priority>
+    </url>
+    <url>
+		
+		<loc>https://2018.pycon.sk/en/<flag>/talks.html</loc>
+		<xhtml:link 
+                 rel="alternate"
+                 hreflang="sk"
+                 href="https://2018.pycon.sk/sk/&lt;flag&gt;/talks.html"
+                 />
+		<lastmod>2018-02-15T16:06:23+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.1</priority>
+    </url>
+    <url>
+		
+		<loc>https://2018.pycon.sk/sk/<flag>/talks.html</loc>
+		<xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://2018.pycon.sk/en/&lt;flag&gt;/talks.html"
+                 />
+		<lastmod>2018-02-15T16:06:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.1</priority>
     </url>
@@ -93,7 +117,7 @@
                  hreflang="sk"
                  href="https://2018.pycon.sk/sk/schedule.html"
                  />
-		<lastmod>2018-02-10T01:20:54+00:00</lastmod>
+		<lastmod>2018-02-15T16:16:25+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
     </url>
@@ -105,7 +129,7 @@
                  hreflang="en"
                  href="https://2018.pycon.sk/en/schedule.html"
                  />
-		<lastmod>2018-02-10T01:20:54+00:00</lastmod>
+		<lastmod>2018-02-15T16:16:25+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
     </url>
@@ -180,6 +204,30 @@
 		<lastmod>2018-02-10T09:22:09+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
+    </url>
+    <url>
+		
+		<loc>https://2018.pycon.sk/en/talks.html</loc>
+		<xhtml:link 
+                 rel="alternate"
+                 hreflang="sk"
+                 href="https://2018.pycon.sk/sk/talks.html"
+                 />
+		<lastmod>2018-02-15T16:06:23+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.1</priority>
+    </url>
+    <url>
+		
+		<loc>https://2018.pycon.sk/sk/talks.html</loc>
+		<xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://2018.pycon.sk/en/talks.html"
+                 />
+		<lastmod>2018-02-15T16:06:23+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.1</priority>
     </url>
     <url>
 		

@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
   
-  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20180202">
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=20180215">
   <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
   
     <link rel="alternate" href="https://2018.pycon.sk/en/web/schedule.html" hreflang="en">
@@ -58,6 +58,8 @@
         <a href="/sk/schedule.html"
            class="pseudo button icon-help-circled active ">Program</a>
         <span class="dropdown-content">
+          <a href="/sk/talks.html"
+             class="pseudo button icon-help-circled  ">Talk's list</a>
           <a href="/sk/speakers.html"
              class="pseudo button icon-help-circled  ">Rečníci</a>
           <a href="/sk/cfp.html"
@@ -70,7 +72,7 @@
     
     
       <a href="/en/web/schedule.html" title="Switch to english language"
-         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="english language"></a>
+         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="english language"></a>
     
   </div>
 </nav>
@@ -80,120 +82,101 @@
   <div class="content">
     <div class="content-text">
 
-      <h1>Zoznam prednášok na PyCon SK 2018</h1>
+      <h1>PyCon SK 2018 Schedule</h1>
       <p class="lead">
-        All proposed talks are under review. Once we have complete list we'll publish conference schedule on this
-page.
-        Medzičasom tu nájdete zoznam prijatých prednášok a workshopov.
+        Conference schedule might change.
       </p>
 
-        <a href="/sk/schedule.html">
-          <span class="label all">All</span>
-        </a>
-        
-        <a href="/sk/ai/schedule.html">
-          <span class="label ai">Machine Learning / AI</span>
-        </a>
-        
-        <a href="/sk/community/schedule.html">
-          <span class="label community">Community / Diversity / Social</span>
-        </a>
-        
-        <a href="/sk/data/schedule.html">
-          <span class="label data">Data Science</span>
-        </a>
-        
-        <a href="/sk/devops/schedule.html">
-          <span class="label devops">DevOps</span>
-        </a>
-        
-        <a href="/sk/edu/schedule.html">
-          <span class="label edu">Education</span>
-        </a>
-        
-        <a href="/sk/generic/schedule.html">
-          <span class="label generic">Python General</span>
-        </a>
-        
-        <a href="/sk/security/schedule.html">
-          <span class="label security">Security</span>
-        </a>
-        
-        <a href="/sk/softskills/schedule.html">
-          <span class="label softskills">Soft Skills</span>
-        </a>
-        
-        <a href="/sk/hardware/schedule.html">
-          <span class="label hardware">Hardware</span>
-        </a>
-        
-        <a href="/sk/web/schedule.html">
-          <span class="label web">Web Development</span>
-        </a>
-        
-        <a href="/sk/other/schedule.html">
-          <span class="label other">Other</span>
-        </a>
-        
+      <a href="/sk/schedule.html">
+        <span class="label all">All</span>
+      </a>
+      
+      <a href="/sk/ai/schedule.html">
+        <span class="label ai">Machine Learning / AI</span>
+      </a>
+      
+      <a href="/sk/community/schedule.html">
+        <span class="label community">Community / Diversity / Social</span>
+      </a>
+      
+      <a href="/sk/data/schedule.html">
+        <span class="label data">Data Science</span>
+      </a>
+      
+      <a href="/sk/devops/schedule.html">
+        <span class="label devops">DevOps</span>
+      </a>
+      
+      <a href="/sk/edu/schedule.html">
+        <span class="label edu">Education</span>
+      </a>
+      
+      <a href="/sk/generic/schedule.html">
+        <span class="label generic">Python General</span>
+      </a>
+      
+      <a href="/sk/security/schedule.html">
+        <span class="label security">Security</span>
+      </a>
+      
+      <a href="/sk/softskills/schedule.html">
+        <span class="label softskills">Soft Skills</span>
+      </a>
+      
+      <a href="/sk/hardware/schedule.html">
+        <span class="label hardware">Hardware</span>
+      </a>
+      
+      <a href="/sk/web/schedule.html">
+        <span class="label web">Web Development</span>
+      </a>
+      
+      <a href="/sk/other/schedule.html">
+        <span class="label other">Other</span>
+      </a>
+      
 
-      <div class="flex one two-900 three-1200 center demo">
+
+      <div class="flex one two-900 center demo">
         
         <div>
           <article class="card">
             <header>
-              <h3>
-                Designing fast and scalable Python MicroServices with django<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label web">Web Development</span>
-              </h3>
+              <h2>Friday: Kiwi.com Hall <small>(-1.61)</small></h2><br />
+              09. March
             </header>
             <footer>
-              <h4>
-                Dinesh Joshi
-                
-                (US)
-              </h4>
+              <table>
+          
+          <tr>
+            <td class="date">
+              11:05
               
-              <img src="/static/img/speakers/dinesh_joshi.jpg" class="img-responsive sspeaker">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
               
               
-              <p>django, combined with the django REST framework, makes it very easy to build RESTful MicroServices. However, django is perceived to have some overhead making it hard to build fast and scalable MicroServices. This talk shows you how to squeeze the last bit of performance from django. We will focus on django’s key architectural components and the right way to use them. Using profiling, we will identify bottlenecks and fix them enabling you to build scalable RESTful services that play to django’s strengths. At the end of the talk you will have a good handle on building scalable MicroServices with django.</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
-                GraphQL is the new black<br />
+              
+            </td>
+            <td class="title">
+              
+                GraphQL is the new black
                 
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
+                <br />
                 <span class="label talk">Talk</span>
                 <span class="label web">Web Development</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
+                
+
+                
+                <strong>
                 Tomáš Ehrlich
+                  
+                </strong>
                 
-                (CZ)
-              </h4>
               
-              <img src="/static/img/speakers/tomas_ehrlich.jpg" class="img-responsive sspeaker">
-              
-              
-              <p>GraphQL is a query language for web APIs, an alternative to REST. It allows clients to define the structure of the required data. It’s strongly typed and allows introspection, which make clients more flexible.</p>
-
-<p>The talk will demonstrate usage of GraphQL on examples with Graphene (http://graphene-python.org/), a GraphQL framework for Python. Most developers are familiar with REST APIs, so the talk will compare GraphQL with REST, how they differ and what problems GraphQL is trying to solve.</p>
-
-<p>The outline is following:</p>
-
-<p>- Comparison of GraphQL with REST API.<br />- Queries, data types  and introspection<br />- Mutations</p>
+            </td>
+          </tr>
+          
+              </table>
             </footer>
           </article>
         </div>
@@ -201,26 +184,104 @@ page.
         <div>
           <article class="card">
             <header>
-              <h3>
-                Search Engines with Python and Elasticsearch<br />
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC" alt="English language">
-                
-                <span class="label talk">Talk</span>
-                <span class="label web">Web Development</span>
-              </h3>
+              <h2>Saturday: Kiwi.com Hall <small>(-1.61)</small></h2><br />
+              10. March
             </header>
             <footer>
-              <h4>
-                Patricia Regina
+              <table>
+          
+          <tr>
+            <td class="date">
+              10:50
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Search Engines with Python and Elasticsearch
                 
-                (BR)
-              </h4>
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label web">Web Development</span>
+                
+
+                
+                <strong>
+                Patricia Regina
+                  
+                </strong>
+                
               
-              <img src="/static/img/speakers/patricia_regina.jpg" class="img-responsive sspeaker">
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              14:50
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="English flag" title="Presentation will be in English language.">
               
               
-              <p>A search engine is a software responsible for search into large amounts of data.<br />Often, involved algorithms are complex and their architecture are not trivial.<br />In this scenario, Elasticsearch appears as a great solution to solve the indexing and searching tasks.<br />In this talk I will show how Elasticsearch and Python can make the development of search engines more easier.<br />Also, I will show how Python can be used to build Web Crawlers and Scrapers and how to send gathered data from the web to be indexed in Elasticsearch.</p>
+              
+            </td>
+            <td class="title">
+              
+                Designing fast and scalable Python MicroServices with django
+                
+                <br />
+                <span class="label talk">Talk</span>
+                <span class="label web">Web Development</span>
+                
+
+                
+                <strong>
+                Dinesh Joshi
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Sunday: Jobs Auditorium <small>(1.XX)</small></h2><br />
+              11. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              08:45
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Django Girls
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label web">Web Development</span>
+                
+
+                
+              
+            </td>
+          </tr>
+          
+              </table>
             </footer>
           </article>
         </div>
