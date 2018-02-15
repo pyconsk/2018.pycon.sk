@@ -14,7 +14,7 @@
       </a>
       {% for tag in tags %}{% if tag not in ('talk', 'workshop') %}
       <a href="{{ url_for('schedule_filter', lang_code=lang_code, flag=tag) }}">
-        <span class="label {{ tag }}">{{ tags[tag] }}</span>
+        <span class="label {{ tag }}">{{ _(tags[tag]) }}</span>
       </a>
       {% endif %}{% endfor %}
 
@@ -24,7 +24,7 @@
         <div>
           <article class="card">
             <header>
-              <h2>{{ track['start'].strftime('%A') }}: {{ track['room']['name'] }} <small>({{ track['room']['number'] }})</small></h2><br />
+              <h2>{{ track['start'].strftime('%A') }}: {{ _(track['room']['name']) }} <small>({{ track['room']['number'] }})</small></h2><br />
               {{ track['start'].strftime('%d. %B') }}
             </header>
             <footer>
@@ -47,11 +47,11 @@
               {% if loop.last and disable_last %}
                 &nbsp;
               {% else %}
-                {{ talk['talk']['title'] }}
+                {{ _(talk['talk']['title']) }}
                 {% if talk['talk']['flag'] %}
                 <br />
-                <span class="label {{ talk['talk']['type'] }}">{{ all[talk['talk']['type']] }}</span>
-                <span class="label {{ talk['talk']['flag'] }}">{{ tags[talk['talk']['flag']] }}</span>
+                <span class="label {{ talk['talk']['type'] }}">{{ _(all[talk['talk']['type']]) }}</span>
+                <span class="label {{ talk['talk']['flag'] }}">{{ _(tags[talk['talk']['flag']]) }}</span>
                 {% endif %}
 
                 {% if talk['talk']['primary_speaker'] %}

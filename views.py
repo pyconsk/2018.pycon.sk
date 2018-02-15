@@ -91,110 +91,110 @@ SATURDAY_START = datetime(2018, 3, 10, hour=9)
 SUNDAY_START = datetime(2018, 3, 11, hour=10, minute=15)
 
 FRIDAY_TRACK1 = (
-    {"pause": 5, 'title': "Conference Opening", 'duration': 25},
-    {"pause": 5, 'title': "When your wetware has too many threads - Tips from an ADHDer on how to improve your focus"},
-    {"pause": 15, 'title': "Docs or it didn't happen"},
-    {"pause": 5, 'title': "GraphQL is the new black"},
-    {"pause": 60, 'title': "To the Google in 80 Days"},
-    {"pause": 5, 'title': "The Concierge Paradigm"},
-    {"pause": 15, 'title': "Skynet your Infrastructure with QUADS"},
-    {"pause": 5, 'title': "The Z Object Database"},
-    {"pause": 15, 'title': "Differentiable programming in Python and Gluon for (not only medical) image analysis"},
-    {"pause": 5, 'title': "Vim your Python, Python your Vim"},
-    {"pause": 5, 'title': "Protecting Privacy and Security — For Yourself and Your Community"},
-    {"pause": 5, 'title': "Lightning Talks", 'duration': 30, 'flag': 'other', 'type': 'talk'},
+    {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25},
+    {"pause": 5, 'title': gettext("When your wetware has too many threads - Tips from an ADHDer on how to improve your focus")},
+    {"pause": 15, 'title': gettext("Docs or it didn't happen")},
+    {"pause": 5, 'title': gettext("GraphQL is the new black")},
+    {"pause": 60, 'title': gettext("To the Google in 80 Days")},
+    {"pause": 5, 'title': gettext("The Concierge Paradigm")},
+    {"pause": 15, 'title': gettext("Skynet your Infrastructure with QUADS")},
+    {"pause": 5, 'title': gettext("The Z Object Database")},
+    {"pause": 15, 'title': gettext("Differentiable programming in Python and Gluon for (not only medical) image analysis")},
+    {"pause": 5, 'title': gettext("Vim your Python, Python your Vim")},
+    {"pause": 5, 'title': gettext("Protecting Privacy and Security — For Yourself and Your Community")},
+    {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
 )
 
 FRIDAY_TRACK2 = (
-    {"pause": 5, 'title': "Conference Opening in Kiwi.com Hall", 'duration': 25},
-    {"pause": 5, 'title': "Konferencia Python Days v Martine a následné aktivity"},
-    {"pause": 15, 'title': "Programujeme v Pythone až k maturite"},
-    {"pause": 5, 'title': "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"},
-    {"pause": 60, 'title': "O nindžoch a mentoroch: CoderDojo na Slovensku"},
-    {"pause": 5, 'title': "Komunitní kurzy"},
-    {"pause": 15, 'title': "Ako sa pasujeme s Pythonom v Martine?"},
-    {"pause": 5, 'title': "Prečo hardvér priťahuje k informatike žiakov i dospelých"},
-    {"pause": 15, 'title': "EDU Talks", 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
-    {"pause": 15, 'title': "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?", 'duration': 65, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
+    {"pause": 5, 'title': gettext("Conference Opening in Kiwi.com Hall"), 'duration': 25},
+    {"pause": 5, 'title': gettext("Konferencia Python Days v Martine a následné aktivity")},
+    {"pause": 15, 'title': gettext("Programujeme v Pythone až k maturite")},
+    {"pause": 5, 'title': gettext("Otvorené vzdelávacie zdroje pre štúdium jazyka Python")},
+    {"pause": 60, 'title': gettext("O nindžoch a mentoroch: CoderDojo na Slovensku")},
+    {"pause": 5, 'title': gettext("Komunitní kurzy")},
+    {"pause": 15, 'title': gettext("Ako sa pasujeme s Pythonom v Martine?")},
+    {"pause": 5, 'title': gettext("Prečo hardvér priťahuje k informatike žiakov i dospelých")},
+    {"pause": 15, 'title': gettext("EDU Talks"), 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
+    {"pause": 15, 'title': gettext("Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"), 'duration': 65, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
 )
 
 FRIDAY_WORKSHOPS1 = (
-    {"pause": 10, 'title': "Ako vytvárať interaktívne mapy v Python / R"},
-    {"pause": 60, 'title': "Práce s XML"},
-    {"pause": 5, 'title': "Managing high-available applications in production"},
+    {"pause": 10, 'title': gettext("Ako vytvárať interaktívne mapy v Python / R")},
+    {"pause": 60, 'title': gettext("Práce s XML")},
+    {"pause": 5, 'title': gettext("Managing high-available applications in production")},
 )
 
 FRIDAY_WORKSHOPS2 = (
-    {"pause": 40, 'title': "Základy Ansible Workshop"},
-    {"pause": 5, 'title': "Introduction to Machine Learning with Python"},
+    {"pause": 40, 'title': gettext("Základy Ansible Workshop")},
+    {"pause": 5, 'title': gettext("Introduction to Machine Learning with Python")},
 )
 
 SATURDAY_TRACK1 = (
-    {"pause": 5, 'title': "Conference Opening", 'duration': 25},
-    {"pause": 5, 'title': "Solutions Reviews"},
-    {"pause": 15, 'title': "Campaign Automation & Abusing Celery Properly"},
-    {"pause": 5, 'title': "Search Engines with Python and Elasticsearch"},
-    {"pause": 60, 'title': "Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python"},
-    {"pause": 5, 'title': "Pythonic code, by example"},
-    {"pause": 15, 'title': "Our DevOps journey, is SRE the next stop?"},
-    {"pause": 5, 'title': "Maintaining reliable and secure continuous delivery for python microservices"},
-    {"pause": 15, 'title': "Designing fast and scalable Python MicroServices with django"},
-    {"pause": 5, 'title': "FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere"},
-    {"pause": 5, 'title': "Programming Python as performance: live coding with FoxDot"},
-    {"pause": 5, 'title': "The GAME!", 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
-    {"pause": 5, 'title': "Lightning Talks", 'duration': 30, 'flag': 'other', 'type': 'talk'},
+    {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25},
+    {"pause": 5, 'title': gettext("Solutions Reviews")},
+    {"pause": 15, 'title': gettext("Campaign Automation & Abusing Celery Properly")},
+    {"pause": 5, 'title': gettext("Search Engines with Python and Elasticsearch")},
+    {"pause": 60, 'title': gettext("Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python")},
+    {"pause": 5, 'title': gettext("Pythonic code, by example")},
+    {"pause": 15, 'title': gettext("Our DevOps journey, is SRE the next stop?")},
+    {"pause": 5, 'title': gettext("Maintaining reliable and secure continuous delivery for python microservices")},
+    {"pause": 15, 'title': gettext("Designing fast and scalable Python MicroServices with django")},
+    {"pause": 5, 'title': gettext("FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere")},
+    {"pause": 5, 'title': gettext("Programming Python as performance: live coding with FoxDot")},
+    {"pause": 5, 'title': gettext("The GAME!"), 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
+    {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
 )
 
 SATURDAY_TRACK2 = (
-    {"pause": 5, 'title': "Conference Opening in Kiwi.com Hall", 'duration': 25},
-    {"pause": 5, 'title': "Meteodáta v Pythone. Efektívne."},
-    {"pause": 15, 'title': "Cesta kolem světa za 30 minut"},
-    {"pause": 5, 'title': "LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie"},
-    {"pause": 60, 'title': "Kiwi.com v ZOO"},
-    {"pause": 5, 'title': "Keynote in Kiwi.com Hall", 'duration': 30, 'flag': 'generic', 'type': 'talk'},
-    {"pause": 15, 'title': "TBD", 'duration': 30, 'flag': 'other', 'type': 'talk'},
-    {"pause": 5, 'title': "Automated network OS testing"},
-    {"pause": 15, 'title': "Tools to interact with Bitcoin and Ethereum"},
-    {"pause": 5, 'title': "Unsafe at Any Speed"},
-    {"pause": 5, 'title': "7 Steps to a Clean Issue Tracker"},
+    {"pause": 5, 'title': gettext("Conference Opening in Kiwi.com Hall"), 'duration': 25},
+    {"pause": 5, 'title': gettext("Meteodáta v Pythone. Efektívne.")},
+    {"pause": 15, 'title': gettext("Cesta kolem světa za 30 minut")},
+    {"pause": 5, 'title': gettext("LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie")},
+    {"pause": 60, 'title': gettext("Kiwi.com v ZOO")},
+    {"pause": 5, 'title': gettext("Keynote in Kiwi.com Hall"), 'duration': 30, 'flag': 'generic', 'type': 'talk'},
+    {"pause": 15, 'title': gettext("TBD"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
+    {"pause": 5, 'title': gettext("Automated network OS testing")},
+    {"pause": 15, 'title': gettext("Tools to interact with Bitcoin and Ethereum")},
+    {"pause": 5, 'title': gettext("Unsafe at Any Speed")},
+    {"pause": 5, 'title': gettext("7 Steps to a Clean Issue Tracker")},
 )
 
 SATURDAY_WORKSHOPS1 = (
-    {"pause": 40, 'title': "Effectively running python applications in Kubernetes/OpenShift"},
-    {"pause": 5, 'title': "Roboworkshop"},
+    {"pause": 40, 'title': gettext("Effectively running python applications in Kubernetes/OpenShift")},
+    {"pause": 5, 'title': gettext("Roboworkshop")},
 )
 SATURDAY_WORKSHOPS2 = (
-    {"pause": 40, 'title': "Microbit:Slovensko"},
-    {"pause": 5, 'title': "Programujeme v Pythone – učíme seminár z programovania na strednej škole"},
+    {"pause": 40, 'title': gettext("Microbit:Slovensko")},
+    {"pause": 5, 'title': gettext("Programujeme v Pythone – učíme seminár z programovania na strednej škole")},
 )
 
 SUNDAY_TRACK1 = (
-    {"pause": 5, 'title': "Charon a cesta z pickle pekla"},
-    {"pause": 15, 'title': "Making Python Behave"},
-    {"pause": 5, 'title': "\"Utajené\" informácie o kóde ktorý píšeš", 'duration': 30},
-    {"pause": 60, 'title': "How to connect objects with each other in different situations with Pythonic ways - association, aggregation, composition and etc."},
-    {"pause": 5, 'title': "Getting started with HDF5 and PyTables"},
-    {"pause": 15, 'title': "The Truth about Mastering Big Data"},
-    {"pause": 5, 'title': "Real-time personalized recommendations using embeddings"},
+    {"pause": 5, 'title': gettext("Charon a cesta z pickle pekla")},
+    {"pause": 15, 'title': gettext("Making Python Behave")},
+    {"pause": 5, 'title': gettext("\"Utajené\" informácie o kóde ktorý píšeš"), 'duration': 30},
+    {"pause": 60, 'title': gettext("How to connect objects with each other in different situations with Pythonic ways - association, aggregation, composition and etc.")},
+    {"pause": 5, 'title': gettext("Getting started with HDF5 and PyTables")},
+    {"pause": 15, 'title': gettext("The Truth about Mastering Big Data")},
+    {"pause": 5, 'title': gettext("Real-time personalized recommendations using embeddings")},
 )
 
 SUNDAY_WORKSHOPS1 = (
-    {"pause": 40, 'title': "Real-time transcription and sentiment analysis of audio streams; on the phone and in the browser"},
-    {"pause": 5, 'title': "Learn MongoDB by modeling PyPI in a document database"},
+    {"pause": 40, 'title': gettext("Real-time transcription and sentiment analysis of audio streams; on the phone and in the browser")},
+    {"pause": 5, 'title': gettext("Learn MongoDB by modeling PyPI in a document database")},
 )
 
 SUNDAY_WORKSHOPS2 = (
-    {"pause": 15, 'title': "Testing Essentials for Scientists and Engineers"},
-    {"pause": 5, 'title': "Cython: Speed up your code without going insane"},
+    {"pause": 15, 'title': gettext("Testing Essentials for Scientists and Engineers")},
+    {"pause": 5, 'title': gettext("Cython: Speed up your code without going insane")},
 )
 
 SUNDAY_WORKSHOPS3 = (
-    {"pause": 5, 'title': "TBD", 'duration': 180, 'flag': 'devops', 'type': 'workshop'},
-    {"pause": 5, 'title': "TBD", 'duration': 180, 'flag': 'data', 'type': 'workshop'},
+    {"pause": 5, 'title': gettext("TBD"), 'duration': 180, 'flag': 'devops', 'type': 'workshop'},
+    {"pause": 5, 'title': gettext("TBD"), 'duration': 180, 'flag': 'data', 'type': 'workshop'},
 )
 
 SUNDAY_WORKSHOPS4 = (
-    {"pause": 5, 'title': "Django Girls", 'duration': 520, 'flag': 'web', 'type': 'workshop'},
+    {"pause": 5, 'title': gettext("Django Girls"), 'duration': 520, 'flag': 'web', 'type': 'workshop'},
 )
 
 AULA1 = {
