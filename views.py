@@ -190,7 +190,7 @@ SUNDAY_WORKSHOPS2 = (
 
 SUNDAY_WORKSHOPS3 = (
     {"pause": 15, 'title': gettext("Zoznámte sa s pandami")},
-    {"pause": 5, 'title': gettext("basics of OpenFaaS with Python")},
+    {"pause": 5, 'title': gettext("Basics of OpenFaaS with Python")},
 )
 
 SUNDAY_WORKSHOPS4 = (
@@ -473,6 +473,29 @@ def speakers():
     variables['all'] = {**TYPE, **TAGS}
 
     return render_template('speakers.html', **variables)
+
+
+@app.route('/<lang_code>/speakers/<last_name>.html')
+def profile(last_name):
+    variables = _get_template_variables(li_schedule='active')
+    variables['tags'] = TAGS
+    variables['all'] = {**TYPE, **TAGS}
+    speakers = get_conference_data(url='/event/2018/speakers/')
+
+    for speaker in speakers:
+        if speaker['last_name'] == last_name:
+            variables['speaker'] = speaker
+            break
+
+    variables['talks'] = []
+    talks = get_conference_data(url='/event/2018/talks/')
+
+    for talk in talks:
+        if talk['primary_speaker']['last_name'] == variables['speaker']['last_name'] or (
+                'secondary_speaker' in talk and talk['secondary_speaker']['last_name'] == variables['speaker']['last_name']):
+            variables['talks'].append(talk)
+
+    return render_template('profile.html', **variables)
 
 
 @app.route('/<lang_code>/cfp.html')

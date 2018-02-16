@@ -1,0 +1,53 @@
+{% extends "body.html" %}
+{% block content %}
+<div class="section" id="schedule">
+  <div class="content">
+    <div class="content-text">
+
+      <h1>{{ speaker['first_name'] }} {{ speaker['last_name'] }}</h1>
+
+      <div class="flex one two-900 center demo">
+        <div>
+          <article class="card">
+            {% if speaker['url'] %}
+            <a href="{{ speaker['url'] }}" target="_blank"
+             onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['url'] }}');">
+            {% endif %}
+            {% if speaker['image'] %}
+            <img src="{{ url_for('static', filename='img/speakers/'+ speaker['first_name']|strip_accents|lower +'_'+ speaker['last_name']|strip_accents|lower +'.jpg') }}" class="img-responsive center-block">
+            {% else %}
+            <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive center-block">
+            {% endif %}
+            {% if speaker['url'] %}</a>{% endif %}
+            <footer>
+              <h3>
+                {% if speaker['url'] %}
+            <a href="{{ speaker['url'] }}" target="_blank"
+             onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['url'] }}');">
+            {% endif %}
+                {{ speaker['first_name'] }} {{ speaker['last_name'] }}
+            {% if speaker['url'] != '#' %}</a>{% endif %}
+                <small>({{ speaker['country']}})</small></h3>
+              <p class="text-justify">{{ speaker['bio']|linebreaks }}</p>
+            </footer>
+          </article>
+        </div>
+
+        {% for talk in talks %}
+        <div>
+          <article class="card">
+            <header>
+              {{ talk['title'] }}
+            </header>
+            <footer>
+              {{ talk['abstract']|linebreaks }}
+            </footer>
+          </article>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

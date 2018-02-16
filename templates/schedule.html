@@ -56,9 +56,11 @@
 
                 {% if talk['talk']['primary_speaker'] %}
                 <strong>
-                {{ talk['talk']['primary_speaker']['first_name'] }} {{ talk['talk']['primary_speaker']['last_name'] }}
+                <a href="{{ url_for('profile', lang_code=lang_code, last_name=talk['talk']['primary_speaker']['last_name']) }}">
+                  {{ talk['talk']['primary_speaker']['first_name'] }} {{ talk['talk']['primary_speaker']['last_name'] }}</a>
                   {% if talk['talk']['secondary_speaker'] %}
-                    &amp; {{ talk['talk']['secondary_speaker']['first_name'] }} {{ talk['talk']['secondary_speaker']['last_name'] }}
+                    &amp;
+                  <a href="{{ url_for('profile', lang_code=lang_code, last_name=talk['talk']['secondary_speaker']['last_name']) }}">{{ talk['talk']['secondary_speaker']['first_name'] }} {{ talk['talk']['secondary_speaker']['last_name'] }}</a>
                   {% endif %}
                 </strong>
                 {% endif %}
