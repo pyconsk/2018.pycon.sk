@@ -189,8 +189,8 @@ SUNDAY_WORKSHOPS2 = (
 )
 
 SUNDAY_WORKSHOPS3 = (
-    {"pause": 5, 'title': gettext("TBD"), 'duration': 180, 'flag': 'devops', 'type': 'workshop'},
-    {"pause": 5, 'title': gettext("TBD"), 'duration': 180, 'flag': 'data', 'type': 'workshop'},
+    {"pause": 15, 'title': gettext("Zoznámte sa s pandami")},
+    {"pause": 5, 'title': gettext("basics of OpenFaaS with Python")},
 )
 
 SUNDAY_WORKSHOPS4 = (
