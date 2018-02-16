@@ -77,6 +77,7 @@ TAGS = {
     'community': gettext('Community / Diversity / Social'),
     'data': gettext('Data Science'),
     'devops': 'DevOps',
+    'docs': gettext('Documentation'),
     'edu': gettext('Education'),
     'generic': gettext('Python General'),
     'security': gettext('Security'),
@@ -96,8 +97,8 @@ FRIDAY_TRACK1 = (
     {"pause": 15, 'title': gettext("Docs or it didn't happen")},
     {"pause": 5, 'title': gettext("GraphQL is the new black")},
     {"pause": 60, 'title': gettext("To the Google in 80 Days")},
-    {"pause": 5, 'title': gettext("The Concierge Paradigm")},
-    {"pause": 15, 'title': gettext("Skynet your Infrastructure with QUADS")},
+    {"pause": 5, 'title': gettext("Unsafe at Any Speed")},
+    {"pause": 15, 'title': gettext("TBD"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
     {"pause": 5, 'title': gettext("The Z Object Database")},
     {"pause": 15, 'title': gettext("Differentiable programming in Python and Gluon for (not only medical) image analysis")},
     {"pause": 5, 'title': gettext("Vim your Python, Python your Vim")},
@@ -152,11 +153,11 @@ SATURDAY_TRACK2 = (
     {"pause": 5, 'title': gettext("LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie")},
     {"pause": 60, 'title': gettext("Kiwi.com v ZOO")},
     {"pause": 5, 'title': gettext("Keynote in Kiwi.com Hall"), 'duration': 30, 'flag': 'generic', 'type': 'talk'},
-    {"pause": 15, 'title': gettext("TBD"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
+    {"pause": 15, 'title': gettext("Skynet your Infrastructure with QUADS")},
     {"pause": 5, 'title': gettext("Automated network OS testing")},
     {"pause": 15, 'title': gettext("Tools to interact with Bitcoin and Ethereum")},
-    {"pause": 5, 'title': gettext("Unsafe at Any Speed")},
     {"pause": 5, 'title': gettext("7 Steps to a Clean Issue Tracker")},
+    {"pause": 5, 'title': gettext("The Concierge Paradigm")},
 )
 
 SATURDAY_WORKSHOPS1 = (
