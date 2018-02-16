@@ -221,6 +221,22 @@ AULA5 = {
     'number': '1.XX',
 }
 
+
+def get_conference_data(url='', filters=''):
+    """Connect to API and get public talks and speakers data."""
+    url = API_DOMAIN + url
+
+    if filters:
+        url = url + '&' + filters
+
+    r = requests.get(url)
+    return r.json()
+
+
+API_DATA_SPEAKERS = get_conference_data(url='/event/2018/speakers/')
+API_DATA_TALKS = get_conference_data(url='/event/2018/talks/')
+
+
 @app.before_request
 def before():
     if request.view_args and 'lang_code' in request.view_args:
@@ -265,17 +281,6 @@ def linebreaksbr(eval_ctx, value):
 def strip_accents(eval_ctx, value):
     """Strip non ASCII characters and convert them to ASCII."""
     return unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode("utf-8")
-
-
-def get_conference_data(url='', filters=''):
-    """Connect to API and get public talks and speakers data."""
-    url = API_DOMAIN + url
-
-    if filters:
-        url = url + '&' + filters
-
-    r = requests.get(url)
-    return r.json()
 
 
 def _get_template_variables(**kwargs):
@@ -427,7 +432,7 @@ def schedule_filter(flag):
     variables['flag'] = flag
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
-    variables['data'] = api_data = get_conference_data(url='/event/2018/talks/')
+    variables['data'] = api_data = API_DATA_TALKS
     variables['schedule'] = generate_schedule(api_data, flag=flag)
 
     return render_template('schedule.html', **variables)
@@ -438,7 +443,7 @@ def schedule():
     variables = _get_template_variables(li_schedule='active')
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
-    variables['data'] = api_data = get_conference_data(url='/event/2018/talks/')
+    variables['data'] = api_data = API_DATA_TALKS
     variables['schedule'] = generate_schedule(api_data)
     variables['disable_last'] = True
 
@@ -460,7 +465,7 @@ def talks():
     variables = _get_template_variables(li_schedule='active', li_talks='active')
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
-    variables['data'] = get_conference_data(url='/event/2018/talks/')
+    variables['data'] = API_DATA_TALKS
 
     return render_template('talks.html', **variables)
 
@@ -468,7 +473,7 @@ def talks():
 @app.route('/<lang_code>/speakers.html')
 def speakers():
     variables = _get_template_variables(li_speakers='active')
-    variables['data'] = get_conference_data(url='/event/2018/speakers/')
+    variables['data'] = API_DATA_SPEAKERS
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
 
@@ -480,17 +485,15 @@ def profile(last_name):
     variables = _get_template_variables(li_schedule='active')
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
-    speakers = get_conference_data(url='/event/2018/speakers/')
 
-    for speaker in speakers:
+    for speaker in API_DATA_SPEAKERS:
         if speaker['last_name'] == last_name:
             variables['speaker'] = speaker
             break
 
     variables['talks'] = []
-    talks = get_conference_data(url='/event/2018/talks/')
 
-    for talk in talks:
+    for talk in API_DATA_TALKS:
         if talk['primary_speaker']['last_name'] == variables['speaker']['last_name'] or (
                 'secondary_speaker' in talk and talk['secondary_speaker']['last_name'] == variables['speaker']['last_name']):
             variables['talks'].append(talk)
