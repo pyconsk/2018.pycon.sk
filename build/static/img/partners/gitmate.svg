@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="111.00442mm"
+   height="111.00442mm"
+   viewBox="0 0 111.00442 111.00442"
+   version="1.1"
+   id="svg82"
+   sodipodi:docname="gitmate_domain_light_bg.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:export-filename="/home/sils/code/gitmate/artwork/logo/gitmate_domain_light_bg_1024.png"
+   inkscape:export-xdpi="234.31"
+   inkscape:export-ydpi="234.31">
+  <defs
+     id="defs76">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath32">
+      <path
+         d="M 0,2000 H 2000 V 0 H 0 Z"
+         id="path30"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-80.264624"
+     inkscape:cy="161.60341"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g28"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata79">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.282054,-57.200153)">
+    <g
+       id="g880"
+       transform="translate(0.25790071,-7.768914)">
+      <g
+         id="g28"
+         clip-path="url(#clipPath32)"
+         transform="matrix(0.35277777,0,0,-0.35277777,-244.60726,490.33707)">
+        <g
+           id="g76"
+           transform="translate(1071.0041,993.7051)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+           x="836.67505"
+           y="-900.22345"
+           id="text864"
+           transform="scale(1,-1)"><tspan
+             sodipodi:role="line"
+             id="tspan862"
+             x="836.67505"
+             y="-900.22345"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#173542;fill-opacity:1;stroke-width:0.75">GitMate.io</tspan></text>
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1.23558497"
+           id="path4526"
+           cx="998.17407"
+           cy="-1080.2079"
+           rx="113.07175"
+           ry="113.6732"
+           transform="scale(1,-1)" />
+        <path
+           id="path13"
+           style="fill:#173542;fill-opacity:1;stroke-width:3.03089166"
+           d="m 1076.0466,1008.8434 h -15.3948 v 30.0808 h -13.3473 c -6e-4,2.1891 1.7745,3.9637 3.9637,3.9626 h 9.3836 v 2.6453 h -13.3473 c 0,2.1879 1.7756,3.9609 3.9637,3.9615 h 9.3836 v 2.6421 h -13.3473 c 0,2.1892 1.7744,3.9642 3.9637,3.9647 h 9.3836 v 18.3075 h -32.6546 c -3.5662,0 -6.8672,1.8847 -8.6854,4.9528 l -13.1687,22.1898 c -1.2955,2.1896 -1.3188,4.9054 -0.061,7.1169 1.2588,2.2126 3.6088,3.5791 6.1545,3.5787 h 38.1077 c -9.5868,12.9399 -24.9699,21.327 -42.3065,21.327 h -19.72743 c -0.34002,0 -0.67897,0 -1.02112,-0.014 v 15.5714 c 3.48592,1.7788 5.68013,5.362 5.67973,9.2756 0,5.7525 -4.66182,10.4144 -10.41324,10.4144 -5.75143,0 -10.41234,-4.6619 -10.41234,-10.4144 0,-4.4149 2.75019,-8.1871 6.62617,-9.7012 v -15.9979 c -24.5038,-4.4876 -43.06895,-25.9461 -43.06895,-51.7468 v -72.1168 h -15.39701 c -17.47667,18.8998 -28.14882,44.1733 -28.14882,71.9426 0,58.5513 47.46672,106.0191 106.02039,106.0191 58.55252,0 106.01812,-47.4678 106.01812,-106.0191 0,-27.7682 -10.6709,-53.0428 -28.1467,-71.9426 m -107.70433,46.6892 c -9.38362,0 -17.01797,7.6354 -17.01797,17.018 0,9.3816 7.63435,17.0149 17.0169,17.0149 9.38266,0 17.01594,-7.6333 17.01594,-17.0149 0,-9.3826 -7.63328,-17.018 -17.01594,-17.018 m 29.83828,141.8034 c -64.62482,0 -117.00575,-52.3809 -117.00575,-117.0066 0,-64.613 52.382,-116.99492 117.00685,-116.99492 64.61392,0 116.99382,52.38192 116.99382,116.99602 0,64.6246 -52.3809,117.0066 -116.99492,117.0066 m 36.91212,-109.9251 c -3.9206,8e-4 -7.0986,3.1792 -7.0998,7.0997 0,3.9201 3.1797,7.0974 7.0998,7.0998 3.9203,0 7.0979,-3.1795 7.1008,-7.0998 0,-3.9201 -3.1796,-7.0973 -7.0998,-7.0997 m -19.8471,20.6128 c -1.6439,-8e-4 -3.1612,-0.8826 -3.9754,-2.3107 -0.8135,-1.43 -0.7968,-3.1866 0.044,-4.6009 l 10.3994,-17.5301 c 1.818,-3.0693 5.1203,-4.9515 8.6875,-4.9517 h 30.2499 v 2.3288 c 0,9.898 -2.7308,19.1597 -7.4889,27.0646 z m -46.9043,-23.566 c -6.57687,0 -11.90809,-5.3312 -11.90809,-11.9082 0,-6.578 5.33122,-11.9092 11.90809,-11.9092 6.57591,0 11.90926,5.3312 11.90926,11.9092 0,6.5759 -5.33335,11.9082 -11.90926,11.9082"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccccccccccccccsscccssccsccsssccsssccsssccccccccccccscccsssc" />
+      </g>
+    </g>
+  </g>
+</svg>
