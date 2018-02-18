@@ -429,7 +429,7 @@ def tickets():
 
 @app.route('/<lang_code>/<flag>/schedule.html')
 def schedule_filter(flag):
-    variables = _get_template_variables(li_schedule='active')
+    variables = _get_template_variables(li_schedule_nav='active', li_schedule='active')
     variables['flag'] = flag
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
@@ -441,7 +441,7 @@ def schedule_filter(flag):
 
 @app.route('/<lang_code>/schedule.html')
 def schedule():
-    variables = _get_template_variables(li_schedule='active')
+    variables = _get_template_variables(li_schedule_nav='active', li_schedule='active')
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
     variables['data'] = api_data = API_DATA_TALKS
@@ -453,7 +453,7 @@ def schedule():
 
 @app.route('/<lang_code>/<flag>/talks.html')
 def talks_filter(flag):
-    variables = _get_template_variables(li_schedule='active', li_talks='active')
+    variables = _get_template_variables(li_schedule_nav='active', li_talks='active')
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
     variables['data'] = get_conference_data(url='/event/2018/talks/?flag=' + flag)
@@ -463,7 +463,7 @@ def talks_filter(flag):
 
 @app.route('/<lang_code>/talks.html')
 def talks():
-    variables = _get_template_variables(li_schedule='active', li_talks='active')
+    variables = _get_template_variables(li_schedule_nav='active', li_talks='active')
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
     variables['data'] = API_DATA_TALKS
@@ -473,7 +473,7 @@ def talks():
 
 @app.route('/<lang_code>/speakers.html')
 def speakers():
-    variables = _get_template_variables(li_speakers='active')
+    variables = _get_template_variables(li_schedule_nav='active', li_speakers='active')
     variables['data'] = API_DATA_SPEAKERS
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
@@ -483,7 +483,7 @@ def speakers():
 
 @app.route('/<lang_code>/speakers/<last_name>.html')
 def profile(last_name):
-    variables = _get_template_variables(li_schedule='active')
+    variables = _get_template_variables(li_schedule_nav='active')
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
 
