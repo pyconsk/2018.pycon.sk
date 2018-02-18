@@ -3136,7 +3136,7 @@ nav {
 .content-text {
   border: 1px solid #888;
   text-align: justify;
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.9);
   color: #000;
   padding: 10px 10px 40px 10px;
 }
@@ -3157,7 +3157,6 @@ nav {
 .active.button, a {
   color: #ff002a;
 }
-
 
 .pseudo.button:hover, a:hover {
   color: #33ddff;
