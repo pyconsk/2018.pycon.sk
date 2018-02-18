@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/spy-logo.png"/>
   <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
   {% block header %}{% endblock %}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.min.css') }}?v=20180215">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.min.css') }}?v=20180218">
   <link rel="icon" href="{{ url_for('static', filename='img/logo/favicon.ico') }}" sizes="16x16">
   {% if lang_code == 'sk' %}
     <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/en', 1) }}" hreflang="en">
@@ -49,25 +49,19 @@
       <span class="dropdown">
       <a href="{{ url_for('hall_of_fame', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_hall_of_fame }}">{{ _('Hall of Fame') }}</a>
-        <!--<span class="dropdown-content">-->
-          <!--<a href="{{ url_for('sponsoring', lang_code=lang_code) }}"-->
-             <!--class="pseudo button icon-help-circled {{ li_sponsoring }} ">{{ _('Sponsoring') }}</a>-->
-        <!--</span>-->
       </span>
       <a href="{{ url_for('tickets', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_tickets }}">{{ _('Tickets') }}</a>
       <span class="dropdown">
         <a href="{{ url_for('schedule', lang_code=lang_code) }}"
-           class="pseudo button icon-help-circled {{ li_schedule_nav }} ">{{ _('Schedule') }}</a>
+           class="pseudo button icon-help-circled {{ li_schedule_nav }}">{{ _('Schedule') }}</a>
         <span class="dropdown-content">
           <a href="{{ url_for('schedule', lang_code=lang_code) }}"
-            class="pseudo button icon-help-circled {{ li_schedule }} ">{{ _('Schedule') }}</a>
+            class="pseudo button icon-help-circled {{ li_schedule }}">{{ _('Schedule') }}</a>
           <a href="{{ url_for('talks', lang_code=lang_code) }}"
-             class="pseudo button icon-help-circled {{ li_talks }} ">{{ _('Talks') }}</a>
+             class="pseudo button icon-help-circled {{ li_talks }}">{{ _('Talks') }}</a>
           <a href="{{ url_for('speakers', lang_code=lang_code) }}"
-             class="pseudo button icon-help-circled {{ li_speakers }} ">{{ _('Speakers') }}</a>
-          <!--<a href="{{ url_for('cfp', lang_code=lang_code) }}"-->
-             <!--class="pseudo button icon-help-circled {{ li_cfp }} ">{{ _('Call for Proposals') }}</a>-->
+             class="pseudo button icon-help-circled {{ li_speakers }}">{{ _('Speakers') }}</a>
         </span>
       </span>
       <a href="{{ url_for('coc', lang_code=lang_code) }}"

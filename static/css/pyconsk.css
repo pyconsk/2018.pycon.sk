@@ -52,7 +52,7 @@ nav {
   background: url("/static/img/logo/pycon_long_2018.svg"), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
   background-position: center;
-  height: 22em;
+  height: 12em;
 }
 
 .lead {
@@ -137,6 +137,14 @@ nav {
 
 .text-justify {
   text-align: justify;
+}
+
+.active.button, a {
+  color: #ff002a;
+}
+
+.pseudo.button:hover, a:hover {
+  color: #33ddff;
 }
 
 .box {
