@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-02-19 12:50+0100\n"
-"PO-Revision-Date: 2018-02-19 13:07+0000\n"
+"PO-Revision-Date: 2018-02-19 13:17+0000\n"
 "Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
@@ -134,7 +134,7 @@ msgstr ""
 
 #: views.py:105
 msgid "Protecting Privacy and Security — For Yourself and Your Community"
-msgstr ""
+msgstr "Ochrana súkromia a bezpečnosť - pre teba a tvoju komunitu"
 
 #: views.py:106 views.py:146
 msgid "Lightning Talks"
@@ -142,7 +142,7 @@ msgstr ""
 
 #: views.py:110 views.py:150
 msgid "Conference Opening in Kiwi.com Hall"
-msgstr ""
+msgstr "Otvorenie konferencie v Kiwi.com miestnosti"
 
 #: views.py:111
 msgid "Konferencia Python Days v Martine a následné aktivity"
@@ -198,7 +198,7 @@ msgstr ""
 
 #: views.py:130
 msgid "Introduction to Machine Learning with Python"
-msgstr ""
+msgstr "Úvod do strojového učenia v Pythone"
 
 #: views.py:135
 msgid "Solutions Reviews"
