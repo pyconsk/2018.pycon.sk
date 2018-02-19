@@ -1086,7 +1086,7 @@ msgstr "Zverejnili sme program konferencie."
 
 #: templates/index.html:28
 msgid "Speakers and talks list has been published."
-msgstr "Rečníci a prednáčky boli zverejnené."
+msgstr "Rečníci a prednášky boli zverejnené."
 
 #: templates/index.html:31
 msgid ""
