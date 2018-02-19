@@ -24,7 +24,7 @@ TIME_FORMAT = '%Y-%m-%dT%H:%M:%S+00:00'
 NOW = datetime.utcnow().strftime(TIME_FORMAT)
 
 SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
-LOGO_PYCON = 'logo/spy-logo.svg'
+LOGO_PYCON = 'logo/pycon_logo_square.svg'
 
 LDJSON_SPY = {
     "@type": "Organization",
@@ -47,7 +47,7 @@ LDJSON_PYCON = {
                            "for the Python programming language."),
     "startDate": "2018-03-09T9:00:00+01:00",
     "endDate": "2018-03-11T18:00:00+01:00",
-    "image": DOMAIN + "/static/img/backgrounds/lecture_hall.jpg",
+    "image": DOMAIN + "/static/img/logo/pycon_long_2018.png",
     "location": {
         "@type": "Place",
         "name": "FIIT STU",
