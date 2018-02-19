@@ -11,36 +11,42 @@
           <article class="card">
             {% if speaker['url'] %}
             <a href="{{ speaker['url'] }}" target="_blank"
-             onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['url'] }}');">
-            {% endif %}
-            {% if speaker['image'] %}
-            <img src="{{ url_for('static', filename='img/speakers/'+ speaker['first_name']|strip_accents|lower +'_'+ speaker['last_name']|strip_accents|lower +'.jpg') }}" class="img-responsive center-block">
-            {% else %}
-            <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive center-block">
-            {% endif %}
-            {% if speaker['url'] %}</a>{% endif %}
+               onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['url'] }}');">
+              {% endif %}
+              {% if speaker['image'] %}
+              <img src="{{ url_for('static', filename='img/speakers/'+ speaker['first_name']|strip_accents|lower +'_'+ speaker['last_name']|strip_accents|lower +'.jpg') }}" class="img-responsive center-block">
+              {% else %}
+              <img src="{{ url_for('static', filename='img/speakers/no_avatar.svg') }}" class="img-responsive center-block">
+              {% endif %}
+              {% if speaker['url'] %}</a>{% endif %}
             <footer>
               <h3>
-                {% if speaker['url'] %}
-            <a href="{{ speaker['url'] }}" target="_blank"
-             onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['url'] }}');">
-            {% endif %}
                 {{ speaker['first_name'] }} {{ speaker['last_name'] }}
-            {% if speaker['url'] != '#' %}</a>{% endif %}
-                <small>({{ speaker['country']}})</small></h3>
+                <small>({{ speaker['country']}})</small>
+              </h3>
+              {% if speaker['url'] %}
+              <a href="{{ speaker['url'] }}" target="_blank" onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['url'] }}');">
+                {{ speaker['url'] }}</a>{% endif %}
+              {% if speaker['social_url'] %}<br />
+              <a href="{{ speaker['social_url'] }}" target="_blank" onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['social_url'] }}');">
+                {{ speaker['social_url'] }}</a>{% endif %}
               <p class="text-justify">{{ speaker['bio']|linebreaks }}</p>
             </footer>
           </article>
         </div>
 
-        {% for talk in talks %}
+        {% for data in talks %}
         <div>
           <article class="card">
             <header>
-              {{ talk['title'] }}
+              {{ data[1]['title'] }}<br/>
+              <span class="label {{ data[1]['type'] }}">{{ _(all[data[1]['type']]) }}</span>
+              <a href="{{ url_for('schedule_filter', lang_code=lang_code, flag=data[1]['flag']) }}"><span class="label {{ data[1]['flag'] }}">{{ _(tags[data[1]['flag']]) }}</span></a><br />
+              {{ _(data[0]['room']['name']) }} <small>({{ data[0]['room']['number'] }})</small><br />
+              {{ data[0]['start'].strftime('%A %d. %B: %H:%M') }}
             </header>
             <footer>
-              {{ talk['abstract']|linebreaks }}
+              {{ data[1]['abstract']|linebreaks }}
             </footer>
           </article>
         </div>

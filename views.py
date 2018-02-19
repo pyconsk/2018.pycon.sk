@@ -494,10 +494,14 @@ def profile(last_name):
 
     variables['talks'] = []
 
-    for talk in API_DATA_TALKS:
-        if talk['primary_speaker']['last_name'] == variables['speaker']['last_name'] or (
-                'secondary_speaker' in talk and talk['secondary_speaker']['last_name'] == variables['speaker']['last_name']):
-            variables['talks'].append(talk)
+    for track in generate_schedule(API_DATA_TALKS):
+        for talk in track['schedule']:
+            if ('primary_speaker' in talk['talk'] or 'secondary_speaker' in talk['talk']) and \
+                    talk['talk']['primary_speaker']['last_name'] == variables['speaker']['last_name'] or (
+                    'secondary_speaker' in talk['talk'] and
+                    talk['talk']['secondary_speaker']['last_name'] == variables['speaker']['last_name']):
+                variables['talks'].append((track, talk['talk']))
+                break
 
     return render_template('profile.html', **variables)
 
