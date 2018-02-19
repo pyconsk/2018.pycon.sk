@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-02-19 12:50+0100\n"
-"PO-Revision-Date: 2018-02-19 11:33+0000\n"
-"Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2018-02-19 13:07+0000\n"
+"Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:40 views.py:18
@@ -28,10 +29,12 @@ msgid ""
 "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-"
 "organized conference for the Python programming language."
 msgstr ""
+"PyCon bude v roku 2018 opäť na Slovensku. PyCon SK je komunitou organizovaná "
+"konferencia zameraná na programovací jazyk Python."
 
 #: views.py:59
 msgid "Slovak Republic"
-msgstr ""
+msgstr "Slovenská republika"
 
 #: templates/cfp.html:39 views.py:71
 msgid "Talk"
@@ -97,15 +100,15 @@ msgstr ""
 
 #: views.py:97
 msgid "Docs or it didn't happen"
-msgstr ""
+msgstr "Dokumentácia alebo to neexistuje"
 
 #: views.py:98
 msgid "GraphQL is the new black"
-msgstr ""
+msgstr "GraphQL je nová čierna"
 
 #: views.py:99
 msgid "To the Google in 80 Days"
-msgstr ""
+msgstr "Do Googlu za 80 dní"
 
 #: views.py:100
 msgid "Unsafe at Any Speed"
@@ -117,7 +120,7 @@ msgstr ""
 
 #: views.py:102
 msgid "The Z Object Database"
-msgstr ""
+msgstr "Z Object databáza"
 
 #: views.py:103
 msgid ""
@@ -283,7 +286,7 @@ msgstr ""
 
 #: views.py:160
 msgid "The Concierge Paradigm"
-msgstr ""
+msgstr "Majordómova paradigma"
 
 #: views.py:164
 msgid "Effectively running python applications in Kubernetes/OpenShift"
@@ -2905,4 +2908,3 @@ msgstr ""
 
 #~ msgid "Call for Proposals"
 #~ msgstr "Prihlásenie prednášok"
-
