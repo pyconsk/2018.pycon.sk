@@ -30,7 +30,7 @@
               {% if speaker['social_url'] %}<br />
               <a href="{{ speaker['social_url'] }}" target="_blank" onclick="ga('send', 'event', 'speaker', 'click', 'speakers-page-{{ speaker['first_name'] }}-{{ speaker['last_name'] }}');trackOutboundLink('{{ speaker['social_url'] }}');">
                 {{ speaker['social_url'] }}</a>{% endif %}
-              <p class="text-justify">{{ speaker['bio']|linebreaks }}</p>
+              <p class="text-justify">{{ _(speaker['bio'])|linebreaks }}</p>
             </footer>
           </article>
         </div>

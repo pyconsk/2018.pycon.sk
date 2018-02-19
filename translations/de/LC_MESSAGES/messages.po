@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-15 21:08+0100\n"
+"POT-Creation-Date: 2018-02-19 12:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -53,331 +53,343 @@ msgstr ""
 msgid "Data Science"
 msgstr ""
 
-#: templates/cfp.html:50 views.py:80
+#: views.py:80
+msgid "Documentation"
+msgstr ""
+
+#: templates/cfp.html:50 views.py:81
 msgid "Education"
 msgstr ""
 
-#: templates/cfp.html:48 views.py:81
+#: templates/cfp.html:48 views.py:82
 msgid "Python General"
 msgstr ""
 
-#: templates/cfp.html:54 views.py:82
+#: templates/cfp.html:54 views.py:83
 msgid "Security"
 msgstr ""
 
-#: templates/cfp.html:56 views.py:83
+#: templates/cfp.html:56 views.py:84
 msgid "Soft Skills"
 msgstr ""
 
-#: templates/cfp.html:57 views.py:84
+#: templates/cfp.html:57 views.py:85
 msgid "Hardware"
 msgstr ""
 
-#: templates/cfp.html:51 views.py:85
+#: templates/cfp.html:51 views.py:86
 msgid "Web Development"
 msgstr ""
 
-#: templates/cfp.html:58 views.py:86
+#: templates/cfp.html:58 views.py:87
 msgid "Other"
 msgstr ""
 
-#: views.py:94 views.py:133
+#: views.py:95 views.py:134
 msgid "Conference Opening"
 msgstr ""
 
-#: views.py:95
+#: views.py:96
 msgid ""
 "When your wetware has too many threads - Tips from an ADHDer on how to "
 "improve your focus"
 msgstr ""
 
-#: views.py:96
+#: views.py:97
 msgid "Docs or it didn't happen"
 msgstr ""
 
-#: views.py:97
+#: views.py:98
 msgid "GraphQL is the new black"
 msgstr ""
 
-#: views.py:98
+#: views.py:99
 msgid "To the Google in 80 Days"
 msgstr ""
 
-#: views.py:99
-msgid "The Concierge Paradigm"
-msgstr ""
-
 #: views.py:100
-msgid "Skynet your Infrastructure with QUADS"
+msgid "Unsafe at Any Speed"
 msgstr ""
 
 #: views.py:101
-msgid "The Z Object Database"
+msgid "TBD"
 msgstr ""
 
 #: views.py:102
+msgid "The Z Object Database"
+msgstr ""
+
+#: views.py:103
 msgid ""
 "Differentiable programming in Python and Gluon for (not only medical) "
 "image analysis"
 msgstr ""
 
-#: views.py:103
+#: views.py:104
 msgid "Vim your Python, Python your Vim"
 msgstr ""
 
-#: views.py:104
+#: views.py:105
 msgid "Protecting Privacy and Security — For Yourself and Your Community"
 msgstr ""
 
-#: views.py:105 views.py:145
+#: views.py:106 views.py:146
 msgid "Lightning Talks"
 msgstr ""
 
-#: views.py:109 views.py:149
+#: views.py:110 views.py:150
 msgid "Conference Opening in Kiwi.com Hall"
 msgstr ""
 
-#: views.py:110
+#: views.py:111
 msgid "Konferencia Python Days v Martine a následné aktivity"
 msgstr ""
 
-#: views.py:111
+#: views.py:112
 msgid "Programujeme v Pythone až k maturite"
 msgstr ""
 
-#: views.py:112
+#: views.py:113
 msgid "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"
 msgstr ""
 
-#: views.py:113
+#: views.py:114
 msgid "O nindžoch a mentoroch: CoderDojo na Slovensku"
 msgstr ""
 
-#: views.py:114
+#: views.py:115
 msgid "Komunitní kurzy"
 msgstr ""
 
-#: views.py:115
+#: views.py:116
 msgid "Ako sa pasujeme s Pythonom v Martine?"
 msgstr ""
 
-#: views.py:116
+#: views.py:117
 msgid "Prečo hardvér priťahuje k informatike žiakov i dospelých"
 msgstr ""
 
-#: views.py:117
+#: views.py:118
 msgid "EDU Talks"
 msgstr ""
 
-#: views.py:118
+#: views.py:119
 msgid "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
 msgstr ""
 
-#: views.py:122
+#: views.py:123
 msgid "Ako vytvárať interaktívne mapy v Python / R"
 msgstr ""
 
-#: views.py:123
+#: views.py:124
 msgid "Práce s XML"
 msgstr ""
 
-#: views.py:124
+#: views.py:125
 msgid "Managing high-available applications in production"
 msgstr ""
 
-#: views.py:128
+#: views.py:129
 msgid "Základy Ansible Workshop"
 msgstr ""
 
-#: views.py:129
+#: views.py:130
 msgid "Introduction to Machine Learning with Python"
 msgstr ""
 
-#: views.py:134
+#: views.py:135
 msgid "Solutions Reviews"
 msgstr ""
 
-#: views.py:135
+#: views.py:136
 msgid "Campaign Automation & Abusing Celery Properly"
 msgstr ""
 
-#: views.py:136
+#: views.py:137
 msgid "Search Engines with Python and Elasticsearch"
 msgstr ""
 
-#: views.py:137
+#: views.py:138
 msgid ""
 "Industrial Machine Learning: Building scalable distributed machine "
 "learning pipelines with Python"
 msgstr ""
 
-#: views.py:138
+#: views.py:139
 msgid "Pythonic code, by example"
 msgstr ""
 
-#: views.py:139
+#: views.py:140
 msgid "Our DevOps journey, is SRE the next stop?"
 msgstr ""
 
-#: views.py:140
+#: views.py:141
 msgid ""
 "Maintaining reliable and secure continuous delivery for python "
 "microservices"
 msgstr ""
 
-#: views.py:141
+#: views.py:142
 msgid "Designing fast and scalable Python MicroServices with django"
 msgstr ""
 
-#: views.py:142
+#: views.py:143
 msgid "FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere"
 msgstr ""
 
-#: views.py:143
+#: views.py:144
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:144
+#: views.py:145
 msgid "The GAME!"
 msgstr ""
 
-#: views.py:150
+#: views.py:151
 msgid "Meteodáta v Pythone. Efektívne."
 msgstr ""
 
-#: views.py:151
+#: views.py:152
 msgid "Cesta kolem světa za 30 minut"
 msgstr ""
 
-#: views.py:152
+#: views.py:153
 msgid "LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie"
 msgstr ""
 
-#: views.py:153
+#: views.py:154
 msgid "Kiwi.com v ZOO"
 msgstr ""
 
-#: views.py:154
+#: views.py:155
 msgid "Keynote in Kiwi.com Hall"
 msgstr ""
 
-#: views.py:155 views.py:192 views.py:193
-msgid "TBD"
-msgstr ""
-
 #: views.py:156
-msgid "Automated network OS testing"
+msgid "Skynet your Infrastructure with QUADS"
 msgstr ""
 
 #: views.py:157
-msgid "Tools to interact with Bitcoin and Ethereum"
+msgid "Automated network OS testing"
 msgstr ""
 
 #: views.py:158
-msgid "Unsafe at Any Speed"
+msgid "Tools to interact with Bitcoin and Ethereum"
 msgstr ""
 
 #: views.py:159
 msgid "7 Steps to a Clean Issue Tracker"
 msgstr ""
 
-#: views.py:163
-msgid "Effectively running python applications in Kubernetes/OpenShift"
+#: views.py:160
+msgid "The Concierge Paradigm"
 msgstr ""
 
 #: views.py:164
+msgid "Effectively running python applications in Kubernetes/OpenShift"
+msgstr ""
+
+#: views.py:165
 msgid "Roboworkshop"
 msgstr ""
 
-#: views.py:167
+#: views.py:168
 msgid "Microbit:Slovensko"
 msgstr ""
 
-#: views.py:168
+#: views.py:169
 msgid "Programujeme v Pythone – učíme seminár z programovania na strednej škole"
 msgstr ""
 
-#: views.py:172
+#: views.py:173
 msgid "Charon a cesta z pickle pekla"
 msgstr ""
 
-#: views.py:173
+#: views.py:174
 msgid "Making Python Behave"
 msgstr ""
 
-#: views.py:174
+#: views.py:175
 msgid "\"Utajené\" informácie o kóde ktorý píšeš"
 msgstr ""
 
-#: views.py:175
+#: views.py:176
 msgid ""
 "How to connect objects with each other in different situations with "
 "Pythonic ways - association, aggregation, composition and etc."
 msgstr ""
 
-#: views.py:176
+#: views.py:177
 msgid "Getting started with HDF5 and PyTables"
 msgstr ""
 
-#: views.py:177
+#: views.py:178
 msgid "The Truth about Mastering Big Data"
 msgstr ""
 
-#: views.py:178
+#: views.py:179
 msgid "Real-time personalized recommendations using embeddings"
 msgstr ""
 
-#: views.py:182
+#: views.py:183
 msgid ""
 "Real-time transcription and sentiment analysis of audio streams; on the "
 "phone and in the browser"
 msgstr ""
 
-#: views.py:183
+#: views.py:184
 msgid "Learn MongoDB by modeling PyPI in a document database"
 msgstr ""
 
-#: views.py:187
+#: views.py:188
 msgid "Testing Essentials for Scientists and Engineers"
 msgstr ""
 
-#: views.py:188
+#: views.py:189
 msgid "Cython: Speed up your code without going insane"
 msgstr ""
 
-#: views.py:197
+#: views.py:193
+msgid "Zoznámte sa s pandami"
+msgstr ""
+
+#: views.py:194
+msgid "Basics of OpenFaaS with Python"
+msgstr ""
+
+#: views.py:198
 msgid "Django Girls"
 msgstr ""
 
-#: views.py:201
+#: views.py:202
 msgid "Kiwi.com Hall"
 msgstr ""
 
-#: views.py:205
+#: views.py:206
 msgid "Python Software Foundation Hall"
 msgstr ""
 
-#: views.py:210
+#: views.py:211
 msgid "Babbage Hall 1/2"
 msgstr ""
 
-#: views.py:215
+#: views.py:216
 msgid "Babbage Hall 2/2"
 msgstr ""
 
-#: views.py:220
+#: views.py:221
 msgid "Jobs Auditorium"
 msgstr ""
 
-#: views.py:325
+#: views.py:331
 msgid "Break"
 msgstr ""
 
-#: views.py:328
+#: views.py:334
 msgid "Lunch 🍱"
 msgstr ""
 
-#: views.py:331
+#: views.py:337
 msgid "Coffee Break ☕"
 msgstr ""
 
@@ -403,96 +415,88 @@ msgstr ""
 msgid "Hall of Fame"
 msgstr ""
 
-#: templates/body.html:54
-msgid "Sponsoring"
-msgstr ""
-
-#: templates/body.html:58 templates/tickets.html:92
+#: templates/body.html:54 templates/tickets.html:92
 msgid "Tickets"
 msgstr ""
 
-#: templates/body.html:61 templates/body.html:64
+#: templates/body.html:57 templates/body.html:60
 msgid "Schedule"
 msgstr ""
 
-#: templates/body.html:66 templates/cfp.html:496
+#: templates/body.html:62 templates/cfp.html:496
 msgid "Talks"
 msgstr ""
 
-#: templates/body.html:68
+#: templates/body.html:64
 msgid "Speakers"
 msgstr ""
 
-#: templates/body.html:70
-msgid "Call for Proposals"
-msgstr ""
-
-#: templates/body.html:74 templates/coc.html:6
+#: templates/body.html:68 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/body.html:75
+#: templates/body.html:69
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:114
+#: templates/body.html:108
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:116
+#: templates/body.html:110
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:121
+#: templates/body.html:115
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
 " the %(psf)s."
 msgstr ""
 
-#: templates/body.html:123
+#: templates/body.html:117
 msgid "Python Software foundation"
 msgstr ""
 
-#: templates/body.html:124
+#: templates/body.html:118
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr ""
 
-#: templates/body.html:125
+#: templates/body.html:119
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:128
+#: templates/body.html:122
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:135
+#: templates/body.html:129
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "mining Monero."
 msgstr ""
 
-#: templates/body.html:136
+#: templates/body.html:130
 msgid "You can support us by mining Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:137
+#: templates/body.html:131
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:138
+#: templates/body.html:132
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:139
+#: templates/body.html:133
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:139
+#: templates/body.html:133
 msgid "Total"
 msgstr ""
 
@@ -905,14 +909,28 @@ msgid ""
 msgstr ""
 
 #: templates/hall-of-fame.html:168
+msgid "Silver"
+msgstr ""
+
+#: templates/hall-of-fame.html:180
+#, python-format
+msgid ""
+"GitMate is an automated issue triager. Based on machine learning\n"
+"                  algorithms GitMate labels issues, notifies relevant "
+"developers, identifies duplicates and maintains\n"
+"                  old issues. This reduces developers’ time spent on "
+"managing issues by at least 50%%."
+msgstr ""
+
+#: templates/hall-of-fame.html:192
 msgid "Django Girls Workshop"
 msgstr ""
 
-#: templates/hall-of-fame.html:190
+#: templates/hall-of-fame.html:214
 msgid "Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:201
+#: templates/hall-of-fame.html:225
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -927,7 +945,7 @@ msgid ""
 "professional Python, Web, and Data analysis developers."
 msgstr ""
 
-#: templates/hall-of-fame.html:222
+#: templates/hall-of-fame.html:246
 msgid ""
 "Slido is a technology company that enhances communication and increases\n"
 "                  interaction at events and meetings. Having worked on "
@@ -938,18 +956,18 @@ msgid ""
 "Spotify, Lufthansa, BBC and Oracle."
 msgstr ""
 
-#: templates/hall-of-fame.html:240
+#: templates/hall-of-fame.html:264
 msgid ""
 "Learn2Code teaches people how to design and code modern websites and\n"
 "                  application. Learn2Code is the largest online learning "
 "marketplace in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:266
-msgid "Medial Partners"
+#: templates/hall-of-fame.html:290
+msgid "Media Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:292
+#: templates/hall-of-fame.html:316
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -959,12 +977,12 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:312
+#: templates/hall-of-fame.html:336
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:405
-msgid "People that supported PyCon SK 2018 by purchasing a supported ticket."
+#: templates/hall-of-fame.html:429
+msgid "People that supported PyCon SK 2018 by purchasing a supporter ticket."
 msgstr ""
 
 #: templates/index.html:6
@@ -2724,5 +2742,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Speaker's list"
+#~ msgstr ""
+
+#~ msgid "Sponsoring"
+#~ msgstr ""
+
+#~ msgid "Call for Proposals"
 #~ msgstr ""
 

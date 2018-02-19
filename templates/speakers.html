@@ -30,7 +30,7 @@
                   {{ entry['first_name'] }} {{ entry['last_name'] }}
               {% if entry['url'] != '#' %}</a>{% endif %}
                   <small>({{ entry['country']}})</small></h3>
-                <p class="text-justify">{{ entry['bio']|linebreaks }}</p>
+                <p class="text-justify">{{ _(entry['bio'])|linebreaks }}</p>
               </footer>
             </article>
           </div>
