@@ -500,7 +500,7 @@ def profile(last_name):
                     talk['talk']['primary_speaker']['last_name'] == variables['speaker']['last_name'] or (
                     'secondary_speaker' in talk['talk'] and
                     talk['talk']['secondary_speaker']['last_name'] == variables['speaker']['last_name']):
-                variables['talks'].append((track, talk['talk']))
+                variables['talks'].append((track, talk))
                 break
 
     return render_template('profile.html', **variables)

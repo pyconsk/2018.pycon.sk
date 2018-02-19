@@ -39,14 +39,14 @@
         <div>
           <article class="card">
             <header>
-              {{ data[1]['title'] }}<br/>
-              <span class="label {{ data[1]['type'] }}">{{ _(all[data[1]['type']]) }}</span>
-              <a href="{{ url_for('schedule_filter', lang_code=lang_code, flag=data[1]['flag']) }}"><span class="label {{ data[1]['flag'] }}">{{ _(tags[data[1]['flag']]) }}</span></a><br />
+              {{ data[1]['talk']['title'] }}<br/>
+              <span class="label {{ data[1]['talk']['type'] }}">{{ _(all[data[1]['talk']['type']]) }}</span>
+              <a href="{{ url_for('schedule_filter', lang_code=lang_code, flag=data[1]['talk']['flag']) }}"><span class="label {{ data[1]['talk']['flag'] }}">{{ _(tags[data[1]['talk']['flag']]) }}</span></a><br />
               {{ _(data[0]['room']['name']) }} <small>({{ data[0]['room']['number'] }})</small><br />
-              {{ data[0]['start'].strftime('%A %d. %B: %H:%M') }}
+              {{ data[1]['start'].strftime('%A %d. %B: %H:%M') }}
             </header>
             <footer>
-              {{ data[1]['abstract']|linebreaks }}
+              {{ data[1]['talk']['abstract']|linebreaks }}
             </footer>
           </article>
         </div>
