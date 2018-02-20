@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-02-19 12:50+0100\n"
-"PO-Revision-Date: 2018-02-19 13:17+0000\n"
+"PO-Revision-Date: 2018-02-20 22:51+0000\n"
 "Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
@@ -112,7 +112,7 @@ msgstr "Do Googlu za 80 dní"
 
 #: views.py:100
 msgid "Unsafe at Any Speed"
-msgstr ""
+msgstr "V nebezpečí pri akejkoľvek rýchlosti"
 
 #: views.py:101
 msgid "TBD"
@@ -206,47 +206,52 @@ msgstr ""
 
 #: views.py:136
 msgid "Campaign Automation & Abusing Celery Properly"
-msgstr ""
+msgstr "Automatizácia kampaní a ako správne zneužiť Celery"
 
 #: views.py:137
 msgid "Search Engines with Python and Elasticsearch"
-msgstr ""
+msgstr "Vyhľadávanie s Pythonom a ElasticSearch"
 
 #: views.py:138
 msgid ""
 "Industrial Machine Learning: Building scalable distributed machine "
 "learning pipelines with Python"
 msgstr ""
+"Priemyselné strojové učenie: Vytvorenie škálovateľných distribuovaných "
+"postupov strojového učenia s Pythonom"
 
 #: views.py:139
 msgid "Pythonic code, by example"
-msgstr ""
+msgstr "Ukážka Pythonského kódu"
 
 #: views.py:140
 msgid "Our DevOps journey, is SRE the next stop?"
-msgstr ""
+msgstr "Je SRE ďalšou zástavkou na našej DevOps ceste?"
 
 #: views.py:141
 msgid ""
 "Maintaining reliable and secure continuous delivery for python "
 "microservices"
-msgstr ""
+msgstr "Údržba spoľahlivej a bezpečnej prevádzky pythonských mikroslužieb"
 
 #: views.py:142
 msgid "Designing fast and scalable Python MicroServices with django"
 msgstr ""
+"Dizajnovanie rýchlych a škálovateľných pythonských mikroslužieb v djangu"
 
 #: views.py:143
 msgid "FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere"
 msgstr ""
+"Faas: rýchlo a zbesilo - od nuly do bezserverovej prevádzky za 60 sekúnd - "
+"kdekoľvek"
 
 #: views.py:144
 msgid "Programming Python as performance: live coding with FoxDot"
-msgstr ""
+msgstr "Programovanie v Pythone ako performance: živé kódenie s FoxDotom"
 
 #: views.py:145
 msgid "The GAME!"
-msgstr ""
+msgstr "HRA!"
 
 #: views.py:151
 msgid "Meteodáta v Pythone. Efektívne."
@@ -278,11 +283,11 @@ msgstr ""
 
 #: views.py:158
 msgid "Tools to interact with Bitcoin and Ethereum"
-msgstr ""
+msgstr "Nástroje na interakciu s Bitcoinom a Ethereom"
 
 #: views.py:159
 msgid "7 Steps to a Clean Issue Tracker"
-msgstr ""
+msgstr "7 krokov k čistému issue trackeru"
 
 #: views.py:160
 msgid "The Concierge Paradigm"
@@ -290,11 +295,11 @@ msgstr "Majordómova paradigma"
 
 #: views.py:164
 msgid "Effectively running python applications in Kubernetes/OpenShift"
-msgstr ""
+msgstr "Efektívna prevádzka pythonských aplikácií v Kubernetes/OpenShift"
 
 #: views.py:165
 msgid "Roboworkshop"
-msgstr ""
+msgstr "Roboworkshop"
 
 #: views.py:168
 msgid "Microbit:Slovensko"
@@ -310,7 +315,7 @@ msgstr ""
 
 #: views.py:174
 msgid "Making Python Behave"
-msgstr ""
+msgstr "Výchova Pythonu"
 
 #: views.py:175
 msgid "\"Utajené\" informácie o kóde ktorý píšeš"
@@ -321,36 +326,39 @@ msgid ""
 "How to connect objects with each other in different situations with "
 "Pythonic ways - association, aggregation, composition and etc."
 msgstr ""
+"Ako vzájomne spájať objekty Pythonsky - asociácie, agregácie, kompozície atď."
 
 #: views.py:177
 msgid "Getting started with HDF5 and PyTables"
-msgstr ""
+msgstr "Začíname s HDF5 a PyTables"
 
 #: views.py:178
 msgid "The Truth about Mastering Big Data"
-msgstr ""
+msgstr "Pravda o ovládaní Big Data"
 
 #: views.py:179
 msgid "Real-time personalized recommendations using embeddings"
-msgstr ""
+msgstr "Personalizované odporúčania v reálnom čase pomocou embeddingu"
 
 #: views.py:183
 msgid ""
 "Real-time transcription and sentiment analysis of audio streams; on the "
 "phone and in the browser"
 msgstr ""
+"Prepis a analýza sentimentu z audio streamov v reálnom čase, v telefóne a v "
+"browseri"
 
 #: views.py:184
 msgid "Learn MongoDB by modeling PyPI in a document database"
-msgstr ""
+msgstr "Nauč sa MongoDB modelovaním PyPI v dokumentovej databáze"
 
 #: views.py:188
 msgid "Testing Essentials for Scientists and Engineers"
-msgstr ""
+msgstr "Základy testovania pre vedcov a inžinierov"
 
 #: views.py:189
 msgid "Cython: Speed up your code without going insane"
-msgstr ""
+msgstr "Cython: zrýchli svoj kód a nezblázni sa"
 
 #: views.py:193
 msgid "Zoznámte sa s pandami"
@@ -362,23 +370,23 @@ msgstr ""
 
 #: views.py:198
 msgid "Django Girls"
-msgstr ""
+msgstr "Django Girls"
 
 #: views.py:202
 msgid "Kiwi.com Hall"
-msgstr ""
+msgstr "Miestnosť Kiwi.com"
 
 #: views.py:206
 msgid "Python Software Foundation Hall"
-msgstr ""
+msgstr "Miestnosť Python Software Foundation"
 
 #: views.py:211
 msgid "Babbage Hall 1/2"
-msgstr ""
+msgstr "Babbageova miestnosť 1/2"
 
 #: views.py:216
 msgid "Babbage Hall 2/2"
-msgstr ""
+msgstr "Babbageova miestnosť 2/2"
 
 #: views.py:221
 msgid "Jobs Auditorium"
@@ -386,15 +394,15 @@ msgstr ""
 
 #: views.py:331
 msgid "Break"
-msgstr ""
+msgstr "Prestávka"
 
 #: views.py:334
 msgid "Lunch 🍱"
-msgstr ""
+msgstr "Obed 🍱"
 
 #: views.py:337
 msgid "Coffee Break ☕"
-msgstr ""
+msgstr "Prestávka na kávu ☕"
 
 #: templates/body.html:8
 msgid "Official PyCon SK 2018 website"
@@ -868,13 +876,15 @@ msgstr ""
 
 #: templates/hall-of-fame.html:6
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponzori"
 
 #: templates/hall-of-fame.html:8
 msgid ""
 "We thank all the sponsors, without whom it would not be possible to "
 "organize this amazing conference."
 msgstr ""
+"Ďakujeme všetkým sponzorom, bez ktorých by nebolo možné zorganizovať túto "
+"úžasnú konferenciu."
 
 #: templates/hall-of-fame.html:9 templates/sponsoring.html:6
 msgid "Why become a sponsor?"
@@ -882,7 +892,7 @@ msgstr "Prečo sa stať sponzorom?"
 
 #: templates/hall-of-fame.html:13
 msgid "Diamond"
-msgstr ""
+msgstr "Diamant"
 
 #: templates/hall-of-fame.html:25
 msgid ""
@@ -893,10 +903,16 @@ msgid ""
 "cooperating airlines onto a single itinerary, often\n"
 "                  resulting in significant savings."
 msgstr ""
+"Kiwi.com je online cestovná agentúra s prelomovou technológiou\n"
+"                   Virtual Interlining a zameraním sa na výnimočné služby "
+"zákazníkom. Náš kombinačný algoritmus\n"
+"                  umožňuje zákazníkom kombinovať lety aj s "
+"nespolupracujúcimi linkami do jedného itineráru,\n"
+"                  čo často vedie k významnému šetreniu nákladov."
 
 #: templates/hall-of-fame.html:38
 msgid "Platinum"
-msgstr ""
+msgstr "Platina"
 
 #: templates/hall-of-fame.html:50
 msgid ""
@@ -911,6 +927,17 @@ msgid ""
 "                  collect, analyze, and act upon customer interactions. "
 "And yes, we're hiring."
 msgstr ""
+"Platforma Exponea pomáha e-predajcom na 5 kontinentoch byť relevantnými pre "
+"svojich zákazníkov.\n"
+"                  Náš medzinárodný tím viac ako 140 profesionálov sa "
+"spolieha na silný backend tím vybavený\n"
+"                  nástrojmi ako Python, C++ a Go, Apache Kafka, MongoDB, "
+"Redis, ElasticSearch, Flask, RabbitMQ, Celery\n"
+"                  a ďalšími technológiami ako sú Docker, Kubernetes, gRPC, "
+"Sentry, Hadoop, a Apache Spark, vďaka ktorým\n"
+"                  pomáhajme našim klientom zbierať, analyzovať a reagovať na "
+"základe zákazníckych interakcií. \n"
+"                  A áno, prijímame nových členov tímu."
 
 #: templates/hall-of-fame.html:69
 msgid ""
