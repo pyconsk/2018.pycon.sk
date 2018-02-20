@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-20 23:58+0100\n"
+"POT-Creation-Date: 2018-02-21 00:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -922,15 +922,26 @@ msgid ""
 "managing issues by at least 50%%."
 msgstr ""
 
-#: templates/hall-of-fame.html:192
+#: templates/hall-of-fame.html:195
+msgid ""
+"BBI International is consulting company bridging the knowledge between "
+"business and IT. Our ultimate goal and burning desire is to achieve the "
+"extraordinary level of performance for our customers from the sectors of "
+"banking, insurance, automotive and telecommunication in Central European "
+"countries. Our most valuable competences are Applications Development, "
+"dInternet of Things (IoT), Data Warehousing (DWH) a Collaboration "
+"Management."
+msgstr ""
+
+#: templates/hall-of-fame.html:205
 msgid "Django Girls Workshop"
 msgstr ""
 
-#: templates/hall-of-fame.html:214
+#: templates/hall-of-fame.html:227
 msgid "Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:225
+#: templates/hall-of-fame.html:238
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -945,7 +956,7 @@ msgid ""
 "professional Python, Web, and Data analysis developers."
 msgstr ""
 
-#: templates/hall-of-fame.html:246
+#: templates/hall-of-fame.html:259
 msgid ""
 "Slido is a technology company that enhances communication and increases\n"
 "                  interaction at events and meetings. Having worked on "
@@ -956,18 +967,18 @@ msgid ""
 "Spotify, Lufthansa, BBC and Oracle."
 msgstr ""
 
-#: templates/hall-of-fame.html:264
+#: templates/hall-of-fame.html:277
 msgid ""
 "Learn2Code teaches people how to design and code modern websites and\n"
 "                  application. Learn2Code is the largest online learning "
 "marketplace in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:290
+#: templates/hall-of-fame.html:303
 msgid "Media Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:316
+#: templates/hall-of-fame.html:329
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -977,11 +988,11 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:336
+#: templates/hall-of-fame.html:349
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:429
+#: templates/hall-of-fame.html:442
 msgid "People that supported PyCon SK 2018 by purchasing a supporter ticket."
 msgstr ""
 
