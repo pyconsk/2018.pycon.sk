@@ -98,11 +98,11 @@ FRIDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("GraphQL is the new black")},
     {"pause": 60, 'title': gettext("To the Google in 80 Days")},
     {"pause": 5, 'title': gettext("Unsafe at Any Speed")},
-    {"pause": 15, 'title': gettext("TBD"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
+    {"pause": 15, 'title': gettext("Protecting Privacy and Security — For Yourself and Your Community")},
     {"pause": 5, 'title': gettext("The Z Object Database")},
     {"pause": 15, 'title': gettext("Differentiable programming in Python and Gluon for (not only medical) image analysis")},
     {"pause": 5, 'title': gettext("Vim your Python, Python your Vim")},
-    {"pause": 5, 'title': gettext("Protecting Privacy and Security — For Yourself and Your Community")},
+    {"pause": 5, 'title': gettext("Quiz"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
     {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
 )
 
@@ -134,7 +134,7 @@ SATURDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25},
     {"pause": 5, 'title': gettext("Solutions Reviews")},
     {"pause": 15, 'title': gettext("Campaign Automation & Abusing Celery Properly")},
-    {"pause": 5, 'title': gettext("Search Engines with Python and Elasticsearch")},
+    {"pause": 5, 'title': gettext("TBD"), 'duration': 30},
     {"pause": 60, 'title': gettext("Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python")},
     {"pause": 5, 'title': gettext("Pythonic code, by example")},
     {"pause": 15, 'title': gettext("Our DevOps journey, is SRE the next stop?")},
