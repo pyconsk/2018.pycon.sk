@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-19 12:50+0100\n"
+"POT-Creation-Date: 2018-02-20 23:58+0100\n"
 "PO-Revision-Date: 2018-02-20 22:51+0000\n"
 "Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
+"Language: sk\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:40 views.py:18
@@ -29,8 +28,8 @@ msgid ""
 "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-"
 "organized conference for the Python programming language."
 msgstr ""
-"PyCon bude v roku 2018 opäť na Slovensku. PyCon SK je komunitou organizovaná "
-"konferencia zameraná na programovací jazyk Python."
+"PyCon bude v roku 2018 opäť na Slovensku. PyCon SK je komunitou "
+"organizovaná konferencia zameraná na programovací jazyk Python."
 
 #: views.py:59
 msgid "Slovak Republic"
@@ -115,8 +114,8 @@ msgid "Unsafe at Any Speed"
 msgstr "V nebezpečí pri akejkoľvek rýchlosti"
 
 #: views.py:101
-msgid "TBD"
-msgstr ""
+msgid "Protecting Privacy and Security — For Yourself and Your Community"
+msgstr "Ochrana súkromia a bezpečnosť - pre teba a tvoju komunitu"
 
 #: views.py:102
 msgid "The Z Object Database"
@@ -133,8 +132,8 @@ msgid "Vim your Python, Python your Vim"
 msgstr ""
 
 #: views.py:105
-msgid "Protecting Privacy and Security — For Yourself and Your Community"
-msgstr "Ochrana súkromia a bezpečnosť - pre teba a tvoju komunitu"
+msgid "Quiz"
+msgstr ""
 
 #: views.py:106 views.py:146
 msgid "Lightning Talks"
@@ -209,8 +208,8 @@ msgid "Campaign Automation & Abusing Celery Properly"
 msgstr "Automatizácia kampaní a ako správne zneužiť Celery"
 
 #: views.py:137
-msgid "Search Engines with Python and Elasticsearch"
-msgstr "Vyhľadávanie s Pythonom a ElasticSearch"
+msgid "TBD"
+msgstr ""
 
 #: views.py:138
 msgid ""
@@ -236,14 +235,13 @@ msgstr "Údržba spoľahlivej a bezpečnej prevádzky pythonských mikroslužieb
 
 #: views.py:142
 msgid "Designing fast and scalable Python MicroServices with django"
-msgstr ""
-"Dizajnovanie rýchlych a škálovateľných pythonských mikroslužieb v djangu"
+msgstr "Dizajnovanie rýchlych a škálovateľných pythonských mikroslužieb v djangu"
 
 #: views.py:143
 msgid "FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere"
 msgstr ""
-"Faas: rýchlo a zbesilo - od nuly do bezserverovej prevádzky za 60 sekúnd - "
-"kdekoľvek"
+"Faas: rýchlo a zbesilo - od nuly do bezserverovej prevádzky za 60 sekúnd "
+"- kdekoľvek"
 
 #: views.py:144
 msgid "Programming Python as performance: live coding with FoxDot"
@@ -326,7 +324,8 @@ msgid ""
 "How to connect objects with each other in different situations with "
 "Pythonic ways - association, aggregation, composition and etc."
 msgstr ""
-"Ako vzájomne spájať objekty Pythonsky - asociácie, agregácie, kompozície atď."
+"Ako vzájomne spájať objekty Pythonsky - asociácie, agregácie, kompozície "
+"atď."
 
 #: views.py:177
 msgid "Getting started with HDF5 and PyTables"
@@ -345,8 +344,8 @@ msgid ""
 "Real-time transcription and sentiment analysis of audio streams; on the "
 "phone and in the browser"
 msgstr ""
-"Prepis a analýza sentimentu z audio streamov v reálnom čase, v telefóne a v "
-"browseri"
+"Prepis a analýza sentimentu z audio streamov v reálnom čase, v telefóne a"
+" v browseri"
 
 #: views.py:184
 msgid "Learn MongoDB by modeling PyPI in a document database"
@@ -883,8 +882,8 @@ msgid ""
 "We thank all the sponsors, without whom it would not be possible to "
 "organize this amazing conference."
 msgstr ""
-"Ďakujeme všetkým sponzorom, bez ktorých by nebolo možné zorganizovať túto "
-"úžasnú konferenciu."
+"Ďakujeme všetkým sponzorom, bez ktorých by nebolo možné zorganizovať túto"
+" úžasnú konferenciu."
 
 #: templates/hall-of-fame.html:9 templates/sponsoring.html:6
 msgid "Why become a sponsor?"
@@ -904,8 +903,8 @@ msgid ""
 "                  resulting in significant savings."
 msgstr ""
 "Kiwi.com je online cestovná agentúra s prelomovou technológiou\n"
-"                   Virtual Interlining a zameraním sa na výnimočné služby "
-"zákazníkom. Náš kombinačný algoritmus\n"
+"                   Virtual Interlining a zameraním sa na výnimočné služby"
+" zákazníkom. Náš kombinačný algoritmus\n"
 "                  umožňuje zákazníkom kombinovať lety aj s "
 "nespolupracujúcimi linkami do jedného itineráru,\n"
 "                  čo často vedie k významnému šetreniu nákladov."
@@ -927,16 +926,16 @@ msgid ""
 "                  collect, analyze, and act upon customer interactions. "
 "And yes, we're hiring."
 msgstr ""
-"Platforma Exponea pomáha e-predajcom na 5 kontinentoch byť relevantnými pre "
-"svojich zákazníkov.\n"
+"Platforma Exponea pomáha e-predajcom na 5 kontinentoch byť relevantnými "
+"pre svojich zákazníkov.\n"
 "                  Náš medzinárodný tím viac ako 140 profesionálov sa "
 "spolieha na silný backend tím vybavený\n"
 "                  nástrojmi ako Python, C++ a Go, Apache Kafka, MongoDB, "
 "Redis, ElasticSearch, Flask, RabbitMQ, Celery\n"
-"                  a ďalšími technológiami ako sú Docker, Kubernetes, gRPC, "
-"Sentry, Hadoop, a Apache Spark, vďaka ktorým\n"
-"                  pomáhajme našim klientom zbierať, analyzovať a reagovať na "
-"základe zákazníckych interakcií. \n"
+"                  a ďalšími technológiami ako sú Docker, Kubernetes, "
+"gRPC, Sentry, Hadoop, a Apache Spark, vďaka ktorým\n"
+"                  pomáhajme našim klientom zbierať, analyzovať a reagovať"
+" na základe zákazníckych interakcií. \n"
 "                  A áno, prijímame nových členov tímu."
 
 #: templates/hall-of-fame.html:69
@@ -2935,3 +2934,7 @@ msgstr ""
 
 #~ msgid "Call for Proposals"
 #~ msgstr "Prihlásenie prednášok"
+
+#~ msgid "Search Engines with Python and Elasticsearch"
+#~ msgstr "Vyhľadávanie s Pythonom a ElasticSearch"
+
