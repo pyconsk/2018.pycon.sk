@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-21 00:22+0100\n"
+"POT-Creation-Date: 2018-02-21 11:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -206,7 +206,7 @@ msgid "Campaign Automation & Abusing Celery Properly"
 msgstr ""
 
 #: views.py:137
-msgid "TBD"
+msgid "The Truth about Mastering Big Data"
 msgstr ""
 
 #: views.py:138
@@ -320,11 +320,11 @@ msgid ""
 msgstr ""
 
 #: views.py:177
-msgid "Getting started with HDF5 and PyTables"
+msgid "APIs: Gateway to world's data"
 msgstr ""
 
 #: views.py:178
-msgid "The Truth about Mastering Big Data"
+msgid "Getting started with HDF5 and PyTables"
 msgstr ""
 
 #: views.py:179

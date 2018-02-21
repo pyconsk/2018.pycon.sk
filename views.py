@@ -134,7 +134,7 @@ SATURDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25},
     {"pause": 5, 'title': gettext("Solutions Reviews")},
     {"pause": 15, 'title': gettext("Campaign Automation & Abusing Celery Properly")},
-    {"pause": 5, 'title': gettext("TBD"), 'duration': 30},
+    {"pause": 5, 'title': gettext("The Truth about Mastering Big Data")},
     {"pause": 60, 'title': gettext("Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python")},
     {"pause": 5, 'title': gettext("Pythonic code, by example")},
     {"pause": 15, 'title': gettext("Our DevOps journey, is SRE the next stop?")},
@@ -174,8 +174,8 @@ SUNDAY_TRACK1 = (
     {"pause": 15, 'title': gettext("Making Python Behave")},
     {"pause": 5, 'title': gettext("\"Utajené\" informácie o kóde ktorý píšeš"), 'duration': 30},
     {"pause": 60, 'title': gettext("How to connect objects with each other in different situations with Pythonic ways - association, aggregation, composition and etc.")},
-    {"pause": 5, 'title': gettext("Getting started with HDF5 and PyTables")},
-    {"pause": 15, 'title': gettext("The Truth about Mastering Big Data")},
+    {"pause": 5, 'title': gettext("APIs: Gateway to world's data")},
+    {"pause": 15, 'title': gettext("Getting started with HDF5 and PyTables")},
     {"pause": 5, 'title': gettext("Real-time personalized recommendations using embeddings")},
 )
 
