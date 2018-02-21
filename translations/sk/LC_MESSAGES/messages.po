@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-21 11:45+0100\n"
+"POT-Creation-Date: 2018-02-21 11:54+0100\n"
 "PO-Revision-Date: 2018-02-20 22:51+0000\n"
 "Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
 "Language: sk\n"
@@ -1025,30 +1025,36 @@ msgstr ""
 
 #: templates/hall-of-fame.html:195
 msgid ""
-"BBI International is consulting company bridging the knowledge between "
-"business and IT. Our ultimate goal and burning desire is to achieve the "
-"extraordinary level of performance for our customers from the sectors of "
-"banking, insurance, automotive and telecommunication in Central European "
-"countries. Our most valuable competences are Applications Development, "
-"dInternet of Things (IoT), Data Warehousing (DWH) a Collaboration "
-"Management."
+"BBI International is consulting company bridging the knowledge between\n"
+"                  business and IT. Our ultimate goal and burning desire "
+"is to achieve the extraordinary level of\n"
+"                  performance for our customers from the sectors of "
+"banking, insurance, automotive and telecommunication\n"
+"                  in Central European countries. Our most valuable "
+"competences are Applications Development, dInternet\n"
+"                  of Things (IoT), Data Warehousing (DWH) a Collaboration"
+" Management."
 msgstr ""
-"BBI International je poradenská spoločnosť, ktorá prepája oblasti biznisu"
-" a IT. Našou misiou je poskytovať našim zákazníkom špičkové služby v "
-"oblastiach bankovníctva, poisťovníctva, automobilového priemyslu a "
-"telekomunikácií v stredoeurópskych krajinách. Medzi naše najcennejšie "
-"kompetencie patria Applications Development, Internet of Things (IoT), "
-"Data Warehousing (DWH) a Collaboration Management."
 
-#: templates/hall-of-fame.html:205
+#: templates/hall-of-fame.html:209
 msgid "Django Girls Workshop"
 msgstr ""
 
-#: templates/hall-of-fame.html:227
+#: templates/hall-of-fame.html:221
+msgid ""
+"Kjamistan provides data science and machine learning consulting; helping\n"
+"                  tackle topics like data science testing, natural "
+"language processing, workflow automation\n"
+"                  architectures, security in machine learning deployment,"
+" and interpretable machine learning models and\n"
+"                  architecture."
+msgstr ""
+
+#: templates/hall-of-fame.html:234
 msgid "Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:238
+#: templates/hall-of-fame.html:245
 msgid ""
 "JetBrains delivers intelligent software solutions that make developers\n"
 "                  more productive by simplifying their challenging tasks,"
@@ -1063,7 +1069,7 @@ msgid ""
 "professional Python, Web, and Data analysis developers."
 msgstr ""
 
-#: templates/hall-of-fame.html:259
+#: templates/hall-of-fame.html:266
 msgid ""
 "Slido is a technology company that enhances communication and increases\n"
 "                  interaction at events and meetings. Having worked on "
@@ -1074,18 +1080,18 @@ msgid ""
 "Spotify, Lufthansa, BBC and Oracle."
 msgstr ""
 
-#: templates/hall-of-fame.html:277
+#: templates/hall-of-fame.html:284
 msgid ""
 "Learn2Code teaches people how to design and code modern websites and\n"
 "                  application. Learn2Code is the largest online learning "
 "marketplace in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:303
+#: templates/hall-of-fame.html:310
 msgid "Media Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:329
+#: templates/hall-of-fame.html:336
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -1095,11 +1101,11 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:349
+#: templates/hall-of-fame.html:356
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr "Ľudia, ktorí pomáhajú ako dobrovoľníci na PyCon SK 2018."
 
-#: templates/hall-of-fame.html:442
+#: templates/hall-of-fame.html:449
 msgid "People that supported PyCon SK 2018 by purchasing a supporter ticket."
 msgstr ""
 
@@ -2954,4 +2960,29 @@ msgstr ""
 
 #~ msgid "Search Engines with Python and Elasticsearch"
 #~ msgstr "Vyhľadávanie s Pythonom a ElasticSearch"
+
+#~ msgid ""
+#~ "BBI International is consulting company "
+#~ "bridging the knowledge between business "
+#~ "and IT. Our ultimate goal and "
+#~ "burning desire is to achieve the "
+#~ "extraordinary level of performance for "
+#~ "our customers from the sectors of "
+#~ "banking, insurance, automotive and "
+#~ "telecommunication in Central European "
+#~ "countries. Our most valuable competences "
+#~ "are Applications Development, dInternet of "
+#~ "Things (IoT), Data Warehousing (DWH) a"
+#~ " Collaboration Management."
+#~ msgstr ""
+#~ "BBI International je poradenská spoločnosť,"
+#~ " ktorá prepája oblasti biznisu a IT."
+#~ " Našou misiou je poskytovať našim "
+#~ "zákazníkom špičkové služby v oblastiach "
+#~ "bankovníctva, poisťovníctva, automobilového "
+#~ "priemyslu a telekomunikácií v stredoeurópskych"
+#~ " krajinách. Medzi naše najcennejšie "
+#~ "kompetencie patria Applications Development, "
+#~ "Internet of Things (IoT), Data "
+#~ "Warehousing (DWH) a Collaboration Management."
 
