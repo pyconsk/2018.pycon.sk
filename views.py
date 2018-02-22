@@ -475,16 +475,18 @@ def generate_event(track, slot):
     location = '{name} ({number})'.format(**room)
     talk = slot.get('talk')
     summary = talk.get('title', 'N/A')
+    transp = 'OPAQUE'
     if summary == 'Break':
         # skip breaks
         # alternatively we can include breaks into talks (duration=duration+pause)
+        transp = 'TRANSPARENT'
         return ''
     norm_summary = ical_prenormalize(summary)
     start = slot.get('start')
-    duration = talk.get('duration') or 0
-    end = start + timedelta(minutes=duration)
-    exported = created = modified = datetime.now()
-    # TODO FIX DATETIME FORMATTING
+    duration = talk.get('duration', 0)
+    end = timestamp(start + timedelta(minutes=duration))
+    start = timestamp(start)
+    exported = created = modified = timestamp()
     uid = talk.get('event_uuid') or hash_event(track, slot)
     flg = ''
     if 'flag' in talk.keys():
@@ -493,7 +495,6 @@ def generate_event(track, slot):
     norm_description = ical_prenormalize(description)
     status = 'CONFIRMED'
     sequence = 0  # number of revisions, we will use default zero even if event changed
-    transp = 'OPAQUE'
 
     values = {'start': start, 'end': end, 'exported': exported, 'created': created,
               'modified': modified, 'uid': uid, 'location': location, 'sequence': sequence,
@@ -522,6 +523,7 @@ def generate_ics():
     for track in omni_schedule:
         schedule = track.get('schedule')
         for slot in schedule:
+            # TODO check if uid is not already there to avoid duplicate entries = refactor generate_event
             ics_body += generate_event(track, slot)
 
     ics_body += CALENDAR_FOOTER
