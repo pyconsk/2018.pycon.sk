@@ -8,7 +8,9 @@
 {% endblock %}
 
 {% block scripts %}
+{#
   <script src="{{ url_for('static', filename='js/aid.js') }}"></script>
+#}
 {% endblock %}
 
 {% block content %}
@@ -204,7 +206,24 @@
             {{ _('Yes! We have limited amount of tickets for people in need, who would like to join us. If you can\'t not afford to buy a conference ticket, apply for financial aid and get complimentary conference ticket.') }}
           </p>
           <p class="text-center">
-            <label for="modal_aid" class='button'>{{ _('Apply for financial aid.') }}</label>
+            <button disabled class='lead'><strong>{{ _('Financial aid has been closed!') }}</strong></button>
+
+            {# <label for="modal_aid" class='button'>{{ _('Apply for financial aid.') }}</label> #}
+          </p>
+        </div>
+      </div>
+
+      <div class="flex one two-900">
+        <div class="box">
+          <h3>{{ _('Do you have social event in the evening?') }}</h3>
+          <p class="text-justify">
+            {{ _('On Saturday we\'ll have a PARTY! More info about the venue will be published soon.') }}
+          </p>
+        </div>
+        <div class="box">
+          <h3>{{ _('Is my conference ticket valid for the social event?') }}</h3>
+          <p class="text-justify">
+            {{ _('NO. You have to purchase a ticket for the social event. Ticket to social event includes dinner in a form of a buffet and a welcome drink. You pay for all other drinks.') }}
           </p>
         </div>
       </div>
