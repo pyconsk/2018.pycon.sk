@@ -4,7 +4,7 @@
   <div class="content">
     <div class="content-text">
 
-      <h1>{{ _('PyCon SK 2018 Schedule') }} - {% if day %}{{ _(day|capitalize) }}{% endif %}</h1>
+      <h1>{{ _('PyCon SK 2018 Schedule') }}{% if day %} - {{ _(day|capitalize) }}{% endif %}</h1>
       <p class="lead">
         {{ _('Conference schedule might change.') }}
       </p>

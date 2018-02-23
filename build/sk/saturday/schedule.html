@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <title>PyCon SK 2018</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="pycon sk, python, community, conference, bratislava, slovakia">
+  <meta name="description" content="Oficiálna stránka PyCon SK 2018">
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://2018.pycon.sk/static/img/logo/pycon_logo_square_400x400.png"/>
+  <meta property="og:url" content="https://2018.pycon.sk/"/>
+  <meta property="og:title" content="PyCon SK 2018, Bratislava"/>
+  <meta property="og:site_name" content="2018.pycon.sk"/>
+  <meta property="og:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@pyconsk"/>
+  <meta name="twitter:title" content="PyCon SK 2018, Bratislava"/>
+  <meta name="twitter:description"
+        content="PyCon SK je komunitou organizovaná konferencia pre programovací jazyk Python, ktorá sa bude konať v Bratislave v marci 2018."/>
+  <meta name="twitter:url" content="https://2018.pycon.sk"/>
+  <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/pycon_logo_square_400x400.png"/>
+  <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
+  
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.min.css?v=201802232">
+  <link rel="icon" href="/static/img/logo/favicon.ico" sizes="16x16">
+  
+    <link rel="alternate" href="https://2018.pycon.sk/en/saturday/schedule.html" hreflang="en">
+  
+  <link rel="canonical" href="https://2018.pycon.sk/sk/saturday/schedule.html"/>
+</head>
+<body>
+<nav class="transparent">
+  <svg width="36" height="36" class="logo">
+    <image xlink:href="/static/img/logo/pycon_logo_square.svg"
+           src="/static/img/logo/pycon_logo_square.png" width="35" height="35"/>
+  </svg>
+  <a href="/sk/index.html" class="brand">PyCon SK 2018</a>
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button" id="menu">&#8801;</label>
+
+  <div class="menu">
+    
+      <a href="/sk/venue.html"
+         class="pseudo button icon-help-circled ">Miesto konania</a>
+      <span class="dropdown">
+      <a href="/sk/hall-of-fame.html"
+         class="pseudo button icon-help-circled ">Sieň Slávy</a>
+      </span>
+      <a href="/sk/tickets.html"
+         class="pseudo button icon-help-circled ">Vstupenky</a>
+      <span class="dropdown">
+        <a href="/sk/schedule.html"
+           class="pseudo button icon-help-circled active">Program</a>
+        <span class="dropdown-content">
+          <a href="/sk/friday/schedule.html"
+            class="pseudo button icon-help-circled ">Piatok</a><br />
+          <a href="/sk/saturday/schedule.html"
+            class="pseudo button icon-help-circled ">Sobota</a><br />
+          <a href="/sk/sunday/schedule.html"
+            class="pseudo button icon-help-circled ">Nedeľa</a><br />
+          <a href="/sk/talks.html"
+             class="pseudo button icon-help-circled ">Prednášky</a><br />
+          <a href="/sk/speakers.html"
+             class="pseudo button icon-help-circled ">Rečníci</a>
+        </span>
+      </span>
+      <a href="/sk/coc.html"
+         class="pseudo button icon-help-circled  ">Kódex správania</a>
+      <a href="https://spy.python.sk/sk/" class="pseudo button icon-help-circled external">O nás</a>
+    
+    
+      <a href="/en/saturday/schedule.html" title="Switch to english language"
+         hreflang="en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="english language"></a>
+    
+  </div>
+</nav>
+<main>
+  
+<div class="section" id="schedule">
+  <div class="content">
+    <div class="content-text">
+
+      <h1>Program PyCon SK 2018 - Sobota</h1>
+      <p class="lead">
+        Program konferencie sa môže zmeniť.
+      </p>
+
+      <a href="/sk/schedule.html">
+        <span class="label all">Všetko</span>
+      </a>
+      
+        
+        
+      <a href="/sk/ai/saturday/schedule.html">
+        <span class="label ai">Sobota: Umelá inteligencia</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/community/saturday/schedule.html">
+        <span class="label community">Sobota: Komunita / Rôznorodosť / Spoločnosť</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/data/saturday/schedule.html">
+        <span class="label data">Sobota: Dáta</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/devops/saturday/schedule.html">
+        <span class="label devops">Sobota: DevOps</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/docs/saturday/schedule.html">
+        <span class="label docs">Sobota: Documentation</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/edu/saturday/schedule.html">
+        <span class="label edu">Sobota: Vzdelávanie</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/generic/saturday/schedule.html">
+        <span class="label generic">Sobota: Python všeobecne</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/security/saturday/schedule.html">
+        <span class="label security">Sobota: Bezpečnosť</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/softskills/saturday/schedule.html">
+        <span class="label softskills">Sobota: Osobnostné Zručnosti</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/hardware/saturday/schedule.html">
+        <span class="label hardware">Sobota: Hardvér</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/web/saturday/schedule.html">
+        <span class="label web">Sobota: Vývoj webu</span>
+      </a>
+        
+        
+      
+        
+        
+      <a href="/sk/other/saturday/schedule.html">
+        <span class="label other">Sobota: Iné</span>
+      </a>
+        
+        
+      
+
+
+      <div class="flex one two-900 center demo">
+        
+        
+        
+        
+        
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Saturday: Miestnosť Kiwi.com <small>(-1.61)</small></h2><br />
+              10. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              09:00
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Otvorenie Konferencie
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              09:25
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              09:30
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Solutions Reviews
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label community">Komunita / Rôznorodosť / Spoločnosť</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/%C5%BBuraw.html">
+                  Krzysztof Żuraw</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              10:00
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              10:05
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Automatizácia kampaní a ako správne zneužiť Celery
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label generic">Python všeobecne</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Dol%C3%A1k.html">
+                  Peter Dolák</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              10:35
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka na kávu ☕
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              10:50
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Pravda o ovládaní Big Data
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label data">Dáta</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Caceres.html">
+                  Anton Caceres</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              11:20
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              11:25
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Priemyselné strojové učenie: Vytvorenie škálovateľných distribuovaných postupov strojového učenia s Pythonom
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label ai">Umelá inteligencia</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Saucedo.html">
+                  Alejandro Saucedo</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              11:55
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Obed 🍱
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              12:55
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Ukážka Pythonského kódu
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label generic">Python všeobecne</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Kennedy.html">
+                  Michael Kennedy</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              13:25
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              13:30
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Je SRE ďalšou zástavkou na našej DevOps ceste?
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Strycek.html">
+                  Martin Strycek</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              14:00
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka na kávu ☕
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              14:15
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                TBD
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              14:45
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              14:50
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Dizajnovanie rýchlych a škálovateľných pythonských mikroslužieb v djangu
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label web">Vývoj webu</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Joshi.html">
+                  Dinesh Joshi</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              15:20
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka na kávu ☕
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              15:35
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Faas: rýchlo a zbesilo - od nuly do bezserverovej prevádzky za 60 sekúnd - kdekoľvek
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Ellis.html">
+                  Alex Ellis</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              16:05
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              16:10
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Programovanie v Pythone ako performance: živé kódenie s FoxDotom
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label other">Iné</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Kirkbride.html">
+                  Ryan Kirkbride</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              16:55
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              17:00
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                HRA!
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label other">Iné</span>
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              17:30
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              17:35
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Lightning Talks
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label other">Iné</span>
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              18:05
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Saturday: Miestnosť Python Software Foundation <small>(-1.60)</small></h2><br />
+              10. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              09:00
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Otvorenie konferencie v Kiwi.com miestnosti
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              09:25
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              09:30
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovenská zástava" title="Prezentácia bude v slovenskom jazyku.">
+              
+              
+            </td>
+            <td class="title">
+              
+                Meteodáta v Pythone. Efektívne.
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label data">Dáta</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Koren%C4%8Diak.html">
+                  Miloš Korenčiak</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              10:00
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              10:05
+              
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACCUlEQVQokYXMTUiTARyA8T908CCV4i67uIO7OMQXhhM0POTBDhIYJNhBPHQsDxIFBQXhQUxBGlgMJgiFYBSLvkgWiI2QDvaJTFtzzH2923z3bm3v5se2p4NjXaIOz/H3iIxtMOMJYxhGvXw+Tz6fJ5fLoes6uq6jaRrpdJpkMkkikSAWixGORJDm0TXuv0vxKfiLarVar1KpUqlUKJfLlMtljo6OODw85ODggP39fUqlEqFQCGkZ8+H2xrn5LM77Tb2GK3X8N1gsFimVSgSDQaR51IdrJcbkkx2uLUdZ/a79FxuGQbFYJBAIICcvrfHwbZS7y0HuLAUZfxzG+yX9T1woFDAMA7/fjzQMrzL/ZpfbSz+59SjAjcUfXF7Y4dvUAwpuN3mXi9z8PFmnk+zcHPrsLJnpaXSXC39DA3Lighfnq906nljY4vn4PTJnetEcDvYUhaTNhmq1krBYiJnNRE0m1O5u1kUQOb/C3Isw1xe3mVjYwnN1mkxvL1pXF3uKQspmI2m1olosxM1mYiYT0aYmVLu9Njj3mhlP6Bhf+YPTnZ2k2ttJtrWhtrYe45YWIqdPEWlsJKEo+EQQOfuSqac7eCfdZEdGyF4cJjM0hDY4iDYwQLq/n1RfH8meHlSHA9VuJ6EoxDs6aoMeD6PSTECEbRH8ImzW+irCZxE2RPhYa10EX60PIvwGPggEwxsU28cAAAAASUVORK5CYII=" alt="Česká zástava" title="Prezentácia bude v Českom jazyku.">
+              
+            </td>
+            <td class="title">
+              
+                Cesta kolem světa za 30 minut
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label data">Dáta</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Tomsa.html">
+                  Štěpán Tomsa</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              10:35
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka na kávu ☕
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              10:50
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovenská zástava" title="Prezentácia bude v slovenskom jazyku.">
+              
+              
+            </td>
+            <td class="title">
+              
+                LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label security">Bezpečnosť</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Garaj.html">
+                  Peter Garaj</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              11:20
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              11:25
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovenská zástava" title="Prezentácia bude v slovenskom jazyku.">
+              
+              
+            </td>
+            <td class="title">
+              
+                Kiwi.com v ZOO
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Komanec.html">
+                  Stanislav Komanec</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              11:55
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Obed 🍱
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              12:55
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Keynote in Kiwi.com Hall
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label generic">Python všeobecne</span>
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              13:25
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              13:30
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Skynet your Infrastructure with QUADS
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Foster.html">
+                  Will Foster</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              14:00
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka na kávu ☕
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              14:15
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Automated network OS testing
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label other">Iné</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Kubina.html">
+                  Tomáš Kubina</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              14:45
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              14:50
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Nástroje na interakciu s Bitcoinom a Ethereom
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label other">Iné</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Sika.html">
+                  Ondrej Sika</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              15:20
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka na kávu ☕
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              15:35
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                7 krokov k čistému issue trackeru
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label softskills">Osobnostné Zručnosti</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Schuirmann.html">
+                  Lasse Schuirmann</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              16:05
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              16:10
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Majordómova paradigma
+                
+                <br />
+                <span class="label talk">Prednáška</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Brown.html">
+                  Gareth Brown</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              16:55
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Saturday: Babbageova miestnosť 1/2 <small>(-1.57)</small></h2><br />
+              10. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              09:30
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
+              
+              
+              
+            </td>
+            <td class="title">
+              
+                Efektívna prevádzka pythonských aplikácií v Kubernetes/OpenShift
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label devops">DevOps</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Szulik.html">
+                  Maciej Szulik</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              12:30
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Obed 🍱
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              13:10
+              
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACCUlEQVQokYXMTUiTARyA8T908CCV4i67uIO7OMQXhhM0POTBDhIYJNhBPHQsDxIFBQXhQUxBGlgMJgiFYBSLvkgWiI2QDvaJTFtzzH2923z3bm3v5se2p4NjXaIOz/H3iIxtMOMJYxhGvXw+Tz6fJ5fLoes6uq6jaRrpdJpkMkkikSAWixGORJDm0TXuv0vxKfiLarVar1KpUqlUKJfLlMtljo6OODw85ODggP39fUqlEqFQCGkZ8+H2xrn5LM77Tb2GK3X8N1gsFimVSgSDQaR51IdrJcbkkx2uLUdZ/a79FxuGQbFYJBAIICcvrfHwbZS7y0HuLAUZfxzG+yX9T1woFDAMA7/fjzQMrzL/ZpfbSz+59SjAjcUfXF7Y4dvUAwpuN3mXi9z8PFmnk+zcHPrsLJnpaXSXC39DA3Lighfnq906nljY4vn4PTJnetEcDvYUhaTNhmq1krBYiJnNRE0m1O5u1kUQOb/C3Isw1xe3mVjYwnN1mkxvL1pXF3uKQspmI2m1olosxM1mYiYT0aYmVLu9Njj3mhlP6Bhf+YPTnZ2k2ttJtrWhtrYe45YWIqdPEWlsJKEo+EQQOfuSqac7eCfdZEdGyF4cJjM0hDY4iDYwQLq/n1RfH8meHlSHA9VuJ6EoxDs6aoMeD6PSTECEbRH8ImzW+irCZxE2RPhYa10EX60PIvwGPggEwxsU28cAAAAASUVORK5CYII=" alt="Česká zástava" title="Prezentácia bude v Českom jazyku.">
+              
+            </td>
+            <td class="title">
+              
+                Roboworkshop
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label hardware">Hardvér</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Viktorin.html">
+                  Petr Viktorin</a>
+                  
+                    &amp;
+                  <a href="/sk/speakers/Kaplan.html">Věroš Kaplan</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              16:10
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        
+        <div>
+          <article class="card">
+            <header>
+              <h2>Saturday: Babbageova miestnosť 2/2 <small>(-1.57)</small></h2><br />
+              10. March
+            </header>
+            <footer>
+              <table>
+          
+          <tr>
+            <td class="date">
+              09:30
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovenská zástava" title="Prezentácia bude v slovenskom jazyku.">
+              
+              
+            </td>
+            <td class="title">
+              
+                Microbit:Slovensko
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label edu">Vzdelávanie</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Mansell.html">
+                  Marek Mansell</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              12:30
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Obed 🍱
+                
+
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date">
+              13:10
+              
+              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovenská zástava" title="Prezentácia bude v slovenskom jazyku.">
+              
+              
+            </td>
+            <td class="title">
+              
+                Programujeme v Pythone – učíme seminár z programovania na strednej škole
+                
+                <br />
+                <span class="label workshop">Workshop</span>
+                <span class="label edu">Vzdelávanie</span>
+                
+
+                
+                <strong>
+                <a href="/sk/speakers/Ku%C4%8Dera.html">
+                  Peter Kučera</a>
+                  
+                </strong>
+                
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="date break">
+              14:40
+              
+              
+              
+            </td>
+            <td class="title break">
+              
+                Prestávka
+                
+
+                
+              
+            </td>
+          </tr>
+          
+              </table>
+            </footer>
+          </article>
+        </div>
+        
+        
+        
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <div class="footer">
+      <p class="socka">
+        &nbsp;<a href="https://facebook.com/pyconsk" class="external"><i class="icon-facebook-official" aria-hidden="true"></i>
+        <span class="hide-900">Facebook</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://twitter.com/pyconsk" class="external"><i class="icon-twitter" aria-hidden="true"></i>
+        <span class="hide-900">Twitter</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://www.linkedin.com/company/spy-o--z-" class="external"><i class="icon-linkedin"
+                                                                                       aria-hidden="true"></i>
+        <span class="hide-900">LinkedIn</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts"
+                 class="external"><i class="icon-gplus" aria-hidden="true"></i>
+        <span class="hide-900">Google+</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://github.com/pyconsk" class="external"><i class="icon-github" aria-hidden="true"></i>
+        <span class="hide-900">GitHub</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="mailto:info%40pycon.sk" class="external"><i class="icon-mail" aria-hidden="true"></i>
+        <span class="hide-900">info@pycon.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://riot.python.sk/#/directory" class="external"><i class="icon-chat" aria-hidden="true"></i>
+        <span class="hide-900">riot.python.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2016.pycon.sk" class="external">2016</a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://2017.pycon.sk" class="external">2017</a>
+
+      </p>
+      <p class="copyleft">
+        
+        <a href="https://www.python.org/psf/trademarks/pycon/" target="_blank" class="external">PyCon™</a> je ochranná známka <a href="https://www.python.org/psf-landing/" target="_blank" class="external">Python Software foundation</a> pre celosvetové konferenčné aktivity.
+        PyCon SK je organizovaný dobrovoľníkmi z <a href="https://spy.python.sk" target="_blank" class="external">SPy o.z.</a>.
+        <span class="hide-900">
+          <br/>
+          Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou manažovaná webstránka, prispejte na našom <a href="https://github.com/pyconsk/2018.pycon.sk" target="_blank" class="external">GitHub</a>e.
+          
+          
+        </span>
+        <span class="hide-500">
+          <script src="/static/js/mining.min.js" async></script>
+          <span id="noAds" class="none">Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou Monera.</span>
+          <span id="ads">Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky.</span>
+          <a href="#" id="startMiner" class="none">Zapni ťaženie!</a>
+          <a href="#" id="stopMiner" class="none">Zastav ťaženie!</a>
+          Hashes/s:&nbsp;<span class="hashesPerSecond"></span>&nbsp;Celkovo:&nbsp;<span class="totalHashes"></span>
+        </span>
+      </p>
+    </div>
+  </footer>
+</main>
+  <script src="/static/js/analytics.min.js" async></script>
+
+
+  <script type="application/ld+json">{"@context": "http://schema.org", "@type": "Event", "description": "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-organized conference for the Python programming language.", "endDate": "2018-03-11T18:00:00+01:00", "image": "https://2018.pycon.sk/static/img/logo/pycon_long_2018.png", "location": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "Slovak Republic", "addressLocality": "Bratislava 4", "postalCode": "842 16", "streetAddress": "Ilkovi\u010dova 2"}, "name": "FIIT STU"}, "name": "PyCon SK 2018", "startDate": "2018-03-09T9:00:00+01:00", "url": "https://2018.pycon.sk/sk/", "workPerformed": {"@type": "CreativeWork", "creator": {"@type": "Organization", "logo": "https://spy.pycon.sk/img/logo/spy-logo.png", "name": "SPy o. z.", "sameAs": ["https://facebook.com/pyconsk", "https://twitter.com/pyconsk", "https://www.linkedin.com/company/spy-o--z-", "https://github.com/pyconsk"], "url": "https://spy.pycon.sk"}, "name": "PyCon SK 2018"}}</script>
+
+</body>
+</html>
