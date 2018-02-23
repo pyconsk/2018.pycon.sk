@@ -1,7 +1,7 @@
 PyCon SK 2018 Website
 #####################
 
-.. image:: https://preklady.python.sk/widgets/pycon-sk-2018-website/sk/github/svg-badge.svg
+.. image:: https://preklady.python.sk/widgets/pycon-sk-2018-website/sk/github/svg-badge.svg?native=1
     :alt: Translation status
     :target: https://preklady.python.sk/engage/pycon-sk-2018-website/sk/?utm_source=widget
 
