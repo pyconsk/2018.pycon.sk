@@ -479,7 +479,6 @@ def generate_event(track, slot):
     if summary == 'Break':
         # skip breaks
         # alternatively we can include breaks into talks (duration=duration+pause)
-        transp = 'TRANSPARENT'
         return ''
     norm_summary = ical_prenormalize(summary)
     start = slot.get('start')
@@ -487,7 +486,9 @@ def generate_event(track, slot):
     end = timestamp(start + timedelta(minutes=duration))
     start = timestamp(start)
     exported = created = modified = timestamp()
-    uid = talk.get('event_uuid') or hash_event(track, slot)
+    # event_uuid caused the event not to be imported to calendar
+    # this creates hash of name:start and split with dashes by 5
+    uid = hash_event(track, slot)
     flg = ''
     if 'flag' in talk.keys():
         flg = '[TAG:{flag}] '.format(**talk)
