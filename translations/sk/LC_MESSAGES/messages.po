@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-02-23 09:21+0100\n"
-"PO-Revision-Date: 2018-02-20 22:51+0000\n"
+"PO-Revision-Date: 2018-02-23 19:06+0000\n"
 "Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
-"Language: sk\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:40 views.py:18
@@ -57,7 +58,7 @@ msgstr "Dáta"
 
 #: views.py:80
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentácia"
 
 #: templates/cfp.html:50 views.py:81
 msgid "Education"
@@ -96,6 +97,7 @@ msgid ""
 "When your wetware has too many threads - Tips from an ADHDer on how to "
 "improve your focus"
 msgstr ""
+"Keď váš mozog má príliš veľa threadov - tipy od ADHD ako zvýšiť koncentráciu"
 
 #: views.py:97
 msgid "Docs or it didn't happen"
@@ -126,6 +128,8 @@ msgid ""
 "Differentiable programming in Python and Gluon for (not only medical) "
 "image analysis"
 msgstr ""
+"Diferencovateľné programovanie v Pythone a Gluone na analýzy (nielen "
+"medicínskych) obrázkov"
 
 #: views.py:104
 msgid "Vim your Python, Python your Vim"
@@ -133,7 +137,7 @@ msgstr ""
 
 #: views.py:105
 msgid "Quiz"
-msgstr ""
+msgstr "Kvíz"
 
 #: views.py:106 views.py:146
 msgid "Lightning Talks"
@@ -173,7 +177,7 @@ msgstr ""
 
 #: views.py:118
 msgid "EDU Talks"
-msgstr ""
+msgstr "EDU Prednášky"
 
 #: views.py:119
 msgid "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
@@ -189,7 +193,7 @@ msgstr ""
 
 #: views.py:125
 msgid "Managing high-available applications in production"
-msgstr ""
+msgstr "Spravovanie vysoko-dostupných aplikácii v produkcii"
 
 #: views.py:129
 msgid "Základy Ansible Workshop"
@@ -327,7 +331,7 @@ msgstr ""
 
 #: views.py:177
 msgid "APIs: Gateway to world's data"
-msgstr ""
+msgstr "API: Brána do sveta dát"
 
 #: views.py:178
 msgid "Getting started with HDF5 and PyTables"
@@ -363,7 +367,7 @@ msgstr ""
 
 #: views.py:194
 msgid "Basics of OpenFaaS with Python"
-msgstr ""
+msgstr "Základy OpenFaas v Pythone"
 
 #: views.py:198
 msgid "Django Girls"
@@ -945,10 +949,18 @@ msgid ""
 "Python programmers, and hosts the North American\n"
 "                  PyCon conference as its flagship annual event."
 msgstr ""
+"The Python Software Foundation - Nadácia Python Softvéru je nezisková "
+"organizácia zameraná\n"
+"                  na podporu a rozvoj jazyka Python. PSF podpruje a "
+"povzbudzuje Python eventy na celom svete, aby tak\n"
+"                  dosiahla svoj cieľ rozširovania medzinárodnej komunity "
+"Python programátorov, zároveň je tiež\n"
+"                  organizátorom svojej vlajkovej lode - kažodoročnej "
+"severoamerickej PyCon konferencie."
 
 #: templates/hall-of-fame.html:82
 msgid "Gold"
-msgstr ""
+msgstr "Zlato"
 
 #: templates/hall-of-fame.html:94
 msgid ""
@@ -967,6 +979,21 @@ msgid ""
 "that save lives. Kistler helps to shape a better\n"
 "                  future."
 msgstr ""
+"The Kistler Group je Švajčiarska technologická spoločnosť a globálny líder v "
+"technológii \n"
+"                  dynamických meraní. Vyvíjame a vyrábame senzory, "
+"elektroniku a softvér, ktoré podporujeme\n"
+"                  širokým spektrom služieb. V Bratislave vyvíjame softvér "
+"pre ďalšie generácie IoT zariadení.\n"
+"                  S naším softvérom pomáhame zákazníkom vyrábať produkty s "
+"vyššou kvalitou, vyvíjať\n"
+"                  čistejšie autá a zlepšovať dopravu. Za naším úspechom je "
+"nadšenie pre technológie,\n"
+"                  zameranie na inovácie a pracovné prostredie, ktoré "
+"podporuje spoluprácu a tímovú hru. \n"
+"                  Vyvíjame vozidlá, ktorým ľudia môžu veriť, vytvárame "
+"meracie systémy, ktoré zachraňujú životy. \n"
+"                  Kistler pomáha budovať lepšiu budúcnosť."
 
 #: templates/hall-of-fame.html:116
 msgid ""
@@ -3038,4 +3065,3 @@ msgstr ""
 
 #~ msgid "Apply for financial aid."
 #~ msgstr "Požiadajte o finančnú pomoc."
-
