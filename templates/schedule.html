@@ -4,7 +4,7 @@
   <div class="content">
     <div class="content-text">
 
-      <h1>{{ _('PyCon SK 2018 Schedule') }}</h1>
+      <h1>{{ _('PyCon SK 2018 Schedule') }} - {% if day %}{{ _(day|capitalize) }}{% endif %}</h1>
       <p class="lead">
         {{ _('Conference schedule might change.') }}
       </p>
@@ -12,15 +12,24 @@
       <a href="{{ url_for('schedule', lang_code=lang_code) }}">
         <span class="label all">{{ _('All') }}</span>
       </a>
-      {% for tag in tags %}{% if tag not in ('talk', 'workshop') %}
-      <a href="{{ url_for('schedule_filter', lang_code=lang_code, flag=tag) }}">
+      {% for tag in tags %}
+        {% if tag not in ('talk', 'workshop') %}
+        {% if day %}
+      <a href="{{ url_for('schedule_day_filter', lang_code=lang_code, flag=tag, day=day) }}">
+        <span class="label {{ tag }}">{{ _(day|capitalize) }}: {{ _(tags[tag]) }}</span>
+      </a>
+        {% else %}
+      <a href="{{ url_for('schedule_filter', lang_code=lang_code, filter=tag) }}">
         <span class="label {{ tag }}">{{ _(tags[tag]) }}</span>
       </a>
-      {% endif %}{% endfor %}
+        {% endif %}
+        {% endif %}
+      {% endfor %}
 
 
       <div class="flex one two-900 center demo">
-        {% for track in schedule %}{% if track['schedule'] %}
+        {% for track in schedule %}
+        {% if track['schedule'] and (not day or track['day'] == day) %}
         <div>
           <article class="card">
             <header>

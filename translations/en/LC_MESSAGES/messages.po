@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-23 09:21+0100\n"
+"POT-Creation-Date: 2018-02-23 20:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -416,84 +416,96 @@ msgstr ""
 msgid "Tickets"
 msgstr ""
 
-#: templates/body.html:57 templates/body.html:60
+#: templates/body.html:57
 msgid "Schedule"
 msgstr ""
 
-#: templates/body.html:62 templates/cfp.html:496
-msgid "Talks"
+#: templates/body.html:60
+msgid "Friday"
+msgstr ""
+
+#: templates/body.html:62
+msgid "Saturday"
 msgstr ""
 
 #: templates/body.html:64
+msgid "Sunday"
+msgstr ""
+
+#: templates/body.html:66 templates/cfp.html:496
+msgid "Talks"
+msgstr ""
+
+#: templates/body.html:68
 msgid "Speakers"
 msgstr ""
 
-#: templates/body.html:68 templates/coc.html:6
+#: templates/body.html:72 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/body.html:69
+#: templates/body.html:73
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:108
+#: templates/body.html:112
 msgid "2016"
 msgstr ""
 
-#: templates/body.html:110
+#: templates/body.html:114
 msgid "2017"
 msgstr ""
 
-#: templates/body.html:115
+#: templates/body.html:119
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
 " the %(psf)s."
 msgstr ""
 
-#: templates/body.html:117
+#: templates/body.html:121
 msgid "Python Software foundation"
 msgstr ""
 
-#: templates/body.html:118
+#: templates/body.html:122
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:123
 msgid "SPy o.z."
 msgstr ""
 
-#: templates/body.html:122
+#: templates/body.html:126
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
 " contribute at our %(github)s."
 msgstr ""
 
-#: templates/body.html:129
+#: templates/body.html:133
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "mining Monero."
 msgstr ""
 
-#: templates/body.html:130
+#: templates/body.html:134
 msgid "You can support us by mining Monero while browsing this site."
 msgstr ""
 
-#: templates/body.html:131
+#: templates/body.html:135
 msgid "Start mining!"
 msgstr ""
 
-#: templates/body.html:132
+#: templates/body.html:136
 msgid "Stop mining!"
 msgstr ""
 
-#: templates/body.html:133
+#: templates/body.html:137
 msgid "Hashes/s"
 msgstr ""
 
-#: templates/body.html:133
+#: templates/body.html:137
 msgid "Total"
 msgstr ""
 
@@ -1185,27 +1197,27 @@ msgstr ""
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
 
-#: templates/profile.html:44 templates/schedule.html:37 templates/talks.html:26
+#: templates/profile.html:44 templates/schedule.html:46 templates/talks.html:26
 msgid "English flag"
 msgstr ""
 
-#: templates/profile.html:44 templates/schedule.html:37 templates/talks.html:26
+#: templates/profile.html:44 templates/schedule.html:46 templates/talks.html:26
 msgid "Presentation will be in English language."
 msgstr ""
 
-#: templates/profile.html:47 templates/schedule.html:40 templates/talks.html:29
+#: templates/profile.html:47 templates/schedule.html:49 templates/talks.html:29
 msgid "Slovak flag"
 msgstr ""
 
-#: templates/profile.html:47 templates/schedule.html:40 templates/talks.html:29
+#: templates/profile.html:47 templates/schedule.html:49 templates/talks.html:29
 msgid "Presentation will be in Slovak language"
 msgstr ""
 
-#: templates/profile.html:50 templates/schedule.html:43 templates/talks.html:32
+#: templates/profile.html:50 templates/schedule.html:52 templates/talks.html:32
 msgid "Czech flag"
 msgstr ""
 
-#: templates/profile.html:50 templates/schedule.html:43 templates/talks.html:32
+#: templates/profile.html:50 templates/schedule.html:52 templates/talks.html:32
 msgid "Presentation will be in Czech language"
 msgstr ""
 

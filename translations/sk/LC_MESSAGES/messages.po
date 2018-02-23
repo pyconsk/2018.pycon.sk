@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-23 09:21+0100\n"
+"POT-Creation-Date: 2018-02-23 20:10+0100\n"
 "PO-Revision-Date: 2018-02-20 22:51+0000\n"
 "Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
 "Language: sk\n"
@@ -429,35 +429,47 @@ msgstr "Sieň Slávy"
 msgid "Tickets"
 msgstr "Vstupenky"
 
-#: templates/body.html:57 templates/body.html:60
+#: templates/body.html:57
 msgid "Schedule"
 msgstr "Program"
 
-#: templates/body.html:62 templates/cfp.html:496
+#: templates/body.html:60
+msgid "Friday"
+msgstr "Piatok"
+
+#: templates/body.html:62
+msgid "Saturday"
+msgstr "Sobota"
+
+#: templates/body.html:64
+msgid "Sunday"
+msgstr "Nedeľa"
+
+#: templates/body.html:66 templates/cfp.html:496
 msgid "Talks"
 msgstr "Prednášky"
 
-#: templates/body.html:64
+#: templates/body.html:68
 msgid "Speakers"
 msgstr "Rečníci"
 
-#: templates/body.html:68 templates/coc.html:6
+#: templates/body.html:72 templates/coc.html:6
 msgid "Code of Conduct"
 msgstr "Kódex správania"
 
-#: templates/body.html:69
+#: templates/body.html:73
 msgid "About Us"
 msgstr "O nás"
 
-#: templates/body.html:108
+#: templates/body.html:112
 msgid "2016"
 msgstr "2016"
 
-#: templates/body.html:110
+#: templates/body.html:114
 msgid "2017"
 msgstr "2017"
 
-#: templates/body.html:115
+#: templates/body.html:119
 #, python-format
 msgid ""
 "%(pycontm)s is a trademark for worldwide conference activities claimed by"
@@ -466,20 +478,20 @@ msgstr ""
 "%(pycontm)s je ochranná známka %(psf)s pre celosvetové konferenčné "
 "aktivity."
 
-#: templates/body.html:117
+#: templates/body.html:121
 msgid "Python Software foundation"
 msgstr "Python Software foundation"
 
-#: templates/body.html:118
+#: templates/body.html:122
 #, python-format
 msgid "PyCon SK is organized by volunteers from %(spy)s."
 msgstr "PyCon SK je organizovaný dobrovoľníkmi z %(spy)s."
 
-#: templates/body.html:119
+#: templates/body.html:123
 msgid "SPy o.z."
 msgstr "SPy o.z."
 
-#: templates/body.html:122
+#: templates/body.html:126
 #, python-format
 msgid ""
 "Found a bug? Missing some information? This is community managed website,"
@@ -488,7 +500,7 @@ msgstr ""
 "Našli ste chybu? Chýba Vám nejaká informácia? Toto je komunitou "
 "manažovaná webstránka, prispejte na našom %(github)se."
 
-#: templates/body.html:129
+#: templates/body.html:133
 msgid ""
 "Please disable ad blocker and refresh. You can support us by temporarily "
 "mining Monero."
@@ -496,23 +508,23 @@ msgstr ""
 "Prosím vypnite si blokovač reklamy. Môžete nás podporiť dočasnou ťažbou "
 "Monera."
 
-#: templates/body.html:130
+#: templates/body.html:134
 msgid "You can support us by mining Monero while browsing this site."
 msgstr "Môžete nás podporiť ťažbou Monera počas prehliadania tejto stránky."
 
-#: templates/body.html:131
+#: templates/body.html:135
 msgid "Start mining!"
 msgstr "Zapni ťaženie!"
 
-#: templates/body.html:132
+#: templates/body.html:136
 msgid "Stop mining!"
 msgstr "Zastav ťaženie!"
 
-#: templates/body.html:133
+#: templates/body.html:137
 msgid "Hashes/s"
 msgstr "Hashes/s"
 
-#: templates/body.html:133
+#: templates/body.html:137
 msgid "Total"
 msgstr "Celkovo"
 
@@ -1330,27 +1342,27 @@ msgstr ""
 "Ak máte chuť, prispejte na našom %(github)se a pridajte sa tak ku "
 "komunite priaznivcov jazyka Python."
 
-#: templates/profile.html:44 templates/schedule.html:37 templates/talks.html:26
+#: templates/profile.html:44 templates/schedule.html:46 templates/talks.html:26
 msgid "English flag"
 msgstr "Anglická zástava"
 
-#: templates/profile.html:44 templates/schedule.html:37 templates/talks.html:26
+#: templates/profile.html:44 templates/schedule.html:46 templates/talks.html:26
 msgid "Presentation will be in English language."
 msgstr "Prezentácia bude v anglickom jazyku."
 
-#: templates/profile.html:47 templates/schedule.html:40 templates/talks.html:29
+#: templates/profile.html:47 templates/schedule.html:49 templates/talks.html:29
 msgid "Slovak flag"
 msgstr "Slovenská zástava"
 
-#: templates/profile.html:47 templates/schedule.html:40 templates/talks.html:29
+#: templates/profile.html:47 templates/schedule.html:49 templates/talks.html:29
 msgid "Presentation will be in Slovak language"
 msgstr "Prezentácia bude v slovenskom jazyku."
 
-#: templates/profile.html:50 templates/schedule.html:43 templates/talks.html:32
+#: templates/profile.html:50 templates/schedule.html:52 templates/talks.html:32
 msgid "Czech flag"
 msgstr "Česká zástava"
 
-#: templates/profile.html:50 templates/schedule.html:43 templates/talks.html:32
+#: templates/profile.html:50 templates/schedule.html:52 templates/talks.html:32
 msgid "Presentation will be in Czech language"
 msgstr "Prezentácia bude v Českom jazyku."
 
