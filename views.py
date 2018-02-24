@@ -18,7 +18,6 @@ babel = Babel(app)
 EVENT = gettext('PyCon SK 2018')
 DOMAIN = 'https://2018.pycon.sk'
 API_DOMAIN = 'https://api.pycon.sk'
-ICAL_LEN = 75  # length of a calendar (ical) line
 
 LANGS = ('en', 'sk')
 TIME_FORMAT = '%Y-%m-%dT%H:%M:%S+00:00'
@@ -67,6 +66,10 @@ LDJSON_PYCON = {
         "creator": LDJSON_SPY
     }
 }
+
+# calendar settings
+ICAL_LEN = 75  # length of a calendar (ical) line
+IGNORE_TALKS = ['Break', 'Coffee Break']
 
 TYPE = {
     'talk': gettext('Talk'),
@@ -426,11 +429,11 @@ def timestamp(dt=None):
     return dt.strftime(fmt)
 
 
-def is_break(title):
+def ignore_talk(title, names=IGNORE_TALKS):
     # yes, we can paste unicode symbols, but if we change the symbol this test will still work
     max_appended_symbols = 2
-    keywords = ['Break', 'Coffee Break', 'Lunch']
-    return any((title == key or title[:-(app+1)] == key) for app in range(max_appended_symbols) for key in keywords)
+    return any((title == name or title[:-(_len+1)] == name)
+               for _len in range(max_appended_symbols) for name in names)
 
 
 def hash_event(track, slot):
@@ -438,9 +441,6 @@ def hash_event(track, slot):
     name = room.get('name')
     ts = timestamp(slot.get('start'))
     talk = slot.get('talk')
-    if talk and is_break(talk.get('title')):
-        name = EVENT
-    # todo handle coffee breaks so that only one for all tracks is generated (or left out at all)
     _hash = str(hash('{name}:{ts}'.format(name=name, ts=ts)))
     _hash = _hash.replace('-', '*')
     return '-'.join(_hash[i*5:(i+1)*5] for i in range(4))
@@ -486,13 +486,14 @@ def generate_event(track, slot):
     talk = slot.get('talk')
     summary = talk.get('title', 'N/A')
     transp = 'OPAQUE'
-    if is_break(summary):
+    if ignore_talk(summary):
         # skip breaks
         # alternatively we can include breaks into talks (duration=duration+pause)
         return {}
     summary = normalize(summary, 'SUMMARY')
     start = slot.get('start')
     duration = talk.get('duration', 0)
+    # TODO add missing duration handling (nonzero default duration? title based dictionary?
     dtend = timestamp(start + timedelta(minutes=duration))
     dtstart = timestamp(start)
     dtstamp = created = modified = timestamp()
