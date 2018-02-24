@@ -3155,64 +3155,60 @@ nav {
 }
 
 .lightgreen1 {
-  color: #90ffae;
+  color: #00ffaa;
 }
 
 .lightgreen2 {
-  color: #90ffbd;
+  color: #00ffba;
 }
 
 .skyblue {
-  color: #82dcfd;
+  color: #33ddff;
 }
 
 .red, .active.button, a {
-  color: #da002d;
+  color: #ff002b;
 }
 
 .reddish {
-  color: #dd4d46;
+  color: #ff4c44;
 }
 
 .gold, .pseudo.button:hover {
-  color: #f1ca6c;
+  color: #ffcc66;
+}
+
+.gold2 {
+  /* color: #ebc444; */
+  color: #e1ba45;
+}
+
+.lightgreen_skyblue {
+  background-image: -webkit-linear-gradient(to right, #00ffaa, #33ddff);
+  background-image: -moz-linear-gradient(to right, #00ffaa, #33ddff);
+  background-image: -ms-linear-gradient(to right, #00ffaa, #33ddff);
+  background-image: -o-linear-gradient(to right, #00ffaa, #33ddff);
+  background-image: linear-gradient(to right, #00ffaa, #33ddff);
+  color: transparent;
+  -webkit-background-clip: text;
+  /*noinspection CssInvalidPropertyValue*/
+  background-clip: text;
+}
+
+.gold_red, a:hover {
+  background-image: -webkit-linear-gradient(to right, #ffcc66, #ff002b);
+  background-image: -moz-linear-gradient(to right, #ffcc66, #ff002b);
+  background-image: -ms-linear-gradient(to right, #ffcc66, #ff002b);
+  background-image: -o-linear-gradient(to right, #ffcc66, #ff002b);
+  background-image: linear-gradient(to right, #ffcc66, #ff002b);
+  color: transparent;
+  -webkit-background-clip: text;
+  /*noinspection CssInvalidPropertyValue*/
+  background-clip: text;
 }
 
 .pseudo.button:hover {
   box-shadow: inset 0 0 0 99em rgba(17, 17, 17, 0.5);
-}
-
-.gold_red, a:hover {
-  background-image: -webkit-linear-gradient(to right, #f1ca6c, #da002d);
-  background-image: -moz-linear-gradient(to right, #f1ca6c, #da002d);
-  background-image: -ms-linear-gradient(to right, #f1ca6c, #da002d);
-  background-image: -o-linear-gradient(to right, #f1ca6c, #da002d);
-  background-image: linear-gradient(to right, #f1ca6c, #da002d);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.red_gold {
-  background-image: -webkit-linear-gradient(to right, #da002d, #f1ca6c);
-  background-image: -moz-linear-gradient(to right, #da002d, #f1ca6c);
-  background-image: -ms-linear-gradient(to right, #da002d, #f1ca6c);
-  background-image: -o-linear-gradient(to right, #da002d, #f1ca6c);
-  background-image: linear-gradient(to right, #da002d, #f1ca6c);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.lightgreen_skyblue {
-  background-image: -webkit-linear-gradient(to right, #90ffbd, #82dcfd);
-  background-image: -moz-linear-gradient(to right, #90ffbd, #82dcfd);
-  background-image: -ms-linear-gradient(to right, #90ffbd, #82dcfd);
-  background-image: -o-linear-gradient(to right, #90ffbd, #82dcfd);
-  background-image: linear-gradient(to right, #90ffbd, #82dcfd);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .box {

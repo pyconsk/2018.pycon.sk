@@ -142,7 +142,7 @@ SATURDAY_TRACK1 = (
     {"pause": 60, 'title': gettext("Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python")},
     {"pause": 5, 'title': gettext("Pythonic code, by example")},
     {"pause": 15, 'title': gettext("Our DevOps journey, is SRE the next stop?")},
-    {"pause": 5, 'title': gettext("Maintaining reliable and secure continuous delivery for python microservices")},
+    {"pause": 5, 'title': gettext("TBD"), 'duration': 30},
     {"pause": 15, 'title': gettext("Designing fast and scalable Python MicroServices with django")},
     {"pause": 5, 'title': gettext("FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere")},
     {"pause": 5, 'title': gettext("Programming Python as performance: live coding with FoxDot")},
@@ -358,66 +358,79 @@ def generate_schedule(api_data, flag=None):
             'room': AULA1,
             'start': FRIDAY_START,
             'schedule': generate_track(api_data, FRIDAY_TRACK1, FRIDAY_START, flag=flag),
+            'day': 'friday'
         },
         {
             'room': AULA2,
             'start': FRIDAY_START,
             'schedule': generate_track(api_data, FRIDAY_TRACK2, FRIDAY_START, flag=flag),
+            'day': 'friday'
         },
         {
             'room': AULA3,
             'start': FRIDAY_START,
             'schedule': generate_track(api_data, FRIDAY_WORKSHOPS1, FRIDAY_START+timedelta(minutes=30), flag=flag),
+            'day': 'friday'
         },
         {
             'room': AULA4,
             'start': FRIDAY_START,
             'schedule': generate_track(api_data, FRIDAY_WORKSHOPS2, FRIDAY_START+timedelta(minutes=30), flag=flag),
+            'day': 'friday'
         },
         {
             'room': AULA1,
             'start': SATURDAY_START,
             'schedule': generate_track(api_data, SATURDAY_TRACK1, SATURDAY_START, flag=flag),
+            'day': 'saturday'
         },
         {
             'room': AULA2,
             'start': SATURDAY_START,
             'schedule': generate_track(api_data, SATURDAY_TRACK2, SATURDAY_START, flag=flag),
+            'day': 'saturday'
         },
         {
             'room': AULA3,
             'start': SATURDAY_START,
             'schedule': generate_track(api_data, SATURDAY_WORKSHOPS1, SATURDAY_START+timedelta(minutes=30), flag=flag),
+            'day': 'saturday'
         },
         {
             'room': AULA4,
             'start': SATURDAY_START,
             'schedule': generate_track(api_data, SATURDAY_WORKSHOPS2, SATURDAY_START+timedelta(minutes=30), flag=flag),
+            'day': 'saturday'
         },
         {
             'room': AULA1,
             'start': SUNDAY_START,
             'schedule': generate_track(api_data, SUNDAY_TRACK1, SUNDAY_START, flag=flag),
+            'day': 'sunday'
         },
         {
             'room': AULA2,
             'start': SUNDAY_START,
             'schedule': generate_track(api_data, SUNDAY_WORKSHOPS1, SUNDAY_START, flag=flag),
+            'day': 'sunday'
         },
         {
             'room': AULA3,
             'start': SUNDAY_START,
             'schedule': generate_track(api_data, SUNDAY_WORKSHOPS2, SUNDAY_START, flag=flag),
+            'day': 'sunday'
         },
         {
             'room': AULA4,
             'start': SUNDAY_START,
             'schedule': generate_track(api_data, SUNDAY_WORKSHOPS3, SUNDAY_START, flag=flag),
+            'day': 'sunday'
         },
         {
             'room': AULA5,
             'start': SUNDAY_START,
             'schedule': generate_track(api_data, SUNDAY_WORKSHOPS4, SUNDAY_START-timedelta(minutes=90), flag=flag),
+            'day': 'sunday'
         },
     ]
 
@@ -556,14 +569,31 @@ def tickets():
     return render_template('tickets.html', **_get_template_variables(li_tickets='active'))
 
 
-@app.route('/<lang_code>/<flag>/schedule.html')
-def schedule_filter(flag):
+@app.route('/<lang_code>/<flag>/<day>/schedule.html')
+def schedule_day_filter(flag, day):
     variables = _get_template_variables(li_schedule_nav='active', li_schedule='active')
     variables['flag'] = flag
+    variables['day'] = day
     variables['tags'] = TAGS
     variables['all'] = {**TYPE, **TAGS}
     variables['data'] = api_data = API_DATA_TALKS
     variables['schedule'] = generate_schedule(api_data, flag=flag)
+
+    return render_template('schedule.html', **variables)
+
+
+@app.route('/<lang_code>/<filter>/schedule.html')
+def schedule_filter(filter):
+    variables = _get_template_variables(li_schedule_nav='active', li_schedule='active')
+    if filter in ('friday', 'saturday', 'sunday'):
+        variables['day'] = filter
+        variables['flag'] = None
+    else:
+        variables['flag'] = filter
+    variables['tags'] = TAGS
+    variables['all'] = {**TYPE, **TAGS}
+    variables['data'] = api_data = API_DATA_TALKS
+    variables['schedule'] = generate_schedule(api_data, flag=variables['flag'])
 
     return render_template('schedule.html', **variables)
 

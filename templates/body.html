@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="https://2018.pycon.sk/static/img/logo/pycon_logo_square_400x400.png"/>
   <meta name="google-site-verification" content="W8iyFASCV4ptNkWc9_EEu-uRuQ5UBtH1ulvKndInaJM"/>
   {% block header %}{% endblock %}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.min.css') }}?v=20180219">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.min.css') }}?v=201802232">
   <link rel="icon" href="{{ url_for('static', filename='img/logo/favicon.ico') }}" sizes="16x16">
   {% if lang_code == 'sk' %}
     <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/en', 1) }}" hreflang="en">
@@ -56,10 +56,14 @@
         <a href="{{ url_for('schedule', lang_code=lang_code) }}"
            class="pseudo button icon-help-circled {{ li_schedule_nav }}">{{ _('Schedule') }}</a>
         <span class="dropdown-content">
-          <a href="{{ url_for('schedule', lang_code=lang_code) }}"
-            class="pseudo button icon-help-circled {{ li_schedule }}">{{ _('Schedule') }}</a>
+          <a href="{{ url_for('schedule_filter', lang_code=lang_code, filter='friday') }}"
+            class="pseudo button icon-help-circled {{ li_friday }}">{{ _('Friday') }}</a><br />
+          <a href="{{ url_for('schedule_filter', lang_code=lang_code, filter='saturday') }}"
+            class="pseudo button icon-help-circled {{ li_saturday }}">{{ _('Saturday') }}</a><br />
+          <a href="{{ url_for('schedule_filter', lang_code=lang_code, filter='sunday') }}"
+            class="pseudo button icon-help-circled {{ li_sunday }}">{{ _('Sunday') }}</a><br />
           <a href="{{ url_for('talks', lang_code=lang_code) }}"
-             class="pseudo button icon-help-circled {{ li_talks }}">{{ _('Talks') }}</a>
+             class="pseudo button icon-help-circled {{ li_talks }}">{{ _('Talks') }}</a><br />
           <a href="{{ url_for('speakers', lang_code=lang_code) }}"
              class="pseudo button icon-help-circled {{ li_speakers }}">{{ _('Speakers') }}</a>
         </span>
