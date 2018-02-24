@@ -5,9 +5,18 @@
     <div class="content-text">
 
       <h1>{{ _('PyCon SK 2018 Schedule') }}</h1>
-      <p class="lead">
-        {{ _('Conference schedule might change.') }}
-      </p>
+      <div class="flex one two-900 demo">
+        <div>
+          <p class="lead">
+            {{ _('Conference schedule might change.') }}
+          </p>
+        </div>
+        <div>
+          <p>
+            Get event calendar: <a href="calendar.ics">pyconsk.ics</a>
+          </p>
+        </div>
+      </div>
 
       <a href="{{ url_for('schedule', lang_code=lang_code) }}">
         <span class="label all">{{ _('All') }}</span>
