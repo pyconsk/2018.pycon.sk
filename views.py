@@ -116,7 +116,7 @@ FRIDAY_TRACK2 = (
     {"pause": 15, 'title': gettext("Ako sa pasujeme s Pythonom v Martine?")},
     {"pause": 5, 'title': gettext("Prečo hardvér priťahuje k informatike žiakov i dospelých")},
     {"pause": 15, 'title': gettext("EDU Talks"), 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
-    {"pause": 15, 'title': gettext("Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"), 'duration': 65, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
+    {"pause": 15, 'title': gettext("Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?")},
 )
 
 FRIDAY_WORKSHOPS1 = (
