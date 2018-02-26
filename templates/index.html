@@ -20,8 +20,13 @@
 
       <h2>{{ _('News') }}</h2>
       <p class="lead">
-        <small>15.2.2018:</small>
-        {{ _('Conference schedule has been published.') }}
+        <small>26.2.2018:</small>
+        {{ _('Calendar with conference schedule.') }}
+      </p>
+      <p class="text-justify">
+        {{ _('You can import conference schedule as a calendar to your favorite calendar app. This way you\'ll be always
+        up-to-date with latest program, even offline. In case of program change calendar will update automatically.') }}
+        <strong>{{ _('Get event calendar:') }} <a href="{{ url_for('generate_ics', lang_code=lang_code) }}">pyconsk.ics</a></strong>
       </p>
       <p class="lead">
         <small>15.2.2018:</small>

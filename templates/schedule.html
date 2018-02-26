@@ -4,16 +4,18 @@
   <div class="content">
     <div class="content-text">
 
-      <h1>{{ _('PyCon SK 2018 Schedule') }}</h1>
-      <div class="flex one two-900 demo">
+      <h1>{{ _('PyCon SK 2018 Schedule') }}{% if day %} - {{ _(day|capitalize) }}{% endif %}</h1>
+
+      <div class="flex one demo">
         <div>
           <p class="lead">
             {{ _('Conference schedule might change.') }}
           </p>
-        </div>
-        <div>
-          <p>
-            Get event calendar: <a href="calendar.ics">pyconsk.ics</a>
+          <p class="text-justify">
+            {{ _('You can import conference schedule as a calendar to your favorite calendar app. This way you\'ll be
+            always up-to-date with latest program, even offline. In case of program change calendar will update
+            automatically.') }}<br />
+            <strong>{{ _('Get event calendar:') }} <a href="{{ url_for('generate_ics', lang_code=lang_code) }}">pyconsk.ics</a></strong>
           </p>
         </div>
       </div>
@@ -22,17 +24,17 @@
         <span class="label all">{{ _('All') }}</span>
       </a>
       {% for tag in tags %}
-        {% if tag not in ('talk', 'workshop') %}
-        {% if day %}
+      {% if tag not in ('talk', 'workshop') %}
+      {% if day %}
       <a href="{{ url_for('schedule_day_filter', lang_code=lang_code, flag=tag, day=day) }}">
         <span class="label {{ tag }}">{{ _(day|capitalize) }}: {{ _(tags[tag]) }}</span>
       </a>
-        {% else %}
+      {% else %}
       <a href="{{ url_for('schedule_filter', lang_code=lang_code, filter=tag) }}">
         <span class="label {{ tag }}">{{ _(tags[tag]) }}</span>
       </a>
-        {% endif %}
-        {% endif %}
+      {% endif %}
+      {% endif %}
       {% endfor %}
 
 
@@ -42,50 +44,56 @@
         <div>
           <article class="card">
             <header>
-              <h2>{{ track['start'].strftime('%A') }}: {{ _(track['room']['name']) }} <small>({{ track['room']['number'] }})</small></h2><br />
+              <h2>{{ track['start'].strftime('%A') }}: {{ _(track['room']['name']) }}
+                <small>({{ track['room']['number'] }})</small>
+              </h2>
+              <br/>
               {{ track['start'].strftime('%d. %B') }}
             </header>
             <footer>
               <table>
-          {% for talk in track['schedule'] %}
-          <tr>
-            <td class="date{% if talk['css'] %} {{ talk['css'] }}{% endif %}">
-              {{ talk['start'].strftime('%H:%M') }}
-              {% if talk['talk']['language']|upper == 'EN' %}
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="{{ _('English flag') }}" title="{{ _('Presentation will be in English language.') }}">
-              {% endif %}
-              {% if talk['talk']['language']|upper == 'SK' %}
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="{{ _('Slovak flag') }}" title="{{ _('Presentation will be in Slovak language') }}">
-              {% endif %}
-              {% if talk['talk']['language']|upper == 'CZ' %}
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACCUlEQVQokYXMTUiTARyA8T908CCV4i67uIO7OMQXhhM0POTBDhIYJNhBPHQsDxIFBQXhQUxBGlgMJgiFYBSLvkgWiI2QDvaJTFtzzH2923z3bm3v5se2p4NjXaIOz/H3iIxtMOMJYxhGvXw+Tz6fJ5fLoes6uq6jaRrpdJpkMkkikSAWixGORJDm0TXuv0vxKfiLarVar1KpUqlUKJfLlMtljo6OODw85ODggP39fUqlEqFQCGkZ8+H2xrn5LM77Tb2GK3X8N1gsFimVSgSDQaR51IdrJcbkkx2uLUdZ/a79FxuGQbFYJBAIICcvrfHwbZS7y0HuLAUZfxzG+yX9T1woFDAMA7/fjzQMrzL/ZpfbSz+59SjAjcUfXF7Y4dvUAwpuN3mXi9z8PFmnk+zcHPrsLJnpaXSXC39DA3Lighfnq906nljY4vn4PTJnetEcDvYUhaTNhmq1krBYiJnNRE0m1O5u1kUQOb/C3Isw1xe3mVjYwnN1mkxvL1pXF3uKQspmI2m1olosxM1mYiYT0aYmVLu9Njj3mhlP6Bhf+YPTnZ2k2ttJtrWhtrYe45YWIqdPEWlsJKEo+EQQOfuSqac7eCfdZEdGyF4cJjM0hDY4iDYwQLq/n1RfH8meHlSHA9VuJ6EoxDs6aoMeD6PSTECEbRH8ImzW+irCZxE2RPhYa10EX60PIvwGPggEwxsU28cAAAAASUVORK5CYII=" alt="{{ _('Czech flag') }}" title="{{ _('Presentation will be in Czech language') }}">
-              {% endif %}
-            </td>
-            <td class="title{% if talk['css'] %} {{ talk['css'] }}{% endif %}">
-              {% if loop.last and disable_last %}
-                &nbsp;
-              {% else %}
-                {{ _(talk['talk']['title']) }}
-                {% if talk['talk']['flag'] %}
-                <br />
-                <span class="label {{ talk['talk']['type'] }}">{{ _(all[talk['talk']['type']]) }}</span>
-                <span class="label {{ talk['talk']['flag'] }}">{{ _(tags[talk['talk']['flag']]) }}</span>
-                {% endif %}
+                {% for talk in track['schedule'] %}
+                <tr>
+                  <td class="date{% if talk['css'] %} {{ talk['css'] }}{% endif %}">
+                    {{ talk['start'].strftime('%H:%M') }}
+                    {% if talk['talk']['language']|upper == 'EN' %}
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="{{ _('English flag') }}" title="{{ _('Presentation will be in English language.') }}">
+                    {% endif %}
+                    {% if talk['talk']['language']|upper == 'SK' %}
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="{{ _('Slovak flag') }}" title="{{ _('Presentation will be in Slovak language') }}">
+                    {% endif %}
+                    {% if talk['talk']['language']|upper == 'CZ' %}
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACCUlEQVQokYXMTUiTARyA8T908CCV4i67uIO7OMQXhhM0POTBDhIYJNhBPHQsDxIFBQXhQUxBGlgMJgiFYBSLvkgWiI2QDvaJTFtzzH2923z3bm3v5se2p4NjXaIOz/H3iIxtMOMJYxhGvXw+Tz6fJ5fLoes6uq6jaRrpdJpkMkkikSAWixGORJDm0TXuv0vxKfiLarVar1KpUqlUKJfLlMtljo6OODw85ODggP39fUqlEqFQCGkZ8+H2xrn5LM77Tb2GK3X8N1gsFimVSgSDQaR51IdrJcbkkx2uLUdZ/a79FxuGQbFYJBAIICcvrfHwbZS7y0HuLAUZfxzG+yX9T1woFDAMA7/fjzQMrzL/ZpfbSz+59SjAjcUfXF7Y4dvUAwpuN3mXi9z8PFmnk+zcHPrsLJnpaXSXC39DA3Lighfnq906nljY4vn4PTJnetEcDvYUhaTNhmq1krBYiJnNRE0m1O5u1kUQOb/C3Isw1xe3mVjYwnN1mkxvL1pXF3uKQspmI2m1olosxM1mYiYT0aYmVLu9Njj3mhlP6Bhf+YPTnZ2k2ttJtrWhtrYe45YWIqdPEWlsJKEo+EQQOfuSqac7eCfdZEdGyF4cJjM0hDY4iDYwQLq/n1RfH8meHlSHA9VuJ6EoxDs6aoMeD6PSTECEbRH8ImzW+irCZxE2RPhYa10EX60PIvwGPggEwxsU28cAAAAASUVORK5CYII=" alt="{{ _('Czech flag') }}" title="{{ _('Presentation will be in Czech language') }}">
+                    {% endif %}
+                  </td>
+                  <td class="title{% if talk['css'] %} {{ talk['css'] }}{% endif %}">
+                    {% if loop.last and disable_last %}
+                    &nbsp;
+                    {% else %}
+                    {{ _(talk['talk']['title']) }}
+                    {% if talk['talk']['flag'] %}
+                    <br/>
+                    <span class="label {{ talk['talk']['type'] }}">{{ _(all[talk['talk']['type']]) }}</span>
+                    <span class="label {{ talk['talk']['flag'] }}">{{ _(tags[talk['talk']['flag']]) }}</span>
+                    {% endif %}
 
-                {% if talk['talk']['primary_speaker'] %}
-                <strong>
-                <a href="{{ url_for('profile', lang_code=lang_code, last_name=talk['talk']['primary_speaker']['last_name']) }}">
-                  {{ talk['talk']['primary_speaker']['first_name'] }} {{ talk['talk']['primary_speaker']['last_name'] }}</a>
-                  {% if talk['talk']['secondary_speaker'] %}
-                    &amp;
-                  <a href="{{ url_for('profile', lang_code=lang_code, last_name=talk['talk']['secondary_speaker']['last_name']) }}">{{ talk['talk']['secondary_speaker']['first_name'] }} {{ talk['talk']['secondary_speaker']['last_name'] }}</a>
-                  {% endif %}
-                </strong>
-                {% endif %}
-              {% endif %}
-            </td>
-          </tr>
-          {% endfor %}
+                    {% if talk['talk']['primary_speaker'] %}
+                    <strong>
+                      <a href="{{ url_for('profile', lang_code=lang_code, last_name=talk['talk']['primary_speaker']['last_name']) }}">
+                        {{ talk['talk']['primary_speaker']['first_name'] }} {{
+                        talk['talk']['primary_speaker']['last_name'] }}</a>
+                      {% if talk['talk']['secondary_speaker'] %}
+                      &amp;
+                      <a href="{{ url_for('profile', lang_code=lang_code, last_name=talk['talk']['secondary_speaker']['last_name']) }}">{{
+                        talk['talk']['secondary_speaker']['first_name'] }} {{
+                        talk['talk']['secondary_speaker']['last_name'] }}</a>
+                      {% endif %}
+                    </strong>
+                    {% endif %}
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
               </table>
             </footer>
           </article>
