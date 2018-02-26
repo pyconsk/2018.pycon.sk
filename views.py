@@ -67,6 +67,10 @@ LDJSON_PYCON = {
     }
 }
 
+# calendar settings
+ICAL_LEN = 75  # length of a calendar (ical) line
+IGNORE_TALKS = ['Break', 'Coffee Break']
+
 TYPE = {
     'talk': gettext('Talk'),
     'workshop': gettext('Workshop'),
@@ -324,7 +328,8 @@ def generate_track(api_data, track_data, start, flag=None):
                 "talk": talk_api_data
             })
 
-        start = start + timedelta(minutes=talk_api_data['duration'])
+        start = start + timedelta(minutes=talk_api_data.get('duration', 0))
+        # start = start + timedelta(minutes=talk_api_data['duration'])
 
         if not flag:
             # Generate break
@@ -428,6 +433,130 @@ def generate_schedule(api_data, flag=None):
             'day': 'sunday'
         },
     ]
+
+
+def timestamp(dt=None):
+    if dt is None:
+        dt = datetime.now()
+    fmt = '%Y%m%dT%H%M%S'
+    return dt.strftime(fmt)
+
+
+def ignore_talk(title, names=IGNORE_TALKS):
+    # yes, we can paste unicode symbols, but if we change the symbol this test will still work
+    max_appended_symbols = 2
+    return any((title == name or title[:-(_len+1)] == name)
+               for _len in range(max_appended_symbols) for name in names)
+
+
+def hash_event(track, slot):
+    room = track.get('room')
+    name = room.get('name')
+    ts = timestamp(slot.get('start'))
+    talk = slot.get('talk')
+    _hash = str(hash('{name}:{ts}'.format(name=name, ts=ts)))
+    _hash = _hash.replace('-', '*')
+    return '-'.join(_hash[i*5:(i+1)*5] for i in range(4))
+
+
+def add_linebreaks(text):
+    return text.replace('\n', '<br/>\n ')
+
+
+def normalize(text, tag=None):
+    # tag must be always included to determine amount of space left in the first line
+    _text = add_linebreaks(text)
+    prefix_len = (len(tag) if tag is not None else 0) + 1
+    first_line_len = ICAL_LEN - prefix_len
+    if len(_text) <= first_line_len:
+        return _text
+
+    result = ''
+    stext = text.split('\n')
+    for n, line in enumerate(stext):
+        rest = line
+        if not len(line.strip()):
+            # result += ' <br/>\n'
+            continue
+        _line = add_linebreaks(line)
+        if not n:
+            result += _line[:first_line_len] + '\n'
+            rest = _line[first_line_len:]
+        while rest:
+            result += ' %s' % rest[:ICAL_LEN-1]
+            rest = rest[ICAL_LEN-1:]
+            if rest:
+                result += '\n'
+            elif n < len(stext)-1:
+                result += ' <br/>\n'
+    return result
+
+
+# CALENDAR FUNCTIONS
+def generate_event(track, slot):
+    room = track.get('room')
+    location = '{name} ({number})'.format(**room)
+    talk = slot.get('talk')
+    summary = talk.get('title', 'N/A')
+    transp = 'OPAQUE'
+    if ignore_talk(summary):
+        # skip breaks
+        # alternatively we can include breaks into talks (duration=duration+pause)
+        return {}
+    summary = normalize(summary, 'SUMMARY')
+    start = slot.get('start')
+    duration = talk.get('duration', 0)
+    # TODO add missing duration handling (nonzero default duration? title based dictionary?
+    dtend = timestamp(start + timedelta(minutes=duration))
+    dtstart = timestamp(start)
+    dtstamp = created = modified = timestamp()
+    # event_uuid caused the event not to be imported to calendar
+    # this creates hash of name:start and split with dashes by 5
+    uid = hash_event(track, slot)
+
+    author = ''
+    main_description = ''
+    tags = ''
+    speaker = talk.get('primary_speaker')
+    if speaker:
+        name = ' '.join([speaker.get(n, '') for n in ['first_name', 'last_name']])
+        author = '<b>{name}</b><br/>\n <br/>\n '.format(name=name)
+    # this is to determine how many chars do we have in the first line
+    # if author is used we start at position 1, otherwise it will be prefixed with tag:
+    desc_tag = 'DESCRIPTION' if not author else ''
+    abstract = talk.get('abstract', '')
+    if abstract:
+        main_description = normalize(abstract, desc_tag) + ' <br/>\n'
+    if 'flag' in talk.keys():
+        tags = ' <br/>\n TAGS: {flag}'.format(**talk)
+    description = author + main_description + tags
+
+    status = 'CONFIRMED'
+    sequence = 0  # number of revisions, we will use default zero even if event changed
+
+    return {'dtstart': dtstart, 'dtend': dtend, 'dtstamp': dtstamp, 'created': created,
+            'last-modified': modified, 'uid': uid, 'location': location, 'sequence': sequence,
+            'description': description, 'status': status, 'summary': summary, 'transp': transp, }
+
+
+@app.route('/<lang_code>/calendar.ics')
+def generate_ics():
+    # https://tools.ietf.org/html/rfc5545#section-2.1
+    # https://en.wikipedia.org/wiki/ICalendar#Technical_specifications
+    omni_schedule = generate_schedule(API_DATA_TALKS)
+
+    events = []
+    uids = set()
+
+    for track in omni_schedule:
+        schedule = track.get('schedule')
+        for slot in schedule:
+            evt = generate_event(track, slot)
+            if evt and evt.get('uid') not in uids:
+                events.append(evt)
+                uids.update([evt.get('uid')])
+
+    return render_template('calendar.ics', events=events)
 
 
 @app.route('/<lang_code>/index.html')
