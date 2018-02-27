@@ -212,17 +212,17 @@ AULA2 = {
 }
 
 AULA3 = {
-    'name': gettext('Babbage Hall A - 1/2 '),
+    'name': gettext('SPy - Hall A'),
     'number': '-1.57',
 }
 
 AULA4 = {
-    'name': gettext('Babbage Hall B - 2/2'),
+    'name': gettext('SPy - Hall B'),
     'number': '-1.57',
 }
 
 AULA5 = {
-    'name': gettext('Jobs Auditorium'),
+    'name': gettext('Django Girls Auditorium'),
     'number': '+1.31',
 }
 
