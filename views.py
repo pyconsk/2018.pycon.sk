@@ -208,22 +208,22 @@ AULA1 = {
 }
 AULA2 = {
     'name': gettext('Python Software Foundation Hall'),
-    'number': '-1.60',
+    'number': '-1.65',
 }
 
 AULA3 = {
-    'name': gettext('Babbage Hall 1/2'),
+    'name': gettext('Babbage Hall A - 1/2 '),
     'number': '-1.57',
 }
 
 AULA4 = {
-    'name': gettext('Babbage Hall 2/2'),
+    'name': gettext('Babbage Hall B - 2/2'),
     'number': '-1.57',
 }
 
 AULA5 = {
     'name': gettext('Jobs Auditorium'),
-    'number': '1.XX',
+    'number': '+1.31',
 }
 
 
