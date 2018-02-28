@@ -165,11 +165,11 @@ SATURDAY_TRACK2 = (
 )
 
 SATURDAY_WORKSHOPS1 = (
-    {"pause": 40, 'title': gettext("Effectively running python applications in Kubernetes/OpenShift")},
+    {"pause": 55, 'title': gettext("Effectively running python applications in Kubernetes/OpenShift")},
     {"pause": 5, 'title': gettext("Roboworkshop")},
 )
 SATURDAY_WORKSHOPS2 = (
-    {"pause": 40, 'title': gettext("Microbit:Slovensko")},
+    {"pause": 55, 'title': gettext("Microbit:Slovensko")},
     {"pause": 5, 'title': gettext("Programujeme v Pythone – učíme seminár z programovania na strednej škole")},
 )
 
