@@ -556,7 +556,11 @@ def generate_ics():
                 events.append(evt)
                 uids.update([evt.get('uid')])
 
-    return render_template('calendar.ics', events=events)
+    calendar_ics = render_template('calendar.ics', events=events)
+    response = make_response(calendar_ics)
+    response.headers["Content-Type"] = "text/calendar"
+
+    return response
 
 
 @app.route('/<lang_code>/index.html')
