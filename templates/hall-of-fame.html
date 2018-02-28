@@ -209,8 +209,8 @@
             <div class="sbox-inner">
               <div class="sdesc">
                 <h3>Slush Pool</h3>
-                <p class="text-justify">{{ _('Slush Pool is the world\'s first Bitcoihatn mining pool, which mined over
-                  one million bitcoins since its foundation in 2010. With back-end based mostly on Python technologies,
+                <p class="text-justify">{{ _('Slush Pool is the world\'s first Bitcoin mining pool, which mined over one
+                  million bitcoins since its foundation in 2010. With back-end based mostly on Python technologies,
                   Slush Pool helps to secure the Bitcoin network as well as stabilize miners\' revenue.') }}</p>
               </div>
             </div>
@@ -317,6 +317,22 @@
           </a>
         </div>
         <div>
+          <a href="https://www.oreilly.com/" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-oreilly');trackOutboundLink('https://www.oreilly.com/');">
+            <img src="{{ url_for('static', filename='img/partners/oreilly.svg') }}" alt="O’Reilly"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>O’Reilly</h3>
+                <p class="text-justify">{{ _('O’Reilly provides technology and business training, knowledge, and insight
+                  to help companies succeed in the face of huge economic and technological shifts confronting businesses
+                  today. Our unique network of experts and innovators share their knowledge and expertise on the
+                  company’s comprehensive training and information platform and at O’Reilly conferences.') }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>
           <a href="https://www.fiit.stuba.sk/{% if lang_code == 'en' %}{{ lang_code }}.html{% endif %}" target="_blank" class="sbox"
              onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-fiit-stuba');trackOutboundLink('https://www.fiit.stuba.sk/');">
             <img src="{{ url_for('static', filename='img/partners/fiit-stu.svg') }}" alt="{{ _('Fakulta informatiky a informačných technológií STU v Bratislave') }}"
@@ -328,6 +344,20 @@
                   seven faculties of the Slovak University of Technology in Bratislava (SUT). FIIT SUT covers the very
                   area of informatics and information technologies (IIT) in both research and education. FIIT is the
                   first faculty in the Slovak Republic with such mission.') }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.wearedevelopers.com/wearedevelopers-2018/" target="_blank" class="sbox"
+             onclick="ga('send', 'event', 'sponsor', 'click', 'sponsors-page-we_are_developers');trackOutboundLink('https://www.wearedevelopers.com/');">
+            <img src="{{ url_for('static', filename='img/partners/we_are_developers.svg') }}" alt="WeAreDevelopers World Congress 2018"
+                 class="slogo img-responsive center-block"/>
+            <div class="sbox-inner">
+              <div class="sdesc">
+                <h3>WeAreDevelopers World Congress 2018</h3>
+                <p class="text-justify">{{ _('[WOZ] is coming to WeAreDevelopers World Congress 2018, are you? Act fast
+                  and SAVE 500€ on regular ticket price! See you in Vienna, May 16th-18th.') }}</p>
               </div>
             </div>
           </a>
@@ -461,14 +491,6 @@
         </div>
 
         <div>
-          <a href="https://sk.linkedin.com/in/xenol" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/adam_stevko.jpg') }}" alt="Adam Števko"
-                 class="avatar"/><br/>
-            Adam Števko
-          </a>
-        </div>
-
-        <div>
           <img src="{{ url_for('static', filename='img/avatar/peterbagin.jpg') }}" alt="Peter Bagin"
                class="avatar"/><br/>
           Peter Bagin
@@ -500,9 +522,9 @@
         Radoslav Roman<br/>
         Eliška Roubalová - SAP Concur<br/>
         Tomáš Sirný</br>
-        Roman Kazicka<br/>
-        Jakub Balas<br/>
-        Peter Pribylinec<br/>
+        Roman Kazička - SystemThinking spol. s r.o<br/>
+        Jakub Balas - Cubasoft Ltd<br/>
+        Peter Pribylinec - 2K<br/>
       </p>
     </div>
   </div>

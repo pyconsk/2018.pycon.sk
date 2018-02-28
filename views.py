@@ -120,7 +120,7 @@ FRIDAY_TRACK2 = (
     {"pause": 15, 'title': gettext("Ako sa pasujeme s Pythonom v Martine?")},
     {"pause": 5, 'title': gettext("Prečo hardvér priťahuje k informatike žiakov i dospelých")},
     {"pause": 15, 'title': gettext("EDU Talks"), 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
-    {"pause": 15, 'title': gettext("Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"), 'duration': 65, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
+    {"pause": 15, 'title': gettext("Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?")},
 )
 
 FRIDAY_WORKSHOPS1 = (
@@ -142,7 +142,7 @@ SATURDAY_TRACK1 = (
     {"pause": 60, 'title': gettext("Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python")},
     {"pause": 5, 'title': gettext("Pythonic code, by example")},
     {"pause": 15, 'title': gettext("Our DevOps journey, is SRE the next stop?")},
-    {"pause": 5, 'title': gettext("TBD"), 'duration': 30},
+    {"pause": 5, 'title': gettext("Implementing distributed systems with Consul")},
     {"pause": 15, 'title': gettext("Designing fast and scalable Python MicroServices with django")},
     {"pause": 5, 'title': gettext("FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere")},
     {"pause": 5, 'title': gettext("Programming Python as performance: live coding with FoxDot")},
@@ -165,11 +165,11 @@ SATURDAY_TRACK2 = (
 )
 
 SATURDAY_WORKSHOPS1 = (
-    {"pause": 40, 'title': gettext("Effectively running python applications in Kubernetes/OpenShift")},
+    {"pause": 55, 'title': gettext("Effectively running python applications in Kubernetes/OpenShift")},
     {"pause": 5, 'title': gettext("Roboworkshop")},
 )
 SATURDAY_WORKSHOPS2 = (
-    {"pause": 40, 'title': gettext("Microbit:Slovensko")},
+    {"pause": 55, 'title': gettext("Microbit:Slovensko")},
     {"pause": 5, 'title': gettext("Programujeme v Pythone – učíme seminár z programovania na strednej škole")},
 )
 
@@ -208,22 +208,22 @@ AULA1 = {
 }
 AULA2 = {
     'name': gettext('Python Software Foundation Hall'),
-    'number': '-1.60',
+    'number': '-1.65',
 }
 
 AULA3 = {
-    'name': gettext('Babbage Hall 1/2'),
+    'name': gettext('SPy - Hall A'),
     'number': '-1.57',
 }
 
 AULA4 = {
-    'name': gettext('Babbage Hall 2/2'),
+    'name': gettext('SPy - Hall B'),
     'number': '-1.57',
 }
 
 AULA5 = {
-    'name': gettext('Jobs Auditorium'),
-    'number': '1.XX',
+    'name': gettext('Django Girls Auditorium'),
+    'number': '+1.31',
 }
 
 
