@@ -103,7 +103,7 @@ FRIDAY_TRACK1 = (
     {"pause": 60, 'title': gettext("To the Google in 80 Days")},
     {"pause": 5, 'title': gettext("Unsafe at Any Speed")},
     {"pause": 15, 'title': gettext("Protecting Privacy and Security — For Yourself and Your Community")},
-    {"pause": 5, 'title': gettext("The Z Object Database")},
+    {"pause": 5, 'title': gettext("ZODB: The Graph database for Python Developers.")},
     {"pause": 15, 'title': gettext("Differentiable programming in Python and Gluon for (not only medical) image analysis")},
     {"pause": 5, 'title': gettext("Vim your Python, Python your Vim")},
     {"pause": 5, 'title': gettext("Quiz"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
