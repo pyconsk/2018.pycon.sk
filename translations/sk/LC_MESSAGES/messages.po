@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-03-01 12:15+0100\n"
-"PO-Revision-Date: 2018-02-23 20:42+0000\n"
-"Last-Translator: Juraj M. Bezručka <mimmon@gmail.com>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2018-03-02 09:00+0000\n"
+"Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:40 views.py:18
@@ -1245,17 +1246,18 @@ msgstr "Novinky"
 
 #: templates/index.html:24
 msgid "PyCon SK 2018 is sold out!"
-msgstr ""
+msgstr "PyCon SK 2018 je vypredaná!"
 
 #: templates/index.html:27
 msgid ""
 "We are happy to announce that PyCon SK 2018 conference is sold out. Thank"
 " you!"
 msgstr ""
+"S radosťou oznamujeme, že konferencia PyCon SK  2018 je vypredaná. Ďakujeme!"
 
 #: templates/index.html:31
 msgid "Calendar with conference schedule."
-msgstr ""
+msgstr "Kalendár s programom konferencie."
 
 #: templates/index.html:34
 msgid ""
@@ -1590,7 +1592,7 @@ msgstr ""
 
 #: templates/tickets.html:95
 msgid "Tickets are sold out!"
-msgstr ""
+msgstr "Lístky sú vypredané!"
 
 #: templates/tickets.html:102
 #, python-format
@@ -1603,7 +1605,7 @@ msgstr ""
 
 #: templates/tickets.html:104
 msgid "Conference tickets are sold out!"
-msgstr ""
+msgstr "Konferenčné lístky sú vypredané!"
 
 #: templates/tickets.html:104
 msgid ""
@@ -3195,4 +3197,3 @@ msgstr ""
 
 #~ msgid "Tickets are for sale now!"
 #~ msgstr "Vstupenky sú už v predaji!"
-
