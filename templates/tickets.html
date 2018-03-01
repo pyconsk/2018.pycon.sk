@@ -92,7 +92,7 @@
   <div class="content">
     <div class="content-text">
       <h1>{{ _('Tickets') }}</h1>
-      <p class="lead">{{ _('Tickets are for sale now!') }}</p>
+      <p class="lead">{{ _('Tickets are sold out!') }}</p>
 
       <p class="text-justify">
         <tito-widget event="pyconsk/2018"></tito-widget>
@@ -100,7 +100,8 @@
       <p class="text-justify">
         {% autoescape false %}
         {{ _('You can also buy tickets directly on the %(url)s website in case the tito widget is not displayed correctly.', url='<a href="https://ti.to/pyconsk/2018" target="_blank" class="external">https://ti.to/pyconsk/2018</a>') }}
-        {% endautoescape %}
+        {% endautoescape %}<br />
+        <strong>{{ _('Conference tickets are sold out!') }}</strong> {{ _('You can register in the waiting list and if someone return a ticket we\'ll contact you with this opportunity.') }} {{ _('You can buy an social event ticket, but that is valild only for Saturday night evening party.') }}
       </p>
       <p class="text-justify">
         {{ _('By purchasing a ticket you agree to abide by the <a href="%(url)s">Code of Conduct</a>.', url=url_for('coc', lang_code=lang_code)) }}
