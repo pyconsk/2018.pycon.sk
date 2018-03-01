@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-23 20:10+0100\n"
+"POT-Creation-Date: 2018-03-01 12:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -32,361 +32,361 @@ msgstr ""
 msgid "Slovak Republic"
 msgstr ""
 
-#: templates/cfp.html:39 views.py:71
+#: templates/cfp.html:39 views.py:75
 msgid "Talk"
 msgstr ""
 
-#: templates/cfp.html:40 views.py:72
+#: templates/cfp.html:40 views.py:76
 msgid "Workshop"
 msgstr ""
 
-#: templates/cfp.html:53 views.py:76
+#: templates/cfp.html:53 views.py:80
 msgid "Machine Learning / AI"
 msgstr ""
 
-#: templates/cfp.html:55 views.py:77
+#: templates/cfp.html:55 views.py:81
 msgid "Community / Diversity / Social"
 msgstr ""
 
-#: templates/cfp.html:52 views.py:78
+#: templates/cfp.html:52 views.py:82
 msgid "Data Science"
 msgstr ""
 
-#: views.py:80
+#: views.py:84
 msgid "Documentation"
 msgstr ""
 
-#: templates/cfp.html:50 views.py:81
+#: templates/cfp.html:50 views.py:85
 msgid "Education"
 msgstr ""
 
-#: templates/cfp.html:48 views.py:82
+#: templates/cfp.html:48 views.py:86
 msgid "Python General"
 msgstr ""
 
-#: templates/cfp.html:54 views.py:83
+#: templates/cfp.html:54 views.py:87
 msgid "Security"
 msgstr ""
 
-#: templates/cfp.html:56 views.py:84
+#: templates/cfp.html:56 views.py:88
 msgid "Soft Skills"
 msgstr ""
 
-#: templates/cfp.html:57 views.py:85
+#: templates/cfp.html:57 views.py:89
 msgid "Hardware"
 msgstr ""
 
-#: templates/cfp.html:51 views.py:86
+#: templates/cfp.html:51 views.py:90
 msgid "Web Development"
 msgstr ""
 
-#: templates/cfp.html:58 views.py:87
+#: templates/cfp.html:58 views.py:91
 msgid "Other"
 msgstr ""
 
-#: views.py:95 views.py:134
+#: views.py:99 views.py:138
 msgid "Conference Opening"
 msgstr ""
 
-#: views.py:96
+#: views.py:100
 msgid ""
 "When your wetware has too many threads - Tips from an ADHDer on how to "
 "improve your focus"
 msgstr ""
 
-#: views.py:97
+#: views.py:101
 msgid "Docs or it didn't happen"
 msgstr ""
 
-#: views.py:98
+#: views.py:102
 msgid "GraphQL is the new black"
 msgstr ""
 
-#: views.py:99
+#: views.py:103
 msgid "To the Google in 80 Days"
 msgstr ""
 
-#: views.py:100
+#: views.py:104
 msgid "Unsafe at Any Speed"
 msgstr ""
 
-#: views.py:101
+#: views.py:105
 msgid "Protecting Privacy and Security — For Yourself and Your Community"
 msgstr ""
 
-#: views.py:102
-msgid "The Z Object Database"
+#: views.py:106
+msgid "ZODB: The Graph database for Python Developers."
 msgstr ""
 
-#: views.py:103
+#: views.py:107
 msgid ""
 "Differentiable programming in Python and Gluon for (not only medical) "
 "image analysis"
 msgstr ""
 
-#: views.py:104
+#: views.py:108
 msgid "Vim your Python, Python your Vim"
 msgstr ""
 
-#: views.py:105
+#: views.py:109
 msgid "Quiz"
 msgstr ""
 
-#: views.py:106 views.py:146
+#: views.py:110 views.py:150
 msgid "Lightning Talks"
 msgstr ""
 
-#: views.py:110 views.py:150
+#: views.py:114 views.py:154
 msgid "Conference Opening in Kiwi.com Hall"
 msgstr ""
 
-#: views.py:111
+#: views.py:115
 msgid "Konferencia Python Days v Martine a následné aktivity"
 msgstr ""
 
-#: views.py:112
+#: views.py:116
 msgid "Programujeme v Pythone až k maturite"
 msgstr ""
 
-#: views.py:113
+#: views.py:117
 msgid "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"
 msgstr ""
 
-#: views.py:114
+#: views.py:118
 msgid "O nindžoch a mentoroch: CoderDojo na Slovensku"
 msgstr ""
 
-#: views.py:115
+#: views.py:119
 msgid "Komunitní kurzy"
 msgstr ""
 
-#: views.py:116
+#: views.py:120
 msgid "Ako sa pasujeme s Pythonom v Martine?"
 msgstr ""
 
-#: views.py:117
+#: views.py:121
 msgid "Prečo hardvér priťahuje k informatike žiakov i dospelých"
 msgstr ""
 
-#: views.py:118
+#: views.py:122
 msgid "EDU Talks"
 msgstr ""
 
-#: views.py:119
+#: views.py:123
 msgid "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
 msgstr ""
 
-#: views.py:123
+#: views.py:127
 msgid "Ako vytvárať interaktívne mapy v Python / R"
 msgstr ""
 
-#: views.py:124
+#: views.py:128
 msgid "Práce s XML"
 msgstr ""
 
-#: views.py:125
+#: views.py:129
 msgid "Managing high-available applications in production"
 msgstr ""
 
-#: views.py:129
+#: views.py:133
 msgid "Základy Ansible Workshop"
 msgstr ""
 
-#: views.py:130
+#: views.py:134
 msgid "Introduction to Machine Learning with Python"
 msgstr ""
 
-#: views.py:135
+#: views.py:139
 msgid "Solutions Reviews"
 msgstr ""
 
-#: views.py:136
+#: views.py:140
 msgid "Campaign Automation & Abusing Celery Properly"
 msgstr ""
 
-#: views.py:137
+#: views.py:141
 msgid "The Truth about Mastering Big Data"
 msgstr ""
 
-#: views.py:138
+#: views.py:142
 msgid ""
 "Industrial Machine Learning: Building scalable distributed machine "
 "learning pipelines with Python"
 msgstr ""
 
-#: views.py:139
+#: views.py:143
 msgid "Pythonic code, by example"
 msgstr ""
 
-#: views.py:140
+#: views.py:144
 msgid "Our DevOps journey, is SRE the next stop?"
 msgstr ""
 
-#: views.py:141
-msgid "TBD"
+#: views.py:145
+msgid "Implementing distributed systems with Consul"
 msgstr ""
 
-#: views.py:142
+#: views.py:146
 msgid "Designing fast and scalable Python MicroServices with django"
 msgstr ""
 
-#: views.py:143
+#: views.py:147
 msgid "FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere"
 msgstr ""
 
-#: views.py:144
+#: views.py:148
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:145
+#: views.py:149
 msgid "The GAME!"
 msgstr ""
 
-#: views.py:151
+#: views.py:155
 msgid "Meteodáta v Pythone. Efektívne."
 msgstr ""
 
-#: views.py:152
+#: views.py:156
 msgid "Cesta kolem světa za 30 minut"
 msgstr ""
 
-#: views.py:153
+#: views.py:157
 msgid "LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie"
 msgstr ""
 
-#: views.py:154
+#: views.py:158
 msgid "Kiwi.com v ZOO"
 msgstr ""
 
-#: views.py:155
+#: views.py:159
 msgid "Keynote in Kiwi.com Hall"
 msgstr ""
 
-#: views.py:156
+#: views.py:160
 msgid "Skynet your Infrastructure with QUADS"
 msgstr ""
 
-#: views.py:157
+#: views.py:161
 msgid "Automated network OS testing"
 msgstr ""
 
-#: views.py:158
+#: views.py:162
 msgid "Tools to interact with Bitcoin and Ethereum"
 msgstr ""
 
-#: views.py:159
+#: views.py:163
 msgid "7 Steps to a Clean Issue Tracker"
 msgstr ""
 
-#: views.py:160
+#: views.py:164
 msgid "The Concierge Paradigm"
 msgstr ""
 
-#: views.py:164
+#: views.py:168
 msgid "Effectively running python applications in Kubernetes/OpenShift"
 msgstr ""
 
-#: views.py:165
+#: views.py:169
 msgid "Roboworkshop"
 msgstr ""
 
-#: views.py:168
+#: views.py:172
 msgid "Microbit:Slovensko"
 msgstr ""
 
-#: views.py:169
+#: views.py:173
 msgid "Programujeme v Pythone – učíme seminár z programovania na strednej škole"
 msgstr ""
 
-#: views.py:173
+#: views.py:177
 msgid "Charon a cesta z pickle pekla"
 msgstr ""
 
-#: views.py:174
+#: views.py:178
 msgid "Making Python Behave"
 msgstr ""
 
-#: views.py:175
+#: views.py:179
 msgid "\"Utajené\" informácie o kóde ktorý píšeš"
 msgstr ""
 
-#: views.py:176
+#: views.py:180
 msgid ""
 "How to connect objects with each other in different situations with "
 "Pythonic ways - association, aggregation, composition and etc."
 msgstr ""
 
-#: views.py:177
+#: views.py:181
 msgid "APIs: Gateway to world's data"
 msgstr ""
 
-#: views.py:178
+#: views.py:182
 msgid "Getting started with HDF5 and PyTables"
 msgstr ""
 
-#: views.py:179
+#: views.py:183
 msgid "Real-time personalized recommendations using embeddings"
 msgstr ""
 
-#: views.py:183
+#: views.py:187
 msgid ""
 "Real-time transcription and sentiment analysis of audio streams; on the "
 "phone and in the browser"
 msgstr ""
 
-#: views.py:184
+#: views.py:188
 msgid "Learn MongoDB by modeling PyPI in a document database"
 msgstr ""
 
-#: views.py:188
+#: views.py:192
 msgid "Testing Essentials for Scientists and Engineers"
 msgstr ""
 
-#: views.py:189
+#: views.py:193
 msgid "Cython: Speed up your code without going insane"
 msgstr ""
 
-#: views.py:193
+#: views.py:197
 msgid "Zoznámte sa s pandami"
 msgstr ""
 
-#: views.py:194
+#: views.py:198
 msgid "Basics of OpenFaaS with Python"
 msgstr ""
 
-#: views.py:198
+#: views.py:202
 msgid "Django Girls"
 msgstr ""
 
-#: views.py:202
+#: views.py:206
 msgid "Kiwi.com Hall"
 msgstr ""
 
-#: views.py:206
+#: views.py:210
 msgid "Python Software Foundation Hall"
 msgstr ""
 
-#: views.py:211
-msgid "Babbage Hall 1/2"
+#: views.py:215
+msgid "SPy - Hall A"
 msgstr ""
 
-#: views.py:216
-msgid "Babbage Hall 2/2"
+#: views.py:220
+msgid "SPy - Hall B"
 msgstr ""
 
-#: views.py:221
-msgid "Jobs Auditorium"
+#: views.py:225
+msgid "Django Girls Auditorium"
 msgstr ""
 
-#: views.py:331
+#: views.py:336
 msgid "Break"
 msgstr ""
 
-#: views.py:334
+#: views.py:339
 msgid "Lunch 🍱"
 msgstr ""
 
-#: views.py:337
+#: views.py:342
 msgid "Coffee Break ☕"
 msgstr ""
 
@@ -946,9 +946,10 @@ msgstr ""
 
 #: templates/hall-of-fame.html:212
 msgid ""
-"Slush Pool is the world's first Bitcoihatn mining pool, which mined over\n"
-"                  one million bitcoins since its foundation in 2010. With"
-" back-end based mostly on Python technologies,\n"
+"Slush Pool is the world's first Bitcoin mining pool, which mined over one"
+"\n"
+"                  million bitcoins since its foundation in 2010. With "
+"back-end based mostly on Python technologies,\n"
 "                  Slush Pool helps to secure the Bitcoin network as well "
 "as stabilize miners' revenue."
 msgstr ""
@@ -1004,11 +1005,23 @@ msgid ""
 "marketplace in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:322 templates/hall-of-fame.html:326
+#: templates/hall-of-fame.html:327
+msgid ""
+"O’Reilly provides technology and business training, knowledge, and "
+"insight\n"
+"                  to help companies succeed in the face of huge economic "
+"and technological shifts confronting businesses\n"
+"                  today. Our unique network of experts and innovators "
+"share their knowledge and expertise on the\n"
+"                  company’s comprehensive training and information "
+"platform and at O’Reilly conferences."
+msgstr ""
+
+#: templates/hall-of-fame.html:338 templates/hall-of-fame.html:342
 msgid "Fakulta informatiky a informačných technológií STU v Bratislave"
 msgstr ""
 
-#: templates/hall-of-fame.html:327
+#: templates/hall-of-fame.html:343
 msgid ""
 "Faculty of Informatics and Information Technologies (FIIT) is one of the\n"
 "                  seven faculties of the Slovak University of Technology "
@@ -1018,11 +1031,19 @@ msgid ""
 "                  first faculty in the Slovak Republic with such mission."
 msgstr ""
 
-#: templates/hall-of-fame.html:341
+#: templates/hall-of-fame.html:359
+msgid ""
+"[WOZ] is coming to WeAreDevelopers World Congress 2018, are you? Act fast"
+"\n"
+"                  and SAVE 500€ on regular ticket price! See you in "
+"Vienna, May 16th-18th."
+msgstr ""
+
+#: templates/hall-of-fame.html:371
 msgid "Media Partners"
 msgstr ""
 
-#: templates/hall-of-fame.html:367
+#: templates/hall-of-fame.html:397
 msgid ""
 "Startitup is one of the most popular and progressive growing tech/startup"
 "\n"
@@ -1032,22 +1053,22 @@ msgid ""
 "credible, independent media in Slovakia."
 msgstr ""
 
-#: templates/hall-of-fame.html:387
+#: templates/hall-of-fame.html:417
 msgid "People that participate volunteering at PyCon SK 2018."
 msgstr ""
 
-#: templates/hall-of-fame.html:487
+#: templates/hall-of-fame.html:509
 msgid "People that supported PyCon SK 2018 by purchasing a supporter ticket."
 msgstr ""
 
 #: templates/index.html:6
-msgid "PyCon will come to Slovakia in 2018 again."
+msgid "PyConSK is back!"
 msgstr ""
 
-#: templates/index.html:7 templates/venue.html:7
+#: templates/index.html:7
 msgid ""
-"<strong>Third year</strong> will happen <strong>9-11. March, 2018 in "
-"Bratislava</strong>."
+"<strong>The third PyCon Slovakia</strong> is happening on <strong>March "
+"9-11. March, 2018 in Bratislava</strong>."
 msgstr ""
 
 #: templates/index.html:11
@@ -1075,26 +1096,52 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: templates/index.html:24 templates/index.html:28
+#: templates/index.html:24
+msgid "PyCon SK 2018 is sold out!"
+msgstr ""
+
+#: templates/index.html:27
+msgid ""
+"We are happy to announce that PyCon SK 2018 conference is sold out. Thank"
+" you!"
+msgstr ""
+
+#: templates/index.html:31
+msgid "Calendar with conference schedule."
+msgstr ""
+
+#: templates/index.html:34
+msgid ""
+"You can import conference schedule as a calendar to your favorite "
+"calendar app. This way you'll be always\n"
+"        up-to-date with latest program, even offline. In case of program "
+"change calendar will update automatically."
+msgstr ""
+
+#: templates/index.html:36 templates/schedule.html:18
+msgid "Get event calendar:"
+msgstr ""
+
+#: templates/index.html:40
 msgid "Conference schedule has been published."
 msgstr ""
 
-#: templates/index.html:32
+#: templates/index.html:44
 msgid "Speakers and talks list has been published."
 msgstr ""
 
-#: templates/index.html:35
+#: templates/index.html:47
 msgid ""
 "Talks and speakers list has been published on our website. Soon we'll "
 "publish also the time\n"
 "        schedule."
 msgstr ""
 
-#: templates/index.html:41
+#: templates/index.html:53
 msgid "Call for proposals has ended."
 msgstr ""
 
-#: templates/index.html:44
+#: templates/index.html:56
 #, python-format
 msgid ""
 "We have received almost 100 high quality talks and workshops proposals! "
@@ -1104,11 +1151,11 @@ msgid ""
 "          href=\"%(url)s\">speakers</a> on our website."
 msgstr ""
 
-#: templates/index.html:51
+#: templates/index.html:63
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
 msgstr ""
 
-#: templates/index.html:54
+#: templates/index.html:66
 msgid ""
 "We are excited that for the third time in the row, PyConSK will be held "
 "under the auspices of the\n"
@@ -1118,18 +1165,18 @@ msgid ""
 "from all over Europe and the rest of the world."
 msgstr ""
 
-#: templates/index.html:62
+#: templates/index.html:74
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 
-#: templates/index.html:67
+#: templates/index.html:79
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
 msgstr ""
 
-#: templates/index.html:70
+#: templates/index.html:82
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -1139,11 +1186,11 @@ msgid ""
 "          href=\"%(url)s\">submit a talk proposal</a>."
 msgstr ""
 
-#: templates/index.html:76
+#: templates/index.html:88
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr ""
 
-#: templates/index.html:79
+#: templates/index.html:91
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to\n"
@@ -1154,7 +1201,7 @@ msgid ""
 "        releasing to deployment and infrastructure management."
 msgstr ""
 
-#: templates/index.html:83
+#: templates/index.html:95
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -1164,60 +1211,60 @@ msgid ""
 "        goals."
 msgstr ""
 
-#: templates/index.html:94
+#: templates/index.html:106
 msgid "References"
 msgstr ""
 
-#: templates/index.html:96
+#: templates/index.html:108
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our\n"
 "        references:"
 msgstr ""
 
-#: templates/index.html:134
+#: templates/index.html:146
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:172
+#: templates/index.html:184
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
 " info@pycon.sk or create a pull\n"
 "        request."
 msgstr ""
 
-#: templates/index.html:178
+#: templates/index.html:190
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:179
+#: templates/index.html:191
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
 
-#: templates/profile.html:44 templates/schedule.html:46 templates/talks.html:26
+#: templates/profile.html:44 templates/schedule.html:60 templates/talks.html:26
 msgid "English flag"
 msgstr ""
 
-#: templates/profile.html:44 templates/schedule.html:46 templates/talks.html:26
+#: templates/profile.html:44 templates/schedule.html:60 templates/talks.html:26
 msgid "Presentation will be in English language."
 msgstr ""
 
-#: templates/profile.html:47 templates/schedule.html:49 templates/talks.html:29
+#: templates/profile.html:47 templates/schedule.html:63 templates/talks.html:29
 msgid "Slovak flag"
 msgstr ""
 
-#: templates/profile.html:47 templates/schedule.html:49 templates/talks.html:29
+#: templates/profile.html:47 templates/schedule.html:63 templates/talks.html:29
 msgid "Presentation will be in Slovak language"
 msgstr ""
 
-#: templates/profile.html:50 templates/schedule.html:52 templates/talks.html:32
+#: templates/profile.html:50 templates/schedule.html:66 templates/talks.html:32
 msgid "Czech flag"
 msgstr ""
 
-#: templates/profile.html:50 templates/schedule.html:52 templates/talks.html:32
+#: templates/profile.html:50 templates/schedule.html:66 templates/talks.html:32
 msgid "Presentation will be in Czech language"
 msgstr ""
 
@@ -1225,11 +1272,20 @@ msgstr ""
 msgid "PyCon SK 2018 Schedule"
 msgstr ""
 
-#: templates/schedule.html:9
+#: templates/schedule.html:12
 msgid "Conference schedule might change."
 msgstr ""
 
-#: templates/schedule.html:13 templates/talks.html:10
+#: templates/schedule.html:15
+msgid ""
+"You can import conference schedule as a calendar to your favorite "
+"calendar app. This way you'll be\n"
+"            always up-to-date with latest program, even offline. In case "
+"of program change calendar will update\n"
+"            automatically."
+msgstr ""
+
+#: templates/schedule.html:24 templates/talks.html:10
 msgid "All"
 msgstr ""
 
@@ -1329,7 +1385,7 @@ msgid "Explain why you need financial aid? Be as descriptive as possible..."
 msgstr ""
 
 #: templates/tickets.html:95
-msgid "Tickets are for sale now!"
+msgid "Tickets are sold out!"
 msgstr ""
 
 #: templates/tickets.html:102
@@ -1339,40 +1395,56 @@ msgid ""
 " widget is not displayed correctly."
 msgstr ""
 
-#: templates/tickets.html:106
+#: templates/tickets.html:104
+msgid "Conference tickets are sold out!"
+msgstr ""
+
+#: templates/tickets.html:104
+msgid ""
+"You can register in the waiting list and if someone return a ticket we'll"
+" contact you with this opportunity."
+msgstr ""
+
+#: templates/tickets.html:104
+msgid ""
+"You can buy an social event ticket, but that is valild only for Saturday "
+"night evening party."
+msgstr ""
+
+#: templates/tickets.html:107
 #, python-format
 msgid ""
 "By purchasing a ticket you agree to abide by the <a href=\"%(url)s\">Code"
 " of Conduct</a>."
 msgstr ""
 
-#: templates/tickets.html:111
+#: templates/tickets.html:112
 msgid "Where will the conference happen?"
 msgstr ""
 
-#: templates/tickets.html:113 templates/venue.html:11
+#: templates/tickets.html:114 templates/venue.html:11
 msgid "Slovak University of Technology in Bratislava"
 msgstr ""
 
-#: templates/tickets.html:114 templates/venue.html:12
+#: templates/tickets.html:115 templates/venue.html:12
 msgid "Faculty of Informatics and Information Technologies"
 msgstr ""
 
-#: templates/tickets.html:119 templates/venue.html:6
+#: templates/tickets.html:120 templates/venue.html:6
 msgid "How do you get to Slovak PyCon?"
 msgstr ""
 
-#: templates/tickets.html:123
+#: templates/tickets.html:124
 msgid "I don't have PayPal account, is there any other way to buy a ticket?"
 msgstr ""
 
-#: templates/tickets.html:125
+#: templates/tickets.html:126
 msgid ""
 "If you go to PayPal page there is possibility to pay with credit card "
 "(also with debit card) directly, without creating an account."
 msgstr ""
 
-#: templates/tickets.html:128
+#: templates/tickets.html:129
 msgid ""
 "We accept wire transfer, since that needs manual work additional 1 Euro "
 "fee is applied. Please send us a list of tickets you are interested in, "
@@ -1380,7 +1452,7 @@ msgid ""
 "will issue and send the requested tickets to you by email."
 msgstr ""
 
-#: templates/tickets.html:131
+#: templates/tickets.html:132
 msgid ""
 "We also accept Bitcoin, Litecoin and (possibly) other crypto currencies. "
 "Please send us a list of tickets you are interested in, and currency you "
@@ -1388,54 +1460,54 @@ msgid ""
 "confirmed, we will issue and send the requested tickets to you by email."
 msgstr ""
 
-#: templates/tickets.html:138
+#: templates/tickets.html:139
 msgid "Which ticket should I buy?"
 msgstr ""
 
-#: templates/tickets.html:140
+#: templates/tickets.html:141
 msgid "Real Deal"
 msgstr ""
 
-#: templates/tickets.html:140
+#: templates/tickets.html:141
 msgid ""
 "This is the real price for tickets if it wouldn't be donated by SPy o.z. "
 "with sponsors money. Please buy it if you can afford it, your name "
 "(company) will be shown on our website."
 msgstr ""
 
-#: templates/tickets.html:143
+#: templates/tickets.html:144
 msgid "Standard"
 msgstr ""
 
-#: templates/tickets.html:143
+#: templates/tickets.html:144
 msgid "This ticket is designed for all conference participants."
 msgstr ""
 
-#: templates/tickets.html:146
+#: templates/tickets.html:147
 msgid "Teacher"
 msgstr ""
 
-#: templates/tickets.html:146
+#: templates/tickets.html:147
 msgid ""
 "This ticket is designed for teachers. Don't forget to bring your valid "
 "teachers ID (ITIC) to the registration."
 msgstr ""
 
-#: templates/tickets.html:149
+#: templates/tickets.html:150
 msgid "Student"
 msgstr ""
 
-#: templates/tickets.html:149
+#: templates/tickets.html:150
 msgid ""
 "This ticket is designed for students. Don't forget to bring your valid "
 "student ID (ISIC) to the registration."
 msgstr ""
 
-#: templates/tickets.html:153
+#: templates/tickets.html:154
 msgid "Where does the money from tickets go?"
 msgstr ""
 
-#: templates/tickets.html:155
+#: templates/tickets.html:156
 msgid ""
 "PyCon is completely organized by volunteers. We do believe that such "
 "conferences should be organized to promote programming and Open Source. "
@@ -1443,7 +1515,7 @@ msgid ""
 "expenses related to organizing the conference."
 msgstr ""
 
-#: templates/tickets.html:158
+#: templates/tickets.html:159
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">The SPy civic association</a>, as the organizer, "
@@ -1453,96 +1525,102 @@ msgid ""
 "about our vision and objectives."
 msgstr ""
 
-#: templates/tickets.html:165
+#: templates/tickets.html:166
 msgid "What do you mean with Real Deal ticket?"
 msgstr ""
 
-#: templates/tickets.html:167
+#: templates/tickets.html:168
 msgid ""
 "In order to keep conference accessible for everyone we subsidy all "
 "tickets so that most of the people can afford to buy one."
 msgstr ""
 
-#: templates/tickets.html:171
+#: templates/tickets.html:172
 msgid "Do you offer group discounts?"
 msgstr ""
 
-#: templates/tickets.html:173
+#: templates/tickets.html:174
 msgid ""
 "If you would like to buy more than 15 tickets please contact us by email "
 "at info@pycon.sk."
 msgstr ""
 
-#: templates/tickets.html:180
+#: templates/tickets.html:181
 msgid "Will there be early bird tickets?"
 msgstr ""
 
-#: templates/tickets.html:182
+#: templates/tickets.html:183
 msgid "First 120 tickets will be sold for early bird discount, so hurry up!"
 msgstr ""
 
-#: templates/tickets.html:186
+#: templates/tickets.html:187
 msgid "Will there be last moment tickets?"
 msgstr ""
 
-#: templates/tickets.html:188
+#: templates/tickets.html:189
 msgid ""
 "Last 50 tickets will be more expensive, so don't leave your ticket "
 "purchase to last moment!"
 msgstr ""
 
-#: templates/tickets.html:195
+#: templates/tickets.html:196
 msgid "Is there any another possibility to get to PyCon?"
 msgstr ""
 
-#: templates/tickets.html:197
+#: templates/tickets.html:198
 #, python-format
 msgid ""
 "Yes <a href=\"%(url)s\">submit a talk</a>, and if your talk is selected "
 "you will receive a speakers ticket for free."
 msgstr ""
 
-#: templates/tickets.html:200
+#: templates/tickets.html:201
 msgid ""
 "If you are less than 18 years old and come accompanied by a parent, you "
 "can just purchase one ticket only for the parent, but you have to inform "
 "us in advance to issue an another ticket for the child."
 msgstr ""
 
-#: templates/tickets.html:204
+#: templates/tickets.html:205
 msgid "Do you have Financial Aid program?"
 msgstr ""
 
-#: templates/tickets.html:206
+#: templates/tickets.html:207
 msgid ""
 "Yes! We have limited amount of tickets for people in need, who would like"
 " to join us. If you can't not afford to buy a conference ticket, apply "
 "for financial aid and get complimentary conference ticket."
 msgstr ""
 
-#: templates/tickets.html:209
+#: templates/tickets.html:210
 msgid "Financial aid has been closed!"
 msgstr ""
 
-#: templates/tickets.html:218
+#: templates/tickets.html:219
 msgid "Do you have social event in the evening?"
 msgstr ""
 
-#: templates/tickets.html:220
+#: templates/tickets.html:221
 msgid ""
 "On Saturday we'll have a PARTY! More info about the venue will be "
 "published soon."
 msgstr ""
 
-#: templates/tickets.html:224
+#: templates/tickets.html:225
 msgid "Is my conference ticket valid for the social event?"
 msgstr ""
 
-#: templates/tickets.html:226
+#: templates/tickets.html:227
 msgid ""
 "NO. You have to purchase a ticket for the social event. Ticket to social "
 "event includes dinner in a form of a buffet and a welcome drink. You pay "
 "for all other drinks."
+msgstr ""
+
+#: templates/venue.html:7
+msgid ""
+"<strong>Third year</strong> will happen <strong>9-11. March, 2018 in "
+"Bratislava</strong>."
 msgstr ""
 
 #: templates/venue.html:9
@@ -2848,5 +2926,36 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Apply for financial aid."
+#~ msgstr ""
+
+#~ msgid "The Z Object Database"
+#~ msgstr ""
+
+#~ msgid "Babbage Hall 1/2"
+#~ msgstr ""
+
+#~ msgid "Babbage Hall 2/2"
+#~ msgstr ""
+
+#~ msgid "Jobs Auditorium"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Slush Pool is the world's first "
+#~ "Bitcoihatn mining pool, which mined over"
+#~ "\n"
+#~ "                  one million bitcoins since"
+#~ " its foundation in 2010. With "
+#~ "back-end based mostly on Python "
+#~ "technologies,\n"
+#~ "                  Slush Pool helps to "
+#~ "secure the Bitcoin network as well "
+#~ "as stabilize miners' revenue."
+#~ msgstr ""
+
+#~ msgid "PyCon will come to Slovakia in 2018 again."
+#~ msgstr ""
+
+#~ msgid "Tickets are for sale now!"
 #~ msgstr ""
 
