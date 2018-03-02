@@ -2,13 +2,14 @@
 # -*- coding: utf8 -*-
 import os
 import re
+import textwrap
 import requests
 import unicodedata
 from datetime import datetime, timedelta
-from operator import itemgetter
+
 from flask import Flask, g, request, render_template, abort, make_response
 from flask_babel import Babel, gettext
-from jinja2 import evalcontextfilter, Markup, escape
+from jinja2 import evalcontextfilter, Markup
 
 app = Flask(__name__, static_url_path='/static')
 app.config['BABEL_DEFAULT_LOCALE'] = 'sk'
@@ -68,7 +69,8 @@ LDJSON_PYCON = {
 }
 
 # calendar settings
-ICAL_LEN = 75  # length of a calendar (ical) line
+ICAL_LEN = 70  # length of a calendar (ical) line
+ICAL_NL = '\\n\n'  # calendar newline
 IGNORE_TALKS = ['Break', 'Coffee Break']
 
 TYPE = {
@@ -435,61 +437,39 @@ def generate_schedule(api_data, flag=None):
     ]
 
 
-def timestamp(dt=None):
+def _timestamp(dt=None):
     if dt is None:
         dt = datetime.now()
     fmt = '%Y%m%dT%H%M%S'
     return dt.strftime(fmt)
 
 
-def ignore_talk(title, names=IGNORE_TALKS):
+def _ignore_talk(title, names=IGNORE_TALKS):
     # yes, we can paste unicode symbols, but if we change the symbol this test will still work
     max_appended_symbols = 2
     return any((title == name or title[:-(_len+1)] == name)
                for _len in range(max_appended_symbols) for name in names)
 
 
-def hash_event(track, slot):
+def _hash_event(track, slot):
     room = track.get('room')
     name = room.get('name')
-    ts = timestamp(slot.get('start'))
-    talk = slot.get('talk')
+    ts = _timestamp(slot.get('start'))
     _hash = str(hash('{name}:{ts}'.format(name=name, ts=ts)))
     _hash = _hash.replace('-', '*')
     return '-'.join(_hash[i*5:(i+1)*5] for i in range(4))
 
 
-def add_linebreaks(text):
-    return text.replace('\n', '<br/>\n ')
-
-
-def normalize(text, tag=None):
+def _normalize(text, tag=None, subsequent_indent=' ', **kwargs):
     # tag must be always included to determine amount of space left in the first line
-    _text = add_linebreaks(text)
-    prefix_len = (len(tag) if tag is not None else 0) + 1
-    first_line_len = ICAL_LEN - prefix_len
-    if len(_text) <= first_line_len:
-        return _text
+    if tag:
+        max_width = ICAL_LEN - len(tag) - 1
+    else:
+        max_width = ICAL_LEN
 
-    result = ''
-    stext = text.split('\n')
-    for n, line in enumerate(stext):
-        rest = line
-        if not len(line.strip()):
-            # result += ' <br/>\n'
-            continue
-        _line = add_linebreaks(line)
-        if not n:
-            result += _line[:first_line_len] + '\n'
-            rest = _line[first_line_len:]
-        while rest:
-            result += ' %s' % rest[:ICAL_LEN-1]
-            rest = rest[ICAL_LEN-1:]
-            if rest:
-                result += '\n'
-            elif n < len(stext)-1:
-                result += ' <br/>\n'
-    return result
+    text = text.strip().replace('\n', ICAL_NL)
+
+    return '\n'.join(textwrap.wrap(text, width=max_width, subsequent_indent=subsequent_indent, **kwargs))
 
 
 # CALENDAR FUNCTIONS
@@ -499,20 +479,20 @@ def generate_event(track, slot):
     talk = slot.get('talk')
     summary = talk.get('title', 'N/A')
     transp = 'OPAQUE'
-    if ignore_talk(summary):
+    if _ignore_talk(summary):
         # skip breaks
         # alternatively we can include breaks into talks (duration=duration+pause)
         return {}
-    summary = normalize(summary, 'SUMMARY')
+    summary = _normalize(summary, 'SUMMARY')
     start = slot.get('start')
     duration = talk.get('duration', 0)
     # TODO add missing duration handling (nonzero default duration? title based dictionary?
-    dtend = timestamp(start + timedelta(minutes=duration))
-    dtstart = timestamp(start)
-    dtstamp = created = modified = timestamp()
+    dtend = _timestamp(start + timedelta(minutes=duration))
+    dtstart = _timestamp(start)
+    dtstamp = created = modified = _timestamp()
     # event_uuid caused the event not to be imported to calendar
     # this creates hash of name:start and split with dashes by 5
-    uid = hash_event(track, slot)
+    uid = _hash_event(track, slot)
 
     author = ''
     main_description = ''
@@ -520,15 +500,15 @@ def generate_event(track, slot):
     speaker = talk.get('primary_speaker')
     if speaker:
         name = ' '.join([speaker.get(n, '') for n in ['first_name', 'last_name']])
-        author = '<b>{name}</b><br/>\n <br/>\n '.format(name=name)
+        author = '{name}{nl} {nl}'.format(name=name, nl=ICAL_NL)
     # this is to determine how many chars do we have in the first line
     # if author is used we start at position 1, otherwise it will be prefixed with tag:
     desc_tag = 'DESCRIPTION' if not author else ''
     abstract = talk.get('abstract', '')
     if abstract:
-        main_description = normalize(abstract, desc_tag) + ' <br/>\n'
-    if 'flag' in talk.keys():
-        tags = ' <br/>\n TAGS: {flag}'.format(**talk)
+        main_description = _normalize(abstract, desc_tag, initial_indent=' ') + ICAL_NL
+    if 'flag' in talk:
+        tags = ' {nl} TAGS: {flag}'.format(nl=ICAL_NL, **talk)
     description = author + main_description + tags
 
     status = 'CONFIRMED'
@@ -557,7 +537,7 @@ def generate_ics():
                 uids.update([evt.get('uid')])
 
     calendar_ics = render_template('calendar.ics', events=events)
-    response = make_response(calendar_ics)
+    response = make_response(calendar_ics.replace('\n', '\r\n'))
     response.headers["Content-Type"] = "text/calendar"
 
     return response
