@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-03-01 12:15+0100\n"
-"PO-Revision-Date: 2018-03-02 09:00+0000\n"
-"Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
+"PO-Revision-Date: 2018-03-02 11:57+0000\n"
+"Last-Translator: Michal Nalevanko <michal.nalevanko@pycon.sk>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
 "Language: sk\n"
@@ -134,7 +134,7 @@ msgstr ""
 
 #: views.py:108
 msgid "Vim your Python, Python your Vim"
-msgstr ""
+msgstr "Vim pre Python, Python vo Vim-e"
 
 #: views.py:109
 msgid "Quiz"
@@ -150,31 +150,31 @@ msgstr "Otvorenie konferencie v Kiwi.com miestnosti"
 
 #: views.py:115
 msgid "Konferencia Python Days v Martine a následné aktivity"
-msgstr ""
+msgstr "Python Days in Martin and follow-up activities"
 
 #: views.py:116
 msgid "Programujeme v Pythone až k maturite"
-msgstr ""
+msgstr "Python programming till graduation"
 
 #: views.py:117
 msgid "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"
-msgstr ""
+msgstr "Open educational resources for learning Python"
 
 #: views.py:118
 msgid "O nindžoch a mentoroch: CoderDojo na Slovensku"
-msgstr ""
+msgstr "About Ninjas and Mentors: CoderDojo in Slovakia"
 
 #: views.py:119
 msgid "Komunitní kurzy"
-msgstr ""
+msgstr "Community based courses"
 
 #: views.py:120
 msgid "Ako sa pasujeme s Pythonom v Martine?"
-msgstr ""
+msgstr "How do we struggle with Python in Martin?"
 
 #: views.py:121
 msgid "Prečo hardvér priťahuje k informatike žiakov i dospelých"
-msgstr ""
+msgstr "Why hardware attracts kids and adults to IT"
 
 #: views.py:122
 msgid "EDU Talks"
@@ -182,15 +182,15 @@ msgstr "EDU Prednášky"
 
 #: views.py:123
 msgid "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
-msgstr ""
+msgstr "Panel discussion: Teaching IT in Slovakia - where is it heading?"
 
 #: views.py:127
 msgid "Ako vytvárať interaktívne mapy v Python / R"
-msgstr ""
+msgstr "How to create interactive maps in Python/R"
 
 #: views.py:128
 msgid "Práce s XML"
-msgstr ""
+msgstr "Working with XML"
 
 #: views.py:129
 msgid "Managing high-available applications in production"
@@ -198,7 +198,7 @@ msgstr "Spravovanie vysoko-dostupných aplikácii v produkcii"
 
 #: views.py:133
 msgid "Základy Ansible Workshop"
-msgstr ""
+msgstr "Workshop: An Introduction to Ansible"
 
 #: views.py:134
 msgid "Introduction to Machine Learning with Python"
@@ -206,7 +206,7 @@ msgstr "Úvod do strojového učenia v Pythone"
 
 #: views.py:139
 msgid "Solutions Reviews"
-msgstr ""
+msgstr "Ukážky riešení"
 
 #: views.py:140
 msgid "Campaign Automation & Abusing Celery Properly"
@@ -234,7 +234,7 @@ msgstr "Je SRE ďalšou zástavkou na našej DevOps ceste?"
 
 #: views.py:145
 msgid "Implementing distributed systems with Consul"
-msgstr ""
+msgstr "Consul: Implementácia distribuovaných systémov"
 
 #: views.py:146
 msgid "Designing fast and scalable Python MicroServices with django"
@@ -256,23 +256,23 @@ msgstr "HRA!"
 
 #: views.py:155
 msgid "Meteodáta v Pythone. Efektívne."
-msgstr ""
+msgstr "Meteo data in Python. Effectively."
 
 #: views.py:156
 msgid "Cesta kolem světa za 30 minut"
-msgstr ""
+msgstr "Around the World in 30 minutes"
 
 #: views.py:157
 msgid "LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie"
-msgstr ""
+msgstr "LOCKED SHIELDS: What a good cyber testing looks like"
 
 #: views.py:158
 msgid "Kiwi.com v ZOO"
-msgstr ""
+msgstr "Kiwi.com in ZOO"
 
 #: views.py:159
 msgid "Keynote in Kiwi.com Hall"
-msgstr ""
+msgstr "Hlavná prednáška v aule Kiwi.com"
 
 #: views.py:160
 msgid "Skynet your Infrastructure with QUADS"
@@ -304,15 +304,15 @@ msgstr "Roboworkshop"
 
 #: views.py:172
 msgid "Microbit:Slovensko"
-msgstr ""
+msgstr "Microbit:Slovakia"
 
 #: views.py:173
 msgid "Programujeme v Pythone – učíme seminár z programovania na strednej škole"
-msgstr ""
+msgstr "Coding in Python: A high-school programming lesson"
 
 #: views.py:177
 msgid "Charon a cesta z pickle pekla"
-msgstr ""
+msgstr "Charon and the way out from a pickle hell"
 
 #: views.py:178
 msgid "Making Python Behave"
@@ -364,7 +364,7 @@ msgstr "Cython: zrýchli svoj kód a nezblázni sa"
 
 #: views.py:197
 msgid "Zoznámte sa s pandami"
-msgstr ""
+msgstr "Meet the pandas"
 
 #: views.py:198
 msgid "Basics of OpenFaaS with Python"
@@ -384,15 +384,15 @@ msgstr "Miestnosť Python Software Foundation"
 
 #: views.py:215
 msgid "SPy - Hall A"
-msgstr ""
+msgstr "Spy - Aula A"
 
 #: views.py:220
 msgid "SPy - Hall B"
-msgstr ""
+msgstr "SPy - Aula B"
 
 #: views.py:225
 msgid "Django Girls Auditorium"
-msgstr ""
+msgstr "Miestnosť Django Girls"
 
 #: views.py:336
 msgid "Break"
@@ -1058,7 +1058,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:168
 msgid "Silver"
-msgstr ""
+msgstr "Striebro"
 
 #: templates/hall-of-fame.html:180
 #, python-format
@@ -1095,7 +1095,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:224
 msgid "Django Girls Workshop"
-msgstr ""
+msgstr "Workshop Django Girls"
 
 #: templates/hall-of-fame.html:236
 msgid ""
@@ -1109,7 +1109,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:249
 msgid "Partners"
-msgstr ""
+msgstr "Partneri"
 
 #: templates/hall-of-fame.html:260
 msgid ""
@@ -1158,7 +1158,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:338 templates/hall-of-fame.html:342
 msgid "Fakulta informatiky a informačných technológií STU v Bratislave"
-msgstr ""
+msgstr "Faculty of Informatics and Information Technologies of STU, Bratislava"
 
 #: templates/hall-of-fame.html:343
 msgid ""
@@ -1185,7 +1185,7 @@ msgstr ""
 
 #: templates/hall-of-fame.html:371
 msgid "Media Partners"
-msgstr ""
+msgstr "Mediálni partneri"
 
 #: templates/hall-of-fame.html:397
 msgid ""
