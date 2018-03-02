@@ -9,11 +9,11 @@ X-WR-CALDESC:Calendar for PyconSK 2018 event
 BEGIN:VEVENT
 DTSTART:20180309T090000
 DTEND:20180309T092500
-DTSTAMP:20180301T121258
-UID:70762-80713-18800-9589
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:41332-16590-91314-9435
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -23,63 +23,65 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T093000
 DTEND:20180309T101500
-DTSTAMP:20180301T121258
-UID:88948-13220-46977-3156
-CREATED:20180301T121258
-DESCRIPTION:<b>Aaron Bassett</b><br/>
- <br/>
- My brain is different. The regions involved in concentration, impulse cont
- rol, and inhibition are smaller than usual; Like somewhere between 5% and 
- 12% of adults I have ADHD. Even if you do not have the disorder yourself y
- ou probably work, live or know someone who does. But the world is not desi
- gned for people with ADHD, so to be successful I’ve had to develop techniq
- ues to keep my concentration and procrastination in check. <br/>
- In this talk, we’ll briefly look at what ADHD is and how it impairs not on
- ly concentration but also executive function. Then we’ll explore how chang
- es in the workplace can benefit not just those with ADHD, but anyone whose
-  work requires creativity or extended periods of focus. Next, we’ll look a
- t some persistent myths about productivity, and what you can do personally
-  to increase your concentration and output without burning out. Then I’ll 
- present some techniques you can rollout within your team to remove distrac
- tions while improving the quality of communication. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*7294-71960-51538-71957
+CREATED:20180302T134902
+DESCRIPTION:Aaron Bassett\n
+ \n
+ My brain is different. The regions involved in concentration, impulse
+ control, and inhibition are smaller than usual; Like somewhere
+ between 5% and 12% of adults I have ADHD. Even if you do not have the
+ disorder yourself you probably work, live or know someone who does.
+ But the world is not designed for people with ADHD, so to be
+ successful I’ve had to develop techniques to keep my concentration
+ and procrastination in check. \n  \n In this talk, we’ll briefly look
+ at what ADHD is and how it impairs not only concentration but also
+ executive function. Then we’ll explore how changes in the workplace
+ can benefit not just those with ADHD, but anyone whose work requires
+ creativity or extended periods of focus. Next, we’ll look at some
+ persistent myths about productivity, and what you can do personally
+ to increase your concentration and output without burning out. Then
+ I’ll present some techniques you can rollout within your team to
+ remove distractions while improving the quality of communication.\n
+ \n
  TAGS: softskills
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:When your wetware has too many threads - Tips from an ADHDer on how
-  to improve your focus
+SUMMARY:When your wetware has too many threads - Tips from an ADHDer
+ on how to improve your focus
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T102000
 DTEND:20180309T105000
-DTSTAMP:20180301T121258
-UID:*5803-72623-69329-15698
-CREATED:20180301T121258
-DESCRIPTION:<b>Mikey Ariel</b><br/>
- <br/>
- If you ever skimmed through a README, tried to follow a quickstart tutoria
- l, attempted to decipher an error message, or typed '--help' in your termi
- nal, congratulations -- you have encountered documentation! <br/>
- Long gone are the days of massive books with never-ending stories about yo
- ur software. Today's users are smarter and less patient, which means that 
- we no longer need to document *all the things*, as long as what we do docu
- ment is clear, concise, helpful, and accessible. And that's where the real
-  work starts. <br/>
- Documentation requires some attitude adjustment, since prose doesn't neatl
- y compile into binaries as code does. But Don't Panic(tm)! No matter what 
- your role is in the community, you can apply a few key principles from the
-  technical writing world to make your project more docs-friendly, and ther
- efore more user- and contributor-friendly. <br/>
- This high-level (and all-level) talk aims to introduce or re-acquaint you 
- with topics such as content strategy, docs-as-code, optimized DevOps for d
- ocs, and contribution workflows. Open-source projects of all shapes, ages,
-  sizes are welcome! <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*3225-32373-91037-47457
+CREATED:20180302T134902
+DESCRIPTION:Mikey Ariel\n
+ \n
+ If you ever skimmed through a README, tried to follow a quickstart
+ tutorial, attempted to decipher an error message, or typed '--help'
+ in your terminal, congratulations -- you have encountered
+ documentation! \n  \n Long gone are the days of massive books with
+ never-ending stories about your software. Today's users are smarter
+ and less patient, which means that we no longer need to document *all
+ the things*, as long as what we do document is clear, concise,
+ helpful, and accessible. And that's where the real work starts. \n
+ \n Documentation requires some attitude adjustment, since prose
+ doesn't neatly compile into binaries as code does. But Don't
+ Panic(tm)! No matter what your role is in the community, you can
+ apply a few key principles from the technical writing world to make
+ your project more docs-friendly, and therefore more user- and
+ contributor-friendly. \n  \n This high-level (and all-level) talk
+ aims to introduce or re-acquaint you with topics such as content
+ strategy, docs-as-code, optimized DevOps for docs, and contribution
+ workflows. Open-source projects of all shapes, ages, sizes are
+ welcome!\n
+ \n
  TAGS: docs
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -89,25 +91,24 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T110500
 DTEND:20180309T113500
-DTSTAMP:20180301T121258
-UID:*4869-72593-53230-17802
-CREATED:20180301T121258
-DESCRIPTION:<b>Tomáš Ehrlich</b><br/>
- <br/>
- GraphQL is a query language for web APIs, an alternative to REST. It allow
- s clients to define the structure of the required data. It’s strongly type
- d and allows introspection, which make clients more flexible. <br/>
- The talk will demonstrate usage of GraphQL on examples with Graphene (http
- ://graphene-python.org/), a GraphQL framework for Python. Most developers 
- are familiar with REST APIs, so the talk will compare GraphQL with REST, h
- ow they differ and what problems GraphQL is trying to solve. <br/>
- The outline is following: <br/>
- - Comparison of GraphQL with REST API. <br/>
- - Queries, data types  and introspection <br/>
- - Mutations <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:74898-84694-91716-2410
+CREATED:20180302T134902
+DESCRIPTION:Tomáš Ehrlich\n
+ \n
+ GraphQL is a query language for web APIs, an alternative to REST. It
+ allows clients to define the structure of the required data. It’s
+ strongly typed and allows introspection, which make clients more
+ flexible. \n  \n The talk will demonstrate usage of GraphQL on
+ examples with Graphene (http://graphene-python.org/), a GraphQL
+ framework for Python. Most developers are familiar with REST APIs, so
+ the talk will compare GraphQL with REST, how they differ and what
+ problems GraphQL is trying to solve. \n  \n The outline is following:
+ \n  \n - Comparison of GraphQL with REST API. \n - Queries, data
+ types  and introspection \n - Mutations\n
+ \n
  TAGS: web
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -117,20 +118,20 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T114000
 DTEND:20180309T121000
-DTSTAMP:20180301T121258
-UID:*7893-29283-65508-98528
-CREATED:20180301T121258
-DESCRIPTION:<b>František Benko</b><br/>
- <br/>
- We invite You on the journey of making Exponea and it's multi-terabyte in-
- memory databases possible in the containerized environment of the Google C
- loud. <br/>
- Join us as we grasp the wheel of our multi-server hardware-based spaceship
- , navigate through the dangerous oceans of no-downtime live migrations to 
- safely dock in the calm waters of Google bay or did we? <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*3490-53416-83964-92459
+CREATED:20180302T134902
+DESCRIPTION:František Benko\n
+ \n
+ We invite You on the journey of making Exponea and it's multi-
+ terabyte in-memory databases possible in the containerized
+ environment of the Google Cloud. \n Join us as we grasp the wheel of
+ our multi-server hardware-based spaceship, navigate through the
+ dangerous oceans of no-downtime live migrations to safely dock in the
+ calm waters of Google bay or did we?\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -140,11 +141,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T121000
 DTEND:20180309T121000
-DTSTAMP:20180301T121258
-UID:*8527-61550-79896-97739
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:25693-95710-12343-2842
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -154,19 +155,20 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T131000
 DTEND:20180309T135500
-DTSTAMP:20180301T121258
-UID:*8550-44138-05454-79739
-CREATED:20180301T121258
-DESCRIPTION:<b>Rae Knowler</b><br/>
- <br/>
- The default settings of some libraries and tools are so useless, or even d
- angerous, that they should never be used. While they give the impression o
- f being easy to use or performant, they actually represent traps for the u
- nwary user. I will show the concrete problems caused by such defaults, and
-  explore how to create tools with _good_ defaults. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*6027-05141-12770-53525
+CREATED:20180302T134902
+DESCRIPTION:Rae Knowler\n
+ \n
+ The default settings of some libraries and tools are so useless, or
+ even dangerous, that they should never be used. While they give the
+ impression of being easy to use or performant, they actually
+ represent traps for the unwary user. I will show the concrete
+ problems caused by such defaults, and explore how to create tools
+ with _good_ defaults.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -176,73 +178,70 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T140000
 DTEND:20180309T143000
-DTSTAMP:20180301T121258
-UID:74693-73713-24911-8292
-CREATED:20180301T121258
-DESCRIPTION:<b>Justin Mayer</b><br/>
- <br/>
- Internet service providers, ad networks, governments… Many organizations h
- ave increasing access to our personal information. Protecting privacy in t
- his environment is a non-trivial effort, and the threats posed by maliciou
- s attackers further exacerbates this problem. We, as developers, owe it to
-  ourselves and to our communities to do the best we can to improve our col
- lective security and privacy. <br/>
- Attendees of this talk will walk away with a thorough understanding of the
-  following topics and the problems they solve: <br/>
- * multi-factor authentication <br/>
- * encrypted DNS <br/>
- * SSH/VPN tunnels <br/>
- * full disk encryption <br/>
- * compartment isolation <br/>
- * “onion-skin” routing <br/>
- In addition, digital interactions with other people increasingly occur via
-  hosted services, which while convenient can compromise the privacy, integ
- rity, and control of our data. With some open-source software and inexpens
- ive virtual servers, we can take back control and empower us all to secure
- ly share our lives with one another. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*2357-63235-44470-36195
+CREATED:20180302T134902
+DESCRIPTION:Justin Mayer\n
+ \n
+ Internet service providers, ad networks, governments… Many
+ organizations have increasing access to our personal information.
+ Protecting privacy in this environment is a non-trivial effort, and
+ the threats posed by malicious attackers further exacerbates this
+ problem. We, as developers, owe it to ourselves and to our
+ communities to do the best we can to improve our collective security
+ and privacy. \n  \n Attendees of this talk will walk away with a
+ thorough understanding of the following topics and the problems they
+ solve: \n  \n * multi-factor authentication \n * encrypted DNS \n *
+ SSH/VPN tunnels \n * full disk encryption \n * compartment isolation
+ \n * “onion-skin” routing \n  \n In addition, digital interactions
+ with other people increasingly occur via hosted services, which while
+ convenient can compromise the privacy, integrity, and control of our
+ data. With some open-source software and inexpensive virtual servers,
+ we can take back control and empower us all to securely share our
+ lives with one another.\n
+ \n
  TAGS: security
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Protecting Privacy and Security — For Yourself and Your Community
+SUMMARY:Protecting Privacy and Security — For Yourself and Your
+ Community
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T144500
 DTEND:20180309T153000
-DTSTAMP:20180301T121258
-UID:67576-29871-20241-8459
-CREATED:20180301T121258
-DESCRIPTION:<b>Christopher Lozinski</b><br/>
- <br/>
- The ZODB is a mature graph database written in Python and optimized in C. 
-  Just subclass off of class Persistent Object, and Persistent Container, a
- nd your objects, graphs and applications become persistent.  <br/>
- The market for Graph Databases has recently exploded, as evidenced by over
-  $200Million invested in graph database companies.  Most of the graph data
- bases are written in Java.   <br/>
- If you are a Python developer, you will find much greater productivity usi
- ng a graph database written in Python, than one written in statically boun
- d Java.  The major Java databases constrain you to one of several persiste
- nt data types.  Persistent Python, supported by the ZODB allows you to mak
- e any Python data structure persistent.  <br/>
- The new ZODB Demo makes it very easy to start building your own applicatio
- ns on top of the ZODB. You can start by customizing the TreeLeaf, TreeBran
- ch and TreeRoot classes and their templates. You get CRUD for free.  <br/>
- The demo includes traditional relational CRUD, Create, Read, Update, and D
- elete.  But it also includes the extended graph CRUD.  Rename a Leaf or Br
- anch.  Cut and paste leaves or branches, copy and paste leaves or branches
- .  The talk also demonstrates the soon-to-be released view historic versio
- ns and restore a previous version. <br/>
- You can watch the talk video here: <br/>
- PythonLinks.info/zodb <br/>
- And see the slides here: <br/>
- https://pythonlinks.info/presentations/zodbtalk.pdf <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:60245-83003-42601-9147
+CREATED:20180302T134902
+DESCRIPTION:Christopher Lozinski\n
+ \n
+ The ZODB is a mature graph database written in Python and optimized
+ in C.  Just subclass off of class Persistent Object, and Persistent
+ Container, and your objects, graphs and applications become
+ persistent.  \n  \n The market for Graph Databases has recently
+ exploded, as evidenced by over $200Million invested in graph database
+ companies.  Most of the graph databases are written in Java.   \n  \n
+ If you are a Python developer, you will find much greater
+ productivity using a graph database written in Python, than one
+ written in statically bound Java.  The major Java databases constrain
+ you to one of several persistent data types.  Persistent Python,
+ supported by the ZODB allows you to make any Python data structure
+ persistent.  \n  \n The new ZODB Demo makes it very easy to start
+ building your own applications on top of the ZODB. You can start by
+ customizing the TreeLeaf, TreeBranch and TreeRoot classes and their
+ templates. You get CRUD for free.  \n   \n The demo includes
+ traditional relational CRUD, Create, Read, Update, and Delete.  But
+ it also includes the extended graph CRUD.  Rename a Leaf or Branch.
+ Cut and paste leaves or branches, copy and paste leaves or branches.
+ The talk also demonstrates the soon-to-be released view historic
+ versions and restore a previous version. \n  \n You can watch the
+ talk video here: \n PythonLinks.info/zodb \n  \n And see the slides
+ here: \n https://pythonlinks.info/presentations/zodbtalk.pdf\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -252,77 +251,76 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T153500
 DTEND:20180309T160500
-DTSTAMP:20180301T121258
-UID:*8444-08285-15848-52382
-CREATED:20180301T121258
-DESCRIPTION:<b>Jan Margeta</b><br/>
- <br/>
- This talk explores how writing machine learning models can become simpler 
- and more fun with dynamic code execution. The "deep learning" paradigm is 
- rapidly becoming "differentiable programming". <br/>
- And we will see it applied to cardiac medical images and images from indus
- trial inspection. <br/>
- It is based on our experiences at KardioMe in making of machine learning a
- pps for healthcare and optical inspection in manufacturing. We will have a
-  peek into python pipelines for data preparation for creation of anatomica
- l models for virtual reality and 3d printing. <br/>
- Traditional development and deployment of deep learning models often feels
-  like stepping away from programming and what we love about Python. Simple
-  loops and branches get replaced with special operations. Programs are wri
- tten as static computation graphs which need to are compiled to optimize r
- untime and resource usage. Seeing intermediate results and debugging can b
- e a pain, even with specialized tool. Tensorflow, Keras, Theano, MxNet, CN
- TK, they all do that. <br/>
- Machine learning is all teaching computers how to solve the problems for u
- s with data instead of explicitely telling them how to do so. It is undoub
- tedly a different way of thinking about programming. <br/>
- Yet, it does not need to become unnecessarily complex and you certainly do
-  not need a PhD for that. <br/>
- Gluon, is a new dynamic interface to MxNet and is a fenomenal tool to deve
- lop models that improve with data. The network can be written like a regul
- ar program with ifs or loops. Everything is dynamically executed and even 
- allows step by step debugging with pdb. The program parameters are, howeve
- r, trainable so that the execution output gets better with more data.  <br/>
- These together are massive helpers in faster experimentation and more fun.
-  In addition to that, Gluon has a large zoo of pretrained models ready for
-  your next app and MxNet as its backend is fast and resource efficient, an
- d can be deployed to embedded devices too. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:83913-78338-46978-8306
+CREATED:20180302T134902
+DESCRIPTION:Jan Margeta\n
+ \n
+ This talk explores how writing machine learning models can become
+ simpler and more fun with dynamic code execution. The "deep learning"
+ paradigm is rapidly becoming "differentiable programming". \n And we
+ will see it applied to cardiac medical images and images from
+ industrial inspection. \n It is based on our experiences at KardioMe
+ in making of machine learning apps for healthcare and optical
+ inspection in manufacturing. We will have a peek into python
+ pipelines for data preparation for creation of anatomical models for
+ virtual reality and 3d printing. \n  \n Traditional development and
+ deployment of deep learning models often feels like stepping away
+ from programming and what we love about Python. Simple loops and
+ branches get replaced with special operations. Programs are written
+ as static computation graphs which need to are compiled to optimize
+ runtime and resource usage. Seeing intermediate results and debugging
+ can be a pain, even with specialized tool. Tensorflow, Keras, Theano,
+ MxNet, CNTK, they all do that. \n  \n Machine learning is all
+ teaching computers how to solve the problems for us with data instead
+ of explicitely telling them how to do so. It is undoubtedly a
+ different way of thinking about programming. \n Yet, it does not need
+ to become unnecessarily complex and you certainly do not need a PhD
+ for that. \n  \n Gluon, is a new dynamic interface to MxNet and is a
+ fenomenal tool to develop models that improve with data. The network
+ can be written like a regular program with ifs or loops. Everything
+ is dynamically executed and even allows step by step debugging with
+ pdb. The program parameters are, however, trainable so that the
+ execution output gets better with more data.  \n  \n These together
+ are massive helpers in faster experimentation and more fun. In
+ addition to that, Gluon has a large zoo of pretrained models ready
+ for your next app and MxNet as its backend is fast and resource
+ efficient, and can be deployed to embedded devices too.\n
+ \n
  TAGS: ai
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Differentiable programming in Python and Gluon for (not only medica
- l) image analysis
+SUMMARY:Differentiable programming in Python and Gluon for (not only
+ medical) image analysis
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T162000
 DTEND:20180309T165000
-DTSTAMP:20180301T121258
-UID:28162-61344-57384-3592
-CREATED:20180301T121258
-DESCRIPTION:<b>Miroslav Šedivý</b><br/>
- <br/>
- What do you use to write source code, docs, books or e-mails? Single brain
- , single pair of hands, single keyboard, but a different keyboard layout f
- or each language and a different text editor for each purpose? <br/>
- --- <br/>
- Do you use an IDE to work on Python code, then switch to an e-mail client 
- to write a message, then open a different editor to work on the documentat
- ion and finally ssh to a remote server to edit a configuration file? Do yo
- u switch languages frequently or are your colleagues named Müller, Françoi
- s, Muñoz or even Šedivý? <br/>
- I'll show you how I am happily typing in several languages on a single sta
- ndard US keyboard layout and why my CapsLock became so useful. <br/>
- I'll show you how I use a single editor on all my machines to produce all 
- sorts of text, especially Python code with a few useful plugins. <br/>
- I'll show you my own plugin written in Python to hack my e-mails far beyon
- d imagination. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*2441-46916-88227-2737
+CREATED:20180302T134902
+DESCRIPTION:Miroslav Šedivý\n
+ \n
+ What do you use to write source code, docs, books or e-mails? Single
+ brain, single pair of hands, single keyboard, but a different
+ keyboard layout for each language and a different text editor for
+ each purpose? \n  \n --- \n  \n Do you use an IDE to work on Python
+ code, then switch to an e-mail client to write a message, then open a
+ different editor to work on the documentation and finally ssh to a
+ remote server to edit a configuration file? Do you switch languages
+ frequently or are your colleagues named Müller, François, Muñoz or
+ even Šedivý? \n  \n I'll show you how I am happily typing in several
+ languages on a single standard US keyboard layout and why my CapsLock
+ became so useful. \n  \n I'll show you how I use a single editor on
+ all my machines to produce all sorts of text, especially Python code
+ with a few useful plugins. \n  \n I'll show you my own plugin written
+ in Python to hack my e-mails far beyond imagination.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -332,12 +330,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T165500
 DTEND:20180309T172500
-DTSTAMP:20180301T121258
-UID:*1867-51934-61032-49313
-CREATED:20180301T121258
-DESCRIPTION: <br/>
+DTSTAMP:20180302T134902
+UID:54200-72002-48230-9500
+CREATED:20180302T134902
+DESCRIPTION: \n
  TAGS: other
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -347,12 +345,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T173000
 DTEND:20180309T180000
-DTSTAMP:20180301T121258
-UID:*3665-69373-40272-77875
-CREATED:20180301T121258
-DESCRIPTION: <br/>
+DTSTAMP:20180302T134902
+UID:*6543-87081-58695-74956
+CREATED:20180302T134902
+DESCRIPTION: \n
  TAGS: other
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -362,11 +360,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T090000
 DTEND:20180309T092500
-DTSTAMP:20180301T121258
-UID:35667-78173-68195-2947
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:58303-86225-66283-3227
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -376,31 +374,31 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T093000
 DTEND:20180309T101500
-DTSTAMP:20180301T121258
-UID:*4455-88521-76549-53658
-CREATED:20180301T121258
-DESCRIPTION:<b>Lenka Huňorová</b><br/>
- <br/>
- V júni 2017 sa na SPŠ Martin a na Gymnáziu V.P.T. Martin uskutočnila dvojd
- ňová konferencia o jazyku Python, na ktorej sa zúčastnilo cca 80 žiakov z 
- 8 stredných škôl okresu Martin i Dolného Kubína. Prednášajúcimi a vedúcimi
-  workshopov boli odborníci z praxe a učitelia z vysokých škôl. Odzneli zau
- jímavé prednášky, robilo sa veľa workshopov. Na konferencii sme nadviazali
-  spoluprácu s prednášajúcimi i lepšiu spoluprácu medzi školami. Taktiež sa
-  nám podarilo konferenciu a programovací jazyk Python spopularizovať v reg
- ionálnych médiách. <br/>
- Následne sme na SPŠ Martin i na Gymnáziu V.P.T. v Martine začali v šk. rok
- u 2017/2018 učiť programovanie v jazyku Python, robiť v tomto jazyku roční
- kové projekty, súťažiť v Zenite a celkovo tento jazyk podporovať. Sami žia
- ci prinášajú nové nápady a zlepšenia, napríklad pripraviť mini Python Day 
- pre žiakov základných škôl, ktorí by sa chceli venovať štúdiu programovani
- a na SŠ a pod.  <br/>
- Taktiež by sme chceli na PyCone SK 2018 so žiakmi našej školy predstaviť p
- ráce - maturitné zadania, ktoré robia v jazyku Python alebo iné programy, 
- ktoré robia na hodinách, prípadne vo voľnom čase. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:32961-54899-38229-089
+CREATED:20180302T134902
+DESCRIPTION:Lenka Huňorová\n
+ \n
+ V júni 2017 sa na SPŠ Martin a na Gymnáziu V.P.T. Martin uskutočnila
+ dvojdňová konferencia o jazyku Python, na ktorej sa zúčastnilo cca 80
+ žiakov z 8 stredných škôl okresu Martin i Dolného Kubína.
+ Prednášajúcimi a vedúcimi workshopov boli odborníci z praxe a
+ učitelia z vysokých škôl. Odzneli zaujímavé prednášky, robilo sa veľa
+ workshopov. Na konferencii sme nadviazali spoluprácu s prednášajúcimi
+ i lepšiu spoluprácu medzi školami. Taktiež sa nám podarilo
+ konferenciu a programovací jazyk Python spopularizovať v regionálnych
+ médiách. \n  \n Následne sme na SPŠ Martin i na Gymnáziu V.P.T. v
+ Martine začali v šk. roku 2017/2018 učiť programovanie v jazyku
+ Python, robiť v tomto jazyku ročníkové projekty, súťažiť v Zenite a
+ celkovo tento jazyk podporovať. Sami žiaci prinášajú nové nápady a
+ zlepšenia, napríklad pripraviť mini Python Day pre žiakov základných
+ škôl, ktorí by sa chceli venovať štúdiu programovania na SŠ a pod.
+ \n Taktiež by sme chceli na PyCone SK 2018 so žiakmi našej školy
+ predstaviť práce - maturitné zadania, ktoré robia v jazyku Python
+ alebo iné programy, ktoré robia na hodinách, prípadne vo voľnom čase.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -410,29 +408,28 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T102000
 DTEND:20180309T105000
-DTSTAMP:20180301T121258
-UID:49370-57944-06094-7710
-CREATED:20180301T121258
-DESCRIPTION:<b>Peter Kučera</b><br/>
- <br/>
- Rozmýšľate, ako vyučovať programovanie v Pythone na strednej škole od zákl
- adov až k maturite? <br/>
- Základnú úroveň programovania, ktorú sme predstavili minulý rok, sme rozší
- rili o maturitnú úroveň. V príspevku vám predstavíme našu metodiku Program
- ujeme v Pythone až k maturitnej úrovni. Ukážeme vám, ktorým témam sa venuj
- eme, ako sme ich spracovali, a ktorý kontext úloh sa nám osvedčil v praxi.
-  <br/>
- Tiež vám predstavíme kompletné materiály k maturitnej úrovni (elektronické
-  učebnice, príručky pre učiteľa, ako aj maturitnú zbierku úloh). Pre učite
- ľov, ktorí majú záujem vyučovať Python, sme pripravili školenia aj pre zák
- ladnú, aj maturitnú úroveň. <br/>
- A ako vytvoriť maturitné zadanie v Pythone? V čom je to iné na rozdiel od 
- Pascalu? Aké úskalia nás čakajú pri tvorbe maturitných zadaní a na čo je p
- otrebné sa sústrediť? Aj týmto otázkam sa budeme venovať v našom príspevku
-  a podrobnejšie ich rozvinieme na našom workshope. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:10585-74114-99478-6876
+CREATED:20180302T134902
+DESCRIPTION:Peter Kučera\n
+ \n
+ Rozmýšľate, ako vyučovať programovanie v Pythone na strednej škole od
+ základov až k maturite? \n Základnú úroveň programovania, ktorú sme
+ predstavili minulý rok, sme rozšírili o maturitnú úroveň. V príspevku
+ vám predstavíme našu metodiku Programujeme v Pythone až k maturitnej
+ úrovni. Ukážeme vám, ktorým témam sa venujeme, ako sme ich
+ spracovali, a ktorý kontext úloh sa nám osvedčil v praxi. \n Tiež vám
+ predstavíme kompletné materiály k maturitnej úrovni (elektronické
+ učebnice, príručky pre učiteľa, ako aj maturitnú zbierku úloh). Pre
+ učiteľov, ktorí majú záujem vyučovať Python, sme pripravili školenia
+ aj pre základnú, aj maturitnú úroveň. \n A ako vytvoriť maturitné
+ zadanie v Pythone? V čom je to iné na rozdiel od Pascalu? Aké úskalia
+ nás čakajú pri tvorbe maturitných zadaní a na čo je potrebné sa
+ sústrediť? Aj týmto otázkam sa budeme venovať v našom príspevku a
+ podrobnejšie ich rozvinieme na našom workshope.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -442,24 +439,25 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T110500
 DTEND:20180309T113500
-DTSTAMP:20180301T121258
-UID:*8809-35893-75622-90426
-CREATED:20180301T121258
-DESCRIPTION:<b>Ján Gondoľ</b><br/>
- <br/>
- Otvorené vzdelávacie zdroje sú otvorene licencované materiály, ktoré je mo
- žné bezplatne získavať, používať, upravovať, kombinovať s inými zdrojmi a 
- šíriť ďalej. Patria medzi ne výukové materiály ako napr. články na webe, v
- ideá z konferencií a ďalších zdrojov, učebnice a podobne. Príspevok poskyt
- ne prehľad dostupných otvorene licencovaných vzdelávacích materiálov (pred
- ovšetkým v slovenčine, češtine a angličtine), ako aj možností, ktorými môž
- u učitelia sami prispieť k lepšej dostupnosti vzdelávacích materiálov (nap
- r. zdieľaním odkazov s kolegami prostredníctvom repozitára, ktorý sa momen
- tálne pripravuje a bude na PyConSK dostupný, či prekladom anglických mater
- iálov do slovenského jazyka). <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*2860-53660-40878-62339
+CREATED:20180302T134902
+DESCRIPTION:Ján Gondoľ\n
+ \n
+ Otvorené vzdelávacie zdroje sú otvorene licencované materiály, ktoré
+ je možné bezplatne získavať, používať, upravovať, kombinovať s inými
+ zdrojmi a šíriť ďalej. Patria medzi ne výukové materiály ako napr.
+ články na webe, videá z konferencií a ďalších zdrojov, učebnice a
+ podobne. Príspevok poskytne prehľad dostupných otvorene licencovaných
+ vzdelávacích materiálov (predovšetkým v slovenčine, češtine a
+ angličtine), ako aj možností, ktorými môžu učitelia sami prispieť k
+ lepšej dostupnosti vzdelávacích materiálov (napr. zdieľaním odkazov s
+ kolegami prostredníctvom repozitára, ktorý sa momentálne pripravuje a
+ bude na PyConSK dostupný, či prekladom anglických materiálov do
+ slovenského jazyka).\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -469,31 +467,31 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T114000
 DTEND:20180309T121000
-DTSTAMP:20180301T121258
-UID:53549-48376-87929-6067
-CREATED:20180301T121258
-DESCRIPTION:<b>Ernest Walzel</b><br/>
- <br/>
- CoderDojo je globálna sieť bezplatných programovacích klubov pre deti od 7
-  do 17 rokov. Kluby CoderDojo sú vedené dobrovoľníkmi a sú organizované fo
- rmou “hackerspaceov”. Deti majú možnosť pracovať na svojich vlastných nápa
- doch a majú prístup k technickým mentorom z profesionálneho sveta. <br/>
- Za uplynulý rok sme v bratislavskom CoderDojo odučili 100+ hodín, navštívi
- li tri školy a pracovali s technológiami od Scratchu, cez Python, Unity po
-  Arduino. <br/>
- V tomto príspevku opíšem fungovanie CoderDojo na Slovensku a v zahraničí: 
- čím sa tento formát líši od iných programovacích krúžkov, aké sú hlavné vý
- hody tejto medzinárodnej siete klubov a ako sa zapojiť kdekoľvek na Sloven
- sku. <br/>
- Ukážem tiež ako vyzerá programovacie stretnutie pre viac než 200 detí a uv
- ediem niekoľko príkladov projektov, ktorým sa venujú “dojá” po celom svete
- , vrátane programovania hier, elektronických obvodov, 3D tlače, či konštru
- kcie dronov. <br/>
- Prednáška je vhodná pre edukátorov, ale aj pre technicky orientovaných jed
- notlivcov ktorí sa zaujímajú o vzdelávanie. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*6865-16764-04702-81362
+CREATED:20180302T134902
+DESCRIPTION:Ernest Walzel\n
+ \n
+ CoderDojo je globálna sieť bezplatných programovacích klubov pre deti
+ od 7 do 17 rokov. Kluby CoderDojo sú vedené dobrovoľníkmi a sú
+ organizované formou “hackerspaceov”. Deti majú možnosť pracovať na
+ svojich vlastných nápadoch a majú prístup k technickým mentorom z
+ profesionálneho sveta. \n  \n Za uplynulý rok sme v bratislavskom
+ CoderDojo odučili 100+ hodín, navštívili tri školy a pracovali s
+ technológiami od Scratchu, cez Python, Unity po Arduino. \n  \n V
+ tomto príspevku opíšem fungovanie CoderDojo na Slovensku a v
+ zahraničí: čím sa tento formát líši od iných programovacích krúžkov,
+ aké sú hlavné výhody tejto medzinárodnej siete klubov a ako sa
+ zapojiť kdekoľvek na Slovensku. \n  \n Ukážem tiež ako vyzerá
+ programovacie stretnutie pre viac než 200 detí a uvediem niekoľko
+ príkladov projektov, ktorým sa venujú “dojá” po celom svete, vrátane
+ programovania hier, elektronických obvodov, 3D tlače, či konštrukcie
+ dronov. \n  \n Prednáška je vhodná pre edukátorov, ale aj pre
+ technicky orientovaných jednotlivcov ktorí sa zaujímajú o
+ vzdelávanie.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -503,11 +501,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T121000
 DTEND:20180309T121000
-DTSTAMP:20180301T121258
-UID:91863-02386-82448-3859
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:*1357-27305-66434-40553
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -517,25 +515,25 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T131000
 DTEND:20180309T135500
-DTSTAMP:20180301T121258
-UID:26610-61941-46349-5039
-CREATED:20180301T121258
-DESCRIPTION:<b>Petr Viktorin</b><br/>
- <br/>
- Když jsem před čtyřmi lety zkusil doučovat Python, netušil jsem, že z toho
-  vznikne samostatný začátečnický kurz, kterým projdou stovky lidí ročně. <br/>
- Dnes se z mých poznámek vyvinuly učební materiály, do kterých už přispěly 
- desítky lidí, a skupina dobrovolnic a podle nich pod hlavičkou PyLadies or
- ganizují bezplatné kurzy po celé republice. Mezitím vzniklo i několik podo
- bných konceptů, jako Django Girls, Beginners' Day na EuroPythonu, nebo Cze
- chitas. <br/>
- Chtěl bych se podělit o zkušenosti z organizování těchto kurzů, zamyslet s
- e nad paralelami mezi otevřenými kurzy a open-source softwarem, popovídat 
- o překvapivě silném vlivu na komunitu – a hlavně inspirovat organizátory p
- odobných kurzů na Slovensku. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*3041-45735-32651-40541
+CREATED:20180302T134902
+DESCRIPTION:Petr Viktorin\n
+ \n
+ Když jsem před čtyřmi lety zkusil doučovat Python, netušil jsem, že z
+ toho vznikne samostatný začátečnický kurz, kterým projdou stovky lidí
+ ročně. \n  \n Dnes se z mých poznámek vyvinuly učební materiály, do
+ kterých už přispěly desítky lidí, a skupina dobrovolnic a podle nich
+ pod hlavičkou PyLadies organizují bezplatné kurzy po celé republice.
+ Mezitím vzniklo i několik podobných konceptů, jako Django Girls,
+ Beginners' Day na EuroPythonu, nebo Czechitas. \n  \n Chtěl bych se
+ podělit o zkušenosti z organizování těchto kurzů, zamyslet se nad
+ paralelami mezi otevřenými kurzy a open-source softwarem, popovídat o
+ překvapivě silném vlivu na komunitu – a hlavně inspirovat
+ organizátory podobných kurzů na Slovensku.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -545,21 +543,22 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T140000
 DTEND:20180309T143000
-DTSTAMP:20180301T121258
-UID:71526-10198-18155-807
-CREATED:20180301T121258
-DESCRIPTION:<b>Tomáš Dudík</b><br/>
- <br/>
- Od roku 2014 sa programovacím jazykom na gymnáziu Viliama Pauliny Tótha st
- al Python. O tom akým spôsobom prebieha výučba, ako sme sa k jazyku Python
-  dostali a aké problémy sme museli riešiť, by som sa chcel s vami podeliť.
-  Nedajú sa ani opomenúť herné prostredia, ktoré pri vyučovaní využívame. T
- akisto v poslednom roku sme začali využívať Jupyter Notebooky s rozšírením
-  Nbgrader, čo výučbu opäť posunulo dopredu. Ako inšpiráciu pre ostatných b
- y som rád ukázal aj niektoré príklady, s ktorými trápime našich študentov. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*2213-69225-48129-11022
+CREATED:20180302T134902
+DESCRIPTION:Tomáš Dudík\n
+ \n
+ Od roku 2014 sa programovacím jazykom na gymnáziu Viliama Pauliny
+ Tótha stal Python. O tom akým spôsobom prebieha výučba, ako sme sa k
+ jazyku Python dostali a aké problémy sme museli riešiť, by som sa
+ chcel s vami podeliť. Nedajú sa ani opomenúť herné prostredia, ktoré
+ pri vyučovaní využívame. Takisto v poslednom roku sme začali využívať
+ Jupyter Notebooky s rozšírením Nbgrader, čo výučbu opäť posunulo
+ dopredu. Ako inšpiráciu pre ostatných by som rád ukázal aj niektoré
+ príklady, s ktorými trápime našich študentov.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -569,29 +568,30 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T144500
 DTEND:20180309T153000
-DTSTAMP:20180301T121258
-UID:20100-46496-26416-5775
-CREATED:20180301T121258
-DESCRIPTION:<b>Marek Mansell</b><br/>
- <br/>
- “Jéj, ono to bliká!” - toto je dôvod, prečo žiakov hardvér baví. Dnešné de
- ti sú oveľa zbehlejšie v technológiach ako pol dekády dozadu a preto vyžad
- ujú náročnejšie a zaujímavejšie úlohy, ktoré im ozrejmia princípy, vďaka k
- torým fungujú každodenné technológie. Práve programovanie hardvéru toto um
- ožňuje. Základné školy môžu využiť edukačnú dosku micro:bit, ktorú vo Veľk
- ej Británií navrhli špeciálne pre 11 ročné deti a k tomu vytvorili množstv
- o učebných materiálov a návodov. Pre stredné školy je vhodná náročnejšia d
- oska NodeMCU, ktorá obsahuje WiFi modul na bezdrátovú komunikáciu. Hardvér
- ové projekty sa veľmi ľahko prepájajú aj s inými predmetmi, napríklad geog
- rafiou (digitálny kompas; domáca meteo stanica), fyzikou (elektronické súč
- iastky; meranie intenzity svetla), výtvarnou výchovou (prišívanie elektron
- iky na oblečenie; tvorba umeleckých objektov, ktoré svietia či sa pohybujú
- ), biológiou (samozalievací kvetináč; inteligentný skleník), atď. Odprezen
- tované budú aj hardvérové projekty stredoškolákov zrealizované v uplynulýc
- h mesiacoch. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*8376-53926-13144-2325
+CREATED:20180302T134902
+DESCRIPTION:Marek Mansell\n
+ \n
+ “Jéj, ono to bliká!” - toto je dôvod, prečo žiakov hardvér baví.
+ Dnešné deti sú oveľa zbehlejšie v technológiach ako pol dekády dozadu
+ a preto vyžadujú náročnejšie a zaujímavejšie úlohy, ktoré im ozrejmia
+ princípy, vďaka ktorým fungujú každodenné technológie. Práve
+ programovanie hardvéru toto umožňuje. Základné školy môžu využiť
+ edukačnú dosku micro:bit, ktorú vo Veľkej Británií navrhli špeciálne
+ pre 11 ročné deti a k tomu vytvorili množstvo učebných materiálov a
+ návodov. Pre stredné školy je vhodná náročnejšia doska NodeMCU, ktorá
+ obsahuje WiFi modul na bezdrátovú komunikáciu. Hardvérové projekty sa
+ veľmi ľahko prepájajú aj s inými predmetmi, napríklad geografiou
+ (digitálny kompas; domáca meteo stanica), fyzikou (elektronické
+ súčiastky; meranie intenzity svetla), výtvarnou výchovou (prišívanie
+ elektroniky na oblečenie; tvorba umeleckých objektov, ktoré svietia
+ či sa pohybujú), biológiou (samozalievací kvetináč; inteligentný
+ skleník), atď. Odprezentované budú aj hardvérové projekty
+ stredoškolákov zrealizované v uplynulých mesiacoch.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -601,12 +601,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T153500
 DTEND:20180309T160500
-DTSTAMP:20180301T121258
-UID:*5637-70422-13795-57155
-CREATED:20180301T121258
-DESCRIPTION: <br/>
+DTSTAMP:20180302T134902
+UID:13607-14731-89586-3369
+CREATED:20180302T134902
+DESCRIPTION: \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -616,49 +616,45 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T162000
 DTEND:20180309T172000
-DTSTAMP:20180301T121258
-UID:*2058-45158-77025-4373
-CREATED:20180301T121258
-DESCRIPTION:<b>Zuzana Kubincová</b><br/>
- <br/>
- Téma: Kam smeruje vyučovanie informatiky na Slovensku? 
- Panelová diskusia odborníkov na vybrané otázky od širokého publika pod ved
- ením moderátora. <br/>
- Pošlite svoju otázku pomocou formulára: https://goo.gl/forms/53c56YN86BWD2
- yGQ2 <br/>
- Účastníci diskusie: <br/>
- Andrej Blaho (FMFI UK) <br/>
- Ivan Kalaš (FMFI UK) <br/>
- Jaroslav Výbošťok (GJH) <br/>
- Jakub Šimko (FIIT STU) <br/>
- Richard Balogh (FEI STU) <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*4307-68153-83755-90529
+CREATED:20180302T134902
+DESCRIPTION:Zuzana Kubincová\n
+ \n
+ Téma: Kam smeruje vyučovanie informatiky na Slovensku?  \n  \n
+ Panelová diskusia odborníkov na vybrané otázky od širokého publika
+ pod vedením moderátora. \n  \n Pošlite svoju otázku pomocou
+ formulára: https://goo.gl/forms/53c56YN86BWD2yGQ2 \n  \n Účastníci
+ diskusie: \n  \n Andrej Blaho (FMFI UK) \n Ivan Kalaš (FMFI UK) \n
+ Jaroslav Výbošťok (GJH) \n Jakub Šimko (FIIT STU) \n Richard Balogh
+ (FEI STU)\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?
+SUMMARY:Panelová diskusia: Kam smeruje vyučovanie informatiky na
+ Slovensku?
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T093000
 DTEND:20180309T103000
-DTSTAMP:20180301T121258
-UID:*1841-50058-05078-63481
-CREATED:20180301T121258
-DESCRIPTION:<b>Martin Bago</b><br/>
- <br/>
- - Prečo je interaktívna mapa infografikou budúcnosti
- - Ako vytvárať praktické interaktívne .html mapy v prostredí Python a R <br/>
- - Ktoré knižnice sú pri výrobe nevyhnutné <br/>
- - Čo sú kľúčové problémy pri výrobe interaktívnych máp - ako integrovať po
- lygóny okresov, ako svoju mapu vyfarbiť a podobne... <br/>
- - Akými dátami mapy plniť <br/>
- - A čo sú typické príklady použitia interaktívnych máp <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:14891-72619-98777-7757
+CREATED:20180302T134902
+DESCRIPTION:Martin Bago\n
+ \n
+ - Prečo je interaktívna mapa infografikou budúcnosti \n - Ako
+ vytvárať praktické interaktívne .html mapy v prostredí Python a R \n
+ - Ktoré knižnice sú pri výrobe nevyhnutné \n - Čo sú kľúčové problémy
+ pri výrobe interaktívnych máp - ako integrovať polygóny okresov, ako
+ svoju mapu vyfarbiť a podobne... \n - Akými dátami mapy plniť \n - A
+ čo sú typické príklady použitia interaktívnych máp\n
+ \n
  TAGS: data
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -668,21 +664,17 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T104000
 DTEND:20180309T121000
-DTSTAMP:20180301T121258
-UID:78673-10945-91609-8045
-CREATED:20180301T121258
-DESCRIPTION:<b>Václav Sauer</b><br/>
- <br/>
- Workshop pro začátečníky
- Obsah (zhruba): <br/>
- Stručný úvod do XML <br/>
- Instalace parseru <br/>
- Nahrání, úprava, uložení XML <br/>
- práce s daty v XML formátu <br/>
- serializace a deserializace objektu do XML <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:40229-68064-17183-0469
+CREATED:20180302T134902
+DESCRIPTION:Václav Sauer\n
+ \n
+ Workshop pro začátečníky \n  \n Obsah (zhruba): \n Stručný úvod do
+ XML \n Instalace parseru \n Nahrání, úprava, uložení XML \n práce s
+ daty v XML formátu \n serializace a deserializace objektu do XML\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -692,11 +684,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T121000
 DTEND:20180309T121000
-DTSTAMP:20180301T121258
-UID:*1322-30591-49278-80295
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:*2179-60020-93763-53372
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -706,36 +698,34 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T131000
 DTEND:20180309T171000
-DTSTAMP:20180301T121258
-UID:83000-76843-45061-727
-CREATED:20180301T121258
-DESCRIPTION:<b>Matej Vetrák</b><br/>
- <br/>
- In this workshop we’ll look at common problems that all developers are fac
- ing in the latest trends of the ever changing scalable app world. We’ll le
- arn how to deploy, scale, and manage high-available microservices using Do
- cker, Kubernetes and other open-source tools. <br/>
- We will also address some of these problems: building and deploying applic
- ations, pipelines, rolling updates, load balancing, scaling, replication, 
- configuration, health checking and self healing, monitoring, alerting, log
-  aggregation, resource constraints, capacity planning, data stores, securi
- ty, key management, debugging and best practices. <br/>
- Who should attend? <br/>
- People who are interested in containerized applications, are in the proces
- s of moving to microservice architecture or are managing high-available pr
- oduction environments. <br/>
- Why you should attend? <br/>
- You want to start using Kubernetes in development and production. <br/>
- You are already using Kubernetes, but you are not ready for production. <br/>
- You would like to better understand new trend of high-available microservi
- ces. <br/>
- How to prepare for the workshop? <br/>
- Bring laptop with installed minikube: https://kubernetes.io/docs/tasks/too
- ls/install-minikube/ <br/>
- and docker: https://docs.docker.com/engine/installation/ <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:68938-98325-36556-7328
+CREATED:20180302T134902
+DESCRIPTION:Matej Vetrák\n
+ \n
+ In this workshop we’ll look at common problems that all developers
+ are facing in the latest trends of the ever changing scalable app
+ world. We’ll learn how to deploy, scale, and manage high-available
+ microservices using Docker, Kubernetes and other open-source tools.
+ \n  \n We will also address some of these problems: building and
+ deploying applications, pipelines, rolling updates, load balancing,
+ scaling, replication, configuration, health checking and self
+ healing, monitoring, alerting, log aggregation, resource constraints,
+ capacity planning, data stores, security, key management, debugging
+ and best practices. \n  \n Who should attend? \n  \n People who are
+ interested in containerized applications, are in the process of
+ moving to microservice architecture or are managing high-available
+ production environments. \n  \n Why you should attend? \n  \n You
+ want to start using Kubernetes in development and production. \n  \n
+ You are already using Kubernetes, but you are not ready for
+ production. \n  \n You would like to better understand new trend of
+ high-available microservices. \n  \n How to prepare for the workshop?
+ \n  \n Bring laptop with installed minikube:
+ https://kubernetes.io/docs/tasks/tools/install-minikube/ \n and
+ docker: https://docs.docker.com/engine/installation/\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -745,30 +735,25 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T093000
 DTEND:20180309T123000
-DTSTAMP:20180301T121258
-UID:*8933-65534-51380-3073
-CREATED:20180301T121258
-DESCRIPTION:<b>Tomáš Pytel</b><br/>
- <br/>
- Na workshope si predstavíme základné princípy "DevOps" vývoja. Účastník sa
-  naučí dobrým praktikám počas vývoja softvéru. V Ansible si bude vedieť de
- ploynúť celú aplikáciu do "Cloudu". <br/>
- Čo sa naučí v Ansible : <br/>
- - Vytvorenie Používateľa <br/>
- - Zakladné nastavenie systému <br/>
- - Základy Firewall <br/>
- - Základy práce s GitHub <br/>
- - Základy práce s SSH <br/>
- - Inštalácia Python a Modulov <br/>
- - Deploy aplikácie <br/>
- - Nastavenie webserveru <br/>
- Všetko samozrejme automatizovane a reprodukovateľne. <br/>
- Workshop je primárne určený pre tých ktorí začínajú s vývojom aplikácií a 
- chcú to robiť dobre. Nie je určený pre pokročilých používateľov, alebo týc
- h ktorí už majú skúsenosti s deploymentom. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:84793-55680-11713-4791
+CREATED:20180302T134902
+DESCRIPTION:Tomáš Pytel\n
+ \n
+ Na workshope si predstavíme základné princípy "DevOps" vývoja.
+ Účastník sa naučí dobrým praktikám počas vývoja softvéru. V Ansible
+ si bude vedieť deploynúť celú aplikáciu do "Cloudu". \n  \n Čo sa
+ naučí v Ansible : \n - Vytvorenie Používateľa \n - Zakladné
+ nastavenie systému \n - Základy Firewall \n - Základy práce s GitHub
+ \n - Základy práce s SSH \n - Inštalácia Python a Modulov \n - Deploy
+ aplikácie \n - Nastavenie webserveru \n  \n Všetko samozrejme
+ automatizovane a reprodukovateľne. \n  \n Workshop je primárne určený
+ pre tých ktorí začínajú s vývojom aplikácií a chcú to robiť dobre.
+ Nie je určený pre pokročilých používateľov, alebo tých ktorí už majú
+ skúsenosti s deploymentom.\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall B (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -778,11 +763,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T123000
 DTEND:20180309T123000
-DTSTAMP:20180301T121258
-UID:56098-55216-82614-8273
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:*2865-53113-46222-94748
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall B (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -792,24 +777,24 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180309T131000
 DTEND:20180309T171000
-DTSTAMP:20180301T121258
-UID:*1232-68391-67359-81708
-CREATED:20180301T121258
-DESCRIPTION:<b>Katharine Jarmul</b><br/>
- <br/>
- In this half-day workshop, we'll take a walk through a Kaggle competition 
- on house prices to explore our dataset. Then, we'll build a model to submi
- t our predictions to Kaggle. Finally, we'll introspect what our model has 
- learned. By the end of the course, you should have an idea of how to get c
- ompeting on Kaggle or building your own models with Python and scikit-lear
- n. <br/>
- Students are expected to arrive ready to learn and with all packages prope
- rly installed. There will also be some theoretical discussions on machine 
- learning practices, and some group work. <br/>
- GitHub Repo: https://github.com/kjam/intro-to-ml <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*7676-04043-05007-60157
+CREATED:20180302T134902
+DESCRIPTION:Katharine Jarmul\n
+ \n
+ In this half-day workshop, we'll take a walk through a Kaggle
+ competition on house prices to explore our dataset. Then, we'll build
+ a model to submit our predictions to Kaggle. Finally, we'll
+ introspect what our model has learned. By the end of the course, you
+ should have an idea of how to get competing on Kaggle or building
+ your own models with Python and scikit-learn. \n  \n Students are
+ expected to arrive ready to learn and with all packages properly
+ installed. There will also be some theoretical discussions on machine
+ learning practices, and some group work. \n  \n GitHub Repo:
+ https://github.com/kjam/intro-to-ml\n
+ \n
  TAGS: ai
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall B (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -819,11 +804,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T090000
 DTEND:20180310T092500
-DTSTAMP:20180301T121258
-UID:*4463-97026-64977-38412
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:80690-59989-46785-0970
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -833,22 +818,23 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T093000
 DTEND:20180310T100000
-DTSTAMP:20180301T121258
-UID:26165-71625-14421-0494
-CREATED:20180301T121258
-DESCRIPTION:<b>Krzysztof Żuraw</b><br/>
- <br/>
- Did you ever found out a bug in production that was caused by not understa
- nding what are requirements? <br/>
- Did you implement your code only to see that your solutions are not optima
- l for the code review? This and other similar problems can be avoided by u
- sing solution reviews. In my talk, I want to talk about what exactly is so
- lutions reviews, what benefits it gives you and your team, what are drawba
- cks of such methods. I will guide you through my experiment with using dif
- ferent methods for solution reviews and which were good and which weren't. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:23620-69859-88482-2755
+CREATED:20180302T134902
+DESCRIPTION:Krzysztof Żuraw\n
+ \n
+ Did you ever found out a bug in production that was caused by not
+ understanding what are requirements? \n  \n Did you implement your
+ code only to see that your solutions are not optimal for the code
+ review? This and other similar problems can be avoided by using
+ solution reviews. In my talk, I want to talk about what exactly is
+ solutions reviews, what benefits it gives you and your team, what are
+ drawbacks of such methods. I will guide you through my experiment
+ with using different methods for solution reviews and which were good
+ and which weren't.\n
+ \n
  TAGS: community
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -858,23 +844,24 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T100500
 DTEND:20180310T103500
-DTSTAMP:20180301T121258
-UID:17343-42645-82897-6476
-CREATED:20180301T121258
-DESCRIPTION:<b>Peter Dolák</b><br/>
- <br/>
- Celery is an asynchronous task queue allowing easy distributed job executi
- on in Python. This talk will, after a short introduction to Celery, share 
- what we learned when we used it as the backbone for the campaign automatio
- n module of Exponea experience cloud. Serving over a hundred millions of o
- ur client's customers across the world with incredibly diverse use cases, 
- we have heavily used some of Celery's most obscure functionality in often 
- unintended ways. Join us for a bumpy ride towards a stability and scalabil
- ity and learn many insights useful if you ever need to run some serious as
- ynchronous jobs yourself. Barf bags not included. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:46812-21442-39459-3143
+CREATED:20180302T134902
+DESCRIPTION:Peter Dolák\n
+ \n
+ Celery is an asynchronous task queue allowing easy distributed job
+ execution in Python. This talk will, after a short introduction to
+ Celery, share what we learned when we used it as the backbone for the
+ campaign automation module of Exponea experience cloud. Serving over
+ a hundred millions of our client's customers across the world with
+ incredibly diverse use cases, we have heavily used some of Celery's
+ most obscure functionality in often unintended ways. Join us for a
+ bumpy ride towards a stability and scalability and learn many
+ insights useful if you ever need to run some serious asynchronous
+ jobs yourself. Barf bags not included.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -884,25 +871,25 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T105000
 DTEND:20180310T112000
-DTSTAMP:20180301T121258
-UID:*8671-95878-64835-16349
-CREATED:20180301T121258
-DESCRIPTION:<b>Anton Caceres</b><br/>
- <br/>
- What do you think is the most essential skill a data scientist should mast
- er? Knowledge of deep learning tools? Hadoop? SciPy? <br/>
- This talk reveals the cornerstone of data science: nothing is as important
-  as asking data the right questions. To make it work, we need some tools a
- nd curiosity. <br/>
- While focusing on tools, we will first go over the data science subject as
-  a whole, define our goals, continue with an overview of the essential Pyt
- hon packages like Pandas and Jupyter Notebook, and conclude with a live de
- mo. The purpose of this talk is to understand our data: read it, visualize
- , and formulate right questions, as well as to endorse your imagination as
-  a data scientist. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*3433-33028-79124-43883
+CREATED:20180302T134902
+DESCRIPTION:Anton Caceres\n
+ \n
+ What do you think is the most essential skill a data scientist should
+ master? Knowledge of deep learning tools? Hadoop? SciPy? \n  \n This
+ talk reveals the cornerstone of data science: nothing is as important
+ as asking data the right questions. To make it work, we need some
+ tools and curiosity. \n  \n While focusing on tools, we will first go
+ over the data science subject as a whole, define our goals, continue
+ with an overview of the essential Python packages like Pandas and
+ Jupyter Notebook, and conclude with a live demo. The purpose of this
+ talk is to understand our data: read it, visualize, and formulate
+ right questions, as well as to endorse your imagination as a data
+ scientist.\n
+ \n
  TAGS: data
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -912,34 +899,35 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T112500
 DTEND:20180310T115500
-DTSTAMP:20180301T121258
-UID:89731-81197-55661-1375
-CREATED:20180301T121258
-DESCRIPTION:<b>Alejandro Saucedo</b><br/>
- <br/>
- This talk would provide useful and practical understanding on how to build
-  industry-ready machine learning models in python through distributed, hor
- izontally-scalable architectures. I will include why and when these archit
- ectures are required, best practices, caveats, technologies to use them, a
- nd a practical implementation using celery + rabbitmq. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*2276-34861-16690-39780
+CREATED:20180302T134902
+DESCRIPTION:Alejandro Saucedo\n
+ \n
+ This talk would provide useful and practical understanding on how to
+ build industry-ready machine learning models in python through
+ distributed, horizontally-scalable architectures. I will include why
+ and when these architectures are required, best practices, caveats,
+ technologies to use them, and a practical implementation using celery
+ + rabbitmq.\n
+ \n
  TAGS: ai
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Industrial Machine Learning: Building scalable distributed machine 
- learning pipelines with Python
+SUMMARY:Industrial Machine Learning: Building scalable distributed
+ machine learning pipelines with Python
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T115500
 DTEND:20180310T115500
-DTSTAMP:20180301T121258
-UID:*4235-39312-73047-71820
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:14240-35819-20151-0872
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -949,19 +937,20 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T125500
 DTEND:20180310T132500
-DTSTAMP:20180301T121258
-UID:22164-21730-79997-3446
-CREATED:20180301T121258
-DESCRIPTION:<b>Michael Kennedy</b><br/>
- <br/>
- We often hear the term Pythonic thrown around, but what exactly does it me
- an? This talk will take you on a tour of some of the more important python
- ic concepts. You will see many examples of perfectly functional Python cod
- e that is quite non-pythonic. We will evolve that code into more an idioma
- tic form that fits better with the Python language and its users. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*8833-97276-70768-84388
+CREATED:20180302T134902
+DESCRIPTION:Michael Kennedy\n
+ \n
+ We often hear the term Pythonic thrown around, but what exactly does
+ it mean? This talk will take you on a tour of some of the more
+ important pythonic concepts. You will see many examples of perfectly
+ functional Python code that is quite non-pythonic. We will evolve
+ that code into more an idiomatic form that fits better with the
+ Python language and its users.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -971,27 +960,28 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T133000
 DTEND:20180310T140000
-DTSTAMP:20180301T121258
-UID:*4063-82200-65692-30085
-CREATED:20180301T121258
-DESCRIPTION:<b>Martin Strycek</b><br/>
- <br/>
- Over past few years we see significant raise in technology requirements, c
- omplexity of managing and delivering high reliability systems. Based on ou
- r first-hand experience we see that there does not exist one silver bullet
-  way of doing DevOps and way how you manage Continuous Delivery features. 
- At Kiwi.com the transformation went from small applications to complex mic
- ro services architectures. This change did also impact the infrastructure 
- not only by numbers of servers, also on complexity of the system and ended
-  with hybrid model of cloud and bare metal solution. In this talk I will c
- over how our team of DevOps and Engineers battles with tasks such as deplo
- yment to many enviroments, infrastructure changes, monitoring and also cre
- ation of processes and runbooks. We believe that this talk can inspire you
-  to adapt changes within your teams and never stop improving how you manag
- e your infrastructure. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*7061-80001-10026-89122
+CREATED:20180302T134902
+DESCRIPTION:Martin Strycek\n
+ \n
+ Over past few years we see significant raise in technology
+ requirements, complexity of managing and delivering high reliability
+ systems. Based on our first-hand experience we see that there does
+ not exist one silver bullet way of doing DevOps and way how you
+ manage Continuous Delivery features. At Kiwi.com the transformation
+ went from small applications to complex micro services architectures.
+ This change did also impact the infrastructure not only by numbers of
+ servers, also on complexity of the system and ended with hybrid model
+ of cloud and bare metal solution. In this talk I will cover how our
+ team of DevOps and Engineers battles with tasks such as deployment to
+ many enviroments, infrastructure changes, monitoring and also
+ creation of processes and runbooks. We believe that this talk can
+ inspire you to adapt changes within your teams and never stop
+ improving how you manage your infrastructure.\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1001,22 +991,23 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T141500
 DTEND:20180310T144500
-DTSTAMP:20180301T121258
-UID:*8282-28874-72178-15965
-CREATED:20180301T121258
-DESCRIPTION:<b>Matúš Valo</b><br/>
- <br/>
- Developing distributed systems is hard. Implementing distributed system fr
- om scratch requires knowledge of specialized algorithms and programming te
- chniques. Consul is distributed system which enables us to build distribut
- ed system only by using Consul HTTP API. In our presentation, we are going
-  to show basic concepts of consul, building our own consul cluster and sho
- wing how consul can be used for implementing distributed system. Our discu
- ssion will include also showing how we can benefit from consul even when u
- sing already existing python distributed components. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*6864-82534-01657-98231
+CREATED:20180302T134902
+DESCRIPTION:Matúš Valo\n
+ \n
+ Developing distributed systems is hard. Implementing distributed
+ system from scratch requires knowledge of specialized algorithms and
+ programming techniques. Consul is distributed system which enables us
+ to build distributed system only by using Consul HTTP API. In our
+ presentation, we are going to show basic concepts of consul, building
+ our own consul cluster and showing how consul can be used for
+ implementing distributed system. Our discussion will include also
+ showing how we can benefit from consul even when using already
+ existing python distributed components.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1026,23 +1017,24 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T145000
 DTEND:20180310T152000
-DTSTAMP:20180301T121258
-UID:*7269-93134-57349-35314
-CREATED:20180301T121258
-DESCRIPTION:<b>Dinesh Joshi</b><br/>
- <br/>
- django, combined with the django REST framework, makes it very easy to bui
- ld RESTful MicroServices. However, django is perceived to have some overhe
- ad making it hard to build fast and scalable MicroServices. This talk show
- s you how to squeeze the last bit of performance from django. We will focu
- s on django’s key architectural components and the right way to use them. 
- Using profiling, we will identify bottlenecks and fix them enabling you to
-  build scalable RESTful services that play to django’s strengths. At the e
- nd of the talk you will have a good handle on building scalable MicroServi
- ces with django. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*7566-71915-93227-95102
+CREATED:20180302T134902
+DESCRIPTION:Dinesh Joshi\n
+ \n
+ django, combined with the django REST framework, makes it very easy
+ to build RESTful MicroServices. However, django is perceived to have
+ some overhead making it hard to build fast and scalable
+ MicroServices. This talk shows you how to squeeze the last bit of
+ performance from django. We will focus on django’s key architectural
+ components and the right way to use them. Using profiling, we will
+ identify bottlenecks and fix them enabling you to build scalable
+ RESTful services that play to django’s strengths. At the end of the
+ talk you will have a good handle on building scalable MicroServices
+ with django.\n
+ \n
  TAGS: web
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1052,32 +1044,31 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T153500
 DTEND:20180310T160500
-DTSTAMP:20180301T121258
-UID:*2296-36487-15398-00462
-CREATED:20180301T121258
-DESCRIPTION:<b>Alex Ellis</b><br/>
- <br/>
- OpenFaaS (Functions as a Service) makes building serverless functions simp
- le by using containers to avoid vendor-lock-in. That means you can run you
- r functions on your own terms - anywhere. <br/>
- This talk introduces the OpenFaaS project, how to build functions and then
-  explores real-world examples of how and why people are leveraging an even
- t-driven architecture for data science, cancer research and automation on-
- premise. <br/>
- You can deploy OpenFaaS in 60 seconds on Kubernetes and other orchestrator
- s through the extensible architecture. Functions can then be built using c
- ode templates for your favourite programming language or deployed directly
-  from the community Function Store. The project focuses on ease of use thr
- ough its UI and CLI which can be used to test and monitor functions. Obser
- vability and auto-scaling for demand are provided through integrations wit
- h Prometheus and AlertManager. <br/>
- OpenFaaS won Best Cloud Computing Software 2017 from InfoWorld and has a t
- hriving community with 70 contributors, 1500 commits and over 9k stars. <br/>
- https://www.openfaas.com/ <br/>
- https://github.com/openfaas <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:89030-86839-07463-1685
+CREATED:20180302T134902
+DESCRIPTION:Alex Ellis\n
+ \n
+ OpenFaaS (Functions as a Service) makes building serverless functions
+ simple by using containers to avoid vendor-lock-in. That means you
+ can run your functions on your own terms - anywhere. \n This talk
+ introduces the OpenFaaS project, how to build functions and then
+ explores real-world examples of how and why people are leveraging an
+ event-driven architecture for data science, cancer research and
+ automation on-premise. \n  \n You can deploy OpenFaaS in 60 seconds
+ on Kubernetes and other orchestrators through the extensible
+ architecture. Functions can then be built using code templates for
+ your favourite programming language or deployed directly from the
+ community Function Store. The project focuses on ease of use through
+ its UI and CLI which can be used to test and monitor functions.
+ Observability and auto-scaling for demand are provided through
+ integrations with Prometheus and AlertManager. \n  \n OpenFaaS won
+ Best Cloud Computing Software 2017 from InfoWorld and has a thriving
+ community with 70 contributors, 1500 commits and over 9k stars. \n
+ \n https://www.openfaas.com/ \n  \n https://github.com/openfaas\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1087,27 +1078,28 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T161000
 DTEND:20180310T165500
-DTSTAMP:20180301T121258
-UID:73845-87698-22370-756
-CREATED:20180301T121258
-DESCRIPTION:<b>Ryan Kirkbride</b><br/>
- <br/>
- In this talk I will introduce the topic of live coding; the interactive pr
- ogramming experience for generating audio and visuals but this talk will m
- ainly focus on audio. Live coders use programming languages to describe ru
- les for generating music but then re-write these rules while the program i
- s running. By continually writing and re-writing these rules live coders c
- reating a shifting musical experience that is always in flux. All of this 
- happens live in front of audience with the code projected for all to see. 
- I will go on to discuss the multiple tools that are available for live cod
- ing and showcase the FoxDot environment, which allows you to live code mus
- ic using Python. I will talk about the motivation for developing FoxDot an
- d describe some of its key features as well as how you can set it up yours
- elf at home. The talk will be concluded with a short demonstration that wi
- ll be part explanation and part performance. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:54794-41547-85678-1083
+CREATED:20180302T134902
+DESCRIPTION:Ryan Kirkbride\n
+ \n
+ In this talk I will introduce the topic of live coding; the
+ interactive programming experience for generating audio and visuals
+ but this talk will mainly focus on audio. Live coders use programming
+ languages to describe rules for generating music but then re-write
+ these rules while the program is running. By continually writing and
+ re-writing these rules live coders creating a shifting musical
+ experience that is always in flux. All of this happens live in front
+ of audience with the code projected for all to see. I will go on to
+ discuss the multiple tools that are available for live coding and
+ showcase the FoxDot environment, which allows you to live code music
+ using Python. I will talk about the motivation for developing FoxDot
+ and describe some of its key features as well as how you can set it
+ up yourself at home. The talk will be concluded with a short
+ demonstration that will be part explanation and part performance.\n
+ \n
  TAGS: other
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1117,12 +1109,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T170000
 DTEND:20180310T173000
-DTSTAMP:20180301T121258
-UID:58975-84178-96771-3930
-CREATED:20180301T121258
-DESCRIPTION: <br/>
+DTSTAMP:20180302T134902
+UID:34110-83855-06620-7538
+CREATED:20180302T134902
+DESCRIPTION: \n
  TAGS: other
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1132,12 +1124,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T173500
 DTEND:20180310T180500
-DTSTAMP:20180301T121258
-UID:25290-87849-86907-007
-CREATED:20180301T121258
-DESCRIPTION: <br/>
+DTSTAMP:20180302T134902
+UID:*6237-73345-98258-15933
+CREATED:20180302T134902
+DESCRIPTION: \n
  TAGS: other
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1147,11 +1139,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T090000
 DTEND:20180310T092500
-DTSTAMP:20180301T121258
-UID:53475-32043-23917-9829
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:*7940-32477-63747-76363
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1161,23 +1153,23 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T093000
 DTEND:20180310T100000
-DTSTAMP:20180301T121258
-UID:13380-51936-09970-9201
-CREATED:20180301T121258
-DESCRIPTION:<b>Miloš Korenčiak</b><br/>
- <br/>
- Ako v Solargis-e spracovávame veľké maticové meteodáta v Pythone (desiatky
-  TB pri najväčších úlohách). <br/>
- Meteodáta pre náš Python backend priniesli viacero výziev: od harmonizácie
-  vysoko špecializovaných formátov do niečoho zrozumiteľnejšieho, cez optim
- alizáciu operácií v numpy, po efektívne ukladanie / čítanie / archiváciu n
- umpy matíc v netCDF4 formáte. <br/>
- Prednáška sa zameriava na praktické použitie netCDF4 - ako optimalizovať t
- ieto súbory pre rôzne druhy čítaní / zápisov, kde sú praktické limity tých
- to súborov a prečo je vhodné segmentovať archív. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*8962-50296-45369-60508
+CREATED:20180302T134902
+DESCRIPTION:Miloš Korenčiak\n
+ \n
+ Ako v Solargis-e spracovávame veľké maticové meteodáta v Pythone
+ (desiatky TB pri najväčších úlohách). \n  \n Meteodáta pre náš Python
+ backend priniesli viacero výziev: od harmonizácie vysoko
+ špecializovaných formátov do niečoho zrozumiteľnejšieho, cez
+ optimalizáciu operácií v numpy, po efektívne ukladanie / čítanie /
+ archiváciu numpy matíc v netCDF4 formáte. \n  \n Prednáška sa
+ zameriava na praktické použitie netCDF4 - ako optimalizovať tieto
+ súbory pre rôzne druhy čítaní / zápisov, kde sú praktické limity
+ týchto súborov a prečo je vhodné segmentovať archív.\n
+ \n
  TAGS: data
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1187,25 +1179,26 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T100500
 DTEND:20180310T103500
-DTSTAMP:20180301T121258
-UID:19770-39893-24118-3319
-CREATED:20180301T121258
-DESCRIPTION:<b>Štěpán Tomsa</b><br/>
- <br/>
- Lidé mluví různými jazyky. Ba co hůř, oni jimi i píší a to i na počítači. 
- Tyto jazyky se nepíší vždy latinkou. A i když ano, není ani ta vždy stejná
- . Tito lidé mají navíc v těchto jazycích a znakových sadách dokonce i jmén
- a, poštovní adresy atd. a vyplňují je třeba do webových formulářů. A to vš
- e je jen začátek boje s řetězci… <br/>
- To, že v řetězcích se většinou ukrývá text v nějakém lidském jazyce, asi v
- šichni tušíme. Snad jsme se každý i pokusili někdy nějaký takový zpracovat
- , porovnávat, řadit, ti odvážnější třeba i skloňovat. Odhrňme závěs a posv
- iťme si na některé z těch unicodových nestvůr. Nakonec budeme rádi, že se 
- nám takový text aspoň zobrazí na obrazovce; a někdy dokonce i správně. Ale
- spoň dokud se nám na webu nezaregistruje někdo z Klingonské říše… <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:48889-38622-35265-9615
+CREATED:20180302T134902
+DESCRIPTION:Štěpán Tomsa\n
+ \n
+ Lidé mluví různými jazyky. Ba co hůř, oni jimi i píší a to i na
+ počítači. Tyto jazyky se nepíší vždy latinkou. A i když ano, není ani
+ ta vždy stejná. Tito lidé mají navíc v těchto jazycích a znakových
+ sadách dokonce i jména, poštovní adresy atd. a vyplňují je třeba do
+ webových formulářů. A to vše je jen začátek boje s řetězci… \n  \n
+ To, že v řetězcích se většinou ukrývá text v nějakém lidském jazyce,
+ asi všichni tušíme. Snad jsme se každý i pokusili někdy nějaký takový
+ zpracovat, porovnávat, řadit, ti odvážnější třeba i skloňovat.
+ Odhrňme závěs a posviťme si na některé z těch unicodových nestvůr.
+ Nakonec budeme rádi, že se nám takový text aspoň zobrazí na
+ obrazovce; a někdy dokonce i správně. Alespoň dokud se nám na webu
+ nezaregistruje někdo z Klingonské říše…\n
+ \n
  TAGS: data
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1215,20 +1208,21 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T105000
 DTEND:20180310T112000
-DTSTAMP:20180301T121258
-UID:37405-00896-98113-9032
-CREATED:20180301T121258
-DESCRIPTION:<b>Peter Garaj</b><br/>
- <br/>
- Cvičenie Locked Shields je organizované Centrom výnimočnosti pre oblasť ky
- bernetickej obrany (CCD CoE). Svojou veľkosťou, rozsiahlosťou a zameraním 
- je Lockes Shields jedným s najunikátnejších kybercvičení na svete. Ako člo
- vek, ktorý sa tohto každoročného cvičenia sporadicky zúčastňuje by som rád
-  povedal niečo o tom, ako to vypadá zvnútra a ako sa slovenská vojenská ky
- bernetická elita cvičí na zásah proti kybernarušiteľom. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*4407-85621-46742-86125
+CREATED:20180302T134902
+DESCRIPTION:Peter Garaj\n
+ \n
+ Cvičenie Locked Shields je organizované Centrom výnimočnosti pre
+ oblasť kybernetickej obrany (CCD CoE). Svojou veľkosťou,
+ rozsiahlosťou a zameraním je Lockes Shields jedným s najunikátnejších
+ kybercvičení na svete. Ako človek, ktorý sa tohto každoročného
+ cvičenia sporadicky zúčastňuje by som rád povedal niečo o tom, ako to
+ vypadá zvnútra a ako sa slovenská vojenská kybernetická elita cvičí
+ na zásah proti kybernarušiteľom.\n
+ \n
  TAGS: security
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1238,22 +1232,23 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T112500
 DTEND:20180310T115500
-DTSTAMP:20180301T121258
-UID:59443-03427-18182-6355
-CREATED:20180301T121258
-DESCRIPTION:<b>Stanislav Komanec</b><br/>
- <br/>
- Počas posledných mesiacov, kedy naša firma rástla neuveriteľným  tempom, s
- a začal objavovať probém zdieľania best-practice naprieč Kiwi.com. V micro
- -service orientovanej architektúre bolo nemožné, aby jeden človek mal preh
- ľad nad technologickým stackom všetkých služieb. S týmto problémom sme sa 
- rozhodli bojovať a vytvoriť službu, ktorá si bude držať nad všetkými repoz
- itármi prehľad a bude automaticky auditovať jednolivé projekty. Poukážem n
- a nevyhnutnosť používania systémov, ktoré uľahčujú prácu a súčastne sa pou
- tžívajú na zvyšovanie kvality servicov. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:42173-76159-17769-4154
+CREATED:20180302T134902
+DESCRIPTION:Stanislav Komanec\n
+ \n
+ Počas posledných mesiacov, kedy naša firma rástla neuveriteľným
+ tempom, sa začal objavovať probém zdieľania best-practice naprieč
+ Kiwi.com. V micro-service orientovanej architektúre bolo nemožné, aby
+ jeden človek mal prehľad nad technologickým stackom všetkých
+ služieb. S týmto problémom sme sa rozhodli bojovať a vytvoriť službu,
+ ktorá si bude držať nad všetkými repozitármi prehľad a bude
+ automaticky auditovať jednolivé projekty. Poukážem na nevyhnutnosť
+ používania systémov, ktoré uľahčujú prácu a súčastne sa poutžívajú na
+ zvyšovanie kvality servicov.\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1263,11 +1258,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T115500
 DTEND:20180310T115500
-DTSTAMP:20180301T121258
-UID:74967-69287-76290-0889
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:*2353-76105-36982-19033
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1277,12 +1272,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T125500
 DTEND:20180310T132500
-DTSTAMP:20180301T121258
-UID:*5987-64075-56026-60046
-CREATED:20180301T121258
-DESCRIPTION: <br/>
+DTSTAMP:20180302T134902
+UID:88824-97303-49817-5153
+CREATED:20180302T134902
+DESCRIPTION: \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1292,36 +1287,37 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T133000
 DTEND:20180310T140000
-DTSTAMP:20180301T121258
-UID:53903-30768-52892-4672
-CREATED:20180301T121258
-DESCRIPTION:<b>Will Foster</b><br/>
- <br/>
- The very small 2-person DevOps team within Red Hat Performance/Scale Engin
- eering has developed a set of Open Source Python-based systems and network
-  automation provisioning tools designed to end-to-end automate the provisi
- oning of large-scale systems and network switches using tools like Foreman
- , Ansible, and other Open Source bits. <br/>
- QUADS – or “quick and dirty scheduler” allows a normally overburdened DevO
- ps warrior to fully automate large swaths of systems and network devices b
- ased on a schedule, even set systems provisioning to fire off in the futur
- e so they can focus on important things like Netflix and popcorn or not re
- ading your emails while your datacenter burns in an inferno of rapid, auto
- mated skynet provisioning. QUADS will also auto-generate up-to-date infras
- tructure documentation, track scheduling, systems assignments and more. <br/>
- In this talk we’ll show you how we’re using QUADS (backed by Foreman) to e
- mpower rapid, meaningful performance and scale testing of Red Hat products
-  and technologies. While QUADS is a new project and under constant develop
- ment, the design approach to handling large-scale systems provisioning as 
- well as the current codebase is consumable for others interested in improv
- ing the efficiency and level of automation within their infrastructure. <br/>
- We'll also dive into purposeful development design choices, how some of th
- ese choices might not scale for the future (but work well at present) and 
- provide a future roadmap of a new redesign based on Flask, Celery, Sqlite 
- and friends. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*5012-04344-88582-97666
+CREATED:20180302T134902
+DESCRIPTION:Will Foster\n
+ \n
+ The very small 2-person DevOps team within Red Hat Performance/Scale
+ Engineering has developed a set of Open Source Python-based systems
+ and network automation provisioning tools designed to end-to-end
+ automate the provisioning of large-scale systems and network switches
+ using tools like Foreman, Ansible, and other Open Source bits. \n  \n
+ QUADS – or “quick and dirty scheduler” allows a normally overburdened
+ DevOps warrior to fully automate large swaths of systems and network
+ devices based on a schedule, even set systems provisioning to fire
+ off in the future so they can focus on important things like Netflix
+ and popcorn or not reading your emails while your datacenter burns in
+ an inferno of rapid, automated skynet provisioning. QUADS will also
+ auto-generate up-to-date infrastructure documentation, track
+ scheduling, systems assignments and more. \n  \n In this talk we’ll
+ show you how we’re using QUADS (backed by Foreman) to empower rapid,
+ meaningful performance and scale testing of Red Hat products and
+ technologies. While QUADS is a new project and under constant
+ development, the design approach to handling large-scale systems
+ provisioning as well as the current codebase is consumable for others
+ interested in improving the efficiency and level of automation within
+ their infrastructure. \n  \n We'll also dive into purposeful
+ development design choices, how some of these choices might not scale
+ for the future (but work well at present) and provide a future
+ roadmap of a new redesign based on Flask, Celery, Sqlite and friends.\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1331,34 +1327,34 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T141500
 DTEND:20180310T144500
-DTSTAMP:20180301T121258
-UID:23685-62216-40718-9047
-CREATED:20180301T121258
-DESCRIPTION:<b>Tomáš Kubina</b><br/>
- <br/>
- Our target was to automate recurring testing done to secure stability of s
- oftware deployed for Orange BS international networks  (JunOS, CISCO IOS).
-   <br/>
- Target is to make this automation as  reliable as manual tests, user-frien
- dly, faster, so people can focus on more complex test and simple and mid-s
- imple test to be executed during nights/weekends and be able to run them m
- ore frequently. <br/>
- We have an lab network and decided to use NAPALM framework (library that i
- mplements a set of functions to interact with different router vendor devi
- ces using a unified API) as it supports all types of devices that we need 
- to test. There is support for configuring devices, but mainly for retrievi
- ng operational state of devices, that is key for our testing. <br/>
- As a result of several months work we have now basic environment for testi
- ng thanks to NAPALM, but for our need we had to extend it with several fun
- ctions for parsing operational data. These functions are covering differen
- t areas as IS-IS, LDP, BFD, BGP, PIM, MPLS TE and help us to properly chec
- k overall status of the box. As I work for OBS these functions are Service
-  Provider oriented. Our goal is to publish them either as part of NAPALM o
- fficial package or external extension. So also others can benefit from the
-  work that was done as part our project. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:25037-29036-88404-0679
+CREATED:20180302T134902
+DESCRIPTION:Tomáš Kubina\n
+ \n
+ Our target was to automate recurring testing done to secure stability
+ of software deployed for Orange BS international networks  (JunOS,
+ CISCO IOS).  \n Target is to make this automation as  reliable as
+ manual tests, user-friendly, faster, so people can focus on more
+ complex test and simple and mid-simple test to be executed during
+ nights/weekends and be able to run them more frequently. \n  \n We
+ have an lab network and decided to use NAPALM framework (library that
+ implements a set of functions to interact with different router
+ vendor devices using a unified API) as it supports all types of
+ devices that we need to test. There is support for configuring
+ devices, but mainly for retrieving operational state of devices, that
+ is key for our testing. \n  \n As a result of several months work we
+ have now basic environment for testing thanks to NAPALM, but for our
+ need we had to extend it with several functions for parsing
+ operational data. These functions are covering different areas as IS-
+ IS, LDP, BFD, BGP, PIM, MPLS TE and help us to properly check overall
+ status of the box. As I work for OBS these functions are Service
+ Provider oriented. Our goal is to publish them either as part of
+ NAPALM official package or external extension. So also others can
+ benefit from the work that was done as part our project.\n
+ \n
  TAGS: other
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1368,19 +1364,19 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T145000
 DTEND:20180310T152000
-DTSTAMP:20180301T121258
-UID:83479-51025-18797-196
-CREATED:20180301T121258
-DESCRIPTION:<b>Ondrej Sika</b><br/>
- <br/>
- You probably know Bitcoin. Nowadays, Bitcoin and cryptocurrencies ecosyste
- m is one of fastest growing industries. Many people build software on the 
- top of those distributed networks. I'll show you tools you can use to inte
- ract with Bitcoin and Ethereum. From simple stuff like wallets and transac
- tion to playing with smart contracts. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:78120-57840-26671-367
+CREATED:20180302T134902
+DESCRIPTION:Ondrej Sika\n
+ \n
+ You probably know Bitcoin. Nowadays, Bitcoin and cryptocurrencies
+ ecosystem is one of fastest growing industries. Many people build
+ software on the top of those distributed networks. I'll show you
+ tools you can use to interact with Bitcoin and Ethereum. From simple
+ stuff like wallets and transaction to playing with smart contracts.\n
+ \n
  TAGS: other
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1390,35 +1386,35 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T153500
 DTEND:20180310T160500
-DTSTAMP:20180301T121258
-UID:47183-36107-41406-4712
-CREATED:20180301T121258
-DESCRIPTION:<b>Lasse Schuirmann</b><br/>
- <br/>
- A lot of open source maintainers suffer from having to maintain the flood 
- of incoming issues/tikets on their project. We've scraped more than 10000 
- GitHub projects and interviewed more than 100 software developers and proj
- ect managers of companies like GitLab. As a result, we have identified a f
- ew simple steps that can help managing the load of issues. <br/>
- This talk sums up the steps and approaches needed to deal with this as wel
- l as automate it. <br/>
- For a full summary, check out [our blog post with GitLab][1]. <br/>
-   [1]: https://about.gitlab.com/2017/10/26/triage-issues-gitmate/ <br/>
- # Who and Why <br/>
- (1) The talk is for project managers and open source maintainers or softwa
- re developers that deal with issues every day. This includes specifically 
- people working in teams with more than 30 issues a month opened. <br/>
- (2) There's no background knowledge needed. The talk will be best for peop
- le who have triaged issues before at least in a small scale and recognize 
- the problem, they will be able to pick up the approaches better and faster
- . <br/>
- (3) On an emotional level, I expect the audience to get to know the "attit
- ude" needed to get rid of noise when triaging issues. After the talk, they
-  should have a few concrete steps in mind that they can try using in the f
- irst days and eventually deduct their own process from it. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:64272-49103-06057-4653
+CREATED:20180302T134902
+DESCRIPTION:Lasse Schuirmann\n
+ \n
+ A lot of open source maintainers suffer from having to maintain the
+ flood of incoming issues/tikets on their project. We've scraped more
+ than 10000 GitHub projects and interviewed more than 100 software
+ developers and project managers of companies like GitLab. As a
+ result, we have identified a few simple steps that can help managing
+ the load of issues. \n  \n This talk sums up the steps and approaches
+ needed to deal with this as well as automate it. \n  \n For a full
+ summary, check out [our blog post with GitLab][1]. \n  \n   [1]:
+ https://about.gitlab.com/2017/10/26/triage-issues-gitmate/ \n  \n #
+ Who and Why \n  \n (1) The talk is for project managers and open
+ source maintainers or software developers that deal with issues every
+ day. This includes specifically people working in teams with more
+ than 30 issues a month opened. \n  \n (2) There's no background
+ knowledge needed. The talk will be best for people who have triaged
+ issues before at least in a small scale and recognize the problem,
+ they will be able to pick up the approaches better and faster. \n  \n
+ (3) On an emotional level, I expect the audience to get to know the
+ "attitude" needed to get rid of noise when triaging issues. After the
+ talk, they should have a few concrete steps in mind that they can try
+ using in the first days and eventually deduct their own process from
+ it.\n
+ \n
  TAGS: softskills
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1428,27 +1424,28 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T161000
 DTEND:20180310T165500
-DTSTAMP:20180301T121258
-UID:86380-95375-17488-9491
-CREATED:20180301T121258
-DESCRIPTION:<b>Gareth Brown</b><br/>
- <br/>
- The Concierge Paradigm idea was born over time but initially came from cha
- llenges we had by working out how to operate scalable and enterprise-grade
-  application containers. This meant monitoring, logging, deploying, scalin
- g, load-balancing and service discovery. We needed to do this both on-prem
- ise and in AWS. We were running some docker tasks in ECS and a Kubernetes 
- and CoreOS cluster on-premise but we hadn't chosen these by researching di
- fferent options, they were pretty much the first options we came across. W
- e'd felt the difficulties of our decision, so started to look out to the w
- ider community at other options.  <br/>
- This is the story of what we discovered. How we made our application monit
- oring more efficient and accurate; how we radically simplified the infrast
- ructure needed for running containers and how we utilised Zabbix as an con
- tainer scheduler. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*2070-29944-59524-86453
+CREATED:20180302T134902
+DESCRIPTION:Gareth Brown\n
+ \n
+ The Concierge Paradigm idea was born over time but initially came
+ from challenges we had by working out how to operate scalable and
+ enterprise-grade application containers. This meant monitoring,
+ logging, deploying, scaling, load-balancing and service discovery. We
+ needed to do this both on-premise and in AWS. We were running some
+ docker tasks in ECS and a Kubernetes and CoreOS cluster on-premise
+ but we hadn't chosen these by researching different options, they
+ were pretty much the first options we came across. We'd felt the
+ difficulties of our decision, so started to look out to the wider
+ community at other options.  \n  \n This is the story of what we
+ discovered. How we made our application monitoring more efficient and
+ accurate; how we radically simplified the infrastructure needed for
+ running containers and how we utilised Zabbix as an container
+ scheduler.\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1458,75 +1455,70 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T093000
 DTEND:20180310T123000
-DTSTAMP:20180301T121258
-UID:*4619-43335-91259-73509
-CREATED:20180301T121258
-DESCRIPTION:<b>Maciej Szulik</b><br/>
- <br/>
- Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others are i
- nvesting a lot of time and effort into improving Kubernetes.  I bet, you h
- ave encountered that name at least once in the past twelve months, either 
- on Hacker News, Reddit, or somewhere else.  Do you want to learn more abou
- t the best container orchestration in the universe, but were afraid of the
-  setup complexity?  Do you want to see how easy it is to run any applicati
- on using containers?  Do you want to experience the joy of scaling applica
- tion with a single click?  This, and a lot more will be discussed in detai
- ls. <br/>
- In this tutorial, every attendee will be provided with an environment, and
-  step by step instructions necessary to setup the environment, build and d
- eploy a microservices based sample application.  Alternatively, a sample a
- pplication of any choosing can be used throughout the entire tutorial.  Al
- l that will be performed on OpenShift, which is a Red Hat distribution of 
- Kuberenets with some add-ons that will be described in details at the begi
- nning of the tutorial.  To wet your appetite even more, here are some of t
- he topics we are going to cover: <br/>
- - automatic build and deployment <br/>
- - git integration <br/>
- - image registry integration <br/>
- - scaling application <br/>
- - containers security <br/>
- - batch tasks <br/>
- and much more. <br/>
- After the session, every person will be able to play around with the accom
- panying code repository that was used in the tutorial, which includes deta
- iled instructions how to run it on your own from scratch. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:10609-78413-38878-4802
+CREATED:20180302T134902
+DESCRIPTION:Maciej Szulik\n
+ \n
+ Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others
+ are investing a lot of time and effort into improving Kubernetes.  I
+ bet, you have encountered that name at least once in the past twelve
+ months, either on Hacker News, Reddit, or somewhere else.  Do you
+ want to learn more about the best container orchestration in the
+ universe, but were afraid of the setup complexity?  Do you want to
+ see how easy it is to run any application using containers?  Do you
+ want to experience the joy of scaling application with a single
+ click?  This, and a lot more will be discussed in details. \n  \n In
+ this tutorial, every attendee will be provided with an environment,
+ and step by step instructions necessary to setup the environment,
+ build and deploy a microservices based sample application.
+ Alternatively, a sample application of any choosing can be used
+ throughout the entire tutorial.  All that will be performed on
+ OpenShift, which is a Red Hat distribution of Kuberenets with some
+ add-ons that will be described in details at the beginning of the
+ tutorial.  To wet your appetite even more, here are some of the
+ topics we are going to cover: \n  \n - automatic build and deployment
+ \n - git integration \n - image registry integration \n - scaling
+ application \n - containers security \n - batch tasks \n  \n and much
+ more. \n  \n After the session, every person will be able to play
+ around with the accompanying code repository that was used in the
+ tutorial, which includes detailed instructions how to run it on your
+ own from scratch.\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Effectively running python applications in Kubernetes/OpenShift
+SUMMARY:Effectively running python applications in
+ Kubernetes/OpenShift
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T132500
 DTEND:20180310T162500
-DTSTAMP:20180301T121258
-UID:*5257-30561-56900-07489
-CREATED:20180301T121258
-DESCRIPTION:<b>Petr Viktorin</b><br/>
- <br/>
- Pojďte si postavit mobilního robota z obědové krabičky!
- Do krabičky nainstalujete motorky, motor shieldem a řídící desku NodeMCU s
-  firmwarem MicroPython. <br/>
- Potom buď přes protokol MQTT propojíte s ovládacím panelem na mobilu či po
- čítači, nebo zapojíte senzorové nárazníky a naprogramujete robota autonomn
- ího. <br/>
- Přineste si prosím: <br/>
- * Napájecí zdroj – USB powerbanku nebo 9V baterii. <br/>
- * Krabičku – např obědovou, od zmrzliny, nebo i od čaje. <br/>
- * Laptop s oprávněním instalovat software. <br/>
- * datový microUSB kabel. <br/>
- * Případně, pokud máte, další součástky – LED diody, displeje, servomotory
- , drátky, apod. (Používáme 3V logiku; na napájení je možné použít 5V.) <br/>
- Budete-li si chtít robota vzít domů, elektronika na dvoukolového robota bu
- de stát do €15. <br/>
- Obtížnost stavby: IKEA. <br/>
- Počet míst je omezen na 15 robotů. Jednoho robota můžou stavět 1-3 lidi. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*7908-89322-92181-83927
+CREATED:20180302T134902
+DESCRIPTION:Petr Viktorin\n
+ \n
+ Pojďte si postavit mobilního robota z obědové krabičky! \n  \n Do
+ krabičky nainstalujete motorky, motor shieldem a řídící desku NodeMCU
+ s firmwarem MicroPython. \n  \n Potom buď přes protokol MQTT
+ propojíte s ovládacím panelem na mobilu či počítači, nebo zapojíte
+ senzorové nárazníky a naprogramujete robota autonomního. \n  \n
+ Přineste si prosím: \n  \n * Napájecí zdroj – USB powerbanku nebo 9V
+ baterii. \n * Krabičku – např obědovou, od zmrzliny, nebo i od čaje.
+ \n * Laptop s oprávněním instalovat software. \n * datový microUSB
+ kabel. \n * Případně, pokud máte, další součástky – LED diody,
+ displeje, servomotory, drátky, apod. (Používáme 3V logiku; na
+ napájení je možné použít 5V.) \n  \n Budete-li si chtít robota vzít
+ domů, elektronika na dvoukolového robota bude stát do €15. \n  \n
+ Obtížnost stavby: IKEA. \n  \n Počet míst je omezen na 15 robotů.
+ Jednoho robota můžou stavět 1-3 lidi.\n
+ \n
  TAGS: hardware
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1536,29 +1528,30 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T093000
 DTEND:20180310T123000
-DTSTAMP:20180301T121258
-UID:*3774-52451-01762-99160
-CREATED:20180301T121258
-DESCRIPTION:<b>Marek Mansell</b><br/>
- <br/>
- Na micro:bit workshope si predstavíme edukačnú dosku BBC Micro:bit, vývojo
- vé prostredia pre toto zariadenie a niekoľko príkladov praktických hardvér
- ových zadaní. Zariadenia navrhli vo Veľkej Británií a vďaka ich jednoducho
- sti a špecifickému dizajnu pre vzdelávacie účely sú veľmi obľúbené v školá
- ch v zahraničí. Vyskúšame si prácu v online prostredí, v ktorom vieme prog
- ramovať micro:bit bez nutnosti inštalácie softvéru na počítači a následne 
- prejdeme do prostredia “Mu”, ktoré je využiteľné nie len pre Micro:bit, al
- e aj ako alternatíva k IDLE. Programovať budeme pomocou Blockly a MicroPyt
- honu. <br/>
- Na workshope začneme jednoduchšími úlohami, ktoré využívajú len vbudované 
- senzory zariadenia a následne prejdeme k pripájaniu externých súčiastok, v
- ďaka ktorým je možné vytvárať väčšie projekty s presahmi do iných predmeto
- v ako napríklad fyzika, biológia alebo výtvarná výchova. Príkladmi takýcht
- o projektov môže byť automatizovaný kvetináč, vlastná meteostanica či domá
- ci bezpečnostný alarm. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*9017-95865-22403-95962
+CREATED:20180302T134902
+DESCRIPTION:Marek Mansell\n
+ \n
+ Na micro:bit workshope si predstavíme edukačnú dosku BBC Micro:bit,
+ vývojové prostredia pre toto zariadenie a niekoľko príkladov
+ praktických hardvérových zadaní. Zariadenia navrhli vo Veľkej
+ Británií a vďaka ich jednoduchosti a špecifickému dizajnu pre
+ vzdelávacie účely sú veľmi obľúbené v školách v zahraničí. Vyskúšame
+ si prácu v online prostredí, v ktorom vieme programovať micro:bit bez
+ nutnosti inštalácie softvéru na počítači a následne prejdeme do
+ prostredia “Mu”, ktoré je využiteľné nie len pre Micro:bit, ale aj
+ ako alternatíva k IDLE. Programovať budeme pomocou Blockly a
+ MicroPythonu. \n  \n Na workshope začneme jednoduchšími úlohami,
+ ktoré využívajú len vbudované senzory zariadenia a následne prejdeme
+ k pripájaniu externých súčiastok, vďaka ktorým je možné vytvárať
+ väčšie projekty s presahmi do iných predmetov ako napríklad fyzika,
+ biológia alebo výtvarná výchova. Príkladmi takýchto projektov môže
+ byť automatizovaný kvetináč, vlastná meteostanica či domáci
+ bezpečnostný alarm.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall B (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1568,50 +1561,51 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180310T132500
 DTEND:20180310T145500
-DTSTAMP:20180301T121258
-UID:*2849-68414-42823-01614
-CREATED:20180301T121258
-DESCRIPTION:<b>Peter Kučera</b><br/>
- <br/>
- Rozmýšľate, ako učiť Python budúcich maturantov na strednej škole? Na work
- shope vám predstavíme metodiku vyučovania na seminároch z programovania a 
- spoločne vyriešime úlohu s použitím zoznamu (jednorozmerného poľa) a texto
- vého súboru. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*3798-97163-81189-04855
+CREATED:20180302T134902
+DESCRIPTION:Peter Kučera\n
+ \n
+ Rozmýšľate, ako učiť Python budúcich maturantov na strednej škole? Na
+ workshope vám predstavíme metodiku vyučovania na seminároch z
+ programovania a spoločne vyriešime úlohu s použitím zoznamu
+ (jednorozmerného poľa) a textového súboru.\n
+ \n
  TAGS: edu
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall B (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Programujeme v Pythone – učíme seminár z programovania na strednej 
- škole
+SUMMARY:Programujeme v Pythone – učíme seminár z programovania na
+ strednej škole
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T101500
 DTEND:20180311T104500
-DTSTAMP:20180301T121258
-UID:14282-38515-83684-0613
-CREATED:20180301T121258
-DESCRIPTION:<b>Peter Bábics</b><br/>
- <br/>
- Pickle ako formát pre serializáciu je tu s nami už dlhú dobu, jeho prednos
- ti sú jasné, rýchla serializácia a implementácia v štandardnej knižnici. <br/>
- Taktiež má aj určité nevýhody, ktoré často dokážu prevýšiť, medzi nimi sú 
- napríklad bezpečnostné hrozby a minimálna podpora migrácií. U nás v Quantl
- ane bola hlavným problémom chýbajúca podpora migrácii, nakoľko aktívny výv
- oj aplikácie vždy vedie k zmenám v dátových štruktúrach. <br/>
- Z tohto dôvodu sme vytvorili `charon`, jednoduchý serializačný nástroj, kt
- orý si kladie za cieľ previesť komplexné dátové štruktúry do  jednoduchých
-  základných typov (dict, list, skalárne hodnoty), ktoré sa následne dajú j
- ednoducho serializovať pomocou ďaľších knižníc ako napriklád json, yaml a 
- iné. Knižnica ponúka rôzne metatesty ako napríklad kontrolovanie verzie se
- rializačných funkcií voči dátovým typom pomocou hashov AST, kontrolu seria
- lizačnej pipeline alebo aj kontrola či majú všetky serializačné funkcie te
- st. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*9149-07639-44471-71270
+CREATED:20180302T134902
+DESCRIPTION:Peter Bábics\n
+ \n
+ Pickle ako formát pre serializáciu je tu s nami už dlhú dobu, jeho
+ prednosti sú jasné, rýchla serializácia a implementácia v štandardnej
+ knižnici. \n  \n Taktiež má aj určité nevýhody, ktoré často dokážu
+ prevýšiť, medzi nimi sú napríklad bezpečnostné hrozby a minimálna
+ podpora migrácií. U nás v Quantlane bola hlavným problémom chýbajúca
+ podpora migrácii, nakoľko aktívny vývoj aplikácie vždy vedie k zmenám
+ v dátových štruktúrach. \n  \n Z tohto dôvodu sme vytvorili `charon`,
+ jednoduchý serializačný nástroj, ktorý si kladie za cieľ previesť
+ komplexné dátové štruktúry do  jednoduchých základných typov (dict,
+ list, skalárne hodnoty), ktoré sa následne dajú jednoducho
+ serializovať pomocou ďaľších knižníc ako napriklád json, yaml a iné.
+ Knižnica ponúka rôzne metatesty ako napríklad kontrolovanie verzie
+ serializačných funkcií voči dátovým typom pomocou hashov AST,
+ kontrolu serializačnej pipeline alebo aj kontrola či majú všetky
+ serializačné funkcie test.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1621,22 +1615,21 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T105000
 DTEND:20180311T112000
-DTSTAMP:20180301T121258
-UID:*3644-43135-61280-76504
-CREATED:20180301T121258
-DESCRIPTION:<b>Vladimir Kopso</b><br/>
- <br/>
- We at SolarWinds Pingdom believe we have made some nice tricks while writi
- ng our end-to-end automation Framework. <br/>
- And of course, the Python language and its ecosystem was what enabled this
-  magic. <br/>
- So we want to share some tips for making your code cleaner and life easier
- , not only when you are trying to implement BDD at your project. <br/>
- General tips and lessons learned from writing good behavior-driven automat
- ion are also included. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:74992-37386-42249-2186
+CREATED:20180302T134902
+DESCRIPTION:Vladimir Kopso\n
+ \n
+ We at SolarWinds Pingdom believe we have made some nice tricks while
+ writing our end-to-end automation Framework. \n  \n And of course,
+ the Python language and its ecosystem was what enabled this magic. \n
+ \n So we want to share some tips for making your code cleaner and
+ life easier, not only when you are trying to implement BDD at your
+ project. \n  \n General tips and lessons learned from writing good
+ behavior-driven automation are also included.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1646,49 +1639,50 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T113500
 DTEND:20180311T120500
-DTSTAMP:20180301T121258
-UID:*8722-74845-29672-4556
-CREATED:20180301T121258
-DESCRIPTION:<b>Tibor Arpáš</b><br/>
- <br/>
- Podľa môjho názoru vývojové prostredia (IDE) zanedbávaju runtime aspekt pr
- ogramov, ktoré v nich píšeme. Historicky sa tieto prostredia asi vyvinuli 
- z textových editorov a postupne dostávaju viac a viac funkcií a umožňujú v
- iacero pohľadov na zdrojový kód a jeho všakovaké aspekty. Vývojové prostre
- dia dokážu zázraky so zdrojovými súbormi, ktoré nám ležia na disku.  <br/>
- Avšak zdrojáky nepíšeme aby ležali na disku ale kvôli tomu aby nám bežali 
- ako programy. Pri behu môže vznikať kopec zaujímavých informácií spätne vy
- užiteľných pri programovaní. Dôraz vývojových prostredí na statické zdrojo
- vé kódy škodí najmä dynamickým programovacím jazykom ako je Python. Chcel 
- by som odprezentovať a získať spätnú väzbu na 3-5 nápadov ktoré majú za ci
- eľ práve preniesť rôzne informácie z behu Python programu naspäť do prostr
- edia v ktorom sa píše zdrojový kód. V ideálnom prípade presne na riadok al
- ebo dokonca na výraz, ktorý programátor práve píše alebo sa s ním dokonca 
- trápi.  <br/>
- Poznámka pre organizátora - rád by som vybral a odprezentoval len nápady, 
- ktoré pri rozpracovaní budú dávať najväčší zmysel. Upresnenie témy prednáš
- ky by som dodal neskôr. Neúplný zoznam nápadov: <br/>
- - prezentácia stack trace informácie v IDE, na konkrétnych riadkoch kde te
- nto stack trace vznikol, intuitívna navigácia po framoch stacktrace, hint 
- na hodnoty lokálnych premenných jednotlivých framov <br/>
- - prenos a výpis log hlášok v IDE na konkrétmych riadkoch, ktoré tento výp
- is vygenerovali  <br/>
- - coverage informácia na riadku, ale vrátane informácie Who Tests What (kt
- orý, test vykonal tento riadok, pozri napr. https://bitbucket.org/ned/cove
- ragepy/issues/170/show-who-tests-what ) <br/>
- - použiteľnejšia reprezentácia spustených/úspešných/zlyhaných testov ako m
- omentálne používaný rozbaľovací strom. Doklikať sa ku konkrétnemu výsledku
-  testu v Pycharm test runneri často trvá minútu a po každom spustení testo
- v sa táto manuálna práca zahodí a treba začať klikať odznova. Navrhnem int
- uitívnejší spôsob prezentácie. <br/>
- - meta nápad: implementovať prezentované nápady bude stáť nezanedbateľné ú
- silie. Kedže vývojových prostredí je veľké množstvo, a každé ma rozdielne 
- API ideálne je navrhnúť všeobecný protokol, ktorý by oddeľoval IDE a zdroj
- e runtime informácií podobne ako to robí Language Server Protocol (https:/
- /microsoft.github.io/language-server-protocol/) <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:46752-05384-58723-1134
+CREATED:20180302T134902
+DESCRIPTION:Tibor Arpáš\n
+ \n
+ Podľa môjho názoru vývojové prostredia (IDE) zanedbávaju runtime
+ aspekt programov, ktoré v nich píšeme. Historicky sa tieto prostredia
+ asi vyvinuli z textových editorov a postupne dostávaju viac a viac
+ funkcií a umožňujú viacero pohľadov na zdrojový kód a jeho všakovaké
+ aspekty. Vývojové prostredia dokážu zázraky so zdrojovými súbormi,
+ ktoré nám ležia na disku.  \n  \n Avšak zdrojáky nepíšeme aby ležali
+ na disku ale kvôli tomu aby nám bežali ako programy. Pri behu môže
+ vznikať kopec zaujímavých informácií spätne využiteľných pri
+ programovaní. Dôraz vývojových prostredí na statické zdrojové kódy
+ škodí najmä dynamickým programovacím jazykom ako je Python. Chcel by
+ som odprezentovať a získať spätnú väzbu na 3-5 nápadov ktoré majú za
+ cieľ práve preniesť rôzne informácie z behu Python programu naspäť do
+ prostredia v ktorom sa píše zdrojový kód. V ideálnom prípade presne
+ na riadok alebo dokonca na výraz, ktorý programátor práve píše alebo
+ sa s ním dokonca trápi.  \n  \n Poznámka pre organizátora - rád by
+ som vybral a odprezentoval len nápady, ktoré pri rozpracovaní budú
+ dávať najväčší zmysel. Upresnenie témy prednášky by som dodal neskôr.
+ Neúplný zoznam nápadov: \n - prezentácia stack trace informácie v
+ IDE, na konkrétnych riadkoch kde tento stack trace vznikol,
+ intuitívna navigácia po framoch stacktrace, hint na hodnoty lokálnych
+ premenných jednotlivých framov \n - prenos a výpis log hlášok v IDE
+ na konkrétmych riadkoch, ktoré tento výpis vygenerovali  \n -
+ coverage informácia na riadku, ale vrátane informácie Who Tests What
+ (ktorý, test vykonal tento riadok, pozri napr.
+ https://bitbucket.org/ned/coveragepy/issues/170/show-who-tests-what )
+ \n - použiteľnejšia reprezentácia spustených/úspešných/zlyhaných
+ testov ako momentálne používaný rozbaľovací strom. Doklikať sa ku
+ konkrétnemu výsledku testu v Pycharm test runneri často trvá minútu a
+ po každom spustení testov sa táto manuálna práca zahodí a treba začať
+ klikať odznova. Navrhnem intuitívnejší spôsob prezentácie. \n - meta
+ nápad: implementovať prezentované nápady bude stáť nezanedbateľné
+ úsilie. Kedže vývojových prostredí je veľké množstvo, a každé ma
+ rozdielne API ideálne je navrhnúť všeobecný protokol, ktorý by
+ oddeľoval IDE a zdroje runtime informácií podobne ako to robí
+ Language Server Protocol (https://microsoft.github.io/language-
+ server-protocol/)\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1698,32 +1692,33 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T121000
 DTEND:20180311T124000
-DTSTAMP:20180301T121258
-UID:*9020-63375-81002-21603
-CREATED:20180301T121258
-DESCRIPTION:<b>Goga Patarkatsishvili</b><br/>
- <br/>
- There are different ways of connecting objects with each other and it's ma
- ndatory to understand these connections properly, for their connections to
-  be natural, logical and well-designed. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*2245-22473-96613-91436
+CREATED:20180302T134902
+DESCRIPTION:Goga Patarkatsishvili\n
+ \n
+ There are different ways of connecting objects with each other and
+ it's mandatory to understand these connections properly, for their
+ connections to be natural, logical and well-designed.\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:How to connect objects with each other in different situations with
-  Pythonic ways - association, aggregation, composition and etc.
+SUMMARY:How to connect objects with each other in different situations
+ with Pythonic ways - association, aggregation, composition
+ and etc.
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T124000
 DTEND:20180311T124000
-DTSTAMP:20180301T121258
-UID:*1254-85350-84065-67694
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:34225-01231-21115-4137
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1733,19 +1728,19 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T134000
 DTEND:20180311T141000
-DTSTAMP:20180301T121258
-UID:30580-03923-25795-3703
-CREATED:20180301T121258
-DESCRIPTION:<b>Martin Strapko</b><br/>
- <br/>
- Today, APIs all around the web provide access to big volumes of valuable i
- nformation. Combining multiple 3rd party sources with your own company's d
- ata can often help paint a bigger picture. Come and find out how we used P
- ython to integrate various APIs such as Steam, Facebook and Appsflyer, and
-  learn the tricks we used to do it. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:30436-68752-64658-0552
+CREATED:20180302T134902
+DESCRIPTION:Martin Strapko\n
+ \n
+ Today, APIs all around the web provide access to big volumes of
+ valuable information. Combining multiple 3rd party sources with your
+ own company's data can often help paint a bigger picture. Come and
+ find out how we used Python to integrate various APIs such as Steam,
+ Facebook and Appsflyer, and learn the tricks we used to do it.\n
+ \n
  TAGS: web
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1755,30 +1750,26 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T141500
 DTEND:20180311T144500
-DTSTAMP:20180301T121258
-UID:*2410-14386-72313-17926
-CREATED:20180301T121258
-DESCRIPTION:<b>Giacomo Debidda</b><br/>
- <br/>
- HDF5 is a data model, a library, a file format for storing and managing bi
- g and complex data. PyTables is a Python package built on top of the HDF5 
- library and NumPy. It provides a high-level interface with advanced indexi
- ng and database-like query capabilities. PyTables is both easy to use and 
- extremely fast, so it might be an invaluable tool if you need to work with
-  large, hierarchical datasets. At the end of this talk you will learn what
-  HDF5 is, why it might be the right file format for you, and where PyTable
- s fits in the Python data ecosystem. <br/>
- Outline: <br/>
- - What is HDF5 and who uses it? <br/>
- - Brief overview of the HDF5 data model <br/>
- - First steps with PyTables <br/>
- - PyTables tools <br/>
- - Search big data with PyTables and NumExpr <br/>
- - Additional resources to learn more <br/>
- - Q&A <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*4563-06530-04826-35318
+CREATED:20180302T134902
+DESCRIPTION:Giacomo Debidda\n
+ \n
+ HDF5 is a data model, a library, a file format for storing and
+ managing big and complex data. PyTables is a Python package built on
+ top of the HDF5 library and NumPy. It provides a high-level interface
+ with advanced indexing and database-like query capabilities. PyTables
+ is both easy to use and extremely fast, so it might be an invaluable
+ tool if you need to work with large, hierarchical datasets. At the
+ end of this talk you will learn what HDF5 is, why it might be the
+ right file format for you, and where PyTables fits in the Python data
+ ecosystem. \n  \n Outline: \n - What is HDF5 and who uses it? \n -
+ Brief overview of the HDF5 data model \n - First steps with PyTables
+ \n - PyTables tools \n - Search big data with PyTables and NumExpr \n
+ - Additional resources to learn more \n - Q&A\n
+ \n
  TAGS: data
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1788,34 +1779,36 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T150000
 DTEND:20180311T153000
-DTSTAMP:20180301T121258
-UID:*6063-00702-29208-99061
-CREATED:20180301T121258
-DESCRIPTION:<b>Jakub Mačina</b><br/>
- <br/>
- Recommender systems are successfully used in several domains, e.g. product
-  or movie recommendation. In e-commerce, the aim is to provide personalize
- d suggestions to users for relevant items out of all products available. <br/>
- In this talk, I will focus on item recommendation for anonymous users when
-  no historical data about user is available (also referred as a cold-start
-  problem) and challenges we have encountered. Firstly, I will dig deeper i
- nto similar item recommendation by NLP model comparing textual description
- s of items. This approach is based on word embeddings extracted from neura
- l network models, such as word2vec or fasttext. <br/>
- Finally, I will talk about how to apply the same idea of word embeddings t
- o learn a representation of each product. With the product embedding repre
- sentation, it is easy to calculate similarities between products in real-t
- ime. Moreover, we found out that product embeddings are able to capture st
- yle of a product, color, category or a price level. <br/>
- All of the examples will be practical using data about restaurants reviews
-  and fashion products. Open-source NLP library Gensim is used in code samp
- les. Presentation will be supported by visualization of embeddings to get 
- the idea behind. Everybody with any interest in machine learning is welcom
- e. After the presentation, you will know how to compute relationship betwe
- en pizza and pasta or how to capture a fashion style of a user. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:54556-71291-50107-2850
+CREATED:20180302T134902
+DESCRIPTION:Jakub Mačina\n
+ \n
+ Recommender systems are successfully used in several domains, e.g.
+ product or movie recommendation. In e-commerce, the aim is to provide
+ personalized suggestions to users for relevant items out of all
+ products available. \n  \n In this talk, I will focus on item
+ recommendation for anonymous users when no historical data about user
+ is available (also referred as a cold-start problem) and challenges
+ we have encountered. Firstly, I will dig deeper into similar item
+ recommendation by NLP model comparing textual descriptions of items.
+ This approach is based on word embeddings extracted from neural
+ network models, such as word2vec or fasttext. \n  \n Finally, I will
+ talk about how to apply the same idea of word embeddings to learn a
+ representation of each product. With the product embedding
+ representation, it is easy to calculate similarities between products
+ in real-time. Moreover, we found out that product embeddings are able
+ to capture style of a product, color, category or a price level. \n
+ \n All of the examples will be practical using data about restaurants
+ reviews and fashion products. Open-source NLP library Gensim is used
+ in code samples. Presentation will be supported by visualization of
+ embeddings to get the idea behind. Everybody with any interest in
+ machine learning is welcome. After the presentation, you will know
+ how to compute relationship between pizza and pasta or how to capture
+ a fashion style of a user.\n
+ \n
  TAGS: ai
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Kiwi.com Hall (-1.61)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1825,40 +1818,41 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T101500
 DTEND:20180311T141500
-DTSTAMP:20180301T121258
-UID:*8143-77403-34235-65666
-CREATED:20180301T121258
-DESCRIPTION:<b>Aaron Bassett</b><br/>
- <br/>
- Discover how you can use Artifical Intelligence to perform sentiment analy
- sis of an audio stream, in real-time! In this workshop, we’ll show you how
-  to use AI and NLP to figure out what a person is calling about and how th
- ey are feeling, all from a telephone call audio feed via WebSockets. <br/>
- In this workshop, we’re going to learn how to create a virtual rapporteur.
-  A digital assistant who can join any conference call; record it and provi
- de participants with real-time insights into the overall tone of the call.
-  Once the call is complete, we’ll look at how we can use the call recordin
- g to provide participants with a text transcript as well as meta informati
- on about the call such as the most talked about concepts, keywords and ent
- ities. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:60705-97029-04075-8532
+CREATED:20180302T134902
+DESCRIPTION:Aaron Bassett\n
+ \n
+ Discover how you can use Artifical Intelligence to perform sentiment
+ analysis of an audio stream, in real-time! In this workshop, we’ll
+ show you how to use AI and NLP to figure out what a person is calling
+ about and how they are feeling, all from a telephone call audio feed
+ via WebSockets. \n  \n In this workshop, we’re going to learn how to
+ create a virtual rapporteur. A digital assistant who can join any
+ conference call; record it and provide participants with real-time
+ insights into the overall tone of the call. Once the call is
+ complete, we’ll look at how we can use the call recording to provide
+ participants with a text transcript as well as meta information about
+ the call such as the most talked about concepts, keywords and
+ entities.\n
+ \n
  TAGS: ai
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Real-time transcription and sentiment analysis of audio streams; on
-  the phone and in the browser
+SUMMARY:Real-time transcription and sentiment analysis of audio
+ streams; on the phone and in the browser
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T141500
 DTEND:20180311T141500
-DTSTAMP:20180301T121258
-UID:*8179-52558-13767-85239
-CREATED:20180301T121258
+DTSTAMP:20180302T134902
+UID:*4542-58864-92481-20810
+CREATED:20180302T134902
 DESCRIPTION:
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1868,22 +1862,23 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T145500
 DTEND:20180311T155500
-DTSTAMP:20180301T121258
-UID:*7372-68424-07862-11567
-CREATED:20180301T121258
-DESCRIPTION:<b>Michael Kennedy</b><br/>
- <br/>
- MongoDB was the most wanted database technology of 2017 among developers. 
- Python is one of the true premier languages to work with MongoDB. Its dict
- ionaries and classes map perfectly to document databases' JSON-like record
- s. In this workshop, you will learn to build rich, real-world applications
-  based on MongoDB and Python. You'll learn about modeling data, performanc
- e, and deployment considerations. <br/>
- https://insights.stackoverflow.com/survey/2017#technology-most-loved-dread
- ed-and-wanted-databases <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*7225-58081-58761-24879
+CREATED:20180302T134902
+DESCRIPTION:Michael Kennedy\n
+ \n
+ MongoDB was the most wanted database technology of 2017 among
+ developers. Python is one of the true premier languages to work with
+ MongoDB. Its dictionaries and classes map perfectly to document
+ databases' JSON-like records. In this workshop, you will learn to
+ build rich, real-world applications based on MongoDB and Python.
+ You'll learn about modeling data, performance, and deployment
+ considerations. \n  \n
+ https://insights.stackoverflow.com/survey/2017#technology-most-loved-
+ dreaded-and-wanted-databases\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Python Software Foundation Hall (-1.65)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1893,52 +1888,50 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T101500
 DTEND:20180311T131500
-DTSTAMP:20180301T121258
-UID:46366-97696-17360-7126
-CREATED:20180301T121258
-DESCRIPTION:<b>Claus Aichinger</b><br/>
- <br/>
- # Goals
- **Primary Goal:** <br/>
- How can I integrate testing in my interactive development process? <br/>
- **Non-Goal:** <br/>
- How can I do this or that kind of test or how does this particular feature
-  of *test work? <br/>
- # Motivation & Content <br/>
- Software testing is an undisputed cornerstone of software development. How
- ever, as I know from my personal experience, Python users with a non-softw
- are-engineering or otherwise scientific background are often not so famili
- ar with the concept of testing. <br/>
- Computational problems are regularly approached by means of interactive de
- velopment, which is both fast and fun and one of the reasons why Python is
-  so successful in a wide range of scientific/engineering areas. The widesp
- read adoption of the [IPython](http://ipython.org/) and [Jupyter](http://j
- upyter.org/) project are living proof of that. <br/>
- When carrying out computations, “testing” is implicitly carried out by “lo
- oking at the result” - which, on a small range, works pretty well. Yet, th
- is is not what is meant automatic tests. Writing tests beforehand, as sugg
- ested by [Test Driven Development](https://en.wikipedia.org/wiki/Test-driv
- en_development) (TDD), is sometimes considered clumsy and an approach that
-  does not align very well with the experimental nature of interactive deve
- lopment. Yet, without tests one may quickly get lost in the complexity of 
- even rather small problems. <br/>
- In this workshop I want to share my personal experience with testing in sc
- ientific/engineering applications and how testing works for me using tools
-  like [engarde](http://engarde.readthedocs.org/), [doctest](https://docs.p
- ython.org/3/library/doctest.html), [pytest](http://pytest.org/) and [hypot
- hesis](http://hypothesis.readthedocs.org/).  <br/>
- The workshop focuses on the question "How can I integrate testing in my in
- teractive development process?". After a general introduction, each of the
-  above libraries will be put to use in small exercises constituting a scie
- ntific computing/data science task. <br/>
- **Target audience:** <br/>
- Engineers/Scientists doing interactive development who would like to pay m
- ore attention to automatic testing. <br/>
- This workshop is not aimed at people who already know their way around abo
- ve libraries. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:72499-89931-55095-3801
+CREATED:20180302T134902
+DESCRIPTION:Claus Aichinger\n
+ \n
+ # Goals \n  \n **Primary Goal:** \n How can I integrate testing in my
+ interactive development process? \n  \n **Non-Goal:** \n How can I do
+ this or that kind of test or how does this particular feature of
+ *test work? \n  \n  \n # Motivation & Content \n  \n Software testing
+ is an undisputed cornerstone of software development. However, as I
+ know from my personal experience, Python users with a non-software-
+ engineering or otherwise scientific background are often not so
+ familiar with the concept of testing. \n  \n Computational problems
+ are regularly approached by means of interactive development, which
+ is both fast and fun and one of the reasons why Python is so
+ successful in a wide range of scientific/engineering areas. The
+ widespread adoption of the [IPython](http://ipython.org/) and
+ [Jupyter](http://jupyter.org/) project are living proof of that. \n
+ \n When carrying out computations, “testing” is implicitly carried
+ out by “looking at the result” - which, on a small range, works
+ pretty well. Yet, this is not what is meant automatic tests. Writing
+ tests beforehand, as suggested by [Test Driven
+ Development](https://en.wikipedia.org/wiki/Test-driven_development)
+ (TDD), is sometimes considered clumsy and an approach that does not
+ align very well with the experimental nature of interactive
+ development. Yet, without tests one may quickly get lost in the
+ complexity of even rather small problems. \n  \n In this workshop I
+ want to share my personal experience with testing in
+ scientific/engineering applications and how testing works for me
+ using tools like [engarde](http://engarde.readthedocs.org/),
+ [doctest](https://docs.python.org/3/library/doctest.html),
+ [pytest](http://pytest.org/) and
+ [hypothesis](http://hypothesis.readthedocs.org/).  \n The workshop
+ focuses on the question "How can I integrate testing in my
+ interactive development process?". After a general introduction, each
+ of the above libraries will be put to use in small exercises
+ constituting a scientific computing/data science task. \n  \n
+ **Target audience:** \n Engineers/Scientists doing interactive
+ development who would like to pay more attention to automatic
+ testing. \n This workshop is not aimed at people who already know
+ their way around above libraries.\n
+ \n
  TAGS: data
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1948,34 +1941,30 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T133000
 DTEND:20180311T173000
-DTSTAMP:20180301T121258
-UID:49101-96707-55553-4661
-CREATED:20180301T121258
-DESCRIPTION:<b>Miro Hrončok</b><br/>
- <br/>
- Let's learn how to write Cython. Cython let's you write Python extension m
- odules as if they were written in C or C++, but using a superset of Python
- . It's easy, it's fun, the result is fast and you are not furious. <br/>
- Preliminary agenda: <br/>
- * Python C API - what, why, how, why not <br/>
- * Building extension modules with setuptools <br/>
- * Python C API internals - PyObject, Reference counting, GIL <br/>
- * Cython - what it does, why it's better, basics <br/>
- * Compiling Python code with Cython <br/>
- * Annotating with Cython, basic profiling, where's my code slow? <br/>
- * Let's add types. Wrrrrm, speed ups! <br/>
- * Writing Cython functions <br/>
- * Creating "classes" (extension types) <br/>
- * Using Cython with NumPy <br/>
- * Cython directives <br/>
- * C structs, pointers, malloc etc. <br/>
- * Using C libraries from Cython <br/>
- * (optional - if there's time left) pyximport and %%cython IPython magic <br/>
- * (optional - if there's time left) Using Cython with C++ <br/>
- * (optional - if there's time left) Building wheels (in the cloud) <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*1121-49753-08518-57546
+CREATED:20180302T134902
+DESCRIPTION:Miro Hrončok\n
+ \n
+ Let's learn how to write Cython. Cython let's you write Python
+ extension modules as if they were written in C or C++, but using a
+ superset of Python. It's easy, it's fun, the result is fast and you
+ are not furious. \n  \n Preliminary agenda: \n  \n * Python C API -
+ what, why, how, why not \n * Building extension modules with
+ setuptools \n * Python C API internals - PyObject, Reference
+ counting, GIL \n * Cython - what it does, why it's better, basics \n
+ * Compiling Python code with Cython \n * Annotating with Cython,
+ basic profiling, where's my code slow? \n * Let's add types. Wrrrrm,
+ speed ups! \n * Writing Cython functions \n * Creating "classes"
+ (extension types) \n * Using Cython with NumPy \n * Cython directives
+ \n * C structs, pointers, malloc etc. \n * Using C libraries from
+ Cython \n * (optional - if there's time left) pyximport and %%cython
+ IPython magic \n * (optional - if there's time left) Using Cython
+ with C++ \n * (optional - if there's time left) Building wheels (in
+ the cloud)\n
+ \n
  TAGS: generic
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall A (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -1985,19 +1974,20 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T101500
 DTEND:20180311T131500
-DTSTAMP:20180301T121258
-UID:16456-74859-37819-7437
-CREATED:20180301T121258
-DESCRIPTION:<b>Michal Nalevanko</b><br/>
- <br/>
- Workshop s pandami, presnejšie s pandas - flexibilným nástrojom Pythonu na
-  manipuláciu s dátami, ich analýzu a vizualizáciu. <br/>
- Michal Nalevanko bude mať pre vás pripravené nielen predstavenie tejto pop
- ulárnej knižnice, ale aj praktické zadania, s ktorými si pandas sami vyskú
- šate. Prineste si preto aj vlastné notebooky, určite ich využijete. <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:24701-17415-11051-7679
+CREATED:20180302T134902
+DESCRIPTION:Michal Nalevanko\n
+ \n
+ Workshop s pandami, presnejšie s pandas - flexibilným nástrojom
+ Pythonu na manipuláciu s dátami, ich analýzu a vizualizáciu. \n  \n
+ Michal Nalevanko bude mať pre vás pripravené nielen predstavenie
+ tejto populárnej knižnice, ale aj praktické zadania, s ktorými si
+ pandas sami vyskúšate. Prineste si preto aj vlastné notebooky, určite
+ ich využijete.\n
+ \n
  TAGS: data
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall B (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -2007,25 +1997,20 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T133000
 DTEND:20180311T173000
-DTSTAMP:20180301T121258
-UID:*5536-43924-87038-31488
-CREATED:20180301T121258
-DESCRIPTION:<b>Alex Ellis</b><br/>
- <br/>
- We'll go through the basics of OpenFaaS with Python such as:
- * Initial setup <br/>
- * Create a function <br/>
- * Access HTTP Headers, environment variables and secrets <br/>
- * Add a new language template <br/>
- * Troubleshooting <br/>
- * Chaining functions <br/>
- * Async functions <br/>
- * Monitoring functions <br/>
- * Securing OpenFaaS for public use (TLS, Basic Auth) <br/>
- * Object storage with Minio <br/>
- <br/>
+DTSTAMP:20180302T134902
+UID:*6693-11787-38304-17208
+CREATED:20180302T134902
+DESCRIPTION:Alex Ellis\n
+ \n
+ We'll go through the basics of OpenFaaS with Python such as: \n  \n *
+ Initial setup \n * Create a function \n * Access HTTP Headers,
+ environment variables and secrets \n * Add a new language template \n
+ * Troubleshooting \n * Chaining functions \n * Async functions \n *
+ Monitoring functions \n * Securing OpenFaaS for public use (TLS,
+ Basic Auth) \n * Object storage with Minio\n
+ \n
  TAGS: devops
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:SPy - Hall B (-1.57)
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -2035,12 +2020,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20180311T084500
 DTEND:20180311T172500
-DTSTAMP:20180301T121258
-UID:*1429-00954-96909-23269
-CREATED:20180301T121258
-DESCRIPTION: <br/>
+DTSTAMP:20180302T134902
+UID:*7873-72155-13337-87222
+CREATED:20180302T134902
+DESCRIPTION: \n
  TAGS: web
-LAST-MODIFIED:20180301T121258
+LAST-MODIFIED:20180302T134902
 LOCATION:Django Girls Auditorium (+1.31)
 SEQUENCE:0
 STATUS:CONFIRMED

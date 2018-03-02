@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-01 12:15+0100\n"
+"POT-Creation-Date: 2018-03-02 13:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -17,377 +17,377 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.5.3\n"
 
-#: templates/body.html:40 views.py:18
+#: templates/body.html:40 views.py:19
 msgid "PyCon SK 2018"
 msgstr ""
 
-#: views.py:46
+#: views.py:47
 msgid ""
 "PyCon will be back at Slovakia in 2018 again. PyCon SK is a community-"
 "organized conference for the Python programming language."
 msgstr ""
 
-#: views.py:59
+#: views.py:60
 msgid "Slovak Republic"
 msgstr ""
 
-#: templates/cfp.html:39 views.py:75
+#: templates/cfp.html:39 views.py:77
 msgid "Talk"
 msgstr ""
 
-#: templates/cfp.html:40 views.py:76
+#: templates/cfp.html:40 views.py:78
 msgid "Workshop"
 msgstr ""
 
-#: templates/cfp.html:53 views.py:80
+#: templates/cfp.html:53 views.py:82
 msgid "Machine Learning / AI"
 msgstr ""
 
-#: templates/cfp.html:55 views.py:81
+#: templates/cfp.html:55 views.py:83
 msgid "Community / Diversity / Social"
 msgstr ""
 
-#: templates/cfp.html:52 views.py:82
+#: templates/cfp.html:52 views.py:84
 msgid "Data Science"
 msgstr ""
 
-#: views.py:84
+#: views.py:86
 msgid "Documentation"
 msgstr ""
 
-#: templates/cfp.html:50 views.py:85
+#: templates/cfp.html:50 views.py:87
 msgid "Education"
 msgstr ""
 
-#: templates/cfp.html:48 views.py:86
+#: templates/cfp.html:48 views.py:88
 msgid "Python General"
 msgstr ""
 
-#: templates/cfp.html:54 views.py:87
+#: templates/cfp.html:54 views.py:89
 msgid "Security"
 msgstr ""
 
-#: templates/cfp.html:56 views.py:88
+#: templates/cfp.html:56 views.py:90
 msgid "Soft Skills"
 msgstr ""
 
-#: templates/cfp.html:57 views.py:89
+#: templates/cfp.html:57 views.py:91
 msgid "Hardware"
 msgstr ""
 
-#: templates/cfp.html:51 views.py:90
+#: templates/cfp.html:51 views.py:92
 msgid "Web Development"
 msgstr ""
 
-#: templates/cfp.html:58 views.py:91
+#: templates/cfp.html:58 views.py:93
 msgid "Other"
 msgstr ""
 
-#: views.py:99 views.py:138
+#: views.py:101 views.py:140
 msgid "Conference Opening"
 msgstr ""
 
-#: views.py:100
+#: views.py:102
 msgid ""
 "When your wetware has too many threads - Tips from an ADHDer on how to "
 "improve your focus"
 msgstr ""
 
-#: views.py:101
+#: views.py:103
 msgid "Docs or it didn't happen"
 msgstr ""
 
-#: views.py:102
+#: views.py:104
 msgid "GraphQL is the new black"
 msgstr ""
 
-#: views.py:103
+#: views.py:105
 msgid "To the Google in 80 Days"
 msgstr ""
 
-#: views.py:104
+#: views.py:106
 msgid "Unsafe at Any Speed"
 msgstr ""
 
-#: views.py:105
+#: views.py:107
 msgid "Protecting Privacy and Security — For Yourself and Your Community"
 msgstr ""
 
-#: views.py:106
+#: views.py:108
 msgid "ZODB: The Graph database for Python Developers."
 msgstr ""
 
-#: views.py:107
+#: views.py:109
 msgid ""
 "Differentiable programming in Python and Gluon for (not only medical) "
 "image analysis"
 msgstr ""
 
-#: views.py:108
+#: views.py:110
 msgid "Vim your Python, Python your Vim"
 msgstr ""
 
-#: views.py:109
+#: views.py:111
 msgid "Quiz"
 msgstr ""
 
-#: views.py:110 views.py:150
+#: views.py:112 views.py:152
 msgid "Lightning Talks"
 msgstr ""
 
-#: views.py:114 views.py:154
+#: views.py:116 views.py:156
 msgid "Conference Opening in Kiwi.com Hall"
 msgstr ""
 
-#: views.py:115
+#: views.py:117
 msgid "Konferencia Python Days v Martine a následné aktivity"
 msgstr ""
 
-#: views.py:116
+#: views.py:118
 msgid "Programujeme v Pythone až k maturite"
 msgstr ""
 
-#: views.py:117
+#: views.py:119
 msgid "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"
 msgstr ""
 
-#: views.py:118
+#: views.py:120
 msgid "O nindžoch a mentoroch: CoderDojo na Slovensku"
 msgstr ""
 
-#: views.py:119
+#: views.py:121
 msgid "Komunitní kurzy"
 msgstr ""
 
-#: views.py:120
+#: views.py:122
 msgid "Ako sa pasujeme s Pythonom v Martine?"
 msgstr ""
 
-#: views.py:121
+#: views.py:123
 msgid "Prečo hardvér priťahuje k informatike žiakov i dospelých"
 msgstr ""
 
-#: views.py:122
+#: views.py:124
 msgid "EDU Talks"
 msgstr ""
 
-#: views.py:123
+#: views.py:125
 msgid "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
 msgstr ""
 
-#: views.py:127
+#: views.py:129
 msgid "Ako vytvárať interaktívne mapy v Python / R"
 msgstr ""
 
-#: views.py:128
+#: views.py:130
 msgid "Práce s XML"
 msgstr ""
 
-#: views.py:129
+#: views.py:131
 msgid "Managing high-available applications in production"
 msgstr ""
 
-#: views.py:133
+#: views.py:135
 msgid "Základy Ansible Workshop"
 msgstr ""
 
-#: views.py:134
+#: views.py:136
 msgid "Introduction to Machine Learning with Python"
 msgstr ""
 
-#: views.py:139
+#: views.py:141
 msgid "Solutions Reviews"
 msgstr ""
 
-#: views.py:140
+#: views.py:142
 msgid "Campaign Automation & Abusing Celery Properly"
 msgstr ""
 
-#: views.py:141
+#: views.py:143
 msgid "The Truth about Mastering Big Data"
 msgstr ""
 
-#: views.py:142
+#: views.py:144
 msgid ""
 "Industrial Machine Learning: Building scalable distributed machine "
 "learning pipelines with Python"
 msgstr ""
 
-#: views.py:143
+#: views.py:145
 msgid "Pythonic code, by example"
 msgstr ""
 
-#: views.py:144
+#: views.py:146
 msgid "Our DevOps journey, is SRE the next stop?"
 msgstr ""
 
-#: views.py:145
+#: views.py:147
 msgid "Implementing distributed systems with Consul"
 msgstr ""
 
-#: views.py:146
+#: views.py:148
 msgid "Designing fast and scalable Python MicroServices with django"
 msgstr ""
 
-#: views.py:147
+#: views.py:149
 msgid "FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere"
 msgstr ""
 
-#: views.py:148
+#: views.py:150
 msgid "Programming Python as performance: live coding with FoxDot"
 msgstr ""
 
-#: views.py:149
+#: views.py:151
 msgid "The GAME!"
 msgstr ""
 
-#: views.py:155
+#: views.py:157
 msgid "Meteodáta v Pythone. Efektívne."
 msgstr ""
 
-#: views.py:156
+#: views.py:158
 msgid "Cesta kolem světa za 30 minut"
 msgstr ""
 
-#: views.py:157
+#: views.py:159
 msgid "LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie"
 msgstr ""
 
-#: views.py:158
+#: views.py:160
 msgid "Kiwi.com v ZOO"
 msgstr ""
 
-#: views.py:159
+#: views.py:161
 msgid "Keynote in Kiwi.com Hall"
 msgstr ""
 
-#: views.py:160
+#: views.py:162
 msgid "Skynet your Infrastructure with QUADS"
 msgstr ""
 
-#: views.py:161
+#: views.py:163
 msgid "Automated network OS testing"
 msgstr ""
 
-#: views.py:162
+#: views.py:164
 msgid "Tools to interact with Bitcoin and Ethereum"
 msgstr ""
 
-#: views.py:163
+#: views.py:165
 msgid "7 Steps to a Clean Issue Tracker"
 msgstr ""
 
-#: views.py:164
+#: views.py:166
 msgid "The Concierge Paradigm"
 msgstr ""
 
-#: views.py:168
+#: views.py:170
 msgid "Effectively running python applications in Kubernetes/OpenShift"
 msgstr ""
 
-#: views.py:169
+#: views.py:171
 msgid "Roboworkshop"
 msgstr ""
 
-#: views.py:172
+#: views.py:174
 msgid "Microbit:Slovensko"
 msgstr ""
 
-#: views.py:173
+#: views.py:175
 msgid "Programujeme v Pythone – učíme seminár z programovania na strednej škole"
 msgstr ""
 
-#: views.py:177
+#: views.py:179
 msgid "Charon a cesta z pickle pekla"
 msgstr ""
 
-#: views.py:178
+#: views.py:180
 msgid "Making Python Behave"
 msgstr ""
 
-#: views.py:179
+#: views.py:181
 msgid "\"Utajené\" informácie o kóde ktorý píšeš"
 msgstr ""
 
-#: views.py:180
+#: views.py:182
 msgid ""
 "How to connect objects with each other in different situations with "
 "Pythonic ways - association, aggregation, composition and etc."
 msgstr ""
 
-#: views.py:181
+#: views.py:183
 msgid "APIs: Gateway to world's data"
 msgstr ""
 
-#: views.py:182
+#: views.py:184
 msgid "Getting started with HDF5 and PyTables"
 msgstr ""
 
-#: views.py:183
+#: views.py:185
 msgid "Real-time personalized recommendations using embeddings"
 msgstr ""
 
-#: views.py:187
+#: views.py:189
 msgid ""
 "Real-time transcription and sentiment analysis of audio streams; on the "
 "phone and in the browser"
 msgstr ""
 
-#: views.py:188
+#: views.py:190
 msgid "Learn MongoDB by modeling PyPI in a document database"
 msgstr ""
 
-#: views.py:192
+#: views.py:194
 msgid "Testing Essentials for Scientists and Engineers"
 msgstr ""
 
-#: views.py:193
+#: views.py:195
 msgid "Cython: Speed up your code without going insane"
 msgstr ""
 
-#: views.py:197
+#: views.py:199
 msgid "Zoznámte sa s pandami"
 msgstr ""
 
-#: views.py:198
+#: views.py:200
 msgid "Basics of OpenFaaS with Python"
 msgstr ""
 
-#: views.py:202
+#: views.py:204
 msgid "Django Girls"
 msgstr ""
 
-#: views.py:206
+#: views.py:208
 msgid "Kiwi.com Hall"
 msgstr ""
 
-#: views.py:210
+#: views.py:212
 msgid "Python Software Foundation Hall"
 msgstr ""
 
-#: views.py:215
+#: views.py:217
 msgid "SPy - Hall A"
 msgstr ""
 
-#: views.py:220
+#: views.py:222
 msgid "SPy - Hall B"
 msgstr ""
 
-#: views.py:225
+#: views.py:227
 msgid "Django Girls Auditorium"
 msgstr ""
 
-#: views.py:336
+#: views.py:338
 msgid "Break"
 msgstr ""
 
-#: views.py:339
+#: views.py:341
 msgid "Lunch 🍱"
 msgstr ""
 
-#: views.py:342
+#: views.py:344
 msgid "Coffee Break ☕"
 msgstr ""
 
