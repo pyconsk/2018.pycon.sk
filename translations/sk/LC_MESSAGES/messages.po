@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-02 13:48+0100\n"
+"POT-Creation-Date: 2018-03-03 00:46+0100\n"
 "PO-Revision-Date: 2018-03-02 11:57+0000\n"
 "Last-Translator: Michal Nalevanko <michal.nalevanko@pycon.sk>\n"
 "Language: sk\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:40 views.py:19
 msgid "PyCon SK 2018"
@@ -148,56 +148,56 @@ msgid "Conference Opening in Kiwi.com Hall"
 msgstr "Otvorenie konferencie v Kiwi.com miestnosti"
 
 #: views.py:117
-msgid "Konferencia Python Days v Martine a následné aktivity"
-msgstr "Python Days in Martin and follow-up activities"
+msgid "Python Days in Martin and follow-up activities"
+msgstr "Konferencia Python Days v Martine a následné aktivity"
 
 #: views.py:118
-msgid "Programujeme v Pythone až k maturite"
-msgstr "Python programming till graduation"
+msgid "Python programming till graduation"
+msgstr "Programujeme v Pythone až k maturite"
 
 #: views.py:119
-msgid "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"
-msgstr "Open educational resources for learning Python"
+msgid "Open educational resources for learning Python"
+msgstr "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"
 
 #: views.py:120
-msgid "O nindžoch a mentoroch: CoderDojo na Slovensku"
-msgstr "About Ninjas and Mentors: CoderDojo in Slovakia"
+msgid "About Ninjas and Mentors: CoderDojo in Slovakia"
+msgstr "O nindžoch a mentoroch: CoderDojo na Slovensku"
 
 #: views.py:121
-msgid "Komunitní kurzy"
-msgstr "Community based courses"
+msgid "Community based courses"
+msgstr "Komunitní kurzy"
 
 #: views.py:122
-msgid "Ako sa pasujeme s Pythonom v Martine?"
-msgstr "How do we struggle with Python in Martin?"
+msgid "How do we struggle with Python in Martin?"
+msgstr "Ako sa pasujeme s Pythonom v Martine?"
 
 #: views.py:123
-msgid "Prečo hardvér priťahuje k informatike žiakov i dospelých"
-msgstr "Why hardware attracts kids and adults to IT"
+msgid "Why hardware attracts kids and adults to IT"
+msgstr "Prečo hardvér priťahuje k informatike žiakov i dospelých"
 
 #: views.py:124
 msgid "EDU Talks"
 msgstr "EDU Prednášky"
 
 #: views.py:125
-msgid "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
-msgstr "Panel discussion: Teaching IT in Slovakia - where is it heading?"
+msgid "Panel discussion: Teaching IT in Slovakia - where is it heading?"
+msgstr "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
 
 #: views.py:129
-msgid "Ako vytvárať interaktívne mapy v Python / R"
-msgstr "How to create interactive maps in Python/R"
+msgid "How to create interactive maps in Python / R"
+msgstr "Ako vytvárať interaktívne mapy v Python / R"
 
 #: views.py:130
-msgid "Práce s XML"
-msgstr "Working with XML"
+msgid "Working with XML"
+msgstr "Práce s XML"
 
 #: views.py:131
 msgid "Managing high-available applications in production"
 msgstr "Spravovanie vysoko-dostupných aplikácii v produkcii"
 
 #: views.py:135
-msgid "Základy Ansible Workshop"
-msgstr "Workshop: An Introduction to Ansible"
+msgid "Workshop: An Introduction to Ansible"
+msgstr "Základy Ansible Workshop"
 
 #: views.py:136
 msgid "Introduction to Machine Learning with Python"
@@ -254,20 +254,20 @@ msgid "The GAME!"
 msgstr "HRA!"
 
 #: views.py:157
-msgid "Meteodáta v Pythone. Efektívne."
+msgid "Meteo data in Python. Effectively."
 msgstr "Meteo data in Python. Effectively."
 
 #: views.py:158
-msgid "Cesta kolem světa za 30 minut"
+msgid "Around the World in 30 minutes"
 msgstr "Around the World in 30 minutes"
 
 #: views.py:159
-msgid "LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie"
-msgstr "LOCKED SHIELDS: What a good cyber testing looks like"
+msgid "LOCKED SHIELDS: What a good cyber testing looks like"
+msgstr "LOCKED SHIELDS - ako má vyzerať dobre urobené kybertestovanie"
 
 #: views.py:160
-msgid "Kiwi.com v ZOO"
-msgstr "Kiwi.com in ZOO"
+msgid "Kiwi.com in ZOO"
+msgstr "Kiwi.com v ZOO"
 
 #: views.py:161
 msgid "Keynote in Kiwi.com Hall"
@@ -302,24 +302,24 @@ msgid "Roboworkshop"
 msgstr "Roboworkshop"
 
 #: views.py:174
-msgid "Microbit:Slovensko"
-msgstr "Microbit:Slovakia"
+msgid "Microbit:Slovakia"
+msgstr "Microbit:Slovensko"
 
 #: views.py:175
-msgid "Programujeme v Pythone – učíme seminár z programovania na strednej škole"
-msgstr "Coding in Python: A high-school programming lesson"
+msgid "Coding in Python: A high-school programming lesson"
+msgstr "Programujeme v Pythone – učíme seminár z programovania na strednej škole"
 
 #: views.py:179
-msgid "Charon a cesta z pickle pekla"
-msgstr "Charon and the way out from a pickle hell"
+msgid "Charon and the way out from a pickle hell"
+msgstr "Charon a cesta z pickle pekla"
 
 #: views.py:180
 msgid "Making Python Behave"
 msgstr "Výchova Pythonu"
 
 #: views.py:181
-msgid "\"Utajené\" informácie o kóde ktorý píšeš"
-msgstr ""
+msgid "\"Secret\" information in code you write"
+msgstr "\"Utajené\" informácie o kóde ktorý píšeš"
 
 #: views.py:182
 msgid ""
@@ -362,7 +362,7 @@ msgid "Cython: Speed up your code without going insane"
 msgstr "Cython: zrýchli svoj kód a nezblázni sa"
 
 #: views.py:199
-msgid "Zoznámte sa s pandami"
+msgid "Meet the pandas"
 msgstr "Meet the pandas"
 
 #: views.py:200
@@ -3197,4 +3197,63 @@ msgstr ""
 
 #~ msgid "Tickets are for sale now!"
 #~ msgstr "Vstupenky sú už v predaji!"
+
+#~ msgid "Konferencia Python Days v Martine a následné aktivity"
+#~ msgstr "Python Days in Martin and follow-up activities"
+
+#~ msgid "Programujeme v Pythone až k maturite"
+#~ msgstr "Python programming till graduation"
+
+#~ msgid "Otvorené vzdelávacie zdroje pre štúdium jazyka Python"
+#~ msgstr "Open educational resources for learning Python"
+
+#~ msgid "O nindžoch a mentoroch: CoderDojo na Slovensku"
+#~ msgstr "About Ninjas and Mentors: CoderDojo in Slovakia"
+
+#~ msgid "Komunitní kurzy"
+#~ msgstr "Community based courses"
+
+#~ msgid "Ako sa pasujeme s Pythonom v Martine?"
+#~ msgstr "How do we struggle with Python in Martin?"
+
+#~ msgid "Prečo hardvér priťahuje k informatike žiakov i dospelých"
+#~ msgstr "Why hardware attracts kids and adults to IT"
+
+#~ msgid "Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?"
+#~ msgstr "Panel discussion: Teaching IT in Slovakia - where is it heading?"
+
+#~ msgid "Ako vytvárať interaktívne mapy v Python / R"
+#~ msgstr "How to create interactive maps in Python/R"
+
+#~ msgid "Práce s XML"
+#~ msgstr "Working with XML"
+
+#~ msgid "Základy Ansible Workshop"
+#~ msgstr "Workshop: An Introduction to Ansible"
+
+#~ msgid "Meteodáta v Pythone. Efektívne."
+#~ msgstr "Meteo data in Python. Effectively."
+
+#~ msgid "Cesta kolem světa za 30 minut"
+#~ msgstr "Around the World in 30 minutes"
+
+#~ msgid "LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie"
+#~ msgstr "LOCKED SHIELDS: What a good cyber testing looks like"
+
+#~ msgid "Kiwi.com v ZOO"
+#~ msgstr "Kiwi.com in ZOO"
+
+#~ msgid "Microbit:Slovensko"
+#~ msgstr "Microbit:Slovakia"
+
+#~ msgid ""
+#~ "Programujeme v Pythone – učíme seminár"
+#~ " z programovania na strednej škole"
+#~ msgstr "Coding in Python: A high-school programming lesson"
+
+#~ msgid "Charon a cesta z pickle pekla"
+#~ msgstr "Charon and the way out from a pickle hell"
+
+#~ msgid "Zoznámte sa s pandami"
+#~ msgstr "Meet the pandas"
 

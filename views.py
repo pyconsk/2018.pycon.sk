@@ -114,25 +114,25 @@ FRIDAY_TRACK1 = (
 
 FRIDAY_TRACK2 = (
     {"pause": 5, 'title': gettext("Conference Opening in Kiwi.com Hall"), 'duration': 25},
-    {"pause": 5, 'title': gettext("Konferencia Python Days v Martine a následné aktivity")},
-    {"pause": 15, 'title': gettext("Programujeme v Pythone až k maturite")},
-    {"pause": 5, 'title': gettext("Otvorené vzdelávacie zdroje pre štúdium jazyka Python")},
-    {"pause": 60, 'title': gettext("O nindžoch a mentoroch: CoderDojo na Slovensku")},
-    {"pause": 5, 'title': gettext("Komunitní kurzy")},
-    {"pause": 15, 'title': gettext("Ako sa pasujeme s Pythonom v Martine?")},
-    {"pause": 5, 'title': gettext("Prečo hardvér priťahuje k informatike žiakov i dospelých")},
+    {"pause": 5, 'title': gettext("Python Days in Martin and follow-up activities")},
+    {"pause": 15, 'title': gettext("Python programming till graduation")},
+    {"pause": 5, 'title': gettext("Open educational resources for learning Python")},
+    {"pause": 60, 'title': gettext("About Ninjas and Mentors: CoderDojo in Slovakia")},
+    {"pause": 5, 'title': gettext("Community based courses")},
+    {"pause": 15, 'title': gettext("How do we struggle with Python in Martin?")},
+    {"pause": 5, 'title': gettext("Why hardware attracts kids and adults to IT")},
     {"pause": 15, 'title': gettext("EDU Talks"), 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
-    {"pause": 15, 'title': gettext("Panelová diskusia: Kam smeruje vyučovanie informatiky na Slovensku?")},
+    {"pause": 15, 'title': gettext("Panel discussion: Teaching IT in Slovakia - where is it heading?")},
 )
 
 FRIDAY_WORKSHOPS1 = (
-    {"pause": 10, 'title': gettext("Ako vytvárať interaktívne mapy v Python / R")},
-    {"pause": 60, 'title': gettext("Práce s XML")},
+    {"pause": 10, 'title': gettext("How to create interactive maps in Python / R")},
+    {"pause": 60, 'title': gettext("Working with XML")},
     {"pause": 5, 'title': gettext("Managing high-available applications in production")},
 )
 
 FRIDAY_WORKSHOPS2 = (
-    {"pause": 40, 'title': gettext("Základy Ansible Workshop")},
+    {"pause": 40, 'title': gettext("Workshop: An Introduction to Ansible")},
     {"pause": 5, 'title': gettext("Introduction to Machine Learning with Python")},
 )
 
@@ -154,10 +154,10 @@ SATURDAY_TRACK1 = (
 
 SATURDAY_TRACK2 = (
     {"pause": 5, 'title': gettext("Conference Opening in Kiwi.com Hall"), 'duration': 25},
-    {"pause": 5, 'title': gettext("Meteodáta v Pythone. Efektívne.")},
-    {"pause": 15, 'title': gettext("Cesta kolem světa za 30 minut")},
-    {"pause": 5, 'title': gettext("LOCKED SHIELDS - ako má vypadať dobre urobené kybertestovanie")},
-    {"pause": 60, 'title': gettext("Kiwi.com v ZOO")},
+    {"pause": 5, 'title': gettext("Meteo data in Python. Effectively.")},
+    {"pause": 15, 'title': gettext("Around the World in 30 minutes")},
+    {"pause": 5, 'title': gettext("LOCKED SHIELDS: What a good cyber testing looks like")},
+    {"pause": 60, 'title': gettext("Kiwi.com in ZOO")},
     {"pause": 5, 'title': gettext("Keynote in Kiwi.com Hall"), 'duration': 30, 'flag': 'generic', 'type': 'talk'},
     {"pause": 15, 'title': gettext("Skynet your Infrastructure with QUADS")},
     {"pause": 5, 'title': gettext("Automated network OS testing")},
@@ -171,14 +171,14 @@ SATURDAY_WORKSHOPS1 = (
     {"pause": 5, 'title': gettext("Roboworkshop")},
 )
 SATURDAY_WORKSHOPS2 = (
-    {"pause": 55, 'title': gettext("Microbit:Slovensko")},
-    {"pause": 5, 'title': gettext("Programujeme v Pythone – učíme seminár z programovania na strednej škole")},
+    {"pause": 55, 'title': gettext("Microbit:Slovakia")},
+    {"pause": 5, 'title': gettext("Coding in Python: A high-school programming lesson")},
 )
 
 SUNDAY_TRACK1 = (
-    {"pause": 5, 'title': gettext("Charon a cesta z pickle pekla")},
+    {"pause": 5, 'title': gettext("Charon and the way out from a pickle hell")},
     {"pause": 15, 'title': gettext("Making Python Behave")},
-    {"pause": 5, 'title': gettext("\"Utajené\" informácie o kóde ktorý píšeš"), 'duration': 30},
+    {"pause": 5, 'title': gettext("\"Secret\" information in code you write")},
     {"pause": 60, 'title': gettext("How to connect objects with each other in different situations with Pythonic ways - association, aggregation, composition and etc.")},
     {"pause": 5, 'title': gettext("APIs: Gateway to world's data")},
     {"pause": 15, 'title': gettext("Getting started with HDF5 and PyTables")},
@@ -196,7 +196,7 @@ SUNDAY_WORKSHOPS2 = (
 )
 
 SUNDAY_WORKSHOPS3 = (
-    {"pause": 15, 'title': gettext("Zoznámte sa s pandami")},
+    {"pause": 15, 'title': gettext("Meet the pandas")},
     {"pause": 5, 'title': gettext("Basics of OpenFaaS with Python")},
 )
 
