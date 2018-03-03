@@ -148,7 +148,7 @@ SATURDAY_TRACK1 = (
     {"pause": 15, 'title': gettext("Designing fast and scalable Python MicroServices with django")},
     {"pause": 5, 'title': gettext("FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere")},
     {"pause": 5, 'title': gettext("Programming Python as performance: live coding with FoxDot")},
-    {"pause": 5, 'title': gettext("The GAME!"), 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
+    {"pause": 5, 'title': gettext("Programming Contest Finale"), 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
     {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
 )
 

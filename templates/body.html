@@ -44,14 +44,22 @@
 
   <div class="menu">
     {% block navbar %}
+      <span class="dropdown">
       <a href="{{ url_for('venue', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_venue }}">{{ _('Venue') }}</a>
+        <span class="dropdown-content">
+          <a href="{{ url_for('tickets', lang_code=lang_code) }}"
+            class="pseudo button icon-help-circled {{ li_tickets }}">{{ _('Tickets') }}</a>
+        </span>
+      </span>
       <span class="dropdown">
       <a href="{{ url_for('hall_of_fame', lang_code=lang_code) }}"
          class="pseudo button icon-help-circled {{ li_hall_of_fame }}">{{ _('Hall of Fame') }}</a>
       </span>
-      <a href="{{ url_for('tickets', lang_code=lang_code) }}"
-         class="pseudo button icon-help-circled {{ li_tickets }}">{{ _('Tickets') }}</a>
+      <a href="https://riot.python.sk/#/room/#PyConSK:python.sk"
+         class="pseudo button icon-help-circled external">{{ _('Chat') }}</a>
+      <a href="https://app.pycon.sk/"
+         class="pseudo button icon-help-circled external">{{ _('Contest') }}</a>
       <span class="dropdown">
         <a href="{{ url_for('schedule', lang_code=lang_code) }}"
            class="pseudo button icon-help-circled {{ li_schedule_nav }}">{{ _('Schedule') }}</a>
