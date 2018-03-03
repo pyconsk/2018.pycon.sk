@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-03 00:46+0100\n"
+"POT-Creation-Date: 2018-03-03 01:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1097,20 +1097,42 @@ msgid "News"
 msgstr ""
 
 #: templates/index.html:24
-msgid "PyCon SK 2018 is sold out!"
+msgid "We have launched a conference chat."
 msgstr ""
 
 #: templates/index.html:27
+msgid "You can talk with other conference participants via our online chat:"
+msgstr ""
+
+#: templates/index.html:33
+msgid ""
+"If you are using an application, instead of our webapp please use this "
+"server connection details:"
+msgstr ""
+
+#: templates/index.html:34
+msgid "Home server URL:"
+msgstr ""
+
+#: templates/index.html:35
+msgid "Identity server URL:"
+msgstr ""
+
+#: templates/index.html:40
+msgid "PyCon SK 2018 is sold out!"
+msgstr ""
+
+#: templates/index.html:43
 msgid ""
 "We are happy to announce that PyCon SK 2018 conference is sold out. Thank"
 " you!"
 msgstr ""
 
-#: templates/index.html:31
+#: templates/index.html:47
 msgid "Calendar with conference schedule."
 msgstr ""
 
-#: templates/index.html:34
+#: templates/index.html:50
 msgid ""
 "You can import conference schedule as a calendar to your favorite "
 "calendar app. This way you'll be always\n"
@@ -1118,30 +1140,30 @@ msgid ""
 "change calendar will update automatically."
 msgstr ""
 
-#: templates/index.html:36 templates/schedule.html:18
+#: templates/index.html:52 templates/schedule.html:18
 msgid "Get event calendar:"
 msgstr ""
 
-#: templates/index.html:40
+#: templates/index.html:56
 msgid "Conference schedule has been published."
 msgstr ""
 
-#: templates/index.html:44
+#: templates/index.html:60
 msgid "Speakers and talks list has been published."
 msgstr ""
 
-#: templates/index.html:47
+#: templates/index.html:63
 msgid ""
 "Talks and speakers list has been published on our website. Soon we'll "
 "publish also the time\n"
 "        schedule."
 msgstr ""
 
-#: templates/index.html:53
+#: templates/index.html:69
 msgid "Call for proposals has ended."
 msgstr ""
 
-#: templates/index.html:56
+#: templates/index.html:72
 #, python-format
 msgid ""
 "We have received almost 100 high quality talks and workshops proposals! "
@@ -1151,11 +1173,11 @@ msgid ""
 "          href=\"%(url)s\">speakers</a> on our website."
 msgstr ""
 
-#: templates/index.html:63
+#: templates/index.html:79
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
 msgstr ""
 
-#: templates/index.html:66
+#: templates/index.html:82
 msgid ""
 "We are excited that for the third time in the row, PyConSK will be held "
 "under the auspices of the\n"
@@ -1165,18 +1187,18 @@ msgid ""
 "from all over Europe and the rest of the world."
 msgstr ""
 
-#: templates/index.html:74
+#: templates/index.html:90
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 
-#: templates/index.html:79
+#: templates/index.html:95
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
 msgstr ""
 
-#: templates/index.html:82
+#: templates/index.html:98
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -1186,11 +1208,11 @@ msgid ""
 "          href=\"%(url)s\">submit a talk proposal</a>."
 msgstr ""
 
-#: templates/index.html:88
+#: templates/index.html:104
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr ""
 
-#: templates/index.html:91
+#: templates/index.html:107
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to\n"
@@ -1201,7 +1223,7 @@ msgid ""
 "        releasing to deployment and infrastructure management."
 msgstr ""
 
-#: templates/index.html:95
+#: templates/index.html:111
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -1211,35 +1233,35 @@ msgid ""
 "        goals."
 msgstr ""
 
-#: templates/index.html:106
+#: templates/index.html:122
 msgid "References"
 msgstr ""
 
-#: templates/index.html:108
+#: templates/index.html:124
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our\n"
 "        references:"
 msgstr ""
 
-#: templates/index.html:146
+#: templates/index.html:162
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
 msgstr ""
 
-#: templates/index.html:184
+#: templates/index.html:200
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
 " info@pycon.sk or create a pull\n"
 "        request."
 msgstr ""
 
-#: templates/index.html:190
+#: templates/index.html:206
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr ""
 
-#: templates/index.html:191
+#: templates/index.html:207
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""

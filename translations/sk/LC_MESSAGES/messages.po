@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-03 00:46+0100\n"
+"POT-Creation-Date: 2018-03-03 01:03+0100\n"
 "PO-Revision-Date: 2018-03-02 11:57+0000\n"
 "Last-Translator: Michal Nalevanko <michal.nalevanko@pycon.sk>\n"
 "Language: sk\n"
@@ -363,7 +363,7 @@ msgstr "Cython: zrýchli svoj kód a nezblázni sa"
 
 #: views.py:199
 msgid "Meet the pandas"
-msgstr "Meet the pandas"
+msgstr "Zoznámte sa s pandami"
 
 #: views.py:200
 msgid "Basics of OpenFaaS with Python"
@@ -1244,10 +1244,32 @@ msgid "News"
 msgstr "Novinky"
 
 #: templates/index.html:24
+msgid "We have launched a conference chat."
+msgstr ""
+
+#: templates/index.html:27
+msgid "You can talk with other conference participants via our online chat:"
+msgstr ""
+
+#: templates/index.html:33
+msgid ""
+"If you are using an application, instead of our webapp please use this "
+"server connection details:"
+msgstr ""
+
+#: templates/index.html:34
+msgid "Home server URL:"
+msgstr ""
+
+#: templates/index.html:35
+msgid "Identity server URL:"
+msgstr ""
+
+#: templates/index.html:40
 msgid "PyCon SK 2018 is sold out!"
 msgstr "PyCon SK 2018 je vypredaná!"
 
-#: templates/index.html:27
+#: templates/index.html:43
 msgid ""
 "We are happy to announce that PyCon SK 2018 conference is sold out. Thank"
 " you!"
@@ -1255,11 +1277,11 @@ msgstr ""
 "S radosťou oznamujeme, že konferencia PyCon SK  2018 je vypredaná. "
 "Ďakujeme!"
 
-#: templates/index.html:31
+#: templates/index.html:47
 msgid "Calendar with conference schedule."
 msgstr "Kalendár s programom konferencie."
 
-#: templates/index.html:34
+#: templates/index.html:50
 msgid ""
 "You can import conference schedule as a calendar to your favorite "
 "calendar app. This way you'll be always\n"
@@ -1267,30 +1289,30 @@ msgid ""
 "change calendar will update automatically."
 msgstr ""
 
-#: templates/index.html:36 templates/schedule.html:18
+#: templates/index.html:52 templates/schedule.html:18
 msgid "Get event calendar:"
 msgstr ""
 
-#: templates/index.html:40
+#: templates/index.html:56
 msgid "Conference schedule has been published."
 msgstr "Zverejnili sme program konferencie."
 
-#: templates/index.html:44
+#: templates/index.html:60
 msgid "Speakers and talks list has been published."
 msgstr "Rečníci a prednášky boli zverejnené."
 
-#: templates/index.html:47
+#: templates/index.html:63
 msgid ""
 "Talks and speakers list has been published on our website. Soon we'll "
 "publish also the time\n"
 "        schedule."
 msgstr ""
 
-#: templates/index.html:53
+#: templates/index.html:69
 msgid "Call for proposals has ended."
 msgstr "Podávanie návrhov na prednášky je uzavreté."
 
-#: templates/index.html:56
+#: templates/index.html:72
 #, python-format
 msgid ""
 "We have received almost 100 high quality talks and workshops proposals! "
@@ -1303,11 +1325,11 @@ msgstr ""
 "chvíľu, kým ich prejdeme všetky, tak Vás prosíme o trpezlivosť. Začali "
 "sme publikovať niektorých <a href=\"%(url)s\">rečníkov</a> na našom webe."
 
-#: templates/index.html:63
+#: templates/index.html:79
 msgid "PyCon SK 2018 under the patronage of the president of the Slovak Republic."
 msgstr "PyCon SK 2018 pod záštitou prezidenta Slovenskej republiky."
 
-#: templates/index.html:66
+#: templates/index.html:82
 msgid ""
 "We are excited that for the third time in the row, PyConSK will be held "
 "under the auspices of the\n"
@@ -1321,14 +1343,14 @@ msgstr ""
 "konferenciu špičkovej úrovne, ktorá bude dôstojne reprezentovať SR pred "
 "publikom z celej Európy a aj zvyšku sveta."
 
-#: templates/index.html:74
+#: templates/index.html:90
 #, python-format
 msgid "Download PyCon SK 2018 Conference <a href=\"%(url)s\">press release</a>."
 msgstr ""
 "Uložte si <a href=\"%(url)s\">tlačovú správu</a> konferencie PyCon SK "
 "2018."
 
-#: templates/index.html:79
+#: templates/index.html:95
 msgid ""
 "We are preparing a section for Informatics Teachers to be held during the"
 " PyCon SK Conference."
@@ -1336,7 +1358,7 @@ msgstr ""
 "Pripravujeme sekciu pre učiteľov informatiky, ktorá sa uskutoční počas "
 "konferencie PyCon SK."
 
-#: templates/index.html:82
+#: templates/index.html:98
 #, python-format
 msgid ""
 "The aim of this section is to teach teachers the benefits and "
@@ -1350,11 +1372,11 @@ msgstr ""
 "skúsenosti s účastníkmi konferencie a <a href=\"%(url)s\">prihlásili si "
 "prednášku</a>."
 
-#: templates/index.html:88
+#: templates/index.html:104
 msgid "We are pleased to announce a DevOps track at PyCon SK 2018."
 msgstr "S potešením oznamujeme, že súčasťou PyCon SK 2018 bude aj DevOps track."
 
-#: templates/index.html:91
+#: templates/index.html:107
 msgid ""
 "DevOps (a portmanteau of \"development\" and \"operations\") is a "
 "software engineering practice that aims to\n"
@@ -1371,7 +1393,7 @@ msgstr ""
 "tvorby softvéru od integrácie, testovania, uvoľňovania až po nasadenie a "
 "správu infraštruktúry."
 
-#: templates/index.html:95
+#: templates/index.html:111
 #, python-format
 msgid ""
 "If you think you have something to say on this topic, you are most "
@@ -1384,11 +1406,11 @@ msgstr ""
 " návrh na prednášku</a>. Dúfame, že nastavíme \"error budget\" správne a "
 "uvidíme vývojárov a administrátorov spolupracovať na spoločných cieľoch."
 
-#: templates/index.html:106
+#: templates/index.html:122
 msgid "References"
 msgstr "Referencie"
 
-#: templates/index.html:108
+#: templates/index.html:124
 msgid ""
 "Previous years got media coverage, if you would like to know how was the "
 "conference check out our\n"
@@ -1397,7 +1419,7 @@ msgstr ""
 "Minulé ročníky mali aj pokrytie v médiach, ak máte záujem zistiť ako bolo"
 " na konferencii, pozrite si naše referencie:"
 
-#: templates/index.html:146
+#: templates/index.html:162
 msgid ""
 "Here are links to articles that were written by attendees about last two "
 "PyCon SK's:"
@@ -1405,7 +1427,7 @@ msgstr ""
 "Tu sú odkazy na články napísané našimi návštevníkmi z posledných dvoch "
 "ročníkov PyCon SK:"
 
-#: templates/index.html:184
+#: templates/index.html:200
 msgid ""
 "If you wrote an article or a blog post, do not hesitate to let us know at"
 " info@pycon.sk or create a pull\n"
@@ -1414,11 +1436,11 @@ msgstr ""
 "Ak ste napísali článok, alebo blog, neváhajte nám napísať na "
 "info@pycon.sk alebo vytvorte \"pull request\"."
 
-#: templates/index.html:190
+#: templates/index.html:206
 msgid "Did you find a mistake on our site? Do you want to know more? Let us know."
 msgstr "Našli ste na našich stránkach chybu? Chcete vedieť viac? Dajte nám vedieť."
 
-#: templates/index.html:191
+#: templates/index.html:207
 #, python-format
 msgid "Join our %(github)s and enrich the Python programming language community."
 msgstr ""
