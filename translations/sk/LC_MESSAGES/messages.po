@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-03-03 01:03+0100\n"
-"PO-Revision-Date: 2018-03-02 11:57+0000\n"
-"Last-Translator: Michal Nalevanko <michal.nalevanko@pycon.sk>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2018-03-03 15:05+0000\n"
+"Last-Translator: Jan Gondol <jan@jangondol.com>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/pycon-"
 "sk-2018-website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: templates/body.html:40 views.py:19
@@ -121,7 +122,7 @@ msgstr "Ochrana súkromia a bezpečnosť - pre teba a tvoju komunitu"
 
 #: views.py:108
 msgid "ZODB: The Graph database for Python Developers."
-msgstr ""
+msgstr "ZODB: grafová databáza pre vývojárov v Pythone."
 
 #: views.py:109
 msgid ""
@@ -141,7 +142,7 @@ msgstr "Kvíz"
 
 #: views.py:112 views.py:152
 msgid "Lightning Talks"
-msgstr ""
+msgstr "Bleskové talky"
 
 #: views.py:116 views.py:156
 msgid "Conference Opening in Kiwi.com Hall"
@@ -275,11 +276,11 @@ msgstr "Hlavná prednáška v aule Kiwi.com"
 
 #: views.py:162
 msgid "Skynet your Infrastructure with QUADS"
-msgstr ""
+msgstr "Premeňte svoju infraštruktúru na Skynet pomocou systému QUADS"
 
 #: views.py:163
 msgid "Automated network OS testing"
-msgstr ""
+msgstr "Automatizované testovanie sieťového operačného systému"
 
 #: views.py:164
 msgid "Tools to interact with Bitcoin and Ethereum"
@@ -3278,4 +3279,3 @@ msgstr ""
 
 #~ msgid "Zoznámte sa s pandami"
 #~ msgstr "Meet the pandas"
-
