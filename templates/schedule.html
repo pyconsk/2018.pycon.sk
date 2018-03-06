@@ -38,14 +38,14 @@
       {% endfor %}
 
 
-      <div class="flex one two-900 center demo">
-        {% for track in schedule %}
+      {% for track in schedule %}
+      {% if track['block_start'] %}<div class="flex one two-900 center demo">{% endif %}
         {% if track['schedule'] and (not day or track['day'] == day) %}
         <div>
           <article class="card">
             <header>
               <h2>{{ track['start'].strftime('%A') }}: {{ _(track['room']['name']) }}
-                <small>({{ track['room']['number'] }})</small>
+                {% if track['room']['number'] %}<small>({{ track['room']['number'] }})</small>{% endif %}
               </h2>
               <br/>
               {{ track['start'].strftime('%d. %B') }}
@@ -98,8 +98,9 @@
             </footer>
           </article>
         </div>
-        {% endif %}{% endfor %}
-      </div>
+        {% endif %}
+      {% if track['block_end'] %}</div>{% endif %}
+      {% endfor %}
 
     </div>
   </div>

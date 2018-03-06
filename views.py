@@ -175,6 +175,10 @@ SATURDAY_WORKSHOPS2 = (
     {"pause": 5, 'title': gettext("Coding in Python: A high-school programming lesson")},
 )
 
+SATURDAY_HALLWAY = (
+    {"pause": 0, 'title': gettext("Pandas documentation sprint"), 'duration': 360},
+)
+
 SUNDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("Charon and the way out from a pickle hell")},
     {"pause": 15, 'title': gettext("Making Python Behave")},
@@ -226,6 +230,11 @@ AULA4 = {
 AULA5 = {
     'name': gettext('Django Girls Auditorium'),
     'number': '+1.31',
+}
+
+HALLWAY = {
+    'name': gettext('Hallway'),
+    'number': '',
 }
 
 
@@ -360,7 +369,8 @@ def generate_schedule(api_data, flag=None):
             'room': AULA1,
             'start': FRIDAY_START,
             'schedule': generate_track(api_data, FRIDAY_TRACK1, FRIDAY_START, flag=flag),
-            'day': 'friday'
+            'day': 'friday',
+            'block_start': True,
         },
         {
             'room': AULA2,
@@ -378,13 +388,15 @@ def generate_schedule(api_data, flag=None):
             'room': AULA4,
             'start': FRIDAY_START,
             'schedule': generate_track(api_data, FRIDAY_WORKSHOPS2, FRIDAY_START+timedelta(minutes=30), flag=flag),
-            'day': 'friday'
+            'day': 'friday',
+            'block_end': True,
         },
         {
             'room': AULA1,
             'start': SATURDAY_START,
             'schedule': generate_track(api_data, SATURDAY_TRACK1, SATURDAY_START, flag=flag),
-            'day': 'saturday'
+            'day': 'saturday',
+            'block_start': True,
         },
         {
             'room': AULA2,
@@ -405,10 +417,18 @@ def generate_schedule(api_data, flag=None):
             'day': 'saturday'
         },
         {
+            'room': HALLWAY,
+            'start': SATURDAY_START+timedelta(minutes=60),
+            'schedule': generate_track(api_data, SATURDAY_HALLWAY, SATURDAY_START+timedelta(minutes=60), flag=flag),
+            'day': 'saturday',
+            'block_end': True,
+        },
+        {
             'room': AULA1,
             'start': SUNDAY_START,
             'schedule': generate_track(api_data, SUNDAY_TRACK1, SUNDAY_START, flag=flag),
-            'day': 'sunday'
+            'day': 'sunday',
+            'block_start': True,
         },
         {
             'room': AULA2,
@@ -432,7 +452,8 @@ def generate_schedule(api_data, flag=None):
             'room': AULA5,
             'start': SUNDAY_START,
             'schedule': generate_track(api_data, SUNDAY_WORKSHOPS4, SUNDAY_START-timedelta(minutes=90), flag=flag),
-            'day': 'sunday'
+            'day': 'sunday',
+            'block_end': True,
         },
     ]
 
