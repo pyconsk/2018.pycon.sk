@@ -136,6 +136,10 @@ FRIDAY_WORKSHOPS2 = (
     {"pause": 5, 'title': gettext("Introduction to Machine Learning with Python")},
 )
 
+FRIDAY_HALLWAY = (
+    {"pause": 0, 'title': gettext("OpenPGP key-signing party"), 'duration': 30, 'link': 'https://github.com/pyconsk/2018.pycon.sk/openpgp-key-signing-party'},
+)
+
 SATURDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25},
     {"pause": 5, 'title': gettext("Solutions Reviews")},
@@ -176,7 +180,7 @@ SATURDAY_WORKSHOPS2 = (
 )
 
 SATURDAY_HALLWAY = (
-    {"pause": 0, 'title': gettext("Pandas documentation sprint"), 'duration': 360},
+    {"pause": 0, 'title': gettext("Pandas documentation sprint"), 'duration': 360, 'link': 'https://python-sprints.github.io/pandas/'},
 )
 
 SUNDAY_TRACK1 = (
@@ -389,6 +393,12 @@ def generate_schedule(api_data, flag=None):
             'start': FRIDAY_START,
             'schedule': generate_track(api_data, FRIDAY_WORKSHOPS2, FRIDAY_START+timedelta(minutes=30), flag=flag),
             'day': 'friday',
+        },
+        {
+            'room': HALLWAY,
+            'start': FRIDAY_START+timedelta(minutes=395),
+            'schedule': generate_track(api_data, FRIDAY_HALLWAY, FRIDAY_START+timedelta(minutes=395), flag=flag),
+            'day': 'saturday',
             'block_end': True,
         },
         {

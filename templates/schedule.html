@@ -70,7 +70,8 @@
                     {% if loop.last and disable_last %}
                     &nbsp;
                     {% else %}
-                    {{ _(talk['talk']['title']) }}
+                    {% if talk['talk']['link'] %}<a href="{{ talk['talk']['link'] }}" target="_blank" class="external">{{ _(talk['talk']['title']) }}</a>{% else %}
+                    {{ _(talk['talk']['title']) }}{% endif %}
                     {% if talk['talk']['flag'] %}
                     <br/>
                     <span class="label {{ talk['talk']['type'] }}">{{ _(all[talk['talk']['type']]) }}</span>
