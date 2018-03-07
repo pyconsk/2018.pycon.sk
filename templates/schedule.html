@@ -74,7 +74,7 @@
                     {{ _(talk['talk']['title']) }}{% endif %}
                     {% if talk['talk']['flag'] %}
                     <br/>
-                    <span class="label {{ talk['talk']['type'] }}">{{ _(all[talk['talk']['type']]) }}</span>
+                    {% if talk['talk']['type'] %}<span class="label {{ talk['talk']['type'] }}">{{ _(all[talk['talk']['type']]) }}</span>{% endif %}
                     <span class="label {{ talk['talk']['flag'] }}">{{ _(tags[talk['talk']['flag']]) }}</span>
                     {% endif %}
 

@@ -98,7 +98,7 @@ SATURDAY_START = datetime(2018, 3, 10, hour=9)
 SUNDAY_START = datetime(2018, 3, 11, hour=10, minute=15)
 
 FRIDAY_TRACK1 = (
-    {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25},
+    {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25, 'flag': 'other', 'type': 'talk'},
     {"pause": 5, 'title': gettext("When your wetware has too many threads - Tips from an ADHDer on how to improve your focus")},
     {"pause": 15, 'title': gettext("Docs or it didn't happen")},
     {"pause": 5, 'title': gettext("GraphQL is the new black")},
@@ -137,11 +137,11 @@ FRIDAY_WORKSHOPS2 = (
 )
 
 FRIDAY_HALLWAY = (
-    {"pause": 0, 'title': gettext("OpenPGP key-signing party"), 'duration': 30, 'link': 'https://github.com/pyconsk/2018.pycon.sk/openpgp-key-signing-party'},
+    {"pause": 0, 'title': gettext("OpenPGP key-signing party"), 'duration': 30, 'link': 'https://github.com/pyconsk/2018.pycon.sk/tree/master/openpgp-key-signing-party', 'flag': 'security'},
 )
 
 SATURDAY_TRACK1 = (
-    {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25},
+    {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25, 'flag': 'other', 'type': 'talk'},
     {"pause": 5, 'title': gettext("Solutions Reviews")},
     {"pause": 15, 'title': gettext("Campaign Automation & Abusing Celery Properly")},
     {"pause": 5, 'title': gettext("The Truth about Mastering Big Data")},
@@ -180,7 +180,7 @@ SATURDAY_WORKSHOPS2 = (
 )
 
 SATURDAY_HALLWAY = (
-    {"pause": 0, 'title': gettext("Pandas documentation sprint"), 'duration': 360, 'link': 'https://python-sprints.github.io/pandas/'},
+    {"pause": 0, 'title': gettext("Pandas documentation sprint"), 'duration': 360, 'link': 'https://python-sprints.github.io/pandas/', 'flag': 'docs'},
 )
 
 SUNDAY_TRACK1 = (

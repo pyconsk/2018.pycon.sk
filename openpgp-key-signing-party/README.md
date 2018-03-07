@@ -33,7 +33,7 @@ If you do not already have a PGP key, and would like to get started with persona
 
 ### Before the Event
 
-In order to verify everyone efficiently, we ask for participants to try to generate their keys before the big day (see details below) and submit these either as pull request to https://github.com/pyconsk/2018.pycon.sk/openpgp-key-signing-party or email them to info+pgp@pycon.sk. If you have any issues doing this, we can help you on the day.
+In order to verify everyone efficiently, we ask for participants to try to generate their keys before the big day (see details below) and submit these either as pull request to https://github.com/pyconsk/2018.pycon.sk/tree/master/openpgp-key-signing-party or email them to info+pgp@pycon.sk. If you have any issues doing this, we can help you on the day.
 
 ### What to bring?
 
