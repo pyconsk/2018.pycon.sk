@@ -121,8 +121,8 @@ FRIDAY_TRACK2 = (
     {"pause": 5, 'title': gettext("Community based courses")},
     {"pause": 15, 'title': gettext("How do we struggle with Python in Martin?")},
     {"pause": 5, 'title': gettext("Why hardware attracts kids and adults to IT")},
-    {"pause": 15, 'title': gettext("EDU Talks"), 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
-    {"pause": 15, 'title': gettext("Panel discussion: Teaching IT in Slovakia - where is it heading?")},
+    {"pause": 20, 'title': gettext("Panel discussion: Teaching IT in Slovakia - where is it heading?")},
+    {"pause": 5, 'title': gettext("EDU Talks"), 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
 )
 
 FRIDAY_WORKSHOPS1 = (
@@ -349,7 +349,7 @@ def generate_track(api_data, track_data, start, flag=None):
             if talk['pause'] in (40, 60):
                 break_name = gettext('Lunch 🍱')
 
-            if talk['pause'] in (15, ):
+            if talk['pause'] in (15, 20):
                 break_name = gettext('Coffee Break ☕')
 
             template_track_data.append({
