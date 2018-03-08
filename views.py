@@ -99,7 +99,7 @@ SUNDAY_START = datetime(2018, 3, 11, hour=10, minute=15)
 
 FRIDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("Conference Opening"), 'duration': 25, 'flag': 'other', 'type': 'talk'},
-    {"pause": 5, 'title': gettext("When your wetware has too many threads - Tips from an ADHDer on how to improve your focus")},
+    {"pause": 15, 'title': gettext("FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere")},
     {"pause": 15, 'title': gettext("Docs or it didn't happen")},
     {"pause": 5, 'title': gettext("GraphQL is the new black")},
     {"pause": 60, 'title': gettext("To the Google in 80 Days")},
@@ -108,8 +108,6 @@ FRIDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("ZODB: The Graph database for Python Developers.")},
     {"pause": 15, 'title': gettext("Differentiable programming in Python and Gluon for (not only medical) image analysis")},
     {"pause": 5, 'title': gettext("Vim your Python, Python your Vim")},
-    {"pause": 5, 'title': gettext("Quiz"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
-    {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
 )
 
 FRIDAY_TRACK2 = (
@@ -121,7 +119,7 @@ FRIDAY_TRACK2 = (
     {"pause": 5, 'title': gettext("Community based courses")},
     {"pause": 15, 'title': gettext("How do we struggle with Python in Martin?")},
     {"pause": 5, 'title': gettext("Why hardware attracts kids and adults to IT")},
-    {"pause": 20, 'title': gettext("Panel discussion: Teaching IT in Slovakia - where is it heading?")},
+    {"pause": 5, 'title': gettext("Panel discussion: Teaching IT in Slovakia - where is it heading?")},
     {"pause": 5, 'title': gettext("EDU Talks"), 'duration': 30, 'language': 'SK', 'flag': 'edu', 'type': 'talk'},
 )
 
@@ -150,10 +148,10 @@ SATURDAY_TRACK1 = (
     {"pause": 15, 'title': gettext("Our DevOps journey, is SRE the next stop?")},
     {"pause": 5, 'title': gettext("Implementing distributed systems with Consul")},
     {"pause": 15, 'title': gettext("Designing fast and scalable Python MicroServices with django")},
-    {"pause": 5, 'title': gettext("FaaS and Furious - Zero to Serverless in 60 seconds - Anywhere")},
+    {"pause": 5, 'title': gettext("When your wetware has too many threads - Tips from an ADHDer on how to improve your focus")},
     {"pause": 5, 'title': gettext("Programming Python as performance: live coding with FoxDot")},
     {"pause": 5, 'title': gettext("Programming Contest Finale"), 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
-    {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
+    {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 45, 'flag': 'other', 'type': 'talk'},
 )
 
 SATURDAY_TRACK2 = (
@@ -179,8 +177,12 @@ SATURDAY_WORKSHOPS2 = (
     {"pause": 5, 'title': gettext("Coding in Python: A high-school programming lesson")},
 )
 
-SATURDAY_HALLWAY = (
+SATURDAY_HALLWAY1 = (
     {"pause": 0, 'title': gettext("Pandas documentation sprint"), 'duration': 360, 'link': 'https://python-sprints.github.io/pandas/', 'flag': 'docs'},
+)
+
+SATURDAY_HALLWAY2 = (
+    {"pause": 5, 'title': gettext("Conference organizers meetup"), 'duration': 30, 'flag': 'community'},
 )
 
 SUNDAY_TRACK1 = (
@@ -191,6 +193,7 @@ SUNDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("APIs: Gateway to world's data")},
     {"pause": 15, 'title': gettext("Getting started with HDF5 and PyTables")},
     {"pause": 5, 'title': gettext("Real-time personalized recommendations using embeddings")},
+    {"pause": 5, 'title': gettext("Quiz"), 'duration': 30, 'flag': 'other', 'type': 'talk'},
 )
 
 SUNDAY_WORKSHOPS1 = (
@@ -209,7 +212,11 @@ SUNDAY_WORKSHOPS3 = (
 )
 
 SUNDAY_WORKSHOPS4 = (
-    {"pause": 5, 'title': gettext("Django Girls"), 'duration': 520, 'flag': 'web', 'type': 'workshop'},
+    {"pause": 5, 'title': gettext("Django Girls"), 'duration': 540, 'flag': 'web', 'type': 'workshop'},
+)
+
+SUNDAY_HALLWAY = (
+    {"pause": 5, 'title': gettext("Documentation clinic/helpdesk")},
 )
 
 AULA1 = {
@@ -429,7 +436,13 @@ def generate_schedule(api_data, flag=None):
         {
             'room': HALLWAY,
             'start': SATURDAY_START+timedelta(minutes=60),
-            'schedule': generate_track(api_data, SATURDAY_HALLWAY, SATURDAY_START+timedelta(minutes=60), flag=flag),
+            'schedule': generate_track(api_data, SATURDAY_HALLWAY1, SATURDAY_START+timedelta(minutes=60), flag=flag),
+            'day': 'saturday',
+        },
+        {
+            'room': HALLWAY,
+            'start': SATURDAY_START+timedelta(minutes=270),
+            'schedule': generate_track(api_data, SATURDAY_HALLWAY2, SATURDAY_START+timedelta(minutes=270), flag=flag),
             'day': 'saturday',
             'block_end': True,
         },
@@ -461,7 +474,13 @@ def generate_schedule(api_data, flag=None):
         {
             'room': AULA5,
             'start': SUNDAY_START,
-            'schedule': generate_track(api_data, SUNDAY_WORKSHOPS4, SUNDAY_START-timedelta(minutes=90), flag=flag),
+            'schedule': generate_track(api_data, SUNDAY_WORKSHOPS4, SUNDAY_START-timedelta(minutes=135), flag=flag),
+            'day': 'sunday',
+        },
+        {
+            'room': HALLWAY,
+            'start': SUNDAY_START,
+            'schedule': generate_track(api_data, SUNDAY_HALLWAY, SUNDAY_START+timedelta(minutes=45), flag=flag),
             'day': 'sunday',
             'block_end': True,
         },
