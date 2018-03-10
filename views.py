@@ -143,14 +143,15 @@ SATURDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("Solutions Reviews")},
     {"pause": 15, 'title': gettext("Campaign Automation & Abusing Celery Properly")},
     {"pause": 5, 'title': gettext("The Truth about Mastering Big Data")},
-    {"pause": 60, 'title': gettext("Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python")},
+    {"pause": 5, 'title': gettext("Industrial Machine Learning: Building scalable distributed machine learning pipelines with Python")},
+    {"pause": 25, 'title': gettext("Programming contest Semi finale"), 'duration': 30, 'flag': 'other', 'link': 'https://app.pycon.sk'},
     {"pause": 5, 'title': gettext("Pythonic code, by example")},
     {"pause": 15, 'title': gettext("Our DevOps journey, is SRE the next stop?")},
     {"pause": 5, 'title': gettext("Implementing distributed systems with Consul")},
     {"pause": 15, 'title': gettext("Designing fast and scalable Python MicroServices with django")},
     {"pause": 5, 'title': gettext("When your wetware has too many threads - Tips from an ADHDer on how to improve your focus")},
     {"pause": 5, 'title': gettext("Programming Python as performance: live coding with FoxDot")},
-    {"pause": 5, 'title': gettext("Programming Contest Finale"), 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
+    {"pause": 5, 'title': gettext("Programming Contest Grand Finale"), 'duration': 30, 'flag': 'other', 'type': 'talk', 'language': 'EN'},
     {"pause": 5, 'title': gettext("Lightning Talks"), 'duration': 45, 'flag': 'other', 'type': 'talk'},
 )
 
@@ -182,7 +183,7 @@ SATURDAY_HALLWAY1 = (
 )
 
 SATURDAY_HALLWAY2 = (
-    {"pause": 5, 'title': gettext("Programming contest"), 'duration': 235, 'flag': 'other', 'link': 'https://app.pycon.sk'},
+    {"pause": 145, 'title': gettext("Programming contest"), 'duration': 95, 'flag': 'other', 'link': 'https://app.pycon.sk'},
     {"pause": 5, 'title': gettext("Conference organizers meetup"), 'duration': 30, 'flag': 'community'},
 )
 
