@@ -182,6 +182,7 @@ SATURDAY_HALLWAY1 = (
 )
 
 SATURDAY_HALLWAY2 = (
+    {"pause": 5, 'title': gettext("Programming contest"), 'duration': 235, 'flag': 'other', 'link': 'https://app.pycon.sk'},
     {"pause": 5, 'title': gettext("Conference organizers meetup"), 'duration': 30, 'flag': 'community'},
 )
 
@@ -441,8 +442,8 @@ def generate_schedule(api_data, flag=None):
         },
         {
             'room': HALLWAY,
-            'start': SATURDAY_START+timedelta(minutes=270),
-            'schedule': generate_track(api_data, SATURDAY_HALLWAY2, SATURDAY_START+timedelta(minutes=270), flag=flag),
+            'start': SATURDAY_START+timedelta(minutes=30),
+            'schedule': generate_track(api_data, SATURDAY_HALLWAY2, SATURDAY_START+timedelta(minutes=30), flag=flag),
             'day': 'saturday',
             'block_end': True,
         },

@@ -9,7 +9,7 @@
 		
 		<loc>https://2018.pycon.sk/sitemap.xml</loc>
 		
-		<lastmod>2018-03-09T00:11:18+00:00</lastmod>
+		<lastmod>2018-03-10T10:00:59+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
     </url>
@@ -21,7 +21,7 @@
                  hreflang="sk"
                  href="https://2018.pycon.sk/sk/speakers/&lt;last_name&gt;.html"
                  />
-		<lastmod>2018-03-10T08:52:55+00:00</lastmod>
+		<lastmod>2018-03-10T09:01:44+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.1</priority>
     </url>
@@ -33,7 +33,7 @@
                  hreflang="en"
                  href="https://2018.pycon.sk/en/speakers/&lt;last_name&gt;.html"
                  />
-		<lastmod>2018-03-10T08:52:55+00:00</lastmod>
+		<lastmod>2018-03-10T09:01:44+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.1</priority>
     </url>
@@ -261,7 +261,7 @@
                  hreflang="sk"
                  href="https://2018.pycon.sk/sk/index.html"
                  />
-		<lastmod>2018-03-10T09:52:51+00:00</lastmod>
+		<lastmod>2018-03-10T09:56:17+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
     </url>
@@ -273,7 +273,7 @@
                  hreflang="en"
                  href="https://2018.pycon.sk/en/index.html"
                  />
-		<lastmod>2018-03-10T09:52:51+00:00</lastmod>
+		<lastmod>2018-03-10T09:56:17+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
     </url>
