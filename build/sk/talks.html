@@ -147,39 +147,6 @@
           <article class="card">
             <header>
               <h3>
-                "Utajené" informácie o kóde ktorý píšeš<br />
-                
-                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovenská zástava" title="Prezentácia bude v slovenskom jazyku.">
-                
-                
-                <span class="label talk">Prednáška</span>
-                <span class="label generic">Python všeobecne</span>
-              </h3>
-            </header>
-            <footer>
-              <h4>
-                Tibor Arpáš
-                
-                (SK)
-              </h4>
-              
-              <img src="/static/img/speakers/tibor_arpas.jpg" class="img-responsive sspeaker">
-              
-              
-              <p>Podľa môjho názoru vývojové prostredia (IDE) zanedbávaju runtime aspekt programov, ktoré v nich píšeme. Historicky sa tieto prostredia asi vyvinuli z textových editorov a postupne dostávaju viac a viac funkcií a umožňujú viacero pohľadov na zdrojový kód a jeho všakovaké aspekty. Vývojové prostredia dokážu zázraky so zdrojovými súbormi, ktoré nám ležia na disku. </p>
-
-<p>Avšak zdrojáky nepíšeme aby ležali na disku ale kvôli tomu aby nám bežali ako programy. Pri behu môže vznikať kopec zaujímavých informácií spätne využiteľných pri programovaní. Dôraz vývojových prostredí na statické zdrojové kódy škodí najmä dynamickým programovacím jazykom ako je Python. Chcel by som odprezentovať a získať spätnú väzbu na 3-5 nápadov ktoré majú za cieľ práve preniesť rôzne informácie z behu Python programu naspäť do prostredia v ktorom sa píše zdrojový kód. V ideálnom prípade presne na riadok alebo dokonca na výraz, ktorý programátor práve píše alebo sa s ním dokonca trápi. </p>
-
-<p>Poznámka pre organizátora - rád by som vybral a odprezentoval len nápady, ktoré pri rozpracovaní budú dávať najväčší zmysel. Upresnenie témy prednášky by som dodal neskôr. Neúplný zoznam nápadov:<br />- prezentácia stack trace informácie v IDE, na konkrétnych riadkoch kde tento stack trace vznikol, intuitívna navigácia po framoch stacktrace, hint na hodnoty lokálnych premenných jednotlivých framov<br />- prenos a výpis log hlášok v IDE na konkrétmych riadkoch, ktoré tento výpis vygenerovali <br />- coverage informácia na riadku, ale vrátane informácie Who Tests What (ktorý, test vykonal tento riadok, pozri napr. https://bitbucket.org/ned/coveragepy/issues/170/show-who-tests-what )<br />- použiteľnejšia reprezentácia spustených/úspešných/zlyhaných testov ako momentálne používaný rozbaľovací strom. Doklikať sa ku konkrétnemu výsledku testu v Pycharm test runneri často trvá minútu a po každom spustení testov sa táto manuálna práca zahodí a treba začať klikať odznova. Navrhnem intuitívnejší spôsob prezentácie.<br />- meta nápad: implementovať prezentované nápady bude stáť nezanedbateľné úsilie. Kedže vývojových prostredí je veľké množstvo, a každé ma rozdielne API ideálne je navrhnúť všeobecný protokol, ktorý by oddeľoval IDE a zdroje runtime informácií podobne ako to robí Language Server Protocol (https://microsoft.github.io/language-server-protocol/)</p>
-            </footer>
-          </article>
-        </div>
-        
-        <div>
-          <article class="card">
-            <header>
-              <h3>
                 7 krokov k čistému issue trackeru<br />
                 
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
@@ -1587,6 +1554,49 @@
           <article class="card">
             <header>
               <h3>
+                “Secret” information about the code we write<br />
+                
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACO0lEQVQokXXMTUiTARzH8T94FOrgyYsddkkQJcFIyhQ1kUzQUHMTRRMNU6xMLXpRMLVS8gWkrKhDXesk0TFKIgzTXPMt2ea0JWOutT179uzlefbtUlKHfvA5/r5iqBqGqv5LUYgrCvGAQtQfQPP7UX1+VK8PxeMlsOPB73bj23YjhqrxZ4lEYo9hJDAMA13X0XWdeDxOLBYjGo0SiUTQNA2vaxsxVBWA8NNnhCfuo45PERqdJDQ6/t9jOBxG0zR27E4k37zOi9c/ULpvkGhuwnA4MIYGiVnqmHjk4s70N4amthiY3KRvzMm1ETu9tze4+8CJJL1CkkxzDD7eJdDRjfFpHsO3i77lQqut42aflZrOr9ScX6Gy1cap5i+UNixRaFmk4dIyIk8QOTDHrYde/G1d6C2N6A4H8bvDRC0WLl61cbpjncpzK5Q32yhtsFJkWeL4mUXqLuwFFhmY9mB9a2e4Z5b2nmXaOxfYnJnFfNlOedsGJ1vWONG0SkH9CsfMNo5UW6nqXEPkOfJGBNeVEb4PT2F/v0Zjr53Vd+u4+sewFpj5fLSahcMVzB8q42NGKXMHi/hgymehqI57IkhUBL21lVhxMbHuLn6+nCFwvR8tM5NwejqqyUQoLQ0lNZVgSgqB/fsIJCcTzMrCKYJoIsSbzhKrrydaW0u0qppIRQVaWRlaSQnhwkLUvDxCubkoOTkEs7MJZmURzMjALoKoIigiBETwi+D7zSuCR4QdEdwibIvgEsEpgv0vvwCcffbRnUTGYAAAAABJRU5ErkJggg==" alt="Slovenská zástava" title="Prezentácia bude v slovenskom jazyku.">
+                
+                
+                <span class="label talk">Prednáška</span>
+                <span class="label generic">Python všeobecne</span>
+              </h3>
+            </header>
+            <footer>
+              <h4>
+                Tibor Arpáš
+                
+                (SK)
+              </h4>
+              
+              <img src="/static/img/speakers/tibor_arpas.jpg" class="img-responsive sspeaker">
+              
+              
+              <p>Podľa môjho názoru vývojové prostredia (IDE) zanedbávaju runtime aspekt programov, ktoré v nich píšeme. Historicky sa tieto prostredia asi vyvinuli z textových editorov a postupne dostávaju viac a viac funkcií a umožňujú viacero pohľadov na zdrojový kód a jeho všakovaké aspekty. Vývojové prostredia dokážu zázraky so zdrojovými súbormi, ktoré nám ležia na disku. </p>
+
+<p>Avšak zdrojáky nepíšeme aby ležali na disku ale kvôli tomu aby nám bežali ako programy. Pri behu môže vznikať kopec zaujímavých informácií spätne využiteľných pri programovaní. Dôraz vývojových prostredí na statické zdrojové kódy škodí najmä dynamickým programovacím jazykom ako je Python. Chcel by som odprezentovať a získať spätnú väzbu na 3-5 nápadov ktoré majú za cieľ práve preniesť rôzne informácie z behu Python programu naspäť do prostredia v ktorom sa píše zdrojový kód. V ideálnom prípade presne na riadok alebo dokonca na výraz, ktorý programátor práve píše alebo sa s ním dokonca trápi. </p>
+
+<p>Príklady týchto  nápadov:</p>
+
+<p>- prezentácia stack trace informácie v IDE, na konkrétnych riadkoch kde tento stack trace vznikol, intuitívna navigácia po framoch stacktrace, hint na hodnoty lokálnych premenných jednotlivých framov</p>
+
+<p>- prenos a výpis log hlášok v IDE na konkrétmych riadkoch, ktoré tento výpis vygenerovali </p>
+
+<p>- coverage informácia na riadku, ale vrátane informácie Who Tests What (ktorý, test vykonal tento riadok, pozri napr. https://bitbucket.org/ned/coveragepy/issues/170/show-who-tests-what )</p>
+
+<p>- použiteľnejšia reprezentácia spustených/úspešných/zlyhaných testov ako momentálne používaný rozbaľovací strom. Doklikať sa ku konkrétnemu výsledku testu v Pycharm test runneri často trvá minútu a po každom spustení testov sa táto manuálna práca zahodí a treba začať klikať odznova. Navrhnem intuitívnejší spôsob prezentácie.</p>
+
+<p>- meta nápad: implementovať prezentované nápady bude stáť nezanedbateľné úsilie. Kedže vývojových prostredí je veľké množstvo, a každé ma rozdielne API ideálne je navrhnúť všeobecný protokol, ktorý by oddeľoval IDE a zdroje runtime informácií podobne ako to robí Language Server Protocol (https://microsoft.github.io/language-server-protocol/)</p>
+            </footer>
+          </article>
+        </div>
+        
+        <div>
+          <article class="card">
+            <header>
+              <h3>
                 Serverless with OpenFaaS and Python<br />
                 
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAACJElEQVQokYWQW0jTYQDFv8ceehELCx96CoqlYaxSQYaZoWBCNTNl6JbLkKGV+RBZy3mp8Ia3LooammGY5TIyAzOHKVmRQ52xdIREMMlVkLKm///362HVk9B5OnA4F45oaB5m0LVE8a1xzGXjmMtGMdlGcHt8PMyx0Wu04vb4SLYMkJQ7SJzBTqbtOa1HzlDcNobouv8GHvcgJcwtLNNpn+NO3zxSAk3VUFuBlNDQMU1Nm5OJ15+RlZeQaoC6fifiZLmDoYlvcK8bHC8AuHrTBQCn8sBoAqCodorlzl78VVUAtPdMsVV7OxjQYfdgrXexMPwJpfQK/2AwQPqJIM/PA68X57yP+ORuCktfERJRj3B7fMG56yEtDVJT15WkhHezi4he02VovA5mM2RnQ0YG6PVBY0oKMjGRVZ2OQEwMfq2WlchIVjQaAscOUbEt9j8L4uJQ9kX/7QRAVVUUVWFNUZhweRG6rH6qWyfJzB1kxvUdfEsEcrKDlj1a1nZH/QlQ+XIgnpfNT9kS3oLe2IcItSD2H3/E3b7g6z9tVn5UVmIoGgdA0USwulMDUhKr6yIALLe04TUaKL3xHhFyGtH4ZBopVfzXLjA2Mse5EgcFJaNICao+ibWjCUhVJT13gLSsBzwb/Yiq/OKr8TCWwi7ExfYRmg7mkJDXSciuVjbuaGTD9jomZ71UhEdTHqbl7cwiIuw8YvNZRGg+m6Ks1Ax9IHFvAb8B0rMYCWdRNDQAAAAASUVORK5CYII=" alt="Anglická zástava" title="Prezentácia bude v anglickom jazyku.">
@@ -1706,23 +1716,59 @@
               <img src="/static/img/speakers/claus_aichinger.jpg" class="img-responsive sspeaker">
               
               
-              <p># Goals</p>
+              <p>Testing Essentials for Scientists and Engineers</p>
 
-<p>**Primary Goal:**<br />How can I integrate testing in my interactive development process?</p>
+<p>Interactive vs? Test Driven Development</p>
 
-<p>**Non-Goal:**<br />How can I do this or that kind of test or how does this particular feature of *test work?</p>
+<p>A PyCon SK 2018 Workshop by Claus Aichinger.</p>
 
-<p># Motivation & Content</p>
+<p>If you find any issues or have ideas for improvement, please to not hesitate to file an Issue or Pull request, I appreciate your feedback! :)</p>
+
+<p>Even easier, there is a feedback form, thanks!<br />Installation & Setup</p>
+
+<p>Please make sure you have the environment specified in environment.yml set up prior to the workshop.</p>
+
+<p>If you use conda, you can do</p>
+
+<p>on Linux</p>
+
+<p>conda env create --file environment.yml<br />source activate testing</p>
+
+<p>on Windows</p>
+
+<p>conda env create --file environment.yml<br />activate testing</p>
+
+<p>or use your preferred way to create a (virtual) coding environment.</p>
+
+<p>conda is a package and environment manager (like pip and virtualenv combined), you do not have to use it; but we do require the packages listed in environment.yml.<br />Outline</p>
+
+<p>    General introduction<br />    Useful tools and their application (exercise based)<br />        engarde<br />        doctest<br />        pytest<br />    Interactive exploration of a computation problem (live coding, all together)<br />        Specification & discussion<br />        How to approach it?<br />        How to devise tests?</p>
+
+<p>Description<br />Goals</p>
+
+<p>Primary Goal: How can I integrate testing in my interactive development process?</p>
+
+<p>Non-Goal: How can I do this or that kind of test or how does this particular feature of *test work?<br />Motivation</p>
 
 <p>Software testing is an undisputed cornerstone of software development. However, as I know from my personal experience, Python users with a non-software-engineering or otherwise scientific background are often not so familiar with the concept of testing.</p>
 
-<p>Computational problems are regularly approached by means of interactive development, which is both fast and fun and one of the reasons why Python is so successful in a wide range of scientific/engineering areas. The widespread adoption of the [IPython](http://ipython.org/) and [Jupyter](http://jupyter.org/) project are living proof of that.</p>
+<p>Computational problems are regularly approached by means of interactive development, which is both fast and fun and one of the reasons why Python is so successful in a wide range of scientific/engineering areas. The widespread adoption of the IPython and Jupyter project are living proof of that.</p>
 
-<p>When carrying out computations, “testing” is implicitly carried out by “looking at the result” - which, on a small range, works pretty well. Yet, this is not what is meant automatic tests. Writing tests beforehand, as suggested by [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD), is sometimes considered clumsy and an approach that does not align very well with the experimental nature of interactive development. Yet, without tests one may quickly get lost in the complexity of even rather small problems.</p>
+<p>When carrying out computations, “testing” is implicitly carried out by “looking at the result” - which, on a small range, works pretty well. Yet, this is not what is meant automatic tests. Writing tests beforehand, as suggested by Test Driven Development (TDD), is sometimes considered clumsy and an approach that does not align very well with the experimental nature of interactive development. Yet, without tests one may quickly get lost in the complexity of even rather small problems.</p>
 
-<p>In this workshop I want to share my personal experience with testing in scientific/engineering applications and how testing works for me using tools like [engarde](http://engarde.readthedocs.org/), [doctest](https://docs.python.org/3/library/doctest.html), [pytest](http://pytest.org/) and [hypothesis](http://hypothesis.readthedocs.org/). <br />The workshop focuses on the question "How can I integrate testing in my interactive development process?". After a general introduction, each of the above libraries will be put to use in small exercises constituting a scientific computing/data science task.</p>
+<p>In this workshop I want to share my personal experience with testing in scientific/engineering applications and how testing works for me.</p>
 
-<p>**Target audience:**<br />Engineers/Scientists doing interactive development who would like to pay more attention to automatic testing.<br />This workshop is not aimed at people who already know their way around above libraries.</p>
+<p>On one hand side this includes tools like</p>
+
+<p>    engarde,<br />    doctest, and<br />    pytest</p>
+
+<p>and on the other hand side requires test-affine development workflow as well as system design.</p>
+
+<p>Hence, to deal with the question "How can I integrate testing in my interactive development process?" we first take a look at above libraries and then approach together a small computational problem while keeping testability in mind.<br />Target audience</p>
+
+<p>Engineers/Scientists doing interactive development who would like to pay more attention to automatic testing.</p>
+
+<p>This workshop is not aimed at people who already know their way around above libraries.</p>
             </footer>
           </article>
         </div>
