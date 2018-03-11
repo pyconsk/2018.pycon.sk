@@ -190,7 +190,7 @@ SATURDAY_HALLWAY2 = (
 SUNDAY_TRACK1 = (
     {"pause": 5, 'title': gettext("Charon and the way out from a pickle hell")},
     {"pause": 15, 'title': gettext("Making Python Behave")},
-    {"pause": 5, 'title': gettext("\"Secret\" information in code you write")},
+    {"pause": 5, 'title': gettext("“Secret” information about the code we write")},
     {"pause": 60, 'title': gettext("How to connect objects with each other in different situations with Pythonic ways - association, aggregation, composition and etc.")},
     {"pause": 5, 'title': gettext("APIs: Gateway to world's data")},
     {"pause": 15, 'title': gettext("Getting started with HDF5 and PyTables")},
