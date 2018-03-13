@@ -33,9 +33,9 @@ Installation
 
 - creates a virtual environment, activate it and installs all requirements::
 
-    pyvenv envs3
+    python3.6 -m venv envs3
     source envs3/bin/activate
-    pip install -r requirements.txt --no-use-wheel
+    pip install -r requirements.txt --no-binary :all:
 
 - start flask server, and you can view it in browser (http://127.0.0.1:5000/en/index.html)::
 
